@@ -1,0 +1,9 @@
+{
+  "blackbeard:LoadTheCannons": {
+    "NAME": "Load The Cannons",
+    "FLAVOR": "Ready... Aim... Fire!!!",
+    "DESCRIPTIONS": [
+      "At the start of the combat, add a Cannonball card to your hand."
+    ]
+  }
+}

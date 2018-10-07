@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>StSMod</groupId>
+    <artifactId>StSModTheBlackbeard</artifactId>
+    <version>0.0.1</version>
+    <packaging>jar</packaging>
+    <name>StSModTheBlackbeard</name>
+    <description>Adds a new character to Slay the Spire, The Blackbeard.</description>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <!-- Path where your Slay The Spire is installed -->
+        <slayTheSpirePath>C:\Program Files (x86)\Steam\steamapps\common\SlayTheSpire</slayTheSpirePath>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.megacrit.cardcrawl</groupId>
+            <artifactId>slaythespire</artifactId>
+            <version>017</version>
+            <scope>system</scope>
+            <systemPath>${slayTheSpirePath}\desktop-1.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.evacipated.cardcrawl</groupId>
+            <artifactId>ModTheSpire</artifactId>
+            <version>2.7.0</version>
+            <scope>system</scope>
+            <systemPath>${slayTheSpirePath}\ModTheSpire.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.evacipated.cardcrawl</groupId>
+            <artifactId>BaseMod</artifactId>
+            <version>2.14.0</version>
+            <scope>system</scope>
+            <systemPath>${slayTheSpirePath}\mods\BaseMod.jar</systemPath>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>TheBlackbeardMod</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>2.4.2</version>
+                <executions>
+                    <execution>
+                        <id>TheBlackbeardMod</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <filters>
+                                <filter>
+                                    <artifact>StSMod:TheBlackbeardMod</artifact>
+                                </filter>
+                            </filters>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.8</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <configuration>
+                            <target>
+                                <copy file="target/TheBlackbeardMod.jar" tofile="${slayTheSpirePath}\mods\TheBlackbeardMod.jar"/>
+                            </target>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

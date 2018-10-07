@@ -1,0 +1,27 @@
+{
+	"blackbeard:DefaultWeaponOrb": {
+		"NAME": "Sword",
+		"DESCRIPTION": [
+			""
+		]
+	},
+	"blackbeard:CutlassOrb": {
+		"NAME": "Cutlass",
+		"DESCRIPTION": [
+			""
+		]
+	},
+	"blackbeard:HalberdOrb": {
+		"NAME": "Halberd",
+		"DESCRIPTION": [
+			"Legendary Weapon!"
+		]
+	},
+	"blackbeard:PowderKegOrb": {
+		"NAME": "Powder Keg",
+		"DESCRIPTION": [
+			"On Destroy, deal ",
+			" damage to all enemies."
+		]
+	}
+}

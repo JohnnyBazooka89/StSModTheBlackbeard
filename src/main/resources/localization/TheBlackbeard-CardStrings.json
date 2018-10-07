@@ -1,0 +1,91 @@
+{
+	"blackbeard:StrikeBlackbeard": {
+		"NAME": "Strike",
+		"DESCRIPTION": "Deal !D! damage."
+	},
+	"blackbeard:DefendBlackbeard": {
+		"NAME": "Defend",
+		"DESCRIPTION": "Gain !B! Block."
+	},
+	"blackbeard:Cutlass": {
+		"NAME": "Cutlass",
+		"DESCRIPTION": "Equip a {A} / {D} Weapon."
+	},
+	"blackbeard:Upgrade": {
+		"NAME": "Upgrade",
+		"DESCRIPTION": "Give all your equipped Weapons + {A} / + {D}."
+	},
+	"blackbeard:Sharpening": {
+		"NAME": "Sharpening",
+		"DESCRIPTION": "Give all your equipped Weapons + !M! attack."
+	},
+	"blackbeard:QuickSlash": {
+		"NAME": "Quick Slash",
+		"DESCRIPTION": "Deal !D! damage. Equip a {A} / {D} Weapon."
+	},
+	"blackbeard:Fencing": {
+		"NAME": "Fencing",
+		"DESCRIPTION": "Give your rightmost Weapon + !M! / + !M!."
+	},
+	"blackbeard:Parrot": {
+		"NAME": "Parrot",
+		"DESCRIPTION": "The last card played each turn is played an additional time. This power does not stack."
+	},
+	"blackbeard:Halberd": {
+		"NAME": "Halberd",
+		"DESCRIPTION": "Equip a !M! / {D} Weapon."
+	},
+	"blackbeard:TheDrunkenSailor": {
+		"NAME": "The Drunken Sailor",
+		"DESCRIPTION": "Increase the effectiveness of your potions !M! times."
+	},
+	"blackbeard:AttackWithAllWeapons": {
+		"NAME": "Attack With All Weapons",
+		"DESCRIPTION": "This turn, your next Attack uses all equipped Weapons.",
+		"UPGRADE_DESCRIPTION": "This turn, your next !M! Attacks use all equipped Weapons."
+	},
+	"blackbeard:Cannonball": {
+		"NAME": "Cannonball",
+		"DESCRIPTION": "Deal !D! damage. Exhaust."
+	},
+	"blackbeard:CannonBarrage": {
+		"NAME": "Cannon Barrage",
+		"DESCRIPTION": "Add X Cannonballs to your hand.",
+		"UPGRADE_DESCRIPTION": "Add X+1 Cannonballs to your hand."
+	},
+	"blackbeard:Rum": {
+		"NAME": "Rum",
+		"DESCRIPTION": "Gain !M! Resistance."
+	},
+	"blackbeard:GhostInTheRum": {
+		"NAME": "Ghost In The Rum",
+		"DESCRIPTION": "Gain 1 Intangible. Lose !M! Resistance."
+	},
+	"blackbeard:GoldenStrike": {
+		"NAME": "Golden Strike",
+		"DESCRIPTION": "Deal damage equal to !M! + 2% of Gold gained this run.",
+		"EXTENDED_DESCRIPTION": [
+			" NL (Deal !D! damage.)"
+		]
+	},
+	"blackbeard:PowderKeg": {
+		"NAME": "Powder Keg",
+		"DESCRIPTION": "Equip a {A} / {D} Weapon. When it is destroyed, deal !M! damage to all enemies."
+	},
+	"blackbeard:Recycle": {
+		"NAME": "Recycle",
+		"DESCRIPTION": "Destroy your rightmost Weapon to get [R] [R].",
+		"UPGRADE_DESCRIPTION": "Destroy your rightmost Weapon to get NL [R] [R] [R].",
+		"EXTENDED_DESCRIPTION": [
+			"I don't have a Weapon!"
+		]
+	},
+	"blackbeard:RemoveScurvy": {
+		"NAME": "Remove Scurvy",
+		"DESCRIPTION": "Heal !M! HP. Remove all of your Debuffs. Exhaust."
+	},
+	"blackbeard:LastCard": {
+		"NAME": "Last Card",
+		"DESCRIPTION": "To be deleted."
+	}
+}

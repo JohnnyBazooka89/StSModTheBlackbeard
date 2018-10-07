@@ -1,0 +1,38 @@
+{
+	"blackbeard:WeaponPower": {
+		"NAME": "Weapons",
+		"DESCRIPTIONS": [
+			"Whenever you play an Attack card, remove 1 Durability from your rightmost Weapon and deal its Attack damage."
+		]
+	},
+	"blackbeard:ParrotPower": {
+		"NAME": "Parrot",
+		"DESCRIPTIONS": [
+			"The last card played each turn is played an additional time."
+		]
+	},
+	"blackbeard:TheDrunkenSailorPower": {
+		"NAME": "The Drunken Sailor",
+		"DESCRIPTIONS": [
+			"Increase the effectiveness of your potions ",
+			" times."
+		]
+	},
+	"blackbeard:AttackWithAllWeaponsPower": {
+		"NAME": "Attack With All Weapons",
+		"DESCRIPTIONS": [
+			"This turn, your next Attack uses all equipped Weapons.",
+			"This turn, your next ",
+			" Attacks use all equipped Weapons."
+		]
+	},
+	"blackbeard:ResistancePower": {
+		"NAME": "ResistancePower",
+		"DESCRIPTIONS": [
+			"You take ",
+			" less",
+			" more",
+			" damage from enemy attacks."
+		]
+	}
+}
