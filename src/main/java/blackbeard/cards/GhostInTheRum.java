@@ -23,7 +23,7 @@ public class GhostInTheRum extends CustomCard {
     private static final int UPGRADED_MINUS_RESISTANCE_DEBUFF_VALUE = 1;
 
     public GhostInTheRum() {
-        super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_SKILL_CARD_ID), COST, DESCRIPTION, CardType.POWER,
+        super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_POWER_CARD_ID), COST, DESCRIPTION, CardType.POWER,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
 
         this.baseMagicNumber = RESISTANCE_DEBUFF_VALUE;

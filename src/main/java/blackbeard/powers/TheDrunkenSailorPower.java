@@ -18,9 +18,7 @@ public class TheDrunkenSailorPower extends AbstractPower {
         this.ID = POWER_ID;
         this.owner = owner;
         this.amount = amount;
-        //this.loadRegion("regen");
-        this.region48 = new TextureAtlas.AtlasRegion(new Texture("img/powers/WeaponPower2.png"), 0, 0, 96, 96);
-        //this.region128 = new TextureAtlas.AtlasRegion(new Texture("img/powers/WeaponPower2.png"), 0, 0, 96, 96);
+        this.loadRegion("regen");
 
         this.type = PowerType.BUFF;
         this.isTurnBased = false;

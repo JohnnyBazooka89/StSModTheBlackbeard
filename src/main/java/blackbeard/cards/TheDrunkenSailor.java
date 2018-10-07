@@ -22,7 +22,7 @@ public class TheDrunkenSailor extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
     public TheDrunkenSailor() {
-        super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_SKILL_CARD_ID), COST, DESCRIPTION, CardType.POWER,
+        super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_POWER_CARD_ID), COST, DESCRIPTION, CardType.POWER,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.RARE, CardTarget.SELF);
 
         this.baseMagicNumber = POTENCY_MULTIPLIER;

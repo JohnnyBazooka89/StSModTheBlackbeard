@@ -24,6 +24,7 @@ public class TheBlackbeard extends CustomPlayer {
     private static final String BLACKBEARD_SHOULDER_2 = "img/char/blackbeard/shoulder2.png";
     private static final String BLACKBEARD_CORPSE = "img/char/blackbeard/corpse.png";
 
+    public static final String DEFAULT_POWER_CARD_ID = "blackbeard:BetaPower";
     public static final String DEFAULT_SKILL_CARD_ID = "blackbeard:BetaSkill";
     public static final String DEFAULT_ATTACK_CARD_ID = "blackbeard:Beta";
 

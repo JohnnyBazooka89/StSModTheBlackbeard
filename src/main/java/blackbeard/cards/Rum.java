@@ -22,7 +22,7 @@ public class Rum extends CustomCard {
     private static final int UPGRADED_PLUS_RESISTANCE_VALUE = 1;
 
     public Rum() {
-        super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_SKILL_CARD_ID), COST, DESCRIPTION, CardType.POWER,
+        super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_POWER_CARD_ID), COST, DESCRIPTION, CardType.POWER,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
         this.baseMagicNumber = RESISTANCE_VALUE;
     }
