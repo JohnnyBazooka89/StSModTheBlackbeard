@@ -1,12 +1,12 @@
 # StSModTheBlackbeard
 This mod adds a new character for Slay The Spire, named The Blackbeard. Currently ~20 cards of 75 planned are finished. Mod is currently under intensive development, so if you want to just play it, then please wait until it is finished and tested properly.
 
-The Blackbeard is a new class based on pirate theme. His most important mechanic are Weapons. There are many cards that allow to Equip a Weapon and each Weapon is characterized by its Attack and Durability. You can equip many Weapons, and they are queued using Defect's orb system. Every time you deal play an attack card, one Durability of your rightmost Weapon is used damage is increased by Weapon's attack. You can Equip maximum of 10 Weapons. Weapons with zero durability are automatically destroyed. Orb slots are created automatically when you equip a Weapon and are automatically destroyed when Weapon is destroyed.
+The Blackbeard is a new class based on pirate theme. His most important mechanic are Weapons. There are many cards that allow to Equip a Weapon and each Weapon is characterized by its Attack and Durability. You can equip many Weapons, and they are queued using Defect's orb system. Every time you play an attack card, one Durability of your rightmost Weapon is used and card's damage is increased by Weapon's attack. You can Equip maximum of 10 Weapons. Weapons with zero durability are automatically destroyed. Orb slots are created automatically when you equip a Weapon and are automatically destroyed when Weapon is destroyed.
 
 Other mechanics are: 
 - Cannonballs - 0 cost attacks that deal 8 (12) damage and exhaust.
-- Resistance - for each point of Resistance enemies deal 1 damage less
-- Gold scaling card - some cards scale with how much Gold you gained this run
+- Resistance - for each point of Resistance enemies deal 1 damage less.
+- Gold scaling card - some cards scale with how much Gold you gained this run.
 - Debuff cleansing - Blackbeard is able to play powerful cards with negative effects, and later cleanse his debuffs
 
 Gameplay: 
@@ -32,7 +32,7 @@ Currently developed cards:
 2. Copy ModTheSpire files (ModTheSpire.jar, MTS.cmd, MTS.sh) to this folder.
 3. Create new folder named "mods".
 4. Copy BaseMod.jar and TheBlackbeardMod.jar into folder "mods".
-5. Double click on MTS.cmd and  
+5. Double click on MTS.cmd, select "BaseMod" and "The Blackbeard Mod", and click "Play" button.
 
 Here is a great video showing how to install mods, by Xterminator: https://www.youtube.com/watch?v=r2m2aL1eEjw
 
