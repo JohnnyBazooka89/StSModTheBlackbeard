@@ -25,7 +25,7 @@ public class Fencing extends CustomCard {
 
     public Fencing() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_SKILL_CARD_ID), COST, DESCRIPTION, CardType.SKILL,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
+                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.SELF);
 
         this.baseMagicNumber = UPGRADE_VALUE;
     }

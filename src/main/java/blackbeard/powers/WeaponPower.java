@@ -45,7 +45,7 @@ public class WeaponPower extends AbstractPower {
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
         WeaponsToUseEnum weaponsToUse = WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON;
-        if (AbstractDungeon.player.hasPower(AttackWithAllWeaponsPower.POWER_ID)) {
+        if (AbstractDungeon.player.hasPower(SwordDancePower.POWER_ID)) {
             weaponsToUse = WeaponsToUseEnum.ALL_WEAPONS;
         }
 
@@ -116,7 +116,7 @@ public class WeaponPower extends AbstractPower {
     @Override
     public float atDamageGive(float damage, DamageType type) {
         WeaponsToUseEnum weaponsToUse = WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON;
-        if (AbstractDungeon.player.hasPower(AttackWithAllWeaponsPower.POWER_ID)) {
+        if (AbstractDungeon.player.hasPower(SwordDancePower.POWER_ID)) {
             weaponsToUse = WeaponsToUseEnum.ALL_WEAPONS;
         }
 

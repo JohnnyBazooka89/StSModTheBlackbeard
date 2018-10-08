@@ -36,11 +36,11 @@
 		"DESCRIPTION": "Equip a !M! / {D} Weapon."
 	},
 	"blackbeard:TheDrunkenSailor": {
-		"NAME": "The Drunken Sailor",
+		"NAME": "  The Drunken Sailor",
 		"DESCRIPTION": "Increase the effectiveness of your potions !M! times."
 	},
-	"blackbeard:AttackWithAllWeapons": {
-		"NAME": "Attack With All Weapons",
+	"blackbeard:SwordDance": {
+		"NAME": "Sword Dance",
 		"DESCRIPTION": "This turn, your next Attack uses all equipped Weapons.",
 		"UPGRADE_DESCRIPTION": "This turn, your next !M! Attacks use all equipped Weapons."
 	},
@@ -100,5 +100,9 @@
 	"blackbeard:PirateStrength": {
 		"NAME": "Pirate Strength",
 		"DESCRIPTION": "Gain !M! Strength."
+	},
+	"blackbeard:HumongousCannonball": {
+		"NAME": "       Humongous Cannonball",
+		"DESCRIPTION": "Deal !D! damage. Exhaust."
 	}
 }

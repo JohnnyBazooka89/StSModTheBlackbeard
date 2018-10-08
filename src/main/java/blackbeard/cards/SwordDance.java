@@ -4,7 +4,7 @@ import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.characters.TheBlackbeard;
 import blackbeard.patches.AbstractCardEnum;
-import blackbeard.powers.AttackWithAllWeaponsPower;
+import blackbeard.powers.SwordDancePower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -12,8 +12,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class AttackWithAllWeapons extends CustomCard {
-    public static final String ID = "blackbeard:AttackWithAllWeapons";
+public class SwordDance extends CustomCard {
+    public static final String ID = "blackbeard:SwordDance";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
@@ -22,7 +22,7 @@ public class AttackWithAllWeapons extends CustomCard {
     private static final int NUMBER_OF_ATTACKS = 1;
     private static final int UPGRADED_PLUS_NUMBER_OF_ATTACKS = 1;
 
-    public AttackWithAllWeapons() {
+    public SwordDance() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_SKILL_CARD_ID), COST, DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
 
@@ -31,7 +31,7 @@ public class AttackWithAllWeapons extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new AttackWithAllWeaponsPower(p, this.baseMagicNumber), this.baseMagicNumber));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new SwordDancePower(p, this.baseMagicNumber), this.baseMagicNumber));
     }
 
     public void upgrade() {

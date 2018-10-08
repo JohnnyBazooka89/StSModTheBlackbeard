@@ -26,14 +26,14 @@ public class SwordOfWisdom extends CustomCard {
 
     public SwordOfWisdom() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_SKILL_CARD_ID), COST, DESCRIPTION, CardType.SKILL,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.BASIC, CardTarget.SELF);
+                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
+
+        this.baseMagicNumber = WEAPON_ATTACK;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new EquipAction(new SwordOfWisdomOrb(WEAPON_ATTACK, WEAPON_DURABILITY)));
-
-        this.baseMagicNumber = WEAPON_ATTACK;
     }
 
     public void upgrade() {

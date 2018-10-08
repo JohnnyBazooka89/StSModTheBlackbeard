@@ -18,8 +18,8 @@
 			" times."
 		]
 	},
-	"blackbeard:AttackWithAllWeaponsPower": {
-		"NAME": "Attack With All Weapons",
+	"blackbeard:SwordDancePower": {
+		"NAME": "Sword Dance",
 		"DESCRIPTIONS": [
 			"This turn, your next Attack uses all equipped Weapons.",
 			"This turn, your next ",

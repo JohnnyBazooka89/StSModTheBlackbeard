@@ -9,13 +9,13 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-public class AttackWithAllWeaponsPower extends AbstractPower {
-    public static final String POWER_ID = "blackbeard:AttackWithAllWeaponsPower";
+public class SwordDancePower extends AbstractPower {
+    public static final String POWER_ID = "blackbeard:SwordDancePower";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    public AttackWithAllWeaponsPower(AbstractCreature owner, int amount) {
+    public SwordDancePower(AbstractCreature owner, int amount) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;

@@ -147,7 +147,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addCard(new Parrot());
         BaseMod.addCard(new TheDrunkenSailor());
         BaseMod.addCard(new Halberd());
-        BaseMod.addCard(new AttackWithAllWeapons());
+        BaseMod.addCard(new SwordDance());
         BaseMod.addCard(new Cannonball());
         BaseMod.addCard(new CannonBarrage());
         BaseMod.addCard(new Rum());
@@ -160,6 +160,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addCard(new SwordOfChaos());
         BaseMod.addCard(new SwordOfWisdom());
         BaseMod.addCard(new PirateStrength());
+        BaseMod.addCard(new HumongousCannonball());
 
         logger.info("done editing cards");
     }
