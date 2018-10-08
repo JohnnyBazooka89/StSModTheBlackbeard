@@ -22,7 +22,6 @@ public class ResistancePower extends AbstractPower {
         this.amount = amount;
         this.loadRegion("barricade");
         this.type = PowerType.BUFF;
-        this.isTurnBased = false;
         this.canGoNegative = true;
         this.priority = 98;
         this.updateDescription();
@@ -45,7 +44,7 @@ public class ResistancePower extends AbstractPower {
         this.fontScale = 8.0F;
         this.amount += stackAmount;
         if (this.amount == 0) {
-            AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
+            AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
         }
     }
 

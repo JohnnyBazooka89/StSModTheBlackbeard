@@ -1,5 +1,7 @@
 package blackbeard.orbs;
 
+import blackbeard.TheBlackbeardMod;
+import blackbeard.characters.TheBlackbeard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 
@@ -11,7 +13,7 @@ public class HalberdOrb extends WeaponOrb {
     public static final String[] DESCRIPTION = orbStrings.DESCRIPTION;
 
     public HalberdOrb(int attack, int durability) {
-        super(ID, NAME, DESCRIPTION[0], WeaponOrb.DEFAULT_IMAGE_PATH, attack, durability);
+        super(ID, NAME, DESCRIPTION[0], TheBlackbeardMod.getOrbImagePath(TheBlackbeard.DEFAULT_WEAPON_ORB_ID), attack, durability);
         this.attack = attack;
         this.durability = durability;
     }

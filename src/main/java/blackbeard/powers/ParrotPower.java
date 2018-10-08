@@ -24,7 +24,6 @@ public class ParrotPower extends AbstractPower {
         this.owner = owner;
         this.loadRegion("minion");
         this.type = PowerType.BUFF;
-        this.isTurnBased = false;
         this.updateDescription();
     }
 

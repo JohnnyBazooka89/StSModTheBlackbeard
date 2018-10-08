@@ -53,7 +53,7 @@ public class WeaponPower extends AbstractPower {
             for (AbstractOrb o : AbstractDungeon.player.orbs) {
                 if (o instanceof WeaponOrb) {
                     WeaponOrb weaponOrb = (WeaponOrb) o;
-                    weaponOrb.use();
+                    weaponOrb.use(action.target);
                     if (weaponsToUse.equals(WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON)) {
                         break;
                     }
@@ -96,7 +96,7 @@ public class WeaponPower extends AbstractPower {
         }
 
         if (!hasAtLeastOneWeaponLeft) {
-            AbstractDungeon.actionManager.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
+            AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
         }
     }
 

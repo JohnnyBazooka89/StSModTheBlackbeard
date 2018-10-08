@@ -21,7 +21,6 @@ public class AttackWithAllWeaponsPower extends AbstractPower {
         this.owner = owner;
         this.amount = amount;
         this.type = PowerType.BUFF;
-        this.isTurnBased = false;
         this.loadRegion("painfulStabs");
         this.updateDescription();
     }

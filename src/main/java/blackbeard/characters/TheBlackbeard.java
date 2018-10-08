@@ -27,6 +27,7 @@ public class TheBlackbeard extends CustomPlayer {
     public static final String DEFAULT_POWER_CARD_ID = "blackbeard:BetaPower";
     public static final String DEFAULT_SKILL_CARD_ID = "blackbeard:BetaSkill";
     public static final String DEFAULT_ATTACK_CARD_ID = "blackbeard:Beta";
+    public static final String DEFAULT_WEAPON_ORB_ID = "blackbeard:WeaponOrb";
 
     public TheBlackbeard(String name, PlayerClass setClass) {
         super(name, setClass, null, null, (String) null, null);

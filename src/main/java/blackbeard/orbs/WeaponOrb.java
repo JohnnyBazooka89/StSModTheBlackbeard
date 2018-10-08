@@ -2,6 +2,7 @@ package blackbeard.orbs;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
@@ -10,7 +11,6 @@ import org.apache.commons.lang3.StringUtils;
 
 public abstract class WeaponOrb extends AbstractOrb {
 
-    public static final String DEFAULT_IMAGE_PATH = "img/orbs/WeaponOrb.png";
     protected int attack;
     protected int durability;
     protected String rawDescription;
@@ -80,8 +80,9 @@ public abstract class WeaponOrb extends AbstractOrb {
         return durability;
     }
 
-    public void use() {
+    public void use(AbstractCreature target) {
         durability--;
+        effectOnUse(target);
         updateDescription();
     }
 
@@ -94,6 +95,10 @@ public abstract class WeaponOrb extends AbstractOrb {
     public void setDurabilityToZero() {
         durability = 0;
         updateDescription();
+    }
+
+    public void effectOnUse(AbstractCreature target) {
+        //Override to get effect on use
     }
 
     public void effectOnDestroy(){

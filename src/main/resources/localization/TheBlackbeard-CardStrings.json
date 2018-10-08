@@ -13,7 +13,7 @@
 	},
 	"blackbeard:Upgrade": {
 		"NAME": "Upgrade",
-		"DESCRIPTION": "Give all your equipped Weapons + {A} / + {D}."
+		"DESCRIPTION": "Give all your equipped Weapons + !M! / + !M!."
 	},
 	"blackbeard:Sharpening": {
 		"NAME": "Sharpening",
@@ -84,8 +84,21 @@
 		"NAME": "Remove Scurvy",
 		"DESCRIPTION": "Heal !M! HP. Remove all of your Debuffs. Exhaust."
 	},
-	"blackbeard:LastCard": {
-		"NAME": "Last Card",
-		"DESCRIPTION": "To be deleted."
+	"blackbeard:InfiniteBarrage": {
+		"NAME": "Infinite Barrage",
+		"DESCRIPTION": "At the start of each turn, add a Cannonball card to your hand.",
+		"UPGRADE_DESCRIPTION": "Innate. At the start of each turn, add a Cannonball card to your hand."
+	},
+	"blackbeard:SwordOfWisdom": {
+		"NAME": "Sword Of Wisdom",
+		"DESCRIPTION": "Equip a !M! / {D} Weapon. Whenever you attack with this Weapon, draw a card."
+	},
+	"blackbeard:SwordOfChaos": {
+		"NAME": "Sword Of Chaos",
+		"DESCRIPTION": "Equip a !M! / {D} Weapon. Whenever you attack with this Weapon, add a random card to your hand."
+	},
+	"blackbeard:PirateStrength": {
+		"NAME": "Pirate Strength",
+		"DESCRIPTION": "Gain !M! Strength."
 	}
 }

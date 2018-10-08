@@ -27,12 +27,21 @@
 		]
 	},
 	"blackbeard:ResistancePower": {
-		"NAME": "ResistancePower",
+		"NAME": "Resistance",
 		"DESCRIPTIONS": [
 			"You take ",
 			" less",
 			" more",
 			" damage from enemy attacks."
+		]
+	},
+	"blackbeard:InfiniteBarragePower": {
+		"NAME": "Infinite Barrage",
+		"DESCRIPTIONS": [
+			"At the start of each turn, add",
+			" Cannonball card ",
+			" Cannonball cards ",
+			"to your hand."
 		]
 	}
 }

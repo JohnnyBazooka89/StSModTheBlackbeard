@@ -18,7 +18,10 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardHelper;
-import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.localization.OrbStrings;
+import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.relics.CultistMask;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -153,6 +156,10 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addCard(new PowderKeg());
         BaseMod.addCard(new Recycle());
         BaseMod.addCard(new RemoveScurvy());
+        BaseMod.addCard(new InfiniteBarrage());
+        BaseMod.addCard(new SwordOfChaos());
+        BaseMod.addCard(new SwordOfWisdom());
+        BaseMod.addCard(new PirateStrength());
 
         logger.info("done editing cards");
     }
