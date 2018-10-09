@@ -63,7 +63,7 @@
   },
   "blackbeard:GoldenStrike": {
     "NAME": "Golden Strike",
-    "DESCRIPTION": "Deal damage equal to !M! + 2% of Gold gained this run.",
+    "DESCRIPTION": "Deal damage equal to !M! + 1% of Gold gained this run.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deals !D! damage.)"
     ]
@@ -107,7 +107,7 @@
   },
   "blackbeard:GoldenCannonball": {
     "NAME": "Golden Cannonball",
-    "DESCRIPTION": "Deal damage equal to !M! + 2% of Gold gained this run. Exhaust.",
+    "DESCRIPTION": "Deal damage equal to !M! + 1% of Gold gained this run. Exhaust.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deals !D! damage.)"
     ]
@@ -134,7 +134,7 @@
   },
   "blackbeard:GoldenDefend": {
     "NAME": "Golden Defend",
-    "DESCRIPTION": "Gain Block equal to !M! + 2% of Gold gained this run.",
+    "DESCRIPTION": "Gain Block equal to !M! + 1% of Gold gained this run.",
     "EXTENDED_DESCRIPTION": [
       " NL (Gains !B! Block.)"
     ]

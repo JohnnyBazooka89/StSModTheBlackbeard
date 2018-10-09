@@ -25,7 +25,7 @@ public class GoldenCannonball extends CustomCard {
 
     public GoldenCannonball() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.ENEMY);
+                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
 
         this.baseMagicNumber = ATTACK_DMG;
         this.baseDamage = ATTACK_DMG;
@@ -41,7 +41,7 @@ public class GoldenCannonball extends CustomCard {
 
     @Override
     public void applyPowers() {
-        this.baseDamage = this.baseMagicNumber + (CardCrawlGame.goldGained / 50);
+        this.baseDamage = this.baseMagicNumber + (CardCrawlGame.goldGained / 100);
         super.applyPowers();
         this.rawDescription = DESCRIPTION + EXTENDED_DESCRIPTION[0];
         this.initializeDescription();

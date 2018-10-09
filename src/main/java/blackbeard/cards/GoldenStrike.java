@@ -39,7 +39,7 @@ public class GoldenStrike extends CustomCard {
 
     @Override
     public void applyPowers() {
-        this.baseDamage = this.baseMagicNumber + (CardCrawlGame.goldGained / 50);
+        this.baseDamage = this.baseMagicNumber + (CardCrawlGame.goldGained / 100);
         super.applyPowers();
         this.rawDescription = DESCRIPTION + EXTENDED_DESCRIPTION[0];
         this.initializeDescription();
