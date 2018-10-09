@@ -3,6 +3,7 @@ package blackbeard.cards;
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.patches.AbstractCardEnum;
+import blackbeard.patches.CardTagsEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -12,29 +13,30 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class GoldenStrike extends CustomCard {
-    public static final String ID = "blackbeard:GoldenStrike";
+public class GoldenCannonball extends CustomCard {
+    public static final String ID = "blackbeard:GoldenCannonball";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
     private static final int COST = 1;
-    private static final int ATTACK_DMG = 6;
-    private static final int UPGRADE_PLUS_DMG = 3;
+    private static final int ATTACK_DMG = 8;
+    private static final int UPGRADE_PLUS_DMG = 4;
 
-    public GoldenStrike() {
+    public GoldenCannonball() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.ENEMY);
 
         this.baseMagicNumber = ATTACK_DMG;
         this.baseDamage = ATTACK_DMG;
+        this.exhaust = true;
 
-        this.tags.add(CardTags.STRIKE);
+        this.tags.add(CardTagsEnum.CANNONBALL);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.baseDamage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.baseDamage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
     }
 
     @Override
@@ -45,6 +47,7 @@ public class GoldenStrike extends CustomCard {
         this.initializeDescription();
     }
 
+    @Override
     public void onMoveToDiscard() {
         this.rawDescription = DESCRIPTION;
         this.initializeDescription();

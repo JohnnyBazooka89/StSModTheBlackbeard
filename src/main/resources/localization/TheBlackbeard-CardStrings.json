@@ -1,108 +1,150 @@
 {
-	"blackbeard:StrikeBlackbeard": {
-		"NAME": "Strike",
-		"DESCRIPTION": "Deal !D! damage."
-	},
-	"blackbeard:DefendBlackbeard": {
-		"NAME": "Defend",
-		"DESCRIPTION": "Gain !B! Block."
-	},
-	"blackbeard:Cutlass": {
-		"NAME": "Cutlass",
-		"DESCRIPTION": "Equip a {A} / {D} Weapon."
-	},
-	"blackbeard:Upgrade": {
-		"NAME": "Upgrade",
-		"DESCRIPTION": "Give all your equipped Weapons + !M! / + !M!."
-	},
-	"blackbeard:Sharpening": {
-		"NAME": "Sharpening",
-		"DESCRIPTION": "Give all your equipped Weapons + !M! attack."
-	},
-	"blackbeard:QuickSlash": {
-		"NAME": "Quick Slash",
-		"DESCRIPTION": "Deal !D! damage. Equip a {A} / {D} Weapon."
-	},
-	"blackbeard:Fencing": {
-		"NAME": "Fencing",
-		"DESCRIPTION": "Give your rightmost Weapon + !M! / + !M!."
-	},
-	"blackbeard:Parrot": {
-		"NAME": "Parrot",
-		"DESCRIPTION": "The last card played each turn is played an additional time. This power does not stack."
-	},
-	"blackbeard:Halberd": {
-		"NAME": "Halberd",
-		"DESCRIPTION": "Equip a !M! / {D} Weapon."
-	},
-	"blackbeard:TheDrunkenSailor": {
-		"NAME": "  The Drunken Sailor",
-		"DESCRIPTION": "Increase the effectiveness of your potions !M! times."
-	},
-	"blackbeard:SwordDance": {
-		"NAME": "Sword Dance",
-		"DESCRIPTION": "This turn, your next Attack uses all equipped Weapons.",
-		"UPGRADE_DESCRIPTION": "This turn, your next !M! Attacks use all equipped Weapons."
-	},
-	"blackbeard:Cannonball": {
-		"NAME": "Cannonball",
-		"DESCRIPTION": "Deal !D! damage. Exhaust."
-	},
-	"blackbeard:CannonBarrage": {
-		"NAME": "Cannon Barrage",
-		"DESCRIPTION": "Add X Cannonballs to your hand.",
-		"UPGRADE_DESCRIPTION": "Add X+1 Cannonballs to your hand."
-	},
-	"blackbeard:Rum": {
-		"NAME": "Rum",
-		"DESCRIPTION": "Gain !M! Resistance."
-	},
-	"blackbeard:GhostInTheRum": {
-		"NAME": "Ghost In The Rum",
-		"DESCRIPTION": "Gain 1 Intangible. Lose !M! Resistance."
-	},
-	"blackbeard:GoldenStrike": {
-		"NAME": "Golden Strike",
-		"DESCRIPTION": "Deal damage equal to !M! + 2% of Gold gained this run.",
-		"EXTENDED_DESCRIPTION": [
-			" NL (Deal !D! damage.)"
-		]
-	},
-	"blackbeard:PowderKeg": {
-		"NAME": "Powder Keg",
-		"DESCRIPTION": "Equip a {A} / {D} Weapon. When it is destroyed, deal !M! damage to all enemies."
-	},
-	"blackbeard:Recycle": {
-		"NAME": "Recycle",
-		"DESCRIPTION": "Destroy your rightmost Weapon to get [R] [R].",
-		"UPGRADE_DESCRIPTION": "Destroy your rightmost Weapon to get NL [R] [R] [R].",
-		"EXTENDED_DESCRIPTION": [
-			"I don't have a Weapon!"
-		]
-	},
-	"blackbeard:RemoveScurvy": {
-		"NAME": "Remove Scurvy",
-		"DESCRIPTION": "Heal !M! HP. Remove all of your Debuffs. Exhaust."
-	},
-	"blackbeard:InfiniteBarrage": {
-		"NAME": "Infinite Barrage",
-		"DESCRIPTION": "At the start of each turn, add a Cannonball card to your hand.",
-		"UPGRADE_DESCRIPTION": "Innate. At the start of each turn, add a Cannonball card to your hand."
-	},
-	"blackbeard:SwordOfWisdom": {
-		"NAME": "Sword Of Wisdom",
-		"DESCRIPTION": "Equip a !M! / {D} Weapon. Whenever you attack with this Weapon, draw a card."
-	},
-	"blackbeard:SwordOfChaos": {
-		"NAME": "Sword Of Chaos",
-		"DESCRIPTION": "Equip a !M! / {D} Weapon. Whenever you attack with this Weapon, add a random card to your hand."
-	},
-	"blackbeard:PirateStrength": {
-		"NAME": "Pirate Strength",
-		"DESCRIPTION": "Gain !M! Strength."
-	},
-	"blackbeard:HumongousCannonball": {
-		"NAME": "       Humongous Cannonball",
-		"DESCRIPTION": "Deal !D! damage. Exhaust."
-	}
+  "blackbeard:StrikeBlackbeard": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "blackbeard:DefendBlackbeard": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "blackbeard:Cutlass": {
+    "NAME": "Cutlass",
+    "DESCRIPTION": "Equip a {A} / {D} Weapon."
+  },
+  "blackbeard:Upgrade": {
+    "NAME": "Upgrade",
+    "DESCRIPTION": "Give all your equipped Weapons + !M! / + !M!."
+  },
+  "blackbeard:Sharpening": {
+    "NAME": "Sharpening",
+    "DESCRIPTION": "Give all your equipped Weapons + !M! attack."
+  },
+  "blackbeard:QuickSlash": {
+    "NAME": "Quick Slash",
+    "DESCRIPTION": "Deal !D! damage. Equip a {A} / {D} Weapon."
+  },
+  "blackbeard:Fencing": {
+    "NAME": "Fencing",
+    "DESCRIPTION": "Give your rightmost Weapon + !M! / + !M!."
+  },
+  "blackbeard:Parrot": {
+    "NAME": "Parrot",
+    "DESCRIPTION": "The last card played each turn is played an additional time. This power does not stack."
+  },
+  "blackbeard:Halberd": {
+    "NAME": "Halberd",
+    "DESCRIPTION": "Equip a !M! / {D} Weapon."
+  },
+  "blackbeard:TheDrunkenSailor": {
+    "NAME": "  The Drunken Sailor",
+    "DESCRIPTION": "Increase the effectiveness of your potions !M! times."
+  },
+  "blackbeard:SwordDance": {
+    "NAME": "Sword Dance",
+    "DESCRIPTION": "This turn, your next Attack uses all equipped Weapons.",
+    "UPGRADE_DESCRIPTION": "This turn, your next !M! Attacks use all equipped Weapons."
+  },
+  "blackbeard:Cannonball": {
+    "NAME": "Cannonball",
+    "DESCRIPTION": "Deal !D! damage. Exhaust."
+  },
+  "blackbeard:CannonBarrage": {
+    "NAME": "Cannon Barrage",
+    "DESCRIPTION": "Add X Cannonballs to your hand.",
+    "UPGRADE_DESCRIPTION": "Add X+1 Cannonballs to your hand."
+  },
+  "blackbeard:Rum": {
+    "NAME": "Rum",
+    "DESCRIPTION": "Gain !M! Resistance."
+  },
+  "blackbeard:GhostInTheRum": {
+    "NAME": "Ghost In The Rum",
+    "DESCRIPTION": "Gain 1 Intangible. Lose !M! Resistance."
+  },
+  "blackbeard:GoldenStrike": {
+    "NAME": "Golden Strike",
+    "DESCRIPTION": "Deal damage equal to !M! + 2% of Gold gained this run.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Deals !D! damage.)"
+    ]
+  },
+  "blackbeard:PowderKeg": {
+    "NAME": "Powder Keg",
+    "DESCRIPTION": "Equip a {A} / {D} Weapon. When it is destroyed, deal !M! damage to all enemies."
+  },
+  "blackbeard:Recycle": {
+    "NAME": "Recycle",
+    "DESCRIPTION": "Destroy your rightmost Weapon to get [R] [R].",
+    "UPGRADE_DESCRIPTION": "Destroy your rightmost Weapon to get NL [R] [R] [R].",
+    "EXTENDED_DESCRIPTION": [
+      "I don't have a Weapon!"
+    ]
+  },
+  "blackbeard:RemoveScurvy": {
+    "NAME": "Remove Scurvy",
+    "DESCRIPTION": "Heal !M! HP. Remove all of your Debuffs. Exhaust."
+  },
+  "blackbeard:InfiniteBarrage": {
+    "NAME": "Infinite Barrage",
+    "DESCRIPTION": "At the start of each turn, add a Cannonball card to your hand.",
+    "UPGRADE_DESCRIPTION": "Innate. At the start of each turn, add a Cannonball card to your hand."
+  },
+  "blackbeard:SwordOfWisdom": {
+    "NAME": "Sword Of Wisdom",
+    "DESCRIPTION": "Equip a !M! / {D} Weapon. Whenever you attack with this Weapon, draw a card."
+  },
+  "blackbeard:SwordOfChaos": {
+    "NAME": "Sword Of Chaos",
+    "DESCRIPTION": "Equip a !M! / {D} Weapon. Whenever you attack with this Weapon, add a random card to your hand."
+  },
+  "blackbeard:PirateStrength": {
+    "NAME": "Pirate Strength",
+    "DESCRIPTION": "Gain !M! Strength."
+  },
+  "blackbeard:HumongousCannonball": {
+    "NAME": "       Humongous Cannonball",
+    "DESCRIPTION": "Deal !D! damage. Exhaust."
+  },
+  "blackbeard:GoldenCannonball": {
+    "NAME": "Golden Cannonball",
+    "DESCRIPTION": "Deal damage equal to !M! + 2% of Gold gained this run. Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Deals !D! damage.)"
+    ]
+  },
+  "blackbeard:FinalBarrage": {
+    "NAME": "Final Barrage",
+    "DESCRIPTION": "Deal damage equal to !M! times the amount of Cannonballs played this turn (every type of Cannonball counts).",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Deals !D! damage.)"
+    ]
+  },
+  "blackbeard:BrownPants": {
+    "NAME": "Brown Pants",
+    "DESCRIPTION": "Gain !M! Plated Armor."
+  },
+  "blackbeard:JollyRoger": {
+    "NAME": "Jolly Roger",
+    "DESCRIPTION": "Apply !M! Weak to ALL enemies. Exhaust."
+  },
+  "blackbeard:CaptainsCabin": {
+    "NAME": "Captain's Cabin",
+    "DESCRIPTION": "Gain !B! Block. Add !M! Cannonball to you hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. Add !M! Cannonballs to you hand."
+  },
+  "blackbeard:GoldenDefend": {
+    "NAME": "Golden Defend",
+    "DESCRIPTION": "Gain Block equal to !M! + 2% of Gold gained this run.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Gains !B! Block.)"
+    ]
+  },
+  "blackbeard:Shrapnel": {
+    "NAME": "Shrapnel",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies."
+  },
+  "blackbeard:Toast": {
+    "NAME": "Toast",
+    "DESCRIPTION": "Gain !M! Resistance. NL At the end of this turn, lose !M! Resistance."
+  }
 }

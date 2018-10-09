@@ -2,40 +2,36 @@ package blackbeard.cards;
 
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
+import blackbeard.characters.TheBlackbeard;
 import blackbeard.patches.AbstractCardEnum;
-import blackbeard.patches.CardTagsEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class HumongousCannonball extends CustomCard {
-    public static final String ID = "blackbeard:HumongousCannonball";
+public class Shrapnel extends CustomCard {
+    public static final String ID = "blackbeard:Shrapnel";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    private static final int COST = 3;
-    private static final int ATTACK_DMG = 36;
-    private static final int UPGRADE_PLUS_DMG = 12;
+    private static final int COST = 1;
+    private static final int ATTACK_DMG = 7;
+    private static final int UPGRADE_PLUS_DMG = 3;
 
-    public HumongousCannonball() {
-        super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.RARE, CardTarget.ENEMY);
+    public Shrapnel() {
+        super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_ATTACK_CARD_ID), COST, DESCRIPTION, CardType.ATTACK,
+                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.BASIC, CardTarget.ALL_ENEMY);
 
         this.baseDamage = ATTACK_DMG;
-        this.exhaust = true;
-
-        this.tags.add(CardTagsEnum.CANNONBALL);
+        this.isMultiDamage = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn),
-                AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.BLUNT_LIGHT));
     }
 
     public void upgrade() {

@@ -1,39 +1,39 @@
 {
-	"blackbeard:DefaultWeaponOrb": {
-		"NAME": "Sword",
-		"DESCRIPTION": [
-			""
-		]
-	},
-	"blackbeard:CutlassOrb": {
-		"NAME": "Cutlass",
-		"DESCRIPTION": [
-			""
-		]
-	},
-	"blackbeard:HalberdOrb": {
-		"NAME": "Halberd",
-		"DESCRIPTION": [
-			"Legendary Weapon!"
-		]
-	},
-	"blackbeard:PowderKegOrb": {
-		"NAME": "Powder Keg",
-		"DESCRIPTION": [
-			"On Destroy, deal ",
-			" damage to all enemies."
-		]
-	},
-	"blackbeard:SwordOfWisdomOrb": {
-		"NAME": "Sword Of Wisdom",
-		"DESCRIPTION": [
-			"Whenever you attack with this Weapon, draw a card."
-		]
-	},
-	"blackbeard:SwordOfChaosOrb": {
-		"NAME": "Sword Of Chaos",
-		"DESCRIPTION": [
-			"Whenever you attack with this Weapon, add a random card to your hand."
-		]
-	}
+  "blackbeard:DefaultWeaponOrb": {
+    "NAME": "Sword",
+    "DESCRIPTION": [
+      ""
+    ]
+  },
+  "blackbeard:CutlassOrb": {
+    "NAME": "Cutlass",
+    "DESCRIPTION": [
+      ""
+    ]
+  },
+  "blackbeard:HalberdOrb": {
+    "NAME": "Halberd",
+    "DESCRIPTION": [
+      "Legendary Weapon!"
+    ]
+  },
+  "blackbeard:PowderKegOrb": {
+    "NAME": "Powder Keg",
+    "DESCRIPTION": [
+      "On Destroy, deal ",
+      " damage to all enemies."
+    ]
+  },
+  "blackbeard:SwordOfWisdomOrb": {
+    "NAME": "Sword Of Wisdom",
+    "DESCRIPTION": [
+      "Whenever you attack with this Weapon, draw a card."
+    ]
+  },
+  "blackbeard:SwordOfChaosOrb": {
+    "NAME": "Sword Of Chaos",
+    "DESCRIPTION": [
+      "Whenever you attack with this Weapon, add a random card to your hand."
+    ]
+  }
 }

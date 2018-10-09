@@ -1,47 +1,54 @@
 {
-	"blackbeard:WeaponPower": {
-		"NAME": "Weapons",
-		"DESCRIPTIONS": [
-			"Whenever you play an Attack card, remove 1 Durability from your rightmost Weapon and deal its Attack damage."
-		]
-	},
-	"blackbeard:ParrotPower": {
-		"NAME": "Parrot",
-		"DESCRIPTIONS": [
-			"The last card played each turn is played an additional time."
-		]
-	},
-	"blackbeard:TheDrunkenSailorPower": {
-		"NAME": "The Drunken Sailor",
-		"DESCRIPTIONS": [
-			"Increase the effectiveness of your potions ",
-			" times."
-		]
-	},
-	"blackbeard:SwordDancePower": {
-		"NAME": "Sword Dance",
-		"DESCRIPTIONS": [
-			"This turn, your next Attack uses all equipped Weapons.",
-			"This turn, your next ",
-			" Attacks use all equipped Weapons."
-		]
-	},
-	"blackbeard:ResistancePower": {
-		"NAME": "Resistance",
-		"DESCRIPTIONS": [
-			"You take ",
-			" less",
-			" more",
-			" damage from enemy attacks."
-		]
-	},
-	"blackbeard:InfiniteBarragePower": {
-		"NAME": "Infinite Barrage",
-		"DESCRIPTIONS": [
-			"At the start of each turn, add",
-			" Cannonball card ",
-			" Cannonball cards ",
-			"to your hand."
-		]
-	}
+  "blackbeard:WeaponPower": {
+    "NAME": "Weapons",
+    "DESCRIPTIONS": [
+      "Whenever you play an Attack card, remove 1 Durability from your rightmost Weapon and deal its Attack damage."
+    ]
+  },
+  "blackbeard:ParrotPower": {
+    "NAME": "Parrot",
+    "DESCRIPTIONS": [
+      "The last card played each turn is played an additional time."
+    ]
+  },
+  "blackbeard:TheDrunkenSailorPower": {
+    "NAME": "The Drunken Sailor",
+    "DESCRIPTIONS": [
+      "Increase the effectiveness of your potions ",
+      " times."
+    ]
+  },
+  "blackbeard:SwordDancePower": {
+    "NAME": "Sword Dance",
+    "DESCRIPTIONS": [
+      "This turn, your next Attack uses all equipped Weapons.",
+      "This turn, your next ",
+      " Attacks use all equipped Weapons."
+    ]
+  },
+  "blackbeard:ResistancePower": {
+    "NAME": "Resistance",
+    "DESCRIPTIONS": [
+      "You take ",
+      " less",
+      " more",
+      " damage from enemy attacks."
+    ]
+  },
+  "blackbeard:InfiniteBarragePower": {
+    "NAME": "Infinite Barrage",
+    "DESCRIPTIONS": [
+      "At the start of each turn, add ",
+      " Cannonball card",
+      " Cannonball cards",
+      " to your hand."
+    ]
+  },
+  "blackbeard:ResistanceDownPower": {
+    "NAME": "Resistance Down",
+    "DESCRIPTIONS": [
+      "At the end of this turn, lose ",
+      " Resistance."
+    ]
+  }
 }

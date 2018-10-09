@@ -3,6 +3,7 @@ package blackbeard.cards;
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.patches.AbstractCardEnum;
+import blackbeard.patches.CardTagsEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -27,6 +28,8 @@ public class Cannonball extends CustomCard {
 
         this.baseDamage = ATTACK_DMG;
         this.exhaust = true;
+
+        this.tags.add(CardTagsEnum.CANNONBALL);
     }
 
     @Override
