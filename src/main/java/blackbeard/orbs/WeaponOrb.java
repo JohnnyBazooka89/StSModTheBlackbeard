@@ -36,7 +36,7 @@ public abstract class WeaponOrb extends AbstractOrb {
         if(StringUtils.isNotEmpty(descriptionToSet)) {
             descriptionToSet += " NL ";
         }
-        descriptionToSet += "Attack: " + attack + " NL " + "Durability: " + durability;
+        descriptionToSet += "Attack: " + attack + " NL " + "Durability: #b" + durability;
         this.description = descriptionToSet;
     }
 

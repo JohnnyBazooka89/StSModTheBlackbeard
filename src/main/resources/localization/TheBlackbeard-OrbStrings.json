@@ -14,13 +14,13 @@
   "blackbeard:HalberdOrb": {
     "NAME": "Halberd",
     "DESCRIPTION": [
-      "Legendary Weapon!"
+      "Rare Weapon!"
     ]
   },
   "blackbeard:PowderKegOrb": {
     "NAME": "Powder Keg",
     "DESCRIPTION": [
-      "On Destroy, deal ",
+      "On Destroy, deal #b",
       " damage to all enemies."
     ]
   },
@@ -34,6 +34,12 @@
     "NAME": "Sword Of Chaos",
     "DESCRIPTION": [
       "Whenever you attack with this Weapon, add a random card to your hand."
+    ]
+  },
+  "blackbeard:CatONineTailsOrb": {
+    "NAME": "Cat O' Nine Tails",
+    "DESCRIPTION": [
+      "After you attack with this Weapon, apply #b1 Vulnerable to the target."
     ]
   }
 }

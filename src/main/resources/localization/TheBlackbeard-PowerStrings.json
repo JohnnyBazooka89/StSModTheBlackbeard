@@ -2,7 +2,7 @@
   "blackbeard:WeaponPower": {
     "NAME": "Weapons",
     "DESCRIPTIONS": [
-      "Whenever you play an Attack card, remove 1 Durability from your rightmost Weapon and deal its Attack damage."
+      "Whenever you play an Attack card, remove #b1 Durability from your rightmost Weapon and deal its Attack damage."
     ]
   },
   "blackbeard:ParrotPower": {
@@ -14,7 +14,7 @@
   "blackbeard:TheDrunkenSailorPower": {
     "NAME": "The Drunken Sailor",
     "DESCRIPTIONS": [
-      "Increase the effectiveness of your potions ",
+      "Increase the effectiveness of your potions #b",
       " times."
     ]
   },
@@ -22,14 +22,14 @@
     "NAME": "Sword Dance",
     "DESCRIPTIONS": [
       "This turn, your next Attack uses all equipped Weapons.",
-      "This turn, your next ",
+      "This turn, your next #b",
       " Attacks use all equipped Weapons."
     ]
   },
   "blackbeard:ResistancePower": {
     "NAME": "Resistance",
     "DESCRIPTIONS": [
-      "You take ",
+      "You take #b",
       " less",
       " more",
       " damage from enemy attacks."
@@ -38,7 +38,7 @@
   "blackbeard:InfiniteBarragePower": {
     "NAME": "Infinite Barrage",
     "DESCRIPTIONS": [
-      "At the start of each turn, add ",
+      "At the start of each turn, add #b",
       " Cannonball card",
       " Cannonball cards",
       " to your hand."
@@ -47,7 +47,7 @@
   "blackbeard:ResistanceDownPower": {
     "NAME": "Resistance Down",
     "DESCRIPTIONS": [
-      "At the end of this turn, lose ",
+      "At the end of this turn, lose #b",
       " Resistance."
     ]
   }

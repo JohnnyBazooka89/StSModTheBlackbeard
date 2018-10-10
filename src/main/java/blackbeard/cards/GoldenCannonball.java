@@ -4,6 +4,7 @@ import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.patches.AbstractCardEnum;
 import blackbeard.patches.CardTagsEnum;
+import blackbeard.utils.GoldenCardsUtil;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -41,15 +42,15 @@ public class GoldenCannonball extends CustomCard {
 
     @Override
     public void applyPowers() {
-        this.baseDamage = this.baseMagicNumber + (CardCrawlGame.goldGained / 100);
+        this.baseDamage = this.baseMagicNumber + (CardCrawlGame.goldGained / 50);
         super.applyPowers();
-        this.rawDescription = DESCRIPTION + EXTENDED_DESCRIPTION[0];
+        this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(DESCRIPTION, EXTENDED_DESCRIPTION) + EXTENDED_DESCRIPTION[0];
         this.initializeDescription();
     }
 
     @Override
     public void onMoveToDiscard() {
-        this.rawDescription = DESCRIPTION;
+        this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(DESCRIPTION, EXTENDED_DESCRIPTION);
         this.initializeDescription();
     }
 

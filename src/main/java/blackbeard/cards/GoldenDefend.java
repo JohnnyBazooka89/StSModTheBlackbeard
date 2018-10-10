@@ -3,6 +3,7 @@ package blackbeard.cards;
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.patches.AbstractCardEnum;
+import blackbeard.utils.GoldenCardsUtil;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -37,12 +38,12 @@ public class GoldenDefend extends CustomCard {
     public void applyPowers() {
         this.baseBlock = this.baseMagicNumber + (CardCrawlGame.goldGained / 100);
         super.applyPowers();
-        this.rawDescription = DESCRIPTION + EXTENDED_DESCRIPTION[0];
+        this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(DESCRIPTION, EXTENDED_DESCRIPTION) + EXTENDED_DESCRIPTION[0];
         this.initializeDescription();
     }
 
     public void onMoveToDiscard() {
-        this.rawDescription = DESCRIPTION;
+        this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(DESCRIPTION, EXTENDED_DESCRIPTION);
         this.initializeDescription();
     }
 

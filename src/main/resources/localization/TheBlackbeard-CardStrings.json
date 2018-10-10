@@ -63,9 +63,11 @@
   },
   "blackbeard:GoldenStrike": {
     "NAME": "Golden Strike",
-    "DESCRIPTION": "Deal damage equal to !M! + 1% of Gold gained this run.",
+    "DESCRIPTION": "Deal damage equal to !M! + 1 % of Gold gained this run.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Deals !D! damage.)"
+      " NL (Deals !D! damage.)",
+      " NL You gained ",
+      " Gold this run."
     ]
   },
   "blackbeard:PowderKeg": {
@@ -107,9 +109,11 @@
   },
   "blackbeard:GoldenCannonball": {
     "NAME": "Golden Cannonball",
-    "DESCRIPTION": "Deal damage equal to !M! + 1% of Gold gained this run. Exhaust.",
+    "DESCRIPTION": "Deal damage equal to !M! + 2 % of Gold gained this run. Exhaust.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Deals !D! damage.)"
+      " NL (Deals !D! damage.)",
+      " NL You gained ",
+      " Gold this run."
     ]
   },
   "blackbeard:FinalBarrage": {
@@ -134,9 +138,11 @@
   },
   "blackbeard:GoldenDefend": {
     "NAME": "Golden Defend",
-    "DESCRIPTION": "Gain Block equal to !M! + 1% of Gold gained this run.",
+    "DESCRIPTION": "Gain Block equal to !M! + 1 % of Gold gained this run.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Gains !B! Block.)"
+      " NL (Gains !B! Block.)",
+      " NL You gained ",
+      " Gold this run."
     ]
   },
   "blackbeard:Shrapnel": {
@@ -146,5 +152,13 @@
   "blackbeard:Toast": {
     "NAME": "Toast",
     "DESCRIPTION": "Gain !M! Resistance. NL At the end of this turn, lose !M! Resistance."
+  },
+  "blackbeard:CatONineTails": {
+    "NAME": "Cat O' Nine Tails",
+    "DESCRIPTION": "Equip a !M! / {D} Weapon. After you attack with this Weapon, apply 1 Vulnerable to the target."
+  },
+  "blackbeard:PirateEarring": {
+    "NAME": "Pirate Earring",
+    "DESCRIPTION": "Gain !M! Artifact."
   }
 }
