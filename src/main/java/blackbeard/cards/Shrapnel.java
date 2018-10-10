@@ -19,7 +19,7 @@ public class Shrapnel extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
     private static final int ATTACK_DMG = 7;
-    private static final int UPGRADE_PLUS_DMG = 3;
+    private static final int UPGRADE_PLUS_ATTACK_DMG = 3;
 
     public Shrapnel() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_ATTACK_CARD_ID), COST, DESCRIPTION, CardType.ATTACK,
@@ -37,7 +37,7 @@ public class Shrapnel extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(UPGRADE_PLUS_DMG);
+            this.upgradeDamage(UPGRADE_PLUS_ATTACK_DMG);
         }
     }
 }

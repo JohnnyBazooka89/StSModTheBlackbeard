@@ -22,7 +22,7 @@ public class GoldenCannonball extends CustomCard {
     public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
     private static final int COST = 1;
     private static final int ATTACK_DMG = 8;
-    private static final int UPGRADE_PLUS_DMG = 4;
+    private static final int UPGRADE_PLUS_ATTACK_DMG = 4;
 
     public GoldenCannonball() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK,
@@ -57,7 +57,7 @@ public class GoldenCannonball extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADE_PLUS_DMG);
+            this.upgradeMagicNumber(UPGRADE_PLUS_ATTACK_DMG);
         }
     }
 }
