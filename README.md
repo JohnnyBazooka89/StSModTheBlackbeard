@@ -34,11 +34,22 @@ Currently developed cards:
 4. Copy BaseMod.jar and TheBlackbeardMod.jar into folder "mods".
 5. Double click on MTS.cmd, select "BaseMod" and "The Blackbeard Mod", and click "Play" button.
 
-Here is a great video showing how to install mods, by Xterminator: https://www.youtube.com/watch?v=r2m2aL1eEjw
+## Set Ascension Level to 20 (optional) ##
+
+If you want to play Ascension 20 straight away, you have to:
+1. Go to your Slay the Spire preferences folder for example: "C:\Program Files (x86)\Steam\steamapps\common\SlayTheSpire\preferences".
+2. Open file named "BLACKBEARD_CLASS". If there is no such file, then simply create it (it has no extension).
+3. You have to add property "ASCENSION_LEVEL" with value "20", and ensure that value of property "WIN_COUNT" is bigger than 0. If you just created the file, you can copy and paste this:
+```
+{
+  "ASCENSION_LEVEL": "20",
+  "WIN_COUNT": "1"
+}
+```
 
 ## Special Thanks ##
 1. Thanks to the [developers](https://www.megacrit.com/) of **SlayTheSpire** for making such a good game.
-2. Thanks to the creators of ModTheSpire and BaseMod for making great tools for modding.
+2. Thanks to the creators of ModTheSpire and BaseMod for creating great tools for modding.
 3. Thanks to [JoINrbs](https://www.twitch.tv/joinrbs) for great and educational Slay the Spire streams.
 
 ## Other Mods ##

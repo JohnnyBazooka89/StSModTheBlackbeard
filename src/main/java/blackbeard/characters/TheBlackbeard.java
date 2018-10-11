@@ -67,7 +67,7 @@ public class TheBlackbeard extends CustomPlayer {
         return new CharSelectInfo("The Blackbeard",
                 "After following his dusty map, he found himself trying to Slay the Spire. NL " +
                         "Skilled in using weapons, he wants all the treasures for himself.",
-                70, 70, 0, 99, 5,
+                75, 75, 0, 99, 5,
                 TheBlackbeardEnum.BLACKBEARD_CLASS, getStartingRelics(), getStartingDeck(), false);
     }
 

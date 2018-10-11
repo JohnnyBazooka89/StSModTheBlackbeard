@@ -172,6 +172,8 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addCard(new CatONineTails());
         BaseMod.addCard(new PirateEarring());
         BaseMod.addCard(new Murder());
+        BaseMod.addCard(new Bandana());
+        BaseMod.addCard(new TacticalRetreat());
 
         logger.info("done editing cards");
     }

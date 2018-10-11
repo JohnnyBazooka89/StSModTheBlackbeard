@@ -82,7 +82,7 @@ public class WeaponPower extends AbstractPower {
         }
 
         for(int i=0; i<weaponsToRemove.size(); i++){
-            ((WeaponOrb)weaponsToRemove.get(i)).effectOnDestroy();
+            ((WeaponOrb) weaponsToRemove.get(i)).onEvoke();
         }
         orbsList.removeAll(weaponsToRemove);
 

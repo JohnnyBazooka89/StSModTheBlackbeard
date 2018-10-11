@@ -101,8 +101,5 @@ public abstract class WeaponOrb extends AbstractOrb {
         //Override to get effect on use
     }
 
-    public void effectOnDestroy(){
-        //Override to get effect on destroy
-    }
 }
 

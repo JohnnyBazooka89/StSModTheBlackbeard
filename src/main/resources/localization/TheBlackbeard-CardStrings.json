@@ -167,5 +167,14 @@
     "EXTENDED_DESCRIPTION": [
       "I have to target Normal monster!"
     ]
+  },
+  "blackbeard:Bandana": {
+    "NAME": "Bandana",
+    "DESCRIPTION": "Gain !M! Dexterity."
+  },
+  "blackbeard:TacticalRetreat": {
+    "NAME": "Tactical Retreat",
+    "DESCRIPTION": "Gain !B! Block. NL Draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Draw !M! cards."
   }
 }
