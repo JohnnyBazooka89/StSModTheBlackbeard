@@ -41,5 +41,11 @@
     "DESCRIPTION": [
       "After you attack with this Weapon, apply #b1 Vulnerable to the target."
     ]
+  },
+  "blackbeard:DaggerOrb": {
+    "NAME": "Dagger",
+    "DESCRIPTION": [
+      ""
+    ]
   }
 }

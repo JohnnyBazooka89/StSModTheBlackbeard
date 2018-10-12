@@ -50,5 +50,12 @@
       "At the end of this turn, lose #b",
       " Resistance."
     ]
+  },
+  "blackbeard:KeelhaulingPower": {
+    "NAME": "Keelhauling",
+    "DESCRIPTIONS": [
+      "At the start of their turn, this enemy is dealt #b8 damage. Lasts for #b",
+      " turns."
+    ]
   }
 }

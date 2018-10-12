@@ -176,5 +176,43 @@
     "NAME": "Tactical Retreat",
     "DESCRIPTION": "Gain !B! Block. NL Draw !M! card.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Draw !M! cards."
+  },
+  "blackbeard:Dagger": {
+    "NAME": "Dagger",
+    "DESCRIPTION": "Equip a !M! / {D} Weapon."
+  },
+  "blackbeard:PiratesWill": {
+    "NAME": "Pirate's Will",
+    "DESCRIPTION": "Remove all of your Debuffs. NL Draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Remove all of your Debuffs. NL Draw !M! cards."
+  },
+  "blackbeard:WoodenLeg": {
+    "NAME": "Wooden Leg",
+    "DESCRIPTION": "Lose 2 Dexterity. NL Gain !M! Strength."
+  },
+  "blackbeard:Eyepatch": {
+    "NAME": "Eyepatch",
+    "DESCRIPTION": "Gain !M! Weak. NL At the start of your turn, draw 1 additional card.",
+    "UPGRADE_DESCRIPTION": "Innate. Gain !M! Weak. NL At the start of your turn, draw 1 additional card."
+  },
+  "blackbeard:CaptainsHat": {
+    "NAME": "Captain's Hat",
+    "DESCRIPTION": "Gain !M! Strength. NL Gain !M! Resistance."
+  },
+  "blackbeard:Keelhauling": {
+    "NAME": "Keelhauling",
+    "DESCRIPTION": "Targeted enemy is dealt 8 damage at the start of their turn. NL Lasts for !M! turns."
+  },
+  "blackbeard:BlindAttacks": {
+    "NAME": "Blind Attacks",
+    "DESCRIPTION": "Deal !D! damage to a random enemy 3 times."
+  },
+  "blackbeard:Boarding": {
+    "NAME": "Boarding",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Draw !M! cards."
+  },
+  "blackbeard:AgileStrike": {
+    "NAME": "Agile Strike",
+    "DESCRIPTION": "Deal !D! damage. NL If you have equipped a Weapon this turn, reduce cost of NL this card to 0."
   }
 }
