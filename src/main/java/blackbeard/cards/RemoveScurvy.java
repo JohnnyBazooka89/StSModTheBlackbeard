@@ -27,14 +27,14 @@ public class RemoveScurvy extends CustomCard {
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
 
         this.exhaust = true;
-        this.baseMagicNumber = HEAL;
+        this.baseMagicNumber = this.magicNumber = HEAL;
 
         this.tags.add(CardTags.HEALING);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, this.baseMagicNumber));
+        AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, this.magicNumber));
         AbstractDungeon.actionManager.addToBottom(new RemoveDebuffsAction(p));
     }
 

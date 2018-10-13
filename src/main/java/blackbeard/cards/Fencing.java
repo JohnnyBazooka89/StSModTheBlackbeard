@@ -27,18 +27,17 @@ public class Fencing extends CustomCard {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_SKILL_CARD_ID), COST, DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
 
-        this.baseMagicNumber = UPGRADE_VALUE;
+        this.baseMagicNumber = this.magicNumber = UPGRADE_VALUE;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new UpgradeWeaponsAction(this.baseMagicNumber, this.baseMagicNumber, WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON));
+        AbstractDungeon.actionManager.addToBottom(new UpgradeWeaponsAction(this.magicNumber, this.magicNumber, WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON));
     }
 
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.rawDescription = "test";
             this.upgradeMagicNumber(UPGRADED_PLUS_VALUE);
         }
     }

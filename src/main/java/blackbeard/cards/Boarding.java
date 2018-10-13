@@ -27,15 +27,15 @@ public class Boarding extends CustomCard {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_ATTACK_CARD_ID), COST, DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
 
-        this.baseDamage = ATTACK_DMG;
-        this.baseMagicNumber = CARDS_TO_DRAW;
+        this.baseDamage = this.damage = ATTACK_DMG;
+        this.baseMagicNumber = this.magicNumber = CARDS_TO_DRAW;
         this.isMultiDamage = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, this.baseMagicNumber));
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, this.magicNumber));
     }
 
     public void upgrade() {

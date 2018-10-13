@@ -28,12 +28,12 @@ public class PowderKeg extends CustomCard {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(PowderKeg.ID), COST, DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
 
-        this.baseMagicNumber = DAMAGE_ON_DESTROY;
+        this.baseMagicNumber = this.magicNumber = DAMAGE_ON_DESTROY;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new EquipAction(new PowderKegOrb(WEAPON_ATTACK, WEAPON_DURABILITY, this.baseMagicNumber)));
+        AbstractDungeon.actionManager.addToBottom(new EquipAction(new PowderKegOrb(WEAPON_ATTACK, WEAPON_DURABILITY, this.magicNumber)));
     }
 
     public void upgrade() {

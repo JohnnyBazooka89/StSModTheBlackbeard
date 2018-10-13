@@ -26,12 +26,12 @@ public class BlindAttacks extends CustomCard {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_ATTACK_CARD_ID), COST, DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.ALL_ENEMY);
 
-        this.baseDamage = ATTACK_DMG;
+        this.baseDamage = this.damage = ATTACK_DMG;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new SwordBoomerangAction(AbstractDungeon.getMonsters().getRandomMonster(true), new DamageInfo(p, this.baseDamage), NUMBER_OF_ATTACKS));
+        AbstractDungeon.actionManager.addToBottom(new SwordBoomerangAction(AbstractDungeon.getMonsters().getRandomMonster(true), new DamageInfo(p, this.damage), NUMBER_OF_ATTACKS));
     }
 
     public void upgrade() {

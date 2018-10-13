@@ -27,8 +27,8 @@ public class GoldenRain extends CustomCard {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_ATTACK_CARD_ID), COST, DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.RARE, CardTarget.ALL_ENEMY);
 
-        this.baseDamage = 0;
-        this.baseMagicNumber = PERCENT_OF_GOLD_GAINED;
+        this.baseDamage = this.damage = 0;
+        this.baseMagicNumber = this.magicNumber = PERCENT_OF_GOLD_GAINED;
         this.isMultiDamage = true;
 
         if (CardCrawlGame.isInARun()) {
@@ -44,7 +44,7 @@ public class GoldenRain extends CustomCard {
 
     @Override
     public void applyPowers() {
-        this.baseDamage = (CardCrawlGame.goldGained / (100 / this.baseMagicNumber));
+        this.baseDamage = this.damage = (CardCrawlGame.goldGained / (100 / this.magicNumber));
         super.applyPowers();
         this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(DESCRIPTION, EXTENDED_DESCRIPTION) + EXTENDED_DESCRIPTION[0];
         this.initializeDescription();

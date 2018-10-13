@@ -26,12 +26,12 @@ public class SwordDance extends CustomCard {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_SKILL_CARD_ID), COST, DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
 
-        this.baseMagicNumber = NUMBER_OF_ATTACKS;
+        this.baseMagicNumber = this.magicNumber = NUMBER_OF_ATTACKS;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new SwordDancePower(p, this.baseMagicNumber), this.baseMagicNumber));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new SwordDancePower(p, this.magicNumber), this.magicNumber));
     }
 
     public void upgrade() {

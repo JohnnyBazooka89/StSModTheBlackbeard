@@ -25,12 +25,12 @@ public class TheDrunkenSailor extends CustomCard {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_POWER_CARD_ID), COST, DESCRIPTION, CardType.POWER,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.RARE, CardTarget.SELF);
 
-        this.baseMagicNumber = POTENCY_MULTIPLIER;
+        this.baseMagicNumber = this.magicNumber = POTENCY_MULTIPLIER;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new TheDrunkenSailorPower(p, this.baseMagicNumber - 1), this.baseMagicNumber - 1));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new TheDrunkenSailorPower(p, this.magicNumber - 1), this.magicNumber - 1));
     }
 
     public void upgrade() {

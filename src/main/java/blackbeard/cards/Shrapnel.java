@@ -25,7 +25,7 @@ public class Shrapnel extends CustomCard {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_ATTACK_CARD_ID), COST, DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.ALL_ENEMY);
 
-        this.baseDamage = ATTACK_DMG;
+        this.baseDamage = this.damage = ATTACK_DMG;
         this.isMultiDamage = true;
     }
 

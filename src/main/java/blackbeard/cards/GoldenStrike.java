@@ -27,8 +27,8 @@ public class GoldenStrike extends CustomCard {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.ENEMY);
 
-        this.baseMagicNumber = ATTACK_DMG;
-        this.baseDamage = ATTACK_DMG;
+        this.baseMagicNumber = this.magicNumber = ATTACK_DMG;
+        this.baseDamage = this.damage = ATTACK_DMG;
 
         this.tags.add(CardTags.STRIKE);
 
@@ -40,12 +40,12 @@ public class GoldenStrike extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.baseDamage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
     }
 
     @Override
     public void applyPowers() {
-        this.baseDamage = this.baseMagicNumber + (CardCrawlGame.goldGained / 100);
+        this.baseDamage = this.damage = this.magicNumber + (CardCrawlGame.goldGained / 100);
         super.applyPowers();
         this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(DESCRIPTION, EXTENDED_DESCRIPTION) + EXTENDED_DESCRIPTION[0];
         this.initializeDescription();

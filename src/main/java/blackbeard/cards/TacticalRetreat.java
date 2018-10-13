@@ -28,14 +28,14 @@ public class TacticalRetreat extends CustomCard {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_SKILL_CARD_ID), COST, DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.SELF);
 
-        this.baseBlock = BLOCK_AMOUNT;
-        this.baseMagicNumber = CARDS_TO_DRAW;
+        this.baseBlock = this.block = BLOCK_AMOUNT;
+        this.baseMagicNumber = this.magicNumber = CARDS_TO_DRAW;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.baseBlock));
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.baseMagicNumber));
+        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.magicNumber));
     }
 
     public void upgrade() {

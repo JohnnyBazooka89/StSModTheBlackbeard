@@ -30,7 +30,7 @@ public class AgileStrike extends CustomCard {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_ATTACK_CARD_ID), COST, DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
 
-        this.baseDamage = ATTACK_DMG;
+        this.baseDamage = this.damage = ATTACK_DMG;
 
         this.tags.add(CardTags.STRIKE);
 

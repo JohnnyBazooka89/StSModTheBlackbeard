@@ -26,8 +26,8 @@ public class Revenge extends CustomCard {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_ATTACK_CARD_ID), COST, DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
 
-        this.baseDamage = 0;
-        this.baseMagicNumber = MAXIMUM_DAMAGE;
+        this.baseDamage = this.damage = 0;
+        this.baseMagicNumber = this.magicNumber = MAXIMUM_DAMAGE;
         this.isMultiDamage = true;
     }
 
@@ -38,7 +38,7 @@ public class Revenge extends CustomCard {
 
     @Override
     public void applyPowers() {
-        this.baseDamage = (int) ((1.0 - (1.0 * AbstractDungeon.player.currentHealth / AbstractDungeon.player.maxHealth)) * this.baseMagicNumber);
+        this.baseDamage = this.damage = (int) ((1.0 - (1.0 * AbstractDungeon.player.currentHealth / AbstractDungeon.player.maxHealth)) * this.magicNumber);
         super.applyPowers();
         this.rawDescription = DESCRIPTION + EXTENDED_DESCRIPTION[0];
         this.initializeDescription();

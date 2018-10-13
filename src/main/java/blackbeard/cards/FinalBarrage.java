@@ -31,13 +31,13 @@ public class FinalBarrage extends CustomCard {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_ATTACK_CARD_ID), COST, DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
 
-        this.baseMagicNumber = ATTACK_PER_CANNONBALL;
-        this.baseDamage = 0;
+        this.baseMagicNumber = this.magicNumber = ATTACK_PER_CANNONBALL;
+        this.baseDamage = this.damage = 0;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.baseDamage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
     }
 
     @Override
@@ -52,7 +52,7 @@ public class FinalBarrage extends CustomCard {
             }
         }
 
-        this.baseDamage = cannonballsPlayedThisTurn * this.baseMagicNumber;
+        this.baseDamage = this.damage = cannonballsPlayedThisTurn * this.magicNumber;
         super.applyPowers();
         this.rawDescription = DESCRIPTION + EXTENDED_DESCRIPTION[0];
         this.initializeDescription();

@@ -28,8 +28,8 @@ public class GoldenCannonball extends CustomCard {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
 
-        this.baseMagicNumber = ATTACK_DMG;
-        this.baseDamage = ATTACK_DMG;
+        this.baseMagicNumber = this.magicNumber = ATTACK_DMG;
+        this.baseDamage = this.damage = ATTACK_DMG;
         this.exhaust = true;
 
         this.tags.add(CardTagsEnum.CANNONBALL);
@@ -42,12 +42,12 @@ public class GoldenCannonball extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.baseDamage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
     }
 
     @Override
     public void applyPowers() {
-        this.baseDamage = this.baseMagicNumber + (CardCrawlGame.goldGained / 50);
+        this.baseDamage = this.damage = this.magicNumber + (CardCrawlGame.goldGained / 50);
         super.applyPowers();
         this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(DESCRIPTION, EXTENDED_DESCRIPTION) + EXTENDED_DESCRIPTION[0];
         this.initializeDescription();

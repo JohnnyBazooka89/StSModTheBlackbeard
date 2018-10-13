@@ -27,14 +27,14 @@ public class PiratesWill extends CustomCard {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_SKILL_CARD_ID), COST, DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
 
+        this.baseMagicNumber = this.magicNumber = CARDS_TO_DRAW;
         this.exhaust = true;
-        this.baseMagicNumber = CARDS_TO_DRAW;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new RemoveDebuffsAction(p));
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, this.baseMagicNumber));
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, this.magicNumber));
     }
 
     public void upgrade() {

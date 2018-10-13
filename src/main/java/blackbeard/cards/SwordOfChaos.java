@@ -28,12 +28,12 @@ public class SwordOfChaos extends CustomCard {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_SKILL_CARD_ID), COST, DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
 
-        this.baseMagicNumber = WEAPON_ATTACK;
+        this.baseMagicNumber = this.magicNumber = WEAPON_ATTACK;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new EquipAction(new SwordOfChaosOrb(WEAPON_ATTACK, WEAPON_DURABILITY)));
+        AbstractDungeon.actionManager.addToBottom(new EquipAction(new SwordOfChaosOrb(this.magicNumber, WEAPON_DURABILITY)));
     }
 
     public void upgrade() {

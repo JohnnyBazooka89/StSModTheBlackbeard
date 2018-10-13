@@ -25,14 +25,14 @@ public class DefendBlackbeard extends CustomCard {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, AbstractCard.CardType.SKILL,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.BASIC, AbstractCard.CardTarget.SELF);
 
-        this.baseBlock = BLOCK_AMOUNT;
+        this.baseBlock = this.block = BLOCK_AMOUNT;
 
         this.tags.add(BaseModCardTags.BASIC_DEFEND);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.baseBlock));
+        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
     }
 
     public void upgrade() {

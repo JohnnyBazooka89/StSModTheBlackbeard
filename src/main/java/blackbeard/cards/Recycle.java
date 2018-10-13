@@ -30,13 +30,13 @@ public class Recycle extends CustomCard {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_SKILL_CARD_ID), COST, DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
 
-        this.baseMagicNumber = ENERGY_TO_GET;
+        this.baseMagicNumber = this.magicNumber = ENERGY_TO_GET;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new DestroyWeaponsAction(WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON));
-        AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(this.baseMagicNumber));
+        AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(this.magicNumber));
     }
 
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {

@@ -27,13 +27,13 @@ public class Sharpening extends CustomCard {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_SKILL_CARD_ID), COST, DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.SELF);
 
-        this.baseMagicNumber = WEAPON_ATTACK;
+        this.baseMagicNumber = this.magicNumber = WEAPON_ATTACK;
 
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new UpgradeWeaponsAction(this.baseMagicNumber, 0, WeaponsToUseEnum.ALL_WEAPONS));
+        AbstractDungeon.actionManager.addToBottom(new UpgradeWeaponsAction(this.magicNumber, 0, WeaponsToUseEnum.ALL_WEAPONS));
     }
 
     public void upgrade() {

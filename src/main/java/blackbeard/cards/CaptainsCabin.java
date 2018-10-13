@@ -29,14 +29,14 @@ public class CaptainsCabin extends CustomCard {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_SKILL_CARD_ID), COST, DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
 
-        this.baseMagicNumber = AMOUNT_OF_CANNONBALLS;
-        this.baseBlock = BLOCK_AMOUNT;
+        this.baseMagicNumber = this.magicNumber = AMOUNT_OF_CANNONBALLS;
+        this.baseBlock = this.block = BLOCK_AMOUNT;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.baseBlock));
-        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Cannonball(), this.baseMagicNumber));
+        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
+        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Cannonball(), this.magicNumber));
     }
 
     public void upgrade() {

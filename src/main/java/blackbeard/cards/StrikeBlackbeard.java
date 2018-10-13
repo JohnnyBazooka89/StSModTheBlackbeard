@@ -27,7 +27,7 @@ public class StrikeBlackbeard extends CustomCard {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, AbstractCard.CardType.ATTACK,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.BASIC, AbstractCard.CardTarget.ENEMY);
 
-        this.baseDamage = ATTACK_DMG;
+        this.baseDamage = this.damage = ATTACK_DMG;
 
         this.tags.add(CardTags.STRIKE);
         this.tags.add(BaseModCardTags.BASIC_STRIKE);

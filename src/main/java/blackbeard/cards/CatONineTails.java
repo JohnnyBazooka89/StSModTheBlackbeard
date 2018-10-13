@@ -27,12 +27,12 @@ public class CatONineTails extends CustomCard {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(CatONineTails.ID), COST, DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.SELF);
 
-        this.baseMagicNumber = WEAPON_DURABILITY;
+        this.baseMagicNumber = this.magicNumber = WEAPON_DURABILITY;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new EquipAction(new CatONineTailsOrb(WEAPON_ATTACK, this.baseMagicNumber)));
+        AbstractDungeon.actionManager.addToBottom(new EquipAction(new CatONineTailsOrb(WEAPON_ATTACK, this.magicNumber)));
     }
 
     public void upgrade() {

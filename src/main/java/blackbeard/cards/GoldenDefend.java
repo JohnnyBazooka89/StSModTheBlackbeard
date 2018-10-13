@@ -25,8 +25,8 @@ public class GoldenDefend extends CustomCard {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.SELF);
 
-        this.baseMagicNumber = BLOCK_AMOUNT;
-        this.baseBlock = BLOCK_AMOUNT;
+        this.baseMagicNumber = this.magicNumber = BLOCK_AMOUNT;
+        this.baseBlock = this.block = BLOCK_AMOUNT;
 
         if (CardCrawlGame.isInARun()) {
             this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(DESCRIPTION, EXTENDED_DESCRIPTION);
@@ -36,12 +36,12 @@ public class GoldenDefend extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.baseBlock));
+        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
     }
 
     @Override
     public void applyPowers() {
-        this.baseBlock = this.baseMagicNumber + (CardCrawlGame.goldGained / 100);
+        this.baseBlock = this.block = this.magicNumber + (CardCrawlGame.goldGained / 100);
         super.applyPowers();
         this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(DESCRIPTION, EXTENDED_DESCRIPTION) + EXTENDED_DESCRIPTION[0];
         this.initializeDescription();

@@ -32,7 +32,7 @@ public class QuickSlash extends CustomCard {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_ATTACK_CARD_ID), COST, DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.COMMON, AbstractCard.CardTarget.ENEMY);
 
-        this.baseDamage = DAMAGE;
+        this.baseDamage = this.damage = DAMAGE;
     }
 
     @Override

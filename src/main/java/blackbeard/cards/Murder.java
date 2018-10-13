@@ -29,7 +29,7 @@ public class Murder extends CustomCard {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_ATTACK_CARD_ID), COST, DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.RARE, CardTarget.ENEMY);
 
-        this.baseDamage = ATTACK_DMG;
+        this.baseDamage = this.damage = ATTACK_DMG;
         this.isEthereal = true;
     }
 
