@@ -1,7 +1,6 @@
 package blackbeard.cards;
 
 import basemod.abstracts.CustomCard;
-import basemod.helpers.BaseModCardTags;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.EquipAction;
 import blackbeard.orbs.CutlassOrb;
@@ -28,8 +27,6 @@ public class Cutlass extends CustomCard {
     public Cutlass() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(Cutlass.ID), COST, DESCRIPTION, AbstractCard.CardType.SKILL,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.BASIC, AbstractCard.CardTarget.SELF);
-
-        this.tags.add(BaseModCardTags.GREMLIN_MATCH);
     }
 
     @Override

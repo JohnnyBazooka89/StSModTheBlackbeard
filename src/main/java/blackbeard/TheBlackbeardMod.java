@@ -112,10 +112,13 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         logger.info("begin editing characters");
 
         logger.info("add " + TheBlackbeardEnum.BLACKBEARD_CLASS.toString());
-        BaseMod.addCharacter(TheBlackbeard.class, "The Blackbeard", "TheBlackbeardClassString",
-                AbstractCardEnum.BLACKBEARD_BLACK, "The Blackbeard",
-                BLACKBEARD_BUTTON, BLACKBEARD_PORTRAIT,
-                TheBlackbeardEnum.BLACKBEARD_CLASS);
+        BaseMod.addCharacter(
+                new TheBlackbeard("The Blackbeard", TheBlackbeardEnum.BLACKBEARD_CLASS),
+                AbstractCardEnum.BLACKBEARD_BLACK,
+                BLACKBEARD_BUTTON,
+                BLACKBEARD_PORTRAIT,
+                TheBlackbeardEnum.BLACKBEARD_CLASS
+        );
 
         logger.info("done editing characters");
     }

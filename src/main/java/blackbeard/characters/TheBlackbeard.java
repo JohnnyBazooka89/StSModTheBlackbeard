@@ -6,9 +6,16 @@ import blackbeard.cards.DefendBlackbeard;
 import blackbeard.cards.StrikeBlackbeard;
 import blackbeard.patches.TheBlackbeardEnum;
 import blackbeard.relics.LoadTheCannons;
+import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.MathUtils;
 import com.esotericsoftware.spine.AnimationState;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
+import com.megacrit.cardcrawl.helpers.FontHelper;
+import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
@@ -40,7 +47,7 @@ public class TheBlackbeard extends CustomPlayer {
         e.setTime(e.getEndTime() * MathUtils.random());
     }
 
-    public static ArrayList<String> getStartingDeck() {
+    public ArrayList<String> getStartingDeck() {
         ArrayList<String> startingDeck = new ArrayList<>();
         startingDeck.add(StrikeBlackbeard.ID);
         startingDeck.add(StrikeBlackbeard.ID);
@@ -56,19 +63,70 @@ public class TheBlackbeard extends CustomPlayer {
         return startingDeck;
     }
 
-    public static ArrayList<String> getStartingRelics() {
+    public ArrayList<String> getStartingRelics() {
         ArrayList<String> startingRelics = new ArrayList<>();
         startingRelics.add(LoadTheCannons.ID);
         UnlockTracker.markRelicAsSeen(LoadTheCannons.ID);
         return startingRelics;
     }
 
-    public static CharSelectInfo getLoadout() {
+    public CharSelectInfo getLoadout() {
         return new CharSelectInfo("The Blackbeard",
                 "After following his dusty map, he found himself trying to Slay the Spire. NL " +
                         "Skilled in using weapons, he wants all the treasures for himself.",
                 75, 75, 0, 99, 5,
-                TheBlackbeardEnum.BLACKBEARD_CLASS, getStartingRelics(), getStartingDeck(), false);
+                this, getStartingRelics(), getStartingDeck(), false);
+    }
+
+    @Override
+    public String getTitle(PlayerClass playerClass) {
+        return "The Blackbeard";
+    }
+
+    @Override
+    public Color getCardColor() {
+        return Color.BLACK;
+    }
+
+    @Override
+    public AbstractCard getStartCardForEvent() {
+        return new Cutlass();
+    }
+
+    @Override
+    public Color getCardTrailColor() {
+        return Color.BLACK;
+    }
+
+    @Override
+    public int getAscensionMaxHPLoss() {
+        return 4;
+    }
+
+    @Override
+    public BitmapFont getEnergyNumFont() {
+        return FontHelper.energyNumFontRed;
+    }
+
+    @Override
+    public void doCharSelectScreenSelectEffect() {
+        CardCrawlGame.sound.playA("ATTACK_HEAVY", MathUtils.random(-0.2f, 0.2f));
+        CardCrawlGame.screenShake.shake(ScreenShake.ShakeIntensity.MED, ScreenShake.ShakeDur.SHORT, true);
+    }
+
+    @Override
+    public String getCustomModeCharacterButtonSoundKey() {
+        return "ATTACK_HEAVY";
+    }
+
+    @Override
+    public String getLocalizedCharacterName() {
+        return "The Blackbeard";
+    }
+
+    @Override
+    public AbstractPlayer newInstance() {
+        return new TheBlackbeard("The Blackbeard", TheBlackbeardEnum.BLACKBEARD_CLASS);
     }
 
 }

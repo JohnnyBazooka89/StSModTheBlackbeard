@@ -28,14 +28,14 @@
         <dependency>
             <groupId>com.evacipated.cardcrawl</groupId>
             <artifactId>ModTheSpire</artifactId>
-            <version>2.7.0</version>
+            <version>3.3.0</version>
             <scope>system</scope>
             <systemPath>${slayTheSpirePath}\ModTheSpire.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.evacipated.cardcrawl</groupId>
             <artifactId>BaseMod</artifactId>
-            <version>2.14.0</version>
+            <version>4.0.0</version>
             <scope>system</scope>
             <systemPath>${slayTheSpirePath}\mods\BaseMod.jar</systemPath>
         </dependency>
