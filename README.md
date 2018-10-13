@@ -6,8 +6,8 @@ The Blackbeard is a new class based on pirate theme. His most important mechanic
 Other mechanics are: 
 - Cannonballs - 0 cost attacks that deal 8 (12) damage and exhaust.
 - Resistance - for each point of Resistance enemies deal 1 damage less.
-- Gold scaling card - some cards scale with how much Gold you gained this run.
-- Debuff cleansing - Blackbeard is able to play powerful cards with negative effects, and later cleanse his debuffs
+- Gold scaling cards - some cards scale with how much Gold you gained this run.
+- Debuff cleansing - The Blackbeard is able to play powerful cards with negative effects, and later cleanse his debuffs
 
 Gameplay: 
 ![Gameplay](screenshots/Gameplay.jpg)
@@ -61,4 +61,5 @@ List of other mods can be found at:
 * https://github.com/kiooeht/ModTheSpire/wiki/List-of-Known-Mods
 
 ## Contact ##
-If you want to contact me, please send an e-mail to johnnybazooka89 \_a_t_ gmail dot com.
+- To report a bug, please create an [issue](https://github.com/JohnnyBazooka89/StSModTheBlackbeard/issues). You can also find me on Slay the Spire discord, on channel #unsupported-modding.
+- If you really want to contact me, please send an e-mail to johnnybazooka89 \_a_t_ gmail dot com.

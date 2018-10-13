@@ -31,6 +31,11 @@ public class GoldenStrike extends CustomCard {
         this.baseDamage = ATTACK_DMG;
 
         this.tags.add(CardTags.STRIKE);
+
+        if (CardCrawlGame.isInARun()) {
+            this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(DESCRIPTION, EXTENDED_DESCRIPTION);
+            this.initializeDescription();
+        }
     }
 
     @Override

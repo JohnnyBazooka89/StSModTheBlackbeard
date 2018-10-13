@@ -30,6 +30,11 @@ public class GoldenRain extends CustomCard {
         this.baseDamage = 0;
         this.baseMagicNumber = PERCENT_OF_GOLD_GAINED;
         this.isMultiDamage = true;
+
+        if (CardCrawlGame.isInARun()) {
+            this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(DESCRIPTION, EXTENDED_DESCRIPTION);
+            this.initializeDescription();
+        }
     }
 
     @Override

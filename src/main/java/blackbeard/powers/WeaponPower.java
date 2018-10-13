@@ -44,12 +44,14 @@ public class WeaponPower extends AbstractPower {
 
     @Override
     public void onAfterUseCard(AbstractCard card, UseCardAction action) {
+        super.onAfterUseCard(card, action);
+
         WeaponsToUseEnum weaponsToUse = WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON;
         if (AbstractDungeon.player.hasPower(SwordDancePower.POWER_ID)) {
             weaponsToUse = WeaponsToUseEnum.ALL_WEAPONS;
         }
 
-        if (!card.purgeOnUse && card.type == CardType.ATTACK) {
+        if (card.type.equals(CardType.ATTACK)) {
             for (AbstractOrb o : AbstractDungeon.player.orbs) {
                 if (o instanceof WeaponOrb) {
                     WeaponOrb weaponOrb = (WeaponOrb) o;
@@ -81,7 +83,7 @@ public class WeaponPower extends AbstractPower {
             }
         }
 
-        for(int i=0; i<weaponsToRemove.size(); i++){
+        for (int i = 0; i < weaponsToRemove.size(); i++) {
             ((WeaponOrb) weaponsToRemove.get(i)).onEvoke();
         }
         orbsList.removeAll(weaponsToRemove);
@@ -106,7 +108,7 @@ public class WeaponPower extends AbstractPower {
         for (int i = 0; i < orbsList.size(); i++) {
             AbstractOrb orb = orbsList.get(i);
             if (orb instanceof WeaponOrb) {
-                result ++;
+                result++;
             }
         }
 
@@ -115,22 +117,25 @@ public class WeaponPower extends AbstractPower {
 
     @Override
     public float atDamageGive(float damage, DamageType type) {
-        WeaponsToUseEnum weaponsToUse = WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON;
-        if (AbstractDungeon.player.hasPower(SwordDancePower.POWER_ID)) {
-            weaponsToUse = WeaponsToUseEnum.ALL_WEAPONS;
-        }
+        if (type.equals(DamageType.NORMAL)) {
+            WeaponsToUseEnum weaponsToUse = WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON;
+            if (AbstractDungeon.player.hasPower(SwordDancePower.POWER_ID)) {
+                weaponsToUse = WeaponsToUseEnum.ALL_WEAPONS;
+            }
 
-        int weaponAttack = 0;
-        for (AbstractOrb o : AbstractDungeon.player.orbs) {
-            if (o instanceof WeaponOrb) {
-                WeaponOrb weaponOrb = (WeaponOrb) o;
-                weaponAttack += weaponOrb.getAttack();
-                if (weaponsToUse.equals(WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON)) {
-                    break;
+            int weaponAttack = 0;
+            for (AbstractOrb o : AbstractDungeon.player.orbs) {
+                if (o instanceof WeaponOrb) {
+                    WeaponOrb weaponOrb = (WeaponOrb) o;
+                    weaponAttack += weaponOrb.getAttack();
+                    if (weaponsToUse.equals(WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON)) {
+                        break;
+                    }
                 }
             }
+            return super.atDamageGive(damage, type) + weaponAttack;
+        } else {
+            return super.atDamageGive(damage, type);
         }
-
-        return type == DamageType.NORMAL ? damage + weaponAttack : damage;
     }
 }

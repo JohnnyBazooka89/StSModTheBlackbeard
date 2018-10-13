@@ -33,6 +33,11 @@ public class GoldenCannonball extends CustomCard {
         this.exhaust = true;
 
         this.tags.add(CardTagsEnum.CANNONBALL);
+
+        if (CardCrawlGame.isInARun()) {
+            this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(DESCRIPTION, EXTENDED_DESCRIPTION);
+            this.initializeDescription();
+        }
     }
 
     @Override

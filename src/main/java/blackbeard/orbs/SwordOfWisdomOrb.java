@@ -3,7 +3,6 @@ package blackbeard.orbs;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.characters.TheBlackbeard;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.OrbStrings;
@@ -22,7 +21,8 @@ public class SwordOfWisdomOrb extends WeaponOrb {
     }
 
     @Override
-    public void effectOnUse(AbstractCreature target) {
+    public void effectOnUse() {
+        super.effectOnUse();
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, 1));
     }
 }

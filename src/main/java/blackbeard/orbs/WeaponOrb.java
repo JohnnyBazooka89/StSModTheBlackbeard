@@ -82,7 +82,7 @@ public abstract class WeaponOrb extends AbstractOrb {
 
     public void use(AbstractCreature target) {
         durability--;
-        effectOnUse(target);
+        effectOnUse();
         updateDescription();
     }
 
@@ -97,7 +97,7 @@ public abstract class WeaponOrb extends AbstractOrb {
         updateDescription();
     }
 
-    public void effectOnUse(AbstractCreature target) {
+    public void effectOnUse() {
         //Override to get effect on use
     }
 

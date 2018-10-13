@@ -27,6 +27,11 @@ public class GoldenDefend extends CustomCard {
 
         this.baseMagicNumber = BLOCK_AMOUNT;
         this.baseBlock = BLOCK_AMOUNT;
+
+        if (CardCrawlGame.isInARun()) {
+            this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(DESCRIPTION, EXTENDED_DESCRIPTION);
+            this.initializeDescription();
+        }
     }
 
     @Override

@@ -155,7 +155,7 @@
   },
   "blackbeard:CatONineTails": {
     "NAME": "Cat O' Nine Tails",
-    "DESCRIPTION": "Equip a !M! / {D} Weapon. After you attack with this Weapon, apply 1 Vulnerable to the target."
+    "DESCRIPTION": "Equip a {A} / !M! Weapon. After you attack with this Weapon, give it + 1 Attack."
   },
   "blackbeard:PirateEarring": {
     "NAME": "Pirate Earring",

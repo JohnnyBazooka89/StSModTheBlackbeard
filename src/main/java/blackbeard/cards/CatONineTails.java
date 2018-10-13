@@ -19,7 +19,7 @@ public class CatONineTails extends CustomCard {
     private static final int COST = 1;
     private static final int WEAPON_ATTACK = 4;
     private static final int WEAPON_DURABILITY = 2;
-    private static final int UPGRADED_PLUS_WEAPON_ATTACK = 1;
+    private static final int UPGRADED_PLUS_WEAPON_DURABILITY = 1;
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = WeaponCardsUtil.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);
 
@@ -27,18 +27,18 @@ public class CatONineTails extends CustomCard {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(CatONineTails.ID), COST, DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.SELF);
 
-        this.baseMagicNumber = WEAPON_ATTACK;
+        this.baseMagicNumber = WEAPON_DURABILITY;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new EquipAction(new CatONineTailsOrb(this.baseMagicNumber, WEAPON_DURABILITY)));
+        AbstractDungeon.actionManager.addToBottom(new EquipAction(new CatONineTailsOrb(WEAPON_ATTACK, this.baseMagicNumber)));
     }
 
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADED_PLUS_WEAPON_ATTACK);
+            this.upgradeMagicNumber(UPGRADED_PLUS_WEAPON_DURABILITY);
         }
     }
 }
