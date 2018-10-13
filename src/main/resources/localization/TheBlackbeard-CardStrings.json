@@ -72,7 +72,7 @@
   },
   "blackbeard:PowderKeg": {
     "NAME": "Powder Keg",
-    "DESCRIPTION": "Equip a {A} / {D} Weapon. When it is destroyed, deal !M! damage to all enemies."
+    "DESCRIPTION": "Equip a {A} / {D} Weapon. When it is destroyed, deal !M! damage to ALL enemies."
   },
   "blackbeard:Recycle": {
     "NAME": "Recycle",
@@ -183,8 +183,8 @@
   },
   "blackbeard:PiratesWill": {
     "NAME": "Pirate's Will",
-    "DESCRIPTION": "Remove all of your Debuffs. NL Draw !M! card.",
-    "UPGRADE_DESCRIPTION": "Remove all of your Debuffs. NL Draw !M! cards."
+    "DESCRIPTION": "Remove all of your Debuffs. NL Draw !M! card. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Remove all of your Debuffs. NL Draw !M! cards. NL Exhaust."
   },
   "blackbeard:WoodenLeg": {
     "NAME": "Wooden Leg",
@@ -214,5 +214,29 @@
   "blackbeard:AgileStrike": {
     "NAME": "Agile Strike",
     "DESCRIPTION": "Deal !D! damage. NL If you have equipped a Weapon this turn, reduce cost of NL this card to 0."
+  },
+  "blackbeard:DangerousBlow": {
+    "NAME": "Dangerous Blow",
+    "DESCRIPTION": "Deal !D! damage. NL At the end of your next turn, you are dealt !M! damage."
+  },
+  "blackbeard:VengefulSpirit": {
+    "NAME": "Vengeful Spirit",
+    "DESCRIPTION": "Gain 1 Intangible. NL At the end of your next turn, you are dealt !M! damage."
+  },
+  "blackbeard:Revenge": {
+    "NAME": "Revenge",
+    "DESCRIPTION": "Deal 0 - !M! damage to ALL enemies, based on how many % of HP you are missing.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Deals !D! damage.)"
+    ]
+  },
+  "blackbeard:GoldenRain": {
+    "NAME": "Golden Rain",
+    "DESCRIPTION": "Deal damage equal to !M! % of Gold gained this run to ALL enemies.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Deals !D! damage.)",
+      " NL You gained ",
+      " Gold this run."
+    ]
   }
 }

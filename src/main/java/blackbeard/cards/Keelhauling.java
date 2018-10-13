@@ -27,7 +27,6 @@ public class Keelhauling extends CustomCard {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_SKILL_CARD_ID), COST, DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
 
-        this.exhaust = true;
         this.baseMagicNumber = TURNS;
     }
 

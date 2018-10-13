@@ -57,5 +57,19 @@
       "At the start of their turn, this enemy is dealt #b8 damage. Lasts for #b",
       " turns."
     ]
+  },
+  "blackbeard:DamageAtTheEndOfNextTurnPower": {
+    "NAME": "Next Turn Damage",
+    "DESCRIPTIONS": [
+      "At the end of next turn, you are dealt #b",
+      " damage."
+    ]
+  },
+  "blackbeard:DamageAtTheEndOfThisTurnPower": {
+    "NAME": "End Turn Damage",
+    "DESCRIPTIONS": [
+      "At the end of this turn, you are dealt #b",
+      " damage."
+    ]
   }
 }

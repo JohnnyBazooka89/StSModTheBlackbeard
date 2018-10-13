@@ -50,6 +50,7 @@ public class GoldenCannonball extends CustomCard {
 
     @Override
     public void onMoveToDiscard() {
+        super.onMoveToDiscard();
         this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(DESCRIPTION, EXTENDED_DESCRIPTION);
         this.initializeDescription();
     }

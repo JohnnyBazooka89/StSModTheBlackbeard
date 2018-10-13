@@ -47,6 +47,7 @@ public class GoldenStrike extends CustomCard {
     }
 
     public void onMoveToDiscard() {
+        super.onMoveToDiscard();
         this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(DESCRIPTION, EXTENDED_DESCRIPTION);
         this.initializeDescription();
     }
