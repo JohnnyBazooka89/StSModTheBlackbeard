@@ -4,8 +4,8 @@ import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.characters.TheBlackbeard;
 import blackbeard.patches.AbstractCardEnum;
-import blackbeard.powers.ResistanceDownPower;
 import blackbeard.powers.ResistancePower;
+import blackbeard.powers.ToastPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -32,7 +32,7 @@ public class Toast extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ResistancePower(p, this.magicNumber), this.magicNumber));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ResistanceDownPower(p, this.magicNumber), this.magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ToastPower(p, this.magicNumber), this.magicNumber));
     }
 
     public void upgrade() {

@@ -1,8 +1,4 @@
 package blackbeard.powers;//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by Fernflower decompiler)
-//
-
 
 import blackbeard.enums.WeaponsToUseEnum;
 import blackbeard.orbs.WeaponOrb;
@@ -43,8 +39,8 @@ public class WeaponPower extends AbstractPower {
     }
 
     @Override
-    public void onAfterUseCard(AbstractCard card, UseCardAction action) {
-        super.onAfterUseCard(card, action);
+    public void onUseCard(AbstractCard card, UseCardAction action) {
+        super.onUseCard(card, action);
 
         WeaponsToUseEnum weaponsToUse = WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON;
         if (AbstractDungeon.player.hasPower(SwordDancePower.POWER_ID)) {

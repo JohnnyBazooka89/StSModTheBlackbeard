@@ -151,7 +151,7 @@
   },
   "blackbeard:Toast": {
     "NAME": "Toast",
-    "DESCRIPTION": "Gain !M! Resistance. NL At the end of this turn, lose !M! Resistance."
+    "DESCRIPTION": "Gain !M! Resistance. NL At the start of your next turn, lose !M! Resistance."
   },
   "blackbeard:CatONineTails": {
     "NAME": "Cat O' Nine Tails",
@@ -192,8 +192,8 @@
   },
   "blackbeard:Eyepatch": {
     "NAME": "Eyepatch",
-    "DESCRIPTION": "Gain !M! Weak. NL At the start of your turn, draw 1 additional card.",
-    "UPGRADE_DESCRIPTION": "Innate. Gain !M! Weak. NL At the start of your turn, draw 1 additional card."
+    "DESCRIPTION": "Gain 3 Weak. NL At the start of your turn, draw 1 additional card.",
+    "UPGRADE_DESCRIPTION": "Innate. Gain 3 Weak. NL At the start of your turn, draw 1 additional card."
   },
   "blackbeard:CaptainsHat": {
     "NAME": "Captain's Hat",

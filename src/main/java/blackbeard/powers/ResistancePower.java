@@ -23,7 +23,6 @@ public class ResistancePower extends AbstractPower {
         this.loadRegion("barricade");
         this.type = PowerType.BUFF;
         this.canGoNegative = true;
-        this.priority = 98;
         this.updateDescription();
     }
 

@@ -44,10 +44,10 @@
       " to your hand."
     ]
   },
-  "blackbeard:ResistanceDownPower": {
-    "NAME": "Resistance Down",
+  "blackbeard:ToastPower": {
+    "NAME": "Toast",
     "DESCRIPTIONS": [
-      "At the end of this turn, lose #b",
+      "At the start of your next turn, lose #b",
       " Resistance."
     ]
   },
