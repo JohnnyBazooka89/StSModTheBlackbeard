@@ -204,6 +204,10 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addCard(new WeaponMastery());
         BaseMod.addCard(new Salvager());
         BaseMod.addCard(new Anchor());
+        BaseMod.addCard(new BoostMorale());
+        BaseMod.addCard(new MegaUpgrade());
+        BaseMod.addCard(new Recklessness());
+        BaseMod.addCard(new DelayedPain());
 
         logger.info("done editing cards");
     }

@@ -86,5 +86,12 @@
       "Whenever a Weapon is destroyed, gain #b",
       " [R]."
     ]
+  },
+  "blackbeard:LoseEnergyNextTurnPower": {
+    "NAME": "Lose Energy Next Turn",
+    "DESCRIPTIONS": [
+      "At the start of your next turn, lose #b",
+      " [R]."
+    ]
   }
 }

@@ -4,42 +4,45 @@ import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.characters.TheBlackbeard;
 import blackbeard.patches.AbstractCardEnum;
-import blackbeard.powers.ResistancePower;
+import blackbeard.powers.LoseEnergyNextTurnPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
 
-public class GhostInTheRum extends CustomCard {
-    public static final String ID = "blackbeard:GhostInTheRum";
+public class Recklessness extends CustomCard {
+
+    public static final String ID = "blackbeard:Recklessness";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    private static final int COST = 1;
-    private static final int RESISTANCE_DEBUFF_VALUE = 2;
-    private static final int UPGRADED_MINUS_RESISTANCE_DEBUFF_VALUE = 1;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
+    private static final int COST = 0;
+    private static final int ENERGY_TO_GET = 2;
+    private static final int UPGRADED_PLUS_ENERGY_TO_GET = 1;
+    private static final int ENERGY_TO_LOSE_NEXT_TURN = 2;
 
-    public GhostInTheRum() {
+    public Recklessness() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_SKILL_CARD_ID), COST, DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
 
-        this.baseMagicNumber = this.magicNumber = RESISTANCE_DEBUFF_VALUE;
-        this.exhaust = true;
+        this.baseMagicNumber = this.magicNumber = ENERGY_TO_GET;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new IntangiblePlayerPower(p, 1), 1));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ResistancePower(p, -this.magicNumber), -this.magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(this.magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new LoseEnergyNextTurnPower(p, ENERGY_TO_LOSE_NEXT_TURN), ENERGY_TO_LOSE_NEXT_TURN));
     }
 
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(-UPGRADED_MINUS_RESISTANCE_DEBUFF_VALUE);
+            this.upgradeMagicNumber(UPGRADED_PLUS_ENERGY_TO_GET);
+            this.rawDescription = UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }
     }

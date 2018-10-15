@@ -29,7 +29,8 @@
   },
   "blackbeard:Parrot": {
     "NAME": "Parrot",
-    "DESCRIPTION": "The last card played each turn is played an additional time. This power does not stack."
+    "DESCRIPTION": "The last card played each turn is played an additional time. This power does not stack. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "The last card played each turn is played an additional time. This power does not stack."
   },
   "blackbeard:Halberd": {
     "NAME": "Halberd",
@@ -59,7 +60,7 @@
   },
   "blackbeard:GhostInTheRum": {
     "NAME": "Ghost In The Rum",
-    "DESCRIPTION": "Gain 1 Intangible. Lose !M! Resistance."
+    "DESCRIPTION": "Gain 1 Intangible. NL Lose !M! Resistance. NL Exhaust."
   },
   "blackbeard:GoldenStrike": {
     "NAME": "Golden Strike",
@@ -77,8 +78,8 @@
   },
   "blackbeard:Recycle": {
     "NAME": "Recycle",
-    "DESCRIPTION": "Destroy your rightmost Weapon to get [R] [R].",
-    "UPGRADE_DESCRIPTION": "Destroy your rightmost Weapon to get NL [R] [R] [R].",
+    "DESCRIPTION": "Destroy your rightmost Weapon to gain [R] [R].",
+    "UPGRADE_DESCRIPTION": "Destroy your rightmost Weapon to gain NL [R] [R] [R].",
     "EXTENDED_DESCRIPTION": [
       "I don't have a Weapon!"
     ]
@@ -223,7 +224,7 @@
   },
   "blackbeard:VengefulSpirit": {
     "NAME": "Vengeful Spirit",
-    "DESCRIPTION": "Gain 1 Intangible. NL At the end of your next turn, you are dealt !M! damage."
+    "DESCRIPTION": "Gain 1 Intangible. NL At the end of your next turn, you are dealt !M! damage. NL Exhaust."
   },
   "blackbeard:Revenge": {
     "NAME": "Revenge",
@@ -283,5 +284,23 @@
     "NAME": "Anchor",
     "DESCRIPTION": "Innate. NL Gain !B! Block. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Innate. NL Gain !B! Block. NL Draw a card. NL Exhaust."
+  },
+  "blackbeard:BoostMorale": {
+    "NAME": "Boost Morale",
+    "DESCRIPTION": "Draw !M! cards. NL Gain [R].",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. NL Gain [R] [R]."
+  },
+  "blackbeard:MegaUpgrade": {
+    "NAME": "Mega Upgrade",
+    "DESCRIPTION": "Give all your equipped Weapons + !M! / + !M!."
+  },
+  "blackbeard:Recklessness": {
+    "NAME": "Recklessness",
+    "DESCRIPTION": "Gain [R] [R]. NL At the start of your next turn, lose [R] [R].",
+    "UPGRADE_DESCRIPTION": "Gain [R] [R] [R]. NL At the start of your next turn, lose [R] [R]."
+  },
+  "blackbeard:DelayedPain": {
+    "NAME": "Delayed Pain",
+    "DESCRIPTION": "Gain !B! Block. NL At the end of your next turn, you are dealt !M! damage."
   }
 }
