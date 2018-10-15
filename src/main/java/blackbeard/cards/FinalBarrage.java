@@ -23,7 +23,7 @@ public class FinalBarrage extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
-    private static final int COST = 1;
+    private static final int COST = 0;
     private static final int ATTACK_PER_CANNONBALL = 6;
     private static final int UPGRADED_PLUS_ATTACK_PER_CANNONBALL = 2;
 

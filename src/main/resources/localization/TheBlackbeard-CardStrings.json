@@ -63,10 +63,10 @@
   },
   "blackbeard:GoldenStrike": {
     "NAME": "Golden Strike",
-    "DESCRIPTION": "Deal damage equal to !M! + 1 % of Gold gained this run.",
+    "DESCRIPTION": "Deal damage equal to NL !M! + 1% of Gold gained this run.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deals !D! damage.)",
-      " NL You gained ",
+      " NL You have gained ",
       " Gold this run."
     ]
   },
@@ -109,10 +109,10 @@
   },
   "blackbeard:GoldenCannonball": {
     "NAME": "Golden Cannonball",
-    "DESCRIPTION": "Deal damage equal to !M! + 2 % of Gold gained this run. Exhaust.",
+    "DESCRIPTION": "Deal damage equal to NL !M! + 2% of Gold gained this run. Exhaust.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deals !D! damage.)",
-      " NL You gained ",
+      " NL You have gained ",
       " Gold this run."
     ]
   },
@@ -138,10 +138,10 @@
   },
   "blackbeard:GoldenDefend": {
     "NAME": "Golden Defend",
-    "DESCRIPTION": "Gain Block equal to !M! + 1 % of Gold gained this run.",
+    "DESCRIPTION": "Gain Block equal to NL !M! + 1% of Gold gained this run.",
     "EXTENDED_DESCRIPTION": [
       " NL (Gains !B! Block.)",
-      " NL You gained ",
+      " NL You have gained ",
       " Gold this run."
     ]
   },
@@ -174,12 +174,11 @@
   },
   "blackbeard:TacticalRetreat": {
     "NAME": "Tactical Retreat",
-    "DESCRIPTION": "Gain !B! Block. NL Draw !M! card.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Draw !M! cards."
+    "DESCRIPTION": "Gain !B! Block. NL Draw 1 more card next turn."
   },
   "blackbeard:Dagger": {
     "NAME": "Dagger",
-    "DESCRIPTION": "Equip a !M! / {D} Weapon."
+    "DESCRIPTION": "Equip a !M! / {D} Weapon. Draw 1 card."
   },
   "blackbeard:PiratesWill": {
     "NAME": "Pirate's Will",
@@ -232,11 +231,41 @@
   },
   "blackbeard:GoldenRain": {
     "NAME": "Golden Rain",
-    "DESCRIPTION": "Deal damage equal to !M! % of Gold gained this run to ALL enemies.",
+    "DESCRIPTION": "Deal damage equal to NL !M! percent of Gold gained this run to ALL enemies.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deals !D! damage.)",
-      " NL You gained ",
+      " NL You have gained ",
       " Gold this run."
     ]
+  },
+  "blackbeard:Sword": {
+    "NAME": "Sword",
+    "DESCRIPTION": "Equip a !M! / {D} Weapon."
+  },
+  "blackbeard:BeatUp": {
+    "NAME": "Beat Up",
+    "DESCRIPTION": "Deal !D! damage twice. NL Apply !M! Vulnerable."
+  },
+  "blackbeard:IntimidatingBlow": {
+    "NAME": "Intimidating Blow",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak."
+  },
+  "blackbeard:WiseDefend": {
+    "NAME": "Wise Defend",
+    "DESCRIPTION": "Gain !B! Block. NL Draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Draw !M! cards."
+  },
+  "blackbeard:ChaoticDefend": {
+    "NAME": "Chaotic Defend",
+    "DESCRIPTION": "Gain !B! Block. NL Add !M! random card to your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add !M! random cards to your hand."
+  },
+  "blackbeard:SmithingHammer": {
+    "NAME": "Smithing Hammer",
+    "DESCRIPTION": "Equip a !M! / {D} Block. Whenever you attack with this Weapon, upgrade a random card in your hand for the rest of the combat."
+  },
+  "blackbeard:Spear": {
+    "NAME": "Spear",
+    "DESCRIPTION": "Equip a !M! / {D} Weapon."
   }
 }

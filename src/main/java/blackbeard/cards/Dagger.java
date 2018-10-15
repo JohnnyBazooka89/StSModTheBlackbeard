@@ -7,6 +7,7 @@ import blackbeard.characters.TheBlackbeard;
 import blackbeard.orbs.DaggerOrb;
 import blackbeard.patches.AbstractCardEnum;
 import blackbeard.utils.WeaponCardsUtil;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -34,6 +35,7 @@ public class Dagger extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new EquipAction(new DaggerOrb(this.magicNumber, WEAPON_DURABILITY)));
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, 1));
     }
 
     public void upgrade() {

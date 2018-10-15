@@ -61,6 +61,7 @@ public class GoldenRain extends CustomCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeMagicNumber(UPGRADE_PLUS_PERCENT_OF_GOLD_GAINED);
+
         }
     }
 }
