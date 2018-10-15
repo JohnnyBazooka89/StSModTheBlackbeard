@@ -63,7 +63,8 @@
   },
   "blackbeard:GoldenStrike": {
     "NAME": "Golden Strike",
-    "DESCRIPTION": "Deal damage equal to NL !M! + 1% of Gold gained this run.",
+    "DESCRIPTION": "Deal damage equal to NL 1% of Gold gained NL this run.",
+    "UPGRADE_DESCRIPTION": "Deal damage equal to NL !M! + 1% of Gold gained NL this run.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deals !D! damage.)",
       " NL You have gained ",
@@ -109,7 +110,8 @@
   },
   "blackbeard:GoldenCannonball": {
     "NAME": "Golden Cannonball",
-    "DESCRIPTION": "Deal damage equal to NL !M! + 2% of Gold gained this run. Exhaust.",
+    "DESCRIPTION": "Deal damage equal to NL 2% of Gold gained NL this run. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal damage equal to NL !M! + 2% of Gold gained NL this run. Exhaust.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deals !D! damage.)",
       " NL You have gained ",
@@ -138,7 +140,8 @@
   },
   "blackbeard:GoldenDefend": {
     "NAME": "Golden Defend",
-    "DESCRIPTION": "Gain Block equal to NL !M! + 1% of Gold gained this run.",
+    "DESCRIPTION": "Gain Block equal to NL 1% of Gold gained NL this run.",
+    "UPGRADE_DESCRIPTION": "Gain Block equal to NL !M! + 1% of Gold gained NL this run.",
     "EXTENDED_DESCRIPTION": [
       " NL (Gains !B! Block.)",
       " NL You have gained ",
@@ -262,10 +265,23 @@
   },
   "blackbeard:SmithingHammer": {
     "NAME": "Smithing Hammer",
-    "DESCRIPTION": "Equip a !M! / {D} Block. Whenever you attack with this Weapon, upgrade a random card in your hand for the rest of the combat."
+    "DESCRIPTION": "Equip a !M! / {D} Block. After you attack with this Weapon, upgrade a random card in your hand for the rest of the combat."
   },
   "blackbeard:Spear": {
     "NAME": "Spear",
     "DESCRIPTION": "Equip a !M! / {D} Weapon."
+  },
+  "blackbeard:WeaponMastery": {
+    "NAME": "Weapon Mastery",
+    "DESCRIPTION": "Whenever you Equip a Weapon, draw 1 card."
+  },
+  "blackbeard:Salvager": {
+    "NAME": "Salvager",
+    "DESCRIPTION": "Whenever a Weapon is destroyed, gain [R]."
+  },
+  "blackbeard:Anchor": {
+    "NAME": "Anchor",
+    "DESCRIPTION": "Innate. NL Gain !B! Block. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Gain !B! Block. NL Draw a card. NL Exhaust."
   }
 }

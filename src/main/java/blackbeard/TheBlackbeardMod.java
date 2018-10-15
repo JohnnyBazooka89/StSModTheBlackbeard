@@ -7,7 +7,7 @@ import blackbeard.cards.*;
 import blackbeard.characters.TheBlackbeard;
 import blackbeard.patches.AbstractCardEnum;
 import blackbeard.patches.TheBlackbeardEnum;
-import blackbeard.relics.LoadTheCannons;
+import blackbeard.relics.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
@@ -130,6 +130,10 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
 
         // Add relics
         BaseMod.addRelicToCustomPool(new LoadTheCannons(), AbstractCardEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new BloodOrange(), AbstractCardEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new HipFlask(), AbstractCardEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new TreasureChest(), AbstractCardEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new WhitePearl(), AbstractCardEnum.BLACKBEARD_BLACK);
 
         logger.info("done editing relics");
     }
@@ -197,6 +201,9 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addCard(new ChaoticDefend());
         BaseMod.addCard(new SmithingHammer());
         BaseMod.addCard(new Spear());
+        BaseMod.addCard(new WeaponMastery());
+        BaseMod.addCard(new Salvager());
+        BaseMod.addCard(new Anchor());
 
         logger.info("done editing cards");
     }

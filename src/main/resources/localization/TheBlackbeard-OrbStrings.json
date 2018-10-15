@@ -57,7 +57,7 @@
   "blackbeard:SmithingHammerOrb": {
     "NAME": "Smithing Hammer",
     "DESCRIPTION": [
-      "Whenever you attack with this Weapon, upgrade a random card in your hand for the rest of the combat."
+      "After you attack with this Weapon, upgrade a random card in your hand for the rest of the combat."
     ]
   },
   "blackbeard:SpearOrb": {

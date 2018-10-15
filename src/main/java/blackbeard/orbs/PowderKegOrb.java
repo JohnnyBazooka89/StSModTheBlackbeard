@@ -30,6 +30,7 @@ public class PowderKegOrb extends WeaponOrb {
 
     @Override
     public void onEvoke() {
+        super.onEvoke();
         AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction((AbstractCreature)null, DamageInfo.createDamageMatrix(this.damageOnDestroy, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE));
     }
 

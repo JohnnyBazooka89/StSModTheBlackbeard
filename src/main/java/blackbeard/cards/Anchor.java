@@ -2,9 +2,8 @@ package blackbeard.cards;
 
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
-import blackbeard.interfaces.IGoldenCard;
 import blackbeard.patches.AbstractCardEnum;
-import blackbeard.utils.GoldenCardsUtil;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -12,42 +11,39 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class GoldenDefend extends CustomCard implements IGoldenCard {
-    public static final String ID = "blackbeard:GoldenDefend";
+public class Anchor extends CustomCard {
+
+    public static final String ID = "blackbeard:Anchor";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
-    public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
-    private static final int COST = 1;
-    private static final int BLOCK_AMOUNT = 0;
-    private static final int UPGRADE_BLOCK_AMOUNT = 3;
+    private static final int COST = 0;
+    private static final int BLOCK_AMOUNT = 10;
+    private static final int UPGRADED_PLUS_CARDS_TO_DRAW = 1;
 
-    public GoldenDefend() {
+    public Anchor() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
+                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.SELF);
 
-        this.baseMagicNumber = this.magicNumber = BLOCK_AMOUNT;
-
-        setGoldenValuesAndInitializeDescription();
+        this.baseBlock = this.block = BLOCK_AMOUNT;
+        this.isInnate = true;
+        this.exhaust = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
-    }
-
-    public void setGoldenValuesAndInitializeDescription() {
-        this.baseBlock = this.block = this.magicNumber + (CardCrawlGame.goldGained / 100);
-        this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(this.upgraded, DESCRIPTION, UPGRADE_DESCRIPTION, EXTENDED_DESCRIPTION);
-        this.initializeDescription();
+        if (this.upgraded) {
+            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, UPGRADED_PLUS_CARDS_TO_DRAW));
+        }
     }
 
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADE_BLOCK_AMOUNT);
-            setGoldenValuesAndInitializeDescription();
+            this.rawDescription = UPGRADE_DESCRIPTION;
+            this.initializeDescription();
         }
     }
 }

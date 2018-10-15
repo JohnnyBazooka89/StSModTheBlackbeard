@@ -2,7 +2,9 @@ package blackbeard.actions;
 
 import blackbeard.orbs.WeaponOrb;
 import blackbeard.powers.WeaponPower;
+import blackbeard.relics.WhitePearl;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
@@ -30,6 +32,11 @@ public class EquipAction extends AbstractGameAction {
 
             if (needToAddOrbSlot) {
                 AbstractDungeon.player.increaseMaxOrbSlots(1, true);
+            }
+
+            if (AbstractDungeon.player.hasRelic(WhitePearl.ID)) {
+                weaponOrb.upgrade(1, 0);
+                AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, AbstractDungeon.player.getRelic(WhitePearl.ID)));
             }
 
             AbstractDungeon.player.channelOrb(weaponOrb);

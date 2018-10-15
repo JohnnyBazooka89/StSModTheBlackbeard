@@ -71,5 +71,20 @@
       "At the end of this turn, you are dealt #b",
       " damage."
     ]
+  },
+  "blackbeard:WeaponMasteryPower": {
+    "NAME": "Weapon Mastery",
+    "DESCRIPTIONS": [
+      "Whenever you Equip a Weapon, draw #b",
+      " card.",
+      " cards."
+    ]
+  },
+  "blackbeard:SalvagerPower": {
+    "NAME": "Salvager",
+    "DESCRIPTIONS": [
+      "Whenever a Weapon is destroyed, gain #b",
+      " [R]."
+    ]
   }
 }

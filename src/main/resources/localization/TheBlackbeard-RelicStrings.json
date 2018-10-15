@@ -3,7 +3,35 @@
     "NAME": "Load The Cannons",
     "FLAVOR": "Ready... Aim... Fire!!!",
     "DESCRIPTIONS": [
-      "At the start of the combat, add a Cannonball card to your hand."
+      "At the start of each combat, add a Cannonball card to your hand."
+    ]
+  },
+  "blackbeard:HipFlask": {
+    "NAME": "HipFlask",
+    "FLAVOR": "Very handy.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, gain 1 Resistance."
+    ]
+  },
+  "blackbeard:BloodOrange": {
+    "NAME": "Blood Orange",
+    "FLAVOR": "This citrus seems to have an interesting power.",
+    "DESCRIPTIONS": [
+      "Whenever you play 6 cards in the same turn, remove all of your Debuffs."
+    ]
+  },
+  "blackbeard:TreasureChest": {
+    "NAME": "Treasure Chest",
+    "FLAVOR": "This treasure chest contains untold riches.",
+    "DESCRIPTIONS": [
+      "Gain 25 Gold after every battle."
+    ]
+  },
+  "blackbeard:WhitePearl": {
+    "NAME": "White Pearl",
+    "FLAVOR": "So beautiful. So strong.",
+    "DESCRIPTIONS": [
+      "Wheneven you Equip a Weapon, give it +1 Attack."
     ]
   }
 }

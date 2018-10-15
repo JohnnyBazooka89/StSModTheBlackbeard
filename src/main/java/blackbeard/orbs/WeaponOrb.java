@@ -1,9 +1,12 @@
 package blackbeard.orbs;
 
+import blackbeard.powers.SalvagerPower;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
@@ -33,7 +36,7 @@ public abstract class WeaponOrb extends AbstractOrb {
         this.applyFocus();
         String descriptionToSet;
         descriptionToSet = rawDescription;
-        if(StringUtils.isNotEmpty(descriptionToSet)) {
+        if (StringUtils.isNotEmpty(descriptionToSet)) {
             descriptionToSet += " NL ";
         }
         descriptionToSet += "Attack: " + attack + " NL " + "Durability: #b" + durability;
@@ -42,7 +45,11 @@ public abstract class WeaponOrb extends AbstractOrb {
 
     @Override
     public void onEvoke() {
-        //Do nothing
+        if (AbstractDungeon.player.hasPower(SalvagerPower.POWER_ID)) {
+            SalvagerPower salvagerPower = (SalvagerPower) AbstractDungeon.player.getPower(SalvagerPower.POWER_ID);
+            AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(salvagerPower.amount));
+            salvagerPower.flash();
+        }
     }
 
     @Override
