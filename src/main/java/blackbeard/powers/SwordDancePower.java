@@ -21,7 +21,7 @@ public class SwordDancePower extends AbstractPower {
         this.owner = owner;
         this.amount = amount;
         this.type = PowerType.BUFF;
-        this.loadRegion("painfulStabs");
+        this.loadRegion("focus");
         this.updateDescription();
     }
 
@@ -36,9 +36,9 @@ public class SwordDancePower extends AbstractPower {
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (!card.purgeOnUse && card.type == AbstractCard.CardType.ATTACK && this.amount > 0) {
+        if (card.type.equals(AbstractCard.CardType.ATTACK) && this.amount > 0) {
             this.flash();
-            --this.amount;
+            this.amount--;
             if (this.amount == 0) {
                 AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
             }

@@ -93,5 +93,19 @@
       "At the start of your next turn, lose #b",
       " [R]."
     ]
+  },
+  "blackbeard:FortificationPower": {
+    "NAME": "Fortification",
+    "DESCRIPTIONS": [
+      "This turn, whenever you Equip a Weapon, gain #b",
+      " Block."
+    ]
+  },
+  "blackbeard:IntoxicationPower": {
+    "NAME": "IntoxicationPower",
+    "DESCRIPTIONS": [
+      "At the start of each turn, lose #b",
+      " Resistance."
+    ]
   }
 }

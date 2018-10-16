@@ -1,27 +1,29 @@
 package blackbeard.powers;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import blackbeard.orbs.WeaponOrb;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-public class ToastPower extends AbstractPower {
+public class FortificationPower extends AbstractPower {
 
-    public static final String POWER_ID = "blackbeard:ToastPower";
+    public static final String POWER_ID = "blackbeard:FortificationPower";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    public ToastPower(AbstractCreature owner, int amount) {
+    public FortificationPower(AbstractCreature owner, int amount) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
         this.amount = amount;
         this.type = PowerType.DEBUFF;
-        this.loadRegion("barricade");
+        this.loadRegion("armor");
         this.updateDescription();
     }
 
@@ -31,10 +33,15 @@ public class ToastPower extends AbstractPower {
     }
 
     @Override
-    public void atStartOfTurn() {
-        this.flash();
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this.owner, this.owner, new ResistancePower(this.owner, -this.amount), -this.amount));
-        AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
+    public void onChannel(AbstractOrb orb) {
+        if (orb instanceof WeaponOrb) {
+            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, this.amount));
+            this.flash();
+        }
     }
 
+    @Override
+    public void atEndOfTurn(boolean isPlayer) {
+        AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
+    }
 }

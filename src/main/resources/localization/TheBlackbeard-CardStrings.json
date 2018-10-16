@@ -266,7 +266,7 @@
   },
   "blackbeard:SmithingHammer": {
     "NAME": "Smithing Hammer",
-    "DESCRIPTION": "Equip a !M! / {D} Block. After you attack with this Weapon, upgrade a random card in your hand for the rest of the combat."
+    "DESCRIPTION": "Equip a !M! / {D} Weapon. After you attack with this Weapon, upgrade a random card in your hand for the rest of the combat."
   },
   "blackbeard:Spear": {
     "NAME": "Spear",
@@ -302,5 +302,55 @@
   "blackbeard:DelayedPain": {
     "NAME": "Delayed Pain",
     "DESCRIPTION": "Gain !B! Block. NL At the end of your next turn, you are dealt !M! damage."
+  },
+  "blackbeard:Fortification": {
+    "NAME": "Fortification",
+    "DESCRIPTION": "This turn, whenever you Equip a Weapon, gain !M! Block."
+  },
+  "blackbeard:Intoxication": {
+    "NAME": "Intoxication",
+    "DESCRIPTION": "Gain !M! Resistance. NL At the start of each turn, lose 1 Resistance."
+  },
+  "blackbeard:CannonballSupply": {
+    "NAME": "Cannonball Supply",
+    "DESCRIPTION": "Add 3 Cannonballs to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add 3 Cannonballs to your hand."
+  },
+  "blackbeard:BountyHunter": {
+    "NAME": "Bounty Hunter",
+    "DESCRIPTION": "Deal !D! damage. If this kills a non-minion enemy, gain !M! Gold."
+  },
+  "blackbeard:GoldenMegaBlow": {
+    "NAME": "Golden Mega Blow",
+    "DESCRIPTION": "Deal damage equal to NL !M! percent of Gold gained this run.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Deals !D! damage.)",
+      " NL You have gained ",
+      " Gold this run."
+    ]
+  },
+  "blackbeard:DoubleBottom": {
+    "NAME": "Double Bottom",
+    "DESCRIPTION": "Gain !B! Block. NL Next turn gain !B! Block."
+  },
+  "blackbeard:Lifeboat": {
+    "NAME": "Lifeboat",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "blackbeard:Provisioning": {
+    "NAME": "Provisioning",
+    "DESCRIPTION": "Obtain a random potion. NL Exhaust."
+  },
+  "blackbeard:TerrorOfTheSeas": {
+    "NAME": "Terror Of The Seas",
+    "DESCRIPTION": "Apply !M! Vulnerable to ALL enemies. Exhaust."
+  },
+  "blackbeard:RunForYourLife": {
+    "NAME": "Run For Your Life",
+    "DESCRIPTION": "Obtain a Smoke Bomb Potion. Exhaust."
+  },
+  "blackbeard:FishingNets": {
+    "NAME": "FishingNets",
+    "DESCRIPTION": "Gain !M! Thorns."
   }
 }

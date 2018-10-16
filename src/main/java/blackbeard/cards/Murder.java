@@ -22,8 +22,8 @@ public class Murder extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
     private static final int COST = 4;
-    private static final int ATTACK_DMG = 100;
-    private static final int UPGRADED_PLUS_ATTACK_DMG = 100;
+    private static final int ATTACK_DMG = 250;
+    private static final int UPGRADED_PLUS_ATTACK_DMG = 250;
 
     public Murder() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_ATTACK_CARD_ID), COST, DESCRIPTION, CardType.ATTACK,
