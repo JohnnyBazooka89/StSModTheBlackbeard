@@ -287,8 +287,8 @@
   },
   "blackbeard:BoostMorale": {
     "NAME": "Boost Morale",
-    "DESCRIPTION": "Draw !M! cards. NL Gain [R].",
-    "UPGRADE_DESCRIPTION": "Draw !M! cards. NL Gain [R] [R]."
+    "DESCRIPTION": "Draw !M! cards. NL Gain [R]. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. NL Gain [R] [R]. NL Exhaust."
   },
   "blackbeard:MegaUpgrade": {
     "NAME": "Mega Upgrade",
