@@ -23,7 +23,7 @@ public class CaptainsCabin extends CustomCard {
     private static final int AMOUNT_OF_CANNONBALLS = 1;
     private static final int BLOCK_AMOUNT = 10;
     private static final int UPGRADED_PLUS_AMOUNT_OF_CANNONBALLS = 1;
-    private static final int UPGRADED_PLUS_BLOCK_AMOUNT = 4;
+    private static final int UPGRADED_PLUS_BLOCK_AMOUNT = 2;
 
     public CaptainsCabin() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_SKILL_CARD_ID), COST, DESCRIPTION, CardType.SKILL,

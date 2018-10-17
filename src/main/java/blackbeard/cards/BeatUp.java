@@ -21,7 +21,7 @@ public class BeatUp extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
     private static final int ATTACK_DMG = 4;
-    private static final int UPGRADE_PLUS_ATTACK_DMG = 2;
+    private static final int UPGRADE_PLUS_ATTACK_DMG = 1;
     private static final int VULNERABLE_TO_APPLY = 1;
     private static final int UPGRADE_PLUS_VULNERABLE_TO_APPLY = 1;
 

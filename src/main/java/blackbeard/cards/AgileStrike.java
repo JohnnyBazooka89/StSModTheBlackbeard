@@ -3,7 +3,6 @@ package blackbeard.cards;
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.characters.TheBlackbeard;
-import blackbeard.orbs.WeaponOrb;
 import blackbeard.patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -13,9 +12,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.orbs.AbstractOrb;
-
-import java.util.Iterator;
 
 public class AgileStrike extends CustomCard {
     public static final String ID = "blackbeard:AgileStrike";
@@ -34,29 +30,9 @@ public class AgileStrike extends CustomCard {
 
         this.tags.add(CardTags.STRIKE);
 
-        reduceCostToZeroIfEquippedWeaponThisTurn();
     }
 
-    @Override
-    public void applyPowers() {
-        super.applyPowers();
-        reduceCostToZeroIfEquippedWeaponThisTurn();
-    }
-
-    private void reduceCostToZeroIfEquippedWeaponThisTurn() {
-        boolean shouldReduceCostToZero = false;
-        Iterator<AbstractOrb> orbsChanneledThisTurnIt = AbstractDungeon.actionManager.orbsChanneledThisTurn.iterator();
-        while (orbsChanneledThisTurnIt.hasNext()) {
-            AbstractOrb orb = orbsChanneledThisTurnIt.next();
-            if (orb instanceof WeaponOrb) {
-                shouldReduceCostToZero = true;
-            }
-        }
-
-        if (shouldReduceCostToZero) {
-            this.setCostForTurn(0);
-        }
-    }
+    /* Logic is in EquipAction */
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {

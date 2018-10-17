@@ -20,7 +20,7 @@ public class BoostMorale extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 0;
-    private static final int CARDS_TO_DRAW = 3;
+    private static final int CARDS_TO_DRAW = 2;
     private static final int UPGRADED_PLUS_CARDS_TO_DRAW = 1;
     private static final int ENERGY_TO_GET = 1;
     private static final int UPGRADED_PLUS_ENERGY_TO_GET = 1;

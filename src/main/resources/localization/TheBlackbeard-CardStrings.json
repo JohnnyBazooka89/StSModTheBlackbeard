@@ -38,7 +38,7 @@
   },
   "blackbeard:TheDrunkenSailor": {
     "NAME": "  The Drunken Sailor",
-    "DESCRIPTION": "Increase the effectiveness of your potions !M! times."
+    "DESCRIPTION": "Increase the effectiveness of your potions 2 times."
   },
   "blackbeard:SwordDance": {
     "NAME": "Sword Dance",
@@ -250,8 +250,8 @@
     "NAME": "Beat Up",
     "DESCRIPTION": "Deal !D! damage twice. NL Apply !M! Vulnerable."
   },
-  "blackbeard:IntimidatingBlow": {
-    "NAME": "Intimidating Blow",
+  "blackbeard:IntimidatingStrike": {
+    "NAME": "Intimidating Strike",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak."
   },
   "blackbeard:WiseDefend": {

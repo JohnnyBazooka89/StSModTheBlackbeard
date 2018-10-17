@@ -33,6 +33,10 @@ public class FinalBarrage extends CustomCard {
 
         this.baseMagicNumber = this.magicNumber = ATTACK_PER_CANNONBALL;
         this.baseDamage = this.damage = 0;
+
+        if (CardCrawlGame.isInARun()) {
+            setBaseDamageAndUpgradeDescription();
+        }
     }
 
     @Override
@@ -41,7 +45,18 @@ public class FinalBarrage extends CustomCard {
     }
 
     @Override
-    public void applyPowers() {
+    public void triggerWhenDrawn() {
+        super.triggerWhenDrawn();
+        setBaseDamageAndUpgradeDescription();
+    }
+
+    @Override
+    public void triggerOnOtherCardPlayed(AbstractCard c) {
+        super.triggerOnOtherCardPlayed(c);
+        setBaseDamageAndUpgradeDescription();
+    }
+
+    private void setBaseDamageAndUpgradeDescription() {
         int cannonballsPlayedThisTurn = 0;
         Iterator<AbstractCard> cardsPlayedThisTurnIt = AbstractDungeon.actionManager.cardsPlayedThisTurn.iterator();
 
@@ -53,15 +68,7 @@ public class FinalBarrage extends CustomCard {
         }
 
         this.baseDamage = this.damage = cannonballsPlayedThisTurn * this.magicNumber;
-        super.applyPowers();
         this.rawDescription = DESCRIPTION + EXTENDED_DESCRIPTION[0];
-        this.initializeDescription();
-    }
-
-    @Override
-    public void onMoveToDiscard() {
-        super.onMoveToDiscard();
-        this.rawDescription = DESCRIPTION;
         this.initializeDescription();
     }
 
