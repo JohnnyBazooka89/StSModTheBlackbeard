@@ -228,7 +228,7 @@
   },
   "blackbeard:Revenge": {
     "NAME": "Revenge",
-    "DESCRIPTION": "Deal 0 - !M! damage to ALL enemies, based on how many % of HP you are missing.",
+    "DESCRIPTION": "Deal 0 - !M! damage to ALL enemies, based on how many % of HP you are missing. NL Max damage at 1 HP.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deals !D! damage.)"
     ]

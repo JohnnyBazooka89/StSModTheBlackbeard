@@ -29,6 +29,10 @@ public class Revenge extends CustomCard {
         this.baseDamage = this.damage = 0;
         this.baseMagicNumber = this.magicNumber = MAXIMUM_DAMAGE;
         this.isMultiDamage = true;
+
+        if (CardCrawlGame.isInARun()) {
+            setBaseDamageAndUpgradeDescription();
+        }
     }
 
     @Override
@@ -36,18 +40,12 @@ public class Revenge extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.BLUNT_HEAVY));
     }
 
-    @Override
-    public void applyPowers() {
-        this.baseDamage = this.damage = (int) ((1.0 - (1.0 * AbstractDungeon.player.currentHealth / AbstractDungeon.player.maxHealth)) * this.magicNumber);
-        super.applyPowers();
-        this.rawDescription = DESCRIPTION + EXTENDED_DESCRIPTION[0];
-        this.initializeDescription();
-    }
+    /* Refreshing logic is in UpdateRevengePatch */
 
-    @Override
-    public void onMoveToDiscard() {
-        super.onMoveToDiscard();
-        this.rawDescription = DESCRIPTION;
+    public void setBaseDamageAndUpgradeDescription() {
+        /*For example, when max HP = 75, then it deals 0% at 75HP, 50% at 38HP, and 100% at 1HP*/
+        this.baseDamage = this.damage = (int) ((1.0 - (1.0 * (AbstractDungeon.player.currentHealth - 1) / (AbstractDungeon.player.maxHealth - 1))) * this.magicNumber);
+        this.rawDescription = DESCRIPTION + EXTENDED_DESCRIPTION[0];
         this.initializeDescription();
     }
 

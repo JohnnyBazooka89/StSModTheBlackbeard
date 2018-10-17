@@ -60,6 +60,8 @@ public class EquipAction extends AbstractGameAction {
         reduceAgileStrikesCostForTurnInCardGroup(AbstractDungeon.player.hand);
         reduceAgileStrikesCostForTurnInCardGroup(AbstractDungeon.player.drawPile);
         reduceAgileStrikesCostForTurnInCardGroup(AbstractDungeon.player.discardPile);
+        reduceAgileStrikesCostForTurnInCardGroup(AbstractDungeon.player.exhaustPile);
+        reduceAgileStrikesCostForTurnInCardGroup(AbstractDungeon.player.limbo);
     }
 
     private static void reduceAgileStrikesCostForTurnInCardGroup(CardGroup cardGroup) {
