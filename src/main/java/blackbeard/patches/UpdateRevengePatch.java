@@ -1,6 +1,5 @@
 package blackbeard.patches;
 
-import blackbeard.TheBlackbeardMod;
 import blackbeard.cards.Revenge;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -8,15 +7,11 @@ import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 @SpirePatch(clz = AbstractPlayer.class, method = "damage", paramtypez = {DamageInfo.class})
 @SpirePatch(clz = AbstractPlayer.class, method = "heal", paramtypez = {int.class})
 
 public class UpdateRevengePatch {
-
-    public static final Logger LOGGER = LogManager.getLogger(TheBlackbeardMod.class.getName());
 
     public static void Postfix(AbstractPlayer abstractPlayer, DamageInfo info) {
         updateRevenge();

@@ -2,7 +2,6 @@ package blackbeard.cards;
 
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
-import blackbeard.characters.TheBlackbeard;
 import blackbeard.patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -24,7 +23,7 @@ public class PirateStrength extends CustomCard {
     private static final int UPGRADED_PLUS_STRENGTH = 3;
 
     public PirateStrength() {
-        super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_POWER_CARD_ID), COST, DESCRIPTION, CardType.POWER,
+        super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.POWER,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.RARE, CardTarget.SELF);
 
         this.baseMagicNumber = this.magicNumber = STRENGTH;

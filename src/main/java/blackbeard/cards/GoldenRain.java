@@ -2,7 +2,6 @@ package blackbeard.cards;
 
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
-import blackbeard.characters.TheBlackbeard;
 import blackbeard.interfaces.IGoldenCard;
 import blackbeard.patches.AbstractCardEnum;
 import blackbeard.utils.GoldenCardsUtil;
@@ -25,7 +24,7 @@ public class GoldenRain extends CustomCard implements IGoldenCard {
     private static final int UPGRADE_PLUS_PERCENT_OF_GOLD_GAINED = 1;
 
     public GoldenRain() {
-        super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_ATTACK_CARD_ID), COST, DESCRIPTION, CardType.ATTACK,
+        super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.RARE, CardTarget.ALL_ENEMY);
 
         this.baseMagicNumber = this.magicNumber = PERCENT_OF_GOLD_GAINED;
