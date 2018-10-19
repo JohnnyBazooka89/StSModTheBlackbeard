@@ -15,18 +15,9 @@ Gameplay:
 Starting deck: 
 ![Gameplay](screenshots/StartingDeck.jpg)
 
-Developed cards:
+## Cards ##
 
-![Cards1](screenshots/Cards1.jpg)
-
-![Cards2](screenshots/Cards2.jpg)
-
-![Cards3](screenshots/Cards3.jpg)
-
-![Cards4](screenshots/Cards4.jpg)
-
-![Cards4](screenshots/Cards5.jpg)
-
+List of all cards can be find [here](/cards/cardlist.html). (Exported using [Slay the Spire exporter](https://github.com/twanvl/sts-exporter))
 
 ## Requirements ##
 
