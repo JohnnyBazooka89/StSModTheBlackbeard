@@ -155,7 +155,7 @@
   },
   "blackbeard:Toast": {
     "NAME": "Toast",
-    "DESCRIPTION": "Gain !M! Resistance. NL At the start of your next turn, lose !M! Resistance."
+    "DESCRIPTION": "Gain !M! Resistance. NL At the start of your next turn, lose !M! Resistance. NL Exhaust."
   },
   "blackbeard:CatONineTails": {
     "NAME": "Cat O' Nine Tails",
@@ -186,8 +186,8 @@
   },
   "blackbeard:PiratesWill": {
     "NAME": "Pirate's Will",
-    "DESCRIPTION": "Remove all of your Debuffs. NL Draw !M! card. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Remove all of your Debuffs. NL Draw !M! cards. NL Exhaust."
+    "DESCRIPTION": "Remove all of your Debuffs. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Remove all of your Debuffs. NL Draw 1 card. NL Exhaust."
   },
   "blackbeard:WoodenLeg": {
     "NAME": "Wooden Leg",
@@ -200,7 +200,7 @@
   },
   "blackbeard:CaptainsHat": {
     "NAME": "Captain's Hat",
-    "DESCRIPTION": "Gain !M! Strength. NL Gain !M! Resistance."
+    "DESCRIPTION": "Gain !M! Strength. NL Gain 2 Resistance."
   },
   "blackbeard:Keelhauling": {
     "NAME": "Keelhauling",

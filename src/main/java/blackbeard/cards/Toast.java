@@ -19,13 +19,14 @@ public class Toast extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 0;
     private static final int RESISTANCE_VALUE = 2;
-    private static final int UPGRADED_PLUS_RESISTANCE_VALUE = 2;
+    private static final int UPGRADED_PLUS_RESISTANCE_VALUE = 1;
 
     public Toast() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.SELF);
 
         this.baseMagicNumber = this.magicNumber = RESISTANCE_VALUE;
+        this.exhaust = true;
     }
 
     @Override

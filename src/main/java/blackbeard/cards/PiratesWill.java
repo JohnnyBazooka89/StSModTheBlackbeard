@@ -20,7 +20,7 @@ public class PiratesWill extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 1;
-    private static final int CARDS_TO_DRAW = 1;
+    private static final int CARDS_TO_DRAW = 0;
     private static final int UPGRADED_PLUS_CARDS_TO_DRAW = 1;
 
     public PiratesWill() {
@@ -34,7 +34,9 @@ public class PiratesWill extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new RemoveDebuffsAction(p));
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, this.magicNumber));
+        if (this.magicNumber > 0) {
+            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, this.magicNumber));
+        }
     }
 
     public void upgrade() {
