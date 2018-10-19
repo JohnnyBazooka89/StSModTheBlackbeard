@@ -114,7 +114,6 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         logger.info("add " + TheBlackbeardEnum.BLACKBEARD_CLASS.toString());
         BaseMod.addCharacter(
                 new TheBlackbeard("The Blackbeard", TheBlackbeardEnum.BLACKBEARD_CLASS),
-                AbstractCardEnum.BLACKBEARD_BLACK,
                 BLACKBEARD_BUTTON,
                 BLACKBEARD_PORTRAIT,
                 TheBlackbeardEnum.BLACKBEARD_CLASS

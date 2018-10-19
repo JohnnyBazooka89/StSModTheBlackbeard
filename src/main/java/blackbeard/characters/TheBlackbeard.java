@@ -4,12 +4,14 @@ import basemod.abstracts.CustomPlayer;
 import blackbeard.cards.Cutlass;
 import blackbeard.cards.DefendBlackbeard;
 import blackbeard.cards.StrikeBlackbeard;
+import blackbeard.patches.AbstractCardEnum;
 import blackbeard.patches.TheBlackbeardEnum;
 import blackbeard.relics.LoadTheCannons;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.MathUtils;
 import com.esotericsoftware.spine.AnimationState;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -84,7 +86,12 @@ public class TheBlackbeard extends CustomPlayer {
     }
 
     @Override
-    public Color getCardColor() {
+    public AbstractCard.CardColor getCardColor() {
+        return AbstractCardEnum.BLACKBEARD_BLACK;
+    }
+
+    @Override
+    public Color getCardRenderColor() {
         return Color.BLACK;
     }
 
@@ -127,6 +134,26 @@ public class TheBlackbeard extends CustomPlayer {
     @Override
     public AbstractPlayer newInstance() {
         return new TheBlackbeard("The Blackbeard", TheBlackbeardEnum.BLACKBEARD_CLASS);
+    }
+
+    @Override
+    public String getSpireHeartText() {
+        return "NL You ready your Weapon...";
+    }
+
+    @Override
+    public Color getSlashAttackColor() {
+        return Color.BLACK;
+    }
+
+    @Override
+    public AbstractGameAction.AttackEffect[] getSpireHeartSlashEffect() {
+        return new AbstractGameAction.AttackEffect[]{AbstractGameAction.AttackEffect.SLASH_HEAVY, AbstractGameAction.AttackEffect.FIRE, AbstractGameAction.AttackEffect.BLUNT_HEAVY, AbstractGameAction.AttackEffect.SLASH_HEAVY, AbstractGameAction.AttackEffect.FIRE, AbstractGameAction.AttackEffect.BLUNT_HEAVY};
+    }
+
+    @Override
+    public String getVampireText() {
+        return "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us,~ ~oh Great Captain,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~";
     }
 
 }

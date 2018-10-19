@@ -47,12 +47,12 @@ public class ParrotPower extends AbstractPower {
                 m = (AbstractMonster)action.target;
             }
 
-            AbstractCard tmp = card.makeStatEquivalentCopy();
-
+            AbstractCard tmp = card.makeSameInstanceOf();
             tmp.current_x = card.current_x;
             tmp.current_y = card.current_y;
             tmp.target_x = (float) Settings.WIDTH / 2.0F - 300.0F * Settings.scale;
             tmp.target_y = (float)Settings.HEIGHT / 2.0F;
+            tmp.freeToPlayOnce = true;
             if (m != null) {
                 tmp.calculateCardDamage(m);
             }
