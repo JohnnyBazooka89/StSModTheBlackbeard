@@ -24,7 +24,7 @@
     "NAME": "Treasure Chest",
     "FLAVOR": "This treasure chest contains untold riches.",
     "DESCRIPTIONS": [
-      "Gain 25 Gold after every battle."
+      "Gain 15 Gold after every battle."
     ]
   },
   "blackbeard:WhitePearl": {
