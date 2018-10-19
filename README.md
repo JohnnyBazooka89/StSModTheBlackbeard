@@ -15,8 +15,6 @@ Gameplay:
 Starting deck: 
 ![Gameplay](screenshots/StartingDeck.jpg)
 
-## Cards ##
-
 List of all cards can be find [here](/cards/cardlist.md). (Exported using [Slay the Spire exporter](https://github.com/twanvl/sts-exporter))
 
 ## Requirements ##
