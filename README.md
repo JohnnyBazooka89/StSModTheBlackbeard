@@ -17,7 +17,7 @@ Starting deck:
 
 ## Cards ##
 
-List of all cards can be find [here](/cards/cardlist.html). (Exported using [Slay the Spire exporter](https://github.com/twanvl/sts-exporter))
+List of all cards can be find [here](/cards/cardlist.md). (Exported using [Slay the Spire exporter](https://github.com/twanvl/sts-exporter))
 
 ## Requirements ##
 
