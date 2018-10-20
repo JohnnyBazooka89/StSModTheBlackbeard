@@ -18,26 +18,26 @@ public class CaptainsHat extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 2;
-    private static final int STRENGTH = 2;
-    private static final int UPGRADED_PLUS_STRENGTH = 1;
+    private static final int STRENGTH_AND_RESISTANCE = 2;
+    private static final int UPGRADED_PLUS_STRENGTH_AND_RESISTANCE = 1;
 
     public CaptainsHat() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.POWER,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
+                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.RARE, CardTarget.SELF);
 
-        this.baseMagicNumber = this.magicNumber = STRENGTH;
+        this.baseMagicNumber = this.magicNumber = STRENGTH_AND_RESISTANCE;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new StrengthPower(p, this.magicNumber), this.magicNumber));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ResistancePower(p, 2), 2));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ResistancePower(p, this.magicNumber), this.magicNumber));
     }
 
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADED_PLUS_STRENGTH);
+            this.upgradeMagicNumber(UPGRADED_PLUS_STRENGTH_AND_RESISTANCE);
         }
     }
 }

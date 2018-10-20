@@ -200,7 +200,7 @@
   },
   "blackbeard:CaptainsHat": {
     "NAME": "Captain's Hat",
-    "DESCRIPTION": "Gain !M! Strength. NL Gain 2 Resistance."
+    "DESCRIPTION": "Gain !M! Strength. NL Gain !M! Resistance."
   },
   "blackbeard:Keelhauling": {
     "NAME": "Keelhauling",
@@ -318,7 +318,7 @@
   },
   "blackbeard:BountyHunter": {
     "NAME": "Bounty Hunter",
-    "DESCRIPTION": "Deal !D! damage. If this kills a non-minion enemy, gain !M! Gold."
+    "DESCRIPTION": "Deal !D! damage. If this kills a non-minion enemy, gain !M! Gold. NL Exhaust."
   },
   "blackbeard:GoldenMegaBlow": {
     "NAME": "Golden Mega Blow",
@@ -352,5 +352,9 @@
   "blackbeard:FishingNets": {
     "NAME": "Fishing Nets",
     "DESCRIPTION": "Gain !M! Thorns."
+  },
+  "blackbeard:BuriedTreasure": {
+    "NAME": "Buried Treasure",
+    "DESCRIPTION": "Gain !M! Gold. NL Exhaust. NL Ethereal."
   }
 }

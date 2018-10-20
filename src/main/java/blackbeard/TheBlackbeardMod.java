@@ -216,8 +216,9 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addCard(new Lifeboat());
         BaseMod.addCard(new TerrorOfTheSeas());
         BaseMod.addCard(new Provisioning());
-        BaseMod.addCard(new RunForYourLife());
+        //BaseMod.addCard(new RunForYourLife());
         BaseMod.addCard(new FishingNets());
+        BaseMod.addCard(new BuriedTreasure());
 
         logger.info("done editing cards");
     }

@@ -29,6 +29,10 @@ public class BountyHunter extends CustomCard {
 
         this.baseDamage = this.damage = ATTACK_DMG;
         this.baseMagicNumber = this.magicNumber = GOLD_TO_GAIN;
+
+        this.exhaust = true;
+
+        this.tags.add(CardTags.HEALING); //It doesn't heal, but I don't want gaining Gold to be abused.
     }
 
     @Override
