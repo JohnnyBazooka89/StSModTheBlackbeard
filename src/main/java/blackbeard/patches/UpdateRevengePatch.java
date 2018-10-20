@@ -6,10 +6,11 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
 @SpirePatch(clz = AbstractPlayer.class, method = "damage", paramtypez = {DamageInfo.class})
-@SpirePatch(clz = AbstractPlayer.class, method = "heal", paramtypez = {int.class})
+@SpirePatch(clz = AbstractCreature.class, method = "heal", paramtypez = {int.class, boolean.class})
 
 public class UpdateRevengePatch {
 
@@ -17,7 +18,7 @@ public class UpdateRevengePatch {
         updateRevenge();
     }
 
-    public static void Postfix(AbstractPlayer abstractPlayer, int amount) {
+    public static void Postfix(AbstractCreature abstractCreature, int healAmount, boolean showEffect) {
         updateRevenge();
     }
 

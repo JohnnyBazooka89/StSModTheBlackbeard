@@ -18,9 +18,9 @@ public class Boarding extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 2;
-    private static final int ATTACK_DMG = 12;
+    private static final int ATTACK_DMG = 10;
     private static final int CARDS_TO_DRAW = 2;
-    private static final int UPGRADE_PLUS_ATTACK_DMG = 4;
+    private static final int UPGRADE_PLUS_ATTACK_DMG = 3;
 
     public Boarding() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK,

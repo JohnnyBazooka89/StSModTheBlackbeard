@@ -24,7 +24,7 @@ public class Anchor extends CustomCard {
 
     public Anchor() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.SELF);
+                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
 
         this.baseBlock = this.block = BLOCK_AMOUNT;
         this.isInnate = true;
