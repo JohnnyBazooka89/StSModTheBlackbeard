@@ -2,7 +2,6 @@ package blackbeard.cards;
 
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
-import blackbeard.characters.TheBlackbeard;
 import blackbeard.patches.AbstractCardEnum;
 import blackbeard.powers.ResistancePower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -23,7 +22,7 @@ public class GhostInTheRum extends CustomCard {
     private static final int UPGRADED_MINUS_RESISTANCE_DEBUFF_VALUE = 1;
 
     public GhostInTheRum() {
-        super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_SKILL_CARD_ID), COST, DESCRIPTION, CardType.SKILL,
+        super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
 
         this.baseMagicNumber = this.magicNumber = RESISTANCE_DEBUFF_VALUE;

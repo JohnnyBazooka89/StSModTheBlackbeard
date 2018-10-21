@@ -3,7 +3,6 @@ package blackbeard.cards;
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.EquipAction;
-import blackbeard.characters.TheBlackbeard;
 import blackbeard.orbs.DefaultWeaponOrb;
 import blackbeard.patches.AbstractCardEnum;
 import blackbeard.utils.WeaponCardsUtil;
@@ -29,7 +28,7 @@ public class QuickSlash extends CustomCard {
     public static final String DESCRIPTION = WeaponCardsUtil.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);
 
     public QuickSlash() {
-        super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_ATTACK_CARD_ID), COST, DESCRIPTION, CardType.ATTACK,
+        super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.COMMON, AbstractCard.CardTarget.ENEMY);
 
         this.baseDamage = this.damage = DAMAGE;

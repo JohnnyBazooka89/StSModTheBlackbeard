@@ -2,7 +2,6 @@ package blackbeard.cards;
 
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
-import blackbeard.characters.TheBlackbeard;
 import blackbeard.patches.AbstractCardEnum;
 import blackbeard.powers.KeelhaulingPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -24,7 +23,7 @@ public class Keelhauling extends CustomCard {
     private static final int UPGRADED_PLUS_TURNS = 1;
 
     public Keelhauling() {
-        super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_SKILL_CARD_ID), COST, DESCRIPTION, CardType.SKILL,
+        super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
 
         this.baseMagicNumber = this.magicNumber = TURNS;
