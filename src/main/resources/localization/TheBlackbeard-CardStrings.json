@@ -111,8 +111,8 @@
   },
   "blackbeard:GoldenCannonball": {
     "NAME": "Golden Cannonball",
-    "DESCRIPTION": "Deal damage equal to NL 2% of Gold gained NL this run. Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal damage equal to NL !M! + 2% of Gold gained NL this run. Exhaust.",
+    "DESCRIPTION": "Deal damage equal to NL 1.5% of Gold gained NL this run. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal damage equal to NL !M! + 1.5% of Gold gained NL this run. Exhaust.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deals !D! damage.)",
       " NL You have gained ",
@@ -235,7 +235,8 @@
   },
   "blackbeard:GoldenRain": {
     "NAME": "Golden Rain",
-    "DESCRIPTION": "Deal damage equal to NL !M! percent of Gold gained this run to ALL enemies.",
+    "DESCRIPTION": "Deal damage equal to NL 2% of Gold gained this run to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Deal damage equal to NL 2.5% of Gold gained this run to ALL enemies.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deals !D! damage.)",
       " NL You have gained ",
@@ -303,8 +304,8 @@
     "NAME": "Delayed Pain",
     "DESCRIPTION": "Gain !B! Block. NL At the end of your next turn, you are dealt !M! damage."
   },
-  "blackbeard:Fortification": {
-    "NAME": "Fortification",
+  "blackbeard:ArmorUp": {
+    "NAME": "Armor Up",
     "DESCRIPTION": "This turn, whenever you Equip a Weapon, gain !M! Block."
   },
   "blackbeard:Intoxication": {
@@ -320,8 +321,8 @@
     "NAME": "Bounty Hunter",
     "DESCRIPTION": "Deal !D! damage. If this kills a non-minion enemy, gain !M! Gold. NL Exhaust."
   },
-  "blackbeard:GoldenMegaBlow": {
-    "NAME": "Golden Mega Blow",
+  "blackbeard:GoldenGuillotine": {
+    "NAME": "Golden Guillotine",
     "DESCRIPTION": "Deal damage equal to NL !M! percent of Gold gained this run.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deals !D! damage.)",

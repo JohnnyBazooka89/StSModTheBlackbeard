@@ -18,16 +18,17 @@ public class GoldenRain extends CustomCard implements IGoldenCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
     private static final int COST = 2;
-    private static final int PERCENT_OF_GOLD_GAINED = 3;
-    private static final int UPGRADE_PLUS_PERCENT_OF_GOLD_GAINED = 1;
+    private static final int PERMILLES_OF_GOLD_GAINED = 20;
+    private static final int UPGRADE_PLUS_PERMILLES_OF_GOLD_GAINED = 5;
 
     public GoldenRain() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.RARE, CardTarget.ALL_ENEMY);
 
-        this.baseMagicNumber = this.magicNumber = PERCENT_OF_GOLD_GAINED;
+        this.baseMagicNumber = this.magicNumber = PERMILLES_OF_GOLD_GAINED;
         this.isMultiDamage = true;
 
         setGoldenValuesAndInitializeDescription();
@@ -39,15 +40,15 @@ public class GoldenRain extends CustomCard implements IGoldenCard {
     }
 
     public void setGoldenValuesAndInitializeDescription() {
-        this.baseDamage = this.damage = this.magicNumber * CardCrawlGame.goldGained / 100;
-        this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(this.upgraded, DESCRIPTION, DESCRIPTION, EXTENDED_DESCRIPTION);
+        this.baseDamage = this.damage = this.magicNumber * CardCrawlGame.goldGained / 1000;
+        this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(this.upgraded, DESCRIPTION, UPGRADE_DESCRIPTION, EXTENDED_DESCRIPTION);
         this.initializeDescription();
     }
 
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADE_PLUS_PERCENT_OF_GOLD_GAINED);
+            this.upgradeMagicNumber(UPGRADE_PLUS_PERMILLES_OF_GOLD_GAINED);
             setGoldenValuesAndInitializeDescription();
         }
     }

@@ -207,11 +207,11 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addCard(new MegaUpgrade());
         BaseMod.addCard(new Recklessness());
         BaseMod.addCard(new DelayedPain());
-        BaseMod.addCard(new Fortification());
+        BaseMod.addCard(new ArmorUp());
         BaseMod.addCard(new Intoxication());
         BaseMod.addCard(new CannonballSupply());
         BaseMod.addCard(new BountyHunter());
-        BaseMod.addCard(new GoldenMegaBlow());
+        BaseMod.addCard(new GoldenGuillotine());
         BaseMod.addCard(new DoubleBottom());
         BaseMod.addCard(new Lifeboat());
         BaseMod.addCard(new TerrorOfTheSeas());

@@ -1,5 +1,5 @@
 # StSModTheBlackbeard
-This mod adds a new character for Slay The Spire, named The Blackbeard, with 75 brand new cards (currently ~55 have images) and 5 new relics (1 starter, 3 common and 1 rare). 
+This mod adds a new character for Slay The Spire, named The Blackbeard, with 75 brand new cards (currently 64 have images) and 5 new relics (1 starter, 3 common and 1 rare). 
 
 The Blackbeard is a new class based on pirate theme. His most important mechanic are Weapons. There are many cards that allow to Equip a Weapon and each Weapon is characterized by its Attack and Durability. You can equip many Weapons, and they are queued using Defect's orb system. Every time you play an attack card, one Durability of your rightmost Weapon is used and card's damage is increased by Weapon's attack. You can Equip maximum of 10 Weapons. Weapons with zero durability are automatically destroyed. Orb slots are created automatically when you equip a Weapon and are automatically destroyed when Weapon is destroyed.
 
@@ -26,7 +26,7 @@ List of all cards can be find [here](/cards/cardlist.md). (Exported using [Slay 
 ## Installation ##
 1. Go to folder where your Slay The Spire is installed, for example: "C:\Program Files (x86)\Steam\steamapps\common\SlayTheSpire"
 2. Copy ModTheSpire files (ModTheSpire.jar, MTS.cmd, MTS.sh) to this folder.
-3. Create new folder named "mods".
+3. Create a new folder named "mods".
 4. Copy BaseMod.jar and TheBlackbeardMod.jar into folder "mods".
 5. Double click on MTS.cmd, select "BaseMod" and "The Blackbeard Mod", and click "Play" button.
 
@@ -46,12 +46,13 @@ If you want to play Ascension 20 straight away, you have to:
 ## Special Thanks ##
 1. Thanks to the [developers](https://www.megacrit.com/) of **SlayTheSpire** for making such a good game.
 2. Thanks to the creators of ModTheSpire and BaseMod for creating great tools for modding.
-3. Thanks to [JoINrbs](https://www.twitch.tv/joinrbs) for great and educational Slay the Spire streams.
+3. Thanks to the community of [Pixabay](https://pixabay.com) for many great, free images that I used for this mod. 
+4. Thanks to [JoINrbs](https://www.twitch.tv/joinrbs) for great and educational Slay the Spire streams.
 
 ## Other Mods ##
 List of other mods can be found at:
 * https://github.com/kiooeht/ModTheSpire/wiki/List-of-Known-Mods
 
 ## Contact ##
-- To report a bug, please create an [issue](https://github.com/JohnnyBazooka89/StSModTheBlackbeard/issues). You can also find me on Slay the Spire discord, on channel #unsupported-modding.
+- To report a bug, please create an [issue](https://github.com/JohnnyBazooka89/StSModTheBlackbeard/issues). You can also find me on Slay the Spire discord, on channel #unsupported-modding (my nickname: JohnnyBazooka89#8560).
 - If you really want to contact me, please send an e-mail to johnnybazooka89 \_a_t_ gmail dot com.

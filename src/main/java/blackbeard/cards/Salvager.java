@@ -2,7 +2,6 @@ package blackbeard.cards;
 
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
-import blackbeard.characters.TheBlackbeard;
 import blackbeard.patches.AbstractCardEnum;
 import blackbeard.powers.SalvagerPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -21,7 +20,7 @@ public class Salvager extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
     public Salvager() {
-        super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_POWER_CARD_ID), COST, DESCRIPTION, CardType.POWER,
+        super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.POWER,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.RARE, CardTarget.SELF);
     }
 

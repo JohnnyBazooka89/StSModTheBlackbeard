@@ -2,7 +2,6 @@ package blackbeard.cards;
 
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
-import blackbeard.characters.TheBlackbeard;
 import blackbeard.patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
@@ -24,7 +23,7 @@ public class DoubleBottom extends CustomCard {
     private static final int UPGRADED_PLUS_BLOCK_AMOUNT = 3;
 
     public DoubleBottom() {
-        super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_SKILL_CARD_ID), COST, DESCRIPTION, CardType.SKILL,
+        super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
 
         this.baseBlock = this.block = BLOCK_AMOUNT;
