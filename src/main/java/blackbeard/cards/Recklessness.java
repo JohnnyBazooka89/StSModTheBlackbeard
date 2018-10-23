@@ -2,7 +2,6 @@ package blackbeard.cards;
 
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
-import blackbeard.characters.TheBlackbeard;
 import blackbeard.patches.AbstractCardEnum;
 import blackbeard.powers.LoseEnergyNextTurnPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -26,7 +25,7 @@ public class Recklessness extends CustomCard {
     private static final int ENERGY_TO_LOSE_NEXT_TURN = 2;
 
     public Recklessness() {
-        super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_SKILL_CARD_ID), COST, DESCRIPTION, CardType.SKILL,
+        super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
 
         this.baseMagicNumber = this.magicNumber = ENERGY_TO_GET;

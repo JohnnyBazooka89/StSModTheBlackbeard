@@ -2,7 +2,6 @@ package blackbeard.cards;
 
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
-import blackbeard.characters.TheBlackbeard;
 import blackbeard.patches.AbstractCardEnum;
 import blackbeard.powers.DamageAtTheEndOfNextTurnPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -26,7 +25,7 @@ public class DangerousBlow extends CustomCard {
     private static final int DAMAGE_TO_TAKE = 6;
 
     public DangerousBlow() {
-        super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_ATTACK_CARD_ID), COST, DESCRIPTION, CardType.ATTACK,
+        super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
 
         this.baseDamage = this.damage = ATTACK_DMG;

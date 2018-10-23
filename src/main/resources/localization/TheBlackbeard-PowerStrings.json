@@ -84,18 +84,18 @@
     "NAME": "Salvager",
     "DESCRIPTIONS": [
       "Whenever a Weapon is destroyed, gain #b",
-      " [R]."
+      " [R] ."
     ]
   },
   "blackbeard:LoseEnergyNextTurnPower": {
     "NAME": "Lose Energy Next Turn",
     "DESCRIPTIONS": [
       "At the start of your next turn, lose #b",
-      " [R]."
+      " [R] ."
     ]
   },
-  "blackbeard:FortificationPower": {
-    "NAME": "Fortification",
+  "blackbeard:ArmorUpPower": {
+    "NAME": "Armor Up",
     "DESCRIPTIONS": [
       "This turn, whenever you Equip a Weapon, gain #b",
       " Block."

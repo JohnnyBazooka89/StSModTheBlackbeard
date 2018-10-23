@@ -2,52 +2,21 @@ package blackbeard.patches;
 
 import basemod.ReflectionHacks;
 import blackbeard.powers.TheDrunkenSailorPower;
-import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
-import com.evacipated.cardcrawl.modthespire.lib.SpirePatches;
-import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.potions.*;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.ui.panels.PotionPopUp;
+import javassist.CtBehavior;
 
-@SpirePatches(
-        value = {
-                @SpirePatch(clz = AncientPotion.class, method = "use"),
-                @SpirePatch(clz = AttackPotion.class, method = "use"),
-                @SpirePatch(clz = BlockPotion.class, method = "use"),
-                @SpirePatch(clz = BloodPotion.class, method = "use"),
-                @SpirePatch(clz = DexterityPotion.class, method = "use"),
-                @SpirePatch(clz = EnergyPotion.class, method = "use"),
-                @SpirePatch(clz = EntropicBrew.class, method = "use"),
-                @SpirePatch(clz = EssenceOfSteel.class, method = "use"),
-                @SpirePatch(clz = ExplosivePotion.class, method = "use"),
-                @SpirePatch(clz = FairyPotion.class, method = "use"),
-                @SpirePatch(clz = FearPotion.class, method = "use"),
-                @SpirePatch(clz = FirePotion.class, method = "use"),
-                @SpirePatch(clz = FocusPotion.class, method = "use"),
-                @SpirePatch(clz = FruitJuice.class, method = "use"),
-                @SpirePatch(clz = GamblersBrew.class, method = "use"),
-                @SpirePatch(clz = GhostInAJar.class, method = "use"),
-                @SpirePatch(clz = LiquidBronze.class, method = "use"),
-                @SpirePatch(clz = PoisonPotion.class, method = "use"),
-                @SpirePatch(clz = PotionSlot.class, method = "use"),
-                @SpirePatch(clz = PowerPotion.class, method = "use"),
-                @SpirePatch(clz = RegenPotion.class, method = "use"),
-                @SpirePatch(clz = SkillPotion.class, method = "use"),
-                @SpirePatch(clz = SmokeBomb.class, method = "use"),
-                @SpirePatch(clz = SneckoOil.class, method = "use"),
-                @SpirePatch(clz = SpeedPotion.class, method = "use"),
-                @SpirePatch(clz = SteroidPotion.class, method = "use"),
-                @SpirePatch(clz = StrengthPotion.class, method = "use"),
-                @SpirePatch(clz = SwiftPotion.class, method = "use"),
-                @SpirePatch(clz = WeakenPotion.class, method = "use")
-        }
-)
-
+@SpirePatch(clz = PotionPopUp.class, method = "updateInput")
+@SpirePatch(clz = PotionPopUp.class, method = "updateTargetMode")
 public class TheDrunkenSailorPatch {
 
-    public static void Prefix(AbstractPotion potion, AbstractCreature target) {
-
-        int potencyMultiplier = 1;
+    @SpireInsertPatch(locator = Locator.class, localvars = {"potion"})
+    public static void Insert(PotionPopUp potionPopUp, AbstractPotion potion) {
+        int potencyMultiplier = 0;
 
         for (AbstractPower power : AbstractDungeon.player.powers) {
             if (power instanceof TheDrunkenSailorPower) {
@@ -55,12 +24,17 @@ public class TheDrunkenSailorPatch {
                 potencyMultiplier += theDrunkenSailorPower.amount;
             }
         }
-
-        ReflectionHacks.setPrivate(potion, AbstractPotion.class, "potency", potencyMultiplier * potion.getPotency());
+        for (int i = 0; i < potencyMultiplier; i++) {
+            AbstractMonster hoveredMonster = (AbstractMonster) ReflectionHacks.getPrivate(potionPopUp, PotionPopUp.class, "hoveredMonster");
+            potion.use(hoveredMonster);
+        }
     }
 
-    public static void Postfix(AbstractPotion potion, AbstractCreature target) {
-        ReflectionHacks.setPrivate(potion, AbstractPotion.class, "potency", potion.getPotency());
+    private static class Locator extends SpireInsertLocator {
+        @Override
+        public int[] Locate(CtBehavior method) throws Exception {
+            Matcher matcher = new Matcher.MethodCallMatcher(AbstractPotion.class, "use");
+            return LineFinder.findInOrder(method, matcher);
+        }
     }
-
 }

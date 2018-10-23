@@ -10,14 +10,14 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-public class FortificationPower extends AbstractPower {
+public class ArmorUpPower extends AbstractPower {
 
-    public static final String POWER_ID = "blackbeard:FortificationPower";
+    public static final String POWER_ID = "blackbeard:ArmorUpPower";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    public FortificationPower(AbstractCreature owner, int amount) {
+    public ArmorUpPower(AbstractCreature owner, int amount) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;

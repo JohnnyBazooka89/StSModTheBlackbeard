@@ -3,7 +3,6 @@ package blackbeard.cards;
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.UpgradeWeaponsAction;
-import blackbeard.characters.TheBlackbeard;
 import blackbeard.enums.WeaponsToUseEnum;
 import blackbeard.patches.AbstractCardEnum;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -23,7 +22,7 @@ public class MegaUpgrade extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
     public MegaUpgrade() {
-        super(ID, NAME, TheBlackbeardMod.getCardImagePath(TheBlackbeard.DEFAULT_SKILL_CARD_ID), COST, DESCRIPTION, CardType.SKILL,
+        super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.RARE, CardTarget.SELF);
 
         this.baseMagicNumber = this.magicNumber = UPGRADE_VALUE;
