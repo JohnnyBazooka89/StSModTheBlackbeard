@@ -30,16 +30,6 @@
 |1
 |Deal 6(9) damage.
 |-
-|[[Anchor]]
-|[[File:Anchor.png|thumb|289x289px]]
-|Common
-|[[Skill]]
-|0
-|[[Innate]].
-Gain 10 [[Block]].
-(Draw a card.)
- [[Exhaust]].
-|-
 |[[Beat Up]]
 |[[File:BeatUp.png|thumb|289x289px]]
 |Common
@@ -109,7 +99,7 @@ Apply 1(2) [[Weak]].
 |[[File:Spear.png|thumb|289x289px]]
 |Common
 |[[Skill]]
-|0
+|1
 |Equip a 7(10) / 1 [[Weapon]].
 |-
 |[[Sword]]
@@ -152,6 +142,23 @@ At the start of your next turn, lose 2(3) [[Resistance]].
 If you have equipped a [[Weapon]] this turn, reduce cost of
 this card to 0.
 |-
+|[[Anchor]]
+|[[File:Anchor.png|thumb|289x289px]]
+|Uncommon
+|[[Skill]]
+|0
+|[[Innate]].
+Gain 10 [[Block]].
+(Draw a card.)
+ [[Exhaust]].
+|-
+|[[Armor Up]]
+|[[File:ArmorUp.png|thumb|289x289px]]
+|Uncommon
+|[[Skill]]
+|0
+|This turn, whenever you Equip a [[Weapon]], gain 3(5) [[Block]].
+|-
 |[[Bandana]]
 |[[File:Bandana.png|thumb|289x289px]]
 |Uncommon
@@ -164,7 +171,7 @@ this card to 0.
 |Uncommon
 |[[Attack]]
 |2
-|Deal 12(16) damage to ALL enemies.
+|Deal 10(13) damage to ALL enemies.
 Draw 2 cards.
 |-
 |[[Brown Pants]]
@@ -173,6 +180,15 @@ Draw 2 cards.
 |[[Power]]
 |2
 |Gain 5(6) Plated Armor.
+|-
+|[[Buried Treasure]]
+|[[File:BuriedTreasure.png|thumb|289x289px]]
+|Uncommon
+|[[Skill]]
+|1
+|Gain 12(15) Gold.
+[[Exhaust]].
+[[Ethereal]].
 |-
 |[[Cannon Barrage]]
 |[[File:CannonBarrage.png|thumb|289x289px]]
@@ -196,14 +212,6 @@ Exhaust.)
 |[[Skill]]
 |2
 |Gain 10(12) [[Block]]. Add 1(2) Cannonball(s) to you hand.
-|-
-|[[Captain's Hat]]
-|[[File:CaptainsHat.png|thumb|289x289px]]
-|Uncommon
-|[[Power]]
-|2
-|Gain 2(3) [[Strength]].
-Gain 2 [[Resistance]].
 |-
 |[[Chaotic Defend]]
 |[[File:ChaoticDefend.png|thumb|289x289px]]
@@ -266,13 +274,6 @@ At the start of your turn, draw 1 additional card.
 |2
 |Gain 6(10) [[Thorns]].
 |-
-|[[Fortification]]
-|[[File:Fortification.png|thumb|289x289px]]
-|Uncommon
-|[[Skill]]
-|0
-|This turn, whenever you Equip a [[Weapon]], gain 3(5) [[Block]].
-|-
 |[[Ghost In The Rum]]
 |[[File:GhostInTheRum.png|thumb|289x289px]]
 |Uncommon
@@ -286,9 +287,9 @@ Lose 2(1) [[Resistance]].
 |[[File:GoldenCannonball.png|thumb|289x289px]]
 |Uncommon
 |[[Attack]]
-|1
+|0
 |Deal damage equal to
-(0(4) +) 2% of Gold gained
+(0(4) +) 1.5% of Gold gained
 this run. [[Exhaust]].
 |-
 |[[Golden Defend]]
@@ -299,14 +300,6 @@ this run. [[Exhaust]].
 |Gain [[Block]] equal to
 (0(3) +) 1% of Gold gained
 this run.
-|-
-|[[Golden Mega Blow]]
-|[[File:GoldenMegaBlow.png|thumb|289x289px]]
-|Uncommon
-|[[Attack]]
-|3
-|Deal damage equal to
-6(8) percent of Gold gained this run.
 |-
 |[[Golden Strike]]
 |[[File:GoldenStrike.png|thumb|289x289px]]
@@ -408,13 +401,6 @@ Max damage at 1 HP.
 |1
 |Gain 1(2) [[Resistance]].
 |-
-|[[Run For Your Life]]
-|[[File:RunForYourLife.png|thumb|289x289px]]
-|Uncommon
-|[[Skill]]
-|1(0)
-|Obtain a Smoke Bomb Potion. [[Exhaust]].
-|-
 |[[Smithing Hammer]]
 |[[File:SmithingHammer.png|thumb|289x289px]]
 |Uncommon
@@ -490,6 +476,23 @@ Gain 1 (2) [[Energy]].
 |[[Attack]]
 |1
 |Deal 12(16) damage. If this kills a non-minion enemy, gain 12(16) Gold.
+[[Exhaust]].
+|-
+|[[Captain's Hat]]
+|[[File:CaptainsHat.png|thumb|289x289px]]
+|Rare
+|[[Power]]
+|2
+|Gain 2(3) [[Strength]].
+Gain 2(3) [[Resistance]].
+|-
+|[[Golden Guillotine]]
+|[[File:GoldenGuillotine.png|thumb|289x289px]]
+|Rare
+|[[Attack]]
+|3
+|Deal damage equal to
+3(4) percent of Gold gained this run.
 |-
 |[[Golden Rain]]
 |[[File:GoldenRain.png|thumb|289x289px]]
@@ -497,7 +500,7 @@ Gain 1 (2) [[Energy]].
 |[[Attack]]
 |2
 |Deal damage equal to
-3(4) percent of Gold gained this run to ALL enemies.
+2% (2.5%) of Gold gained this run to ALL enemies.
 |-
 |[[Halberd]]
 |[[File:Halberd.png|thumb|289x289px]]

@@ -1,5 +1,5 @@
 # StSModTheBlackbeard
-This mod adds a new character for Slay The Spire, named The Blackbeard, with 75 brand new cards (currently 64 have images) and 5 new relics (1 starter, 3 common and 1 rare). 
+This mod adds a new character for Slay The Spire, named The Blackbeard, with 75 brand new cards and 5 new relics (1 starter, 3 common and 1 rare). 
 
 The Blackbeard is a new class based on pirate theme. His most important mechanic are Weapons. There are many cards that allow to Equip a Weapon and each Weapon is characterized by its Attack and Durability. You can equip many Weapons, and they are queued using Defect's orb system. Every time you play an attack card, one Durability of your rightmost Weapon is used and card's damage is increased by Weapon's attack. You can Equip maximum of 10 Weapons. Weapons with zero durability are automatically destroyed. Orb slots are created automatically when you equip a Weapon and are automatically destroyed when Weapon is destroyed.
 
