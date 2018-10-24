@@ -27,7 +27,7 @@ public class GoldenStrike extends CustomCard implements IGoldenCard {
 
     public GoldenStrike() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
+                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.ENEMY);
 
         this.baseMagicNumber = this.magicNumber = ATTACK_DMG;
 
