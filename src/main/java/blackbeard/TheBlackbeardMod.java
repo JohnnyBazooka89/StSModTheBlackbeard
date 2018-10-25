@@ -186,7 +186,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addCard(new Eyepatch());
         BaseMod.addCard(new CaptainsHat());
         BaseMod.addCard(new Keelhauling());
-        BaseMod.addCard(new BlindAttacks());
+        //BaseMod.addCard(new BlindAttacks());
         BaseMod.addCard(new Boarding());
         BaseMod.addCard(new AgileStrike());
         BaseMod.addCard(new DangerousBlow());

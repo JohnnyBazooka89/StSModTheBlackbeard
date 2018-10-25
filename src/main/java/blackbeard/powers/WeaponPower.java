@@ -39,7 +39,7 @@ public class WeaponPower extends AbstractPower {
     }
 
     @Override
-    public void onAfterUseCard(AbstractCard card, UseCardAction action) {
+    public void onUseCard(AbstractCard card, UseCardAction action) {
         WeaponsToUseEnum weaponsToUse = WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON;
         if (AbstractDungeon.player.hasPower(SwordDancePower.POWER_ID)) {
             weaponsToUse = WeaponsToUseEnum.ALL_WEAPONS;
