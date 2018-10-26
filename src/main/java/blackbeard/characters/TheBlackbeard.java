@@ -27,11 +27,11 @@ public class TheBlackbeard extends CustomPlayer {
 
     private static final int ENERGY_PER_TURN = 3;
 
-    private static final String BLACKBEARD_SKELETON_ATLAS_PATH = "img/char/blackbeard/idle/skeleton.atlas";
-    private static final String BLACKBEARD_SKELETON_JSON_PATH = "img/char/blackbeard/idle/skeleton.json";
-    private static final String BLACKBEARD_SHOULDER_1 = "img/char/blackbeard/shoulder.png";
-    private static final String BLACKBEARD_SHOULDER_2 = "img/char/blackbeard/shoulder2.png";
-    private static final String BLACKBEARD_CORPSE = "img/char/blackbeard/corpse.png";
+    private static final String BLACKBEARD_SKELETON_ATLAS_PATH = "blackbeard/img/char/blackbeard/idle/skeleton.atlas";
+    private static final String BLACKBEARD_SKELETON_JSON_PATH = "blackbeard/img/char/blackbeard/idle/skeleton.json";
+    private static final String BLACKBEARD_SHOULDER_1 = "blackbeard/img/char/blackbeard/shoulder.png";
+    private static final String BLACKBEARD_SHOULDER_2 = "blackbeard/img/char/blackbeard/shoulder2.png";
+    private static final String BLACKBEARD_CORPSE = "blackbeard/img/char/blackbeard/corpse.png";
 
     public static final String DEFAULT_POWER_CARD_ID = "blackbeard:BetaPower";
     public static final String DEFAULT_SKILL_CARD_ID = "blackbeard:BetaSkill";

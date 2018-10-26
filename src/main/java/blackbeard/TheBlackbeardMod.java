@@ -42,24 +42,24 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     private static final Color BLACK = CardHelper.getColor(0.0f, 0.0f, 0.0f);
 
     // card backgrounds
-    private static final String ATTACK_BLACK = "img/512/bg_attack_black.png";
-    private static final String SKILL_BLACK = "img/512/bg_skill_black.png";
-    private static final String POWER_BLACK = "img/512/bg_power_black.png";
-    private static final String ENERGY_ORB_BLACK = "img/512/card_red_orb.png";
+    private static final String ATTACK_BLACK = "blackbeard/img/512/bg_attack_black.png";
+    private static final String SKILL_BLACK = "blackbeard/img/512/bg_skill_black.png";
+    private static final String POWER_BLACK = "blackbeard/img/512/bg_power_black.png";
+    private static final String ENERGY_ORB_BLACK = "blackbeard/img/512/card_red_orb.png";
 
-    private static final String ATTACK_BLACK_PORTRAIT = "img/1024/bg_attack_black.png";
-    private static final String SKILL_BLACK_PORTRAIT = "img/1024/bg_skill_black.png";
-    private static final String POWER_BLACK_PORTRAIT = "img/1024/bg_power_black.png";
-    private static final String ENERGY_ORB_BLACK_PORTRAIT = "img/1024/card_red_orb.png";
+    private static final String ATTACK_BLACK_PORTRAIT = "blackbeard/img/1024/bg_attack_black.png";
+    private static final String SKILL_BLACK_PORTRAIT = "blackbeard/img/1024/bg_skill_black.png";
+    private static final String POWER_BLACK_PORTRAIT = "blackbeard/img/1024/bg_power_black.png";
+    private static final String ENERGY_ORB_BLACK_PORTRAIT = "blackbeard/img/1024/card_red_orb.png";
 
-    private static final String ENERGY_ORB_IN_DESCRIPTION = "img/energy/energyOrbInDescription.png";
+    private static final String ENERGY_ORB_IN_DESCRIPTION = "blackbeard/img/energy/energyOrbInDescription.png";
 
     // blackbeard assets
-    private static final String BLACKBEARD_BUTTON = "img/charSelect/blackbeardButton.png";
-    private static final String BLACKBEARD_PORTRAIT = "img/charSelect/blackbeardPortrait.jpg";
+    private static final String BLACKBEARD_BUTTON = "blackbeard/img/charSelect/blackbeardButton.png";
+    private static final String BLACKBEARD_PORTRAIT = "blackbeard/img/charSelect/blackbeardPortrait.jpg";
 
     // badge
-    public static final String BADGE_IMG = "img/ModBadge.png";
+    public static final String BADGE_IMG = "blackbeard/img/ModBadge.png";
 
     public TheBlackbeardMod() {
         BaseMod.subscribe(this);
@@ -76,15 +76,15 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     }
 
     public static String getCardImagePath(String cardID) {
-        return "img/cards/" + cardID.replaceFirst("blackbeard:", "") + ".png";
+        return "blackbeard/img/cards/" + cardID.replaceFirst("blackbeard:", "") + ".png";
     }
 
     public static String getRelicImagePath(String cardID) {
-        return "img/relics/" + cardID.replaceFirst("blackbeard:", "") + ".png";
+        return "blackbeard/img/relics/" + cardID.replaceFirst("blackbeard:", "") + ".png";
     }
 
     public static String getOrbImagePath(String cardID) {
-        return "img/orbs/" + cardID.replaceFirst("blackbeard:", "") + ".png";
+        return "blackbeard/img/orbs/" + cardID.replaceFirst("blackbeard:", "") + ".png";
     }
 
     public static void initialize() {
@@ -228,19 +228,19 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         logger.info("begin editing strings");
 
         // RelicStrings
-        String relicStrings = Gdx.files.internal("localization/TheBlackbeard-RelicStrings.json").readString(
+        String relicStrings = Gdx.files.internal("blackbeard/localization/TheBlackbeard-RelicStrings.json").readString(
                 String.valueOf(StandardCharsets.UTF_8));
         BaseMod.loadCustomStrings(RelicStrings.class, relicStrings);
         // CardStrings
-        String cardStrings = Gdx.files.internal("localization/TheBlackbeard-CardStrings.json").readString(
+        String cardStrings = Gdx.files.internal("blackbeard/localization/TheBlackbeard-CardStrings.json").readString(
                 String.valueOf(StandardCharsets.UTF_8));
         BaseMod.loadCustomStrings(CardStrings.class, cardStrings);
         //PowerStrings
-        String powerStrings = Gdx.files.internal("localization/TheBlackbeard-PowerStrings.json").readString(
+        String powerStrings = Gdx.files.internal("blackbeard/localization/TheBlackbeard-PowerStrings.json").readString(
                 String.valueOf(StandardCharsets.UTF_8));
         BaseMod.loadCustomStrings(PowerStrings.class, powerStrings);
         //OrbStrings
-        String orbStrings = Gdx.files.internal("localization/TheBlackbeard-OrbStrings.json").readString(
+        String orbStrings = Gdx.files.internal("blackbeard/localization/TheBlackbeard-OrbStrings.json").readString(
                 String.valueOf(StandardCharsets.UTF_8));
         BaseMod.loadCustomStrings(OrbStrings.class, orbStrings);
 
