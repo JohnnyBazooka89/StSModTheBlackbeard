@@ -33,7 +33,7 @@ public class Dagger extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new EquipAction(new DaggerOrb(this.magicNumber, WEAPON_DURABILITY)));
+        AbstractDungeon.actionManager.addToBottom(new EquipAction(new DaggerOrb(this.magicNumber, WEAPON_DURABILITY, false)));
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, 1));
     }
 

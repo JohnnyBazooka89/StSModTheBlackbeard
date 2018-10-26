@@ -32,10 +32,6 @@ public class FinalBarrage extends CustomCard {
 
         this.baseMagicNumber = this.magicNumber = ATTACK_PER_CANNONBALL;
         this.baseDamage = this.damage = 0;
-
-        if (CardCrawlGame.isInARun()) {
-            setBaseDamageAndUpgradeDescription();
-        }
     }
 
     @Override

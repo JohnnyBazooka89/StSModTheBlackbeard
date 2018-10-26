@@ -12,8 +12,8 @@ public class CatONineTailsOrb extends WeaponOrb {
     public static final String[] DESCRIPTION = orbStrings.DESCRIPTION;
     public static final int ATTACK_UPGRADE_ON_USE = 1;
 
-    public CatONineTailsOrb(int attack, int durability) {
-        super(ID, NAME, DESCRIPTION[0], TheBlackbeardMod.getOrbImagePath(ID), attack, durability);
+    public CatONineTailsOrb(int attack, int durability, boolean justAddedUsingAttackCard) {
+        super(ID, NAME, DESCRIPTION[0], TheBlackbeardMod.getOrbImagePath(ID), attack, durability, justAddedUsingAttackCard);
         this.attack = attack;
         this.durability = durability;
     }

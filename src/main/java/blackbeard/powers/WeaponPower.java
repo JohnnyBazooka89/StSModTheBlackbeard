@@ -1,6 +1,7 @@
 package blackbeard.powers;//
 
 import blackbeard.enums.WeaponsToUseEnum;
+import blackbeard.orbs.DaggerOrb;
 import blackbeard.orbs.WeaponOrb;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
@@ -39,22 +40,24 @@ public class WeaponPower extends AbstractPower {
     }
 
     @Override
-    public void onUseCard(AbstractCard card, UseCardAction action) {
-        WeaponsToUseEnum weaponsToUse = WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON;
-        if (AbstractDungeon.player.hasPower(SwordDancePower.POWER_ID)) {
-            weaponsToUse = WeaponsToUseEnum.ALL_WEAPONS;
-        }
-
+    public void onAfterUseCard(AbstractCard card, UseCardAction action) {
         if (card.type.equals(CardType.ATTACK)) {
+            WeaponsToUseEnum weaponsToUse = WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON;
+            if (AbstractDungeon.player.hasPower(SwordDancePower.POWER_ID)) {
+                weaponsToUse = WeaponsToUseEnum.ALL_WEAPONS;
+            }
             for (AbstractOrb o : AbstractDungeon.player.orbs) {
                 if (o instanceof WeaponOrb) {
                     WeaponOrb weaponOrb = (WeaponOrb) o;
-                    weaponOrb.use(action.target);
+                    if (!weaponOrb.isJustAddedUsingAttackCard()) {
+                        weaponOrb.use(action.target);
+                    }
                     if (weaponsToUse.equals(WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON)) {
                         break;
                     }
                 }
             }
+            clearJustAddedUsingAttackCardFlagInWeapons();
             destroyWeaponsWithZeroDurability();
         }
     }
@@ -95,6 +98,18 @@ public class WeaponPower extends AbstractPower {
         if (!hasAtLeastOneWeaponLeft) {
             AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
         }
+
+    }
+
+    private void clearJustAddedUsingAttackCardFlagInWeapons() {
+        List<AbstractOrb> orbsList = AbstractDungeon.player.orbs;
+        for (int i = 0; i < orbsList.size(); i++) {
+            AbstractOrb orb = orbsList.get(i);
+            if (orb instanceof WeaponOrb) {
+                WeaponOrb weaponOrb = (WeaponOrb) orb;
+                weaponOrb.clearJustAddedUsingAttackCard();
+            }
+        }
     }
 
     public int getNumberOfWeapons() {
@@ -106,7 +121,18 @@ public class WeaponPower extends AbstractPower {
                 result++;
             }
         }
+        return result;
+    }
 
+    public int getNumberOfDaggers() {
+        int result = 0;
+        List<AbstractOrb> orbsList = AbstractDungeon.player.orbs;
+        for (int i = 0; i < orbsList.size(); i++) {
+            AbstractOrb orb = orbsList.get(i);
+            if (orb instanceof DaggerOrb) {
+                result++;
+            }
+        }
         return result;
     }
 

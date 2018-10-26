@@ -68,10 +68,10 @@
 | Intoxication | ![](small-card-images/Intoxication.png) | ![](small-card-images/IntoxicationPlus.png) | Rare | Power | 1 | Gain 3(4) Resistance. At the start of each turn, lose 1 Resistance. |
 | Lifeboat | ![](small-card-images/Lifeboat.png) | ![](small-card-images/LifeboatPlus.png) | Rare | Skill | 2 | Gain 24(30) Block. |
 | Mega Upgrade | ![](small-card-images/MegaUpgrade.png) | ![](small-card-images/MegaUpgradePlus.png) | Rare | Skill | 2 | Give all your equipped Weapons + 3(5) / + 3(5). |
-| Murder | ![](small-card-images/Murder.png) | ![](small-card-images/MurderPlus.png) | Rare | Attack | 4 | Deal 250(500) damage to Normal monster. (Cannot be used on Elite or Boss). Ethereal. |
+| Murder | ![](small-card-images/Murder.png) | ![](small-card-images/MurderPlus.png) | Rare | Attack | 4 | Deal 250(500) damageï¿½to Normal monster. (Cannot be used on Elite or Boss). Ethereal. |
 | Parrot | ![](small-card-images/Parrot.png) | ![](small-card-images/ParrotPlus.png) | Rare | Power | 3 | The last card played each turn is played an additional time. This power does not stack. Ethereal. (not Ethereal.) |
 | Pirate Strength | ![](small-card-images/PirateStrength.png) | ![](small-card-images/PirateStrengthPlus.png) | Rare | Power | 3 | Gain 6(9) Strength. |
 | Salvager | ![](small-card-images/Salvager.png) | ![](small-card-images/SalvagerPlus.png) | Rare | Power | 2(1) | Whenever a Weapon is destroyed, gain [R]. |
 | Weapon Mastery | ![](small-card-images/WeaponMastery.png) | ![](small-card-images/WeaponMasteryPlus.png) | Rare | Power | 2(1) | Whenever you Equip a Weapon, draw 1 card. |
-| The Drunken Sailor | ![](small-card-images/  TheDrunkenSailor.png) | ![](small-card-images/  TheDrunkenSailorPlus.png) | Rare | Power | 1(0) | Increase the effectiveness of your potions 2 times. |
-| Humongous Cannonball | ![](small-card-images/       HumongousCannonball.png) | ![](small-card-images/       HumongousCannonballPlus.png) | Rare | Attack | 3 | Deal 36(48) damage. Exhaust. |
+| The Drunken Sailor | ![](small-card-images/ï¿½ï¿½TheDrunkenSailor.png) | ![](small-card-images/ï¿½ï¿½TheDrunkenSailorPlus.png) | Rare | Power | 1(0) | Increase the effectiveness of your potions 2 times. |
+| Humongous Cannonball | ![](small-card-images/ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½HumongousCannonball.png) | ![](small-card-images/ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½HumongousCannonballPlus.png) | Rare | Attack | 3 | Deal 36(48) damage. Exhaust. |

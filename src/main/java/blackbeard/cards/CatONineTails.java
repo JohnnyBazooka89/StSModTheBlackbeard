@@ -32,7 +32,7 @@ public class CatONineTails extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new EquipAction(new CatONineTailsOrb(WEAPON_ATTACK, this.magicNumber)));
+        AbstractDungeon.actionManager.addToBottom(new EquipAction(new CatONineTailsOrb(WEAPON_ATTACK, this.magicNumber, false)));
     }
 
     public void upgrade() {

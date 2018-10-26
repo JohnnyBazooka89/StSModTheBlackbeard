@@ -19,8 +19,8 @@ public class PowderKegOrb extends WeaponOrb {
 
     private int damageOnDestroy;
 
-    public PowderKegOrb(int attack, int durability, int damageOnDestroy) {
-        super(ID, NAME, DESCRIPTION[0], TheBlackbeardMod.getOrbImagePath(ID), attack, durability);
+    public PowderKegOrb(int attack, int durability, int damageOnDestroy, boolean justAddedUsingAttackCard) {
+        super(ID, NAME, DESCRIPTION[0], TheBlackbeardMod.getOrbImagePath(ID), attack, durability, justAddedUsingAttackCard);
         this.attack = attack;
         this.durability = durability;
         this.damageOnDestroy = damageOnDestroy;
@@ -36,6 +36,6 @@ public class PowderKegOrb extends WeaponOrb {
 
     @Override
     public AbstractOrb makeCopy() {
-        return new PowderKegOrb(attack, durability, damageOnDestroy);
+        return new PowderKegOrb(attack, durability, damageOnDestroy, justAddedUsingAttackCard);
     }
 }

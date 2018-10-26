@@ -32,7 +32,7 @@ public class Sword extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new EquipAction(new SwordOrb(this.magicNumber, WEAPON_DURABILITY)));
+        AbstractDungeon.actionManager.addToBottom(new EquipAction(new SwordOrb(this.magicNumber, WEAPON_DURABILITY, false)));
     }
 
     public void upgrade() {

@@ -12,8 +12,8 @@ public class DefaultWeaponOrb extends WeaponOrb {
     public static final String NAME = orbStrings.NAME;
     public static final String[] DESCRIPTION = orbStrings.DESCRIPTION;
 
-    public DefaultWeaponOrb(int attack, int durability) {
-        super(ID, NAME, DESCRIPTION[0], TheBlackbeardMod.getOrbImagePath(TheBlackbeard.DEFAULT_WEAPON_ORB_ID), attack, durability);
+    public DefaultWeaponOrb(int attack, int durability, boolean justAddedUsingAttackCard) {
+        super(ID, NAME, DESCRIPTION[0], TheBlackbeardMod.getOrbImagePath(TheBlackbeard.DEFAULT_WEAPON_ORB_ID), attack, durability, justAddedUsingAttackCard);
         this.attack = attack;
         this.durability = durability;
     }

@@ -11,8 +11,8 @@ public class SwordOrb extends WeaponOrb {
     public static final String NAME = orbStrings.NAME;
     public static final String[] DESCRIPTION = orbStrings.DESCRIPTION;
 
-    public SwordOrb(int attack, int durability) {
-        super(ID, NAME, DESCRIPTION[0], TheBlackbeardMod.getOrbImagePath(ID), attack, durability);
+    public SwordOrb(int attack, int durability, boolean justAddedUsingAttackCard) {
+        super(ID, NAME, DESCRIPTION[0], TheBlackbeardMod.getOrbImagePath(ID), attack, durability, justAddedUsingAttackCard);
         this.attack = attack;
         this.durability = durability;
     }

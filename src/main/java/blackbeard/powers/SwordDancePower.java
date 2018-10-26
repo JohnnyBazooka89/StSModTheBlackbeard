@@ -35,7 +35,7 @@ public class SwordDancePower extends AbstractPower {
     }
 
     @Override
-    public void onUseCard(AbstractCard card, UseCardAction action) {
+    public void onAfterUseCard(AbstractCard card, UseCardAction action) {
         if (card.type.equals(AbstractCard.CardType.ATTACK) && this.amount > 0) {
             this.flash();
             this.amount--;

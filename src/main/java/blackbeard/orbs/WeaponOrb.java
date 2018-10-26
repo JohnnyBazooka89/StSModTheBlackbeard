@@ -17,15 +17,17 @@ public abstract class WeaponOrb extends AbstractOrb {
     protected int attack;
     protected int durability;
     protected String rawDescription;
+    protected boolean justAddedUsingAttackCard;
     private String imagePath;
 
-    public WeaponOrb(String id, String name, String rawDecription, String imagePath, int attack, int durability) {
+    public WeaponOrb(String id, String name, String rawDecription, String imagePath, int attack, int durability, boolean justAddedUsingAttackCard) {
         this.ID = id;
         this.name = name;
         this.imagePath = imagePath;
         this.img = ImageMaster.loadImage(this.imagePath);
         this.attack = attack;
         this.durability = durability;
+        this.justAddedUsingAttackCard = justAddedUsingAttackCard;
         this.rawDescription = rawDecription;
         this.updateDescription();
         this.channelAnimTimer = 0.5F;
@@ -87,6 +89,10 @@ public abstract class WeaponOrb extends AbstractOrb {
         return durability;
     }
 
+    public boolean isJustAddedUsingAttackCard() {
+        return justAddedUsingAttackCard;
+    }
+
     public void use(AbstractCreature target) {
         durability--;
         effectOnUse();
@@ -102,6 +108,10 @@ public abstract class WeaponOrb extends AbstractOrb {
     public void setDurabilityToZero() {
         durability = 0;
         updateDescription();
+    }
+
+    public void clearJustAddedUsingAttackCard() {
+        justAddedUsingAttackCard = false;
     }
 
     public void effectOnUse() {
