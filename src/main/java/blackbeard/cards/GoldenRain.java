@@ -2,8 +2,8 @@ package blackbeard.cards;
 
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
+import blackbeard.enums.AbstractCardEnum;
 import blackbeard.interfaces.IGoldenCard;
-import blackbeard.patches.AbstractCardEnum;
 import blackbeard.utils.GoldenCardsUtil;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;

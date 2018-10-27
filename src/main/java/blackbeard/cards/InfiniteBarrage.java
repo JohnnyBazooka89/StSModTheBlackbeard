@@ -2,7 +2,7 @@ package blackbeard.cards;
 
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
-import blackbeard.patches.AbstractCardEnum;
+import blackbeard.enums.AbstractCardEnum;
 import blackbeard.powers.InfiniteBarragePower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;

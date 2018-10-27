@@ -3,7 +3,7 @@ package blackbeard.cards;
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.CannonBarrageAction;
-import blackbeard.patches.AbstractCardEnum;
+import blackbeard.enums.AbstractCardEnum;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;

@@ -4,8 +4,8 @@ import basemod.abstracts.CustomPlayer;
 import blackbeard.cards.Cutlass;
 import blackbeard.cards.DefendBlackbeard;
 import blackbeard.cards.StrikeBlackbeard;
-import blackbeard.patches.AbstractCardEnum;
-import blackbeard.patches.TheBlackbeardEnum;
+import blackbeard.enums.AbstractCardEnum;
+import blackbeard.enums.TheBlackbeardEnum;
 import blackbeard.relics.LoadTheCannons;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
@@ -32,11 +32,6 @@ public class TheBlackbeard extends CustomPlayer {
     private static final String BLACKBEARD_SHOULDER_1 = "blackbeard/img/char/blackbeard/shoulder.png";
     private static final String BLACKBEARD_SHOULDER_2 = "blackbeard/img/char/blackbeard/shoulder2.png";
     private static final String BLACKBEARD_CORPSE = "blackbeard/img/char/blackbeard/corpse.png";
-
-    public static final String DEFAULT_POWER_CARD_ID = "blackbeard:BetaPower";
-    public static final String DEFAULT_SKILL_CARD_ID = "blackbeard:BetaSkill";
-    public static final String DEFAULT_ATTACK_CARD_ID = "blackbeard:Beta";
-    public static final String DEFAULT_WEAPON_ORB_ID = "blackbeard:WeaponOrb";
 
     public TheBlackbeard(String name, PlayerClass setClass) {
         super(name, setClass, null, null, (String) null, null);

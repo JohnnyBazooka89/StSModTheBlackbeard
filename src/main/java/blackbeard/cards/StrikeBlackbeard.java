@@ -3,7 +3,7 @@ package blackbeard.cards;
 import basemod.abstracts.CustomCard;
 import basemod.helpers.BaseModCardTags;
 import blackbeard.TheBlackbeardMod;
-import blackbeard.patches.AbstractCardEnum;
+import blackbeard.enums.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;

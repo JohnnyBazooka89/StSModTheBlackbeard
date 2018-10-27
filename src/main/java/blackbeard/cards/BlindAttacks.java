@@ -2,7 +2,7 @@ package blackbeard.cards;
 
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
-import blackbeard.patches.AbstractCardEnum;
+import blackbeard.enums.AbstractCardEnum;
 import com.megacrit.cardcrawl.actions.unique.SwordBoomerangAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;

@@ -6,7 +6,6 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.screens.CardRewardScreen;
 
 @SpirePatch(clz = CardRewardScreen.class, method = "update")
-
 public class GoldenCardsFixCardRewardScreenPatch {
 
     public static void Postfix(CardRewardScreen cardRewardScreen) {

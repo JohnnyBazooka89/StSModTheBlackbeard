@@ -1,10 +1,10 @@
-package blackbeard.patches;
+package blackbeard.enums;
 
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 
-public class AbstractCardEnum {
+public class CardTagsEnum {
 
     @SpireEnum
-    public static AbstractCard.CardColor BLACKBEARD_BLACK;
+    public static AbstractCard.CardTags CANNONBALL;
 }

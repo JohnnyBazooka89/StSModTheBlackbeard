@@ -5,43 +5,42 @@ import basemod.ModPanel;
 import basemod.interfaces.*;
 import blackbeard.cards.*;
 import blackbeard.characters.TheBlackbeard;
-import blackbeard.patches.AbstractCardEnum;
-import blackbeard.patches.TheBlackbeardEnum;
+import blackbeard.enums.AbstractCardEnum;
+import blackbeard.enums.TheBlackbeardEnum;
 import blackbeard.relics.*;
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
-import com.megacrit.cardcrawl.actions.animations.TalkAction;
-import com.megacrit.cardcrawl.actions.utility.SFXAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.core.Settings;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
-import com.megacrit.cardcrawl.relics.CultistMask;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import java.nio.charset.StandardCharsets;
 
 @SpireInitializer
 public class TheBlackbeardMod implements PostInitializeSubscriber,
         EditCardsSubscriber, EditRelicsSubscriber, EditCharactersSubscriber,
-        EditStringsSubscriber, SetUnlocksSubscriber, EditKeywordsSubscriber, OnCardUseSubscriber {
+        EditStringsSubscriber, EditKeywordsSubscriber {
 
     public static final Logger logger = LogManager.getLogger(TheBlackbeardMod.class.getName());
 
+    //Default cards and orbs
+    public static final String DEFAULT_POWER_CARD_ID = "blackbeard:BetaPower";
+    public static final String DEFAULT_SKILL_CARD_ID = "blackbeard:BetaSkill";
+    public static final String DEFAULT_ATTACK_CARD_ID = "blackbeard:Beta";
+    public static final String DEFAULT_WEAPON_ORB_ID = "blackbeard:WeaponOrb";
+
+    //Mod metadata
     private static final String MODNAME = "The Blackbeard";
     private static final String AUTHOR = "JohnnyBazooka89";
     private static final String DESCRIPTION = "Adds The Blackbeard as a new playable character.";
 
+    //General color
     private static final Color BLACK = CardHelper.getColor(0.0f, 0.0f, 0.0f);
 
-    // card backgrounds
+    //Card backgrounds and energy orbs
     private static final String ATTACK_BLACK = "blackbeard/img/512/bg_attack_black.png";
     private static final String SKILL_BLACK = "blackbeard/img/512/bg_skill_black.png";
     private static final String POWER_BLACK = "blackbeard/img/512/bg_power_black.png";
@@ -54,17 +53,23 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
 
     private static final String ENERGY_ORB_IN_DESCRIPTION = "blackbeard/img/energy/energyOrbInDescription.png";
 
-    // blackbeard assets
+    //Blackbeard assets
     private static final String BLACKBEARD_BUTTON = "blackbeard/img/charSelect/blackbeardButton.png";
     private static final String BLACKBEARD_PORTRAIT = "blackbeard/img/charSelect/blackbeardPortrait.jpg";
 
-    // badge
-    public static final String BADGE_IMG = "blackbeard/img/ModBadge.png";
+    //Badge
+    private static final String BADGE_IMG = "blackbeard/img/ModBadge.png";
+
+    //Localization strings
+    private static final String RELIC_STRINGS_PATH = "blackbeard/localization/TheBlackbeard-RelicStrings.json";
+    private static final String CARD_STRINGS_PATH = "blackbeard/localization/TheBlackbeard-CardStrings.json";
+    private static final String POWER_STRINGS_PATH = "blackbeard/localization/TheBlackbeard-PowerStrings.json";
+    private static final String ORB_STRINGS_PATH = "blackbeard/localization/TheBlackbeard-OrbStrings.json";
 
     public TheBlackbeardMod() {
         BaseMod.subscribe(this);
 
-        logger.info("creating the color " + AbstractCardEnum.BLACKBEARD_BLACK.toString());
+        logger.info("Creating the color " + AbstractCardEnum.BLACKBEARD_BLACK.toString());
 
         BaseMod.addColor(AbstractCardEnum.BLACKBEARD_BLACK,
                 BLACK,
@@ -101,17 +106,13 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         Texture badgeTexture = new Texture(BADGE_IMG);
         ModPanel settingsPanel = new ModPanel();
         BaseMod.registerModBadge(badgeTexture, MODNAME, AUTHOR, DESCRIPTION, settingsPanel);
-
-        Settings.isDailyRun = false;
-        Settings.isTrial = false;
-        Settings.isDemo = false;
     }
 
     @Override
     public void receiveEditCharacters() {
-        logger.info("begin editing characters");
+        logger.info("Begin editing characters");
+        logger.info("Add " + TheBlackbeardEnum.BLACKBEARD_CLASS.toString());
 
-        logger.info("add " + TheBlackbeardEnum.BLACKBEARD_CLASS.toString());
         BaseMod.addCharacter(
                 new TheBlackbeard("The Blackbeard", TheBlackbeardEnum.BLACKBEARD_CLASS),
                 BLACKBEARD_BUTTON,
@@ -119,13 +120,13 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
                 TheBlackbeardEnum.BLACKBEARD_CLASS
         );
 
-        logger.info("done editing characters");
+        logger.info("Done editing characters");
     }
 
 
     @Override
     public void receiveEditRelics() {
-        logger.info("begin editing relics");
+        logger.info("Begin editing relics");
 
         // Add relics
         BaseMod.addRelicToCustomPool(new LoadTheCannons(), AbstractCardEnum.BLACKBEARD_BLACK);
@@ -134,14 +135,13 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addRelicToCustomPool(new TreasureChest(), AbstractCardEnum.BLACKBEARD_BLACK);
         BaseMod.addRelicToCustomPool(new WhitePearl(), AbstractCardEnum.BLACKBEARD_BLACK);
 
-        logger.info("done editing relics");
+        logger.info("Done editing relics");
     }
 
     @Override
     public void receiveEditCards() {
-        logger.info("begin editing cards");
-
-        logger.info("add cards for " + TheBlackbeardEnum.BLACKBEARD_CLASS.toString());
+        logger.info("Begin editing cards");
+        logger.info("Add cards for " + TheBlackbeardEnum.BLACKBEARD_CLASS.toString());
 
         BaseMod.addCard(new StrikeBlackbeard());
         BaseMod.addCard(new DefendBlackbeard());
@@ -220,50 +220,32 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addCard(new FishingNets());
         BaseMod.addCard(new BuriedTreasure());
 
-        logger.info("done editing cards");
+        logger.info("Done editing cards");
     }
 
     @Override
     public void receiveEditStrings() {
-        logger.info("begin editing strings");
+        logger.info("Begin editing strings");
 
-        // RelicStrings
-        String relicStrings = Gdx.files.internal("blackbeard/localization/TheBlackbeard-RelicStrings.json").readString(
-                String.valueOf(StandardCharsets.UTF_8));
-        BaseMod.loadCustomStrings(RelicStrings.class, relicStrings);
-        // CardStrings
-        String cardStrings = Gdx.files.internal("blackbeard/localization/TheBlackbeard-CardStrings.json").readString(
-                String.valueOf(StandardCharsets.UTF_8));
-        BaseMod.loadCustomStrings(CardStrings.class, cardStrings);
-        //PowerStrings
-        String powerStrings = Gdx.files.internal("blackbeard/localization/TheBlackbeard-PowerStrings.json").readString(
-                String.valueOf(StandardCharsets.UTF_8));
-        BaseMod.loadCustomStrings(PowerStrings.class, powerStrings);
-        //OrbStrings
-        String orbStrings = Gdx.files.internal("blackbeard/localization/TheBlackbeard-OrbStrings.json").readString(
-                String.valueOf(StandardCharsets.UTF_8));
-        BaseMod.loadCustomStrings(OrbStrings.class, orbStrings);
+        //Relic Strings
+        BaseMod.loadCustomStringsFile(RelicStrings.class, RELIC_STRINGS_PATH);
+        //Card Strings
+        BaseMod.loadCustomStringsFile(CardStrings.class, CARD_STRINGS_PATH);
+        //Power Strings
+        BaseMod.loadCustomStringsFile(PowerStrings.class, POWER_STRINGS_PATH);
+        //Orb Strings
+        BaseMod.loadCustomStringsFile(OrbStrings.class, ORB_STRINGS_PATH);
 
-        logger.info("done editing strings");
-    }
-
-    @Override
-    public void receiveSetUnlocks() {
+        logger.info("Done editing strings");
     }
 
     @Override
     public void receiveEditKeywords() {
-        logger.info("setting up custom keywords");
+        logger.info("Setting up custom keywords");
+
         BaseMod.addKeyword(new String[]{"weapon", "weapons"}, "Whenever you play an Attack card, remove 1 Durability from your rightmost Weapon and deal its Attack damage.");
         BaseMod.addKeyword(new String[]{"cannonball", "cannonballs"}, "Cannonballs are 0 cost attacks that deal 8 (12) damage and exhaust.");
         BaseMod.addKeyword(new String[]{"resistance"}, "You take less damage from enemy attacks.");
     }
 
-    @Override
-    public void receiveCardUsed(AbstractCard c) {
-        if (AbstractDungeon.player.hasRelic(CultistMask.ID)) {
-            AbstractDungeon.actionManager.addToBottom(new SFXAction("VO_CULTIST_1A"));
-            AbstractDungeon.actionManager.addToBottom(new TalkAction(true, "CAW", 1.0f, 2.0f));
-        }
-    }
 }

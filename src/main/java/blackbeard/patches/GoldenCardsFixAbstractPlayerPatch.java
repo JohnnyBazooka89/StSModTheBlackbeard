@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 
 @SpirePatch(clz = AbstractPlayer.class, method = "gainGold")
-
 public class GoldenCardsFixAbstractPlayerPatch {
 
     public static void Postfix(AbstractPlayer abstractPlayer, int amount) {
