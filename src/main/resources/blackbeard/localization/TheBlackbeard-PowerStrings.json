@@ -32,7 +32,7 @@
       "You take #b",
       " less",
       " more",
-      " damage from enemy attacks."
+      " damage from enemy attacks. (Enemy intents always show actual incoming damage, with Resistance taken into account.)"
     ]
   },
   "blackbeard:InfiniteBarragePower": {

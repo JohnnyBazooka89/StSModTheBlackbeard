@@ -245,7 +245,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
 
         BaseMod.addKeyword(new String[]{"weapon", "weapons"}, "Whenever you play an Attack card, remove 1 Durability from your rightmost Weapon and deal its Attack damage.");
         BaseMod.addKeyword(new String[]{"cannonball", "cannonballs"}, "Cannonballs are 0 cost attacks that deal 8 (12) damage and exhaust.");
-        BaseMod.addKeyword(new String[]{"resistance"}, "You take less damage from enemy attacks.");
+        BaseMod.addKeyword(new String[]{"resistance"}, "You take less damage from enemy attacks. (Enemy intents always show actual incoming damage, with Resistance taken into account.)");
     }
 
 }

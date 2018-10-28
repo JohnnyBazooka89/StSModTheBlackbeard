@@ -52,7 +52,9 @@ public class Revenge extends CustomCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeMagicNumber(UPGRADE_PLUS_MAXIMUM_DAMAGE);
-            setBaseDamageAndUpgradeDescription();
+            if (CardCrawlGame.isInARun()) {
+                setBaseDamageAndUpgradeDescription();
+            }
         }
     }
 }
