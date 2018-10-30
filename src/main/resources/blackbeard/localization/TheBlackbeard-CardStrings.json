@@ -121,7 +121,7 @@
   },
   "blackbeard:FinalBarrage": {
     "NAME": "Final Barrage",
-    "DESCRIPTION": "Deal damage equal to !M! times the amount of Cannonballs played this turn (every type of Cannonball counts).",
+    "DESCRIPTION": "Deal damage equal to !M! times the amount of Cannonballs played this combat (every type of Cannonball counts).",
     "EXTENDED_DESCRIPTION": [
       " NL (Deals !D! damage.)"
     ]
@@ -370,5 +370,9 @@
   "blackbeard:DaggerAccumulation": {
     "NAME": "  Dagger Accumulation",
     "DESCRIPTION": "Equip a !M! / {D} Weapon X times."
+  },
+  "blackbeard:CloakAndCannonball": {
+    "NAME": "    Cloak And Cannonball",
+    "DESCRIPTION": "Gain !B! Block. NL  Add 1 Cannonball to you hand."
   }
 }

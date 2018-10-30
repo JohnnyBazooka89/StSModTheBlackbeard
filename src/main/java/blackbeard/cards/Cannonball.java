@@ -24,7 +24,7 @@ public class Cannonball extends CustomCard {
 
     public Cannonball() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.ENEMY);
+                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.SPECIAL, CardTarget.ENEMY);
 
         this.baseDamage = this.damage = ATTACK_DMG;
         this.exhaust = true;

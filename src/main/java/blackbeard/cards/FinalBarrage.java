@@ -23,12 +23,12 @@ public class FinalBarrage extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
     private static final int COST = 0;
-    private static final int ATTACK_PER_CANNONBALL = 6;
+    private static final int ATTACK_PER_CANNONBALL = 4;
     private static final int UPGRADED_PLUS_ATTACK_PER_CANNONBALL = 2;
 
     public FinalBarrage() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
+                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.RARE, CardTarget.ENEMY);
 
         this.baseMagicNumber = this.magicNumber = ATTACK_PER_CANNONBALL;
         this.baseDamage = this.damage = 0;
@@ -36,7 +36,7 @@ public class FinalBarrage extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
     }
 
     @Override
@@ -52,17 +52,17 @@ public class FinalBarrage extends CustomCard {
     }
 
     private void setBaseDamageAndUpgradeDescription() {
-        int cannonballsPlayedThisTurn = 0;
-        Iterator<AbstractCard> cardsPlayedThisTurnIt = AbstractDungeon.actionManager.cardsPlayedThisTurn.iterator();
+        int cannonballsPlayedThisCombat = 0;
+        Iterator<AbstractCard> cardsPlayedThisCombatIt = AbstractDungeon.actionManager.cardsPlayedThisCombat.iterator();
 
-        while (cardsPlayedThisTurnIt.hasNext()) {
-            AbstractCard card = cardsPlayedThisTurnIt.next();
+        while (cardsPlayedThisCombatIt.hasNext()) {
+            AbstractCard card = cardsPlayedThisCombatIt.next();
             if (card.hasTag(CardTagsEnum.CANNONBALL)) {
-                cannonballsPlayedThisTurn++;
+                cannonballsPlayedThisCombat++;
             }
         }
 
-        this.baseDamage = this.damage = cannonballsPlayedThisTurn * this.magicNumber;
+        this.baseDamage = this.damage = cannonballsPlayedThisCombat * this.magicNumber;
         this.rawDescription = DESCRIPTION + EXTENDED_DESCRIPTION[0];
         this.initializeDescription();
     }
