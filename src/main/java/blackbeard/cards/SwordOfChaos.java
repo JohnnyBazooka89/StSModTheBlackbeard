@@ -16,7 +16,7 @@ public class SwordOfChaos extends CustomCard {
 
     public static final String ID = "blackbeard:SwordOfChaos";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    private static final int COST = 1;
+    private static final int COST = 0;
     private static final int WEAPON_ATTACK = 2;
     private static final int WEAPON_DURABILITY = 3;
     private static final int UPGRADED_PLUS_WEAPON_ATTACK = 1;
@@ -25,7 +25,7 @@ public class SwordOfChaos extends CustomCard {
 
     public SwordOfChaos() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
+                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.SPECIAL, CardTarget.SELF);
 
         this.baseMagicNumber = this.magicNumber = WEAPON_ATTACK;
     }

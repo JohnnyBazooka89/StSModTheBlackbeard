@@ -10,7 +10,7 @@ public class CatONineTailsOrb extends WeaponOrb {
     private static final OrbStrings orbStrings = CardCrawlGame.languagePack.getOrbString(ID);
     public static final String NAME = orbStrings.NAME;
     public static final String[] DESCRIPTION = orbStrings.DESCRIPTION;
-    public static final int ATTACK_UPGRADE_ON_USE = 1;
+    public static final int ATTACK_UPGRADE_ON_USE = 2;
 
     public CatONineTailsOrb(int attack, int durability, boolean justAddedUsingAttackCard) {
         super(ID, NAME, DESCRIPTION[0], TheBlackbeardMod.getOrbImagePath(ID), attack, durability, justAddedUsingAttackCard);

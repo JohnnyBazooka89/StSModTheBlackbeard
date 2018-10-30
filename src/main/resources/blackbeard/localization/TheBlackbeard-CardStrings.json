@@ -182,7 +182,7 @@
   },
   "blackbeard:Dagger": {
     "NAME": "Dagger",
-    "DESCRIPTION": "Equip a !M! / {D} Weapon. Draw 1 card."
+    "DESCRIPTION": "Equip a !M! / {D} Weapon."
   },
   "blackbeard:PiratesWill": {
     "NAME": "Pirate's Will",
@@ -245,7 +245,7 @@
   },
   "blackbeard:Sword": {
     "NAME": "Sword",
-    "DESCRIPTION": "Equip a !M! / {D} Weapon."
+    "DESCRIPTION": "Choose 1 of 3 Swords. NL Equip a !M! / {D} Weapon with an additional effect."
   },
   "blackbeard:BeatUp": {
     "NAME": "Beat Up",
@@ -356,6 +356,19 @@
   },
   "blackbeard:BuriedTreasure": {
     "NAME": "Buried Treasure",
-    "DESCRIPTION": "Gain !M! Gold. NL Exhaust. NL Ethereal."
+    "DESCRIPTION": "Gain !M! Gold. NL Exhaust."
+  },
+  "blackbeard:DoubleCannonball": {
+    "NAME": "Double Cannonball",
+    "DESCRIPTION": "Deal !D! damage. Exhaust. NL Add 1 Cannonball to you hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Exhaust. NL Add 1 upgraded Cannonball to you hand."
+  },
+  "blackbeard:SwordOfFire": {
+    "NAME": "Sword Of Fire",
+    "DESCRIPTION": "Equip a !M! / {D} Weapon. Whenever you attack with this Weapon, deal 3 damage to all enemies."
+  },
+  "blackbeard:DaggerAccumulation": {
+    "NAME": "  Dagger Accumulation",
+    "DESCRIPTION": "Equip a !M! / {D} Weapon X times."
   }
 }

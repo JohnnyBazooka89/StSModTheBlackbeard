@@ -1,0 +1,36 @@
+package blackbeard.actions;
+
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+
+public class SwordDiscoveryAction extends AbstractGameAction {
+    private boolean retrieveCard = false;
+
+    public SwordDiscoveryAction() {
+        this.actionType = ActionType.CARD_MANIPULATION;
+        this.duration = Settings.ACTION_DUR_FAST;
+    }
+
+    public void update() {
+        if (this.duration == Settings.ACTION_DUR_FAST) {
+            AbstractDungeon.cardRewardScreen.discoveryOpen();
+            this.tickDuration();
+        } else {
+            if (!this.retrieveCard) {
+                if (AbstractDungeon.cardRewardScreen.discoveryCard != null) {
+                    AbstractCard disCard = AbstractDungeon.cardRewardScreen.discoveryCard.makeStatEquivalentCopy();
+                    disCard.current_x = -1000.0F * Settings.scale;
+                    disCard.use(AbstractDungeon.player, null);
+                    AbstractDungeon.cardRewardScreen.discoveryCard = null;
+                }
+
+                this.retrieveCard = true;
+            }
+
+            this.tickDuration();
+        }
+    }
+
+}

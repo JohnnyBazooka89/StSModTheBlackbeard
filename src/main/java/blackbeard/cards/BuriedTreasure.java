@@ -25,7 +25,6 @@ public class BuriedTreasure extends CustomCard {
         this.baseMagicNumber = this.magicNumber = GOLD_TO_GAIN;
 
         this.exhaust = true;
-        this.isEthereal = true;
 
         this.tags.add(CardTags.HEALING); //It doesn't heal, but I don't want gaining Gold to be abused.
     }

@@ -65,5 +65,11 @@
     "DESCRIPTION": [
       ""
     ]
+  },
+  "blackbeard:SwordOfFireOrb": {
+    "NAME": "Sword Of Chaos",
+    "DESCRIPTION": [
+      "Whenever you attack with this Weapon, deal #b3 damage to all enemies."
+    ]
   }
 }

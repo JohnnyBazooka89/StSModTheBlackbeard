@@ -163,8 +163,8 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addCard(new Recycle());
         BaseMod.addCard(new RemoveScurvy());
         BaseMod.addCard(new InfiniteBarrage());
-        BaseMod.addCard(new SwordOfChaos());
-        BaseMod.addCard(new SwordOfWisdom());
+        //BaseMod.addCard(new SwordOfChaos());
+        //BaseMod.addCard(new SwordOfWisdom());
         BaseMod.addCard(new PirateStrength());
         BaseMod.addCard(new HumongousCannonball());
         BaseMod.addCard(new GoldenCannonball());
@@ -219,6 +219,9 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         //BaseMod.addCard(new RunForYourLife());
         BaseMod.addCard(new FishingNets());
         BaseMod.addCard(new BuriedTreasure());
+        //BaseMod.addCard(new SwordOfFire());
+        BaseMod.addCard(new DoubleCannonball());
+        BaseMod.addCard(new DaggerAccumulation());
 
         logger.info("Done editing cards");
     }
@@ -243,8 +246,8 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     public void receiveEditKeywords() {
         logger.info("Setting up custom keywords");
 
-        BaseMod.addKeyword(new String[]{"weapon", "weapons"}, "Whenever you play an Attack card, remove 1 Durability from your rightmost Weapon and deal its Attack damage.");
-        BaseMod.addKeyword(new String[]{"cannonball", "cannonballs"}, "Cannonballs are 0 cost attacks that deal 8 (12) damage and exhaust.");
+        BaseMod.addKeyword(new String[]{"weapon", "weapons"}, "Whenever you play an attack card, one Durability of your rightmost Weapon is used and card's damage is increased by Weapon's attack.");
+        BaseMod.addKeyword(new String[]{"cannonball", "cannonballs"}, "Cannonballs are 0 cost attacks that deal 8 (10) damage and exhaust.");
         BaseMod.addKeyword(new String[]{"resistance"}, "You take less damage from enemy attacks. (Enemy intents always show actual incoming damage, with Resistance taken into account.)");
     }
 

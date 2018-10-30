@@ -2,7 +2,7 @@
   "blackbeard:WeaponPower": {
     "NAME": "Weapons",
     "DESCRIPTIONS": [
-      "Whenever you play an Attack card, remove #b1 Durability from your rightmost Weapon and deal its Attack damage."
+      "Whenever you play an attack card, one Durability of your rightmost Weapon is used and card's damage is increased by Weapon's attack."
     ]
   },
   "blackbeard:ParrotPower": {
