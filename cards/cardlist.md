@@ -74,4 +74,4 @@
 | Salvager | ![](small-card-images/Salvager.png) | ![](small-card-images/SalvagerPlus.png) | Rare | Power | 2(1) | Whenever a Weapon is destroyed, gain [R]. |
 | Weapon Mastery | ![](small-card-images/WeaponMastery.png) | ![](small-card-images/WeaponMasteryPlus.png) | Rare | Power | 2(1) | Whenever you Equip a Weapon, draw 1 card. |
 | The Drunken Sailor | ![](small-card-images/TheDrunkenSailor.png) | ![](small-card-images/TheDrunkenSailorPlus.png) | Rare | Power | 1(0) | Increase the effectiveness of your potions 2 times. |
-| Humongous Cannonball | ![](small-card-images/HumongousCannonball.png) | ![](small-card-images/HumongousCannonballPlusHumongousCannonballPlus.png) | Rare | Attack | 3 | Deal 36(48) damage. Exhaust. |
+| Humongous Cannonball | ![](small-card-images/HumongousCannonball.png) | ![](small-card-images/HumongousCannonballPlus.png) | Rare | Attack | 3 | Deal 36(48) damage. Exhaust. |
