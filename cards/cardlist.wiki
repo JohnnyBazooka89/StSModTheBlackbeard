@@ -14,7 +14,7 @@
 |Basic
 |[[Skill]]
 |1(0)
-|Equip a 3 / 2 [[Weapon]].
+|Equip a 4 / 2 [[Weapon]].
 |-
 |[[Defend]]
 |[[File:Defend.png|thumb|289x289px]]
@@ -45,13 +45,6 @@ Apply 1(2) [[Vulnerable]].
 |1
 |Deal 3(4) damage to a random enemy 3 times.
 |-
-|[[Cannonball]]
-|[[File:Cannonball.png|thumb|289x289px]]
-|Common
-|[[Attack]]
-|0
-|Deal 8(12) damage. [[Exhaust]].
-|-
 |[[Cat O' Nine Tails]]
 |[[File:CatONineTails.png|thumb|289x289px]]
 |Common
@@ -64,7 +57,33 @@ Apply 1(2) [[Vulnerable]].
 |Common
 |[[Skill]]
 |0
-|Equip a 1(2) / 2 [[Weapon]]. Draw 1 card.
+|Equip a 2(3) / 2 [[Weapon]].
+|-
+|[[Delayed Pain]]
+|[[File:DelayedPain.png|thumb|289x289px]]
+|Common
+|[[Skill]]
+|1
+|Gain 12(16) [[Block]].
+At the end of your next turn, you are dealt 4 damage.
+|-
+|[[Golden Defend]]
+|[[File:GoldenDefend.png|thumb|289x289px]]
+|Common
+|[[Skill]]
+|1
+|Gain [[Block]] equal to
+(0(3) +) 1% of Gold gained
+this run.
+|-
+|[[Golden Strike]]
+|[[File:GoldenStrike.png|thumb|289x289px]]
+|Common
+|[[Attack]]
+|1
+|Deal damage equal to
+(0(3) +) 1% of Gold gained
+this run.
 |-
 |[[Intimidating Strike]]
 |[[File:IntimidatingStrike.png|thumb|289x289px]]
@@ -106,8 +125,9 @@ Apply 1(2) [[Weak]].
 |[[File:Sword.png|thumb|289x289px]]
 |Common
 |[[Skill]]
-|0
-|Equip a 2(3) / 3 [[Weapon]].
+|1
+|Choose 1 of 3 Swords.
+Equip a 2(3) / 3 [[Weapon]] with an additional effect.
 |-
 |[[Sword Dance]]
 |[[File:SwordDance.png|thumb|289x289px]]
@@ -132,6 +152,14 @@ Draw 1 more card next turn.
 |Gain 2(3) [[Resistance]].
 At the start of your next turn, lose 2(3) [[Resistance]].
 [[Exhaust]].
+|-
+|[[    Cloak And Cannonball]]
+|[[File:  CloakAndCannonball.png|thumb|289x289px]]
+|Common
+|[[Skill]]
+|1
+|Gain 4(6) [[Block]].
+Add a [[Cannonball]] to your hand.
 |-
 |[[Agile Strike]]
 |[[File:AgileStrike.png|thumb|289x289px]]
@@ -188,7 +216,6 @@ Draw 2 cards.
 |1
 |Gain 12(15) Gold.
 [[Exhaust]].
-[[Ethereal]].
 |-
 |[[Cannon Barrage]]
 |[[File:CannonBarrage.png|thumb|289x289px]]
@@ -211,7 +238,8 @@ Exhaust.)
 |Uncommon
 |[[Skill]]
 |2
-|Gain 10(12) [[Block]]. Add 1(2) Cannonball(s) to you hand.
+|Gain 10 [[Block]].
+Add 1(2) Cannonball(s) to your hand.
 |-
 |[[Chaotic Defend]]
 |[[File:ChaoticDefend.png|thumb|289x289px]]
@@ -229,14 +257,6 @@ Add 1(2) random card(s) to your hand.
 |Deal 18(22) damage.
 At the end of your next turn, you are dealt 6 damage.
 |-
-|[[Delayed Pain]]
-|[[File:DelayedPain.png|thumb|289x289px]]
-|Uncommon
-|[[Skill]]
-|1
-|Gain 12(16) [[Block]].
-At the end of your next turn, you are dealt 4 damage.
-|-
 |[[Double Bottom]]
 |[[File:DoubleBottom.png|thumb|289x289px]]
 |Uncommon
@@ -244,6 +264,14 @@ At the end of your next turn, you are dealt 4 damage.
 |2
 |Gain 10(13) [[Block]].
 Next turn gain 10(13) [[Block]].
+|-
+|[[Double Cannonball]]
+|[[File:DoubleCannonball.png|thumb|289x289px]]
+|Uncommon
+|[[Attack]]
+|0
+|Deal 8(10) damage. [[Exhaust]].
+Add a (an [[upgraded]]) [[Cannonball]] to your hand.
 |-
 |[[Eyepatch]]
 |[[File:Eyepatch.png|thumb|289x289px]]
@@ -259,13 +287,6 @@ At the start of your turn, draw 1 additional card.
 |[[Skill]]
 |1
 |Give your rightmost [[Weapon]] + 2(3) / + 2(3).
-|-
-|[[Final Barrage]]
-|[[File:FinalBarrage.png|thumb|289x289px]]
-|Uncommon
-|[[Attack]]
-|0
-|Deal damage equal to 6(8) times the amount of [[Cannonballs]] played this turn (every type of [[Cannonball]] counts).
 |-
 |[[Fishing Nets]]
 |[[File:FishingNets.png|thumb|289x289px]]
@@ -291,24 +312,6 @@ Lose 2(1) [[Resistance]].
 |Deal damage equal to
 (0(4) +) 1.5% of Gold gained
 this run. [[Exhaust]].
-|-
-|[[Golden Defend]]
-|[[File:GoldenDefend.png|thumb|289x289px]]
-|Uncommon
-|[[Skill]]
-|1
-|Gain [[Block]] equal to
-(0(3) +) 1% of Gold gained
-this run.
-|-
-|[[Golden Strike]]
-|[[File:GoldenStrike.png|thumb|289x289px]]
-|Uncommon
-|[[Attack]]
-|1
-|Deal damage equal to
-(0(3) +) 1% of Gold gained
-this run.
 |-
 |[[Infinite Barrage]]
 |[[File:InfiniteBarrage.png|thumb|289x289px]]
@@ -405,22 +408,8 @@ Max damage at 1 HP.
 |[[File:SmithingHammer.png|thumb|289x289px]]
 |Uncommon
 |[[Skill]]
-|2
-|Equip a 3(4) / 4 [[Weapon]]. After you attack with this [[Weapon]], [[upgrade]] a random card in your hand for the rest of the combat.
-|-
-|[[Sword Of Chaos]]
-|[[File:SwordOfChaos.png|thumb|289x289px]]
-|Uncommon
-|[[Skill]]
 |1
-|Equip a 2(3) / 3 [[Weapon]]. Whenever you attack with this [[Weapon]], add a random card to your hand.
-|-
-|[[Sword Of Wisdom]]
-|[[File:SwordOfWisdom.png|thumb|289x289px]]
-|Uncommon
-|[[Skill]]
-|1
-|Equip a 2(3) / 3 [[Weapon]]. Whenever you attack with this [[Weapon]], draw a card.
+|Equip a 2(3) / 4 [[Weapon]]. After you attack with this [[Weapon]], [[upgrade]] a random card in your hand for the rest of the combat.
 |-
 |[[Terror Of The Seas]]
 |[[File:TerrorOfTheSeas.png|thumb|289x289px]]
@@ -461,6 +450,13 @@ Draw 1(2) card(s).
 |Lose 2 [[Dexterity]].
 Gain 4(5) [[Strength]].
 |-
+|[[  Dagger Accumulation]]
+|[[File:  DaggerAccumulation.png|thumb|289x289px]]
+|Uncommon
+|[[Skill]]
+|X
+|Equip a 2(3) / 2 [[Weapon]] X times.
+|-
 |[[Boost Morale]]
 |[[File:BoostMorale.png|thumb|289x289px]]
 |Rare
@@ -485,6 +481,13 @@ Gain 1 (2) [[Energy]].
 |2
 |Gain 2(3) [[Strength]].
 Gain 2(3) [[Resistance]].
+|-
+|[[Final Barrage]]
+|[[File:FinalBarrage.png|thumb|289x289px]]
+|Rare
+|[[Attack]]
+|0
+|Deal damage equal to 4(6) times the amount of [[Cannonballs]] played this combat (every type of [[Cannonball]] counts).
 |-
 |[[Golden Guillotine]]
 |[[File:GoldenGuillotine.png|thumb|289x289px]]

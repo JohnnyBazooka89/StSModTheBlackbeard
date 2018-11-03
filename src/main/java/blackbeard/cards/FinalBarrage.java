@@ -31,7 +31,10 @@ public class FinalBarrage extends CustomCard {
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.RARE, CardTarget.ENEMY);
 
         this.baseMagicNumber = this.magicNumber = ATTACK_PER_CANNONBALL;
-        this.baseDamage = this.damage = 0;
+
+        if (CardCrawlGame.isInARun()) {
+            setBaseDamageAndUpdateDescription();
+        }
     }
 
     @Override
@@ -42,16 +45,16 @@ public class FinalBarrage extends CustomCard {
     @Override
     public void triggerWhenDrawn() {
         super.triggerWhenDrawn();
-        setBaseDamageAndUpgradeDescription();
+        setBaseDamageAndUpdateDescription();
     }
 
     @Override
     public void triggerOnOtherCardPlayed(AbstractCard c) {
         super.triggerOnOtherCardPlayed(c);
-        setBaseDamageAndUpgradeDescription();
+        setBaseDamageAndUpdateDescription();
     }
 
-    private void setBaseDamageAndUpgradeDescription() {
+    private void setBaseDamageAndUpdateDescription() {
         int cannonballsPlayedThisCombat = 0;
         Iterator<AbstractCard> cardsPlayedThisCombatIt = AbstractDungeon.actionManager.cardsPlayedThisCombat.iterator();
 

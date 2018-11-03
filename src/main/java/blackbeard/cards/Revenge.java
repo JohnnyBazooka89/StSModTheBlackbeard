@@ -30,7 +30,7 @@ public class Revenge extends CustomCard {
         this.isMultiDamage = true;
 
         if (CardCrawlGame.isInARun()) {
-            setBaseDamageAndUpgradeDescription();
+            setBaseDamageAndUpdateDescription();
         }
     }
 
@@ -41,7 +41,7 @@ public class Revenge extends CustomCard {
 
     /* Refreshing logic is in UpdateRevengePatch */
 
-    public void setBaseDamageAndUpgradeDescription() {
+    public void setBaseDamageAndUpdateDescription() {
         /*For example, when max HP = 75, then it deals 0% at 75HP, 50% at 38HP, and 100% at 1HP*/
         this.baseDamage = this.damage = (int) ((1.0 - (1.0 * (AbstractDungeon.player.currentHealth - 1) / (AbstractDungeon.player.maxHealth - 1))) * this.magicNumber);
         this.rawDescription = DESCRIPTION + EXTENDED_DESCRIPTION[0];
@@ -53,7 +53,7 @@ public class Revenge extends CustomCard {
             this.upgradeName();
             this.upgradeMagicNumber(UPGRADE_PLUS_MAXIMUM_DAMAGE);
             if (CardCrawlGame.isInARun()) {
-                setBaseDamageAndUpgradeDescription();
+                setBaseDamageAndUpdateDescription();
             }
         }
     }

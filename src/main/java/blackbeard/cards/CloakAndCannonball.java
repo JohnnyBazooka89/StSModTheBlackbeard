@@ -19,8 +19,8 @@ public class CloakAndCannonball extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 1;
-    private static final int BLOCK_AMOUNT = 5;
-    private static final int UPGRADED_PLUS_BLOCK_AMOUNT = 3;
+    private static final int BLOCK_AMOUNT = 4;
+    private static final int UPGRADED_PLUS_BLOCK_AMOUNT = 2;
 
     public CloakAndCannonball() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,

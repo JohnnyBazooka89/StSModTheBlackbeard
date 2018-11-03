@@ -34,7 +34,7 @@ public class UpdateRevengePatch {
 
         for (AbstractCard card : cardGroup.group) {
             if (card instanceof Revenge) {
-                ((Revenge) card).setBaseDamageAndUpgradeDescription();
+                ((Revenge) card).setBaseDamageAndUpdateDescription();
             }
         }
     }
