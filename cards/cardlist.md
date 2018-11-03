@@ -5,7 +5,7 @@
 | Strike | ![](small-card-images/Strike.png) | ![](small-card-images/StrikePlus.png) | Basic | Attack | 1 | Deal 6(9) damage. |
 | Beat Up | ![](small-card-images/BeatUp.png) | ![](small-card-images/BeatUpPlus.png) | Common | Attack | 1 | Deal 4(5) damage twice. Apply 1(2) Vulnerable. |
 | Blind Attacks | ![](small-card-images/BlindAttacks.png) | ![](small-card-images/BlindAttacksPlus.png) | Common | Attack | 1 | Deal 3(4) damage to a random enemy 3 times. |
-| Cat O' Nine Tails | ![](small-card-images/CatONineTails.png) | ![](small-card-images/CatONineTailsPlus.png) | Common | Skill | 1 | Equip a 4 / 2(3) Weapon. After you attack with this Weapon, give it + 1 Attack. |
+| Cat O' Nine Tails | ![](small-card-images/CatONineTails.png) | ![](small-card-images/CatONineTailsPlus.png) | Common | Skill | 1 | Equip a 4 / 2(3) Weapon. After you attack with this Weapon, give it + 2 Attack. |
 | Dagger | ![](small-card-images/Dagger.png) | ![](small-card-images/DaggerPlus.png) | Common | Skill | 0 | Equip a 2(3) / 2 Weapon. |
 | Delayed Pain | ![](small-card-images/DelayedPain.png) | ![](small-card-images/DelayedPainPlus.png) | Common | Skill | 1 | Gain 12(16) Block. At the end of your next turn, you are dealt 4 damage. |
 | Golden Defend | ![](small-card-images/GoldenDefend.png) | ![](small-card-images/GoldenDefendPlus.png) | Common | Skill | 1 | Gain Block equal to (0(3) +) 1% of Gold gained this run. |
