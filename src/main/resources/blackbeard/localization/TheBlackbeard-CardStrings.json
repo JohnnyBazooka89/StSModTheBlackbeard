@@ -37,7 +37,7 @@
     "DESCRIPTION": "Equip a !M! / {D} Weapon."
   },
   "blackbeard:TheDrunkenSailor": {
-    "NAME": "  The Drunken Sailor",
+    "NAME": "The Drunken Sailor",
     "DESCRIPTION": "Increase the effectiveness of your potions 2 times."
   },
   "blackbeard:SwordDance": {
@@ -106,7 +106,7 @@
     "DESCRIPTION": "Gain !M! Strength."
   },
   "blackbeard:HumongousCannonball": {
-    "NAME": "       Humongous Cannonball",
+    "NAME": "Humongous Cannonball",
     "DESCRIPTION": "Deal !D! damage. Exhaust."
   },
   "blackbeard:GoldenCannonball": {
@@ -368,11 +368,11 @@
     "DESCRIPTION": "Equip a !M! / {D} Weapon. Whenever you attack with this Weapon, deal 3 damage to all enemies."
   },
   "blackbeard:DaggerAccumulation": {
-    "NAME": "  Dagger Accumulation",
+    "NAME": "Dagger Accumulation",
     "DESCRIPTION": "Equip a !M! / {D} Weapon X times."
   },
   "blackbeard:CloakAndCannonball": {
-    "NAME": "    Cloak And Cannonball",
+    "NAME": "Cloak And Cannonball",
     "DESCRIPTION": "Gain !B! Block. NL  Add a Cannonball to your hand."
   }
 }

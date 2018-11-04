@@ -4,6 +4,7 @@ import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.DaggerAccumulationAction;
 import blackbeard.enums.AbstractCardEnum;
+import blackbeard.interfaces.ILongTitle;
 import blackbeard.utils.WeaponCardsUtil;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -12,7 +13,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
-public class DaggerAccumulation extends CustomCard {
+public class DaggerAccumulation extends CustomCard implements ILongTitle {
     public static final String ID = "blackbeard:DaggerAccumulation";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final int COST = -1;

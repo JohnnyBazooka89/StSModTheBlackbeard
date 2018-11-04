@@ -3,6 +3,7 @@ package blackbeard.cards;
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.enums.AbstractCardEnum;
+import blackbeard.interfaces.ILongTitle;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -11,7 +12,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class CloakAndCannonball extends CustomCard {
+public class CloakAndCannonball extends CustomCard implements ILongTitle {
 
     public static final String ID = "blackbeard:CloakAndCannonball";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
