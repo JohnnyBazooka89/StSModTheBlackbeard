@@ -81,6 +81,13 @@ images/helmet
   orig: 47, 42
   offset: 0, 0
   index: -1
+images/hat
+  rotate: false
+  xy: 711, 0
+  size: 101, 52
+  orig: 101, 52
+  offset: 0, 0
+  index: -1
 images/legs
   rotate: false
   xy: 316, 46

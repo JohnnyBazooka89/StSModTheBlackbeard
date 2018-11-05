@@ -35,6 +35,12 @@
 	{ "name": "bone17", "parent": "bone16", "length": 16.79, "rotation": -75.53, "x": 34.17, "y": -0.29 },
 	{ "name": "hair", "parent": "body", "x": -5.84, "y": 52.14 },
 	{ "name": "helmet", "parent": "hair", "x": 12.18, "y": 6.12 },
+	{
+		"name": "hat",
+		"parent": "helmet",
+		"x": 12.18,
+		"y": 0.12
+	},
 	{ "name": "eye", "parent": "helmet", "x": 8, "y": -4.91 },
 	{ "name": "llp", "parent": "armleft", "rotation": -88.94, "x": 1.61, "y": -0.09, "inheritRotation": false },
 	{ "name": "lrp", "parent": "armright", "rotation": -66.46, "x": 6.7, "y": -0.92, "inheritRotation": false },
@@ -51,6 +57,11 @@
 	{ "name": "images/armleft", "bone": "armleft", "attachment": "images/armleft" },
 	{ "name": "images/hair", "bone": "hair", "attachment": "images/hair" },
 	{ "name": "images/helmet", "bone": "helmet", "attachment": "images/helmet" },
+	{
+		"name": "images/hat",
+		"bone": "hat",
+		"attachment": "images/hat"
+	},
 	{ "name": "images/eye", "bone": "eye", "attachment": "images/eye" },
 	{ "name": "images/llp", "bone": "llp", "attachment": "images/llp" },
 	{ "name": "images/armright", "bone": "armright", "attachment": "images/armright" },
@@ -193,6 +204,14 @@
 		},
 		"images/helmet": {
 			"images/helmet": { "width": 47, "height": 42 }
+		},
+		"images/hat": {
+			"images/hat": {
+				"x": -13,
+				"y": 32,
+				"width": 99,
+				"height": 50
+			}
 		},
 		"images/legs": {
 			"images/legs": {

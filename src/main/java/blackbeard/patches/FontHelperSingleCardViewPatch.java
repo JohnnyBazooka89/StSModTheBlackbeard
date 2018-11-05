@@ -23,7 +23,7 @@ public class FontHelperSingleCardViewPatch {
             prepFontMethod.setAccessible(true);
             smallerSCPCardTitleFontSmall = (BitmapFont) prepFontMethod.invoke(null, 34.0f, true);
         } catch (Exception e) {
-            logger.error("Exception in FontHelperPatch: ", e);
+            logger.error("Exception in FontHelperSingleCardViewPatch: ", e);
         }
     }
 
