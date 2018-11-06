@@ -208,7 +208,7 @@
 		"images/hat": {
 			"images/hat": {
 				"x": -13,
-				"y": 32,
+              "y": 31,
 				"width": 99,
 				"height": 50
 			}

@@ -1,7 +1,7 @@
 package blackbeard.cards;
 
 import basemod.abstracts.CustomCard;
-import basemod.helpers.ModalChoice;
+import basemod.helpers.TooltipInfo;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.SwordDiscoveryAction;
 import blackbeard.enums.AbstractCardEnum;
@@ -13,7 +13,10 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class Sword extends CustomCard implements ModalChoice.Callback {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Sword extends CustomCard {
 
     public static final String ID = "blackbeard:Sword";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -23,6 +26,7 @@ public class Sword extends CustomCard implements ModalChoice.Callback {
     private static final int UPGRADED_PLUS_WEAPON_ATTACK = 1;
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = WeaponCardsUtil.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);
+    public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
 
     public Sword() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
@@ -46,7 +50,16 @@ public class Sword extends CustomCard implements ModalChoice.Callback {
     }
 
     @Override
-    public void optionSelected(AbstractPlayer abstractPlayer, AbstractMonster abstractMonster, int i) {
-
+    public void initializeDescription() {
+        super.initializeDescription();
+        this.keywords.clear();
     }
+
+    @Override
+    public List<TooltipInfo> getCustomTooltips() {
+        List<TooltipInfo> tooltips = new ArrayList<>();
+        tooltips.add(new TooltipInfo(EXTENDED_DESCRIPTION[0], EXTENDED_DESCRIPTION[1]));
+        return tooltips;
+    }
+
 }

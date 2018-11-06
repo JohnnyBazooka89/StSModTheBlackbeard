@@ -10,8 +10,6 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.orbs.AbstractOrb;
-import com.megacrit.cardcrawl.orbs.EmptyOrbSlot;
 
 
 public class EquipAction extends AbstractGameAction {
@@ -24,18 +22,8 @@ public class EquipAction extends AbstractGameAction {
 
     public void update() {
         if (this.duration == Settings.ACTION_DUR_FAST) {
-            boolean needToAddOrbSlot = true;
 
-            for (AbstractOrb o : AbstractDungeon.player.orbs) {
-                if (o instanceof EmptyOrbSlot) {
-                    needToAddOrbSlot = false;
-                    break;
-                }
-            }
-
-            if (needToAddOrbSlot) {
-                AbstractDungeon.player.increaseMaxOrbSlots(1, true);
-            }
+            AbstractDungeon.player.increaseMaxOrbSlots(1, true);
 
             if (AbstractDungeon.player.hasRelic(WhitePearl.ID)) {
                 weaponOrb.upgrade(1, 0);

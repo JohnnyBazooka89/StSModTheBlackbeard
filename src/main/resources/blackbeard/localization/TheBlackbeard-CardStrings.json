@@ -245,7 +245,11 @@
   },
   "blackbeard:Sword": {
     "NAME": "Sword",
-    "DESCRIPTION": "Choose 1 of 3 Swords. NL Equip a !M! / {D} Weapon with an additional effect."
+    "DESCRIPTION": "Choose 1 of 3 Swords. NL Equip a !M! / {D} Weapon with an additional effect.",
+    "EXTENDED_DESCRIPTION": [
+      "Additional Effects",
+      "#rFire: Whenever you attack with this Weapon, deal #b3 damage to all enemies. NL #yWisdom: Whenever you attack with this Weapon, draw a card. NL #pChaos: Whenever you attack with this Weapon, add a random card to your hand."
+    ]
   },
   "blackbeard:BeatUp": {
     "NAME": "Beat Up",
