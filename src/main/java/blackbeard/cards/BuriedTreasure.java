@@ -15,8 +15,8 @@ public class BuriedTreasure extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
-    private static final int GOLD_TO_GAIN = 12;
-    private static final int UPGRADED_PLUS_GOLD_TO_GAIN = 3;
+    private static final int GOLD_TO_GAIN = 15;
+    private static final int UPGRADED_PLUS_GOLD_TO_GAIN = 5;
 
     public BuriedTreasure() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,

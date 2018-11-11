@@ -17,9 +17,9 @@ public class BountyHunter extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
-    private static final int ATTACK_DMG = 12;
+    private static final int ATTACK_DMG = 16;
     private static final int UPGRADE_PLUS_ATTACK_DMG = 4;
-    private static final int GOLD_TO_GAIN = 12;
+    private static final int GOLD_TO_GAIN = 16;
     private static final int UPGRADE_PLUS_GOLD_TO_GAIN = 4;
 
     public BountyHunter() {
