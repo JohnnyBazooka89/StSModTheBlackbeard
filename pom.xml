@@ -5,8 +5,8 @@
 
     <groupId>StSMod</groupId>
     <artifactId>StSModTheBlackbeard</artifactId>
-    <version>1.1.7</version>
-    <packaging>jar</packaging>
+    <version>1.1.8</version>
+    <packaging>jar</packaging>TreasureChest
     <name>StSModTheBlackbeard</name>
     <description>Adds a new character to Slay the Spire, The Blackbeard.</description>
 
