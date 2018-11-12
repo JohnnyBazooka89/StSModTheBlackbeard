@@ -50,7 +50,15 @@ Apply 1(2) [[Vulnerable]].
 |Common
 |[[Skill]]
 |1
-|Equip a 4 / 2(3) [[Weapon]]. After you attack with this [[Weapon]], give it + 1 Attack.
+|Equip a 4 / 2(3) [[Weapon]]. After you attack with this [[Weapon]], give it + 2 Attack.
+|-
+|[[Cloak And Cannonball]]
+|[[File:CloakAndCannonball.png|thumb|289x289px]]
+|Common
+|[[Skill]]
+|1
+|Gain 4(6) [[Block]].
+Add a [[Cannonball]] to your hand.
 |-
 |[[Dagger]]
 |[[File:Dagger.png|thumb|289x289px]]
@@ -73,7 +81,7 @@ At the end of your next turn, you are dealt 4 damage.
 |[[Skill]]
 |1
 |Gain [[Block]] equal to
-(0(3) +) 1% of Gold gained
+(0(3) +) 1.5% of Gold gained
 this run.
 |-
 |[[Golden Strike]]
@@ -82,7 +90,7 @@ this run.
 |[[Attack]]
 |1
 |Deal damage equal to
-(0(3) +) 1% of Gold gained
+(0(3) +) 1.5% of Gold gained
 this run.
 |-
 |[[Intimidating Strike]]
@@ -92,6 +100,14 @@ this run.
 |1
 |Deal 6(9) damage.
 Apply 1(2) [[Weak]].
+|-
+|[[Pirate's Will]]
+|[[File:PiratesWill.png|thumb|289x289px]]
+|Common
+|[[Skill]]
+|1(0)
+|Remove all of your Debuffs.
+[[Exhaust]].
 |-
 |[[Quick Slash]]
 |[[File:QuickSlash.png|thumb|289x289px]]
@@ -153,14 +169,6 @@ Draw 1 more card next turn.
 At the start of your next turn, lose 2(3) [[Resistance]].
 [[Exhaust]].
 |-
-|[[    Cloak And Cannonball]]
-|[[File:  CloakAndCannonball.png|thumb|289x289px]]
-|Common
-|[[Skill]]
-|1
-|Gain 4(6) [[Block]].
-Add a [[Cannonball]] to your hand.
-|-
 |[[Agile Strike]]
 |[[File:AgileStrike.png|thumb|289x289px]]
 |Uncommon
@@ -185,7 +193,7 @@ Gain 10 [[Block]].
 |Uncommon
 |[[Skill]]
 |0
-|This turn, whenever you Equip a [[Weapon]], gain 3(5) [[Block]].
+|This turn, whenever you Attack with a [[Weapon]], gain 3(5) [[Block]].
 |-
 |[[Bandana]]
 |[[File:Bandana.png|thumb|289x289px]]
@@ -199,7 +207,7 @@ Gain 10 [[Block]].
 |Uncommon
 |[[Attack]]
 |2
-|Deal 10(13) damage to ALL enemies.
+|Deal 12(16) damage to ALL enemies.
 Draw 2 cards.
 |-
 |[[Brown Pants]]
@@ -214,7 +222,7 @@ Draw 2 cards.
 |Uncommon
 |[[Skill]]
 |1
-|Gain 12(15) Gold.
+|Gain 15(20) Gold.
 [[Exhaust]].
 |-
 |[[Cannon Barrage]]
@@ -238,7 +246,7 @@ Exhaust.)
 |Uncommon
 |[[Skill]]
 |2
-|Gain 10 [[Block]].
+|Gain 10(12) [[Block]].
 Add 1(2) Cannonball(s) to your hand.
 |-
 |[[Chaotic Defend]]
@@ -246,8 +254,15 @@ Add 1(2) Cannonball(s) to your hand.
 |Uncommon
 |[[Skill]]
 |1
-|Gain 5(8) [[Block]].
+|Gain 7(9) [[Block]].
 Add 1(2) random card(s) to your hand.
+|-
+|[[Dagger Accumulation]]
+|[[File:DaggerAccumulation.png|thumb|289x289px]]
+|Uncommon
+|[[Skill]]
+|X
+|Equip a 2(3) / 2 [[Weapon]] X times.
 |-
 |[[Dangerous Blow]]
 |[[File:DangerousBlow.png|thumb|289x289px]]
@@ -269,7 +284,7 @@ Next turn gain 10(13) [[Block]].
 |[[File:DoubleCannonball.png|thumb|289x289px]]
 |Uncommon
 |[[Attack]]
-|0
+|1
 |Deal 8(10) damage. [[Exhaust]].
 Add a (an [[upgraded]]) [[Cannonball]] to your hand.
 |-
@@ -310,7 +325,7 @@ Lose 2(1) [[Resistance]].
 |[[Attack]]
 |0
 |Deal damage equal to
-(0(4) +) 1.5% of Gold gained
+(0(4) +) 2% of Gold gained
 this run. [[Exhaust]].
 |-
 |[[Infinite Barrage]]
@@ -341,15 +356,6 @@ Lasts for 2(3) turns.
 |[[Power]]
 |0
 |Gain 1(2) [[Artifact]].
-|-
-|[[Pirate's Will]]
-|[[File:PiratesWill.png|thumb|289x289px]]
-|Uncommon
-|[[Skill]]
-|1
-|Remove all of your Debuffs.
-(Draw 1 card.)
- [[Exhaust]].
 |-
 |[[Powder Keg]]
 |[[File:PowderKeg.png|thumb|289x289px]]
@@ -386,8 +392,10 @@ At the start of your next turn, lose 2 [[Energy]].
 |[[File:RemoveScurvy.png|thumb|289x289px]]
 |Uncommon
 |[[Skill]]
-|1
-|Heal 4(6) HP. Remove all of your Debuffs. [[Exhaust]].
+|1(0)
+|Heal 10% of your maximum HP.
+Remove all of your Debuffs.
+[[Exhaust]].
 |-
 |[[Revenge]]
 |[[File:Revenge.png|thumb|289x289px]]
@@ -402,7 +410,7 @@ Max damage at 1 HP.
 |Uncommon
 |[[Power]]
 |1
-|Gain 1(2) [[Resistance]].
+|Gain 2(3) [[Resistance]].
 |-
 |[[Smithing Hammer]]
 |[[File:SmithingHammer.png|thumb|289x289px]]
@@ -431,7 +439,7 @@ Max damage at 1 HP.
 |[[Skill]]
 |1
 |Gain 1 [[Intangible]].
-At the end of your next turn, you are dealt 12(8) damage.
+At the end of your next turn, you are dealt 10(6) damage.
 [[Exhaust]].
 |-
 |[[Wise Defend]]
@@ -439,7 +447,7 @@ At the end of your next turn, you are dealt 12(8) damage.
 |Uncommon
 |[[Skill]]
 |1
-|Gain 5(8) [[Block]].
+|Gain 7(9) [[Block]].
 Draw 1(2) card(s).
 |-
 |[[Wooden Leg]]
@@ -449,13 +457,6 @@ Draw 1(2) card(s).
 |1
 |Lose 2 [[Dexterity]].
 Gain 4(5) [[Strength]].
-|-
-|[[  Dagger Accumulation]]
-|[[File:  DaggerAccumulation.png|thumb|289x289px]]
-|Uncommon
-|[[Skill]]
-|X
-|Equip a 2(3) / 2 [[Weapon]] X times.
 |-
 |[[Boost Morale]]
 |[[File:BoostMorale.png|thumb|289x289px]]
@@ -471,7 +472,7 @@ Gain 1 (2) [[Energy]].
 |Rare
 |[[Attack]]
 |1
-|Deal 12(16) damage. If this kills a non-minion enemy, gain 12(16) Gold.
+|Deal 16(20) damage. If this kills a non-minion enemy, gain 16(20) Gold.
 [[Exhaust]].
 |-
 |[[Captain's Hat]]
@@ -495,7 +496,7 @@ Gain 2(3) [[Resistance]].
 |[[Attack]]
 |3
 |Deal damage equal to
-3(4) percent of Gold gained this run.
+4(5) percent of Gold gained this run.
 |-
 |[[Golden Rain]]
 |[[File:GoldenRain.png|thumb|289x289px]]
@@ -503,7 +504,8 @@ Gain 2(3) [[Resistance]].
 |[[Attack]]
 |2
 |Deal damage equal to
-2% (2.5%) of Gold gained this run to ALL enemies.
+2.5% (3%) of Gold gained
+this run to ALL enemies.
 |-
 |[[Halberd]]
 |[[File:Halberd.png|thumb|289x289px]]
@@ -512,12 +514,19 @@ Gain 2(3) [[Resistance]].
 |2
 |Equip a 7(10) / 4 [[Weapon]].
 |-
+|[[Humongous Cannonball]]
+|[[File:HumongousCannonball.png|thumb|289x289px]]
+|Rare
+|[[Attack]]
+|3
+|Deal 36(48) damage. [[Exhaust]].
+|-
 |[[Intoxication]]
 |[[File:Intoxication.png|thumb|289x289px]]
 |Rare
 |[[Power]]
 |1
-|Gain 3(4) [[Resistance]].
+|Gain 4(5) [[Resistance]].
 At the start of each turn, lose 1 [[Resistance]].
 |-
 |[[Lifeboat]]
@@ -567,24 +576,17 @@ Ethereal.)
 |2(1)
 |Whenever a [[Weapon]] is destroyed, gain 1 [[Energy]].
 |-
+|[[The Drunken Sailor]]
+|[[File:TheDrunkenSailor.png|thumb|289x289px]]
+|Rare
+|[[Power]]
+|1(0)
+|Increase the effectiveness of your potions 2 times.
+|-
 |[[Weapon Mastery]]
 |[[File:WeaponMastery.png|thumb|289x289px]]
 |Rare
 |[[Power]]
 |2(1)
 |Whenever you Equip a [[Weapon]], draw 1 card.
-|-
-|[[  The Drunken Sailor]]
-|[[File:  TheDrunkenSailor.png|thumb|289x289px]]
-|Rare
-|[[Power]]
-|1(0)
-|Increase the effectiveness of your potions 2 times.
-|-
-|[[       Humongous Cannonball]]
-|[[File:       HumongousCannonball.png|thumb|289x289px]]
-|Rare
-|[[Attack]]
-|3
-|Deal 36(48) damage. [[Exhaust]].
 |-
