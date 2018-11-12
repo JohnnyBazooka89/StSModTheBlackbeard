@@ -1,8 +1,10 @@
 package blackbeard.orbs;
 
+import blackbeard.powers.ArmorUpPower;
 import blackbeard.powers.SalvagerPower;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.Settings;
@@ -115,7 +117,11 @@ public abstract class WeaponOrb extends AbstractOrb {
     }
 
     public void effectOnUse() {
-        //Override to get effect on use
+        if (AbstractDungeon.player.hasPower(ArmorUpPower.POWER_ID)) {
+            ArmorUpPower armorUpPower = (ArmorUpPower) AbstractDungeon.player.getPower(ArmorUpPower.POWER_ID);
+            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, armorUpPower.amount));
+            armorUpPower.flash();
+        }
     }
 
 }

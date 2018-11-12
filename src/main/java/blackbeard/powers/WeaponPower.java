@@ -1,7 +1,6 @@
 package blackbeard.powers;//
 
 import blackbeard.enums.WeaponsToUseEnum;
-import blackbeard.orbs.DaggerOrb;
 import blackbeard.orbs.WeaponOrb;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
@@ -118,18 +117,6 @@ public class WeaponPower extends AbstractPower {
         for (int i = 0; i < orbsList.size(); i++) {
             AbstractOrb orb = orbsList.get(i);
             if (orb instanceof WeaponOrb) {
-                result++;
-            }
-        }
-        return result;
-    }
-
-    public int getNumberOfDaggers() {
-        int result = 0;
-        List<AbstractOrb> orbsList = AbstractDungeon.player.orbs;
-        for (int i = 0; i < orbsList.size(); i++) {
-            AbstractOrb orb = orbsList.get(i);
-            if (orb instanceof DaggerOrb) {
                 result++;
             }
         }

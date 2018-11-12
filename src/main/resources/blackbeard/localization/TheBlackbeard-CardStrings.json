@@ -64,8 +64,8 @@
   },
   "blackbeard:GoldenStrike": {
     "NAME": "Golden Strike",
-    "DESCRIPTION": "Deal damage equal to NL 1% of Gold gained NL this run.",
-    "UPGRADE_DESCRIPTION": "Deal damage equal to NL !M! + 1% of Gold gained NL this run.",
+    "DESCRIPTION": "Deal damage equal to NL 1.5% of Gold gained NL this run.",
+    "UPGRADE_DESCRIPTION": "Deal damage equal to NL !M! + 1.5% of Gold gained NL this run.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deals !D! damage.)",
       " NL You have gained ",
@@ -86,7 +86,7 @@
   },
   "blackbeard:RemoveScurvy": {
     "NAME": "Remove Scurvy",
-    "DESCRIPTION": "Heal !M! HP. Remove all of your Debuffs. Exhaust."
+    "DESCRIPTION": "Heal 10% of your maximum HP. NL Remove all of your Debuffs. NL Exhaust."
   },
   "blackbeard:InfiniteBarrage": {
     "NAME": "Infinite Barrage",
@@ -111,8 +111,8 @@
   },
   "blackbeard:GoldenCannonball": {
     "NAME": "Golden Cannonball",
-    "DESCRIPTION": "Deal damage equal to NL 1.5% of Gold gained NL this run. Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal damage equal to NL !M! + 1.5% of Gold gained NL this run. Exhaust.",
+    "DESCRIPTION": "Deal damage equal to NL 2% of Gold gained NL this run. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal damage equal to NL !M! + 2% of Gold gained NL this run. Exhaust.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deals !D! damage.)",
       " NL You have gained ",
@@ -141,8 +141,8 @@
   },
   "blackbeard:GoldenDefend": {
     "NAME": "Golden Defend",
-    "DESCRIPTION": "Gain Block equal to NL 1% of Gold gained NL this run.",
-    "UPGRADE_DESCRIPTION": "Gain Block equal to NL !M! + 1% of Gold gained NL this run.",
+    "DESCRIPTION": "Gain Block equal to NL 1.5% of Gold gained NL this run.",
+    "UPGRADE_DESCRIPTION": "Gain Block equal to NL !M! + 1.5% of Gold gained NL this run.",
     "EXTENDED_DESCRIPTION": [
       " NL (Gains !B! Block.)",
       " NL You have gained ",
@@ -186,8 +186,7 @@
   },
   "blackbeard:PiratesWill": {
     "NAME": "Pirate's Will",
-    "DESCRIPTION": "Remove all of your Debuffs. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Remove all of your Debuffs. NL Draw 1 card. NL Exhaust."
+    "DESCRIPTION": "Remove all of your Debuffs. NL Exhaust."
   },
   "blackbeard:WoodenLeg": {
     "NAME": "Wooden Leg",
@@ -235,8 +234,8 @@
   },
   "blackbeard:GoldenRain": {
     "NAME": "Golden Rain",
-    "DESCRIPTION": "Deal damage equal to NL 2% of Gold gained this run to ALL enemies.",
-    "UPGRADE_DESCRIPTION": "Deal damage equal to NL 2.5% of Gold gained this run to ALL enemies.",
+    "DESCRIPTION": "Deal damage equal to NL 2.5% of Gold gained NL this run to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Deal damage equal to NL 3% of Gold gained NL this run to ALL enemies.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deals !D! damage.)",
       " NL You have gained ",
@@ -310,7 +309,7 @@
   },
   "blackbeard:ArmorUp": {
     "NAME": "Armor Up",
-    "DESCRIPTION": "This turn, whenever you Equip a Weapon, gain !M! Block."
+    "DESCRIPTION": "This turn, whenever you attack with a Weapon, gain !M! Block."
   },
   "blackbeard:Intoxication": {
     "NAME": "Intoxication",

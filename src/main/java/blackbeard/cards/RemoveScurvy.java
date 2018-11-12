@@ -18,29 +18,29 @@ public class RemoveScurvy extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
-    private static final int HEAL = 4;
-    private static final int UPGRADED_PLUS_HEAL = 2;
+    private static final int HEAL_PERCENT = 10;
+    private static final int UPGRADED_COST = 0;
 
     public RemoveScurvy() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
 
         this.exhaust = true;
-        this.baseMagicNumber = this.magicNumber = HEAL;
+        this.baseMagicNumber = this.magicNumber = HEAL_PERCENT;
 
         this.tags.add(CardTags.HEALING);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, this.magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, AbstractDungeon.player.maxHealth * this.magicNumber / 100));
         AbstractDungeon.actionManager.addToBottom(new RemoveDebuffsAction(p));
     }
 
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADED_PLUS_HEAL);
+            this.upgradeBaseCost(UPGRADED_COST);
         }
     }
 }

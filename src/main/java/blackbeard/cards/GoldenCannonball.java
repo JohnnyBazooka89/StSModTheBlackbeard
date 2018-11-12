@@ -44,7 +44,7 @@ public class GoldenCannonball extends CustomCard implements IGoldenCard {
     }
 
     public void setGoldenValuesAndInitializeDescription() {
-        this.baseDamage = this.damage = this.magicNumber + 3 * CardCrawlGame.goldGained / 200;
+        this.baseDamage = this.damage = this.magicNumber + CardCrawlGame.goldGained / 50;
         this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(upgraded, DESCRIPTION, UPGRADE_DESCRIPTION, EXTENDED_DESCRIPTION);
         this.initializeDescription();
     }

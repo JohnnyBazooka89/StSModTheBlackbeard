@@ -21,7 +21,7 @@ public class GoldenRain extends CustomCard implements IGoldenCard {
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
     private static final int COST = 2;
-    private static final int PERMILLES_OF_GOLD_GAINED = 20;
+    private static final int PERMILLES_OF_GOLD_GAINED = 25;
     private static final int UPGRADE_PLUS_PERMILLES_OF_GOLD_GAINED = 5;
 
     public GoldenRain() {

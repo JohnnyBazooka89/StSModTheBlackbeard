@@ -38,7 +38,7 @@ public class GoldenDefend extends CustomCard implements IGoldenCard {
     }
 
     public void setGoldenValuesAndInitializeDescription() {
-        this.baseBlock = this.block = this.magicNumber + (CardCrawlGame.goldGained / 100);
+        this.baseBlock = this.block = this.magicNumber + (3 * CardCrawlGame.goldGained / 200);
         this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(this.upgraded, DESCRIPTION, UPGRADE_DESCRIPTION, EXTENDED_DESCRIPTION);
         this.initializeDescription();
     }

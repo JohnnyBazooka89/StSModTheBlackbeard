@@ -97,7 +97,7 @@
   "blackbeard:ArmorUpPower": {
     "NAME": "Armor Up",
     "DESCRIPTIONS": [
-      "This turn, whenever you Equip a Weapon, gain #b",
+      "This turn, whenever you attack with a Weapon, gain #b",
       " Block."
     ]
   },

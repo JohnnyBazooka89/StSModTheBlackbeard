@@ -18,14 +18,14 @@ public class ArmorUp extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 0;
-    private static final int BLOCK_FOR_WEAPON_EQUIPPING = 3;
-    private static final int UPGRADED_PLUS_BLOCK_FOR_WEAPON_EQUIPPING = 2;
+    private static final int BLOCK_FOR_WEAPON_ATTACK = 3;
+    private static final int UPGRADED_PLUS_BLOCK_FOR_WEAPON_ATTACK = 2;
 
     public ArmorUp() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
 
-        this.baseMagicNumber = this.magicNumber = BLOCK_FOR_WEAPON_EQUIPPING;
+        this.baseMagicNumber = this.magicNumber = BLOCK_FOR_WEAPON_ATTACK;
     }
 
     @Override
@@ -36,7 +36,7 @@ public class ArmorUp extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADED_PLUS_BLOCK_FOR_WEAPON_EQUIPPING);
+            this.upgradeMagicNumber(UPGRADED_PLUS_BLOCK_FOR_WEAPON_ATTACK);
         }
     }
 }

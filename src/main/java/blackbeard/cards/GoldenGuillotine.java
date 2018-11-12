@@ -22,7 +22,7 @@ public class GoldenGuillotine extends CustomCard implements IGoldenCard {
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
     private static final int COST = 3;
-    private static final int PERCENT_OF_GOLD_GAINED = 3;
+    private static final int PERCENT_OF_GOLD_GAINED = 4;
     private static final int UPGRADE_PLUS_PERCENT_OF_GOLD_GAINED = 1;
 
     public GoldenGuillotine() {

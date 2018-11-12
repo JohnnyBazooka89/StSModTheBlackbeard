@@ -19,9 +19,9 @@ public class ChaoticDefend extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 1;
-    private static final int BLOCK_AMOUNT = 5;
+    private static final int BLOCK_AMOUNT = 7;
     private static final int RANDOM_CARDS_TO_ADD = 1;
-    private static final int UPGRADED_PLUS_BLOCK_AMOUNT = 3;
+    private static final int UPGRADED_PLUS_BLOCK_AMOUNT = 2;
     private static final int UPGRADED_PLUS_RANDOM_CARDS_TO_ADD = 1;
 
     public ChaoticDefend() {
