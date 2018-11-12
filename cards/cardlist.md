@@ -23,7 +23,7 @@
 | Toast | ![](small-card-images/Toast.png) | ![](small-card-images/ToastPlus.png) | Common | Skill | 0 | Gain 2(3) Resistance. At the start of your next turn, lose 2(3) Resistance. Exhaust. |
 | Agile Strike | ![](small-card-images/AgileStrike.png) | ![](small-card-images/AgileStrikePlus.png) | Uncommon | Attack | 1 | Deal 9(13) damage. If you have equipped a Weapon this turn, reduce cost of this card to 0. |
 | Anchor | ![](small-card-images/Anchor.png) | ![](small-card-images/AnchorPlus.png) | Uncommon | Skill | 0 | Innate. Gain 10 Block. (Draw a card.) Exhaust. |
-| Armor Up | ![](small-card-images/ArmorUp.png) | ![](small-card-images/ArmorUpPlus.png) | Uncommon | Skill | 0 | This turn, whenever you Attack with a Weapon, gain 3(5) Block. |
+| Armor Up | ![](small-card-images/ArmorUp.png) | ![](small-card-images/ArmorUpPlus.png) | Uncommon | Skill | 0 | This turn, whenever you attack with a Weapon, gain 3(5) Block. |
 | Bandana | ![](small-card-images/Bandana.png) | ![](small-card-images/BandanaPlus.png) | Uncommon | Power | 1 | Gain 2(3) Dexterity. |
 | Boarding | ![](small-card-images/Boarding.png) | ![](small-card-images/BoardingPlus.png) | Uncommon | Attack | 2 | Deal 12(16) damage to ALL enemies. Draw 2 cards. |
 | Brown Pants | ![](small-card-images/BrownPants.png) | ![](small-card-images/BrownPantsPlus.png) | Uncommon | Power | 2 | Gain 5(6) Plated Armor. |

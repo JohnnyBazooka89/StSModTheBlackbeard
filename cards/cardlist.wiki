@@ -193,7 +193,7 @@ Gain 10 [[Block]].
 |Uncommon
 |[[Skill]]
 |0
-|This turn, whenever you Attack with a [[Weapon]], gain 3(5) [[Block]].
+|This turn, whenever you attack with a [[Weapon]], gain 3(5) [[Block]].
 |-
 |[[Bandana]]
 |[[File:Bandana.png|thumb|289x289px]]

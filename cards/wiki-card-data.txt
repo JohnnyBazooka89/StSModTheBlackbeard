@@ -214,7 +214,7 @@
     Rarity = "Uncommon",
     Type = "Skill",
     Cost = 0,
-    Text = "This turn, whenever you Attack with a #Weapon, gain [3|5] #Block.",
+    Text = "This turn, whenever you attack with a #Weapon, gain [3|5] #Block.",
     Traits = {},
     },
     {Name = "Bandana",
