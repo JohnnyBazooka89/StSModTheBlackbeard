@@ -39,7 +39,7 @@ public class Penknife extends CustomRelic {
     }
 
     public void atBattleStart() {
-        if (this.counter == 9) {
+        if (this.counter == COUNT - 1) {
             this.beginPulse();
             this.pulse = true;
             AbstractDungeon.player.hand.refreshHandLayout();
