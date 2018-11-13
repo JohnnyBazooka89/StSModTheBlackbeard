@@ -31,7 +31,7 @@ public class AgileStrike extends CustomCard {
 
     }
 
-    /* Logic is in EquipAction */
+    /* Logic is in EquipAction. */
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {

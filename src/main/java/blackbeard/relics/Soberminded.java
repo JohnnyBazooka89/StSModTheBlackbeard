@@ -8,18 +8,25 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
-public class HipFlask extends CustomRelic {
-    public static final String ID = "blackbeard:HipFlask";
+public class Soberminded extends CustomRelic {
+    public static final String ID = "blackbeard:Soberminded";
 
-    public HipFlask() {
-        super(ID, new Texture(TheBlackbeardMod.getRelicImagePath(ID)), RelicTier.COMMON, LandingSound.MAGICAL);
+    public Soberminded() {
+        super(ID, new Texture(TheBlackbeardMod.getRelicImagePath(ID)), RelicTier.BOSS, LandingSound.MAGICAL);
     }
 
-    @Override
     public void atBattleStart() {
         this.flash();
         AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ResistancePower(AbstractDungeon.player, 1), 1));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ResistancePower(AbstractDungeon.player, -1), -1));
+    }
+
+    public void onEquip() {
+        ++AbstractDungeon.player.energy.energyMaster;
+    }
+
+    public void onUnequip() {
+        --AbstractDungeon.player.energy.energyMaster;
     }
 
     @Override

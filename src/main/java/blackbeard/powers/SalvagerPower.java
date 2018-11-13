@@ -26,5 +26,5 @@ public class SalvagerPower extends AbstractPower {
         this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
     }
 
-    /* Logic is in WeaponOrb.onEvoke */
+    /* Logic is in WeaponOrb.onEvoke. */
 }

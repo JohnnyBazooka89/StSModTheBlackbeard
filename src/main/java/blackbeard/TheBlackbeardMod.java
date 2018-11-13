@@ -134,6 +134,13 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addRelicToCustomPool(new HipFlask(), AbstractCardEnum.BLACKBEARD_BLACK);
         BaseMod.addRelicToCustomPool(new TreasureChest(), AbstractCardEnum.BLACKBEARD_BLACK);
         BaseMod.addRelicToCustomPool(new WhitePearl(), AbstractCardEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new CannonballsOfSteel(), AbstractCardEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new GoldenRing(), AbstractCardEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new MagicalCauldron(), AbstractCardEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new Penknife(), AbstractCardEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new PoorMathSkills(), AbstractCardEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new PowderCasket(), AbstractCardEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new Soberminded(), AbstractCardEnum.BLACKBEARD_BLACK);
 
         logger.info("Done editing relics");
     }
@@ -249,7 +256,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
 
         BaseMod.addKeyword(new String[]{"weapon", "weapons"}, "Whenever you play an attack card, one Durability of your rightmost Weapon is used and card's damage is increased by Weapon's attack.");
         BaseMod.addKeyword(new String[]{"cannonball", "cannonballs"}, "Cannonballs are 0 cost attacks that deal 8 (10) damage and exhaust.");
-        BaseMod.addKeyword(new String[]{"resistance"}, "You take less damage from enemy attacks. (Enemy intents always show actual incoming damage, with Resistance taken into account.)");
+        BaseMod.addKeyword(new String[]{"resistance"}, "You take less damage from enemy attacks. (Enemy intents always show actual incoming damage, with Resistance taken into account.) Resistance can be negative.");
     }
 
 }

@@ -40,7 +40,7 @@ public class GoldenGuillotine extends CustomCard implements IGoldenCard {
     }
 
     public void setGoldenValuesAndInitializeDescription() {
-        this.baseDamage = this.damage = this.magicNumber * CardCrawlGame.goldGained / 100;
+        this.baseDamage = this.damage = this.magicNumber * GoldenCardsUtil.getBlackbeardGoldGained() / 100;
         this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(this.upgraded, DESCRIPTION, DESCRIPTION, EXTENDED_DESCRIPTION);
         this.initializeDescription();
     }

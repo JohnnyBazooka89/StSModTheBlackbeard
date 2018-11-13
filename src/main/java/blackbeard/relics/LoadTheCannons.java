@@ -17,8 +17,9 @@ public class LoadTheCannons extends CustomRelic {
 
     @Override
     public void atBattleStartPreDraw() {
-        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Cannonball(), false));
+        this.flash();
         AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Cannonball(), false));
     }
 
     @Override

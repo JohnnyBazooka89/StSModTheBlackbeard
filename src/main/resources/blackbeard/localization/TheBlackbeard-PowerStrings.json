@@ -102,10 +102,16 @@
     ]
   },
   "blackbeard:IntoxicationPower": {
-    "NAME": "IntoxicationPower",
+    "NAME": "Intoxication Power",
     "DESCRIPTIONS": [
       "At the start of each turn, lose #b",
       " Resistance."
+    ]
+  },
+  "blackbeard:PenknifePower": {
+    "NAME": "Penknife",
+    "DESCRIPTIONS": [
+      "Your next #yAttack that uses at least one Weapon deals double damage."
     ]
   }
 }

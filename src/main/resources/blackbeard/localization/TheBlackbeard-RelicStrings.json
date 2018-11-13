@@ -10,7 +10,7 @@
     "NAME": "HipFlask",
     "FLAVOR": "Very handy.",
     "DESCRIPTIONS": [
-      "At the start of each combat, gain 1 Resistance."
+      "At the start of each combat, gain #b1 Resistance."
     ]
   },
   "blackbeard:BloodOrange": {
@@ -32,6 +32,55 @@
     "FLAVOR": "So beautiful. So strong.",
     "DESCRIPTIONS": [
       "Whenever you Equip a Weapon, give it + 1 Attack."
+    ]
+  },
+  "blackbeard:CannonballsOfSteel": {
+    "NAME": "Cannonballs Of Steel",
+    "FLAVOR": "Much stronger than regular cannonballs.",
+    "DESCRIPTIONS": [
+      "Your Cannonballs deal #b2 more damage. (Works with every type of Cannonball.)"
+    ]
+  },
+  "blackbeard:GoldenRing": {
+    "NAME": "Golden Ring",
+    "FLAVOR": "Suitable for every pirate.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, gain 1 Artifact."
+    ]
+  },
+  "blackbeard:MagicalCauldron": {
+    "NAME": "Magical Cauldron",
+    "FLAVOR": "Fully automatic.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, obtain a random potion.."
+    ]
+  },
+  "blackbeard:Penknife": {
+    "NAME": "Penknife",
+    "FLAVOR": "If you have it in your pocket, don't forget to use it.",
+    "DESCRIPTIONS": [
+      "Every 6th Attack that uses at least one Weapon deals double damage."
+    ]
+  },
+  "blackbeard:PoorMathSkills": {
+    "NAME": "Poor Math Skills",
+    "FLAVOR": "Sometimes failing a math class is a good thing.",
+    "DESCRIPTIONS": [
+      "You think that you gained #y500 more Gold this run than you actually did. (It matters for cards that scale with Gold gained this run.)"
+    ]
+  },
+  "blackbeard:PowderCasket": {
+    "NAME": "Powder Casket",
+    "FLAVOR": "Just like a Powder Keg, but smaller.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, equip a 0 / 1 Weapon. When it is destroyed, deal 8 damage to ALL enemies."
+    ]
+  },
+  "blackbeard:Soberminded": {
+    "NAME": "Sober-minded",
+    "FLAVOR": "Being sober is not a natural state for The Blackbeard.",
+    "DESCRIPTIONS": [
+      "Gain [R] at the start of each turn. At the start of each combat, lose 1 Resistance."
     ]
   }
 }

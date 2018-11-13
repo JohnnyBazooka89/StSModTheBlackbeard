@@ -28,6 +28,18 @@ public class UpdateRevengePatch {
         updateRevengeInCardGroup(AbstractDungeon.player.discardPile);
         updateRevengeInCardGroup(AbstractDungeon.player.exhaustPile);
         updateRevengeInCardGroup(AbstractDungeon.player.limbo);
+
+        updateRevengeInCardGroup(AbstractDungeon.srcColorlessCardPool);
+        updateRevengeInCardGroup(AbstractDungeon.srcCommonCardPool);
+        updateRevengeInCardGroup(AbstractDungeon.srcCurseCardPool);
+        updateRevengeInCardGroup(AbstractDungeon.srcRareCardPool);
+        updateRevengeInCardGroup(AbstractDungeon.srcUncommonCardPool);
+
+        updateRevengeInCardGroup(AbstractDungeon.colorlessCardPool);
+        updateRevengeInCardGroup(AbstractDungeon.commonCardPool);
+        updateRevengeInCardGroup(AbstractDungeon.curseCardPool);
+        updateRevengeInCardGroup(AbstractDungeon.rareCardPool);
+        updateRevengeInCardGroup(AbstractDungeon.uncommonCardPool);
     }
 
     private static void updateRevengeInCardGroup(CardGroup cardGroup) {

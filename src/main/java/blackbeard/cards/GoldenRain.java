@@ -40,7 +40,7 @@ public class GoldenRain extends CustomCard implements IGoldenCard {
     }
 
     public void setGoldenValuesAndInitializeDescription() {
-        this.baseDamage = this.damage = this.magicNumber * CardCrawlGame.goldGained / 1000;
+        this.baseDamage = this.damage = this.magicNumber * GoldenCardsUtil.getBlackbeardGoldGained() / 1000;
         this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(this.upgraded, DESCRIPTION, UPGRADE_DESCRIPTION, EXTENDED_DESCRIPTION);
         this.initializeDescription();
     }

@@ -4,14 +4,14 @@ import basemod.abstracts.CustomRelic;
 import blackbeard.TheBlackbeardMod;
 import com.badlogic.gdx.graphics.Texture;
 
-public class WhitePearl extends CustomRelic {
-    public static final String ID = "blackbeard:WhitePearl";
+public class CannonballsOfSteel extends CustomRelic {
+    public static final String ID = "blackbeard:CannonballsOfSteel";
 
-    public WhitePearl() {
+    public CannonballsOfSteel() {
         super(ID, new Texture(TheBlackbeardMod.getRelicImagePath(ID)), RelicTier.COMMON, LandingSound.MAGICAL);
     }
 
-    /* Logic is in EquipAction. */
+    /* Logic is in CannonballsOfSteelApplyPowersPatch and CannonballsOfSteelCalculateCardDamagePatch. */
 
     @Override
     public String getUpdatedDescription() {

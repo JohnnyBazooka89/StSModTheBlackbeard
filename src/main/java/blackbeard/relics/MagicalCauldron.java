@@ -2,24 +2,22 @@ package blackbeard.relics;
 
 import basemod.abstracts.CustomRelic;
 import blackbeard.TheBlackbeardMod;
-import blackbeard.powers.ResistancePower;
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.ObtainPotionAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
-public class HipFlask extends CustomRelic {
-    public static final String ID = "blackbeard:HipFlask";
+public class MagicalCauldron extends CustomRelic {
+    public static final String ID = "blackbeard:MagicalCauldron";
 
-    public HipFlask() {
-        super(ID, new Texture(TheBlackbeardMod.getRelicImagePath(ID)), RelicTier.COMMON, LandingSound.MAGICAL);
+    public MagicalCauldron() {
+        super(ID, new Texture(TheBlackbeardMod.getRelicImagePath(ID)), RelicTier.RARE, LandingSound.MAGICAL);
     }
 
-    @Override
     public void atBattleStart() {
         this.flash();
         AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ResistancePower(AbstractDungeon.player, 1), 1));
+        AbstractDungeon.actionManager.addToBottom(new ObtainPotionAction(AbstractDungeon.returnRandomPotion(true)));
     }
 
     @Override
