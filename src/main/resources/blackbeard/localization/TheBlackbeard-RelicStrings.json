@@ -59,7 +59,7 @@
     "NAME": "Penknife",
     "FLAVOR": "If you have it in your pocket, don't forget to use it.",
     "DESCRIPTIONS": [
-      "Every 6th Attack that uses at least one Weapon deals double damage."
+      "Every 8th Attack that uses at least one Weapon deals double damage."
     ]
   },
   "blackbeard:PoorMathSkills": {
