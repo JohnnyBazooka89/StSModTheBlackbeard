@@ -8,7 +8,7 @@ public class WhitePearl extends CustomRelic {
     public static final String ID = "blackbeard:WhitePearl";
 
     public WhitePearl() {
-        super(ID, new Texture(TheBlackbeardMod.getRelicImagePath(ID)), RelicTier.COMMON, LandingSound.MAGICAL);
+        super(ID, new Texture(TheBlackbeardMod.getRelicImagePath(ID)), new Texture(TheBlackbeardMod.getRelicOutlineImagePath(ID)), RelicTier.COMMON, LandingSound.MAGICAL);
     }
 
     /* Logic is in EquipAction. */

@@ -16,7 +16,7 @@ public class Penknife extends CustomRelic {
     public static final int COUNT = 8;
 
     public Penknife() {
-        super(ID, new Texture(TheBlackbeardMod.getRelicImagePath(ID)), RelicTier.UNCOMMON, LandingSound.MAGICAL);
+        super(ID, new Texture(TheBlackbeardMod.getRelicImagePath(ID)), new Texture(TheBlackbeardMod.getRelicOutlineImagePath(ID)), RelicTier.UNCOMMON, LandingSound.MAGICAL);
         this.counter = 0;
     }
 

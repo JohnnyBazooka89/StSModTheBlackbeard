@@ -88,6 +88,10 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         return "blackbeard/img/relics/" + cardID.replaceFirst("blackbeard:", "") + ".png";
     }
 
+    public static String getRelicOutlineImagePath(String cardID) {
+        return "blackbeard/img/relics/outlines/" + cardID.replaceFirst("blackbeard:", "") + ".png";
+    }
+
     public static String getOrbImagePath(String cardID) {
         return "blackbeard/img/orbs/" + cardID.replaceFirst("blackbeard:", "") + ".png";
     }
@@ -139,7 +143,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addRelicToCustomPool(new MagicalCauldron(), AbstractCardEnum.BLACKBEARD_BLACK);
         BaseMod.addRelicToCustomPool(new Penknife(), AbstractCardEnum.BLACKBEARD_BLACK);
         BaseMod.addRelicToCustomPool(new PoorMathSkills(), AbstractCardEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new PowderCasket(), AbstractCardEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new PowderCan(), AbstractCardEnum.BLACKBEARD_BLACK);
         BaseMod.addRelicToCustomPool(new Soberminded(), AbstractCardEnum.BLACKBEARD_BLACK);
 
         logger.info("Done editing relics");

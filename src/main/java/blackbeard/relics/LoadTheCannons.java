@@ -12,7 +12,7 @@ public class LoadTheCannons extends CustomRelic {
     public static final String ID = "blackbeard:LoadTheCannons";
 
     public LoadTheCannons() {
-        super(ID, new Texture(TheBlackbeardMod.getRelicImagePath(ID)), RelicTier.STARTER, LandingSound.MAGICAL);
+        super(ID, new Texture(TheBlackbeardMod.getRelicImagePath(ID)), new Texture(TheBlackbeardMod.getRelicOutlineImagePath(ID)), RelicTier.STARTER, LandingSound.MAGICAL);
     }
 
     @Override

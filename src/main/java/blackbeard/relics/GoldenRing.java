@@ -11,7 +11,7 @@ public class GoldenRing extends CustomRelic {
     public static final String ID = "blackbeard:GoldenRing";
 
     public GoldenRing() {
-        super(ID, new Texture(TheBlackbeardMod.getRelicImagePath(ID)), RelicTier.UNCOMMON, LandingSound.MAGICAL);
+        super(ID, new Texture(TheBlackbeardMod.getRelicImagePath(ID)), new Texture(TheBlackbeardMod.getRelicOutlineImagePath(ID)), RelicTier.UNCOMMON, LandingSound.MAGICAL);
     }
 
     public void atBattleStart() {

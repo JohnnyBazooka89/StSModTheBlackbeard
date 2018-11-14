@@ -11,7 +11,7 @@ public class MagicalCauldron extends CustomRelic {
     public static final String ID = "blackbeard:MagicalCauldron";
 
     public MagicalCauldron() {
-        super(ID, new Texture(TheBlackbeardMod.getRelicImagePath(ID)), RelicTier.RARE, LandingSound.MAGICAL);
+        super(ID, new Texture(TheBlackbeardMod.getRelicImagePath(ID)), new Texture(TheBlackbeardMod.getRelicOutlineImagePath(ID)), RelicTier.RARE, LandingSound.MAGICAL);
     }
 
     public void atBattleStart() {

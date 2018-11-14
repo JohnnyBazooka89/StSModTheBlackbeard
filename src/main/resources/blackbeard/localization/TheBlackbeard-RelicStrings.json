@@ -69,8 +69,8 @@
       "You think that you have gained #y500 more Gold this run than you actually did. (It matters for cards that scale with Gold gained this run.)"
     ]
   },
-  "blackbeard:PowderCasket": {
-    "NAME": "Powder Casket",
+  "blackbeard:PowderCan": {
+    "NAME": "Powder Can",
     "FLAVOR": "Just like a Powder Keg, but smaller.",
     "DESCRIPTIONS": [
       "At the start of each combat, equip a 0 / 1 Weapon. When it is destroyed, deal 8 damage to ALL enemies."

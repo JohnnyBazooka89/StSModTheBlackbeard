@@ -8,7 +8,7 @@ public class PoorMathSkills extends CustomRelic {
     public static final String ID = "blackbeard:PoorMathSkills";
 
     public PoorMathSkills() {
-        super(ID, new Texture(TheBlackbeardMod.getRelicImagePath(ID)), RelicTier.RARE, LandingSound.MAGICAL);
+        super(ID, new Texture(TheBlackbeardMod.getRelicImagePath(ID)), new Texture(TheBlackbeardMod.getRelicOutlineImagePath(ID)), RelicTier.RARE, LandingSound.MAGICAL);
     }
 
     /* Logic is in GoldenCardsUtil. */

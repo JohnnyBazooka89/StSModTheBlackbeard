@@ -12,7 +12,7 @@ public class Soberminded extends CustomRelic {
     public static final String ID = "blackbeard:Soberminded";
 
     public Soberminded() {
-        super(ID, new Texture(TheBlackbeardMod.getRelicImagePath(ID)), RelicTier.BOSS, LandingSound.MAGICAL);
+        super(ID, new Texture(TheBlackbeardMod.getRelicImagePath(ID)), new Texture(TheBlackbeardMod.getRelicOutlineImagePath(ID)), RelicTier.BOSS, LandingSound.MAGICAL);
     }
 
     public void atBattleStart() {

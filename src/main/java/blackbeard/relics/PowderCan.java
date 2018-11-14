@@ -8,15 +8,15 @@ import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
-public class PowderCasket extends CustomRelic {
-    public static final String ID = "blackbeard:PowderCasket";
+public class PowderCan extends CustomRelic {
+    public static final String ID = "blackbeard:PowderCan";
 
     private static final int WEAPON_ATTACK = 0;
     private static final int WEAPON_DURABILITY = 1;
     private static final int DAMAGE_ON_DESTROY = 8;
 
-    public PowderCasket() {
-        super(ID, new Texture(TheBlackbeardMod.getRelicImagePath(ID)), RelicTier.UNCOMMON, LandingSound.MAGICAL);
+    public PowderCan() {
+        super(ID, new Texture(TheBlackbeardMod.getRelicImagePath(ID)), new Texture(TheBlackbeardMod.getRelicOutlineImagePath(ID)), RelicTier.UNCOMMON, LandingSound.MAGICAL);
     }
 
     public void atBattleStart() {

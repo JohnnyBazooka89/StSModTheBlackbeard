@@ -12,7 +12,7 @@ public class BloodOrange extends CustomRelic {
     public static final String ID = "blackbeard:BloodOrange";
 
     public BloodOrange() {
-        super(ID, new Texture(TheBlackbeardMod.getRelicImagePath(ID)), RelicTier.SHOP, LandingSound.MAGICAL);
+        super(ID, new Texture(TheBlackbeardMod.getRelicImagePath(ID)), new Texture(TheBlackbeardMod.getRelicOutlineImagePath(ID)), RelicTier.SHOP, LandingSound.MAGICAL);
     }
 
     @Override

@@ -11,7 +11,7 @@ public class TreasureChest extends CustomRelic {
     public static final String ID = "blackbeard:TreasureChest";
 
     public TreasureChest() {
-        super(ID, new Texture(TheBlackbeardMod.getRelicImagePath(ID)), RelicTier.COMMON, LandingSound.MAGICAL);
+        super(ID, new Texture(TheBlackbeardMod.getRelicImagePath(ID)), new Texture(TheBlackbeardMod.getRelicOutlineImagePath(ID)), RelicTier.COMMON, LandingSound.MAGICAL);
     }
 
     @Override
