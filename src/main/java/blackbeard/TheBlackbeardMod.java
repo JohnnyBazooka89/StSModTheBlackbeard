@@ -159,7 +159,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addCard(new Cutlass());
         BaseMod.addCard(new Upgrade());
         BaseMod.addCard(new Sharpening());
-        BaseMod.addCard(new QuickSlash());
+        BaseMod.addCard(new RearmingStrike());
         BaseMod.addCard(new Fencing());
         BaseMod.addCard(new Parrot());
         BaseMod.addCard(new TheDrunkenSailor());
@@ -171,7 +171,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addCard(new GhostInTheRum());
         BaseMod.addCard(new GoldenStrike());
         BaseMod.addCard(new PowderKeg());
-        BaseMod.addCard(new Recycle());
+        BaseMod.addCard(new Scrap());
         BaseMod.addCard(new RemoveScurvy());
         BaseMod.addCard(new InfiniteBarrage());
         //BaseMod.addCard(new SwordOfChaos());

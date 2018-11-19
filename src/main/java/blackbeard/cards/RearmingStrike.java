@@ -16,8 +16,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class QuickSlash extends CustomCard {
-    public static final String ID = "blackbeard:QuickSlash";
+public class RearmingStrike extends CustomCard {
+    public static final String ID = "blackbeard:RearmingStrike";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final int COST = 1;
     private static final int DAMAGE = 7;
@@ -27,11 +27,13 @@ public class QuickSlash extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = WeaponCardsUtil.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);
 
-    public QuickSlash() {
+    public RearmingStrike() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.COMMON, AbstractCard.CardTarget.ENEMY);
 
         this.baseDamage = this.damage = DAMAGE;
+
+        this.tags.add(CardTags.STRIKE);
     }
 
     @Override

@@ -19,8 +19,8 @@
     "NAME": "Sharpening",
     "DESCRIPTION": "Give all your equipped Weapons + !M! attack."
   },
-  "blackbeard:QuickSlash": {
-    "NAME": "Quick Slash",
+  "blackbeard:RearmingStrike": {
+    "NAME": "Rearming Strike",
     "DESCRIPTION": "Deal !D! damage. Equip a {A} / {D} Weapon."
   },
   "blackbeard:Fencing": {
@@ -76,8 +76,8 @@
     "NAME": "Powder Keg",
     "DESCRIPTION": "Equip a {A} / {D} Weapon. When it is destroyed, deal !M! damage to ALL enemies."
   },
-  "blackbeard:Recycle": {
-    "NAME": "Recycle",
+  "blackbeard:Scrap": {
+    "NAME": "Scrap",
     "DESCRIPTION": "Destroy your rightmost Weapon to gain [R] [R].",
     "UPGRADE_DESCRIPTION": "Destroy your rightmost Weapon to gain NL [R] [R] [R].",
     "EXTENDED_DESCRIPTION": [
