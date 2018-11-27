@@ -3,6 +3,7 @@ package blackbeard.characters;
 import basemod.abstracts.CustomPlayer;
 import blackbeard.cards.Cutlass;
 import blackbeard.cards.DefendBlackbeard;
+import blackbeard.cards.IntimidatingStrike;
 import blackbeard.cards.StrikeBlackbeard;
 import blackbeard.enums.AbstractCardEnum;
 import blackbeard.enums.TheBlackbeardEnum;
@@ -50,7 +51,7 @@ public class TheBlackbeard extends CustomPlayer {
         startingDeck.add(StrikeBlackbeard.ID);
         startingDeck.add(StrikeBlackbeard.ID);
         startingDeck.add(StrikeBlackbeard.ID);
-        startingDeck.add(StrikeBlackbeard.ID);
+        startingDeck.add(IntimidatingStrike.ID);
         startingDeck.add(DefendBlackbeard.ID);
         startingDeck.add(DefendBlackbeard.ID);
         startingDeck.add(DefendBlackbeard.ID);

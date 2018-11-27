@@ -124,5 +124,8 @@ public abstract class WeaponOrb extends AbstractOrb {
         }
     }
 
+    public void effectAtStartOfTurnPostDraw() {
+        //method can be overridden in subclasses
+    }
 }
 

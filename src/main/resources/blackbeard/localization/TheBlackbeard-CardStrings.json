@@ -25,7 +25,8 @@
   },
   "blackbeard:Fencing": {
     "NAME": "Fencing",
-    "DESCRIPTION": "Give your rightmost Weapon + !M! / + !M!."
+    "DESCRIPTION": "Give your rightmost Weapon + 3 / + 2.",
+    "UPGRADE_DESCRIPTION": "Give your rightmost Weapon + 4 / + 3."
   },
   "blackbeard:Parrot": {
     "NAME": "Parrot",
@@ -270,7 +271,7 @@
   },
   "blackbeard:SmithingHammer": {
     "NAME": "Smithing Hammer",
-    "DESCRIPTION": "Equip a !M! / {D} Weapon. After you attack with this Weapon, upgrade a random card in your hand for the rest of the combat."
+    "DESCRIPTION": "Equip a !M! / {D} Weapon. After you attack with this Weapon and passively at the start of your turn, upgrade a random card in your hand for the rest of the combat."
   },
   "blackbeard:Spear": {
     "NAME": "Spear",

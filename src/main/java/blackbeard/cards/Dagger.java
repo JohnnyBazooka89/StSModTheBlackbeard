@@ -17,7 +17,7 @@ public class Dagger extends CustomCard {
     public static final String ID = "blackbeard:Dagger";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final int COST = 0;
-    private static final int WEAPON_ATTACK = 2;
+    private static final int WEAPON_ATTACK = 3;
     private static final int WEAPON_DURABILITY = 2;
     private static final int UPGRADED_PLUS_WEAPON_ATTACK = 1;
     public static final String NAME = cardStrings.NAME;

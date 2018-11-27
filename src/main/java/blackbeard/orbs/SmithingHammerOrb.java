@@ -24,4 +24,10 @@ public class SmithingHammerOrb extends WeaponOrb {
         super.effectOnUse();
         AbstractDungeon.actionManager.addToBottom(new UpgradeRandomCardAction());
     }
+
+    public void effectAtStartOfTurnPostDraw() {
+        super.effectAtStartOfTurnPostDraw();
+        AbstractDungeon.actionManager.addToBottom(new UpgradeRandomCardAction());
+    }
+
 }

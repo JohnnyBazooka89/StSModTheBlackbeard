@@ -1,11 +1,11 @@
 {
   "modid": "sts-mod-the-blackbeard",
-  "name": "The Blackbeard Mod",
+  "name": "The Blackbeard",
   "author_list": [
     "JohnnyBazooka89"
   ],
   "description": "Adds The Blackbeard as a new playable character. More info: https://github.com/JohnnyBazooka89/StSModTheBlackbeard",
-  "version": "1.3.4",
+  "version": "1.4.0",
   "dependencies": [
     "basemod"
   ],

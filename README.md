@@ -28,7 +28,7 @@ List of all cards can be find [here](/cards/cardlist.md). (Exported using [Slay 
 2. Copy ModTheSpire files (ModTheSpire.jar, MTS.cmd, MTS.sh) to this folder.
 3. Create a new folder named "mods".
 4. Copy BaseMod.jar and TheBlackbeardMod.jar into folder "mods".
-5. Double click on MTS.cmd, select "BaseMod" and "The Blackbeard Mod", and click "Play" button.
+5. Double click on MTS.cmd, select "BaseMod" and "The Blackbeard", and click "Play" button.
 
 ## Set Ascension Level to 20 (optional) ##
 

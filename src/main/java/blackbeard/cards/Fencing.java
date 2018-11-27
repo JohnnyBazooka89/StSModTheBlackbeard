@@ -5,7 +5,6 @@ import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.UpgradeWeaponsAction;
 import blackbeard.enums.AbstractCardEnum;
 import blackbeard.enums.WeaponsToUseEnum;
-import blackbeard.utils.WeaponCardsUtil;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -20,24 +19,27 @@ public class Fencing extends CustomCard {
     private static final int UPGRADE_VALUE = 2;
     private static final int UPGRADED_PLUS_VALUE = 1;
     public static final String NAME = cardStrings.NAME;
-    public static final String DESCRIPTION = WeaponCardsUtil.getWeaponRawDescription(cardStrings.DESCRIPTION, UPGRADE_VALUE, UPGRADE_VALUE);
+    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
     public Fencing() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
+                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.SELF);
 
         this.baseMagicNumber = this.magicNumber = UPGRADE_VALUE;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new UpgradeWeaponsAction(this.magicNumber, this.magicNumber, WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON));
+        AbstractDungeon.actionManager.addToBottom(new UpgradeWeaponsAction(this.magicNumber + 1, this.magicNumber, WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON));
     }
 
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeMagicNumber(UPGRADED_PLUS_VALUE);
+            this.rawDescription = UPGRADE_DESCRIPTION;
+            this.initializeDescription();
         }
     }
 }

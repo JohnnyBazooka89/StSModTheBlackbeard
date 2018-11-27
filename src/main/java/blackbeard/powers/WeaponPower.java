@@ -124,6 +124,17 @@ public class WeaponPower extends AbstractPower {
     }
 
     @Override
+    public void atStartOfTurnPostDraw() {
+        super.atStartOfTurnPostDraw();
+        for (AbstractOrb o : AbstractDungeon.player.orbs) {
+            if (o instanceof WeaponOrb) {
+                WeaponOrb weaponOrb = (WeaponOrb) o;
+                weaponOrb.effectAtStartOfTurnPostDraw();
+            }
+        }
+    }
+
+    @Override
     public float atDamageGive(float damage, DamageType type) {
         if (type.equals(DamageType.NORMAL)) {
             WeaponsToUseEnum weaponsToUse = WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON;
