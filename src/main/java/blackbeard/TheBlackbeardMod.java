@@ -8,6 +8,7 @@ import blackbeard.characters.TheBlackbeard;
 import blackbeard.enums.AbstractCardEnum;
 import blackbeard.enums.TheBlackbeardEnum;
 import blackbeard.relics.*;
+import blackbeard.variables.MagicNumberPlusOne;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
@@ -153,6 +154,8 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     public void receiveEditCards() {
         logger.info("Begin editing cards");
         logger.info("Add cards for " + TheBlackbeardEnum.BLACKBEARD_CLASS.toString());
+
+        BaseMod.addDynamicVariable(new MagicNumberPlusOne());
 
         BaseMod.addCard(new StrikeBlackbeard());
         BaseMod.addCard(new DefendBlackbeard());

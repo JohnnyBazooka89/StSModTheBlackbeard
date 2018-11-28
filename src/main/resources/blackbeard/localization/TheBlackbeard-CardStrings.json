@@ -25,8 +25,8 @@
   },
   "blackbeard:Fencing": {
     "NAME": "Fencing",
-    "DESCRIPTION": "Give your rightmost Weapon + 3 / + 2.",
-    "UPGRADE_DESCRIPTION": "Give your rightmost Weapon + 4 / + 3."
+    "DESCRIPTION": "Give your rightmost Weapon + !blackbeard:M+1! / + !M!.",
+    "UPGRADE_DESCRIPTION": "Give your rightmost Weapon + !blackbeard:M+1! / + !M!."
   },
   "blackbeard:Parrot": {
     "NAME": "Parrot",
