@@ -21,7 +21,7 @@ public class MagicNumberPlusOne extends DynamicVariable {
 
     @Override
     public int baseValue(AbstractCard card) {
-        return card.magicNumber + 1;
+        return card.baseMagicNumber + 1;
     }
 
     @Override
