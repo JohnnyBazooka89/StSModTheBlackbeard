@@ -74,9 +74,9 @@ public abstract class WeaponOrb extends AbstractOrb {
         //Do nothing
     }
 
-    public AbstractOrb makeCopy() {
+    public WeaponOrb makeCopy() {
         try {
-            return this.getClass().getDeclaredConstructor(int.class, int.class).newInstance(attack, durability);
+            return this.getClass().getDeclaredConstructor(int.class, int.class, boolean.class).newInstance(attack, durability, justAddedUsingAttackCard);
         } catch (Exception e) {
             throw new RuntimeException("WeaponOrb failed to auto-generate makeCopy for orb: " + this.ID);
         }

@@ -8,7 +8,6 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.OrbStrings;
-import com.megacrit.cardcrawl.orbs.AbstractOrb;
 
 public class PowderKegOrb extends WeaponOrb {
 
@@ -35,7 +34,7 @@ public class PowderKegOrb extends WeaponOrb {
     }
 
     @Override
-    public AbstractOrb makeCopy() {
+    public WeaponOrb makeCopy() {
         return new PowderKegOrb(attack, durability, damageOnDestroy, justAddedUsingAttackCard);
     }
 }

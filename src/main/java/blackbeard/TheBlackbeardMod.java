@@ -8,7 +8,7 @@ import blackbeard.characters.TheBlackbeard;
 import blackbeard.enums.AbstractCardEnum;
 import blackbeard.enums.TheBlackbeardEnum;
 import blackbeard.relics.*;
-import blackbeard.variables.MagicNumberPlusOne;
+import blackbeard.variables.MagicNumberPlusOneVariable;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
@@ -155,7 +155,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         logger.info("Begin editing cards");
         logger.info("Add cards for " + TheBlackbeardEnum.BLACKBEARD_CLASS.toString());
 
-        BaseMod.addDynamicVariable(new MagicNumberPlusOne());
+        BaseMod.addDynamicVariable(new MagicNumberPlusOneVariable());
 
         BaseMod.addCard(new StrikeBlackbeard());
         BaseMod.addCard(new DefendBlackbeard());
@@ -168,7 +168,6 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addCard(new TheDrunkenSailor());
         BaseMod.addCard(new Halberd());
         BaseMod.addCard(new SwordDance());
-        //BaseMod.addCard(new Cannonball());
         BaseMod.addCard(new CannonBarrage());
         BaseMod.addCard(new Rum());
         BaseMod.addCard(new GhostInTheRum());
@@ -177,8 +176,6 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addCard(new Scrap());
         BaseMod.addCard(new RemoveScurvy());
         BaseMod.addCard(new InfiniteBarrage());
-        //BaseMod.addCard(new SwordOfChaos());
-        //BaseMod.addCard(new SwordOfWisdom());
         BaseMod.addCard(new PirateStrength());
         BaseMod.addCard(new HumongousCannonball());
         BaseMod.addCard(new GoldenCannonball());
@@ -230,13 +227,17 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addCard(new Lifeboat());
         BaseMod.addCard(new TerrorOfTheSeas());
         BaseMod.addCard(new Provisioning());
-        //BaseMod.addCard(new RunForYourLife());
         BaseMod.addCard(new FishingNets());
         BaseMod.addCard(new BuriedTreasure());
-        //BaseMod.addCard(new SwordOfFire());
         BaseMod.addCard(new DoubleCannonball());
         BaseMod.addCard(new DaggerAccumulation());
         BaseMod.addCard(new CloakAndCannonball());
+
+        //Cards with special rarity are not added to BaseMod.
+        //BaseMod.addCard(new Cannonball());
+        //BaseMod.addCard(new SwordOfChaos());
+        //BaseMod.addCard(new SwordOfWisdom());
+        //BaseMod.addCard(new SwordOfFire());
 
         logger.info("Done editing cards");
     }

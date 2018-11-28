@@ -3,7 +3,7 @@ package blackbeard.variables;
 import basemod.abstracts.DynamicVariable;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 
-public class MagicNumberPlusOne extends DynamicVariable {
+public class MagicNumberPlusOneVariable extends DynamicVariable {
     @Override
     public String key() {
         return "blackbeard:M+1";
