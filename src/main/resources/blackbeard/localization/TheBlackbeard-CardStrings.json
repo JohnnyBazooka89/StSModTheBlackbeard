@@ -271,7 +271,7 @@
   },
   "blackbeard:SmithingHammer": {
     "NAME": "Smithing Hammer",
-    "DESCRIPTION": "Equip a !M! / {D} Weapon. After you attack with this Weapon and passively at the start of your turn, upgrade a random card in your hand for the rest of the combat."
+    "DESCRIPTION": "Equip a {A} / !M! Weapon. After you attack with this Weapon and passively at the start of your turn using 1 durability, upgrade a random card in your hand for the rest of the combat. Exhaust."
   },
   "blackbeard:Spear": {
     "NAME": "Spear",

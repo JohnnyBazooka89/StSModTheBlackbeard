@@ -57,7 +57,7 @@
   "blackbeard:SmithingHammerOrb": {
     "NAME": "Smithing Hammer",
     "DESCRIPTION": [
-      "After you attack with this Weapon and passively at the start of your turn, upgrade a random card in your hand for the rest of the combat."
+      "After you attack with this Weapon and passively at the start of your turn using 1 durability, upgrade a random card in your hand for the rest of the combat."
     ]
   },
   "blackbeard:SpearOrb": {

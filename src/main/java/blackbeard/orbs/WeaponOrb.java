@@ -6,7 +6,6 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.FontHelper;
@@ -95,7 +94,7 @@ public abstract class WeaponOrb extends AbstractOrb {
         return justAddedUsingAttackCard;
     }
 
-    public void use(AbstractCreature target) {
+    public void use() {
         durability--;
         effectOnUse();
         updateDescription();
