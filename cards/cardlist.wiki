@@ -57,7 +57,7 @@ Apply 1(2) [[Vulnerable]].
 |Common
 |[[Skill]]
 |1
-|Gain 4(6) [[Block]].
+|Gain 4(7) [[Block]].
 Add a [[Cannonball]] to your hand.
 |-
 |[[Dagger]]
@@ -65,7 +65,7 @@ Add a [[Cannonball]] to your hand.
 |Common
 |[[Skill]]
 |0
-|Equip a 2(3) / 2 [[Weapon]].
+|Equip a 3(4) / 2 [[Weapon]].
 |-
 |[[Delayed Pain]]
 |[[File:DelayedPain.png|thumb|289x289px]]
@@ -74,6 +74,13 @@ Add a [[Cannonball]] to your hand.
 |1
 |Gain 12(16) [[Block]].
 At the end of your next turn, you are dealt 4 damage.
+|-
+|[[Fencing]]
+|[[File:Fencing.png|thumb|289x289px]]
+|Common
+|[[Skill]]
+|1
+|Give your rightmost [[Weapon]] + !blackbeard:M+1! / + 2(3).
 |-
 |[[Golden Defend]]
 |[[File:GoldenDefend.png|thumb|289x289px]]
@@ -109,8 +116,8 @@ Apply 1(2) [[Weak]].
 |Remove all of your Debuffs.
 [[Exhaust]].
 |-
-|[[Quick Slash]]
-|[[File:QuickSlash.png|thumb|289x289px]]
+|[[Rearming Strike]]
+|[[File:RearmingStrike.png|thumb|289x289px]]
 |Common
 |[[Attack]]
 |1
@@ -134,7 +141,7 @@ Apply 1(2) [[Weak]].
 |[[File:Spear.png|thumb|289x289px]]
 |Common
 |[[Skill]]
-|1
+|0
 |Equip a 7(10) / 1 [[Weapon]].
 |-
 |[[Sword]]
@@ -262,7 +269,7 @@ Add 1(2) random card(s) to your hand.
 |Uncommon
 |[[Skill]]
 |X
-|Equip a 2(3) / 2 [[Weapon]] X times.
+|Equip a 3(4) / 2 [[Weapon]] X times.
 |-
 |[[Dangerous Blow]]
 |[[File:DangerousBlow.png|thumb|289x289px]]
@@ -295,13 +302,6 @@ Add a (an [[upgraded]]) [[Cannonball]] to your hand.
 |0
 |([[Innate]].) Gain 3 [[Weak]].
 At the start of your turn, draw 1 additional card.
-|-
-|[[Fencing]]
-|[[File:Fencing.png|thumb|289x289px]]
-|Uncommon
-|[[Skill]]
-|1
-|Give your rightmost [[Weapon]] + 2(3) / + 2(3).
 |-
 |[[Fishing Nets]]
 |[[File:FishingNets.png|thumb|289x289px]]
@@ -380,14 +380,6 @@ Lasts for 2(3) turns.
 |Gain 2 (3) [[Energy]].
 At the start of your next turn, lose 2 [[Energy]].
 |-
-|[[Recycle]]
-|[[File:Recycle.png|thumb|289x289px]]
-|Uncommon
-|[[Skill]]
-|0
-|Destroy your rightmost [[Weapon]] to gain 2 
-(3) [[Energy]].
-|-
 |[[Remove Scurvy]]
 |[[File:RemoveScurvy.png|thumb|289x289px]]
 |Uncommon
@@ -412,12 +404,20 @@ Max damage at 1 HP.
 |1
 |Gain 2(3) [[Resistance]].
 |-
+|[[Scrap]]
+|[[File:Scrap.png|thumb|289x289px]]
+|Uncommon
+|[[Skill]]
+|0
+|Destroy your rightmost [[Weapon]] to gain 2 
+(3) [[Energy]].
+|-
 |[[Smithing Hammer]]
 |[[File:SmithingHammer.png|thumb|289x289px]]
 |Uncommon
 |[[Skill]]
 |1
-|Equip a 2(3) / 4 [[Weapon]]. After you attack with this [[Weapon]], [[upgrade]] a random card in your hand for the rest of the combat.
+|Equip a 2 / 4(6) [[Weapon]]. After you attack with this [[Weapon]] and passively at the start of your turn using 1 durability, [[upgrade]] a random card in your hand for the rest of the combat. [[Exhaust]].
 |-
 |[[Terror Of The Seas]]
 |[[File:TerrorOfTheSeas.png|thumb|289x289px]]
@@ -581,7 +581,7 @@ Ethereal.)
 |Rare
 |[[Power]]
 |1(0)
-|Increase the effectiveness of your potions 2 times.
+|Your potions are used twice.
 |-
 |[[Weapon Mastery]]
 |[[File:WeaponMastery.png|thumb|289x289px]]
