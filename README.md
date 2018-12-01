@@ -53,7 +53,7 @@ If you want to play Ascension 20 straight away, you have to:
 List of other mods can be found at:
 * https://github.com/kiooeht/ModTheSpire/wiki/List-of-Known-Mods
 
-The Blackbeard fully supports the [Googly Eyes](https://github.com/twanvl/sts-googly-mod/releases) mod. If you like to play with hilarious googly eyes on almost every card, then you are most welcome :) 
+The Blackbeard fully supports the [Googly Eyes](https://github.com/twanvl/sts-googly-mod/releases) mod. If you'd like to play with hilarious googly eyes on almost every card, then you are most welcome :) 
 
 ## Contact ##
 - To report a bug, please create an [issue](https://github.com/JohnnyBazooka89/StSModTheBlackbeard/issues). You can also find me on Slay the Spire discord, on channel #unsupported-modding (my nickname: JohnnyBazooka89#8560).
