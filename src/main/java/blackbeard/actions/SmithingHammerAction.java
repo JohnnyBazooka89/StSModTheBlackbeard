@@ -39,17 +39,17 @@ public class SmithingHammerAction extends AbstractGameAction {
                 }
 
                 if (upgradeable.size() > 0) {
-                    smithingHammerOrb.use();
-
                     upgradeable.shuffle();
-                    ((AbstractCard) upgradeable.group.get(0)).upgrade();
-                    ((AbstractCard) upgradeable.group.get(0)).superFlash();
-                    ((AbstractCard) upgradeable.group.get(0)).applyPowers();
+                    upgradeable.group.get(0).upgrade();
+                    upgradeable.group.get(0).superFlash();
+                    upgradeable.group.get(0).applyPowers();
+
+                    smithingHammerOrb.use();
                 }
 
                 if (AbstractDungeon.player.hasPower(WeaponPower.POWER_ID)) {
                     WeaponPower weaponPower = (WeaponPower) AbstractDungeon.player.getPower(WeaponPower.POWER_ID);
-                    weaponPower.destroyWeaponsWithZeroDurability();
+                    weaponPower.destroyWeaponsWithNoDurability();
                 }
 
                 this.isDone = true;

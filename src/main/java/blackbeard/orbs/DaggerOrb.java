@@ -1,7 +1,9 @@
 package blackbeard.orbs;
 
 import blackbeard.TheBlackbeardMod;
+import blackbeard.actions.DaggerAction;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 
 public class DaggerOrb extends WeaponOrb {
@@ -15,6 +17,12 @@ public class DaggerOrb extends WeaponOrb {
         super(ID, NAME, DESCRIPTION[0], TheBlackbeardMod.getOrbImagePath(ID), attack, durability, justAddedUsingAttackCard);
         this.attack = attack;
         this.durability = durability;
+    }
+
+    @Override
+    public void effectAtStartOfTurnPostDraw() {
+        super.effectAtStartOfTurnPostDraw();
+        AbstractDungeon.actionManager.addToBottom(new DaggerAction(this));
     }
 
 }

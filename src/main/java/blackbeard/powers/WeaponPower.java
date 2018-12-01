@@ -57,11 +57,11 @@ public class WeaponPower extends AbstractPower {
                 }
             }
             clearJustAddedUsingAttackCardFlagInWeapons();
-            destroyWeaponsWithZeroDurability();
+            destroyWeaponsWithNoDurability();
         }
     }
 
-    public void destroyWeaponsWithZeroDurability() {
+    public void destroyWeaponsWithNoDurability() {
         List<AbstractOrb> weaponsToRemove = new ArrayList<>();
 
         boolean hasAtLeastOneWeaponLeft = false;
@@ -71,7 +71,7 @@ public class WeaponPower extends AbstractPower {
             AbstractOrb orb = orbsList.get(i);
             if (orb instanceof WeaponOrb) {
                 WeaponOrb weaponOrb = (WeaponOrb) orb;
-                if (weaponOrb.getDurability() == 0) {
+                if (weaponOrb.getDurability() <= 0) {
                     weaponsToRemove.add(orb);
                 } else {
                     hasAtLeastOneWeaponLeft = true;
