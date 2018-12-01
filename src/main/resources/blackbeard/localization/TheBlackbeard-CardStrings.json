@@ -168,9 +168,9 @@
   },
   "blackbeard:Murder": {
     "NAME": "Murder",
-    "DESCRIPTION": "Deal !D! damage     NL to Normal monster. NL (Cannot be used on Elite or Boss). NL Ethereal.",
+    "DESCRIPTION": "Deal !D! damage     NL to a Normal monster. NL (Cannot be used on Elite or Boss). NL Ethereal.",
     "EXTENDED_DESCRIPTION": [
-      "I have to target Normal monster!"
+      "I have to target a Normal monster!"
     ]
   },
   "blackbeard:Bandana": {
