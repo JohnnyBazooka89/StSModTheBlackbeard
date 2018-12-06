@@ -17,9 +17,9 @@ public class Halberd extends CustomCard {
     public static final String ID = "blackbeard:Halberd";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final int COST = 2;
-    private static final int WEAPON_ATTACK = 7;
+    private static final int WEAPON_ATTACK = 6;
     private static final int UPGRADED_PLUS_WEAPON_ATTACK = 3;
-    private static final int WEAPON_DURABILITY = 4;
+    private static final int WEAPON_DURABILITY = 5;
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = WeaponCardsUtil.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);
 

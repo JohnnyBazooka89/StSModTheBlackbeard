@@ -39,12 +39,11 @@
   },
   "blackbeard:TheDrunkenSailor": {
     "NAME": "The Drunken Sailor",
-    "DESCRIPTION": "Your potions are used twice."
+    "DESCRIPTION": "Your potions are used an additional time."
   },
   "blackbeard:SwordDance": {
     "NAME": "Sword Dance",
-    "DESCRIPTION": "This turn, your next Attack uses all equipped Weapons.",
-    "UPGRADE_DESCRIPTION": "This turn, your next !M! Attacks use all equipped Weapons."
+    "DESCRIPTION": "This turn, your next !M! Attacks use all equipped Weapons."
   },
   "blackbeard:Cannonball": {
     "NAME": "Cannonball",
@@ -168,7 +167,7 @@
   },
   "blackbeard:Murder": {
     "NAME": "Murder",
-    "DESCRIPTION": "Deal !D! damage     NL to a Normal monster. NL (Cannot be used on Elite or Boss). NL Ethereal.",
+    "DESCRIPTION": "Deal !D! damage     NL to a Normal enemy. NL (Cannot be used on Elite or Boss). NL Ethereal.",
     "EXTENDED_DESCRIPTION": [
       "I have to target a Normal monster!"
     ]
@@ -187,7 +186,7 @@
   },
   "blackbeard:PiratesWill": {
     "NAME": "Pirate's Will",
-    "DESCRIPTION": "Remove all of your Debuffs. NL Exhaust."
+    "DESCRIPTION": "Remove all of your Debuffs. NL Draw a card. NL Exhaust."
   },
   "blackbeard:WoodenLeg": {
     "NAME": "Wooden Leg",
@@ -279,7 +278,7 @@
   },
   "blackbeard:WeaponMastery": {
     "NAME": "Weapon Mastery",
-    "DESCRIPTION": "Whenever you Equip a Weapon, draw 1 card."
+    "DESCRIPTION": "Whenever you Equip a Weapon, draw a card."
   },
   "blackbeard:Salvager": {
     "NAME": "Salvager",

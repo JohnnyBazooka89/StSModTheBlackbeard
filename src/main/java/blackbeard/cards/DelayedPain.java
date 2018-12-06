@@ -18,7 +18,7 @@ public class DelayedPain extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
-    private static final int BLOCK_AMOUNT = 12;
+    private static final int BLOCK_AMOUNT = 14;
     private static final int UPGRADE_PLUS_ATTACK_DMG = 4;
     private static final int DAMAGE_TO_TAKE = 4;
 
