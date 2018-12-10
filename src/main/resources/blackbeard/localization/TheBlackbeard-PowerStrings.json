@@ -113,5 +113,12 @@
     "DESCRIPTIONS": [
       "Your next #yAttack that uses at least one Weapon deals double damage."
     ]
+  },
+  "blackbeard:UndeadFormPower": {
+    "NAME": "Undead Form",
+    "DESCRIPTIONS": [
+      "At the start of the turn on which you are no longer Intangible, you are dealt #b",
+      " damage."
+    ]
   }
 }

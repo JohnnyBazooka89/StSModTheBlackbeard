@@ -5,11 +5,11 @@
     "JohnnyBazooka89"
   ],
   "description": "Adds The Blackbeard as a new playable character. More info: https://github.com/JohnnyBazooka89/StSModTheBlackbeard",
-  "version": "1.4.10",
+  "version": "1.4.11",
   "dependencies": [
     "basemod"
   ],
-  "sts_version": "11-15-2018",
+  "sts_version": "12-06-2018",
   "mts_version": "3.5.0",
   "update_json": "https://api.github.com/repos/JohnnyBazooka89/StSModTheBlackbeard/releases/latest"
 }

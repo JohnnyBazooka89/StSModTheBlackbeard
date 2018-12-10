@@ -1,0 +1,11 @@
+
+{| class="article-table sortable"
+|+ Cards
+|-
+!Name
+!Picture
+!Rarity
+!Type
+!Energy
+!Description
+|-

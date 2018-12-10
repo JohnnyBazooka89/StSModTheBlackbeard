@@ -1,0 +1,595 @@
+
+{| class="article-table sortable"
+|+ Cards
+|-
+!Name
+!Picture
+!Rarity
+!Type
+!Energy
+!Description
+|-
+|[[Cutlass]]
+|[[File:|thumb|289x289px]]
+|Basic
+|[[Skill]]
+|1(0)
+|Equip a 4 / 2 [[Weapon]].
+|-
+|[[Defend]]
+|[[File:|thumb|289x289px]]
+|Basic
+|[[Skill]]
+|1
+|Gain 5(8) [[Block]].
+|-
+|[[Strike]]
+|[[File:|thumb|289x289px]]
+|Basic
+|[[Attack]]
+|1
+|Deal 6(9) damage.
+|-
+|[[Beat Up]]
+|[[File:|thumb|289x289px]]
+|Common
+|[[Attack]]
+|1
+|Deal 4(5) damage twice.
+Apply 1(2) [[Vulnerable]].
+|-
+|[[Blind Attacks]]
+|[[File:|thumb|289x289px]]
+|Common
+|[[Attack]]
+|1
+|Deal 3(4) damage to a random enemy 3 times.
+|-
+|[[Cat O' Nine Tails]]
+|[[File:|thumb|289x289px]]
+|Common
+|[[Skill]]
+|1
+|Equip a 4 / 2(3) [[Weapon]]. After you attack with this [[Weapon]], give it + 2 Attack.
+|-
+|[[Cloak And Cannonball]]
+|[[File:|thumb|289x289px]]
+|Common
+|[[Skill]]
+|1
+|Gain 4(7) [[Block]].
+Add a [[Cannonball]] to your hand.
+|-
+|[[Dagger]]
+|[[File:|thumb|289x289px]]
+|Common
+|[[Skill]]
+|0
+|Equip a 2 / 3(4) [[Weapon]].
+At the start of your turn, 1 Durability from Dagger is used to deal damage equal to its Attack to a random enemy.
+|-
+|[[Delayed Pain]]
+|[[File:|thumb|289x289px]]
+|Common
+|[[Skill]]
+|1
+|Gain 14(18) [[Block]].
+At the end of your next turn, you are dealt 4 damage.
+|-
+|[[Fencing]]
+|[[File:|thumb|289x289px]]
+|Common
+|[[Skill]]
+|1
+|Give your rightmost [[Weapon]] + !blackbeard:M+1! / + 2(3).
+|-
+|[[Golden Defend]]
+|[[File:|thumb|289x289px]]
+|Common
+|[[Skill]]
+|1
+|Gain [[Block]] equal to
+(0(3) +) 1.5% of Gold gained
+this run.
+|-
+|[[Golden Strike]]
+|[[File:|thumb|289x289px]]
+|Common
+|[[Attack]]
+|1
+|Deal damage equal to
+(0(3) +) 1.5% of Gold gained
+this run.
+|-
+|[[Intimidating Strike]]
+|[[File:|thumb|289x289px]]
+|Common
+|[[Attack]]
+|1
+|Deal 6(9) damage.
+Apply 1(2) [[Weak]].
+|-
+|[[Pirate's Will]]
+|[[File:|thumb|289x289px]]
+|Common
+|[[Skill]]
+|1(0)
+|Remove all of your Debuffs.
+Draw a card.
+[[Exhaust]].
+|-
+|[[Rearming Strike]]
+|[[File:|thumb|289x289px]]
+|Common
+|[[Attack]]
+|1
+|Deal 7(10) damage. Equip a 3 / 2 [[Weapon]].
+|-
+|[[Sharpening]]
+|[[File:|thumb|289x289px]]
+|Common
+|[[Skill]]
+|1
+|Give all your equipped [[Weapons]] + 2(3) attack.
+|-
+|[[Shrapnel]]
+|[[File:|thumb|289x289px]]
+|Common
+|[[Attack]]
+|1
+|Deal 7(10) damage to ALL enemies.
+|-
+|[[Spear]]
+|[[File:|thumb|289x289px]]
+|Common
+|[[Skill]]
+|0
+|Equip a 7(10) / 1 [[Weapon]].
+|-
+|[[Sword]]
+|[[File:|thumb|289x289px]]
+|Common
+|[[Skill]]
+|1
+|Choose 1 of 3 Swords.
+Equip a 2(3) / 3 [[Weapon]] with an additional effect.
+|-
+|[[Sword Dance]]
+|[[File:|thumb|289x289px]]
+|Common
+|[[Skill]]
+|1
+|This turn, your next 2(3) Attacks use all equipped [[Weapons]].
+|-
+|[[Tactical Retreat]]
+|[[File:|thumb|289x289px]]
+|Common
+|[[Skill]]
+|1
+|Gain 8(11) [[Block]].
+Draw 1 more card next turn.
+|-
+|[[Toast]]
+|[[File:|thumb|289x289px]]
+|Common
+|[[Skill]]
+|0
+|Gain 2(3) [[Resistance]].
+At the start of your next turn, lose 2(3) [[Resistance]].
+[[Exhaust]].
+|-
+|[[Agile Strike]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Attack]]
+|1
+|Deal 9(13) damage.
+If you have equipped a [[Weapon]] this turn, reduce cost of
+this card to 0.
+|-
+|[[Anchor]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Skill]]
+|0
+|[[Innate]].
+Gain 10 [[Block]].
+(Draw a card.)
+ [[Exhaust]].
+|-
+|[[Armor Up]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Skill]]
+|0
+|This turn, whenever you attack with a [[Weapon]], gain 4(6) [[Block]].
+|-
+|[[Bandana]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Power]]
+|1
+|Gain 2(3) [[Dexterity]].
+|-
+|[[Boarding]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Attack]]
+|2
+|Deal 12(16) damage to ALL enemies.
+Draw 2 cards.
+|-
+|[[Brown Pants]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Power]]
+|2
+|Gain 5(6) Plated Armor.
+|-
+|[[Buried Treasure]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Skill]]
+|1
+|Gain 15(20) Gold.
+[[Exhaust]].
+|-
+|[[Cannon Barrage]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Skill]]
+|X
+|Add X (X+1) [[Cannonballs]] to your hand.
+|-
+|[[Cannonball Supply]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Skill]]
+|2
+|Add 3 [[Cannonballs]] to your hand.
+[[Exhaust]]. (not
+Exhaust.)
+|-
+|[[Captain's Cabin]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Skill]]
+|2
+|Gain 10(12) [[Block]].
+Add 1(2) Cannonball(s) to your hand.
+|-
+|[[Chaotic Defend]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Skill]]
+|1
+|Gain 7(9) [[Block]].
+Add 1(2) random card(s) to your hand.
+|-
+|[[Dangerous Blow]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Attack]]
+|1
+|Deal 18(22) damage.
+At the end of your next turn, you are dealt 6 damage.
+|-
+|[[Double Bottom]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Skill]]
+|2
+|Gain 10(13) [[Block]].
+Next turn gain 10(13) [[Block]].
+|-
+|[[Double Cannonball]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Attack]]
+|1
+|Deal 8(10) damage. [[Exhaust]].
+Add a (an [[upgraded]]) [[Cannonball]] to your hand.
+|-
+|[[Eyepatch]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Power]]
+|0
+|([[Innate]].) Gain 3 [[Weak]].
+At the start of your turn, draw 1 additional card.
+|-
+|[[Fishing Nets]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Power]]
+|2
+|Gain 6(10) [[Thorns]].
+|-
+|[[Ghost In The Rum]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Skill]]
+|1
+|Gain 1 [[Intangible]].
+Lose 2(1) [[Resistance]].
+[[Exhaust]].
+|-
+|[[Golden Cannonball]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Attack]]
+|0
+|Deal damage equal to
+(0(4) +) 2% of Gold gained
+this run. [[Exhaust]].
+|-
+|[[Infinite Barrage]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Power]]
+|2
+|([[Innate]].) At the start of each turn, add a [[Cannonball]] card to your hand.
+|-
+|[[Jolly Roger]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Skill]]
+|1
+|Apply 3(5) [[Weak]] to ALL enemies. [[Exhaust]].
+|-
+|[[Keelhauling]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Skill]]
+|2
+|Targeted enemy is dealt 8 damage at the start of their turn.
+Lasts for 2(3) turns.
+|-
+|[[Pirate Earring]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Power]]
+|0
+|Gain 1(2) [[Artifact]].
+|-
+|[[Powder Keg]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Skill]]
+|1
+|Equip a 0 / 1 [[Weapon]]. When it is destroyed, deal 15(20) damage to ALL enemies.
+|-
+|[[Provisioning]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Skill]]
+|1(0)
+|Obtain a random potion.
+[[Exhaust]].
+|-
+|[[Recklessness]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Skill]]
+|0
+|Gain 2 (3) [[Energy]].
+At the start of your next turn, lose 2 [[Energy]].
+|-
+|[[Remove Scurvy]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Skill]]
+|1(0)
+|Heal 10% of your maximum HP.
+Remove all of your Debuffs.
+[[Exhaust]].
+|-
+|[[Revenge]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Attack]]
+|2
+|Deal 0 - 40(50) damage to ALL enemies, based on how many % of HP you are missing.
+Max damage at 1 HP.
+|-
+|[[Rum]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Power]]
+|1
+|Gain 2(3) [[Resistance]].
+|-
+|[[Scrap]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Skill]]
+|0
+|Destroy your rightmost [[Weapon]] to gain 2 
+(3) [[Energy]].
+|-
+|[[Smithing Hammer]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Skill]]
+|1
+|Equip a 2 / 4(6) [[Weapon]]. After you attack with this [[Weapon]] and passively at the start of your turn using 1 durability, [[upgrade]] a random card in your hand for the rest of the combat. [[Exhaust]].
+|-
+|[[Terror Of The Seas]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Skill]]
+|1
+|Apply 3(5) [[Vulnerable]] to ALL enemies. [[Exhaust]].
+|-
+|[[Upgrade]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Skill]]
+|1
+|Give all your equipped [[Weapons]] + 1(2) / + 1(2).
+|-
+|[[Vengeful Spirit]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Skill]]
+|1
+|Gain 1 [[Intangible]].
+At the end of your next turn, you are dealt 12(8) damage.
+[[Exhaust]].
+|-
+|[[Wise Defend]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Skill]]
+|1
+|Gain 7(9) [[Block]].
+Draw 1(2) card(s).
+|-
+|[[Wooden Leg]]
+|[[File:|thumb|289x289px]]
+|Uncommon
+|[[Power]]
+|1
+|Lose 2 [[Dexterity]].
+Gain 4(5) [[Strength]].
+|-
+|[[Boost Morale]]
+|[[File:|thumb|289x289px]]
+|Rare
+|[[Skill]]
+|0
+|Draw 2(3) cards.
+Gain 1 (2) [[Energy]].
+[[Exhaust]].
+|-
+|[[Bounty Hunter]]
+|[[File:|thumb|289x289px]]
+|Rare
+|[[Attack]]
+|1
+|Deal 16(20) damage. If this kills a non-minion enemy, gain 16(20) Gold.
+[[Exhaust]].
+|-
+|[[Captain's Hat]]
+|[[File:|thumb|289x289px]]
+|Rare
+|[[Power]]
+|2
+|Gain 2(3) [[Strength]].
+Gain 2(3) [[Resistance]].
+|-
+|[[Final Barrage]]
+|[[File:|thumb|289x289px]]
+|Rare
+|[[Attack]]
+|0
+|Deal damage equal to 4(6) times the amount of [[Cannonballs]] played this combat (every type of [[Cannonball]] counts).
+|-
+|[[Golden Guillotine]]
+|[[File:|thumb|289x289px]]
+|Rare
+|[[Attack]]
+|3
+|Deal damage equal to
+4(5) percent of Gold gained this run.
+|-
+|[[Golden Rain]]
+|[[File:|thumb|289x289px]]
+|Rare
+|[[Attack]]
+|2
+|Deal damage equal to
+2.5% (3%) of Gold gained
+this run to ALL enemies.
+|-
+|[[Halberd]]
+|[[File:|thumb|289x289px]]
+|Rare
+|[[Skill]]
+|2
+|Equip a 6(9) / 5 [[Weapon]].
+|-
+|[[Humongous Cannonball]]
+|[[File:|thumb|289x289px]]
+|Rare
+|[[Attack]]
+|3
+|Deal 36(48) damage. [[Exhaust]].
+|-
+|[[Intoxication]]
+|[[File:|thumb|289x289px]]
+|Rare
+|[[Power]]
+|1
+|Gain 4(5) [[Resistance]].
+At the start of each turn, lose 1 [[Resistance]].
+|-
+|[[Lifeboat]]
+|[[File:|thumb|289x289px]]
+|Rare
+|[[Skill]]
+|2
+|Gain 24(30) [[Block]].
+|-
+|[[Mega Upgrade]]
+|[[File:|thumb|289x289px]]
+|Rare
+|[[Skill]]
+|2
+|Give all your equipped [[Weapons]] + 3(5) / + 3(5).
+|-
+|[[Murder]]
+|[[File:|thumb|289x289px]]
+|Rare
+|[[Attack]]
+|4
+|Deal 250(500) damage    
+to a Normal enemy.
+(Cannot be used on Elite or Boss).
+[[Ethereal]].
+|-
+|[[Parrot]]
+|[[File:|thumb|289x289px]]
+|Rare
+|[[Power]]
+|3
+|The last card played each turn is played an additional time. This power does not stack.
+[[Ethereal]]. (not
+Ethereal.)
+|-
+|[[Pirate Strength]]
+|[[File:|thumb|289x289px]]
+|Rare
+|[[Power]]
+|3
+|Gain 6(9) [[Strength]].
+|-
+|[[Salvager]]
+|[[File:|thumb|289x289px]]
+|Rare
+|[[Power]]
+|2(1)
+|Whenever a [[Weapon]] is destroyed, gain 1 [[Energy]].
+|-
+|[[The Drunken Sailor]]
+|[[File:|thumb|289x289px]]
+|Rare
+|[[Power]]
+|1(0)
+|Your potions are used an additional time.
+|-
+|[[Undead Form]]
+|[[File:|thumb|289x289px]]
+|Rare
+|[[Power]]
+|3
+|Gain 2(3) [[Intangible]].
+At the start of the turn on which you are no longer [[Intangible]], you are dealt 30 damage.
+|-
+|[[Weapon Mastery]]
+|[[File:|thumb|289x289px]]
+|Rare
+|[[Power]]
+|2(1)
+|Whenever you Equip a [[Weapon]], draw a card.
+|-

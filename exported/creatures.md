@@ -1,3 +1,3 @@
 | Image | Name |
 | ----- | ---- |
-| ![](creatures/TheBlackbeard.png) | The Blackbeard |
+| ![](sts-mod-the-blackbeard/creatures/TheBlackbeard.png) | The Blackbeard |

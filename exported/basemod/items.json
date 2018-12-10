@@ -1,0 +1,30 @@
+{
+  "mod": {
+    "name": "BaseMod",
+    "version": "5.3.5",
+    "authors": [
+      "kiooeht",
+      "test447"
+    ],
+    "credits": "t-larson: Original creator of BaseMod.\nContributors: test447, Haashi, kiooeht, Blank The Evil, robojumper, FlipskiZ, DemoXinMC, Skrelpoid, kobting, twanvl, Moocowsgomoo",
+    "description": "Unofficial modding API for Slay the Spire. Also a Dev Console.",
+    "mts_version": "3.6.0",
+    "sts_version": "12-06-2018",
+    "dependencies": [],
+    "optional_dependencies": []
+  },
+  "cards": [
+  ],
+  "relics": [
+  ],
+  "potions": [
+  ],
+  "creatures": [
+  ],
+  "keywords": [
+    {
+      "name": "[E]",
+      "description": "Energy is used to play cards from your hand."
+    }
+  ]
+}

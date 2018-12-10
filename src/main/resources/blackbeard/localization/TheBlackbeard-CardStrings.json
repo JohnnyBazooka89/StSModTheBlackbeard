@@ -369,12 +369,12 @@
     "NAME": "Sword Of Fire",
     "DESCRIPTION": "Equip a !M! / {D} Weapon. Whenever you attack with this Weapon, deal 3 damage to all enemies."
   },
-  "blackbeard:DaggerAccumulation": {
-    "NAME": "Dagger Accumulation",
-    "DESCRIPTION": "Equip a {A} / !M! Weapon X times. At the start of your turn, 1 Durability from Dagger is used to deal damage equal to its Attack to a random enemy."
-  },
   "blackbeard:CloakAndCannonball": {
     "NAME": "Cloak And Cannonball",
     "DESCRIPTION": "Gain !B! Block. NL  Add a Cannonball to your hand."
+  },
+  "blackbeard:UndeadForm": {
+    "NAME": "Undead Form",
+    "DESCRIPTION": "Gain !M! Intangible. NL  At the start of the turn on which you are no longer Intangible, you are dealt 30 damage."
   }
 }

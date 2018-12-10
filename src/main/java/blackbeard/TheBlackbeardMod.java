@@ -235,8 +235,8 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addCard(new FishingNets());
         BaseMod.addCard(new BuriedTreasure());
         BaseMod.addCard(new DoubleCannonball());
-        BaseMod.addCard(new DaggerAccumulation());
         BaseMod.addCard(new CloakAndCannonball());
+        BaseMod.addCard(new UndeadForm());
 
         //Cards with special rarity are not added to BaseMod.
         //BaseMod.addCard(new Cannonball());
