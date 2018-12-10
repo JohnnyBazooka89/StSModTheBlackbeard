@@ -17,6 +17,8 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
+import com.megacrit.cardcrawl.potions.BloodPotion;
+import com.megacrit.cardcrawl.potions.GhostInAJar;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -124,6 +126,9 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
                 BLACKBEARD_PORTRAIT,
                 TheBlackbeardEnum.BLACKBEARD_CLASS
         );
+
+        BaseMod.addPotion(BloodPotion.class, Color.WHITE.cpy(), Color.LIGHT_GRAY.cpy(), null, "blackbeard:BloodPotion", TheBlackbeardEnum.BLACKBEARD_CLASS);
+        BaseMod.addPotion(GhostInAJar.class, Color.WHITE.cpy(), Color.LIGHT_GRAY.cpy(), null, "blackbeard:GhostInAJar", TheBlackbeardEnum.BLACKBEARD_CLASS);
 
         logger.info("Done editing characters");
     }

@@ -1,4 +1,4 @@
-package blackbeard.powers;//
+package blackbeard.powers;
 
 import blackbeard.enums.WeaponsToUseEnum;
 import blackbeard.orbs.WeaponOrb;
