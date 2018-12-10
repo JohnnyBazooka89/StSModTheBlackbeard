@@ -1,4 +1,19 @@
 {
+  "mod": {
+    "name": "The Blackbeard",
+    "version": "1.4.11",
+    "authors": [
+      "JohnnyBazooka89"
+    ],
+    "credits": "",
+    "description": "Adds The Blackbeard as a new playable character. More info: https://github.com/JohnnyBazooka89/StSModTheBlackbeard",
+    "mts_version": "3.5.0",
+    "sts_version": "12-06-2018",
+    "dependencies": [
+      "basemod"
+    ],
+    "optional_dependencies": []
+  },
   "cards": [
     {
       "name": "Cutlass",
@@ -6,8 +21,7 @@
       "rarity": "Basic",
       "type": "Skill",
       "cost": "1",
-      "description": "Equip a 4 / 2 Weapon.",
-      "mod": "The Blackbeard"
+      "description": "Equip a 4 / 2 Weapon."
     },
     {
       "name": "Cutlass+",
@@ -15,8 +29,7 @@
       "rarity": "Basic",
       "type": "Skill",
       "cost": "0",
-      "description": "Equip a 4 / 2 Weapon.",
-      "mod": "The Blackbeard"
+      "description": "Equip a 4 / 2 Weapon."
     },
     {
       "name": "Defend",
@@ -24,8 +37,7 @@
       "rarity": "Basic",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 5 Block.",
-      "mod": "The Blackbeard"
+      "description": "Gain 5 Block."
     },
     {
       "name": "Defend+",
@@ -33,8 +45,7 @@
       "rarity": "Basic",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 8 Block.",
-      "mod": "The Blackbeard"
+      "description": "Gain 8 Block."
     },
     {
       "name": "Strike",
@@ -42,8 +53,7 @@
       "rarity": "Basic",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 6 damage.",
-      "mod": "The Blackbeard"
+      "description": "Deal 6 damage."
     },
     {
       "name": "Strike+",
@@ -51,8 +61,7 @@
       "rarity": "Basic",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 9 damage.",
-      "mod": "The Blackbeard"
+      "description": "Deal 9 damage."
     },
     {
       "name": "Beat Up",
@@ -60,8 +69,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 4 damage twice.\nApply 1 Vulnerable.",
-      "mod": "The Blackbeard"
+      "description": "Deal 4 damage twice.\nApply 1 Vulnerable."
     },
     {
       "name": "Beat Up+",
@@ -69,8 +77,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 5 damage twice.\nApply 2 Vulnerable.",
-      "mod": "The Blackbeard"
+      "description": "Deal 5 damage twice.\nApply 2 Vulnerable."
     },
     {
       "name": "Blind Attacks",
@@ -78,8 +85,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 3 damage to a random enemy 3 times.",
-      "mod": "The Blackbeard"
+      "description": "Deal 3 damage to a random enemy 3 times."
     },
     {
       "name": "Blind Attacks+",
@@ -87,8 +93,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 4 damage to a random enemy 3 times.",
-      "mod": "The Blackbeard"
+      "description": "Deal 4 damage to a random enemy 3 times."
     },
     {
       "name": "Cat O' Nine Tails",
@@ -96,8 +101,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Equip a 4 / 2 Weapon. After you attack with this Weapon, give it + 2 Attack.",
-      "mod": "The Blackbeard"
+      "description": "Equip a 4 / 2 Weapon. After you attack with this Weapon, give it + 2 Attack."
     },
     {
       "name": "Cat O' Nine Tails+",
@@ -105,8 +109,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Equip a 4 / 3 Weapon. After you attack with this Weapon, give it + 2 Attack.",
-      "mod": "The Blackbeard"
+      "description": "Equip a 4 / 3 Weapon. After you attack with this Weapon, give it + 2 Attack."
     },
     {
       "name": "Cloak And Cannonball",
@@ -114,8 +117,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 4 Block.\n Add a Cannonball to your hand.",
-      "mod": "The Blackbeard"
+      "description": "Gain 4 Block.\n Add a Cannonball to your hand."
     },
     {
       "name": "Cloak And Cannonball+",
@@ -123,8 +125,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 7 Block.\n Add a Cannonball to your hand.",
-      "mod": "The Blackbeard"
+      "description": "Gain 7 Block.\n Add a Cannonball to your hand."
     },
     {
       "name": "Dagger",
@@ -132,8 +133,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Equip a 2 / 3 Weapon.\nAt the start of your turn, 1 Durability from Dagger is used to deal damage equal to its Attack to a random enemy.",
-      "mod": "The Blackbeard"
+      "description": "Equip a 2 / 3 Weapon.\nAt the start of your turn, 1 Durability from Dagger is used to deal damage equal to its Attack to a random enemy."
     },
     {
       "name": "Dagger+",
@@ -141,8 +141,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Equip a 2 / 4 Weapon.\nAt the start of your turn, 1 Durability from Dagger is used to deal damage equal to its Attack to a random enemy.",
-      "mod": "The Blackbeard"
+      "description": "Equip a 2 / 4 Weapon.\nAt the start of your turn, 1 Durability from Dagger is used to deal damage equal to its Attack to a random enemy."
     },
     {
       "name": "Delayed Pain",
@@ -150,8 +149,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 14 Block.\nAt the end of your next turn, you are dealt 4 damage.",
-      "mod": "The Blackbeard"
+      "description": "Gain 14 Block.\nAt the end of your next turn, you are dealt 4 damage."
     },
     {
       "name": "Delayed Pain+",
@@ -159,8 +157,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 18 Block.\nAt the end of your next turn, you are dealt 4 damage.",
-      "mod": "The Blackbeard"
+      "description": "Gain 18 Block.\nAt the end of your next turn, you are dealt 4 damage."
     },
     {
       "name": "Fencing",
@@ -168,8 +165,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Give your rightmost Weapon + !blackbeard:M+1! / + 2.",
-      "mod": "The Blackbeard"
+      "description": "Give your rightmost Weapon + !blackbeard:M+1! / + 2."
     },
     {
       "name": "Fencing+",
@@ -177,8 +173,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Give your rightmost Weapon + !blackbeard:M+1! / + 3.",
-      "mod": "The Blackbeard"
+      "description": "Give your rightmost Weapon + !blackbeard:M+1! / + 3."
     },
     {
       "name": "Golden Defend",
@@ -186,8 +181,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain Block equal to\n1.5% of Gold gained\nthis run.",
-      "mod": "The Blackbeard"
+      "description": "Gain Block equal to\n1.5% of Gold gained\nthis run."
     },
     {
       "name": "Golden Defend+",
@@ -195,8 +189,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain Block equal to\n3 + 1.5% of Gold gained\nthis run.",
-      "mod": "The Blackbeard"
+      "description": "Gain Block equal to\n3 + 1.5% of Gold gained\nthis run."
     },
     {
       "name": "Golden Strike",
@@ -204,8 +197,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal damage equal to\n1.5% of Gold gained\nthis run.",
-      "mod": "The Blackbeard"
+      "description": "Deal damage equal to\n1.5% of Gold gained\nthis run."
     },
     {
       "name": "Golden Strike+",
@@ -213,8 +205,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal damage equal to\n3 + 1.5% of Gold gained\nthis run.",
-      "mod": "The Blackbeard"
+      "description": "Deal damage equal to\n3 + 1.5% of Gold gained\nthis run."
     },
     {
       "name": "Intimidating Strike",
@@ -222,8 +213,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 6 damage.\nApply 1 Weak.",
-      "mod": "The Blackbeard"
+      "description": "Deal 6 damage.\nApply 1 Weak."
     },
     {
       "name": "Intimidating Strike+",
@@ -231,8 +221,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 9 damage.\nApply 2 Weak.",
-      "mod": "The Blackbeard"
+      "description": "Deal 9 damage.\nApply 2 Weak."
     },
     {
       "name": "Pirate's Will",
@@ -240,8 +229,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Remove all of your Debuffs.\nDraw a card.\nExhaust.",
-      "mod": "The Blackbeard"
+      "description": "Remove all of your Debuffs.\nDraw a card.\nExhaust."
     },
     {
       "name": "Pirate's Will+",
@@ -249,8 +237,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Remove all of your Debuffs.\nDraw a card.\nExhaust.",
-      "mod": "The Blackbeard"
+      "description": "Remove all of your Debuffs.\nDraw a card.\nExhaust."
     },
     {
       "name": "Rearming Strike",
@@ -258,8 +245,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 7 damage. Equip a 3 / 2 Weapon.",
-      "mod": "The Blackbeard"
+      "description": "Deal 7 damage. Equip a 3 / 2 Weapon."
     },
     {
       "name": "Rearming Strike+",
@@ -267,8 +253,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 10 damage. Equip a 3 / 2 Weapon.",
-      "mod": "The Blackbeard"
+      "description": "Deal 10 damage. Equip a 3 / 2 Weapon."
     },
     {
       "name": "Sharpening",
@@ -276,8 +261,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Give all your equipped Weapons + 2 attack.",
-      "mod": "The Blackbeard"
+      "description": "Give all your equipped Weapons + 2 attack."
     },
     {
       "name": "Sharpening+",
@@ -285,8 +269,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Give all your equipped Weapons + 3 attack.",
-      "mod": "The Blackbeard"
+      "description": "Give all your equipped Weapons + 3 attack."
     },
     {
       "name": "Shrapnel",
@@ -294,8 +277,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 7 damage to ALL enemies.",
-      "mod": "The Blackbeard"
+      "description": "Deal 7 damage to ALL enemies."
     },
     {
       "name": "Shrapnel+",
@@ -303,8 +285,7 @@
       "rarity": "Common",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 10 damage to ALL enemies.",
-      "mod": "The Blackbeard"
+      "description": "Deal 10 damage to ALL enemies."
     },
     {
       "name": "Spear",
@@ -312,8 +293,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Equip a 7 / 1 Weapon.",
-      "mod": "The Blackbeard"
+      "description": "Equip a 7 / 1 Weapon."
     },
     {
       "name": "Spear+",
@@ -321,8 +301,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Equip a 10 / 1 Weapon.",
-      "mod": "The Blackbeard"
+      "description": "Equip a 10 / 1 Weapon."
     },
     {
       "name": "Sword",
@@ -330,8 +309,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Choose 1 of 3 Swords.\nEquip a 2 / 3 Weapon with an additional effect.",
-      "mod": "The Blackbeard"
+      "description": "Choose 1 of 3 Swords.\nEquip a 2 / 3 Weapon with an additional effect."
     },
     {
       "name": "Sword Dance",
@@ -339,8 +317,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "This turn, your next 2 Attacks use all equipped Weapons.",
-      "mod": "The Blackbeard"
+      "description": "This turn, your next 2 Attacks use all equipped Weapons."
     },
     {
       "name": "Sword Dance+",
@@ -348,8 +325,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "This turn, your next 3 Attacks use all equipped Weapons.",
-      "mod": "The Blackbeard"
+      "description": "This turn, your next 3 Attacks use all equipped Weapons."
     },
     {
       "name": "Sword+",
@@ -357,8 +333,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Choose 1 of 3 Swords.\nEquip a 3 / 3 Weapon with an additional effect.",
-      "mod": "The Blackbeard"
+      "description": "Choose 1 of 3 Swords.\nEquip a 3 / 3 Weapon with an additional effect."
     },
     {
       "name": "Tactical Retreat",
@@ -366,8 +341,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 8 Block.\nDraw 1 more card next turn.",
-      "mod": "The Blackbeard"
+      "description": "Gain 8 Block.\nDraw 1 more card next turn."
     },
     {
       "name": "Tactical Retreat+",
@@ -375,8 +349,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 11 Block.\nDraw 1 more card next turn.",
-      "mod": "The Blackbeard"
+      "description": "Gain 11 Block.\nDraw 1 more card next turn."
     },
     {
       "name": "Toast",
@@ -384,8 +357,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain 2 Resistance.\nAt the start of your next turn, lose 2 Resistance.\nExhaust.",
-      "mod": "The Blackbeard"
+      "description": "Gain 2 Resistance.\nAt the start of your next turn, lose 2 Resistance.\nExhaust."
     },
     {
       "name": "Toast+",
@@ -393,8 +365,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain 3 Resistance.\nAt the start of your next turn, lose 3 Resistance.\nExhaust.",
-      "mod": "The Blackbeard"
+      "description": "Gain 3 Resistance.\nAt the start of your next turn, lose 3 Resistance.\nExhaust."
     },
     {
       "name": "Agile Strike",
@@ -402,8 +373,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 9 damage.\nIf you have equipped a Weapon this turn, reduce cost of\nthis card to 0.",
-      "mod": "The Blackbeard"
+      "description": "Deal 9 damage.\nIf you have equipped a Weapon this turn, reduce cost of\nthis card to 0."
     },
     {
       "name": "Agile Strike+",
@@ -411,8 +381,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 13 damage.\nIf you have equipped a Weapon this turn, reduce cost of\nthis card to 0.",
-      "mod": "The Blackbeard"
+      "description": "Deal 13 damage.\nIf you have equipped a Weapon this turn, reduce cost of\nthis card to 0."
     },
     {
       "name": "Anchor",
@@ -420,8 +389,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Innate.\nGain 10 Block.\nExhaust.",
-      "mod": "The Blackbeard"
+      "description": "Innate.\nGain 10 Block.\nExhaust."
     },
     {
       "name": "Anchor+",
@@ -429,8 +397,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Innate.\nGain 10 Block.\nDraw a card.\nExhaust.",
-      "mod": "The Blackbeard"
+      "description": "Innate.\nGain 10 Block.\nDraw a card.\nExhaust."
     },
     {
       "name": "Armor Up",
@@ -438,8 +405,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "This turn, whenever you attack with a Weapon, gain 4 Block.",
-      "mod": "The Blackbeard"
+      "description": "This turn, whenever you attack with a Weapon, gain 4 Block."
     },
     {
       "name": "Armor Up+",
@@ -447,8 +413,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "This turn, whenever you attack with a Weapon, gain 6 Block.",
-      "mod": "The Blackbeard"
+      "description": "This turn, whenever you attack with a Weapon, gain 6 Block."
     },
     {
       "name": "Bandana",
@@ -456,8 +421,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "Gain 2 Dexterity.",
-      "mod": "The Blackbeard"
+      "description": "Gain 2 Dexterity."
     },
     {
       "name": "Bandana+",
@@ -465,8 +429,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "Gain 3 Dexterity.",
-      "mod": "The Blackbeard"
+      "description": "Gain 3 Dexterity."
     },
     {
       "name": "Boarding",
@@ -474,8 +437,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 12 damage to ALL enemies.\nDraw 2 cards.",
-      "mod": "The Blackbeard"
+      "description": "Deal 12 damage to ALL enemies.\nDraw 2 cards."
     },
     {
       "name": "Boarding+",
@@ -483,8 +445,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 16 damage to ALL enemies.\nDraw 2 cards.",
-      "mod": "The Blackbeard"
+      "description": "Deal 16 damage to ALL enemies.\nDraw 2 cards."
     },
     {
       "name": "Brown Pants",
@@ -492,8 +453,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
-      "description": "Gain 5 Plated Armor.",
-      "mod": "The Blackbeard"
+      "description": "Gain 5 Plated Armor."
     },
     {
       "name": "Brown Pants+",
@@ -501,8 +461,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
-      "description": "Gain 6 Plated Armor.",
-      "mod": "The Blackbeard"
+      "description": "Gain 6 Plated Armor."
     },
     {
       "name": "Buried Treasure",
@@ -510,8 +469,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 15 Gold.\nExhaust.",
-      "mod": "The Blackbeard"
+      "description": "Gain 15 Gold.\nExhaust."
     },
     {
       "name": "Buried Treasure+",
@@ -519,8 +477,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 20 Gold.\nExhaust.",
-      "mod": "The Blackbeard"
+      "description": "Gain 20 Gold.\nExhaust."
     },
     {
       "name": "Cannon Barrage",
@@ -528,8 +485,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "X",
-      "description": "Add X Cannonballs to your hand.",
-      "mod": "The Blackbeard"
+      "description": "Add X Cannonballs to your hand."
     },
     {
       "name": "Cannon Barrage+",
@@ -537,8 +493,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "X",
-      "description": "Add X+1 Cannonballs to your hand.",
-      "mod": "The Blackbeard"
+      "description": "Add X+1 Cannonballs to your hand."
     },
     {
       "name": "Cannonball Supply",
@@ -546,8 +501,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Add 3 Cannonballs to your hand.\nExhaust.",
-      "mod": "The Blackbeard"
+      "description": "Add 3 Cannonballs to your hand.\nExhaust."
     },
     {
       "name": "Cannonball Supply+",
@@ -555,8 +509,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Add 3 Cannonballs to your hand.",
-      "mod": "The Blackbeard"
+      "description": "Add 3 Cannonballs to your hand."
     },
     {
       "name": "Captain's Cabin",
@@ -564,8 +517,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 10 Block.\nAdd 1 Cannonball to your hand.",
-      "mod": "The Blackbeard"
+      "description": "Gain 10 Block.\nAdd 1 Cannonball to your hand."
     },
     {
       "name": "Captain's Cabin+",
@@ -573,8 +525,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 12 Block.\nAdd 2 Cannonballs to your hand.",
-      "mod": "The Blackbeard"
+      "description": "Gain 12 Block.\nAdd 2 Cannonballs to your hand."
     },
     {
       "name": "Chaotic Defend",
@@ -582,8 +533,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 7 Block.\nAdd 1 random card to your hand.",
-      "mod": "The Blackbeard"
+      "description": "Gain 7 Block.\nAdd 1 random card to your hand."
     },
     {
       "name": "Chaotic Defend+",
@@ -591,8 +541,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 9 Block.\nAdd 2 random cards to your hand.",
-      "mod": "The Blackbeard"
+      "description": "Gain 9 Block.\nAdd 2 random cards to your hand."
     },
     {
       "name": "Dangerous Blow",
@@ -600,8 +549,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 18 damage.\nAt the end of your next turn, you are dealt 6 damage.",
-      "mod": "The Blackbeard"
+      "description": "Deal 18 damage.\nAt the end of your next turn, you are dealt 6 damage."
     },
     {
       "name": "Dangerous Blow+",
@@ -609,8 +557,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 22 damage.\nAt the end of your next turn, you are dealt 6 damage.",
-      "mod": "The Blackbeard"
+      "description": "Deal 22 damage.\nAt the end of your next turn, you are dealt 6 damage."
     },
     {
       "name": "Double Bottom",
@@ -618,8 +565,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 10 Block.\nNext turn gain 10 Block.",
-      "mod": "The Blackbeard"
+      "description": "Gain 10 Block.\nNext turn gain 10 Block."
     },
     {
       "name": "Double Bottom+",
@@ -627,8 +573,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 13 Block.\nNext turn gain 13 Block.",
-      "mod": "The Blackbeard"
+      "description": "Gain 13 Block.\nNext turn gain 13 Block."
     },
     {
       "name": "Double Cannonball",
@@ -636,8 +581,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 8 damage. Exhaust.\nAdd a Cannonball to your hand.",
-      "mod": "The Blackbeard"
+      "description": "Deal 8 damage. Exhaust.\nAdd a Cannonball to your hand."
     },
     {
       "name": "Double Cannonball+",
@@ -645,8 +589,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 10 damage. Exhaust.\nAdd an upgraded Cannonball to your hand.",
-      "mod": "The Blackbeard"
+      "description": "Deal 10 damage. Exhaust.\nAdd an upgraded Cannonball to your hand."
     },
     {
       "name": "Eyepatch",
@@ -654,8 +597,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "0",
-      "description": "Gain 3 Weak.\nAt the start of your turn, draw 1 additional card.",
-      "mod": "The Blackbeard"
+      "description": "Gain 3 Weak.\nAt the start of your turn, draw 1 additional card."
     },
     {
       "name": "Eyepatch+",
@@ -663,8 +605,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "0",
-      "description": "Innate. Gain 3 Weak.\nAt the start of your turn, draw 1 additional card.",
-      "mod": "The Blackbeard"
+      "description": "Innate. Gain 3 Weak.\nAt the start of your turn, draw 1 additional card."
     },
     {
       "name": "Fishing Nets",
@@ -672,8 +613,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
-      "description": "Gain 6 Thorns.",
-      "mod": "The Blackbeard"
+      "description": "Gain 6 Thorns."
     },
     {
       "name": "Fishing Nets+",
@@ -681,8 +621,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
-      "description": "Gain 10 Thorns.",
-      "mod": "The Blackbeard"
+      "description": "Gain 10 Thorns."
     },
     {
       "name": "Ghost In The Rum",
@@ -690,8 +629,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 1 Intangible.\nLose 2 Resistance.\nExhaust.",
-      "mod": "The Blackbeard"
+      "description": "Gain 1 Intangible.\nLose 2 Resistance.\nExhaust."
     },
     {
       "name": "Ghost In The Rum+",
@@ -699,8 +637,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 1 Intangible.\nLose 1 Resistance.\nExhaust.",
-      "mod": "The Blackbeard"
+      "description": "Gain 1 Intangible.\nLose 1 Resistance.\nExhaust."
     },
     {
       "name": "Golden Cannonball",
@@ -708,8 +645,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "0",
-      "description": "Deal damage equal to\n2% of Gold gained\nthis run. Exhaust.",
-      "mod": "The Blackbeard"
+      "description": "Deal damage equal to\n2% of Gold gained\nthis run. Exhaust."
     },
     {
       "name": "Golden Cannonball+",
@@ -717,8 +653,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "0",
-      "description": "Deal damage equal to\n4 + 2% of Gold gained\nthis run. Exhaust.",
-      "mod": "The Blackbeard"
+      "description": "Deal damage equal to\n4 + 2% of Gold gained\nthis run. Exhaust."
     },
     {
       "name": "Infinite Barrage",
@@ -726,8 +661,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
-      "description": "At the start of each turn, add a Cannonball card to your hand.",
-      "mod": "The Blackbeard"
+      "description": "At the start of each turn, add a Cannonball card to your hand."
     },
     {
       "name": "Infinite Barrage+",
@@ -735,8 +669,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "2",
-      "description": "Innate. At the start of each turn, add a Cannonball card to your hand.",
-      "mod": "The Blackbeard"
+      "description": "Innate. At the start of each turn, add a Cannonball card to your hand."
     },
     {
       "name": "Jolly Roger",
@@ -744,8 +677,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Apply 3 Weak to ALL enemies. Exhaust.",
-      "mod": "The Blackbeard"
+      "description": "Apply 3 Weak to ALL enemies. Exhaust."
     },
     {
       "name": "Jolly Roger+",
@@ -753,8 +685,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Apply 5 Weak to ALL enemies. Exhaust.",
-      "mod": "The Blackbeard"
+      "description": "Apply 5 Weak to ALL enemies. Exhaust."
     },
     {
       "name": "Keelhauling",
@@ -762,8 +693,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Targeted enemy is dealt 8 damage at the start of their turn.\nLasts for 2 turns.",
-      "mod": "The Blackbeard"
+      "description": "Targeted enemy is dealt 8 damage at the start of their turn.\nLasts for 2 turns."
     },
     {
       "name": "Keelhauling+",
@@ -771,8 +701,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Targeted enemy is dealt 8 damage at the start of their turn.\nLasts for 3 turns.",
-      "mod": "The Blackbeard"
+      "description": "Targeted enemy is dealt 8 damage at the start of their turn.\nLasts for 3 turns."
     },
     {
       "name": "Pirate Earring",
@@ -780,8 +709,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "0",
-      "description": "Gain 1 Artifact.",
-      "mod": "The Blackbeard"
+      "description": "Gain 1 Artifact."
     },
     {
       "name": "Pirate Earring+",
@@ -789,8 +717,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "0",
-      "description": "Gain 2 Artifact.",
-      "mod": "The Blackbeard"
+      "description": "Gain 2 Artifact."
     },
     {
       "name": "Powder Keg",
@@ -798,8 +725,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Equip a 0 / 1 Weapon. When it is destroyed, deal 15 damage to ALL enemies.",
-      "mod": "The Blackbeard"
+      "description": "Equip a 0 / 1 Weapon. When it is destroyed, deal 15 damage to ALL enemies."
     },
     {
       "name": "Powder Keg+",
@@ -807,8 +733,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Equip a 0 / 1 Weapon. When it is destroyed, deal 20 damage to ALL enemies.",
-      "mod": "The Blackbeard"
+      "description": "Equip a 0 / 1 Weapon. When it is destroyed, deal 20 damage to ALL enemies."
     },
     {
       "name": "Provisioning",
@@ -816,8 +741,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Obtain a random potion.\nExhaust.",
-      "mod": "The Blackbeard"
+      "description": "Obtain a random potion.\nExhaust."
     },
     {
       "name": "Provisioning+",
@@ -825,8 +749,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Obtain a random potion.\nExhaust.",
-      "mod": "The Blackbeard"
+      "description": "Obtain a random potion.\nExhaust."
     },
     {
       "name": "Recklessness",
@@ -834,8 +757,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain [R] [R].\nAt the start of your next turn, lose [R] [R].",
-      "mod": "The Blackbeard"
+      "description": "Gain [R] [R].\nAt the start of your next turn, lose [R] [R]."
     },
     {
       "name": "Recklessness+",
@@ -843,8 +765,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain [R] [R] [R].\nAt the start of your next turn, lose [R] [R].",
-      "mod": "The Blackbeard"
+      "description": "Gain [R] [R] [R].\nAt the start of your next turn, lose [R] [R]."
     },
     {
       "name": "Remove Scurvy",
@@ -852,8 +773,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Heal 10% of your maximum HP.\nRemove all of your Debuffs.\nExhaust.",
-      "mod": "The Blackbeard"
+      "description": "Heal 10% of your maximum HP.\nRemove all of your Debuffs.\nExhaust."
     },
     {
       "name": "Remove Scurvy+",
@@ -861,8 +781,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Heal 10% of your maximum HP.\nRemove all of your Debuffs.\nExhaust.",
-      "mod": "The Blackbeard"
+      "description": "Heal 10% of your maximum HP.\nRemove all of your Debuffs.\nExhaust."
     },
     {
       "name": "Revenge",
@@ -870,8 +789,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 0 - 40 damage to ALL enemies, based on how many % of HP you are missing.\nMax damage at 1 HP.",
-      "mod": "The Blackbeard"
+      "description": "Deal 0 - 40 damage to ALL enemies, based on how many % of HP you are missing.\nMax damage at 1 HP."
     },
     {
       "name": "Revenge+",
@@ -879,8 +797,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal 0 - 50 damage to ALL enemies, based on how many % of HP you are missing.\nMax damage at 1 HP.",
-      "mod": "The Blackbeard"
+      "description": "Deal 0 - 50 damage to ALL enemies, based on how many % of HP you are missing.\nMax damage at 1 HP."
     },
     {
       "name": "Rum",
@@ -888,8 +805,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "Gain 2 Resistance.",
-      "mod": "The Blackbeard"
+      "description": "Gain 2 Resistance."
     },
     {
       "name": "Rum+",
@@ -897,8 +813,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "Gain 3 Resistance.",
-      "mod": "The Blackbeard"
+      "description": "Gain 3 Resistance."
     },
     {
       "name": "Scrap",
@@ -906,8 +821,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Destroy your rightmost Weapon to gain [R] [R].",
-      "mod": "The Blackbeard"
+      "description": "Destroy your rightmost Weapon to gain [R] [R]."
     },
     {
       "name": "Scrap+",
@@ -915,8 +829,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "0",
-      "description": "Destroy your rightmost Weapon to gain\n[R] [R] [R].",
-      "mod": "The Blackbeard"
+      "description": "Destroy your rightmost Weapon to gain\n[R] [R] [R]."
     },
     {
       "name": "Smithing Hammer",
@@ -924,8 +837,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Equip a 2 / 4 Weapon. After you attack with this Weapon and passively at the start of your turn using 1 durability, upgrade a random card in your hand for the rest of the combat. Exhaust.",
-      "mod": "The Blackbeard"
+      "description": "Equip a 2 / 4 Weapon. After you attack with this Weapon and passively at the start of your turn using 1 durability, upgrade a random card in your hand for the rest of the combat. Exhaust."
     },
     {
       "name": "Smithing Hammer+",
@@ -933,8 +845,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Equip a 2 / 6 Weapon. After you attack with this Weapon and passively at the start of your turn using 1 durability, upgrade a random card in your hand for the rest of the combat. Exhaust.",
-      "mod": "The Blackbeard"
+      "description": "Equip a 2 / 6 Weapon. After you attack with this Weapon and passively at the start of your turn using 1 durability, upgrade a random card in your hand for the rest of the combat. Exhaust."
     },
     {
       "name": "Terror Of The Seas",
@@ -942,8 +853,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Apply 3 Vulnerable to ALL enemies. Exhaust.",
-      "mod": "The Blackbeard"
+      "description": "Apply 3 Vulnerable to ALL enemies. Exhaust."
     },
     {
       "name": "Terror Of The Seas+",
@@ -951,8 +861,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Apply 5 Vulnerable to ALL enemies. Exhaust.",
-      "mod": "The Blackbeard"
+      "description": "Apply 5 Vulnerable to ALL enemies. Exhaust."
     },
     {
       "name": "Upgrade",
@@ -960,8 +869,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Give all your equipped Weapons + 1 / + 1.",
-      "mod": "The Blackbeard"
+      "description": "Give all your equipped Weapons + 1 / + 1."
     },
     {
       "name": "Upgrade+",
@@ -969,8 +877,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Give all your equipped Weapons + 2 / + 2.",
-      "mod": "The Blackbeard"
+      "description": "Give all your equipped Weapons + 2 / + 2."
     },
     {
       "name": "Vengeful Spirit",
@@ -978,8 +885,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 1 Intangible.\nAt the end of your next turn, you are dealt 12 damage.\nExhaust.",
-      "mod": "The Blackbeard"
+      "description": "Gain 1 Intangible.\nAt the end of your next turn, you are dealt 12 damage.\nExhaust."
     },
     {
       "name": "Vengeful Spirit+",
@@ -987,8 +893,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 1 Intangible.\nAt the end of your next turn, you are dealt 8 damage.\nExhaust.",
-      "mod": "The Blackbeard"
+      "description": "Gain 1 Intangible.\nAt the end of your next turn, you are dealt 8 damage.\nExhaust."
     },
     {
       "name": "Wise Defend",
@@ -996,8 +901,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 7 Block.\nDraw 1 card.",
-      "mod": "The Blackbeard"
+      "description": "Gain 7 Block.\nDraw 1 card."
     },
     {
       "name": "Wise Defend+",
@@ -1005,8 +909,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 9 Block.\nDraw 2 cards.",
-      "mod": "The Blackbeard"
+      "description": "Gain 9 Block.\nDraw 2 cards."
     },
     {
       "name": "Wooden Leg",
@@ -1014,8 +917,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "Lose 2 Dexterity.\nGain 4 Strength.",
-      "mod": "The Blackbeard"
+      "description": "Lose 2 Dexterity.\nGain 4 Strength."
     },
     {
       "name": "Wooden Leg+",
@@ -1023,8 +925,7 @@
       "rarity": "Uncommon",
       "type": "Power",
       "cost": "1",
-      "description": "Lose 2 Dexterity.\nGain 5 Strength.",
-      "mod": "The Blackbeard"
+      "description": "Lose 2 Dexterity.\nGain 5 Strength."
     },
     {
       "name": "Boost Morale",
@@ -1032,8 +933,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
-      "description": "Draw 2 cards.\nGain [R].\nExhaust.",
-      "mod": "The Blackbeard"
+      "description": "Draw 2 cards.\nGain [R].\nExhaust."
     },
     {
       "name": "Boost Morale+",
@@ -1041,8 +941,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "0",
-      "description": "Draw 3 cards.\nGain [R] [R].\nExhaust.",
-      "mod": "The Blackbeard"
+      "description": "Draw 3 cards.\nGain [R] [R].\nExhaust."
     },
     {
       "name": "Bounty Hunter",
@@ -1050,8 +949,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 16 damage. If this kills a non-minion enemy, gain 16 Gold.\nExhaust.",
-      "mod": "The Blackbeard"
+      "description": "Deal 16 damage. If this kills a non-minion enemy, gain 16 Gold.\nExhaust."
     },
     {
       "name": "Bounty Hunter+",
@@ -1059,8 +957,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 20 damage. If this kills a non-minion enemy, gain 20 Gold.\nExhaust.",
-      "mod": "The Blackbeard"
+      "description": "Deal 20 damage. If this kills a non-minion enemy, gain 20 Gold.\nExhaust."
     },
     {
       "name": "Captain's Hat",
@@ -1068,8 +965,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "Gain 2 Strength.\nGain 2 Resistance.",
-      "mod": "The Blackbeard"
+      "description": "Gain 2 Strength.\nGain 2 Resistance."
     },
     {
       "name": "Captain's Hat+",
@@ -1077,8 +973,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "Gain 3 Strength.\nGain 3 Resistance.",
-      "mod": "The Blackbeard"
+      "description": "Gain 3 Strength.\nGain 3 Resistance."
     },
     {
       "name": "Final Barrage",
@@ -1086,8 +981,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "0",
-      "description": "Deal damage equal to 4 times the amount of Cannonballs played this combat (every type of Cannonball counts).",
-      "mod": "The Blackbeard"
+      "description": "Deal damage equal to 4 times the amount of Cannonballs played this combat (every type of Cannonball counts)."
     },
     {
       "name": "Final Barrage+",
@@ -1095,8 +989,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "0",
-      "description": "Deal damage equal to 6 times the amount of Cannonballs played this combat (every type of Cannonball counts).",
-      "mod": "The Blackbeard"
+      "description": "Deal damage equal to 6 times the amount of Cannonballs played this combat (every type of Cannonball counts)."
     },
     {
       "name": "Golden Guillotine",
@@ -1104,8 +997,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "3",
-      "description": "Deal damage equal to\n4 percent of Gold gained this run.",
-      "mod": "The Blackbeard"
+      "description": "Deal damage equal to\n4 percent of Gold gained this run."
     },
     {
       "name": "Golden Guillotine+",
@@ -1113,8 +1005,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "3",
-      "description": "Deal damage equal to\n5 percent of Gold gained this run.",
-      "mod": "The Blackbeard"
+      "description": "Deal damage equal to\n5 percent of Gold gained this run."
     },
     {
       "name": "Golden Rain",
@@ -1122,8 +1013,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal damage equal to\n2.5% of Gold gained\nthis run to ALL enemies.",
-      "mod": "The Blackbeard"
+      "description": "Deal damage equal to\n2.5% of Gold gained\nthis run to ALL enemies."
     },
     {
       "name": "Golden Rain+",
@@ -1131,8 +1021,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "2",
-      "description": "Deal damage equal to\n3% of Gold gained\nthis run to ALL enemies.",
-      "mod": "The Blackbeard"
+      "description": "Deal damage equal to\n3% of Gold gained\nthis run to ALL enemies."
     },
     {
       "name": "Halberd",
@@ -1140,8 +1029,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Equip a 6 / 5 Weapon.",
-      "mod": "The Blackbeard"
+      "description": "Equip a 6 / 5 Weapon."
     },
     {
       "name": "Halberd+",
@@ -1149,8 +1037,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Equip a 9 / 5 Weapon.",
-      "mod": "The Blackbeard"
+      "description": "Equip a 9 / 5 Weapon."
     },
     {
       "name": "Humongous Cannonball",
@@ -1158,8 +1045,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "3",
-      "description": "Deal 36 damage. Exhaust.",
-      "mod": "The Blackbeard"
+      "description": "Deal 36 damage. Exhaust."
     },
     {
       "name": "Humongous Cannonball+",
@@ -1167,8 +1053,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "3",
-      "description": "Deal 48 damage. Exhaust.",
-      "mod": "The Blackbeard"
+      "description": "Deal 48 damage. Exhaust."
     },
     {
       "name": "Intoxication",
@@ -1176,8 +1061,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "Gain 4 Resistance.\nAt the start of each turn, lose 1 Resistance.",
-      "mod": "The Blackbeard"
+      "description": "Gain 4 Resistance.\nAt the start of each turn, lose 1 Resistance."
     },
     {
       "name": "Intoxication+",
@@ -1185,8 +1069,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "Gain 5 Resistance.\nAt the start of each turn, lose 1 Resistance.",
-      "mod": "The Blackbeard"
+      "description": "Gain 5 Resistance.\nAt the start of each turn, lose 1 Resistance."
     },
     {
       "name": "Lifeboat",
@@ -1194,8 +1077,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 24 Block.",
-      "mod": "The Blackbeard"
+      "description": "Gain 24 Block."
     },
     {
       "name": "Lifeboat+",
@@ -1203,8 +1085,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Gain 30 Block.",
-      "mod": "The Blackbeard"
+      "description": "Gain 30 Block."
     },
     {
       "name": "Mega Upgrade",
@@ -1212,8 +1093,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Give all your equipped Weapons + 3 / + 3.",
-      "mod": "The Blackbeard"
+      "description": "Give all your equipped Weapons + 3 / + 3."
     },
     {
       "name": "Mega Upgrade+",
@@ -1221,8 +1101,7 @@
       "rarity": "Rare",
       "type": "Skill",
       "cost": "2",
-      "description": "Give all your equipped Weapons + 5 / + 5.",
-      "mod": "The Blackbeard"
+      "description": "Give all your equipped Weapons + 5 / + 5."
     },
     {
       "name": "Murder",
@@ -1230,8 +1109,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "4",
-      "description": "Deal 250 damage\u00A0\u00A0\u00A0\u00A0\nto a Normal enemy.\n(Cannot be used on Elite or Boss).\nEthereal.",
-      "mod": "The Blackbeard"
+      "description": "Deal 250 damage\u00A0\u00A0\u00A0\u00A0\nto a Normal enemy.\n(Cannot be used on Elite or Boss).\nEthereal."
     },
     {
       "name": "Murder+",
@@ -1239,8 +1117,7 @@
       "rarity": "Rare",
       "type": "Attack",
       "cost": "4",
-      "description": "Deal 500 damage\u00A0\u00A0\u00A0\u00A0\nto a Normal enemy.\n(Cannot be used on Elite or Boss).\nEthereal.",
-      "mod": "The Blackbeard"
+      "description": "Deal 500 damage\u00A0\u00A0\u00A0\u00A0\nto a Normal enemy.\n(Cannot be used on Elite or Boss).\nEthereal."
     },
     {
       "name": "Parrot",
@@ -1248,8 +1125,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "The last card played each turn is played an additional time. This power does not stack.\nEthereal.",
-      "mod": "The Blackbeard"
+      "description": "The last card played each turn is played an additional time. This power does not stack.\nEthereal."
     },
     {
       "name": "Parrot+",
@@ -1257,8 +1133,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "The last card played each turn is played an additional time. This power does not stack.",
-      "mod": "The Blackbeard"
+      "description": "The last card played each turn is played an additional time. This power does not stack."
     },
     {
       "name": "Pirate Strength",
@@ -1266,8 +1141,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "Gain 6 Strength.",
-      "mod": "The Blackbeard"
+      "description": "Gain 6 Strength."
     },
     {
       "name": "Pirate Strength+",
@@ -1275,8 +1149,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "Gain 9 Strength.",
-      "mod": "The Blackbeard"
+      "description": "Gain 9 Strength."
     },
     {
       "name": "Salvager",
@@ -1284,8 +1157,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "Whenever a Weapon is destroyed, gain [R].",
-      "mod": "The Blackbeard"
+      "description": "Whenever a Weapon is destroyed, gain [R]."
     },
     {
       "name": "Salvager+",
@@ -1293,8 +1165,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "Whenever a Weapon is destroyed, gain [R].",
-      "mod": "The Blackbeard"
+      "description": "Whenever a Weapon is destroyed, gain [R]."
     },
     {
       "name": "The Drunken Sailor",
@@ -1302,8 +1173,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "Your potions are used an additional time.",
-      "mod": "The Blackbeard"
+      "description": "Your potions are used an additional time."
     },
     {
       "name": "The Drunken Sailor+",
@@ -1311,8 +1181,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "0",
-      "description": "Your potions are used an additional time.",
-      "mod": "The Blackbeard"
+      "description": "Your potions are used an additional time."
     },
     {
       "name": "Undead Form",
@@ -1320,8 +1189,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "Gain 2 Intangible.\n At the start of the turn on which you are no longer Intangible, you are dealt 30 damage.",
-      "mod": "The Blackbeard"
+      "description": "Gain 2 Intangible.\n At the start of the turn on which you are no longer Intangible, you are dealt 30 damage."
     },
     {
       "name": "Undead Form+",
@@ -1329,8 +1197,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "Gain 3 Intangible.\n At the start of the turn on which you are no longer Intangible, you are dealt 30 damage.",
-      "mod": "The Blackbeard"
+      "description": "Gain 3 Intangible.\n At the start of the turn on which you are no longer Intangible, you are dealt 30 damage."
     },
     {
       "name": "Weapon Mastery",
@@ -1338,8 +1205,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "2",
-      "description": "Whenever you Equip a Weapon, draw a card.",
-      "mod": "The Blackbeard"
+      "description": "Whenever you Equip a Weapon, draw a card."
     },
     {
       "name": "Weapon Mastery+",
@@ -1347,8 +1213,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "Whenever you Equip a Weapon, draw a card.",
-      "mod": "The Blackbeard"
+      "description": "Whenever you Equip a Weapon, draw a card."
     }
   ],
   "relics": [
@@ -1357,562 +1222,105 @@
       "tier": "Starter",
       "pool": "Blackbeard_black",
       "description": "At the start of each combat, add a Cannonball card to your hand.",
-      "flavorText": "Ready... Aim... Fire!!!",
-      "mod": "The Blackbeard"
+      "flavorText": "Ready... Aim... Fire!!!"
     },
     {
       "name": "Cannonballs Of Steel",
       "tier": "Common",
       "pool": "Blackbeard_black",
       "description": "Your Cannonballs deal 2 more damage. (Works with every type of Cannonball.)",
-      "flavorText": "Much stronger than regular cannonballs.",
-      "mod": "The Blackbeard"
+      "flavorText": "Much stronger than regular cannonballs."
     },
     {
       "name": "HipFlask",
       "tier": "Common",
       "pool": "Blackbeard_black",
       "description": "At the start of each combat, gain 1 Resistance.",
-      "flavorText": "Very handy.",
-      "mod": "The Blackbeard"
+      "flavorText": "Very handy."
     },
     {
       "name": "Treasure Chest",
       "tier": "Common",
       "pool": "Blackbeard_black",
       "description": "Gain 20 Gold after every battle.",
-      "flavorText": "This treasure chest contains untold riches.",
-      "mod": "The Blackbeard"
+      "flavorText": "This treasure chest contains untold riches."
     },
     {
       "name": "White Pearl",
       "tier": "Common",
       "pool": "Blackbeard_black",
       "description": "Whenever you Equip a Weapon, give it +1 Attack.",
-      "flavorText": "So beautiful. So strong.",
-      "mod": "The Blackbeard"
+      "flavorText": "So beautiful. So strong."
     },
     {
       "name": "Golden Ring",
       "tier": "Uncommon",
       "pool": "Blackbeard_black",
       "description": "At the start of each combat, gain 1 Artifact.",
-      "flavorText": "Suitable for every pirate.",
-      "mod": "The Blackbeard"
+      "flavorText": "Suitable for every pirate."
     },
     {
       "name": "Penknife",
       "tier": "Uncommon",
       "pool": "Blackbeard_black",
       "description": "Every 8th Attack that uses at least one Weapon deals double damage.",
-      "flavorText": "If you have it in your pocket, don't forget to use it.",
-      "mod": "The Blackbeard"
+      "flavorText": "If you have it in your pocket, don't forget to use it."
     },
     {
       "name": "Powder Can",
       "tier": "Uncommon",
       "pool": "Blackbeard_black",
       "description": "At the start of each combat, equip a 0 / 1 Weapon. When it is destroyed, deal 8 damage to ALL enemies.",
-      "flavorText": "Just like a Powder Keg, but smaller.",
-      "mod": "The Blackbeard"
+      "flavorText": "Just like a Powder Keg, but smaller."
     },
     {
       "name": "Magical Cauldron",
       "tier": "Rare",
       "pool": "Blackbeard_black",
       "description": "At the start of each combat, obtain a random potion.",
-      "flavorText": "Fully automatic.",
-      "mod": "The Blackbeard"
+      "flavorText": "Fully automatic."
     },
     {
       "name": "Poor Math Skills",
       "tier": "Rare",
       "pool": "Blackbeard_black",
       "description": "You think that you have gained 500 more Gold this run than you actually did. (It matters for cards that scale with Gold gained this run.)",
-      "flavorText": "Sometimes failing a math class is a good thing.",
-      "mod": "The Blackbeard"
+      "flavorText": "Sometimes failing a math class is a good thing."
     },
     {
       "name": "Sober-minded",
       "tier": "Boss",
       "pool": "Blackbeard_black",
       "description": "Gain [R] at the start of each turn. At the start of each combat, lose 1 Resistance.",
-      "flavorText": "Being sober is not a natural state for The Blackbeard.",
-      "mod": "The Blackbeard"
+      "flavorText": "Being sober is not a natural state for The Blackbeard."
     },
     {
       "name": "Blood Orange",
       "tier": "Shop",
       "pool": "Blackbeard_black",
       "description": "Whenever you play 6 cards in the same turn, remove all of your Debuffs.",
-      "flavorText": "This citrus seems to have an interesting power.",
-      "mod": "The Blackbeard"
+      "flavorText": "This citrus seems to have an interesting power."
     }
   ],
   "potions": [
   ],
   "creatures": [
     {
-      "name": "The Blackbeard",
-      "mod": "The Blackbeard"
+      "name": "The Blackbeard"
     }
   ],
   "keywords": [
     {
-      "name": "[B]",
-      "description": "Energy is used to play cards from your hand.",
-      "names": [],
-      "mod": ""
-    },
-    {
-      "name": "[E]",
-      "description": "Energy is used to play cards from your hand.",
-      "names": [
-        "[E]"
-      ],
-      "mod": "BaseMod"
-    },
-    {
-      "name": "[G]",
-      "description": "Energy is used to play cards from your hand.",
-      "names": [],
-      "mod": ""
-    },
-    {
-      "name": "[R]",
-      "description": "Energy is used to play cards from your hand.",
-      "names": [],
-      "mod": ""
-    },
-    {
-      "name": "Artifact",
-      "description": "Negates the next debuff.",
-      "names": [
-        "artifact"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Autoplay",
-      "description": "This card automatically plays itself when drawn.",
-      "names": [
-        "autoplay"
-      ],
-      "mod": "StSLib"
-    },
-    {
-      "name": "Block",
-      "description": "Until next turn, prevents damage.",
-      "names": [
-        "block",
-        "blocks"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Burn",
-      "description": "Burns are unplayable status cards that damage you.",
-      "names": [
-        "burn",
-        "burns"
-      ],
-      "mod": ""
-    },
-    {
       "name": "Cannonball",
-      "description": "Cannonballs are 0 cost attacks that deal 8 (10) damage and exhaust.",
-      "names": [
-        "cannonball",
-        "cannonballs"
-      ],
-      "mod": "The Blackbeard"
-    },
-    {
-      "name": "Channel",
-      "description": "Channeling an Orb puts it into your first empty slot. If you have no empty slots, your first Orb is automatically Evoked to make room.",
-      "names": [
-        "channel",
-        "channeled"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Confused",
-      "description": "Whenever you draw a card, randomize its cost.",
-      "names": [
-        "confused"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Curse",
-      "description": "Curse cards are negative cards that stay in your deck.",
-      "names": [
-        "curse"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Dark",
-      "description": "Orb: Increases damage every turn. When Evoked, deals damage to the enemy with the least HP.",
-      "names": [
-        "dark",
-        "dark+"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Dazed",
-      "description": "Dazed are unplayable status cards.",
-      "names": [
-        "dazed"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Dexterity",
-      "description": "Dexterity improves Block gained from cards.",
-      "names": [
-        "dexterity"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Ethereal",
-      "description": "If this card is in your hand at the end of turn, it is exhausted. Exhausted cards are removed from your deck until the end of combat.",
-      "names": [
-        "ethereal"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Evoke",
-      "description": "Consume your rightmost Orb and use its Evoke effect.",
-      "names": [
-        "evoke",
-        "evoked"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Exhaust",
-      "description": "Removed until end of combat.",
-      "names": [
-        "exhaust",
-        "exhausted",
-        "exhausts"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Exhaustive",
-      "description": "Exhausts after a certain number of uses.",
-      "names": [
-        "exhaustive"
-      ],
-      "mod": "StSLib"
-    },
-    {
-      "name": "Fetch",
-      "description": "Choose a specified card from a specified pile and place it into your hand.",
-      "names": [
-        "fetch"
-      ],
-      "mod": "StSLib"
-    },
-    {
-      "name": "Fleeting",
-      "description": "This card Purges and is removed from your deck on use.",
-      "names": [
-        "fleeting"
-      ],
-      "mod": "StSLib"
-    },
-    {
-      "name": "Focus",
-      "description": "Focus increases the effectiveness of Channeled Orbs.",
-      "names": [
-        "focus"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Frail",
-      "description": "While Frail, gain 25% less Block from cards.",
-      "names": [
-        "frail"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Frost",
-      "description": "Orb: Gains Block.",
-      "names": [
-        "frost",
-        "frost+"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Grave",
-      "description": "Start each combat with this card in your discard pile.",
-      "names": [
-        "grave"
-      ],
-      "mod": "StSLib"
-    },
-    {
-      "name": "Innate",
-      "description": "Start each combat with this card in your hand.",
-      "names": [
-        "innate"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Intangible",
-      "description": "Reduce ALL damage taken and HP loss to 1.",
-      "names": [
-        "intangible"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Lightning",
-      "description": "Orb: Deals damage to random enemies.",
-      "names": [
-        "lightning",
-        "lightning+"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Lock-on",
-      "description": "Lock-On targets receive 50% more damage from Orbs.",
-      "names": [
-        "lock-on"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Locked",
-      "description": "This card has yet to be unlocked.",
-      "names": [
-        "locked"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Opener",
-      "description": "Opener cards may only be played as the first card each turn.",
-      "names": [
-        "opener"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Plasma",
-      "description": "Orb: Gains Energy.",
-      "names": [
-        "plasma",
-        "plasma+"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Poison",
-      "description": "Poisoned creatures lose HP at the start of their turn. Each turn, Poison is reduced by 1.",
-      "names": [
-        "poison",
-        "poisoned"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Purge",
-      "description": "Removed until end of combat. Does NOT go to your exhaust pile.",
-      "names": [
-        "purge"
-      ],
-      "mod": "StSLib"
-    },
-    {
-      "name": "Refund",
-      "description": "Returns energy spent on playing the card, up to the Refund value.",
-      "names": [
-        "refund",
-        "refunds"
-      ],
-      "mod": "StSLib"
+      "description": "Cannonballs are 0 cost attacks that deal 8 (10) damage and exhaust."
     },
     {
       "name": "Resistance",
-      "description": "You take less damage from enemy attacks. (Enemy intents always show actual incoming damage, with Resistance taken into account.) Resistance can be negative.",
-      "names": [
-        "resistance"
-      ],
-      "mod": "The Blackbeard"
-    },
-    {
-      "name": "Retain",
-      "description": "Not discarded at the end of your turn.",
-      "names": [
-        "retain"
-      ],
-      "mod": "StSLib"
-    },
-    {
-      "name": "Shiv",
-      "description": "Shivs are 0 cost Attack cards which Exhaust.",
-      "names": [
-        "shiv",
-        "shivs"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Snecko",
-      "description": "When drawn, this card randomizes its cost.",
-      "names": [
-        "snecko"
-      ],
-      "mod": "StSLib"
-    },
-    {
-      "name": "Soulbound",
-      "description": "Cannot be removed from your deck.",
-      "names": [
-        "soulbound"
-      ],
-      "mod": "StSLib"
-    },
-    {
-      "name": "Startup",
-      "description": "Triggers at the start of each combat.",
-      "names": [
-        "startup"
-      ],
-      "mod": "StSLib"
-    },
-    {
-      "name": "Status",
-      "description": "Status cards are removed at the end of combat.",
-      "names": [
-        "status"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Strength",
-      "description": "Strength adds additional damage to attacks.",
-      "names": [
-        "strength"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Strike",
-      "description": "Any card with the word \"Strike\" in its name.",
-      "names": [
-        "strike"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Temporary hp",
-      "description": "Temporary HP disappears at the end of combat.",
-      "names": [
-        "temporary hp",
-        "temporary_hp"
-      ],
-      "mod": "StSLib"
-    },
-    {
-      "name": "Thorns",
-      "description": "When receiving Attack damage, deals damage back.",
-      "names": [
-        "thorns"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Transform",
-      "description": "Transformed cards become a random card of any rarity.",
-      "names": [
-        "transform"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Unknown",
-      "description": "This card has yet to be encountered.",
-      "names": [
-        "unknown"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Unplayable",
-      "description": "Unplayable cards cannot be played from your hand.",
-      "names": [
-        "unplayable"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Upgrade",
-      "description": "Upgrading cards makes them more powerful. Cards can only be upgraded once.",
-      "names": [
-        "upgrade",
-        "upgraded"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Void",
-      "description": "Voids are unplayable status cards that consume energy when drawn.",
-      "names": [
-        "void",
-        "voids"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Vulnerable",
-      "description": "Vulnerable creatures take 50% more damage from Attacks.",
-      "names": [
-        "vulnerable"
-      ],
-      "mod": ""
-    },
-    {
-      "name": "Weak",
-      "description": "Weakened creatures deal 25% less damage with Attacks.",
-      "names": [
-        "weak",
-        "weaken",
-        "weakened",
-        "weakens"
-      ],
-      "mod": ""
+      "description": "You take less damage from enemy attacks. (Enemy intents always show actual incoming damage, with Resistance taken into account.) Resistance can be negative."
     },
     {
       "name": "Weapon",
-      "description": "Whenever you play an attack card, one Durability of your rightmost Weapon is used and card's damage is increased by Weapon's attack. You can equip maximum of 10 Weapons. Orb slots are created and destroyed automatically.",
-      "names": [
-        "weapon",
-        "weapons"
-      ],
-      "mod": "The Blackbeard"
-    },
-    {
-      "name": "Wound",
-      "description": "Wounds are unplayable status cards.",
-      "names": [
-        "wound",
-        "wounds"
-      ],
-      "mod": ""
+      "description": "Whenever you play an attack card, one Durability of your rightmost Weapon is used and card's damage is increased by Weapon's attack. You can equip maximum of 10 Weapons. Orb slots are created and destroyed automatically."
     }
   ]
 }

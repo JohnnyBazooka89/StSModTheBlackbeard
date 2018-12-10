@@ -1,3 +1,0 @@
-| Image | Name | Rarity | Description |
-| ----- | ---- | ------ | ----------- |
-
