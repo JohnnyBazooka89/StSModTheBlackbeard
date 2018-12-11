@@ -45,7 +45,7 @@
 | Golden Cannonball | ![](small-card-images/GoldenCannonball.png) | ![](small-card-images/GoldenCannonballPlus.png) | Uncommon | Attack | 0 | Deal damage equal to (0(4) +) 2% of Gold gained this run. Exhaust. |
 | Infinite Barrage | ![](small-card-images/InfiniteBarrage.png) | ![](small-card-images/InfiniteBarragePlus.png) | Uncommon | Power | 2 | (Innate.) At the start of each turn, add a Cannonball card to your hand. |
 | Jolly Roger | ![](small-card-images/JollyRoger.png) | ![](small-card-images/JollyRogerPlus.png) | Uncommon | Skill | 1 | Apply 3(5) Weak to ALL enemies. Exhaust. |
-| Keelhauling | ![](small-card-images/Keelhauling.png) | ![](small-card-images/KeelhaulingPlus.png) | Uncommon | Skill | 2 | Targeted enemy is dealt 8 damage at the start of their turn. Lasts for 2(3) turns. |
+| Keelhauling | ![](small-card-images/Keelhauling.png) | ![](small-card-images/KeelhaulingPlus.png) | Uncommon | Skill | 2 | Targeted enemy is dealt 8 damage at the start of their turn. Lasts for 3(4) turns. |
 | Pirate Earring | ![](small-card-images/PirateEarring.png) | ![](small-card-images/PirateEarringPlus.png) | Uncommon | Power | 0 | Gain 1(2) Artifact. |
 | Powder Keg | ![](small-card-images/PowderKeg.png) | ![](small-card-images/PowderKegPlus.png) | Uncommon | Skill | 1 | Equip a 0 / 1 Weapon. When it is destroyed, deal 15(20) damage to ALL enemies. |
 | Provisioning | ![](small-card-images/Provisioning.png) | ![](small-card-images/ProvisioningPlus.png) | Uncommon | Skill | 1(0) | Obtain a random potion. Exhaust. |

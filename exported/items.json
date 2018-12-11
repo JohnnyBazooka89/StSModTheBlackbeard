@@ -1,7 +1,7 @@
 {
   "mod": {
     "name": "The Blackbeard",
-    "version": "1.4.11",
+    "version": "1.4.12",
     "authors": [
       "JohnnyBazooka89"
     ],
@@ -693,7 +693,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Targeted enemy is dealt 8 damage at the start of their turn.\nLasts for 2 turns."
+      "description": "Targeted enemy is dealt 8 damage at the start of their turn.\nLasts for 3 turns."
     },
     {
       "name": "Keelhauling+",
@@ -701,7 +701,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Targeted enemy is dealt 8 damage at the start of their turn.\nLasts for 3 turns."
+      "description": "Targeted enemy is dealt 8 damage at the start of their turn.\nLasts for 4 turns."
     },
     {
       "name": "Pirate Earring",
