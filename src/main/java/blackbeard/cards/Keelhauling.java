@@ -19,7 +19,7 @@ public class Keelhauling extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 2;
-    private static final int TURNS = 2;
+    private static final int TURNS = 3;
     private static final int UPGRADED_PLUS_TURNS = 1;
 
     public Keelhauling() {

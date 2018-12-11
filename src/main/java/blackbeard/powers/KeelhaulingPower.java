@@ -37,7 +37,7 @@ public class KeelhaulingPower extends AbstractPower {
 
     @Override
     public void atStartOfTurn() {
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(this.owner, new DamageInfo(this.owner, 8, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.FIRE));
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(this.owner, new DamageInfo(this.owner, DAMAGE, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.NONE));
         AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, POWER_ID, 1));
         if (this.amount == 0) {
             AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
