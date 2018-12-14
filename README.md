@@ -56,4 +56,4 @@ List of other mods can be found at:
 The Blackbeard fully supports the [Googly Eyes](https://github.com/twanvl/sts-googly-mod/releases) mod. If you'd like to play with hilarious googly eyes on almost every card, then you are most welcome :) 
 
 ## Contact ##
-- To report a bug, please create an [issue](https://github.com/JohnnyBazooka89/StSModTheBlackbeard/issues). You can also find me on Slay the Spire discord, on channel #unsupported-modding (my nickname: JohnnyBazooka89#8560).
+- To report a bug or if you want to contact me, please create an [issue](https://github.com/JohnnyBazooka89/StSModTheBlackbeard/issues). At the moment I don't plan on making any changes to the mod, other than maintaining it to ensure it's always playable with the newest version of Slay the Spire. I'm no longer active on Slay the Spire discord - please use the github issues.
