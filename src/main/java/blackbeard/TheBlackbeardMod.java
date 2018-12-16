@@ -7,20 +7,27 @@ import blackbeard.cards.*;
 import blackbeard.characters.TheBlackbeard;
 import blackbeard.enums.AbstractCardEnum;
 import blackbeard.enums.TheBlackbeardEnum;
+import blackbeard.potions.RumPotion;
+import blackbeard.potions.ToastPotion;
 import blackbeard.relics.*;
 import blackbeard.variables.MagicNumberPlusOneVariable;
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import com.megacrit.cardcrawl.helpers.CardHelper;
-import com.megacrit.cardcrawl.localization.CardStrings;
-import com.megacrit.cardcrawl.localization.OrbStrings;
-import com.megacrit.cardcrawl.localization.PowerStrings;
-import com.megacrit.cardcrawl.localization.RelicStrings;
+import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.potions.BloodPotion;
 import com.megacrit.cardcrawl.potions.GhostInAJar;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.lang.reflect.Type;
+import java.nio.charset.StandardCharsets;
+import java.util.HashMap;
+import java.util.Map;
 
 @SpireInitializer
 public class TheBlackbeardMod implements PostInitializeSubscriber,
@@ -68,6 +75,14 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     private static final String CARD_STRINGS_PATH = "blackbeard/localization/TheBlackbeard-CardStrings.json";
     private static final String POWER_STRINGS_PATH = "blackbeard/localization/TheBlackbeard-PowerStrings.json";
     private static final String ORB_STRINGS_PATH = "blackbeard/localization/TheBlackbeard-OrbStrings.json";
+    private static final String KEYWORD_STRINGS_PATH = "blackbeard/localization/TheBlackbeard-KeywordStrings.json";
+    private static final String POTION_STRINGS_PATH = "blackbeard/localization/TheBlackbeard-PotionStrings.json";
+
+    public static Map<String, Keyword> keywords = new HashMap<>();
+
+    public static final String WEAPON_KEYWORD = "blackbeard:WeaponKeyword";
+    public static final String CANNONBALL_KEYWORD = "blackbeard:CannonballKeyword";
+    public static final String RESISTANCE_KEYWORD = "blackbeard:ResistanceKeyword";
 
     public TheBlackbeardMod() {
         BaseMod.subscribe(this);
@@ -129,6 +144,10 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
 
         BaseMod.addPotion(BloodPotion.class, Color.WHITE.cpy(), Color.LIGHT_GRAY.cpy(), null, "blackbeard:BloodPotion", TheBlackbeardEnum.BLACKBEARD_CLASS);
         BaseMod.addPotion(GhostInAJar.class, Color.WHITE.cpy(), Color.LIGHT_GRAY.cpy(), null, "blackbeard:GhostInAJar", TheBlackbeardEnum.BLACKBEARD_CLASS);
+        Color rumColor = new Color(211 / 255.0F, 102 / 255.0F, 0, 1);
+        Color rumShadeColor = new Color(160 / 255.0F, 77 / 255.0F, 0, 1);
+        BaseMod.addPotion(RumPotion.class, rumColor.cpy(), rumShadeColor.cpy(), null, "blackbeard:RumPotion", TheBlackbeardEnum.BLACKBEARD_CLASS);
+        BaseMod.addPotion(ToastPotion.class, rumColor.cpy(), rumShadeColor.cpy(), null, "blackbeard:ToastPotion", TheBlackbeardEnum.BLACKBEARD_CLASS);
 
         logger.info("Done editing characters");
     }
@@ -259,17 +278,29 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.loadCustomStringsFile(PowerStrings.class, POWER_STRINGS_PATH);
         //Orb Strings
         BaseMod.loadCustomStringsFile(OrbStrings.class, ORB_STRINGS_PATH);
+        //Potion Strings
+        BaseMod.loadCustomStringsFile(PotionStrings.class, POTION_STRINGS_PATH);
 
         logger.info("Done editing strings");
     }
 
     @Override
     public void receiveEditKeywords() {
-        logger.info("Setting up custom keywords");
+        logger.info("Begin editing keywords");
 
-        BaseMod.addKeyword(new String[]{"weapon", "weapons"}, "Whenever you play an attack card, one Durability of your rightmost Weapon is used and card's damage is increased by Weapon's attack. You can equip maximum of 10 Weapons. Orb slots are created and destroyed automatically.");
-        BaseMod.addKeyword(new String[]{"cannonball", "cannonballs"}, "Cannonballs are 0 cost attacks that deal 8 (10) damage and exhaust.");
-        BaseMod.addKeyword(new String[]{"resistance"}, "You take less damage from enemy attacks. (Enemy intents always show actual incoming damage, with Resistance taken into account.) Resistance can be negative.");
+        Gson gson = new Gson();
+
+        String keywordStrings = Gdx.files.internal(KEYWORD_STRINGS_PATH).readString(String.valueOf(StandardCharsets.UTF_8));
+        Type typeToken = new TypeToken<Map<String, Keyword>>() {
+        }.getType();
+
+        keywords = gson.fromJson(keywordStrings, typeToken);
+
+        keywords.forEach((k, v) -> {
+            BaseMod.addKeyword(v.NAMES, v.DESCRIPTION);
+        });
+
+        logger.info("Done editing keywords");
     }
 
 }

@@ -18,7 +18,7 @@ public class Toast extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 0;
-    private static final int RESISTANCE_VALUE = 2;
+    private static final int RESISTANCE_VALUE = 3;
     private static final int UPGRADED_PLUS_RESISTANCE_VALUE = 1;
 
     public Toast() {

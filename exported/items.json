@@ -1,7 +1,7 @@
 {
   "mod": {
     "name": "The Blackbeard",
-    "version": "1.4.12",
+    "version": "1.5.0",
     "authors": [
       "JohnnyBazooka89"
     ],
@@ -357,7 +357,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain 2 Resistance.\nAt the start of your next turn, lose 2 Resistance.\nExhaust."
+      "description": "Gain 3 Resistance.\nAt the start of your next turn, lose 3 Resistance.\nExhaust."
     },
     {
       "name": "Toast+",
@@ -365,7 +365,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Gain 3 Resistance.\nAt the start of your next turn, lose 3 Resistance.\nExhaust."
+      "description": "Gain 4 Resistance.\nAt the start of your next turn, lose 4 Resistance.\nExhaust."
     },
     {
       "name": "Agile Strike",
@@ -1303,6 +1303,16 @@
     }
   ],
   "potions": [
+    {
+      "name": "Bottle of Rum",
+      "rarity": "Uncommon",
+      "description": "Gain 2 Resistance."
+    },
+    {
+      "name": "Quick shots of Rum",
+      "rarity": "Uncommon",
+      "description": "Gain 5 Resistance. At the start of your next turn, lose 5 Resistance."
+    }
   ],
   "creatures": [
     {

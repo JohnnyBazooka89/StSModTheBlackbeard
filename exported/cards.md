@@ -21,7 +21,7 @@
 | Sword | ![](small-card-images/Sword.png) | ![](small-card-images/SwordPlus.png) | Common | Skill | 1 | Choose 1 of 3 Swords. Equip a 2(3) / 3 Weapon with an additional effect. |
 | Sword Dance | ![](small-card-images/SwordDance.png) | ![](small-card-images/SwordDancePlus.png) | Common | Skill | 1 | This turn, your next 2(3) Attacks use all equipped Weapons. |
 | Tactical Retreat | ![](small-card-images/TacticalRetreat.png) | ![](small-card-images/TacticalRetreatPlus.png) | Common | Skill | 1 | Gain 8(11) Block. Draw 1 more card next turn. |
-| Toast | ![](small-card-images/Toast.png) | ![](small-card-images/ToastPlus.png) | Common | Skill | 0 | Gain 2(3) Resistance. At the start of your next turn, lose 2(3) Resistance. Exhaust. |
+| Toast | ![](small-card-images/Toast.png) | ![](small-card-images/ToastPlus.png) | Common | Skill | 0 | Gain 3(4) Resistance. At the start of your next turn, lose 3(4) Resistance. Exhaust. |
 | Agile Strike | ![](small-card-images/AgileStrike.png) | ![](small-card-images/AgileStrikePlus.png) | Uncommon | Attack | 1 | Deal 9(13) damage. If you have equipped a Weapon this turn, reduce cost of this card to 0. |
 | Anchor | ![](small-card-images/Anchor.png) | ![](small-card-images/AnchorPlus.png) | Uncommon | Skill | 0 | Innate. Gain 10 Block. (Draw a card.)  Exhaust. |
 | Armor Up | ![](small-card-images/ArmorUp.png) | ![](small-card-images/ArmorUpPlus.png) | Uncommon | Skill | 0 | This turn, whenever you attack with a Weapon, gain 4(6) Block. |
