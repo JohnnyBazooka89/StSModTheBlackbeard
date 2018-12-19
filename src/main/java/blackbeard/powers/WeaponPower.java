@@ -58,8 +58,7 @@ public class WeaponPower extends AbstractPower {
                     }
                     if (weaponsToUse.equals(WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON)) {
                         break;
-                    }
-                    if (weaponsToUse.equals(WeaponsToUseEnum.TWO_WEAPONS) && weaponsUsedCounter == 2) {
+                    } else if (weaponsToUse.equals(WeaponsToUseEnum.TWO_WEAPONS) && weaponsUsedCounter == 2) {
                         DualWielding dualWielding = (DualWielding) AbstractDungeon.player.getRelic(DualWielding.ID);
                         if (dualWielding != null) {
                             dualWielding.flash();
@@ -165,8 +164,7 @@ public class WeaponPower extends AbstractPower {
                     weaponsUsedCounter++;
                     if (weaponsToUse.equals(WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON)) {
                         break;
-                    }
-                    if (weaponsToUse.equals(WeaponsToUseEnum.TWO_WEAPONS) && weaponsUsedCounter == 2) {
+                    } else if (weaponsToUse.equals(WeaponsToUseEnum.TWO_WEAPONS) && weaponsUsedCounter == 2) {
                         break;
                     }
                 }

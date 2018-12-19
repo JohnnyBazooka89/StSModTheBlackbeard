@@ -1242,7 +1242,7 @@
       "name": "Spearhead",
       "tier": "Common",
       "pool": "Blackbeard_black",
-      "description": "If a Weapon has 1 Durability, it deals 3 damage more.",
+      "description": "If a Weapon has 1 Durability, it deals 3 more damage.",
       "flavorText": "The durability of your Weapon ends... and so does the life of your enemy."
     },
     {
@@ -1264,7 +1264,7 @@
       "tier": "Uncommon",
       "pool": "Blackbeard_black",
       "description": "Your attacks now use two rightmost Weapons.",
-      "flavorText": "Blackbeard's right arm is much stronger than his left arm. But when in need he can dual wield Weapons with ease."
+      "flavorText": "The Blackbeard's right arm is much stronger than his left arm. But when in need he can dual wield Weapons with ease."
     },
     {
       "name": "Golden Ring",
