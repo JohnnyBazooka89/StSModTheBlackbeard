@@ -44,7 +44,7 @@ public class SmithingHammerAction extends AbstractGameAction {
                     upgradeable.group.get(0).superFlash();
                     upgradeable.group.get(0).applyPowers();
 
-                    smithingHammerOrb.use();
+                    smithingHammerOrb.use(false);
                 }
 
                 if (AbstractDungeon.player.hasPower(WeaponPower.POWER_ID)) {

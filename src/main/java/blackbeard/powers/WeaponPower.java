@@ -53,7 +53,7 @@ public class WeaponPower extends AbstractPower {
                 if (o instanceof WeaponOrb) {
                     WeaponOrb weaponOrb = (WeaponOrb) o;
                     if (!weaponOrb.isJustAddedUsingAttackCard()) {
-                        weaponOrb.use();
+                        weaponOrb.use(true);
                         weaponsUsedCounter++;
                     }
                     if (weaponsToUse.equals(WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON)) {

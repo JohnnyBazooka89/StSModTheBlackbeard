@@ -103,9 +103,11 @@ public abstract class WeaponOrb extends AbstractOrb {
         return justAddedUsingAttackCard;
     }
 
-    public void use() {
+    public void use(boolean triggerEffectOnUse) {
         durability--;
-        effectOnUse();
+        if (triggerEffectOnUse) {
+            effectOnUse();
+        }
         updateDescription();
     }
 
