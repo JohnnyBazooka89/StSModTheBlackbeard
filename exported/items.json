@@ -1,7 +1,7 @@
 {
   "mod": {
     "name": "The Blackbeard",
-    "version": "1.5.1",
+    "version": "1.5.3",
     "authors": [
       "JohnnyBazooka89"
     ],
@@ -149,7 +149,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 14 Block.\nAt the end of your next turn, you are dealt 4 damage."
+      "description": "Gain 14 Block.\nAt the end of your next turn, you take 4 damage."
     },
     {
       "name": "Delayed Pain+",
@@ -157,7 +157,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 18 Block.\nAt the end of your next turn, you are dealt 4 damage."
+      "description": "Gain 18 Block.\nAt the end of your next turn, you take 4 damage."
     },
     {
       "name": "Fencing",
@@ -549,7 +549,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 18 damage.\nAt the end of your next turn, you are dealt 6 damage."
+      "description": "Deal 18 damage.\nAt the end of your next turn, you take 6 damage."
     },
     {
       "name": "Dangerous Blow+",
@@ -557,7 +557,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 22 damage.\nAt the end of your next turn, you are dealt 6 damage."
+      "description": "Deal 22 damage.\nAt the end of your next turn, you take 6 damage."
     },
     {
       "name": "Double Bottom",
@@ -629,7 +629,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 1 Intangible.\nLose 2 Resistance.\nExhaust."
+      "description": "Gain 1 Intangible.\nLose 3 Resistance.\nExhaust."
     },
     {
       "name": "Ghost In The Rum+",
@@ -637,7 +637,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 1 Intangible.\nLose 1 Resistance.\nExhaust."
+      "description": "Gain 1 Intangible.\nLose 2 Resistance.\nExhaust."
     },
     {
       "name": "Golden Cannonball",
@@ -693,7 +693,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Targeted enemy is dealt 8 damage at the start of their turn.\nLasts for 3 turns."
+      "description": "Targeted enemy takes 8 damage at the start of their turn.\nLasts for 3 turns."
     },
     {
       "name": "Keelhauling+",
@@ -701,7 +701,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "2",
-      "description": "Targeted enemy is dealt 8 damage at the start of their turn.\nLasts for 4 turns."
+      "description": "Targeted enemy takes 8 damage at the start of their turn.\nLasts for 4 turns."
     },
     {
       "name": "Pirate Earring",
@@ -885,7 +885,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 1 Intangible.\nAt the end of your next turn, you are dealt 12 damage.\nExhaust."
+      "description": "Gain 1 Intangible.\nAt the start of the turn on which you are no longer Intangible, you take 12 damage.\nExhaust."
     },
     {
       "name": "Vengeful Spirit+",
@@ -893,7 +893,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Gain 1 Intangible.\nAt the end of your next turn, you are dealt 8 damage.\nExhaust."
+      "description": "Gain 1 Intangible.\nAt the start of the turn on which you are no longer Intangible, you take 8 damage.\nExhaust."
     },
     {
       "name": "Wise Defend",
@@ -1189,7 +1189,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "Gain 2 Intangible.\n At the start of the turn on which you are no longer Intangible, you are dealt 30 damage."
+      "description": "Gain 2 Intangible.\nAt the start of the turn on which you are no longer Intangible, you take 30 damage."
     },
     {
       "name": "Undead Form+",
@@ -1197,7 +1197,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "3",
-      "description": "Gain 3 Intangible.\n At the start of the turn on which you are no longer Intangible, you are dealt 30 damage."
+      "description": "Gain 3 Intangible.\nAt the start of the turn on which you are no longer Intangible, you take 30 damage."
     },
     {
       "name": "Weapon Mastery",

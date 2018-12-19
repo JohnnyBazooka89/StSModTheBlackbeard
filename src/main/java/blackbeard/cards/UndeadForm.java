@@ -4,7 +4,7 @@ import basemod.abstracts.CustomCard;
 import basemod.helpers.BaseModCardTags;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.enums.AbstractCardEnum;
-import blackbeard.powers.UndeadFormPower;
+import blackbeard.powers.DamageWhenIntangibleEndsPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -34,7 +34,7 @@ public class UndeadForm extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new IntangiblePlayerPower(p, this.magicNumber), this.magicNumber));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new UndeadFormPower(p, DAMAGE_TO_TAKE), DAMAGE_TO_TAKE));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DamageWhenIntangibleEndsPower(p, DAMAGE_TO_TAKE), DAMAGE_TO_TAKE));
     }
 
     public void upgrade() {

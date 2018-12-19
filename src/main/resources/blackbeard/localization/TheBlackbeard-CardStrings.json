@@ -202,7 +202,7 @@
   },
   "blackbeard:Keelhauling": {
     "NAME": "Keelhauling",
-    "DESCRIPTION": "Targeted enemy is dealt 8 damage at the start of their turn. NL Lasts for !M! turns."
+    "DESCRIPTION": "Targeted enemy takes 8 damage at the start of their turn. NL Lasts for !M! turns."
   },
   "blackbeard:BlindAttacks": {
     "NAME": "Blind Attacks",
@@ -218,11 +218,11 @@
   },
   "blackbeard:DangerousBlow": {
     "NAME": "Dangerous Blow",
-    "DESCRIPTION": "Deal !D! damage. NL At the end of your next turn, you are dealt !M! damage."
+    "DESCRIPTION": "Deal !D! damage. NL At the end of your next turn, you take !M! damage."
   },
   "blackbeard:VengefulSpirit": {
     "NAME": "Vengeful Spirit",
-    "DESCRIPTION": "Gain 1 Intangible. NL At the end of your next turn, you are dealt !M! damage. NL Exhaust."
+    "DESCRIPTION": "Gain 1 Intangible. NL At the start of the turn on which you are no longer Intangible, you take !M! damage. NL Exhaust."
   },
   "blackbeard:Revenge": {
     "NAME": "Revenge",
@@ -304,7 +304,7 @@
   },
   "blackbeard:DelayedPain": {
     "NAME": "Delayed Pain",
-    "DESCRIPTION": "Gain !B! Block. NL At the end of your next turn, you are dealt !M! damage."
+    "DESCRIPTION": "Gain !B! Block. NL At the end of your next turn, you take !M! damage."
   },
   "blackbeard:ArmorUp": {
     "NAME": "Armor Up",
@@ -375,6 +375,6 @@
   },
   "blackbeard:UndeadForm": {
     "NAME": "Undead Form",
-    "DESCRIPTION": "Gain !M! Intangible. NL  At the start of the turn on which you are no longer Intangible, you are dealt 30 damage."
+    "DESCRIPTION": "Gain !M! Intangible. NL At the start of the turn on which you are no longer Intangible, you take 30 damage."
   }
 }

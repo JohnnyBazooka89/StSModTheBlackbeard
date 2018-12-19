@@ -7,13 +7,13 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-public class UndeadFormPower extends AbstractPower {
-    public static final String POWER_ID = "blackbeard:UndeadFormPower";
+public class DamageWhenIntangibleEndsPower extends AbstractPower {
+    public static final String POWER_ID = "blackbeard:DamageWhenIntangibleEndsPower";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    public UndeadFormPower(AbstractCreature owner, int amount) {
+    public DamageWhenIntangibleEndsPower(AbstractCreature owner, int amount) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
