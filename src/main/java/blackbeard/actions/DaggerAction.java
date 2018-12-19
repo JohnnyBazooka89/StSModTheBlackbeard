@@ -24,7 +24,7 @@ public class DaggerAction extends AbstractGameAction {
     public void update() {
         if (this.duration == Settings.ACTION_DUR_FAST) {
 
-            AbstractDungeon.actionManager.addToBottom(new SwordBoomerangAction(AbstractDungeon.getMonsters().getRandomMonster(true), new DamageInfo(p, daggerOrb.getAttack(), DamageInfo.DamageType.THORNS), 1));
+            AbstractDungeon.actionManager.addToBottom(new SwordBoomerangAction(AbstractDungeon.getMonsters().getRandomMonster(true), new DamageInfo(p, daggerOrb.getDamageToDeal(), DamageInfo.DamageType.THORNS), 1));
 
             daggerOrb.use();
 

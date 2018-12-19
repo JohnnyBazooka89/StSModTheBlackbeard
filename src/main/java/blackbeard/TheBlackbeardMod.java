@@ -170,6 +170,8 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addRelicToCustomPool(new PoorMathSkills(), AbstractCardEnum.BLACKBEARD_BLACK);
         BaseMod.addRelicToCustomPool(new PowderCan(), AbstractCardEnum.BLACKBEARD_BLACK);
         BaseMod.addRelicToCustomPool(new Soberminded(), AbstractCardEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new Spearhead(), AbstractCardEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new DualWielding(), AbstractCardEnum.BLACKBEARD_BLACK);
 
         logger.info("Done editing relics");
     }

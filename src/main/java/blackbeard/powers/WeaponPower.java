@@ -2,6 +2,7 @@ package blackbeard.powers;
 
 import blackbeard.enums.WeaponsToUseEnum;
 import blackbeard.orbs.WeaponOrb;
+import blackbeard.relics.DualWielding;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -44,14 +45,25 @@ public class WeaponPower extends AbstractPower {
             WeaponsToUseEnum weaponsToUse = WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON;
             if (AbstractDungeon.player.hasPower(SwordDancePower.POWER_ID)) {
                 weaponsToUse = WeaponsToUseEnum.ALL_WEAPONS;
+            } else if (AbstractDungeon.player.hasRelic(DualWielding.ID)) {
+                weaponsToUse = WeaponsToUseEnum.TWO_WEAPONS;
             }
+            int weaponsUsedCounter = 0;
             for (AbstractOrb o : AbstractDungeon.player.orbs) {
                 if (o instanceof WeaponOrb) {
                     WeaponOrb weaponOrb = (WeaponOrb) o;
                     if (!weaponOrb.isJustAddedUsingAttackCard()) {
                         weaponOrb.use();
+                        weaponsUsedCounter++;
                     }
                     if (weaponsToUse.equals(WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON)) {
+                        break;
+                    }
+                    if (weaponsToUse.equals(WeaponsToUseEnum.TWO_WEAPONS) && weaponsUsedCounter == 2) {
+                        DualWielding dualWielding = (DualWielding) AbstractDungeon.player.getRelic(DualWielding.ID);
+                        if (dualWielding != null) {
+                            dualWielding.flash();
+                        }
                         break;
                     }
                 }
@@ -140,14 +152,21 @@ public class WeaponPower extends AbstractPower {
             WeaponsToUseEnum weaponsToUse = WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON;
             if (AbstractDungeon.player.hasPower(SwordDancePower.POWER_ID)) {
                 weaponsToUse = WeaponsToUseEnum.ALL_WEAPONS;
+            } else if (AbstractDungeon.player.hasRelic(DualWielding.ID)) {
+                weaponsToUse = WeaponsToUseEnum.TWO_WEAPONS;
             }
 
             int weaponAttack = 0;
+            int weaponsUsedCounter = 0;
             for (AbstractOrb o : AbstractDungeon.player.orbs) {
                 if (o instanceof WeaponOrb) {
                     WeaponOrb weaponOrb = (WeaponOrb) o;
-                    weaponAttack += weaponOrb.getAttack();
+                    weaponAttack += weaponOrb.getDamageToDeal();
+                    weaponsUsedCounter++;
                     if (weaponsToUse.equals(WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON)) {
+                        break;
+                    }
+                    if (weaponsToUse.equals(WeaponsToUseEnum.TWO_WEAPONS) && weaponsUsedCounter == 2) {
                         break;
                     }
                 }

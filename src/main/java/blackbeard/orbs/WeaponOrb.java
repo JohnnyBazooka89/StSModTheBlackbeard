@@ -2,6 +2,7 @@ package blackbeard.orbs;
 
 import blackbeard.powers.ArmorUpPower;
 import blackbeard.powers.SalvagerPower;
+import blackbeard.relics.Spearhead;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
@@ -88,6 +89,14 @@ public abstract class WeaponOrb extends AbstractOrb {
 
     public int getDurability() {
         return durability;
+    }
+
+    public int getDamageToDeal() {
+        int additionalAttack = 0;
+        if (AbstractDungeon.player.hasRelic(Spearhead.ID) && durability == 1) {
+            additionalAttack += 3;
+        }
+        return attack + additionalAttack;
     }
 
     public boolean isJustAddedUsingAttackCard() {

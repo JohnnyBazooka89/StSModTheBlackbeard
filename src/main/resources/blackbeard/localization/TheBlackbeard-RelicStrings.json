@@ -82,5 +82,19 @@
     "DESCRIPTIONS": [
       "Gain [R] at the start of each turn. At the start of each combat, lose 1 Resistance."
     ]
+  },
+  "blackbeard:Spearhead": {
+    "NAME": "Spearhead",
+    "FLAVOR": "The durability of your Weapon ends... and so does the life of your enemy.",
+    "DESCRIPTIONS": [
+      "If a Weapon has 1 Durability, it deals 3 more damage."
+    ]
+  },
+  "blackbeard:DualWielding": {
+    "NAME": "Dual Wielding",
+    "FLAVOR": "The Blackbeard's right arm is much stronger than his left arm. But when in need he can dual wield Weapons with ease.",
+    "DESCRIPTIONS": [
+      "Your attacks now use two rightmost Weapons."
+    ]
   }
 }
