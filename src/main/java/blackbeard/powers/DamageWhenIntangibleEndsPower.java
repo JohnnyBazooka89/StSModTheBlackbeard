@@ -1,6 +1,6 @@
 package blackbeard.powers;
 
-import blackbeard.actions.UndeadFormAction;
+import blackbeard.actions.DamageWhenIntangibleEndsAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -32,6 +32,6 @@ public class DamageWhenIntangibleEndsPower extends AbstractPower {
 
     @Override
     public void atStartOfTurn() {
-        AbstractDungeon.actionManager.addToBottom(new UndeadFormAction(this.amount));
+        AbstractDungeon.actionManager.addToBottom(new DamageWhenIntangibleEndsAction(this.amount));
     }
 }

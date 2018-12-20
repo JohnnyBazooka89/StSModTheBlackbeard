@@ -10,12 +10,12 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
 
-public class UndeadFormAction extends AbstractGameAction {
+public class DamageWhenIntangibleEndsAction extends AbstractGameAction {
 
     private AbstractPlayer p;
     private int damageAmount;
 
-    public UndeadFormAction(int damageAmount) {
+    public DamageWhenIntangibleEndsAction(int damageAmount) {
         this.actionType = ActionType.DAMAGE;
         this.p = AbstractDungeon.player;
         this.damageAmount = damageAmount;

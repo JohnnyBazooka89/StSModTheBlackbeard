@@ -43,7 +43,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     public static final String DEFAULT_WEAPON_ORB_ID = "blackbeard:WeaponOrb";
 
     //Mod metadata
-    private static final String MODNAME = "The Blackbeard";
+    private static final String MOD_NAME = "The Blackbeard";
     private static final String AUTHOR = "JohnnyBazooka89";
     private static final String DESCRIPTION = "Adds The Blackbeard as a new playable character.";
 
@@ -127,7 +127,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         // Mod badge
         Texture badgeTexture = new Texture(BADGE_IMG);
         ModPanel settingsPanel = new ModPanel();
-        BaseMod.registerModBadge(badgeTexture, MODNAME, AUTHOR, DESCRIPTION, settingsPanel);
+        BaseMod.registerModBadge(badgeTexture, MOD_NAME, AUTHOR, DESCRIPTION, settingsPanel);
     }
 
     @Override
@@ -136,7 +136,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         logger.info("Add " + TheBlackbeardEnum.BLACKBEARD_CLASS.toString());
 
         BaseMod.addCharacter(
-                new TheBlackbeard("The Blackbeard", TheBlackbeardEnum.BLACKBEARD_CLASS),
+                new TheBlackbeard(MOD_NAME, TheBlackbeardEnum.BLACKBEARD_CLASS),
                 BLACKBEARD_BUTTON,
                 BLACKBEARD_PORTRAIT,
                 TheBlackbeardEnum.BLACKBEARD_CLASS
