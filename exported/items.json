@@ -1,14 +1,14 @@
 {
   "mod": {
     "name": "The Blackbeard",
-    "version": "1.5.5",
+    "version": "1.5.7",
     "authors": [
       "JohnnyBazooka89"
     ],
     "credits": "",
     "description": "Adds The Blackbeard as a new playable character. More info: https://github.com/JohnnyBazooka89/StSModTheBlackbeard",
-    "mts_version": "3.5.0",
-    "sts_version": "12-06-2018",
+    "mts_version": "3.6.3",
+    "sts_version": "12-20-2018",
     "dependencies": [
       "basemod"
     ],
@@ -94,22 +94,6 @@
       "type": "Attack",
       "cost": "1",
       "description": "Deal 4 damage to a random enemy 3 times."
-    },
-    {
-      "name": "Cat O' Nine Tails",
-      "color": "Blackbeard_black",
-      "rarity": "Common",
-      "type": "Skill",
-      "cost": "1",
-      "description": "Equip a 4 / 2 Weapon. After you attack with this Weapon, give it + 2 Attack."
-    },
-    {
-      "name": "Cat O' Nine Tails+",
-      "color": "Blackbeard_black",
-      "rarity": "Common",
-      "type": "Skill",
-      "cost": "1",
-      "description": "Equip a 4 / 3 Weapon. After you attack with this Weapon, give it + 2 Attack."
     },
     {
       "name": "Cloak And Cannonball",
@@ -309,7 +293,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Choose 1 of 3 Swords.\nEquip a 2 / 3 Weapon with an additional effect."
+      "description": "Choose 1 of 3 Swords.\nEquip a 2 / 4 Weapon with an additional effect."
     },
     {
       "name": "Sword Dance",
@@ -333,7 +317,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "1",
-      "description": "Choose 1 of 3 Swords.\nEquip a 3 / 3 Weapon with an additional effect."
+      "description": "Choose 1 of 3 Swords.\nEquip a 3 / 4 Weapon with an additional effect."
     },
     {
       "name": "Tactical Retreat",
@@ -526,6 +510,22 @@
       "type": "Skill",
       "cost": "2",
       "description": "Gain 12 Block.\nAdd 2 Cannonballs to your hand."
+    },
+    {
+      "name": "Cat O' Nine Tails",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Equip a 4 / 3 Weapon. After you attack with this Weapon, give it +2 Attack."
+    },
+    {
+      "name": "Cat O' Nine Tails+",
+      "color": "Blackbeard_black",
+      "rarity": "Uncommon",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Equip a 6 / 3 Weapon. After you attack with this Weapon, give it +2 Attack."
     },
     {
       "name": "Chaotic Defend",

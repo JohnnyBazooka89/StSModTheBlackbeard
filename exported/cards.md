@@ -5,7 +5,6 @@
 | Strike | ![](small-card-images/Strike.png) | ![](small-card-images/StrikePlus.png) | Basic | Attack | 1 | Deal 6(9) damage. |
 | Beat Up | ![](small-card-images/BeatUp.png) | ![](small-card-images/BeatUpPlus.png) | Common | Attack | 1 | Deal 4(5) damage twice. Apply 1(2) Vulnerable. |
 | Blind Attacks | ![](small-card-images/BlindAttacks.png) | ![](small-card-images/BlindAttacksPlus.png) | Common | Attack | 1 | Deal 3(4) damage to a random enemy 3 times. |
-| Cat O' Nine Tails | ![](small-card-images/CatONineTails.png) | ![](small-card-images/CatONineTailsPlus.png) | Common | Skill | 1 | Equip a 4 / 2(3) Weapon. After you attack with this Weapon, give it + 2 Attack. |
 | Cloak And Cannonball | ![](small-card-images/CloakAndCannonball.png) | ![](small-card-images/CloakAndCannonballPlus.png) | Common | Skill | 1 | Gain 4(7) Block.  Add a Cannonball to your hand. |
 | Dagger | ![](small-card-images/Dagger.png) | ![](small-card-images/DaggerPlus.png) | Common | Skill | 0 | Equip a 2 / 3(4) Weapon. At the start of your turn, 1 Durability from Dagger is used to deal damage equal to its Attack to a random enemy. |
 | Delayed Pain | ![](small-card-images/DelayedPain.png) | ![](small-card-images/DelayedPainPlus.png) | Common | Skill | 1 | Gain 14(18) Block. At the end of your next turn, you take 4 damage. |
@@ -18,7 +17,7 @@
 | Sharpening | ![](small-card-images/Sharpening.png) | ![](small-card-images/SharpeningPlus.png) | Common | Skill | 1 | Give all your equipped Weapons + 2(3) attack. |
 | Shrapnel | ![](small-card-images/Shrapnel.png) | ![](small-card-images/ShrapnelPlus.png) | Common | Attack | 1 | Deal 7(10) damage to ALL enemies. |
 | Spear | ![](small-card-images/Spear.png) | ![](small-card-images/SpearPlus.png) | Common | Skill | 0 | Equip a 7(10) / 1 Weapon. |
-| Sword | ![](small-card-images/Sword.png) | ![](small-card-images/SwordPlus.png) | Common | Skill | 1 | Choose 1 of 3 Swords. Equip a 2(3) / 3 Weapon with an additional effect. |
+| Sword | ![](small-card-images/Sword.png) | ![](small-card-images/SwordPlus.png) | Common | Skill | 1 | Choose 1 of 3 Swords. Equip a 2(3) / 4 Weapon with an additional effect. |
 | Sword Dance | ![](small-card-images/SwordDance.png) | ![](small-card-images/SwordDancePlus.png) | Common | Skill | 1 | This turn, your next 2(3) Attacks use all equipped Weapons. |
 | Tactical Retreat | ![](small-card-images/TacticalRetreat.png) | ![](small-card-images/TacticalRetreatPlus.png) | Common | Skill | 1 | Gain 8(11) Block. Draw 1 more card next turn. |
 | Toast | ![](small-card-images/Toast.png) | ![](small-card-images/ToastPlus.png) | Common | Skill | 0 | Gain 3(4) Resistance. At the start of your next turn, lose 3(4) Resistance. Exhaust. |
@@ -32,6 +31,7 @@
 | Cannon Barrage | ![](small-card-images/CannonBarrage.png) | ![](small-card-images/CannonBarragePlus.png) | Uncommon | Skill | X | Add X (X+1) Cannonballs to your hand. |
 | Cannonball Supply | ![](small-card-images/CannonballSupply.png) | ![](small-card-images/CannonballSupplyPlus.png) | Uncommon | Skill | 2 | Add 3 Cannonballs to your hand. Exhaust. (not Exhaust.) |
 | Captain's Cabin | ![](small-card-images/CaptainsCabin.png) | ![](small-card-images/CaptainsCabinPlus.png) | Uncommon | Skill | 2 | Gain 10(12) Block. Add 1(2) Cannonball(s) to your hand. |
+| Cat O' Nine Tails | ![](small-card-images/CatONineTails.png) | ![](small-card-images/CatONineTailsPlus.png) | Uncommon | Skill | 1 | Equip a 4(6) / 3 Weapon. After you attack with this Weapon, give it +2 Attack. |
 | Chaotic Defend | ![](small-card-images/ChaoticDefend.png) | ![](small-card-images/ChaoticDefendPlus.png) | Uncommon | Skill | 1 | Gain 7(9) Block. Add 1(2) random card(s) to your hand. |
 | Dangerous Blow | ![](small-card-images/DangerousBlow.png) | ![](small-card-images/DangerousBlowPlus.png) | Uncommon | Attack | 1 | Deal 18(22) damage. At the end of your next turn, you take 6 damage. |
 | Double Bottom | ![](small-card-images/DoubleBottom.png) | ![](small-card-images/DoubleBottomPlus.png) | Uncommon | Skill | 2 | Gain 10(13) Block. Next turn gain 10(13) Block. |
