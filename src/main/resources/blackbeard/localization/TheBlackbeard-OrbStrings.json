@@ -1,4 +1,13 @@
 {
+  "blackbeard:WeaponOrb": {
+    "NAME": "Weapon",
+    "DESCRIPTION": [
+      " NL ",
+      "Attack: ",
+      " NL ",
+      "Durability: #b"
+    ]
+  },
   "blackbeard:DefaultWeaponOrb": {
     "NAME": "Sword",
     "DESCRIPTION": [

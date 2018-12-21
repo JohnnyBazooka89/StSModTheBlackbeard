@@ -7,10 +7,12 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
+import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import org.apache.commons.lang3.StringUtils;
 
@@ -21,6 +23,9 @@ public abstract class WeaponOrb extends AbstractOrb {
     protected String rawDescription;
     protected boolean justAddedUsingAttackCard;
     private String imagePath;
+
+    public static final String WEAPON_ORB_ID = "blackbeard:WeaponOrb";
+    private static final OrbStrings orbStrings = CardCrawlGame.languagePack.getOrbString(WEAPON_ORB_ID);
 
     public WeaponOrb(String id, String name, String rawDecription, String imagePath, int attack, int durability, boolean justAddedUsingAttackCard) {
         this.ID = id;
@@ -41,9 +46,9 @@ public abstract class WeaponOrb extends AbstractOrb {
         String descriptionToSet;
         descriptionToSet = rawDescription;
         if (StringUtils.isNotEmpty(descriptionToSet)) {
-            descriptionToSet += " NL ";
+            descriptionToSet += orbStrings.DESCRIPTION[0];
         }
-        descriptionToSet += "Attack: " + attack + " NL " + "Durability: #b" + durability;
+        descriptionToSet += orbStrings.DESCRIPTION[1] + attack + orbStrings.DESCRIPTION[2] + orbStrings.DESCRIPTION[3] + durability;
         this.description = descriptionToSet;
     }
 
