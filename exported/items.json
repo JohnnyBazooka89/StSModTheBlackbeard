@@ -517,7 +517,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Equip a 4 / 3 Weapon. After you attack with this Weapon, give it +2 Attack."
+      "description": "Equip a 4 / 3 Weapon. After you attack with this Weapon, give it + 2 Attack."
     },
     {
       "name": "Cat O' Nine Tails+",
@@ -525,7 +525,7 @@
       "rarity": "Uncommon",
       "type": "Skill",
       "cost": "1",
-      "description": "Equip a 6 / 3 Weapon. After you attack with this Weapon, give it +2 Attack."
+      "description": "Equip a 6 / 3 Weapon. After you attack with this Weapon, give it + 2 Attack."
     },
     {
       "name": "Chaotic Defend",

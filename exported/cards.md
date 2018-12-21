@@ -31,7 +31,7 @@
 | Cannon Barrage | ![](small-card-images/CannonBarrage.png) | ![](small-card-images/CannonBarragePlus.png) | Uncommon | Skill | X | Add X (X+1) Cannonballs to your hand. |
 | Cannonball Supply | ![](small-card-images/CannonballSupply.png) | ![](small-card-images/CannonballSupplyPlus.png) | Uncommon | Skill | 2 | Add 3 Cannonballs to your hand. Exhaust. (not Exhaust.) |
 | Captain's Cabin | ![](small-card-images/CaptainsCabin.png) | ![](small-card-images/CaptainsCabinPlus.png) | Uncommon | Skill | 2 | Gain 10(12) Block. Add 1(2) Cannonball(s) to your hand. |
-| Cat O' Nine Tails | ![](small-card-images/CatONineTails.png) | ![](small-card-images/CatONineTailsPlus.png) | Uncommon | Skill | 1 | Equip a 4(6) / 3 Weapon. After you attack with this Weapon, give it +2 Attack. |
+| Cat O' Nine Tails | ![](small-card-images/CatONineTails.png) | ![](small-card-images/CatONineTailsPlus.png) | Uncommon | Skill | 1 | Equip a 4(6) / 3 Weapon. After you attack with this Weapon, give it + 2 Attack. |
 | Chaotic Defend | ![](small-card-images/ChaoticDefend.png) | ![](small-card-images/ChaoticDefendPlus.png) | Uncommon | Skill | 1 | Gain 7(9) Block. Add 1(2) random card(s) to your hand. |
 | Dangerous Blow | ![](small-card-images/DangerousBlow.png) | ![](small-card-images/DangerousBlowPlus.png) | Uncommon | Attack | 1 | Deal 18(22) damage. At the end of your next turn, you take 6 damage. |
 | Double Bottom | ![](small-card-images/DoubleBottom.png) | ![](small-card-images/DoubleBottomPlus.png) | Uncommon | Skill | 2 | Gain 10(13) Block. Next turn gain 10(13) Block. |
