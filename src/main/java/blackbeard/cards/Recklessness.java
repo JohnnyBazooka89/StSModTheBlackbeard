@@ -37,6 +37,7 @@ public class Recklessness extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new LoseEnergyNextTurnPower(p, ENERGY_TO_LOSE_NEXT_TURN), ENERGY_TO_LOSE_NEXT_TURN));
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

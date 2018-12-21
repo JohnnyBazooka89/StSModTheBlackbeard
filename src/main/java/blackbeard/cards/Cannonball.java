@@ -38,6 +38,7 @@ public class Cannonball extends CustomCard {
                 AbstractGameAction.AttackEffect.BLUNT_LIGHT));
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

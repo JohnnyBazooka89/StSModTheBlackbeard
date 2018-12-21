@@ -37,6 +37,7 @@ public class UndeadForm extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DamageWhenIntangibleEndsPower(p, DAMAGE_TO_TAKE), DAMAGE_TO_TAKE));
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

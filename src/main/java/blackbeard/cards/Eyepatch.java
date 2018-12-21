@@ -33,6 +33,7 @@ public class Eyepatch extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DrawPower(p, ADDITIONAL_CARDS_TO_DRAW_EACH_TURN), ADDITIONAL_CARDS_TO_DRAW_EACH_TURN));
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

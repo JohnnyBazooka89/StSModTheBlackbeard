@@ -35,6 +35,7 @@ public class SwordOfChaos extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new EquipAction(new SwordOfChaosOrb(this.magicNumber, WEAPON_DURABILITY, false)));
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

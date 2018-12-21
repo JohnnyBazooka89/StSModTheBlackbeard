@@ -36,6 +36,7 @@ public class CloakAndCannonball extends CustomCard implements ILongTitle {
         AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Cannonball(), 1));
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

@@ -20,6 +20,7 @@ public class Penknife extends CustomRelic {
         this.counter = 0;
     }
 
+    @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (card.type == AbstractCard.CardType.ATTACK && AbstractDungeon.player.hasPower(WeaponPower.POWER_ID)) {
             ++this.counter;
@@ -37,6 +38,7 @@ public class Penknife extends CustomRelic {
         }
     }
 
+    @Override
     public void atBattleStart() {
         if (this.counter == COUNT - 1) {
             this.beginPulse();

@@ -33,6 +33,7 @@ public class CannonBarrage extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new CannonBarrageAction(p, this.upgraded, this.freeToPlayOnce, this.energyOnUse));
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

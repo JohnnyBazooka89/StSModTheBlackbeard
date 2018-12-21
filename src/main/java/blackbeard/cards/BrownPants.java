@@ -33,6 +33,7 @@ public class BrownPants extends CustomCard {
 
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

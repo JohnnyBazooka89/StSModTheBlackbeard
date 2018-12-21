@@ -28,11 +28,13 @@ public class Fencing extends CustomCard {
         this.baseMagicNumber = this.magicNumber = UPGRADE_VALUE;
     }
 
+
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new UpgradeWeaponsAction(this.magicNumber + 1, this.magicNumber, WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON));
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

@@ -70,6 +70,7 @@ public class FinalBarrage extends CustomCard {
         this.initializeDescription();
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

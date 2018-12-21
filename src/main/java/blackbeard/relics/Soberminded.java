@@ -15,16 +15,19 @@ public class Soberminded extends CustomRelic {
         super(ID, new Texture(TheBlackbeardMod.getRelicImagePath(ID)), new Texture(TheBlackbeardMod.getRelicOutlineImagePath(ID)), RelicTier.BOSS, LandingSound.MAGICAL);
     }
 
+    @Override
     public void atBattleStart() {
         this.flash();
         AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ResistancePower(AbstractDungeon.player, -1), -1));
     }
 
+    @Override
     public void onEquip() {
         ++AbstractDungeon.player.energy.energyMaster;
     }
 
+    @Override
     public void onUnequip() {
         --AbstractDungeon.player.energy.energyMaster;
     }

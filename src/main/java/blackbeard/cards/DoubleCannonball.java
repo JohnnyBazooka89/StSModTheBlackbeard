@@ -46,6 +46,7 @@ public class DoubleCannonball extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(cannonball, 1));
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

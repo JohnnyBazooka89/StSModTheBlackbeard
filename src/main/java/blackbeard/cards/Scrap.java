@@ -38,6 +38,7 @@ public class Scrap extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(this.magicNumber));
     }
 
+    @Override
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
         boolean canUse = false;
         if (AbstractDungeon.player.hasPower(WeaponPower.POWER_ID)) {
@@ -53,6 +54,7 @@ public class Scrap extends CustomCard {
         return canUse;
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

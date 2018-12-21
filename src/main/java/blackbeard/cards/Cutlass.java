@@ -34,6 +34,7 @@ public class Cutlass extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new EquipAction(new CutlassOrb(WEAPON_ATTACK, WEAPON_DURABILITY, false)));
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

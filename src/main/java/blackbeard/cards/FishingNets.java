@@ -33,6 +33,7 @@ public class FishingNets extends CustomCard {
 
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

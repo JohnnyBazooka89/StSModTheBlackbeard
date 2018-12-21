@@ -35,6 +35,7 @@ public class Spear extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new EquipAction(new SpearOrb(this.magicNumber, WEAPON_DURABILITY, false)));
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

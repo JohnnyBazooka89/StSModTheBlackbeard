@@ -35,6 +35,7 @@ public class DefendBlackbeard extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

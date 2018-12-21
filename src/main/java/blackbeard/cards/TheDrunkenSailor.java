@@ -30,6 +30,7 @@ public class TheDrunkenSailor extends CustomCard implements ILongTitle {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new TheDrunkenSailorPower(p, 1), 1));
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

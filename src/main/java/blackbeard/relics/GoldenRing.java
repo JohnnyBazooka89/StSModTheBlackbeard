@@ -14,6 +14,7 @@ public class GoldenRing extends CustomRelic {
         super(ID, new Texture(TheBlackbeardMod.getRelicImagePath(ID)), new Texture(TheBlackbeardMod.getRelicOutlineImagePath(ID)), RelicTier.UNCOMMON, LandingSound.MAGICAL);
     }
 
+    @Override
     public void atBattleStart() {
         this.flash();
         AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ArtifactPower(AbstractDungeon.player, 1), 1));

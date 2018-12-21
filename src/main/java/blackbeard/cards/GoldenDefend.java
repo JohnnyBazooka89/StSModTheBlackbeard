@@ -37,12 +37,14 @@ public class GoldenDefend extends CustomCard implements IGoldenCard {
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
     }
 
+    @Override
     public void setGoldenValuesAndInitializeDescription() {
         this.baseBlock = this.block = this.magicNumber + (3 * GoldenCardsUtil.getBlackbeardGoldGained() / 200);
         this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(this.upgraded, DESCRIPTION, UPGRADE_DESCRIPTION, EXTENDED_DESCRIPTION);
         this.initializeDescription();
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

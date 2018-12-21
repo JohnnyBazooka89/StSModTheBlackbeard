@@ -39,6 +39,7 @@ public class BountyHunter extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new GreedAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), this.magicNumber));
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

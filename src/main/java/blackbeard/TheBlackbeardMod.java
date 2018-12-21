@@ -298,9 +298,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
 
         keywords = gson.fromJson(keywordStrings, typeToken);
 
-        keywords.forEach((k, v) -> {
-            BaseMod.addKeyword(v.NAMES, v.DESCRIPTION);
-        });
+        keywords.forEach((k, v) -> BaseMod.addKeyword(v.NAMES, v.DESCRIPTION));
 
         logger.info("Done editing keywords");
     }

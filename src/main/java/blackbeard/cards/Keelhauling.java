@@ -34,6 +34,7 @@ public class Keelhauling extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new KeelhaulingPower(m, this.magicNumber), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

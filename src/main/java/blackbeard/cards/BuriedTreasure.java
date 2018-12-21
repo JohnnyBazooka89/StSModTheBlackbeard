@@ -35,6 +35,7 @@ public class BuriedTreasure extends CustomCard {
         AbstractDungeon.player.gainGold(this.magicNumber);
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

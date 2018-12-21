@@ -35,6 +35,7 @@ public class CatONineTails extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new EquipAction(new CatONineTailsOrb(WEAPON_ATTACK, this.magicNumber, false)));
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

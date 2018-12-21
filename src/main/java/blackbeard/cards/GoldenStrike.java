@@ -41,12 +41,14 @@ public class GoldenStrike extends CustomCard implements IGoldenCard {
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
     }
 
+    @Override
     public void setGoldenValuesAndInitializeDescription() {
         this.baseDamage = this.damage = this.magicNumber + (3 * GoldenCardsUtil.getBlackbeardGoldGained() / 200);
         this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(upgraded, DESCRIPTION, UPGRADE_DESCRIPTION, EXTENDED_DESCRIPTION);
         this.initializeDescription();
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

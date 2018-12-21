@@ -39,6 +39,7 @@ public class HumongousCannonball extends CustomCard implements ILongTitle {
                 AbstractGameAction.AttackEffect.BLUNT_HEAVY));
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

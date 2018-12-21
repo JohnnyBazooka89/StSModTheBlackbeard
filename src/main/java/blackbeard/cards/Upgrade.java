@@ -33,6 +33,7 @@ public class Upgrade extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new UpgradeWeaponsAction(this.magicNumber, this.magicNumber, WeaponsToUseEnum.ALL_WEAPONS));
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

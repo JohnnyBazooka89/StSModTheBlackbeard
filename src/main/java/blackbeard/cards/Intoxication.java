@@ -35,6 +35,7 @@ public class Intoxication extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new IntoxicationPower(p, RESISTANCE_TO_LOSE_EACH_TURN), RESISTANCE_TO_LOSE_EACH_TURN));
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

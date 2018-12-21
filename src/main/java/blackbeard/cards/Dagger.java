@@ -35,6 +35,7 @@ public class Dagger extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new EquipAction(new DaggerOrb(WEAPON_ATTACK, this.magicNumber, false)));
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

@@ -48,6 +48,7 @@ public class Revenge extends CustomCard {
         this.initializeDescription();
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

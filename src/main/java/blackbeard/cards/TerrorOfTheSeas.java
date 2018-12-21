@@ -41,6 +41,7 @@ public class TerrorOfTheSeas extends CustomCard {
         }
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

@@ -35,6 +35,7 @@ public class Sharpening extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new UpgradeWeaponsAction(this.magicNumber, 0, WeaponsToUseEnum.ALL_WEAPONS));
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

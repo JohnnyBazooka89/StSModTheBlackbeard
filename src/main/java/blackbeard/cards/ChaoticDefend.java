@@ -40,6 +40,7 @@ public class ChaoticDefend extends CustomCard {
         }
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

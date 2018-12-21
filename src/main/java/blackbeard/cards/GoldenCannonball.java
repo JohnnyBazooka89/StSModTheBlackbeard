@@ -43,12 +43,14 @@ public class GoldenCannonball extends CustomCard implements IGoldenCard {
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
     }
 
+    @Override
     public void setGoldenValuesAndInitializeDescription() {
         this.baseDamage = this.damage = this.magicNumber + GoldenCardsUtil.getBlackbeardGoldGained() / 50;
         this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(upgraded, DESCRIPTION, UPGRADE_DESCRIPTION, EXTENDED_DESCRIPTION);
         this.initializeDescription();
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

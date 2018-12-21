@@ -38,6 +38,7 @@ public class BoostMorale extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(ENERGY_TO_GET + (this.upgraded ? UPGRADED_PLUS_ENERGY_TO_GET : 0)));
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

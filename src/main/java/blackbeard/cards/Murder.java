@@ -38,6 +38,7 @@ public class Murder extends CustomCard {
                 AbstractGameAction.AttackEffect.BLUNT_HEAVY));
     }
 
+    @Override
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
         boolean canUse = false;
         if (!(AbstractDungeon.getCurrRoom() instanceof MonsterRoomElite) && !(AbstractDungeon.getCurrRoom() instanceof MonsterRoomBoss)) {
@@ -50,6 +51,7 @@ public class Murder extends CustomCard {
         return canUse;
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

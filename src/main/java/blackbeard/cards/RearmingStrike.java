@@ -42,6 +42,7 @@ public class RearmingStrike extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new EquipAction(new DefaultWeaponOrb(WEAPON_ATTACK, WEAPON_DURABILITY, true)));
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
