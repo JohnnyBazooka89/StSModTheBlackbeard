@@ -10,7 +10,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import javassist.CtBehavior;
 
 @SpirePatch(clz = AbstractCard.class, method = "calculateCardDamage")
-
 public class CannonballsOfSteelCalculateCardDamagePatch {
 
     @SpireInsertPatch(locator = Locator.class, localvars = {"tmp"})

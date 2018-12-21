@@ -9,7 +9,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import javassist.CtBehavior;
 
 @SpirePatch(clz = AbstractCard.class, method = "applyPowers")
-
 public class CannonballsOfSteelApplyPowersPatch {
 
     @SpireInsertPatch(locator = Locator.class, localvars = {"tmp"})

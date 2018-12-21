@@ -16,15 +16,15 @@ public class TheDrunkenSailorPatch {
 
     @SpireInsertPatch(locator = Locator.class, localvars = {"potion"})
     public static void Insert(PotionPopUp potionPopUp, AbstractPotion potion) {
-        int potencyMultiplier = 0;
+        int amountOfAdditionalUsesOfPotion = 0;
 
         for (AbstractPower power : AbstractDungeon.player.powers) {
             if (power instanceof TheDrunkenSailorPower) {
                 TheDrunkenSailorPower theDrunkenSailorPower = (TheDrunkenSailorPower) power;
-                potencyMultiplier += theDrunkenSailorPower.amount;
+                amountOfAdditionalUsesOfPotion += theDrunkenSailorPower.amount;
             }
         }
-        for (int i = 0; i < potencyMultiplier; i++) {
+        for (int i = 0; i < amountOfAdditionalUsesOfPotion; i++) {
             AbstractMonster hoveredMonster = (AbstractMonster) ReflectionHacks.getPrivate(potionPopUp, PotionPopUp.class, "hoveredMonster");
             potion.use(hoveredMonster);
         }
