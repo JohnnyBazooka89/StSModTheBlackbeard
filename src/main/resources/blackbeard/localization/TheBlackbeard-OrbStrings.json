@@ -20,7 +20,7 @@
   "blackbeard:PowderKegOrb": {
     "NAME": "Powder Keg",
     "DESCRIPTION": [
-      "On Destroy, deal #b",
+      "When destroyed, deal #b",
       " damage to all enemies."
     ]
   },
