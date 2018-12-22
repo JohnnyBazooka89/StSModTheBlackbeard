@@ -9,13 +9,15 @@ Other mechanics are:
 - Gold scaling cards - some cards scale with how much Gold you gained this run.
 - Debuff cleansing - The Blackbeard is able to play powerful cards with negative effects, and later cleanse his debuffs.
 
+The Blackbeard has access to 2 character-specific potions, as well as Blood Potion and Ghost in a Jar. 
+
 Gameplay: 
 ![Gameplay](screenshots/Gameplay.jpg)
 
 Starting deck: 
 ![Gameplay](screenshots/StartingDeck.png)
 
-List of all cards can be find [here](/exported/cards.md). (Exported using [Slay the Spire exporter](https://github.com/twanvl/sts-exporter))
+List of all cards can be found [here](/exported/cards.md). You can also see [relics](/exported/relics.md) and [potions](/exported/potions.md). (Exported using [Slay the Spire exporter](https://github.com/twanvl/sts-exporter).)
 
 ## Requirements ##
 
