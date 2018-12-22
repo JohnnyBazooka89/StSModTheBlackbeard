@@ -33,7 +33,7 @@ public class GoldenStrike extends CustomCard implements IGoldenCard {
 
         this.tags.add(CardTags.STRIKE);
 
-        setGoldenValuesAndInitializeDescription();
+        setGoldenValuesAndUpdateDescription();
     }
 
     @Override
@@ -42,7 +42,7 @@ public class GoldenStrike extends CustomCard implements IGoldenCard {
     }
 
     @Override
-    public void setGoldenValuesAndInitializeDescription() {
+    public void setGoldenValuesAndUpdateDescription() {
         this.baseDamage = this.damage = this.magicNumber + (3 * GoldenCardsUtil.getBlackbeardGoldGained() / 200);
         this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(upgraded, DESCRIPTION, UPGRADE_DESCRIPTION, EXTENDED_DESCRIPTION);
         this.initializeDescription();
@@ -53,7 +53,7 @@ public class GoldenStrike extends CustomCard implements IGoldenCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeMagicNumber(UPGRADE_PLUS_ATTACK_DMG);
-            setGoldenValuesAndInitializeDescription();
+            setGoldenValuesAndUpdateDescription();
         }
     }
 

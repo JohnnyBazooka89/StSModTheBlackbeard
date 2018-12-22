@@ -35,7 +35,7 @@ public class GoldenCardsFixAbstractPlayerPatch {
         for (AbstractCard card : cardGroup.group) {
             if (card instanceof IGoldenCard) {
                 IGoldenCard goldenCard = (IGoldenCard) card;
-                goldenCard.setGoldenValuesAndInitializeDescription();
+                goldenCard.setGoldenValuesAndUpdateDescription();
             }
         }
     }

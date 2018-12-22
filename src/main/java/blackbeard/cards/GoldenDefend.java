@@ -29,7 +29,7 @@ public class GoldenDefend extends CustomCard implements IGoldenCard {
 
         this.baseMagicNumber = this.magicNumber = BLOCK_AMOUNT;
 
-        setGoldenValuesAndInitializeDescription();
+        setGoldenValuesAndUpdateDescription();
     }
 
     @Override
@@ -38,7 +38,7 @@ public class GoldenDefend extends CustomCard implements IGoldenCard {
     }
 
     @Override
-    public void setGoldenValuesAndInitializeDescription() {
+    public void setGoldenValuesAndUpdateDescription() {
         this.baseBlock = this.block = this.magicNumber + (3 * GoldenCardsUtil.getBlackbeardGoldGained() / 200);
         this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(this.upgraded, DESCRIPTION, UPGRADE_DESCRIPTION, EXTENDED_DESCRIPTION);
         this.initializeDescription();
@@ -49,7 +49,7 @@ public class GoldenDefend extends CustomCard implements IGoldenCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeMagicNumber(UPGRADE_BLOCK_AMOUNT);
-            setGoldenValuesAndInitializeDescription();
+            setGoldenValuesAndUpdateDescription();
         }
     }
 }

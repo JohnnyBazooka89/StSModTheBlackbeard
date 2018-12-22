@@ -31,7 +31,7 @@ public class GoldenRain extends CustomCard implements IGoldenCard {
         this.baseMagicNumber = this.magicNumber = PERMILLES_OF_GOLD_GAINED;
         this.isMultiDamage = true;
 
-        setGoldenValuesAndInitializeDescription();
+        setGoldenValuesAndUpdateDescription();
     }
 
     @Override
@@ -40,7 +40,7 @@ public class GoldenRain extends CustomCard implements IGoldenCard {
     }
 
     @Override
-    public void setGoldenValuesAndInitializeDescription() {
+    public void setGoldenValuesAndUpdateDescription() {
         this.baseDamage = this.damage = this.magicNumber * GoldenCardsUtil.getBlackbeardGoldGained() / 1000;
         this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(this.upgraded, DESCRIPTION, UPGRADE_DESCRIPTION, EXTENDED_DESCRIPTION);
         this.initializeDescription();
@@ -51,7 +51,7 @@ public class GoldenRain extends CustomCard implements IGoldenCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeMagicNumber(UPGRADE_PLUS_PERMILLES_OF_GOLD_GAINED);
-            setGoldenValuesAndInitializeDescription();
+            setGoldenValuesAndUpdateDescription();
         }
     }
 }

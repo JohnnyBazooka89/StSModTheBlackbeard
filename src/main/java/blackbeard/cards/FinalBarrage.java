@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
 import java.util.Iterator;
 
@@ -31,8 +32,9 @@ public class FinalBarrage extends CustomCard {
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.RARE, CardTarget.ENEMY);
 
         this.baseMagicNumber = this.magicNumber = ATTACK_PER_CANNONBALL;
+        this.baseDamage = this.damage = 0;
 
-        if (CardCrawlGame.isInARun()) {
+        if (CardCrawlGame.isInARun() && (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT)) {
             setBaseDamageAndUpdateDescription();
         }
     }

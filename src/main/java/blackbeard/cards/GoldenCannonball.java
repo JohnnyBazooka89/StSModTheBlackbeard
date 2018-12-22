@@ -35,7 +35,7 @@ public class GoldenCannonball extends CustomCard implements IGoldenCard {
 
         this.tags.add(CardTagsEnum.CANNONBALL);
 
-        setGoldenValuesAndInitializeDescription();
+        setGoldenValuesAndUpdateDescription();
     }
 
     @Override
@@ -44,7 +44,7 @@ public class GoldenCannonball extends CustomCard implements IGoldenCard {
     }
 
     @Override
-    public void setGoldenValuesAndInitializeDescription() {
+    public void setGoldenValuesAndUpdateDescription() {
         this.baseDamage = this.damage = this.magicNumber + GoldenCardsUtil.getBlackbeardGoldGained() / 50;
         this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(upgraded, DESCRIPTION, UPGRADE_DESCRIPTION, EXTENDED_DESCRIPTION);
         this.initializeDescription();
@@ -55,7 +55,7 @@ public class GoldenCannonball extends CustomCard implements IGoldenCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeMagicNumber(UPGRADE_PLUS_ATTACK_DMG);
-            setGoldenValuesAndInitializeDescription();
+            setGoldenValuesAndUpdateDescription();
         }
     }
 }

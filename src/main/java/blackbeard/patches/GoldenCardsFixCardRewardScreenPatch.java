@@ -12,7 +12,7 @@ public class GoldenCardsFixCardRewardScreenPatch {
         for (AbstractCard card : cardRewardScreen.rewardGroup) {
             if (card instanceof IGoldenCard) {
                 IGoldenCard goldenCard = (IGoldenCard) card;
-                goldenCard.setGoldenValuesAndInitializeDescription();
+                goldenCard.setGoldenValuesAndUpdateDescription();
             }
         }
     }

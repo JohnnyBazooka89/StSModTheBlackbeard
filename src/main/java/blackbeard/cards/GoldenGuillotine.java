@@ -31,7 +31,7 @@ public class GoldenGuillotine extends CustomCard implements IGoldenCard {
 
         this.baseMagicNumber = this.magicNumber = PERCENT_OF_GOLD_GAINED;
 
-        setGoldenValuesAndInitializeDescription();
+        setGoldenValuesAndUpdateDescription();
     }
 
     @Override
@@ -40,7 +40,7 @@ public class GoldenGuillotine extends CustomCard implements IGoldenCard {
     }
 
     @Override
-    public void setGoldenValuesAndInitializeDescription() {
+    public void setGoldenValuesAndUpdateDescription() {
         this.baseDamage = this.damage = this.magicNumber * GoldenCardsUtil.getBlackbeardGoldGained() / 100;
         this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(this.upgraded, DESCRIPTION, DESCRIPTION, EXTENDED_DESCRIPTION);
         this.initializeDescription();
@@ -51,7 +51,7 @@ public class GoldenGuillotine extends CustomCard implements IGoldenCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeMagicNumber(UPGRADE_PLUS_PERCENT_OF_GOLD_GAINED);
-            setGoldenValuesAndInitializeDescription();
+            setGoldenValuesAndUpdateDescription();
         }
     }
 
