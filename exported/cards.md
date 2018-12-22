@@ -21,6 +21,7 @@
 | Sword Dance | ![](small-card-images/SwordDance.png) | ![](small-card-images/SwordDancePlus.png) | Common | Skill | 1 | This turn, your next 2(3) Attacks use all equipped Weapons. |
 | Tactical Retreat | ![](small-card-images/TacticalRetreat.png) | ![](small-card-images/TacticalRetreatPlus.png) | Common | Skill | 1 | Gain 8(11) Block. Draw 1 more card next turn. |
 | Toast | ![](small-card-images/Toast.png) | ![](small-card-images/ToastPlus.png) | Common | Skill | 0 | Gain 3(4) Resistance. At the start of your next turn, lose 3(4) Resistance. Exhaust. |
+| Wise Defend | ![](small-card-images/WiseDefend.png) | ![](small-card-images/WiseDefendPlus.png) | Common | Skill | 1 | Gain 7(9) Block. Draw 1(2) card(s). |
 | Agile Strike | ![](small-card-images/AgileStrike.png) | ![](small-card-images/AgileStrikePlus.png) | Uncommon | Attack | 1 | Deal 9(13) damage. If you have equipped a Weapon this turn, reduce cost of this card to 0. |
 | Anchor | ![](small-card-images/Anchor.png) | ![](small-card-images/AnchorPlus.png) | Uncommon | Skill | 0 | Innate. Gain 10 Block. (Draw a card.)  Exhaust. |
 | Armor Up | ![](small-card-images/ArmorUp.png) | ![](small-card-images/ArmorUpPlus.png) | Uncommon | Skill | 0 | This turn, whenever you attack with a Weapon, gain 4(6) Block. |
@@ -55,7 +56,6 @@
 | Terror Of The Seas | ![](small-card-images/TerrorOfTheSeas.png) | ![](small-card-images/TerrorOfTheSeasPlus.png) | Uncommon | Skill | 1 | Apply 3(5) Vulnerable to ALL enemies. Exhaust. |
 | Upgrade | ![](small-card-images/Upgrade.png) | ![](small-card-images/UpgradePlus.png) | Uncommon | Skill | 1 | Give all your equipped Weapons + 1(2) / + 1(2). |
 | Vengeful Spirit | ![](small-card-images/VengefulSpirit.png) | ![](small-card-images/VengefulSpiritPlus.png) | Uncommon | Skill | 1 | Gain 1 Intangible. At the start of the turn on which you are no longer Intangible, you take 12(8) damage. Exhaust. |
-| Wise Defend | ![](small-card-images/WiseDefend.png) | ![](small-card-images/WiseDefendPlus.png) | Uncommon | Skill | 1 | Gain 7(9) Block. Draw 1(2) card(s). |
 | Wooden Leg | ![](small-card-images/WoodenLeg.png) | ![](small-card-images/WoodenLegPlus.png) | Uncommon | Power | 1 | Lose 2 Dexterity. Gain 4(5) Strength. |
 | Boost Morale | ![](small-card-images/BoostMorale.png) | ![](small-card-images/BoostMoralePlus.png) | Rare | Skill | 0 | Draw 2(3) cards. Gain [R] ([R]). Exhaust. |
 | Bounty Hunter | ![](small-card-images/BountyHunter.png) | ![](small-card-images/BountyHunterPlus.png) | Rare | Attack | 1 | Deal 16(20) damage. If this kills a non-minion enemy, gain 16(20) Gold. Exhaust. |

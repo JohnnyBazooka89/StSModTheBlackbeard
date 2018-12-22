@@ -1,7 +1,7 @@
 {
   "mod": {
     "name": "The Blackbeard",
-    "version": "1.5.7",
+    "version": "1.5.8",
     "authors": [
       "JohnnyBazooka89"
     ],
@@ -117,7 +117,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Equip a 2 / 3 Weapon.\nAt the start of your turn, 1 Durability from Dagger is used to deal damage equal to its Attack to a random enemy."
+      "description": "Equip a 2 / 3 Weapon.\nAt the start of your turn,\n1 Durability from Dagger is used to deal damage equal to its Attack to a random enemy."
     },
     {
       "name": "Dagger+",
@@ -125,7 +125,7 @@
       "rarity": "Common",
       "type": "Skill",
       "cost": "0",
-      "description": "Equip a 2 / 4 Weapon.\nAt the start of your turn, 1 Durability from Dagger is used to deal damage equal to its Attack to a random enemy."
+      "description": "Equip a 2 / 4 Weapon.\nAt the start of your turn,\n1 Durability from Dagger is used to deal damage equal to its Attack to a random enemy."
     },
     {
       "name": "Delayed Pain",
@@ -350,6 +350,22 @@
       "type": "Skill",
       "cost": "0",
       "description": "Gain 4 Resistance.\nAt the start of your next turn, lose 4 Resistance.\nExhaust."
+    },
+    {
+      "name": "Wise Defend",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 7 Block.\nDraw 1 card."
+    },
+    {
+      "name": "Wise Defend+",
+      "color": "Blackbeard_black",
+      "rarity": "Common",
+      "type": "Skill",
+      "cost": "1",
+      "description": "Gain 9 Block.\nDraw 2 cards."
     },
     {
       "name": "Agile Strike",
@@ -894,22 +910,6 @@
       "type": "Skill",
       "cost": "1",
       "description": "Gain 1 Intangible.\nAt the start of the turn on which you are no longer Intangible, you take 8 damage.\nExhaust."
-    },
-    {
-      "name": "Wise Defend",
-      "color": "Blackbeard_black",
-      "rarity": "Uncommon",
-      "type": "Skill",
-      "cost": "1",
-      "description": "Gain 7 Block.\nDraw 1 card."
-    },
-    {
-      "name": "Wise Defend+",
-      "color": "Blackbeard_black",
-      "rarity": "Uncommon",
-      "type": "Skill",
-      "cost": "1",
-      "description": "Gain 9 Block.\nDraw 2 cards."
     },
     {
       "name": "Wooden Leg",
