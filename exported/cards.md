@@ -71,7 +71,7 @@
 | Murder | ![](small-card-images/Murder.png) | ![](small-card-images/MurderPlus.png) | Rare | Attack | 4 | Deal 250(500) damage     to a Normal enemy. (Cannot be used on Elite or Boss). Ethereal. |
 | Parrot | ![](small-card-images/Parrot.png) | ![](small-card-images/ParrotPlus.png) | Rare | Power | 3 | The last card played each turn is played an additional time. This power does not stack. Ethereal. (not Ethereal.) |
 | Pirate Strength | ![](small-card-images/PirateStrength.png) | ![](small-card-images/PirateStrengthPlus.png) | Rare | Power | 3 | Gain 6(9) Strength. |
-| Salvager | ![](small-card-images/Salvager.png) | ![](small-card-images/SalvagerPlus.png) | Rare | Power | 2(1) | Whenever a Weapon is destroyed, gain [R]. |
+| Salvager | ![](small-card-images/Salvager.png) | ![](small-card-images/SalvagerPlus.png) | Rare | Power | 1 | Whenever a Weapon is destroyed, gain [R] ([R]). |
 | The Drunken Sailor | ![](small-card-images/TheDrunkenSailor.png) | ![](small-card-images/TheDrunkenSailorPlus.png) | Rare | Power | 1(0) | Your potions are used an additional time. |
 | Undead Form | ![](small-card-images/UndeadForm.png) | ![](small-card-images/UndeadFormPlus.png) | Rare | Power | 3 | Gain 2(3) Intangible. At the start of the turn on which you are no longer Intangible, you take 30 damage. |
-| Weapon Mastery | ![](small-card-images/WeaponMastery.png) | ![](small-card-images/WeaponMasteryPlus.png) | Rare | Power | 2(1) | Whenever you Equip a Weapon, draw a card. |
+| Weapon Mastery | ![](small-card-images/WeaponMastery.png) | ![](small-card-images/WeaponMasteryPlus.png) | Rare | Power | 1 | Whenever you Equip a Weapon, draw 1(2) card(s). |

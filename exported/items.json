@@ -1,7 +1,7 @@
 {
   "mod": {
     "name": "The Blackbeard",
-    "version": "1.5.8",
+    "version": "1.6.0",
     "authors": [
       "JohnnyBazooka89"
     ],
@@ -373,7 +373,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 9 damage.\nIf you have equipped a Weapon this turn, reduce cost of\nthis card to 0."
+      "description": "Deal 9 damage.\nIf you have equipped a Weapon this turn, reduce cost of this\ncard to 0."
     },
     {
       "name": "Agile Strike+",
@@ -381,7 +381,7 @@
       "rarity": "Uncommon",
       "type": "Attack",
       "cost": "1",
-      "description": "Deal 13 damage.\nIf you have equipped a Weapon this turn, reduce cost of\nthis card to 0."
+      "description": "Deal 13 damage.\nIf you have equipped a Weapon this turn, reduce cost of this\ncard to 0."
     },
     {
       "name": "Anchor",
@@ -1156,7 +1156,7 @@
       "color": "Blackbeard_black",
       "rarity": "Rare",
       "type": "Power",
-      "cost": "2",
+      "cost": "1",
       "description": "Whenever a Weapon is destroyed, gain [R]."
     },
     {
@@ -1165,7 +1165,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "Whenever a Weapon is destroyed, gain [R]."
+      "description": "Whenever a Weapon is destroyed, gain [R] [R]."
     },
     {
       "name": "The Drunken Sailor",
@@ -1204,8 +1204,8 @@
       "color": "Blackbeard_black",
       "rarity": "Rare",
       "type": "Power",
-      "cost": "2",
-      "description": "Whenever you Equip a Weapon, draw a card."
+      "cost": "1",
+      "description": "Whenever you Equip a Weapon, draw 1 card."
     },
     {
       "name": "Weapon Mastery+",
@@ -1213,7 +1213,7 @@
       "rarity": "Rare",
       "type": "Power",
       "cost": "1",
-      "description": "Whenever you Equip a Weapon, draw a card."
+      "description": "Whenever you Equip a Weapon, draw 2 cards."
     }
   ],
   "relics": [
