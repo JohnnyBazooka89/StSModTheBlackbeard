@@ -3,6 +3,7 @@ package blackbeard.cards;
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.enums.AbstractCardEnum;
+import blackbeard.orbs.WeaponOrb;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -11,6 +12,10 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.orbs.AbstractOrb;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
+
+import java.util.Iterator;
 
 public class AgileStrike extends CustomCard {
     public static final String ID = "blackbeard:AgileStrike";
@@ -29,14 +34,34 @@ public class AgileStrike extends CustomCard {
 
         this.tags.add(CardTags.STRIKE);
 
+        if (CardCrawlGame.isInARun() && (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT)) {
+            reduceCostToZeroForATurnIfNeeded();
+        }
     }
 
-    /* Logic is in EquipAction. */
+    /* Cost Refreshing Logic is also in EquipAction. */
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
     }
+
+    private void reduceCostToZeroForATurnIfNeeded() {
+        boolean shouldCostBeReduced = false;
+        Iterator<AbstractOrb> orbsChanneledThisTurn = AbstractDungeon.actionManager.orbsChanneledThisTurn.iterator();
+
+        while (orbsChanneledThisTurn.hasNext()) {
+            AbstractOrb orb = orbsChanneledThisTurn.next();
+            if (orb instanceof WeaponOrb) {
+                shouldCostBeReduced = true;
+            }
+        }
+
+        if (shouldCostBeReduced) {
+            setCostForTurn(0);
+        }
+    }
+
 
     @Override
     public void upgrade() {

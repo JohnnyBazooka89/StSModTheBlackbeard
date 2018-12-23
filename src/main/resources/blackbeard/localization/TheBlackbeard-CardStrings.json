@@ -214,7 +214,7 @@
   },
   "blackbeard:AgileStrike": {
     "NAME": "Agile Strike",
-    "DESCRIPTION": "Deal !D! damage. NL If you have equipped a Weapon this turn, reduce cost of NL this card to 0."
+    "DESCRIPTION": "Deal !D! damage. NL If you have equipped a Weapon this turn, reduce cost of this NL card to 0."
   },
   "blackbeard:DangerousBlow": {
     "NAME": "Dangerous Blow",
@@ -277,11 +277,13 @@
   },
   "blackbeard:WeaponMastery": {
     "NAME": "Weapon Mastery",
-    "DESCRIPTION": "Whenever you Equip a Weapon, draw a card."
+    "DESCRIPTION": "Whenever you Equip a Weapon, draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Whenever you Equip a Weapon, draw !M! cards."
   },
   "blackbeard:Salvager": {
     "NAME": "Salvager",
-    "DESCRIPTION": "Whenever a Weapon is destroyed, gain [R]."
+    "DESCRIPTION": "Whenever a Weapon is destroyed, gain [R].",
+    "UPGRADE_DESCRIPTION": "Whenever a Weapon is destroyed, gain [R] [R]."
   },
   "blackbeard:Anchor": {
     "NAME": "Anchor",
