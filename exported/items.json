@@ -1,7 +1,7 @@
 {
   "mod": {
     "name": "The Blackbeard",
-    "version": "1.6.0",
+    "version": "1.6.1",
     "authors": [
       "JohnnyBazooka89"
     ],
@@ -1232,7 +1232,7 @@
       "flavorText": "Much stronger than regular cannonballs."
     },
     {
-      "name": "HipFlask",
+      "name": "Hip Flask",
       "tier": "Common",
       "pool": "Blackbeard_black",
       "description": "At the start of each combat, gain 1 Resistance.",

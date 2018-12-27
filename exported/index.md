@@ -99,7 +99,7 @@
 | ----- | ---- | ------ | ----- | ----------- | ------ |
 | ![](relics/blackbeard-LoadTheCannons.png) | Load The Cannons | Starter | Blackbeard_black | At the start of each combat, add a Cannonball card to your hand. | Ready... Aim... Fire!!! |
 | ![](relics/blackbeard-CannonballsOfSteel.png) | Cannonballs Of Steel | Common | Blackbeard_black | Your Cannonballs deal #b2 more damage. (Works with every type of Cannonball.) | Much stronger than regular cannonballs. |
-| ![](relics/blackbeard-HipFlask.png) | HipFlask | Common | Blackbeard_black | At the start of each combat, gain #b1 Resistance. | Very handy. |
+| ![](relics/blackbeard-HipFlask.png) | Hip Flask | Common | Blackbeard_black | At the start of each combat, gain #b1 Resistance. | Very handy. |
 | ![](relics/blackbeard-Spearhead.png) | Spearhead | Common | Blackbeard_black | If a Weapon has 1 Durability, it deals 3 more damage. | The durability of your Weapon ends... and so does the life of your enemy. |
 | ![](relics/blackbeard-TreasureChest.png) | Treasure Chest | Common | Blackbeard_black | Gain 20 Gold after every battle. | This treasure chest contains untold riches. |
 | ![](relics/blackbeard-WhitePearl.png) | White Pearl | Common | Blackbeard_black | Whenever you Equip a Weapon, give it +1 Attack. | Both beautiful and powerful. |
