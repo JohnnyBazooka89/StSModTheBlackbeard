@@ -49,7 +49,7 @@ public class SmithingHammerAction extends AbstractGameAction {
 
                 if (AbstractDungeon.player.hasPower(WeaponPower.POWER_ID)) {
                     WeaponPower weaponPower = (WeaponPower) AbstractDungeon.player.getPower(WeaponPower.POWER_ID);
-                    weaponPower.destroyWeaponsWithNoDurability();
+                    weaponPower.refreshWeapons();
                 }
 
                 this.isDone = true;

@@ -32,6 +32,8 @@ public class EquipAction extends AbstractGameAction {
 
             AbstractDungeon.player.channelOrb(weaponOrb);
             AbstractDungeon.player.addPower(new WeaponPower(AbstractDungeon.player));
+            WeaponPower weaponPower = (WeaponPower) AbstractDungeon.player.getPower(WeaponPower.POWER_ID);
+            weaponPower.refreshWeapons();
 
             reduceAgileStrikesCostForTurn();
 
