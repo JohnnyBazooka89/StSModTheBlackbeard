@@ -168,7 +168,7 @@
     "NAME": "Murder",
     "DESCRIPTION": "Deal !D! damage     NL to a Normal enemy. NL (Cannot be used on Elite or Boss). NL Ethereal.",
     "EXTENDED_DESCRIPTION": [
-      "I have to target a Normal enemy!"
+      "I have to target a #rNormal enemy!"
     ]
   },
   "blackbeard:Bandana": {

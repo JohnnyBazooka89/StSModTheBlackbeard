@@ -40,12 +40,12 @@ public class Murder extends CustomCard {
 
     @Override
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        boolean canUse = false;
-        if (!(AbstractDungeon.getCurrRoom() instanceof MonsterRoomElite) && !(AbstractDungeon.getCurrRoom() instanceof MonsterRoomBoss)) {
-            canUse = true;
-        }
-
+        boolean canUse = super.canUse(p, m);
         if (!canUse) {
+            return false;
+        }
+        if ((AbstractDungeon.getCurrRoom() instanceof MonsterRoomElite) || (AbstractDungeon.getCurrRoom() instanceof MonsterRoomBoss)) {
+            canUse = false;
             this.cantUseMessage = EXTENDED_DESCRIPTION[0];
         }
         return canUse;
