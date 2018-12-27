@@ -48,7 +48,7 @@ public class WeaponPower extends AbstractPower {
                 DualWielding dualWielding = (DualWielding) AbstractDungeon.player.getRelic(DualWielding.ID);
                 dualWielding.flash();
             }
-            for (WeaponOrb weaponOrb : getWeaponsToUse()) {
+            for (WeaponOrb weaponOrb : weaponsToUse) {
                 if (!weaponOrb.isJustAddedUsingAttackCard()) {
                     weaponOrb.use(true);
                 }
