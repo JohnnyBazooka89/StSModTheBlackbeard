@@ -110,6 +110,11 @@ public abstract class WeaponOrb extends AbstractOrb {
 
     public void use(boolean triggerEffectOnUse) {
         durability--;
+        if (AbstractDungeon.player.hasPower(ArmorUpPower.POWER_ID)) {
+            ArmorUpPower armorUpPower = (ArmorUpPower) AbstractDungeon.player.getPower(ArmorUpPower.POWER_ID);
+            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, armorUpPower.amount));
+            armorUpPower.flash();
+        }
         if (triggerEffectOnUse) {
             effectOnUse();
         }
@@ -132,11 +137,7 @@ public abstract class WeaponOrb extends AbstractOrb {
     }
 
     public void effectOnUse() {
-        if (AbstractDungeon.player.hasPower(ArmorUpPower.POWER_ID)) {
-            ArmorUpPower armorUpPower = (ArmorUpPower) AbstractDungeon.player.getPower(ArmorUpPower.POWER_ID);
-            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, armorUpPower.amount));
-            armorUpPower.flash();
-        }
+        //method can be overridden in subclasses
     }
 
     public void effectAtStartOfTurnPostDraw() {

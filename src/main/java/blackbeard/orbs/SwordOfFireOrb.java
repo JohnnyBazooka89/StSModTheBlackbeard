@@ -24,7 +24,6 @@ public class SwordOfFireOrb extends WeaponOrb {
 
     @Override
     public void effectOnUse() {
-        super.effectOnUse();
         AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction((AbstractCreature) null, DamageInfo.createDamageMatrix(3, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE));
     }
 }

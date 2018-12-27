@@ -22,13 +22,11 @@ public class SmithingHammerOrb extends WeaponOrb {
 
     @Override
     public void effectOnUse() {
-        super.effectOnUse();
         AbstractDungeon.actionManager.addToBottom(new UpgradeRandomCardAction());
     }
 
     @Override
     public void effectAtStartOfTurnPostDraw() {
-        super.effectAtStartOfTurnPostDraw();
         AbstractDungeon.actionManager.addToBottom(new SmithingHammerAction(this));
     }
 

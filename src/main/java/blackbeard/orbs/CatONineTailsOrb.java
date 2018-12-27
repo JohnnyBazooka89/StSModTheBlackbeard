@@ -20,7 +20,6 @@ public class CatONineTailsOrb extends WeaponOrb {
 
     @Override
     public void effectOnUse() {
-        super.effectOnUse();
         this.upgrade(ATTACK_UPGRADE_ON_USE, 0);
     }
 }

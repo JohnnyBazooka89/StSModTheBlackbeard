@@ -21,7 +21,6 @@ public class DaggerOrb extends WeaponOrb {
 
     @Override
     public void effectAtStartOfTurnPostDraw() {
-        super.effectAtStartOfTurnPostDraw();
         AbstractDungeon.actionManager.addToBottom(new DaggerAction(this));
     }
 

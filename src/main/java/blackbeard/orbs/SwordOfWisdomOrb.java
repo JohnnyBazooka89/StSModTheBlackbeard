@@ -21,7 +21,6 @@ public class SwordOfWisdomOrb extends WeaponOrb {
 
     @Override
     public void effectOnUse() {
-        super.effectOnUse();
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, 1));
     }
 }

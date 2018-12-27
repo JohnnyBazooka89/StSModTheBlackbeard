@@ -21,7 +21,6 @@ public class SwordOfChaosOrb extends WeaponOrb {
 
     @Override
     public void effectOnUse() {
-        super.effectOnUse();
         AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(AbstractDungeon.returnTrulyRandomCardInCombat().makeCopy(), false));
     }
 }
