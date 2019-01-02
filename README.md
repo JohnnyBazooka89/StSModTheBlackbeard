@@ -5,7 +5,7 @@ The Blackbeard is a new class based on pirate theme. His most important mechanic
 
 Other mechanics are: 
 - Cannonballs - 0 cost attacks that deal 8 (10) damage and exhaust.
-- Resistance - for each point of Resistance enemies deal 1 damage less.
+- Resistance - for each point of Resistance you take 1 damage less from enemies.
 - Gold scaling cards - some cards scale with how much Gold you gained this run.
 - Debuff cleansing - The Blackbeard is able to play powerful cards with negative effects, and later cleanse his debuffs.
 
