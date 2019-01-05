@@ -3,7 +3,7 @@
     "NAME": "Load The Cannons",
     "FLAVOR": "Ready... Aim... Fire!!!",
     "DESCRIPTIONS": [
-      "At the start of each combat, and then every 4 turns, add a Cannonball card to your hand."
+      "At the start of each combat, and then every 4 turns, add a Cannonball to your hand."
     ]
   },
   "blackbeard:HipFlask": {

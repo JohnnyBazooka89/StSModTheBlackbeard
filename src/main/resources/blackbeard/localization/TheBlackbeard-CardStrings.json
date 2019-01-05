@@ -89,8 +89,8 @@
   },
   "blackbeard:InfiniteBarrage": {
     "NAME": "Infinite Barrage",
-    "DESCRIPTION": "At the start of each turn, add a Cannonball card to your hand.",
-    "UPGRADE_DESCRIPTION": "Innate. At the start of each turn, add a Cannonball card to your hand."
+    "DESCRIPTION": "At the start of each turn, add a Cannonball to your hand.",
+    "UPGRADE_DESCRIPTION": "Innate. At the start of each turn, add a Cannonball to your hand."
   },
   "blackbeard:SwordOfWisdom": {
     "NAME": "Sword Of Wisdom",
