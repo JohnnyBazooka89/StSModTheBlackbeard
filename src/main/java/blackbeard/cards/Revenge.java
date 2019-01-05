@@ -39,6 +39,12 @@ public class Revenge extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.BLUNT_HEAVY));
     }
 
+    @Override
+    public void applyPowers() {
+        super.applyPowers();
+        setBaseDamageAndUpdateDescription();
+    }
+
     /* Refreshing logic is in UpdateRevengePatch. */
 
     public void setBaseDamageAndUpdateDescription() {

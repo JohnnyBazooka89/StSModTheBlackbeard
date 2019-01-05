@@ -56,6 +56,12 @@ public class FinalBarrage extends CustomCard {
         setBaseDamageAndUpdateDescription();
     }
 
+    @Override
+    public void applyPowers() {
+        super.applyPowers();
+        setBaseDamageAndUpdateDescription();
+    }
+
     private void setBaseDamageAndUpdateDescription() {
         int cannonballsPlayedThisCombat = 0;
         Iterator<AbstractCard> cardsPlayedThisCombatIt = AbstractDungeon.actionManager.cardsPlayedThisCombat.iterator();

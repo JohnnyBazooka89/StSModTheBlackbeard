@@ -44,6 +44,12 @@ public class GoldenCannonball extends CustomCard implements IGoldenCard {
     }
 
     @Override
+    public void applyPowers() {
+        super.applyPowers();
+        setGoldenValuesAndUpdateDescription();
+    }
+
+    @Override
     public void setGoldenValuesAndUpdateDescription() {
         this.baseDamage = this.damage = this.magicNumber + GoldenCardsUtil.getBlackbeardGoldGained() / 50;
         this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(upgraded, DESCRIPTION, UPGRADE_DESCRIPTION, EXTENDED_DESCRIPTION);

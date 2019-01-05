@@ -42,6 +42,12 @@ public class GoldenStrike extends CustomCard implements IGoldenCard {
     }
 
     @Override
+    public void applyPowers() {
+        super.applyPowers();
+        setGoldenValuesAndUpdateDescription();
+    }
+
+    @Override
     public void setGoldenValuesAndUpdateDescription() {
         this.baseDamage = this.damage = this.magicNumber + (3 * GoldenCardsUtil.getBlackbeardGoldGained() / 200);
         this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(upgraded, DESCRIPTION, UPGRADE_DESCRIPTION, EXTENDED_DESCRIPTION);

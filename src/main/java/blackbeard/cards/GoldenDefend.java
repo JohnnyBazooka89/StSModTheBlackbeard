@@ -38,6 +38,12 @@ public class GoldenDefend extends CustomCard implements IGoldenCard {
     }
 
     @Override
+    public void applyPowers() {
+        super.applyPowers();
+        setGoldenValuesAndUpdateDescription();
+    }
+
+    @Override
     public void setGoldenValuesAndUpdateDescription() {
         this.baseBlock = this.block = this.magicNumber + (3 * GoldenCardsUtil.getBlackbeardGoldGained() / 200);
         this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(this.upgraded, DESCRIPTION, UPGRADE_DESCRIPTION, EXTENDED_DESCRIPTION);

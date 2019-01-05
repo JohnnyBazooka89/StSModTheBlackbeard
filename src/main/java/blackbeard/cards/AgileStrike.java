@@ -42,6 +42,12 @@ public class AgileStrike extends CustomCard {
     /* Cost Refreshing Logic is also in EquipAction. */
 
     @Override
+    public void applyPowers() {
+        super.applyPowers();
+        reduceCostToZeroForATurnIfNeeded();
+    }
+
+    @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
     }
