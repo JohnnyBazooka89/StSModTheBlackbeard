@@ -8,7 +8,7 @@ The Blackbeard is a new class based on pirate theme. His most important mechanic
 
 Other mechanics are: 
 - Cannonballs - 0 cost attacks that deal 8 (10) damage and exhaust.
-- Resistance - for each point of Resistance enemies deal 1 damage less.
+- Resistance - for each point of Resistance you take 1 damage less from enemies.
 - Gold scaling cards - some cards scale with how much Gold you gained this run.
 - Debuff cleansing - The Blackbeard is able to play powerful cards with negative effects, and later cleanse his debuffs.
 
@@ -51,4 +51,5 @@ If you want to play Ascension 20 straight away, you have to:
 The Blackbeard fully supports the [Googly Eyes](https://steamcommunity.com/sharedfiles/filedetails/?id=1615430126) mod. If you'd like to play with hilarious googly eyes on almost every card, then you are most welcome :) 
 
 ## Contact ##
+
 - To report a bug in the code, please create an [issue](https://github.com/JohnnyBazooka89/StSModTheBlackbeard/issues). If you want to make general remarks, feel free to [comment](https://steamcommunity.com/sharedfiles/filedetails/comments/1612105245) or [create a discussion](https://steamcommunity.com/sharedfiles/filedetails/discussions/1612105245) on mod's workshop page.
