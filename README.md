@@ -1,4 +1,7 @@
 # StSModTheBlackbeard
+
+**Update: Slay the Spire added the official Workshop for mods. Please check [Installation](#installation) section for more details.** 
+
 This mod adds a new character for Slay The Spire, named The Blackbeard, with 75 brand new cards and 14 new relics (1 starter, 5 common, 4 uncommon, 2 rare, 1 boss and 1 shop). 
 
 The Blackbeard is a new class based on pirate theme. His most important mechanic are Weapons. There are many cards that allow to Equip a Weapon and each Weapon is characterized by its Attack and Durability. You can equip many Weapons, and they are queued using Defect's orb system. Every time you play an attack card, one Durability of your rightmost Weapon is used and card's damage is increased by Weapon's attack. You can Equip maximum of 10 Weapons. Weapons with zero durability are automatically destroyed. Orb slots are created automatically when you equip a Weapon and are automatically destroyed when Weapon is destroyed.
@@ -19,18 +22,9 @@ Starting deck:
 
 List of all cards, relics and potions can be found [here](http://www.theblackbeardmod.com). (Exported using [Slay the Spire exporter](https://github.com/twanvl/sts-exporter).)
 
-## Requirements ##
-
-* Java 8 (JRE).
-* Newest version of ModTheSpire (https://github.com/kiooeht/ModTheSpire/releases)
-* Newest version of BaseMod (https://github.com/daviscook477/BaseMod/releases)
-
 ## Installation ##
-1. Go to folder where your Slay The Spire is installed, for example: "C:\Program Files (x86)\Steam\steamapps\common\SlayTheSpire"
-2. Copy ModTheSpire files (ModTheSpire.jar, MTS.cmd, MTS.sh) to this folder.
-3. Create a new folder named "mods".
-4. Copy BaseMod.jar and TheBlackbeardMod.jar into folder "mods".
-5. Double click on MTS.cmd, select "BaseMod" and "The Blackbeard", and click "Play" button.
+1. Subscribe to the mod on [mod's workshop page](https://steamcommunity.com/sharedfiles/filedetails/?id=1612105245).
+2. The instruction how to play with mods can be found [here](https://steamcommunity.com/games/646570/announcements/detail/1714081669582224415).
 
 ## Set Ascension Level to 20 (optional) ##
 
@@ -52,10 +46,9 @@ If you want to play Ascension 20 straight away, you have to:
 4. Thanks to [JoINrbs](https://www.twitch.tv/joinrbs) for great and educational Slay the Spire streams.
 
 ## Other Mods ##
-List of other mods can be found at:
-* https://github.com/kiooeht/ModTheSpire/wiki/List-of-Known-Mods
+- Other mods can be found on [Slay the Spire official workshop](https://steamcommunity.com/app/646570/workshop/).
 
-The Blackbeard fully supports the [Googly Eyes](https://github.com/twanvl/sts-googly-mod/releases) mod. If you'd like to play with hilarious googly eyes on almost every card, then you are most welcome :) 
+The Blackbeard fully supports the [Googly Eyes](https://steamcommunity.com/sharedfiles/filedetails/?id=1615430126) mod. If you'd like to play with hilarious googly eyes on almost every card, then you are most welcome :) 
 
 ## Contact ##
-- To report a bug or if you want to contact me, please create an [issue](https://github.com/JohnnyBazooka89/StSModTheBlackbeard/issues). At the moment I don't plan on making any changes to the mod, other than maintaining it to ensure it's always playable with the newest version of Slay the Spire. I'm no longer active on Slay the Spire discord - please use the github issues.
+- To report a bug in the code, please create an [issue](https://github.com/JohnnyBazooka89/StSModTheBlackbeard/issues). If you want to make general remarks, feel free to [comment](https://steamcommunity.com/sharedfiles/filedetails/comments/1612105245) or [create a discussion](https://steamcommunity.com/sharedfiles/filedetails/discussions/1612105245) on mod's workshop page.
