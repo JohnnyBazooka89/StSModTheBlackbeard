@@ -52,4 +52,4 @@ The Blackbeard fully supports the [Googly Eyes](https://steamcommunity.com/share
 
 ## Contact ##
 
-- To report a bug in the code, please create an [issue](https://github.com/JohnnyBazooka89/StSModTheBlackbeard/issues). If you want to make general remarks, feel free to [comment](https://steamcommunity.com/sharedfiles/filedetails/comments/1612105245) or [create a discussion](https://steamcommunity.com/sharedfiles/filedetails/discussions/1612105245) on mod's workshop page.
+- To report a bug in the code, please create an [issue](https://github.com/JohnnyBazooka89/StSModTheBlackbeard/issues). If you want to make general remarks, feel free to [comment](https://steamcommunity.com/sharedfiles/filedetails/comments/1612105245) or create a [discussion](https://steamcommunity.com/sharedfiles/filedetails/discussions/1612105245) on mod's workshop page.
