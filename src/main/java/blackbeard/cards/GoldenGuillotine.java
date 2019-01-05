@@ -41,8 +41,8 @@ public class GoldenGuillotine extends CustomCard implements IGoldenCard {
 
     @Override
     public void applyPowers() {
-        super.applyPowers();
         setGoldenValuesAndUpdateDescription();
+        super.applyPowers();
     }
 
     @Override

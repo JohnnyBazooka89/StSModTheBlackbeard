@@ -58,8 +58,8 @@ public class FinalBarrage extends CustomCard {
 
     @Override
     public void applyPowers() {
-        super.applyPowers();
         setBaseDamageAndUpdateDescription();
+        super.applyPowers();
     }
 
     private void setBaseDamageAndUpdateDescription() {

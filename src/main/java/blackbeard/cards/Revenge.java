@@ -41,8 +41,8 @@ public class Revenge extends CustomCard {
 
     @Override
     public void applyPowers() {
-        super.applyPowers();
         setBaseDamageAndUpdateDescription();
+        super.applyPowers();
     }
 
     /* Refreshing logic is in UpdateRevengePatch. */

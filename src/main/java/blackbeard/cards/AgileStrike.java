@@ -43,8 +43,8 @@ public class AgileStrike extends CustomCard {
 
     @Override
     public void applyPowers() {
-        super.applyPowers();
         reduceCostToZeroForATurnIfNeeded();
+        super.applyPowers();
     }
 
     @Override
