@@ -356,7 +356,7 @@
   },
   "blackbeard:FishingNets": {
     "NAME": "Fishing Nets",
-    "DESCRIPTION": "Gain !M! Thorns."
+    "DESCRIPTION": "Gain !M! Plated Thorns. NL (When attacked, deals damage back and reduces Plated Thorns by 1.)"
   },
   "blackbeard:BuriedTreasure": {
     "NAME": "Buried Treasure",

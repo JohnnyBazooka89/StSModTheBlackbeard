@@ -120,5 +120,12 @@
       "At the start of the turn on which you are no longer Intangible, you take #b",
       " damage."
     ]
+  },
+  "blackbeard:PlatedThorns": {
+    "NAME": "Plated Thorns",
+    "DESCRIPTIONS": [
+      "When attacked, deals #b ",
+      " damage back and reduces Plated Thorns by #b1."
+    ]
   }
 }
