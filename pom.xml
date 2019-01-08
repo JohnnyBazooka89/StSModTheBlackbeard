@@ -30,7 +30,7 @@
             <artifactId>ModTheSpire</artifactId>
             <version>3.6.3</version>
             <scope>system</scope>
-            <systemPath>${slayTheSpirePath}\ModTheSpire.jar</systemPath>
+            <systemPath>${slayTheSpirePath}\..\..\workshop\content\646570\1605060445\ModTheSpire.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.evacipated.cardcrawl</groupId>
