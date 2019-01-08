@@ -51,13 +51,6 @@
       " Resistance."
     ]
   },
-  "blackbeard:KeelhaulingPower": {
-    "NAME": "Keelhauling",
-    "DESCRIPTIONS": [
-      "At the start of their turn, this enemy takes #b8 damage. Lasts for #b",
-      " turns."
-    ]
-  },
   "blackbeard:DamageAtTheEndOfNextTurnPower": {
     "NAME": "Next Turn Damage",
     "DESCRIPTIONS": [
@@ -126,6 +119,14 @@
     "DESCRIPTIONS": [
       "When attacked, deals #b ",
       " damage back and reduces Plated Thorns by #b1."
+    ]
+  },
+  "blackbeard:WeaponProficiencyPower": {
+    "NAME": "Weapon Proficiency",
+    "DESCRIPTIONS": [
+      "Your attacks use ",
+      " additional Weapon.",
+      " additional Weapons."
     ]
   }
 }

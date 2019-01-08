@@ -1,8 +1,6 @@
 package blackbeard.powers;
 
-import blackbeard.enums.WeaponsToUseEnum;
 import blackbeard.orbs.WeaponOrb;
-import blackbeard.relics.DualWielding;
 import blackbeard.relics.Spearhead;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
@@ -43,12 +41,7 @@ public class WeaponPower extends AbstractPower {
     @Override
     public void onAfterUseCard(AbstractCard card, UseCardAction action) {
         if (card.type.equals(CardType.ATTACK)) {
-            List<WeaponOrb> weaponsToUse = getWeaponsToUse();
-            if (AbstractDungeon.player.hasRelic(DualWielding.ID) && weaponsToUse.size() == 2) {
-                DualWielding dualWielding = (DualWielding) AbstractDungeon.player.getRelic(DualWielding.ID);
-                dualWielding.flash();
-            }
-            for (WeaponOrb weaponOrb : weaponsToUse) {
+            for (WeaponOrb weaponOrb : getWeaponsToUse()) {
                 if (!weaponOrb.isJustAddedUsingAttackCard()) {
                     weaponOrb.use(true);
                 }
@@ -165,11 +158,13 @@ public class WeaponPower extends AbstractPower {
     }
 
     private List<WeaponOrb> getWeaponsToUse() {
-        WeaponsToUseEnum weaponsToUseEnum = WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON;
+        int numberOfWeaponsToUse = 1;
+        if (AbstractDungeon.player.hasPower(WeaponProficiencyPower.POWER_ID)) {
+            WeaponProficiencyPower weaponProficiencyPower = (WeaponProficiencyPower) AbstractDungeon.player.getPower(WeaponProficiencyPower.POWER_ID);
+            numberOfWeaponsToUse += weaponProficiencyPower.amount;
+        }
         if (AbstractDungeon.player.hasPower(SwordDancePower.POWER_ID)) {
-            weaponsToUseEnum = WeaponsToUseEnum.ALL_WEAPONS;
-        } else if (AbstractDungeon.player.hasRelic(DualWielding.ID)) {
-            weaponsToUseEnum = WeaponsToUseEnum.TWO_WEAPONS;
+            numberOfWeaponsToUse = Integer.MAX_VALUE;
         }
 
         List<WeaponOrb> weaponsToUseResult = new ArrayList<>();
@@ -179,9 +174,7 @@ public class WeaponPower extends AbstractPower {
                 WeaponOrb weaponOrb = (WeaponOrb) o;
                 weaponsToUseResult.add(weaponOrb);
                 counter++;
-                if (weaponsToUseEnum == WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON) {
-                    break;
-                } else if ((weaponsToUseEnum == WeaponsToUseEnum.TWO_WEAPONS) && (counter == 2)) {
+                if (counter == numberOfWeaponsToUse) {
                     break;
                 }
             }

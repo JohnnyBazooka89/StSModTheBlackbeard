@@ -200,10 +200,6 @@
     "NAME": "Captain's Hat",
     "DESCRIPTION": "Gain !M! Strength. NL Gain !M! Resistance."
   },
-  "blackbeard:Keelhauling": {
-    "NAME": "Keelhauling",
-    "DESCRIPTION": "Targeted enemy takes 8 damage at the start of their turn. NL Lasts for !M! turns."
-  },
   "blackbeard:BlindAttacks": {
     "NAME": "Blind Attacks",
     "DESCRIPTION": "Deal !D! damage to a random enemy 3 times."
@@ -378,5 +374,9 @@
   "blackbeard:UndeadForm": {
     "NAME": "Undead Form",
     "DESCRIPTION": "Gain !M! Intangible. NL At the start of the turn on which you are no longer Intangible, you take 30 damage."
+  },
+  "blackbeard:WeaponProficiency": {
+    "NAME": "Weapon Proficiency",
+    "DESCRIPTION": "Your attacks use an additional Weapon."
   }
 }

@@ -171,7 +171,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addRelicToCustomPool(new PowderCan(), AbstractCardEnum.BLACKBEARD_BLACK);
         BaseMod.addRelicToCustomPool(new Soberminded(), AbstractCardEnum.BLACKBEARD_BLACK);
         BaseMod.addRelicToCustomPool(new Spearhead(), AbstractCardEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new DualWielding(), AbstractCardEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new CrossedSwords(), AbstractCardEnum.BLACKBEARD_BLACK);
 
         logger.info("Done editing relics");
     }
@@ -222,7 +222,6 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addCard(new WoodenLeg());
         BaseMod.addCard(new Eyepatch());
         BaseMod.addCard(new CaptainsHat());
-        BaseMod.addCard(new Keelhauling());
         BaseMod.addCard(new BlindAttacks());
         BaseMod.addCard(new Boarding());
         BaseMod.addCard(new AgileStrike());
@@ -258,6 +257,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addCard(new DoubleCannonball());
         BaseMod.addCard(new CloakAndCannonball());
         BaseMod.addCard(new UndeadForm());
+        BaseMod.addCard(new WeaponProficiency());
 
         //Cards with special rarity are not added to BaseMod.
         //BaseMod.addCard(new Cannonball());
