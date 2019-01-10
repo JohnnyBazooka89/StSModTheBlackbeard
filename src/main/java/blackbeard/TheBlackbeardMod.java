@@ -18,6 +18,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.megacrit.cardcrawl.helpers.CardHelper;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.potions.BloodPotion;
 import com.megacrit.cardcrawl.potions.GhostInAJar;
@@ -125,7 +126,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     @Override
     public void receivePostInitialize() {
         // Mod badge
-        Texture badgeTexture = new Texture(BADGE_IMG);
+        Texture badgeTexture = ImageMaster.loadImage(BADGE_IMG);
         ModPanel settingsPanel = new ModPanel();
         BaseMod.registerModBadge(badgeTexture, MOD_NAME, AUTHOR, DESCRIPTION, settingsPanel);
     }

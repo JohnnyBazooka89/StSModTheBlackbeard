@@ -7,16 +7,19 @@ import blackbeard.orbs.PowderKegOrb;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 
 public class PowderCan extends CustomRelic {
-    public static final String ID = "blackbeard:PowderCan";
 
+    public static final String ID = "blackbeard:PowderCan";
+    public static final Texture IMG = ImageMaster.loadImage(TheBlackbeardMod.getRelicImagePath(ID));
+    public static final Texture OUTLINE = ImageMaster.loadImage(TheBlackbeardMod.getRelicOutlineImagePath(ID));
     private static final int WEAPON_ATTACK = 0;
     private static final int WEAPON_DURABILITY = 1;
     private static final int DAMAGE_ON_DESTROY = 8;
 
     public PowderCan() {
-        super(ID, new Texture(TheBlackbeardMod.getRelicImagePath(ID)), new Texture(TheBlackbeardMod.getRelicOutlineImagePath(ID)), RelicTier.UNCOMMON, LandingSound.MAGICAL);
+        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.MAGICAL);
     }
 
     @Override
