@@ -17,8 +17,8 @@ public class SwordDance extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
-    private static final int NUMBER_OF_ATTACKS = 2;
-    private static final int UPGRADED_PLUS_NUMBER_OF_ATTACKS = 1;
+    private static final int NUMBER_OF_ATTACKS = 3;
+    private static final int UPGRADED_PLUS_NUMBER_OF_ATTACKS = 2;
 
     public SwordDance() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,

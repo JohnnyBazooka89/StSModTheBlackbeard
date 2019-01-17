@@ -27,7 +27,7 @@ public class IntimidatingStrike extends CustomCard {
 
     public IntimidatingStrike() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.ENEMY);
+                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.BASIC, CardTarget.ENEMY);
 
         this.baseDamage = this.damage = ATTACK_DMG;
         this.baseMagicNumber = this.magicNumber = WEAK_TO_APPLY;
