@@ -114,11 +114,11 @@
       " damage."
     ]
   },
-  "blackbeard:PlatedThorns": {
-    "NAME": "Plated Thorns",
+  "blackbeard:RustyThorns": {
+    "NAME": "Rusty Thorns",
     "DESCRIPTIONS": [
       "When attacked, deals #b ",
-      " damage back and reduces Plated Thorns by #b1."
+      " damage back and reduces Rusty Thorns by #b1."
     ]
   },
   "blackbeard:WeaponProficiencyPower": {
