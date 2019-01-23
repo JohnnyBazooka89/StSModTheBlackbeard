@@ -20,7 +20,7 @@ public class LoadTheCannons extends CustomRelic {
     }
 
     @Override
-    public void atBattleStartPreDraw() {
+    public void atPreBattle() {
         addACannonballToTheHand();
         this.counter = -1;
     }
