@@ -22,7 +22,7 @@ public class TreasureChest extends CustomRelic {
     public void onVictory() {
         this.flash();
         CardCrawlGame.sound.play("GOLD_GAIN");
-        AbstractDungeon.player.gainGold(20);
+        AbstractDungeon.player.gainGold(15);
         AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
     }
 
