@@ -80,7 +80,7 @@
     "NAME": "Sober-minded",
     "FLAVOR": "Being sober is not a natural state for The Blackbeard.",
     "DESCRIPTIONS": [
-      "Gain [R] at the start of each turn. At the start of each combat, lose 1 Resistance."
+      "Gain [E] at the start of your turn. At the start of each combat, lose 1 Resistance."
     ]
   },
   "blackbeard:Spearhead": {

@@ -77,8 +77,8 @@
   },
   "blackbeard:Scrap": {
     "NAME": "Scrap",
-    "DESCRIPTION": "Destroy your rightmost Weapon to gain [R] [R].",
-    "UPGRADE_DESCRIPTION": "Destroy your rightmost Weapon to gain NL [R] [R] [R].",
+    "DESCRIPTION": "Destroy your rightmost Weapon to gain [E] [E].",
+    "UPGRADE_DESCRIPTION": "Destroy your rightmost Weapon to gain NL [E] [E] [E].",
     "EXTENDED_DESCRIPTION": [
       "I don't have a Weapon!"
     ]
@@ -89,8 +89,8 @@
   },
   "blackbeard:InfiniteBarrage": {
     "NAME": "Infinite Barrage",
-    "DESCRIPTION": "At the start of each turn, add a Cannonball to your hand.",
-    "UPGRADE_DESCRIPTION": "Innate. At the start of each turn, add a Cannonball to your hand."
+    "DESCRIPTION": "At the start of your turn, add a Cannonball into your hand.",
+    "UPGRADE_DESCRIPTION": "Innate. At the start of your turn, add a Cannonball into your hand."
   },
   "blackbeard:SwordOfWisdom": {
     "NAME": "Sword Of Wisdom",
@@ -278,8 +278,8 @@
   },
   "blackbeard:Salvager": {
     "NAME": "Salvager",
-    "DESCRIPTION": "Whenever a Weapon is destroyed, gain [R].",
-    "UPGRADE_DESCRIPTION": "Whenever a Weapon is destroyed, gain [R] [R]."
+    "DESCRIPTION": "Whenever a Weapon is destroyed, gain [E].",
+    "UPGRADE_DESCRIPTION": "Whenever a Weapon is destroyed, gain [E] [E]."
   },
   "blackbeard:Anchor": {
     "NAME": "Anchor",
@@ -288,8 +288,8 @@
   },
   "blackbeard:BoostMorale": {
     "NAME": "Boost Morale",
-    "DESCRIPTION": "Draw !M! cards. NL Gain [R]. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Draw !M! cards. NL Gain [R] [R]. NL Exhaust."
+    "DESCRIPTION": "Draw !M! cards. NL Gain [E]. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. NL Gain [E] [E]. NL Exhaust."
   },
   "blackbeard:MegaUpgrade": {
     "NAME": "Mega Upgrade",
@@ -297,8 +297,8 @@
   },
   "blackbeard:Recklessness": {
     "NAME": "Recklessness",
-    "DESCRIPTION": "Gain [R] [R]. NL At the start of your next turn, lose [R] [R].",
-    "UPGRADE_DESCRIPTION": "Gain [R] [R] [R]. NL At the start of your next turn, lose [R] [R]."
+    "DESCRIPTION": "Gain [E] [E]. NL At the start of your next turn, lose [E] [E].",
+    "UPGRADE_DESCRIPTION": "Gain [E] [E] [E]. NL At the start of your next turn, lose [E] [E]."
   },
   "blackbeard:DelayedPain": {
     "NAME": "Delayed Pain",
@@ -310,7 +310,7 @@
   },
   "blackbeard:Intoxication": {
     "NAME": "Intoxication",
-    "DESCRIPTION": "Gain !M! Resistance. NL At the start of each turn, lose 1 Resistance."
+    "DESCRIPTION": "Gain !M! Resistance. NL At the start of your turn, lose 1 Resistance."
   },
   "blackbeard:CannonballSupply": {
     "NAME": "Cannonball Supply",

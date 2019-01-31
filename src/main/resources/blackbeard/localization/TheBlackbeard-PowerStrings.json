@@ -38,10 +38,10 @@
   "blackbeard:InfiniteBarragePower": {
     "NAME": "Infinite Barrage",
     "DESCRIPTIONS": [
-      "At the start of each turn, add #b",
+      "At the start of your turn, add #b",
       " Cannonball",
       " Cannonballs",
-      " to your hand."
+      " into your hand."
     ]
   },
   "blackbeard:ToastPower": {
@@ -77,14 +77,14 @@
     "NAME": "Salvager",
     "DESCRIPTIONS": [
       "Whenever a Weapon is destroyed, gain #b",
-      " [R] ."
+      " [E] ."
     ]
   },
   "blackbeard:LoseEnergyNextTurnPower": {
     "NAME": "Lose Energy Next Turn",
     "DESCRIPTIONS": [
       "At the start of your next turn, lose #b",
-      " [R] ."
+      " Rusty ."
     ]
   },
   "blackbeard:ArmorUpPower": {
@@ -97,7 +97,7 @@
   "blackbeard:IntoxicationPower": {
     "NAME": "Intoxication Power",
     "DESCRIPTIONS": [
-      "At the start of each turn, lose #b",
+      "At the start of your turn, lose #b",
       " Resistance."
     ]
   },
