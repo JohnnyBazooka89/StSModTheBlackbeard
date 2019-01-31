@@ -84,7 +84,7 @@
     "NAME": "Lose Energy Next Turn",
     "DESCRIPTIONS": [
       "At the start of your next turn, lose #b",
-      " Rusty ."
+      " [E] ."
     ]
   },
   "blackbeard:ArmorUpPower": {
