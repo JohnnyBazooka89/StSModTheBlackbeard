@@ -19,12 +19,16 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
+import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
 import java.util.ArrayList;
 
 public class TheBlackbeard extends CustomPlayer {
+
+    private static final String ID = "blackbeard:BlackbeardCharacter";
+    private static final CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString(ID);
 
     private static final int ENERGY_PER_TURN = 3;
 
@@ -34,8 +38,8 @@ public class TheBlackbeard extends CustomPlayer {
     private static final String BLACKBEARD_SHOULDER_2 = "blackbeard/img/char/blackbeard/shoulder2.png";
     private static final String BLACKBEARD_CORPSE = "blackbeard/img/char/blackbeard/corpse.png";
 
-    public TheBlackbeard(String name, PlayerClass setClass) {
-        super(name, setClass, null, null, (String) null, null);
+    public TheBlackbeard(String name) {
+        super(name, TheBlackbeardEnum.BLACKBEARD_CLASS, null, null, (String) null, null);
 
         initializeClass(null, BLACKBEARD_SHOULDER_2, BLACKBEARD_SHOULDER_1, BLACKBEARD_CORPSE,
                 getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(ENERGY_PER_TURN));
@@ -69,16 +73,15 @@ public class TheBlackbeard extends CustomPlayer {
     }
 
     public CharSelectInfo getLoadout() {
-        return new CharSelectInfo("The Blackbeard",
-                "After following his dusty map, he found himself trying to Slay the Spire. NL " +
-                        "Skilled in using weapons, he wants all the treasures for himself.",
+        return new CharSelectInfo(characterStrings.NAMES[0],
+                characterStrings.TEXT[0],
                 75, 75, 0, 99, 5,
                 this, getStartingRelics(), getStartingDeck(), false);
     }
 
     @Override
     public String getTitle(PlayerClass playerClass) {
-        return "The Blackbeard";
+        return characterStrings.NAMES[0];
     }
 
     @Override
@@ -124,17 +127,17 @@ public class TheBlackbeard extends CustomPlayer {
 
     @Override
     public String getLocalizedCharacterName() {
-        return "The Blackbeard";
+        return characterStrings.NAMES[0];
     }
 
     @Override
     public AbstractPlayer newInstance() {
-        return new TheBlackbeard("The Blackbeard", TheBlackbeardEnum.BLACKBEARD_CLASS);
+        return new TheBlackbeard(characterStrings.NAMES[0]);
     }
 
     @Override
     public String getSpireHeartText() {
-        return "NL You ready your Weapon...";
+        return characterStrings.TEXT[1];
     }
 
     @Override
@@ -149,7 +152,7 @@ public class TheBlackbeard extends CustomPlayer {
 
     @Override
     public String getVampireText() {
-        return "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us,~ ~oh~ ~Great~ ~Captain,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~";
+        return characterStrings.TEXT[2];
     }
 
 }

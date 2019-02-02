@@ -72,12 +72,13 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     private static final String BADGE_IMG = "blackbeard/img/ModBadge.png";
 
     //Localization strings
-    private static final String RELIC_STRINGS_PATH = "blackbeard/localization/TheBlackbeard-RelicStrings.json";
-    private static final String CARD_STRINGS_PATH = "blackbeard/localization/TheBlackbeard-CardStrings.json";
-    private static final String POWER_STRINGS_PATH = "blackbeard/localization/TheBlackbeard-PowerStrings.json";
-    private static final String ORB_STRINGS_PATH = "blackbeard/localization/TheBlackbeard-OrbStrings.json";
-    private static final String KEYWORD_STRINGS_PATH = "blackbeard/localization/TheBlackbeard-KeywordStrings.json";
-    private static final String POTION_STRINGS_PATH = "blackbeard/localization/TheBlackbeard-PotionStrings.json";
+    private static final String CHARACTER_STRINGS_PATH = "blackbeard/localization/eng/CharacterStrings.json";
+    private static final String RELIC_STRINGS_PATH = "blackbeard/localization/eng/RelicStrings.json";
+    private static final String CARD_STRINGS_PATH = "blackbeard/localization/eng/CardStrings.json";
+    private static final String POWER_STRINGS_PATH = "blackbeard/localization/eng/PowerStrings.json";
+    private static final String ORB_STRINGS_PATH = "blackbeard/localization/eng/OrbStrings.json";
+    private static final String KEYWORD_STRINGS_PATH = "blackbeard/localization/eng/KeywordStrings.json";
+    private static final String POTION_STRINGS_PATH = "blackbeard/localization/eng/PotionStrings.json";
 
     public static Map<String, Keyword> keywords = new HashMap<>();
 
@@ -137,7 +138,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         logger.info("Add " + TheBlackbeardEnum.BLACKBEARD_CLASS.toString());
 
         BaseMod.addCharacter(
-                new TheBlackbeard(MOD_NAME, TheBlackbeardEnum.BLACKBEARD_CLASS),
+                new TheBlackbeard(MOD_NAME),
                 BLACKBEARD_BUTTON,
                 BLACKBEARD_PORTRAIT,
                 TheBlackbeardEnum.BLACKBEARD_CLASS
@@ -273,6 +274,8 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     public void receiveEditStrings() {
         logger.info("Begin editing strings");
 
+        //Character Strings
+        BaseMod.loadCustomStringsFile(CharacterStrings.class, CHARACTER_STRINGS_PATH);
         //Relic Strings
         BaseMod.loadCustomStringsFile(RelicStrings.class, RELIC_STRINGS_PATH);
         //Card Strings
