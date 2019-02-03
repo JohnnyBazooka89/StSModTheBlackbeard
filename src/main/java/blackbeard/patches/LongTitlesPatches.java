@@ -19,8 +19,8 @@ import java.util.List;
 
 public class LongTitlesPatches {
 
-    private static List<String> cardsToFixInEnglish = Arrays.asList(CloakAndCannonball.ID, HumongousCannonball.ID, IntimidatingStrike.ID, TheDrunkenSailor.ID, WeaponProficiency.ID);
-    private static List<String> cardsToFixInRussian = Arrays.asList(BountyHunter.ID, FinalBarrage.ID, IntimidatingStrike.ID, Lifeboat.ID, MegaUpgrade.ID, RearmingStrike.ID, TacticalRetreat.ID, WeaponMastery.ID);
+    private static List<String> cardIDsToFixInEnglish = Arrays.asList(CloakAndCannonball.ID, HumongousCannonball.ID, IntimidatingStrike.ID, TheDrunkenSailor.ID, WeaponProficiency.ID);
+    private static List<String> cardIDsToFixInRussian = Arrays.asList(BountyHunter.ID, FinalBarrage.ID, IntimidatingStrike.ID, Lifeboat.ID, MegaUpgrade.ID, RearmingStrike.ID, TacticalRetreat.ID, WeaponMastery.ID);
 
     @SpirePatch(clz = FontHelper.class, method = "initialize", paramtypez = {})
     public static class FontHelperPatch {
@@ -31,15 +31,11 @@ public class LongTitlesPatches {
         public static BitmapFont smallerCardTitleFontSmallL;
 
         @SpireInsertPatch(locator = Locator.class)
-        public static void CardTitleFontInsert() {
-            try {
-                Method prepFontMethod = FontHelper.class.getDeclaredMethod("prepFont", float.class, boolean.class);
-                prepFontMethod.setAccessible(true);
-                smallerCardTitleFontSmallN = (BitmapFont) prepFontMethod.invoke(null, 17.0f, true);
-                smallerCardTitleFontSmallL = (BitmapFont) prepFontMethod.invoke(null, 17.0f, true);
-            } catch (Exception e) {
-                logger.error("Exception in FontHelperPatch: ", e);
-            }
+        public static void CardTitleFontInsert() throws Exception {
+            Method prepFontMethod = FontHelper.class.getDeclaredMethod("prepFont", float.class, boolean.class);
+            prepFontMethod.setAccessible(true);
+            smallerCardTitleFontSmallN = (BitmapFont) prepFontMethod.invoke(null, 17.0f, true);
+            smallerCardTitleFontSmallL = (BitmapFont) prepFontMethod.invoke(null, 17.0f, true);
         }
 
         private static class Locator extends SpireInsertLocator {
@@ -60,14 +56,10 @@ public class LongTitlesPatches {
         public static BitmapFont smallerSCPCardTitleFontSmall;
 
         @SpireInsertPatch(locator = Locator.class)
-        public static void SCPCardTitleFontLocatorInsert() {
-            try {
-                Method prepFontMethod = FontHelper.class.getDeclaredMethod("prepFont", float.class, boolean.class);
-                prepFontMethod.setAccessible(true);
-                smallerSCPCardTitleFontSmall = (BitmapFont) prepFontMethod.invoke(null, 34.0f, true);
-            } catch (Exception e) {
-                logger.error("Exception in FontHelperSingleCardViewPatch: ", e);
-            }
+        public static void SCPCardTitleFontLocatorInsert() throws Exception {
+            Method prepFontMethod = FontHelper.class.getDeclaredMethod("prepFont", float.class, boolean.class);
+            prepFontMethod.setAccessible(true);
+            smallerSCPCardTitleFontSmall = (BitmapFont) prepFontMethod.invoke(null, 34.0f, true);
         }
 
         private static class Locator extends SpireInsertLocator {
@@ -124,12 +116,12 @@ public class LongTitlesPatches {
 
     private static boolean shouldFixLongTitle(AbstractCard card) {
         if (Settings.language == Settings.GameLanguage.ENG) {
-            if (cardsToFixInEnglish.contains(card.cardID)) {
+            if (cardIDsToFixInEnglish.contains(card.cardID)) {
                 return true;
             }
         }
         if (Settings.language == Settings.GameLanguage.RUS) {
-            if (cardsToFixInRussian.contains(card.cardID)) {
+            if (cardIDsToFixInRussian.contains(card.cardID)) {
                 return true;
             }
         }
