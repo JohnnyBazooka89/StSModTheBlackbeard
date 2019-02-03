@@ -3,20 +3,15 @@ package blackbeard.cards;
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.enums.AbstractCardEnum;
-import blackbeard.interfaces.ILongTitle;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import java.util.Arrays;
-import java.util.List;
-
-public class CloakAndCannonball extends CustomCard implements ILongTitle {
+public class CloakAndCannonball extends CustomCard {
 
     public static final String ID = "blackbeard:CloakAndCannonball";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -47,10 +42,5 @@ public class CloakAndCannonball extends CustomCard implements ILongTitle {
             this.upgradeBlock(UPGRADED_PLUS_BLOCK_AMOUNT);
             this.initializeDescription();
         }
-    }
-
-    @Override
-    public List<Settings.GameLanguage> getLanguagesForFixingLongTitle() {
-        return Arrays.asList(Settings.GameLanguage.ENG);
     }
 }

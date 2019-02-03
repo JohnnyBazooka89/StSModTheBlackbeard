@@ -3,20 +3,15 @@ package blackbeard.cards;
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.enums.AbstractCardEnum;
-import blackbeard.interfaces.ILongTitle;
 import blackbeard.powers.TheDrunkenSailorPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import java.util.Arrays;
-import java.util.List;
-
-public class TheDrunkenSailor extends CustomCard implements ILongTitle {
+public class TheDrunkenSailor extends CustomCard {
     public static final String ID = "blackbeard:TheDrunkenSailor";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final int COST = 1;
@@ -40,10 +35,5 @@ public class TheDrunkenSailor extends CustomCard implements ILongTitle {
             this.upgradeName();
             this.upgradeBaseCost(UPGRADED_COST);
         }
-    }
-
-    @Override
-    public List<Settings.GameLanguage> getLanguagesForFixingLongTitle() {
-        return Arrays.asList(Settings.GameLanguage.ENG);
     }
 }

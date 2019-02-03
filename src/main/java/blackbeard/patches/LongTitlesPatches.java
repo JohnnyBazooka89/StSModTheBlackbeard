@@ -1,7 +1,7 @@
 package blackbeard.patches;
 
 import basemod.ReflectionHacks;
-import blackbeard.interfaces.ILongTitle;
+import blackbeard.cards.*;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.evacipated.cardcrawl.modthespire.lib.*;
@@ -14,8 +14,13 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.lang.reflect.Method;
+import java.util.Arrays;
+import java.util.List;
 
 public class LongTitlesPatches {
+
+    private static List<String> cardsToFixInEnglish = Arrays.asList(CloakAndCannonball.ID, HumongousCannonball.ID, IntimidatingStrike.ID, TheDrunkenSailor.ID, WeaponProficiency.ID);
+    private static List<String> cardsToFixInRussian = Arrays.asList(BountyHunter.ID, FinalBarrage.ID, IntimidatingStrike.ID, Lifeboat.ID, MegaUpgrade.ID, RearmingStrike.ID, TacticalRetreat.ID, WeaponMastery.ID);
 
     @SpirePatch(clz = FontHelper.class, method = "initialize", paramtypez = {})
     public static class FontHelperPatch {
@@ -118,9 +123,13 @@ public class LongTitlesPatches {
     }
 
     private static boolean shouldFixLongTitle(AbstractCard card) {
-        if (card instanceof ILongTitle) {
-            ILongTitle iLongTitle = (ILongTitle) card;
-            if (iLongTitle.getLanguagesForFixingLongTitle().contains(Settings.language)) {
+        if (Settings.language == Settings.GameLanguage.ENG) {
+            if (cardsToFixInEnglish.contains(card.cardID)) {
+                return true;
+            }
+        }
+        if (Settings.language == Settings.GameLanguage.RUS) {
+            if (cardsToFixInRussian.contains(card.cardID)) {
                 return true;
             }
         }

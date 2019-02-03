@@ -4,21 +4,16 @@ import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.enums.AbstractCardEnum;
 import blackbeard.enums.CardTagsEnum;
-import blackbeard.interfaces.ILongTitle;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import java.util.Arrays;
-import java.util.List;
-
-public class HumongousCannonball extends CustomCard implements ILongTitle {
+public class HumongousCannonball extends CustomCard {
     public static final String ID = "blackbeard:HumongousCannonball";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
@@ -49,10 +44,5 @@ public class HumongousCannonball extends CustomCard implements ILongTitle {
             this.upgradeName();
             this.upgradeDamage(UPGRADE_PLUS_ATTACK_DMG);
         }
-    }
-
-    @Override
-    public List<Settings.GameLanguage> getLanguagesForFixingLongTitle() {
-        return Arrays.asList(Settings.GameLanguage.ENG);
     }
 }
