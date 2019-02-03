@@ -39,6 +39,9 @@ If you want to play Ascension 20 straight away, you have to:
 }
 ```
 
+## Localizations ##
+The mod is now available in Russian, thanks to [Jedi](https://github.com/Jedi515).
+
 ## Special Thanks ##
 1. Thanks to the [developers](https://www.megacrit.com/) of **SlayTheSpire** for making such a good game.
 2. Thanks to the creators of ModTheSpire and BaseMod for creating great tools for modding.
