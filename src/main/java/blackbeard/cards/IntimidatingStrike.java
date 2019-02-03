@@ -10,10 +10,14 @@ import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.WeakPower;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class IntimidatingStrike extends CustomCard implements ILongTitle {
     public static final String ID = "blackbeard:IntimidatingStrike";
@@ -49,5 +53,10 @@ public class IntimidatingStrike extends CustomCard implements ILongTitle {
             this.upgradeDamage(UPGRADE_PLUS_ATTACK_DMG);
             this.upgradeMagicNumber(UPGRADE_PLUS_WEAK_TO_APPLY);
         }
+    }
+
+    @Override
+    public List<Settings.GameLanguage> getLanguagesForFixingLongTitle() {
+        return Arrays.asList(Settings.GameLanguage.ENG);
     }
 }

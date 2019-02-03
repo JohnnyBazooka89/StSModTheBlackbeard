@@ -1,0 +1,84 @@
+{
+  "blackbeard:WeaponOrb": {
+    "NAME": "Weapon",
+    "DESCRIPTION": [
+      " NL ",
+      "Attack: ",
+      " NL ",
+      "Durability: #b"
+    ]
+  },
+  "blackbeard:DefaultWeaponOrb": {
+    "NAME": "Sword",
+    "DESCRIPTION": [
+      ""
+    ]
+  },
+  "blackbeard:CutlassOrb": {
+    "NAME": "Cutlass",
+    "DESCRIPTION": [
+      ""
+    ]
+  },
+  "blackbeard:HalberdOrb": {
+    "NAME": "Halberd",
+    "DESCRIPTION": [
+      "A Rare Weapon!"
+    ]
+  },
+  "blackbeard:PowderKegOrb": {
+    "NAME": "Powder Keg",
+    "DESCRIPTION": [
+      "When destroyed, deal #b",
+      " damage to all enemies."
+    ]
+  },
+  "blackbeard:SwordOfWisdomOrb": {
+    "NAME": "Sword Of Wisdom",
+    "DESCRIPTION": [
+      "Whenever you attack with this Weapon, draw a card."
+    ]
+  },
+  "blackbeard:SwordOfChaosOrb": {
+    "NAME": "Sword Of Chaos",
+    "DESCRIPTION": [
+      "Whenever you attack with this Weapon, add a random card to your hand."
+    ]
+  },
+  "blackbeard:CatONineTailsOrb": {
+    "NAME": "Cat O' Nine Tails",
+    "DESCRIPTION": [
+      "After you attack with this Weapon, give it + 2 Attack."
+    ]
+  },
+  "blackbeard:DaggerOrb": {
+    "NAME": "Dagger",
+    "DESCRIPTION": [
+      ""
+    ]
+  },
+  "blackbeard:SwordOrb": {
+    "NAME": "Sword",
+    "DESCRIPTION": [
+      ""
+    ]
+  },
+  "blackbeard:SmithingHammerOrb": {
+    "NAME": "Smithing Hammer",
+    "DESCRIPTION": [
+      "After you attack with this Weapon and passively at the start of your turn using 1 durability, upgrade a random card in your hand for the rest of the combat."
+    ]
+  },
+  "blackbeard:SpearOrb": {
+    "NAME": "Spear",
+    "DESCRIPTION": [
+      ""
+    ]
+  },
+  "blackbeard:SwordOfFireOrb": {
+    "NAME": "Sword Of Fire",
+    "DESCRIPTION": [
+      "Whenever you attack with this Weapon, deal #b3 damage to all enemies."
+    ]
+  }
+}

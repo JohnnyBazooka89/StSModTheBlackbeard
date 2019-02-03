@@ -8,9 +8,13 @@ import blackbeard.powers.WeaponProficiencyPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class WeaponProficiency extends CustomCard implements ILongTitle {
     public static final String ID = "blackbeard:WeaponProficiency";
@@ -40,5 +44,10 @@ public class WeaponProficiency extends CustomCard implements ILongTitle {
             this.upgradeName();
             this.upgradeBaseCost(UPGRADED_COST);
         }
+    }
+
+    @Override
+    public List<Settings.GameLanguage> getLanguagesForFixingLongTitle() {
+        return Arrays.asList(Settings.GameLanguage.ENG);
     }
 }

@@ -17,6 +17,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.*;
@@ -72,13 +73,15 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     private static final String BADGE_IMG = "blackbeard/img/ModBadge.png";
 
     //Localization strings
-    private static final String CHARACTER_STRINGS_PATH = "blackbeard/localization/eng/CharacterStrings.json";
-    private static final String RELIC_STRINGS_PATH = "blackbeard/localization/eng/RelicStrings.json";
-    private static final String CARD_STRINGS_PATH = "blackbeard/localization/eng/CardStrings.json";
-    private static final String POWER_STRINGS_PATH = "blackbeard/localization/eng/PowerStrings.json";
-    private static final String ORB_STRINGS_PATH = "blackbeard/localization/eng/OrbStrings.json";
-    private static final String KEYWORD_STRINGS_PATH = "blackbeard/localization/eng/KeywordStrings.json";
-    private static final String POTION_STRINGS_PATH = "blackbeard/localization/eng/PotionStrings.json";
+    private static final String CHARACTER_STRINGS_PATH = "blackbeard/localization/%s/CharacterStrings.json";
+    private static final String RELIC_STRINGS_PATH = "blackbeard/localization/%s/RelicStrings.json";
+    private static final String CARD_STRINGS_PATH = "blackbeard/localization/%s/CardStrings.json";
+    private static final String POWER_STRINGS_PATH = "blackbeard/localization/%s/PowerStrings.json";
+    private static final String ORB_STRINGS_PATH = "blackbeard/localization/%s/OrbStrings.json";
+    private static final String KEYWORD_STRINGS_PATH = "blackbeard/localization/%s/KeywordStrings.json";
+    private static final String POTION_STRINGS_PATH = "blackbeard/localization/%s/PotionStrings.json";
+
+    public static final String DEFAULT_LANGUAGE = "eng";
 
     public static Map<String, Keyword> keywords = new HashMap<>();
 
@@ -274,37 +277,51 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     public void receiveEditStrings() {
         logger.info("Begin editing strings");
 
-        //Character Strings
-        BaseMod.loadCustomStringsFile(CharacterStrings.class, CHARACTER_STRINGS_PATH);
-        //Relic Strings
-        BaseMod.loadCustomStringsFile(RelicStrings.class, RELIC_STRINGS_PATH);
-        //Card Strings
-        BaseMod.loadCustomStringsFile(CardStrings.class, CARD_STRINGS_PATH);
-        //Power Strings
-        BaseMod.loadCustomStringsFile(PowerStrings.class, POWER_STRINGS_PATH);
-        //Orb Strings
-        BaseMod.loadCustomStringsFile(OrbStrings.class, ORB_STRINGS_PATH);
-        //Potion Strings
-        BaseMod.loadCustomStringsFile(PotionStrings.class, POTION_STRINGS_PATH);
+        loadCustomStringsForLanguage(DEFAULT_LANGUAGE);
+
+        switch (Settings.language) {
+            case RUS:
+                loadCustomStringsForLanguage("rus");
+                break;
+        }
 
         logger.info("Done editing strings");
+    }
+
+    private void loadCustomStringsForLanguage(String language) {
+        BaseMod.loadCustomStringsFile(CharacterStrings.class, String.format(CHARACTER_STRINGS_PATH, language));
+        BaseMod.loadCustomStringsFile(RelicStrings.class, String.format(RELIC_STRINGS_PATH, language));
+        BaseMod.loadCustomStringsFile(CardStrings.class, String.format(CARD_STRINGS_PATH, language));
+        BaseMod.loadCustomStringsFile(PowerStrings.class, String.format(POWER_STRINGS_PATH, language));
+        BaseMod.loadCustomStringsFile(OrbStrings.class, String.format(ORB_STRINGS_PATH, language));
+        BaseMod.loadCustomStringsFile(PotionStrings.class, String.format(POTION_STRINGS_PATH, language));
     }
 
     @Override
     public void receiveEditKeywords() {
         logger.info("Begin editing keywords");
 
+        loadCustomKeywordsForLanguage(DEFAULT_LANGUAGE);
+
+        switch (Settings.language) {
+            case RUS:
+                loadCustomKeywordsForLanguage("rus");
+                break;
+        }
+
+        logger.info("Done editing keywords");
+    }
+
+    private void loadCustomKeywordsForLanguage(String language) {
         Gson gson = new Gson();
 
-        String keywordStrings = Gdx.files.internal(KEYWORD_STRINGS_PATH).readString(String.valueOf(StandardCharsets.UTF_8));
+        String keywordStrings = Gdx.files.internal(String.format(KEYWORD_STRINGS_PATH, language)).readString(String.valueOf(StandardCharsets.UTF_8));
         Type typeToken = new TypeToken<Map<String, Keyword>>() {
         }.getType();
 
         keywords = gson.fromJson(keywordStrings, typeToken);
 
         keywords.forEach((k, v) -> BaseMod.addKeyword(v.NAMES, v.DESCRIPTION));
-
-        logger.info("Done editing keywords");
     }
 
 }

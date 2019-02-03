@@ -6,6 +6,7 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.screens.SingleCardViewPopup;
 import javassist.CtBehavior;
@@ -79,23 +80,19 @@ public class LongTitlesPatches {
         private static BitmapFont originalCardTitleFontSmallN;
         private static BitmapFont originalCardTitleFontSmallL;
 
-        public static void Prefix(AbstractCard abstractCard, SpriteBatch sb) {
+        public static void Prefix(AbstractCard card, SpriteBatch sb) {
             originalCardTitleFontSmallN = FontHelper.cardTitleFont_small_N;
             originalCardTitleFontSmallL = FontHelper.cardTitleFont_small_L;
 
-            if (shouldFixLongTitle(abstractCard)) {
+            if (shouldFixLongTitle(card)) {
                 FontHelper.cardTitleFont_small_N = FontHelperPatch.smallerCardTitleFontSmallN;
                 FontHelper.cardTitleFont_small_L = FontHelperPatch.smallerCardTitleFontSmallL;
             }
         }
 
-        public static void Postfix(AbstractCard abstractCard, SpriteBatch sb) {
+        public static void Postfix(AbstractCard card, SpriteBatch sb) {
             FontHelper.cardTitleFont_small_N = originalCardTitleFontSmallN;
             FontHelper.cardTitleFont_small_L = originalCardTitleFontSmallL;
-        }
-
-        private static boolean shouldFixLongTitle(AbstractCard abstractCard) {
-            return abstractCard instanceof ILongTitle;
         }
 
     }
@@ -108,8 +105,8 @@ public class LongTitlesPatches {
         public static void Prefix(SingleCardViewPopup singleCardViewPopup, SpriteBatch sb) {
             originalSCPCardTitleFontSmall = FontHelper.SCP_cardTitleFont_small;
 
-            AbstractCard abstractCard = (AbstractCard) ReflectionHacks.getPrivate(singleCardViewPopup, SingleCardViewPopup.class, "card");
-            if (shouldFixLongTitle(abstractCard)) {
+            AbstractCard card = (AbstractCard) ReflectionHacks.getPrivate(singleCardViewPopup, SingleCardViewPopup.class, "card");
+            if (shouldFixLongTitle(card)) {
                 FontHelper.SCP_cardTitleFont_small = FontHelperSingleCardViewPatch.smallerSCPCardTitleFontSmall;
             }
         }
@@ -118,10 +115,16 @@ public class LongTitlesPatches {
             FontHelper.SCP_cardTitleFont_small = originalSCPCardTitleFontSmall;
         }
 
-        private static boolean shouldFixLongTitle(AbstractCard abstractCard) {
-            return abstractCard instanceof ILongTitle;
-        }
+    }
 
+    private static boolean shouldFixLongTitle(AbstractCard card) {
+        if (card instanceof ILongTitle) {
+            ILongTitle iLongTitle = (ILongTitle) card;
+            if (iLongTitle.getLanguagesForFixingLongTitle().contains(Settings.language)) {
+                return true;
+            }
+        }
+        return false;
     }
 
 }

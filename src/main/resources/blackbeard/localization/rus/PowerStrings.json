@@ -1,0 +1,132 @@
+{
+  "blackbeard:WeaponPower": {
+    "NAME": "Weapons",
+    "DESCRIPTIONS": [
+      "Whenever you play an attack card, one Durability of your rightmost Weapon is used and card's damage is increased by Weapon's attack."
+    ]
+  },
+  "blackbeard:ParrotPower": {
+    "NAME": "Parrot",
+    "DESCRIPTIONS": [
+      "The last card played each turn is played an additional time."
+    ]
+  },
+  "blackbeard:TheDrunkenSailorPower": {
+    "NAME": "The Drunken Sailor",
+    "DESCRIPTIONS": [
+      "Your potions are used #b",
+      " times."
+    ]
+  },
+  "blackbeard:SwordDancePower": {
+    "NAME": "Sword Dance",
+    "DESCRIPTIONS": [
+      "This turn, your next Attack uses all equipped Weapons.",
+      "This turn, your next #b",
+      " Attacks use all equipped Weapons."
+    ]
+  },
+  "blackbeard:ResistancePower": {
+    "NAME": "Resistance",
+    "DESCRIPTIONS": [
+      "You take #b",
+      " less",
+      " more",
+      " damage from enemy attacks. (Enemy intents always show actual incoming damage, with Resistance taken into account.)"
+    ]
+  },
+  "blackbeard:InfiniteBarragePower": {
+    "NAME": "Infinite Barrage",
+    "DESCRIPTIONS": [
+      "At the start of your turn, add #b",
+      " Cannonball",
+      " Cannonballs",
+      " into your hand."
+    ]
+  },
+  "blackbeard:ToastPower": {
+    "NAME": "Toast",
+    "DESCRIPTIONS": [
+      "At the start of your next turn, lose #b",
+      " Resistance."
+    ]
+  },
+  "blackbeard:DamageAtTheEndOfNextTurnPower": {
+    "NAME": "Next Turn Damage",
+    "DESCRIPTIONS": [
+      "At the end of next turn, you take #b",
+      " damage."
+    ]
+  },
+  "blackbeard:DamageAtTheEndOfThisTurnPower": {
+    "NAME": "End Turn Damage",
+    "DESCRIPTIONS": [
+      "At the end of this turn, you take #b",
+      " damage."
+    ]
+  },
+  "blackbeard:WeaponMasteryPower": {
+    "NAME": "Weapon Mastery",
+    "DESCRIPTIONS": [
+      "Whenever you Equip a Weapon, draw #b",
+      " card.",
+      " cards."
+    ]
+  },
+  "blackbeard:SalvagerPower": {
+    "NAME": "Salvager",
+    "DESCRIPTIONS": [
+      "Whenever a Weapon is destroyed, gain #b",
+      " [E] ."
+    ]
+  },
+  "blackbeard:LoseEnergyNextTurnPower": {
+    "NAME": "Lose Energy Next Turn",
+    "DESCRIPTIONS": [
+      "At the start of your next turn, lose #b",
+      " [E] ."
+    ]
+  },
+  "blackbeard:ArmorUpPower": {
+    "NAME": "Armor Up",
+    "DESCRIPTIONS": [
+      "This turn, whenever you attack with a Weapon, gain #b",
+      " Block."
+    ]
+  },
+  "blackbeard:IntoxicationPower": {
+    "NAME": "Intoxication Power",
+    "DESCRIPTIONS": [
+      "At the start of your turn, lose #b",
+      " Resistance."
+    ]
+  },
+  "blackbeard:PenknifePower": {
+    "NAME": "Penknife",
+    "DESCRIPTIONS": [
+      "Your next #yAttack that uses at least one Weapon deals double damage."
+    ]
+  },
+  "blackbeard:DamageWhenIntangibleEndsPower": {
+    "NAME": "End Of Intangible Damage",
+    "DESCRIPTIONS": [
+      "At the start of the turn on which you are no longer Intangible, you take #b",
+      " damage."
+    ]
+  },
+  "blackbeard:RustyThorns": {
+    "NAME": "Rusty Thorns",
+    "DESCRIPTIONS": [
+      "When attacked, deals #b ",
+      " damage back and reduces Rusty Thorns by #b1."
+    ]
+  },
+  "blackbeard:WeaponProficiencyPower": {
+    "NAME": "Weapon Proficiency",
+    "DESCRIPTIONS": [
+      "Your attacks use ",
+      " additional Weapon.",
+      " additional Weapons."
+    ]
+  }
+}
