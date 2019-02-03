@@ -1,22 +1,29 @@
 {
   "blackbeard:WeaponKeyword": {
     "NAMES": [
-      "weapon",
-      "weapons"
+      "оружие",
+      "оружия",
+      "оружиям",
+      "оружию",
+      "оружием"
     ],
-    "DESCRIPTION": "Whenever you play an attack card, one Durability of your rightmost Weapon is used and card's damage is increased by Weapon's attack. You can equip maximum of 10 Weapons. Orb slots are created and destroyed automatically."
+    "PROPER_NAME": "Оружие",
+    "DESCRIPTION": "Когда вы разыгрываете карты #yАтак, тратит #b1 #yПрочности у правого #yОружия и добавляет урон, равный урону данного #yОружия. Одновременно может быть снаряжено до #b10 #yОружий. Слоты для сфер создаются и удаляются самостоятельно."
   },
   "blackbeard:CannonballKeyword": {
     "NAMES": [
-      "cannonball",
-      "cannonballs"
+      "ядро",
+      "ядра"
     ],
-    "DESCRIPTION": "Cannonballs are 0 cost attacks that deal 8 (10) damage and exhaust."
+    "PROPER_NAME": "Ядро",
+    "DESCRIPTION": "Карты Атаки ценой в #b0, которые #yСжигаются при разыгрывании."
   },
   "blackbeard:ResistanceKeyword": {
     "NAMES": [
-      "resistance"
+      "сопротивляемость",
+      "сопротивляемости"
     ],
-    "DESCRIPTION": "You take less damage from enemy attacks. (Enemy intents always show actual incoming damage, with Resistance taken into account.) Resistance can be negative."
+    "PROPER_NAME": "Сопротивляемость",
+    "DESCRIPTION": "Вы получаете меньше урона от атак. (Намерения врагов отображают урон с уже рассчитанной #yСопротивляемостью .) #yСопротивляемость может быть #rотрицательной."
   }
 }

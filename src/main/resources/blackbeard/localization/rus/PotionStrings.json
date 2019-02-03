@@ -1,17 +1,17 @@
 {
   "blackbeard:RumPotion": {
-    "NAME": "Bottle of Rum",
+    "NAME": "Бутылка рома",
     "DESCRIPTIONS": [
-      "Gain #b",
-      " #yResistance."
+      "Даёт #b",
+      " #yСопротивляемости."
     ]
   },
   "blackbeard:ToastPotion": {
-    "NAME": "Quick shots of Rum",
+    "NAME": "Глоток рома",
     "DESCRIPTIONS": [
-      "Gain #b",
-      " #yResistance. At the start of your next turn, lose #b",
-      " #yResistance."
+      "Даёт #b",
+      " #yСопротивляемости. Отнимает #b",
+      " #yСопротивляемости в начале след. хода."
     ]
   }
 }

@@ -1,132 +1,132 @@
 {
   "blackbeard:WeaponPower": {
-    "NAME": "Weapons",
+    "NAME": "Оружия",
     "DESCRIPTIONS": [
-      "Whenever you play an attack card, one Durability of your rightmost Weapon is used and card's damage is increased by Weapon's attack."
+      "Когда вы разыгрываете карты #yАтак, тратит #b1 #yПрочности у правого #yОружия и добавляет урон, равный урону данного #yОружия."
     ]
   },
   "blackbeard:ParrotPower": {
-    "NAME": "Parrot",
+    "NAME": "Попугай",
     "DESCRIPTIONS": [
-      "The last card played each turn is played an additional time."
+      "В конце вашего хода вы разыгрываете последнюю карту, разыгранную в данном ходу."
     ]
   },
   "blackbeard:TheDrunkenSailorPower": {
-    "NAME": "The Drunken Sailor",
+    "NAME": "Пьяный моряк",
     "DESCRIPTIONS": [
-      "Your potions are used #b",
-      " times."
+      "Зелья используются #b",
+      " раза."
     ]
   },
   "blackbeard:SwordDancePower": {
-    "NAME": "Sword Dance",
+    "NAME": "Танец мечей",
     "DESCRIPTIONS": [
-      "This turn, your next Attack uses all equipped Weapons.",
-      "This turn, your next #b",
-      " Attacks use all equipped Weapons."
+      "В этом ходу следующая #yАтака использует все снаряжённые #yОружия.",
+      "В этом ходу следующие #b",
+      " #yАтаки используют все снаряжённые #yОружия."
     ]
   },
   "blackbeard:ResistancePower": {
-    "NAME": "Resistance",
+    "NAME": "Сопротивляемость",
     "DESCRIPTIONS": [
-      "You take #b",
-      " less",
-      " more",
-      " damage from enemy attacks. (Enemy intents always show actual incoming damage, with Resistance taken into account.)"
+      "Вы получаете на #b",
+      " меньше",
+      " больше",
+      " урона от атак. (Намерения врагов отображают урон с уже рассчитанной #yСопротивляемостью .)"
     ]
   },
   "blackbeard:InfiniteBarragePower": {
-    "NAME": "Infinite Barrage",
+    "NAME": "Уйма ядер",
     "DESCRIPTIONS": [
-      "At the start of your turn, add #b",
-      " Cannonball",
-      " Cannonballs",
-      " into your hand."
+      "Добавляет в руку #b",
+      " Ядро",
+      " ядра",
+      " в начале вашего хода."
     ]
   },
   "blackbeard:ToastPower": {
-    "NAME": "Toast",
+    "NAME": "Тост",
     "DESCRIPTIONS": [
-      "At the start of your next turn, lose #b",
-      " Resistance."
+      "Отнимает #b",
+      " #yСопротивляемости в начале след. хода."
     ]
   },
   "blackbeard:DamageAtTheEndOfNextTurnPower": {
-    "NAME": "Next Turn Damage",
+    "NAME": "Урон в след. ходу",
     "DESCRIPTIONS": [
-      "At the end of next turn, you take #b",
-      " damage."
+      "Вы получаете #b",
+      " урона в конце след. хода."
     ]
   },
   "blackbeard:DamageAtTheEndOfThisTurnPower": {
-    "NAME": "End Turn Damage",
+    "NAME": "Урон в конце хода",
     "DESCRIPTIONS": [
-      "At the end of this turn, you take #b",
-      " damage."
+      "Вы получаете #b",
+      " урона в конце этого хода."
     ]
   },
   "blackbeard:WeaponMasteryPower": {
-    "NAME": "Weapon Mastery",
+    "NAME": "Оружейное мастерство",
     "DESCRIPTIONS": [
-      "Whenever you Equip a Weapon, draw #b",
-      " card.",
-      " cards."
+      "Вы берёте #b",
+      " карту, когда вы снаряжаетесь #yОружием.",
+      " карты, когда вы снаряжаетесь #yОружием."
     ]
   },
   "blackbeard:SalvagerPower": {
-    "NAME": "Salvager",
+    "NAME": "Мародёр",
     "DESCRIPTIONS": [
-      "Whenever a Weapon is destroyed, gain #b",
-      " [E] ."
+      "Даёт #b",
+      " [E], когда у #yОружия кончается #yПрочность."
     ]
   },
   "blackbeard:LoseEnergyNextTurnPower": {
-    "NAME": "Lose Energy Next Turn",
+    "NAME": "Потеря энергии в след. ходу",
     "DESCRIPTIONS": [
-      "At the start of your next turn, lose #b",
-      " [E] ."
+      "Вы теряете #b",
+      " [E] в начале след. хода."
     ]
   },
   "blackbeard:ArmorUpPower": {
-    "NAME": "Armor Up",
+    "NAME": "Заблокировать",
     "DESCRIPTIONS": [
-      "This turn, whenever you attack with a Weapon, gain #b",
-      " Block."
+      "Даёт #b",
+      " #yЗащиты, когда вы разыгрываете #yАтаки со снаряжённым #yОружием в этом ходу."
     ]
   },
   "blackbeard:IntoxicationPower": {
-    "NAME": "Intoxication Power",
+    "NAME": "Опьянение",
     "DESCRIPTIONS": [
-      "At the start of your turn, lose #b",
-      " Resistance."
+      "Отнимает #b",
+      " #yСопротивляемости в начале вашего хода."
     ]
   },
   "blackbeard:PenknifePower": {
-    "NAME": "Penknife",
+    "NAME": "Перочинный нож",
     "DESCRIPTIONS": [
-      "Your next #yAttack that uses at least one Weapon deals double damage."
+      "Следующая #yАтака, которая использует хотя бы одно #yОружие, нанесёт двойной урон."
     ]
   },
   "blackbeard:DamageWhenIntangibleEndsPower": {
-    "NAME": "End Of Intangible Damage",
+    "NAME": "Урон от отсутствия Неосязаемости",
     "DESCRIPTIONS": [
-      "At the start of the turn on which you are no longer Intangible, you take #b",
-      " damage."
+      "Вы получаете #b",
+      " урона в начале хода, если на вас нет #yНеосязаемости."
     ]
   },
   "blackbeard:RustyThorns": {
-    "NAME": "Rusty Thorns",
+    "NAME": "Ржавые Шипы",
     "DESCRIPTIONS": [
-      "When attacked, deals #b ",
-      " damage back and reduces Rusty Thorns by #b1."
+      "В ответ на каждую атаку наносит #b ",
+      " урона и понижается на #b1."
     ]
   },
   "blackbeard:WeaponProficiencyPower": {
-    "NAME": "Weapon Proficiency",
+    "NAME": "Оружейный опыт",
     "DESCRIPTIONS": [
-      "Your attacks use ",
-      " additional Weapon.",
-      " additional Weapons."
+      "Ваши #yАтаки используют #b",
+      " доп. #yОружие.",
+      " доп. #yОружия."
     ]
   }
 }

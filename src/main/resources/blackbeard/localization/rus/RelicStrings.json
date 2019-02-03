@@ -1,100 +1,100 @@
 {
   "blackbeard:LoadTheCannons": {
-    "NAME": "Load The Cannons",
-    "FLAVOR": "Ready... Aim... Fire!!!",
+    "NAME": "Заряжай пушки",
+    "FLAVOR": "Готовьсь... Цельсь... Пли!!!",
     "DESCRIPTIONS": [
-      "At the start of each combat, and then every 4 turns, add a Cannonball to your hand."
+      "Добавляет в руку #yЯдро в начале боя и в начале каждого #b4 хода."
     ]
   },
   "blackbeard:HipFlask": {
-    "NAME": "Hip Flask",
-    "FLAVOR": "Very handy.",
+    "NAME": "Карманная фляга",
+    "FLAVOR": "Весьма удобно.",
     "DESCRIPTIONS": [
-      "At the start of each combat, gain #b1 Resistance."
+      "Даёт #b1 #yСопротивляемости в начале боя."
     ]
   },
   "blackbeard:BloodOrange": {
-    "NAME": "Blood Orange",
-    "FLAVOR": "This citrus seems to have an interesting power.",
+    "NAME": "Кровавый апельсин",
+    "FLAVOR": "Данный цитрус содержит необычную силу.",
     "DESCRIPTIONS": [
-      "Whenever you play 6 cards in the same turn, remove all of your Debuffs."
+      "Снимает с вас все отриц. эффекты каждый раз, когда вы разыгрываете #b6 карт в одном ходу."
     ]
   },
   "blackbeard:TreasureChest": {
-    "NAME": "Treasure Chest",
-    "FLAVOR": "This treasure chest contains untold riches.",
+    "NAME": "Сундук с сокровищами",
+    "FLAVOR": "В данном сундуке хранятся несметные сокровища.",
     "DESCRIPTIONS": [
-      "Gain 15 Gold after every battle."
+      "Даёт #b15 #yЗолота в конце боя."
     ]
   },
   "blackbeard:WhitePearl": {
-    "NAME": "White Pearl",
-    "FLAVOR": "Both beautiful and powerful.",
+    "NAME": "Белая жемчужина",
+    "FLAVOR": "Красивая... И могущественная.",
     "DESCRIPTIONS": [
-      "Whenever you Equip a Weapon, give it +1 Attack."
+      "Даёт #b+1 урона снаряжаемым #yОружиям."
     ]
   },
   "blackbeard:CannonballsOfSteel": {
-    "NAME": "Cannonballs Of Steel",
-    "FLAVOR": "Much stronger than regular cannonballs.",
+    "NAME": "Стальные ядра",
+    "FLAVOR": "Гораздо тяжелее обычных ядер.",
     "DESCRIPTIONS": [
-      "Your Cannonballs deal #b2 more damage. (Works with every type of Cannonball.)"
+      "Ваши #yЯдра наносят на #b3 урона больше. (Учитываются все типы #yЯдер .)"
     ]
   },
   "blackbeard:GoldenRing": {
-    "NAME": "Golden Ring",
-    "FLAVOR": "Suitable for every pirate.",
+    "NAME": "Золотое кольцо",
+    "FLAVOR": "Подходит любому пирату.",
     "DESCRIPTIONS": [
-      "At the start of each combat, gain 1 Artifact."
+      "Вы начинаете каждый бой с #b1 #yАртефакта."
     ]
   },
   "blackbeard:MagicalCauldron": {
-    "NAME": "Magical Cauldron",
-    "FLAVOR": "Fully automatic.",
+    "NAME": "Волшебный котёл",
+    "FLAVOR": "Полностью автоматизирован.",
     "DESCRIPTIONS": [
-      "At the start of each combat, obtain a random potion."
+      "Даёт случайное зелье в начале боя."
     ]
   },
   "blackbeard:Penknife": {
-    "NAME": "Penknife",
-    "FLAVOR": "If you have it in your pocket, don't forget to use it.",
+    "NAME": "Перочинный нож",
+    "FLAVOR": "Не забудьте его использовать, если он у вас в кармане.",
     "DESCRIPTIONS": [
-      "Every 8th Attack that uses at least one Weapon deals double damage."
+      "Удваивает урон каждой #b8 #yАтаки, которая использует хотя бы одно #yОружие."
     ]
   },
   "blackbeard:PoorMathSkills": {
-    "NAME": "Poor Math Skills",
-    "FLAVOR": "Sometimes failing a math class is a good thing.",
+    "NAME": "Двойка по математике",
+    "FLAVOR": "Иногда помогает.",
     "DESCRIPTIONS": [
-      "You think that you have gained #y500 more Gold this run than you actually did. (It matters for cards that scale with Gold gained this run.)"
+      "Вы считаете, что получили на #b500 больше #yЗолота в данной вылазке. (Важно для карт, которые работают от #yЗолота, полученного за вылазку.)"
     ]
   },
   "blackbeard:PowderCan": {
-    "NAME": "Powder Can",
-    "FLAVOR": "Just like a Powder Keg, but smaller.",
+    "NAME": "Пороховая банка",
+    "FLAVOR": "Прямо как Пороховая бочка, но меньше.",
     "DESCRIPTIONS": [
-      "At the start of each combat, equip a 0 / 1 Weapon. When it is destroyed, deal 8 damage to ALL enemies."
+      "Снаряжает вас #yОружием 0 / 1 в начале боя. Оно наносит 8 урона ВСЕМ врагам, когда у него кончается прочность."
     ]
   },
   "blackbeard:Soberminded": {
-    "NAME": "Sober-minded",
-    "FLAVOR": "Being sober is not a natural state for The Blackbeard.",
+    "NAME": "Трезвость",
+    "FLAVOR": "Если Чёрная Борода трезвый - что-то пошло не так.",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of your turn. At the start of each combat, lose 1 Resistance."
+      "Даёт [E] в начале вашего хода. Вы теряете #b1 #yСопротивляемости в начале боя."
     ]
   },
   "blackbeard:Spearhead": {
-    "NAME": "Spearhead",
-    "FLAVOR": "The durability of your Weapon ends... and so does the life of your enemy.",
+    "NAME": "Наконечник копья",
+    "FLAVOR": "У Оружия кончается Прочность... А у врагов - жизнь.",
     "DESCRIPTIONS": [
-      "If a Weapon has 1 Durability, it deals 3 more damage."
+      "#yОружие наносит на #b3 больше урона, если его #yПрочность равна #b1."
     ]
   },
   "blackbeard:CrossedSwords": {
-    "NAME": "Crossed Swords",
-    "FLAVOR": "Perfect for dual wielding.",
+    "NAME": "Скрещённые мечи",
+    "FLAVOR": "Идеальны для двух рук.",
     "DESCRIPTIONS": [
-      "Your attacks use an additional Weapon."
+      "Ваши #yАтаки используют дополнительное #yОружие."
     ]
   }
 }

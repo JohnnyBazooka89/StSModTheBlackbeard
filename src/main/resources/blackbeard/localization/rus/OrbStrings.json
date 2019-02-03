@@ -1,84 +1,84 @@
 {
   "blackbeard:WeaponOrb": {
-    "NAME": "Weapon",
+    "NAME": "Оружие",
     "DESCRIPTION": [
       " NL ",
-      "Attack: ",
+      "Урон: #b",
       " NL ",
-      "Durability: #b"
+      "Прочность: #b"
     ]
   },
   "blackbeard:DefaultWeaponOrb": {
-    "NAME": "Sword",
+    "NAME": "Меч",
     "DESCRIPTION": [
       ""
     ]
   },
   "blackbeard:CutlassOrb": {
-    "NAME": "Cutlass",
+    "NAME": "Сабля",
     "DESCRIPTION": [
       ""
     ]
   },
   "blackbeard:HalberdOrb": {
-    "NAME": "Halberd",
+    "NAME": "Алебарда",
     "DESCRIPTION": [
-      "A Rare Weapon!"
+      "Редкое Оружие!"
     ]
   },
   "blackbeard:PowderKegOrb": {
-    "NAME": "Powder Keg",
+    "NAME": "Пороховая бочка",
     "DESCRIPTION": [
-      "When destroyed, deal #b",
-      " damage to all enemies."
+      "Наносит #b",
+      " урона ВСЕМ врагам, когда у неё кончается прочность."
     ]
   },
   "blackbeard:SwordOfWisdomOrb": {
-    "NAME": "Sword Of Wisdom",
+    "NAME": "Меч мудрости",
     "DESCRIPTION": [
-      "Whenever you attack with this Weapon, draw a card."
+      "Вы берёте одну карту, когда используете данное #yОружие."
     ]
   },
   "blackbeard:SwordOfChaosOrb": {
-    "NAME": "Sword Of Chaos",
+    "NAME": "Меч хаоса",
     "DESCRIPTION": [
-      "Whenever you attack with this Weapon, add a random card to your hand."
+      "Добавляет в руку случайную карту, когда вы используете данное #yОружие."
     ]
   },
   "blackbeard:CatONineTailsOrb": {
-    "NAME": "Cat O' Nine Tails",
+    "NAME": "Плеть",
     "DESCRIPTION": [
-      "After you attack with this Weapon, give it + 2 Attack."
+      "Данное #yОружие получает #b2 урона при каждом его использовании"
     ]
   },
   "blackbeard:DaggerOrb": {
-    "NAME": "Dagger",
+    "NAME": "Кинжал",
     "DESCRIPTION": [
       ""
     ]
   },
   "blackbeard:SwordOrb": {
-    "NAME": "Sword",
+    "NAME": "Меч",
     "DESCRIPTION": [
       ""
     ]
   },
   "blackbeard:SmithingHammerOrb": {
-    "NAME": "Smithing Hammer",
+    "NAME": "Кузнечный молот",
     "DESCRIPTION": [
-      "After you attack with this Weapon and passively at the start of your turn using 1 durability, upgrade a random card in your hand for the rest of the combat."
+      "Теряет 1 Прочности в начале вашего хода. Каждый раз, когда данное Оружие теряет Прочность, улучшает в руке случайную карту до конца боя."
     ]
   },
   "blackbeard:SpearOrb": {
-    "NAME": "Spear",
+    "NAME": "Копьё",
     "DESCRIPTION": [
       ""
     ]
   },
   "blackbeard:SwordOfFireOrb": {
-    "NAME": "Sword Of Fire",
+    "NAME": "Меч огня",
     "DESCRIPTION": [
-      "Whenever you attack with this Weapon, deal #b3 damage to all enemies."
+      "Наносит #b3 урона ВСЕМ врагам, когда вы используете данное #yОружие."
     ]
   }
 }

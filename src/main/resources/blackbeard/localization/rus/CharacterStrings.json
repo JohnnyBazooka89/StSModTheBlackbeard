@@ -1,12 +1,12 @@
 {
   "blackbeard:BlackbeardCharacter": {
     "NAMES": [
-      "The Blackbeard"
+      "Чёрная Борода"
     ],
     "TEXT": [
-      "After following his dusty map, he found himself trying to Slay the Spire. NL Skilled in using weapons, he wants all the treasures for himself.",
-      "NL You ready your Weapon...",
-      "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us,~ ~oh~ ~Great~ ~Captain,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~"
+      "Следуя пыльной карте, Капитан очутился в Шпиле. NL Использует различные Оружия и забирает все сокровища.",
+      "NL Вы заносите своё Оружие...",
+      "Пробираясь по тёмной улице, вы застаёте несколько таинственных фигур в процессе какого-то тёмного ритуала. Вы подходите ближе, и все они одновременно поворачиваются к вам. Самый высокий из них оголяет клыки и протягивает к вам длинную бледную руку. NL ~«Стань~ ~одним~ ~из~ ~нас,~ ~Великий~ ~Капитан,~ ~и~ ~ощути~ ~тепло~ ~Шпиля».~"
     ]
   }
 }
