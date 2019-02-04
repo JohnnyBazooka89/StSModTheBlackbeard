@@ -13,7 +13,8 @@
   "blackbeard:CannonballKeyword": {
     "NAMES": [
       "ядро",
-      "ядра"
+      "ядра",
+	  "ядер"
     ],
     "PROPER_NAME": "Ядро",
     "DESCRIPTION": "Карты Атаки ценой в #b0, которые #yСжигаются при разыгрывании."

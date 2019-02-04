@@ -77,7 +77,7 @@
     "NAME": "Мародёр",
     "DESCRIPTIONS": [
       "Даёт #b",
-      " [E], когда у #yОружия кончается #yПрочность."
+      " [E] , когда у #yОружия кончается #yПрочность."
     ]
   },
   "blackbeard:LoseEnergyNextTurnPower": {

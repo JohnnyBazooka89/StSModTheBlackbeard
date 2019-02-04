@@ -139,7 +139,7 @@
     "UPGRADE_DESCRIPTION": "Даёт !B! Защиты. NL Добавляет в руку !M! Ядра."
   },
   "blackbeard:GoldenDefend": {
-    "NAME": "Золотая Оборона",
+    "NAME": "Золотая оборона",
     "DESCRIPTION": "Даёт Защиту, равную NL 1.5% Золота, полученного NL в данной вылазке.",
     "UPGRADE_DESCRIPTION": "Даёт Защиту, равную NL !M! + 1.5% Золота, полученного NL в данной вылазке.",
     "EXTENDED_DESCRIPTION": [
@@ -228,7 +228,7 @@
     ]
   },
   "blackbeard:GoldenRain": {
-    "NAME": "Золотой дождь",
+    "NAME": "Дождь из золота",
     "DESCRIPTION": "Наносит урон ВСЕМ врагам, равный NL 2,5% Золота, полученного NL в данной вылазке.",
     "UPGRADE_DESCRIPTION": "Наносит урон ВСЕМ врагам, равный NL 3% Золота, полученного NL в данной вылазке.",
     "EXTENDED_DESCRIPTION": [
@@ -255,7 +255,7 @@
   },
   "blackbeard:WiseDefend": {
     "NAME": "Мудрая оборона",
-    "DESCRIPTION": "Даёт !B! Защиты. NL вы берёте !M! карту.",
+    "DESCRIPTION": "Даёт !B! Защиты. NL Вы берёте !M! карту.",
     "UPGRADE_DESCRIPTION": "Даёт !B! Защиты. NL Вы берёте !M! карты."
   },
   "blackbeard:ChaoticDefend": {
