@@ -42,7 +42,8 @@
   },
   "blackbeard:SwordDance": {
     "NAME": "Sword Dance",
-    "DESCRIPTION": "This turn, your next !M! Attacks use all equipped Weapons."
+    "DESCRIPTION": "This turn, your next !M! Attacks use all equipped Weapons.",
+    "UPGRADE_DESCRIPTION": "This turn, your next !M! Attacks use all equipped Weapons."
   },
   "blackbeard:Cannonball": {
     "NAME": "Cannonball",
@@ -58,7 +59,7 @@
     "DESCRIPTION": "Gain !M! Resistance."
   },
   "blackbeard:GhostInTheRum": {
-    "NAME": "Ghost In The Rum",
+    "NAME": "Ghost in the Rum",
     "DESCRIPTION": "Gain 1 Intangible. NL Lose !M! Resistance. NL Exhaust."
   },
   "blackbeard:GoldenStrike": {
@@ -93,11 +94,11 @@
     "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, add a Cannonball into your hand."
   },
   "blackbeard:SwordOfWisdom": {
-    "NAME": "Sword Of Wisdom",
+    "NAME": "Sword of Wisdom",
     "DESCRIPTION": "Equip a !M! / {D} Weapon. Whenever you attack with this Weapon, draw a card."
   },
   "blackbeard:SwordOfChaos": {
-    "NAME": "Sword Of Chaos",
+    "NAME": "Sword of Chaos",
     "DESCRIPTION": "Equip a !M! / {D} Weapon. Whenever you attack with this Weapon, add a random card to your hand."
   },
   "blackbeard:PirateStrength": {
@@ -120,7 +121,7 @@
   },
   "blackbeard:FinalBarrage": {
     "NAME": "Final Barrage",
-    "DESCRIPTION": "Deal damage equal to !M! times the amount of Cannonballs played this combat (every type of Cannonball counts).",
+    "DESCRIPTION": "Deal damage equal to !M! times the amount of Cannonballs played this combat. (Every type of Cannonball counts.)",
     "EXTENDED_DESCRIPTION": [
       " NL (Deals !D! damage.)"
     ]
@@ -242,7 +243,7 @@
     "DESCRIPTION": "Choose 1 of 3 Swords. NL Equip a !M! / {D} Weapon with an additional effect.",
     "EXTENDED_DESCRIPTION": [
       "Additional Effects",
-      "#rFire: Whenever you attack with this Weapon, deal #b3 damage to all enemies. NL #yWisdom: Whenever you attack with this Weapon, draw a card. NL #pChaos: Whenever you attack with this Weapon, add a random card to your hand."
+      "#rFire: Whenever you attack with this Weapon, deal #b3 damage to ALL enemies. NL #yWisdom: Whenever you attack with this Weapon, draw a card. NL #pChaos: Whenever you attack with this Weapon, add a random card to your hand."
     ]
   },
   "blackbeard:BeatUp": {
@@ -343,12 +344,8 @@
     "DESCRIPTION": "Obtain a random potion. NL Exhaust."
   },
   "blackbeard:TerrorOfTheSeas": {
-    "NAME": "Terror Of The Seas",
+    "NAME": "Terror of the Seas",
     "DESCRIPTION": "Apply !M! Vulnerable to ALL enemies. Exhaust."
-  },
-  "blackbeard:RunForYourLife": {
-    "NAME": "Run For Your Life",
-    "DESCRIPTION": "Obtain a Smoke Bomb Potion. Exhaust."
   },
   "blackbeard:FishingNets": {
     "NAME": "Fishing Nets",
@@ -360,15 +357,15 @@
   },
   "blackbeard:DoubleCannonball": {
     "NAME": "Double Cannonball",
-    "DESCRIPTION": "Deal !D! damage. Exhaust. NL Add a Cannonball to your hand.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Exhaust. NL Add an upgraded Cannonball to your hand."
+    "DESCRIPTION": "Deal !D! damage. NL Add a Cannonball to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add an upgraded Cannonball to your hand. NL Exhaust."
   },
   "blackbeard:SwordOfFire": {
-    "NAME": "Sword Of Fire",
-    "DESCRIPTION": "Equip a !M! / {D} Weapon. Whenever you attack with this Weapon, deal 3 damage to all enemies."
+    "NAME": "Sword of Fire",
+    "DESCRIPTION": "Equip a !M! / {D} Weapon. Whenever you attack with this Weapon, deal 3 damage to ALL enemies."
   },
   "blackbeard:CloakAndCannonball": {
-    "NAME": "Cloak And Cannonball",
+    "NAME": "Cloak and Cannonball",
     "DESCRIPTION": "Gain !B! Block. NL  Add a Cannonball to your hand."
   },
   "blackbeard:UndeadForm": {

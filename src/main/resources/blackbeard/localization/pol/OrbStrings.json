@@ -1,0 +1,84 @@
+{
+  "blackbeard:WeaponOrb": {
+    "NAME": "Broń",
+    "DESCRIPTION": [
+      " NL ",
+      "Atak: ",
+      " NL ",
+      "Wytrzymałość: #b"
+    ]
+  },
+  "blackbeard:DefaultWeaponOrb": {
+    "NAME": "Miecz",
+    "DESCRIPTION": [
+      ""
+    ]
+  },
+  "blackbeard:CutlassOrb": {
+    "NAME": "Kordelas",
+    "DESCRIPTION": [
+      ""
+    ]
+  },
+  "blackbeard:HalberdOrb": {
+    "NAME": "Halabarda",
+    "DESCRIPTION": [
+      "Rzadka Broń!"
+    ]
+  },
+  "blackbeard:PowderKegOrb": {
+    "NAME": "Beczka prochu",
+    "DESCRIPTION": [
+      "Gdy zostanie zniszczona, zadaj #b",
+      " pkt. obrażeń WSZYSTKIM przeciwnikom."
+    ]
+  },
+  "blackbeard:SwordOfWisdomOrb": {
+    "NAME": "Miecz mądrości",
+    "DESCRIPTION": [
+      "Kiedykolwiek zaatakujesz tą bronią, dobierz #b1 kartę."
+    ]
+  },
+  "blackbeard:SwordOfChaosOrb": {
+    "NAME": "Miecz chaosu",
+    "DESCRIPTION": [
+      "Kiedykolwiek zaatakujesz tą bronią, dodaj losową kartę do ręki."
+    ]
+  },
+  "blackbeard:CatONineTailsOrb": {
+    "NAME": "Kańczug",
+    "DESCRIPTION": [
+      "Po każdym ataku tą bronią, daj jej #b+2 Ataku."
+    ]
+  },
+  "blackbeard:DaggerOrb": {
+    "NAME": "Sztylet",
+    "DESCRIPTION": [
+      ""
+    ]
+  },
+  "blackbeard:SwordOrb": {
+    "NAME": "Miecz",
+    "DESCRIPTION": [
+      ""
+    ]
+  },
+  "blackbeard:SmithingHammerOrb": {
+    "NAME": "Młot kuźniczy",
+    "DESCRIPTION": [
+      "Po ataku tą bronią i pasywnie na starcie każdej tury używając #b1 pkt. Wytrzymałości, ulepsz losową kartę z ręki do końca walki."
+    ]
+  },
+  "blackbeard:SpearOrb": {
+    "NAME": "Włócznia",
+    "DESCRIPTION": [
+      ""
+    ]
+  },
+  "blackbeard:SwordOfFireOrb": {
+    "NAME": "Miecz ognia",
+    "DESCRIPTION": [
+      "Kiedykolwiek zaatakujesz tą bronią, zadaj 3 pkt. obrażeń WSZYSTKIM przeciwnikom."
+    ]
+  }
+}

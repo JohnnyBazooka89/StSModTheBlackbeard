@@ -52,7 +52,7 @@
     ]
   },
   "blackbeard:DamageAtTheEndOfNextTurnPower": {
-    "NAME": "Урон в след. ходу",
+    "NAME": "Урон в конце след. ходу",
     "DESCRIPTIONS": [
       "Вы получаете #b",
       " урона в конце след. хода."

@@ -1,0 +1,379 @@
+{
+  "blackbeard:StrikeBlackbeard": {
+    "NAME": "Uderzenie",
+    "DESCRIPTION": "Zadaj !D! pkt. obrażeń."
+  },
+  "blackbeard:DefendBlackbeard": {
+    "NAME": "Obrona",
+    "DESCRIPTION": "Zyskaj !B! pkt. Bloku."
+  },
+  "blackbeard:Cutlass": {
+    "NAME": "Kordelas",
+    "DESCRIPTION": "Wyposaż się w Broń {A} / {D}."
+  },
+  "blackbeard:Upgrade": {
+    "NAME": "Ulepszenie",
+    "DESCRIPTION": "Daj wszystkim swoim Broniom + !M! / + !M!."
+  },
+  "blackbeard:Sharpening": {
+    "NAME": "Naostrzenie",
+    "DESCRIPTION": "Daj wszystkim swoim Broniom + !M! Ataku."
+  },
+  "blackbeard:RearmingStrike": {
+    "NAME": "Uzbrajające uderzenie",
+    "DESCRIPTION": "Zadaj !D! pkt. obrażeń. Wyposaż się w Broń {A} / {D}."
+  },
+  "blackbeard:Fencing": {
+    "NAME": "Szermierka",
+    "DESCRIPTION": "Daj swojej najbardziej wysuniętej na prawo Broni + !blackbeard:M+1! / + !M!."
+  },
+  "blackbeard:Parrot": {
+    "NAME": "Papuga",
+    "DESCRIPTION": "Ostatnia karta zagrana w każdej turze jest zagrywana jeszcze raz. Ta moc nie kumuluje się. NL Eteryczna.",
+    "UPGRADE_DESCRIPTION": "Ostatnia karta zagrana w każdej turze jest zagrywana jeszcze raz. Ta moc nie kumuluje się."
+  },
+  "blackbeard:Halberd": {
+    "NAME": "Halabarda",
+    "DESCRIPTION": "Wyposaż się w Broń !M! / {D}."
+  },
+  "blackbeard:TheDrunkenSailor": {
+    "NAME": "Morskie opowieści",
+    "DESCRIPTION": "Twoje mikstury są użyte dodatkowy raz."
+  },
+  "blackbeard:SwordDance": {
+    "NAME": "Taniec mieczy",
+    "DESCRIPTION": "W tej turze, następne !M! Ataki używają wszystkich twoich wyposażonych Broni.",
+    "UPGRADE_DESCRIPTION": "W tej turze, następne !M! Ataków używa wszystkich twoich wyposażonych Broni."
+  },
+  "blackbeard:Cannonball": {
+    "NAME": "Kula",
+    "DESCRIPTION": "Zadaj !D! pkt. obrażeń. Wykluczenie."
+  },
+  "blackbeard:CannonBarrage": {
+    "NAME": "Kanonada",
+    "DESCRIPTION": "Dodaj X Kul do ręki.",
+    "UPGRADE_DESCRIPTION": "Dodaj X+1 Kul do ręki."
+  },
+  "blackbeard:Rum": {
+    "NAME": "Rum",
+    "DESCRIPTION": "Zyskaj !M! pkt. Odporności."
+  },
+  "blackbeard:GhostInTheRum": {
+    "NAME": "Duch w rumie",
+    "DESCRIPTION": "Zyskaj 1 pkt. Nieuchwytności. NL Utrać !M! pkt. Odporności. NL Wykluczenie."
+  },
+  "blackbeard:GoldenStrike": {
+    "NAME": "Złote uderzenie",
+    "DESCRIPTION": "Zadaj obrażenia równe NL 1.5% szt. Złota zdobytych w tej wyprawie.",
+    "UPGRADE_DESCRIPTION": "Zadaj obrażenia równe NL !M! + 1.5% szt. Złota zdobytych w tej wyprawie.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Zadaje !D! pkt. obrażeń.)",
+      " NL Zdobyłeś ",
+      " szt. Złota w tej wyprawie."
+    ]
+  },
+  "blackbeard:PowderKeg": {
+    "NAME": "Beczka prochu",
+    "DESCRIPTION": "Wyposaż się w Broń {A} / {D}. Gdy zostanie zniszczona, zadaj !M! pkt. obrażeń WSZYSTKIM przeciwnikom."
+  },
+  "blackbeard:Scrap": {
+    "NAME": "Zezłomowanie",
+    "DESCRIPTION": "Zniszcz najbardziej wysuniętą na prawo Broń, aby zyskać [E] [E].",
+    "UPGRADE_DESCRIPTION": "Zniszcz najbardziej wysuniętą na prawo Broń, aby zyskać NL [E] [E] [E].",
+    "EXTENDED_DESCRIPTION": [
+      "Nie mam Broni!"
+    ]
+  },
+  "blackbeard:RemoveScurvy": {
+    "NAME": "Usunięcie szkorbutu",
+    "DESCRIPTION": "Przywróć 10% twoich maksymalnych PŻ. NL Pozbądź się wszystkich negatywnych efektów. NL Wykluczenie."
+  },
+  "blackbeard:InfiniteBarrage": {
+    "NAME": "Nieustanny ostrzał",
+    "DESCRIPTION": "Na początku każdej tury dodaj Kulę do ręki.",
+    "UPGRADE_DESCRIPTION": "Startowa. NL Na początku każdej tury dodaj Kulę do ręki."
+  },
+  "blackbeard:SwordOfWisdom": {
+    "NAME": "Miecz mądrości",
+    "DESCRIPTION": "Wyposaż się w NL Broń !M! / {D}. NL Kiedykolwiek zaatakujesz tą bronią, dobierz 1 kartę."
+  },
+  "blackbeard:SwordOfChaos": {
+    "NAME": "Miecz chaosu",
+    "DESCRIPTION": "Wyposaż się w NL Broń !M! / {D}. NL Kiedykolwiek zaatakujesz tą bronią, dodaj losową kartę do ręki."
+  },
+  "blackbeard:PirateStrength": {
+    "NAME": "Piracka siła",
+    "DESCRIPTION": "Zyskaj !M! pkt. Siły."
+  },
+  "blackbeard:HumongousCannonball": {
+    "NAME": "Ogromniasta kula",
+    "DESCRIPTION": "Zadaj !D! pkt. obrażeń. Wykluczenie."
+  },
+  "blackbeard:GoldenCannonball": {
+    "NAME": "Złota kula",
+    "DESCRIPTION": "Zadaj obrażenia równe NL 2% szt. Złota zdobytych w tej wyprawie. Wykluczenie.",
+    "UPGRADE_DESCRIPTION": "Zadaj obrażenia równe NL !M! + 2% szt. Złota zdobytych w tej wyprawie. Wykluczenie.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Zadaje !D! pkt. obrażeń.)",
+      " NL Zdobyłeś ",
+      " szt. Złota w tej wyprawie."
+    ]
+  },
+  "blackbeard:FinalBarrage": {
+    "NAME": "Ostateczny ostrzał",
+    "DESCRIPTION": "Zadaj obrażenia równe !M! razy ilość Kul zagranych w tej walce. (Każdy rodzaj Kuli się liczy.)",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Zadaje !D! pkt. obrażeń.)"
+    ]
+  },
+  "blackbeard:BrownPants": {
+    "NAME": "Brązowe spodnie",
+    "DESCRIPTION": "Zyskaj !M! pkt. Pancerza."
+  },
+  "blackbeard:JollyRoger": {
+    "NAME": "Bandera piracka",
+    "DESCRIPTION": "Nałóż !M! pkt. Słabości na WSZYSTKICH przeciwników. NL Wykluczenie."
+  },
+  "blackbeard:CaptainsCabin": {
+    "NAME": "Kabina kapitańska",
+    "DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dodaj !M! Kulę do ręki.",
+    "UPGRADE_DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dodaj !M! Kule do ręki."
+  },
+  "blackbeard:GoldenDefend": {
+    "NAME": "Złota obrona",
+    "DESCRIPTION": "Zyskaj pkt. Bloku równe NL 1.5% szt. Złota zdobytych w tej wyprawie.",
+    "UPGRADE_DESCRIPTION": "Zyskaj pkt. Bloku równe NL !M! + 1.5% szt. Złota zdobytych w tej wyprawie.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Zyskujesz !B! pkt. Bloku.)",
+      " NL Zdobyłeś ",
+      " szt. Złota w tej wyprawie."
+    ]
+  },
+  "blackbeard:Shrapnel": {
+    "NAME": "Odłamki",
+    "DESCRIPTION": "Zadaj !D! pkt. obrażeń WSZYSTKIM przeciwnikom."
+  },
+  "blackbeard:Toast": {
+    "NAME": "Toast",
+    "DESCRIPTION": "Zyskaj !M! pkt. Odporności. NL Na początku następnej tury, utrać !M! pkt. Odporności. NL Wykluczenie."
+  },
+  "blackbeard:CatONineTails": {
+    "NAME": "Kańczug",
+    "DESCRIPTION": "Wyposaż się w Broń !M! / {D}. Po każdym ataku tą bronią, daj jej + 2 Ataku."
+  },
+  "blackbeard:PirateEarring": {
+    "NAME": "Piracki kolczyk",
+    "DESCRIPTION": "Zyskaj !M! pkt. Hartu."
+  },
+  "blackbeard:Murder": {
+    "NAME": "Morderstwo",
+    "DESCRIPTION": "Zadaj !D! pkt. obrażeń    NL Normalnemu przeciwnikowi. NL (Nie może być zagrana przeciwko Elitarnym przeciwnikom i Bossom). NL Eteryczna.",
+    "EXTENDED_DESCRIPTION": [
+      "Muszę wybrać #rNormalnego przeciwnika!"
+    ]
+  },
+  "blackbeard:Bandana": {
+    "NAME": "Bandana",
+    "DESCRIPTION": "Zyskaj !M! pkt. Zręczności."
+  },
+  "blackbeard:TacticalRetreat": {
+    "NAME": "Taktyczny odwrót",
+    "DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dobierz 1 kartę więcej w następnej turze."
+  },
+  "blackbeard:Dagger": {
+    "NAME": "Sztylet",
+    "DESCRIPTION": "Wyposaż się w Broń {A} / !M!. NL Na początku każdej tury, NL 1 pkt. Wytrzymałości Sztyletu jest użyty, aby zadać obrażenia równe jego pkt. Ataku losowemu przeciwnikowi."
+  },
+  "blackbeard:PiratesWill": {
+    "NAME": "Piracka wola",
+    "DESCRIPTION": "Pozbądź się wszystkich negatywnych efektów. NL Dobierz 1 kartę. NL Wykluczenie."
+  },
+  "blackbeard:WoodenLeg": {
+    "NAME": "Drewniana noga",
+    "DESCRIPTION": "Utrać 2 pkt. Zręczności. NL Zyskaj !M! pkt. Siły."
+  },
+  "blackbeard:Eyepatch": {
+    "NAME": "Przepaska na oko",
+    "DESCRIPTION": "Otrzymaj 3 pkt. Słabości. NL Na początku każdej tury, dobierz 1 dodatkową kartę.",
+    "UPGRADE_DESCRIPTION": "Startowa. NL Otrzymaj 3 pkt. Słabości. NL Na początku każdej tury, dobierz 1 dodatkową kartę."
+  },
+  "blackbeard:CaptainsHat": {
+    "NAME": "Kapitański kapelusz",
+    "DESCRIPTION": "Zyskaj !M! pkt. Siły. NL Zyskaj !M! pkt. Odporności."
+  },
+  "blackbeard:BlindAttacks": {
+    "NAME": "Ataki na ślepo",
+    "DESCRIPTION": "Zadaj !D! pkt. obrażeń NL 3 razy losowemu przeciwnikowi."
+  },
+  "blackbeard:Boarding": {
+    "NAME": "Abordaż",
+    "DESCRIPTION": "Zadaj !D! pkt. obrażeń. WSZYSTKIM przeciwnikom. NL Dobierz !M! karty."
+  },
+  "blackbeard:AgileStrike": {
+    "NAME": "Zręczne uderzenie",
+    "DESCRIPTION": "Zadaj !D! pkt. obrażeń. NL Jeżeli wyposażyłeś się w Broń w tej turze, zmniejsz koszt tej karty do 0."
+  },
+  "blackbeard:DangerousBlow": {
+    "NAME": "Niebezpieczny cios",
+    "DESCRIPTION": "Zadaj !D! pkt. obrażeń. NL Na końcu następnej tury, otrzymaj !M! pkt. obrażeń."
+  },
+  "blackbeard:VengefulSpirit": {
+    "NAME": "Mściwy duch",
+    "DESCRIPTION": "Zyskaj 1 pkt. Nieuchwytności. NL Na starcie tury, w której nie masz pkt. Nieuchwytności, otrzymaj !M! pkt. obrażeń. NL Wykluczenie."
+  },
+  "blackbeard:Revenge": {
+    "NAME": "Zemsta",
+    "DESCRIPTION": "Zadaj od 0 do !M! pkt. obrażeń WSZYSTKIM przeciwnikom, w zależności od tego ile procent PŻ ci brakuje.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Zadaje !D! pkt. obrażeń.)"
+    ]
+  },
+  "blackbeard:GoldenRain": {
+    "NAME": "Złoty deszcz",
+    "DESCRIPTION": "Zadaj obrażenia równe NL 2.5% szt. Złota zdobytych w tej wyprawie WSZYSTKIM przeciwnikom.",
+    "UPGRADE_DESCRIPTION": "Zadaj obrażenia równe NL 3% szt. Złota zdobytych w tej wyprawie WSZYSTKIM przeciwnikom.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Zadaje !D! pkt. obrażeń.)",
+      " NL Zdobyłeś ",
+      " szt. Złota w tej wyprawie."
+    ]
+  },
+  "blackbeard:Sword": {
+    "NAME": "Miecz",
+    "DESCRIPTION": "Wybierz 1 z 3 Mieczy. NL Wyposaż się w Broń !M! / {D} z dodatkowym efektem.",
+    "EXTENDED_DESCRIPTION": [
+      "Dodatkowe efekty",
+      "#rOgień: Kiedykolwiek zaatakujesz tą bronią, zadaj #b3 pkt. obrażeń WSZYSTKIM przeciwnikom. NL #yMądrość: Kiedykolwiek zaatakujesz tą bronią, dobierz 1 kartę. NL #pChaos: Kiedykolwiek zaatakujesz tą bronią, dodaj losową kartę do ręki."
+    ]
+  },
+  "blackbeard:BeatUp": {
+    "NAME": "Pobicie",
+    "DESCRIPTION": "Zadaj dwukrotnie !D! pkt. obrażeń. NL Nałóż !M! pkt. Wrażliwości."
+  },
+  "blackbeard:IntimidatingStrike": {
+    "NAME": "Zastraszające uderzenie",
+    "DESCRIPTION": "Zadaj !D! pkt. obrażeń. NL Nałóż !M! pkt. Słabości."
+  },
+  "blackbeard:WiseDefend": {
+    "NAME": "Roztropna obrona",
+    "DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dobierz !M! kartę.",
+    "UPGRADE_DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dobierz !M! karty."
+  },
+  "blackbeard:ChaoticDefend": {
+    "NAME": "Chaotyczna obrona",
+    "DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dodaj !M! losową kartę do ręki.",
+    "UPGRADE_DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dodaj !M! losowe karty do ręki."
+  },
+  "blackbeard:SmithingHammer": {
+    "NAME": "Młot kuźniczy",
+    "DESCRIPTION": "Wyposaż się w Broń {A} / !M!. NL Po ataku tą bronią i pasywnie na starcie każdej tury używając 1 pkt. Wytrzymałości, ulepsz losową kartę z ręki do końca walki. Wykluczenie."
+  },
+  "blackbeard:Spear": {
+    "NAME": "Włócznia",
+    "DESCRIPTION": "Wyposaż się w Broń !M! / {D}."
+  },
+  "blackbeard:WeaponMastery": {
+    "NAME": "Mistrzostwo w uż. Broni",
+    "DESCRIPTION": "Kiedykolwiek wyposażysz się w Broń, dobierz !M! kartę.",
+    "UPGRADE_DESCRIPTION": "Kiedykolwiek wyposażysz się w Broń, dobierz !M! karty."
+  },
+  "blackbeard:Salvager": {
+    "NAME": "Złomiarz",
+    "DESCRIPTION": "Kiedykolwiek Broń jest zniszczona, zyskaj [E].",
+    "UPGRADE_DESCRIPTION": "Kiedykolwiek Broń jest zniszczona, zyskaj [E] [E]."
+  },
+  "blackbeard:Anchor": {
+    "NAME": "Kotwica",
+    "DESCRIPTION": "Startowa. NL Zyskaj !B! pkt. Bloku. NL Wykluczenie.",
+    "UPGRADE_DESCRIPTION": "Startowa. NL Zyskaj !B! pkt. Bloku. NL Dobierz 1 kartę. NL Wykluczenie."
+  },
+  "blackbeard:BoostMorale": {
+    "NAME": "Podniesienie morale",
+    "DESCRIPTION": "Dobierz !M! karty. NL Zyskaj [E]. NL Wykluczenie.",
+    "UPGRADE_DESCRIPTION": "Dobierz !M! karty. NL Zyskaj [E] [E]. NL Wykluczenie."
+  },
+  "blackbeard:MegaUpgrade": {
+    "NAME": "Mega ulepszenie",
+    "DESCRIPTION": "Daj wszystkim swoim Broniom + !M! / + !M!."
+  },
+  "blackbeard:Recklessness": {
+    "NAME": "Lekkomyślność",
+    "DESCRIPTION": "Zyskaj [E] [E]. NL Na początku następnej tury, utrać [E] [E].",
+    "UPGRADE_DESCRIPTION": "Zyskaj [E] [E] [E]. NL Na początku następnej tury, utrać [E] [E]."
+  },
+  "blackbeard:DelayedPain": {
+    "NAME": "Opóźniony ból",
+    "DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Na końcu następnej tury, otrzymaj !M! pkt. obrażeń."
+  },
+  "blackbeard:ArmorUp": {
+    "NAME": "Opancerzenie",
+    "DESCRIPTION": "W tej turze, kiedykolwiek atakujesz bronią, zyskaj !M! pkt. Bloku."
+  },
+  "blackbeard:Intoxication": {
+    "NAME": "Upojenie",
+    "DESCRIPTION": "Zyskaj !M! pkt. Odporności. NL Na początku każdej tury, utrać 1 pkt. Odporności."
+  },
+  "blackbeard:CannonballSupply": {
+    "NAME": "Dostawa kul",
+    "DESCRIPTION": "Dodaj 3 Kule do ręki. NL Wykluczenie.",
+    "UPGRADE_DESCRIPTION": "Dodaj 3 Kule do ręki."
+  },
+  "blackbeard:BountyHunter": {
+    "NAME": "Łowca nagród",
+    "DESCRIPTION": "Zadaj !D! pkt. obrażeń. Jeśli ten atak zabije przeciwnika (oprócz sług), otrzymaj !M! szt. Złota. NL Wykluczenie."
+  },
+  "blackbeard:GoldenGuillotine": {
+    "NAME": "Złota gilotyna",
+    "DESCRIPTION": "Zadaj obrażenia równe NL !M! procent szt. Złota zdobytych w tej wyprawie.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Zadaje !D! pkt. obrażeń.)",
+      " NL Zdobyłeś ",
+      " szt. Złota w tej wyprawie."
+    ]
+  },
+  "blackbeard:DoubleBottom": {
+    "NAME": "Podwójne dno",
+    "DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Zyskaj !B! pkt. Bloku w następnej turze."
+  },
+  "blackbeard:Lifeboat": {
+    "NAME": "Łódź ratunkowa",
+    "DESCRIPTION": "Zyskaj !B! pkt. Bloku."
+  },
+  "blackbeard:Provisioning": {
+    "NAME": "Zaopatrzenie",
+    "DESCRIPTION": "Otrzymaj losową miksturę. NL Wykluczenie."
+  },
+  "blackbeard:TerrorOfTheSeas": {
+    "NAME": "Postrach mórz",
+    "DESCRIPTION": "Nałóż !M! pkt. Wrażliwości na WSZYSTKICH przeciwników. NL Wykluczenie."
+  },
+  "blackbeard:FishingNets": {
+    "NAME": "Sieci rybackie",
+    "DESCRIPTION": "Zyskaj !M! pkt. Zardzewiałych Cierni. (Kiedy jesteś atakowany, zadaj obrażenia atakującemu przeciwnikowi i zmniejsz ilość Zardzewiałych Cierni o 1.)"
+  },
+  "blackbeard:BuriedTreasure": {
+    "NAME": "Zakopany skarb",
+    "DESCRIPTION": "Zyskaj !M! szt. Złota. NL Wykluczenie."
+  },
+  "blackbeard:DoubleCannonball": {
+    "NAME": "Podwójna kula",
+    "DESCRIPTION": "Zadaj !D! pkt. obrażeń. Wykluczenie. NL Dodaj Kulę do ręki.",
+    "UPGRADE_DESCRIPTION": "Zadaj !D! pkt. obrażeń. Wykluczenie. NL Dodaj ulepszoną Kulę do ręki."
+  },
+  "blackbeard:SwordOfFire": {
+    "NAME": "Miecz ognia",
+    "DESCRIPTION": "Wyposaż się w NL Broń !M! / {D}. NL Kiedykolwiek zaatakujesz tą bronią, zadaj 3 pkt. obrażeń WSZYSTKIM przeciwnikom."
+  },
+  "blackbeard:CloakAndCannonball": {
+    "NAME": "Płaszcz i kula",
+    "DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL  Dodaj Kulę do ręki."
+  },
+  "blackbeard:UndeadForm": {
+    "NAME": "Nieumarła forma",
+    "DESCRIPTION": "Zyskaj !M! pkt. Nieuchwytności. NL Na starcie tury, w której nie masz ani jednego pkt. Nieuchwytności, otrzymaj 30 pkt. obrażeń."
+  },
+  "blackbeard:WeaponProficiency": {
+    "NAME": "Biegłość w uż. Broni",
+    "DESCRIPTION": "Twoje Ataki używają dodatkową Broń."
+  }
+}

@@ -82,6 +82,8 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     private static final String POTION_STRINGS_PATH = "blackbeard/localization/%s/PotionStrings.json";
 
     public static final String DEFAULT_LANGUAGE = "eng";
+    public static final String POLISH_LANGUAGE_FOLDER = "pol";
+    public static final String RUSSIAN_LANGUAGE_FOLDER = "rus";
 
     public static Map<String, Keyword> keywords = new HashMap<>();
 
@@ -280,21 +282,24 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         loadCustomStringsForLanguage(DEFAULT_LANGUAGE);
 
         switch (Settings.language) {
+            case POL:
+                loadCustomStringsForLanguage(POLISH_LANGUAGE_FOLDER);
+                break;
             case RUS:
-                loadCustomStringsForLanguage("rus");
+                loadCustomStringsForLanguage(RUSSIAN_LANGUAGE_FOLDER);
                 break;
         }
 
         logger.info("Done editing strings");
     }
 
-    private void loadCustomStringsForLanguage(String language) {
-        BaseMod.loadCustomStringsFile(CharacterStrings.class, String.format(CHARACTER_STRINGS_PATH, language));
-        BaseMod.loadCustomStringsFile(RelicStrings.class, String.format(RELIC_STRINGS_PATH, language));
-        BaseMod.loadCustomStringsFile(CardStrings.class, String.format(CARD_STRINGS_PATH, language));
-        BaseMod.loadCustomStringsFile(PowerStrings.class, String.format(POWER_STRINGS_PATH, language));
-        BaseMod.loadCustomStringsFile(OrbStrings.class, String.format(ORB_STRINGS_PATH, language));
-        BaseMod.loadCustomStringsFile(PotionStrings.class, String.format(POTION_STRINGS_PATH, language));
+    private void loadCustomStringsForLanguage(String languageFolder) {
+        BaseMod.loadCustomStringsFile(CharacterStrings.class, String.format(CHARACTER_STRINGS_PATH, languageFolder));
+        BaseMod.loadCustomStringsFile(RelicStrings.class, String.format(RELIC_STRINGS_PATH, languageFolder));
+        BaseMod.loadCustomStringsFile(CardStrings.class, String.format(CARD_STRINGS_PATH, languageFolder));
+        BaseMod.loadCustomStringsFile(PowerStrings.class, String.format(POWER_STRINGS_PATH, languageFolder));
+        BaseMod.loadCustomStringsFile(OrbStrings.class, String.format(ORB_STRINGS_PATH, languageFolder));
+        BaseMod.loadCustomStringsFile(PotionStrings.class, String.format(POTION_STRINGS_PATH, languageFolder));
     }
 
     @Override
@@ -304,18 +309,21 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         loadCustomKeywordsForLanguage(DEFAULT_LANGUAGE);
 
         switch (Settings.language) {
+            case POL:
+                loadCustomKeywordsForLanguage(POLISH_LANGUAGE_FOLDER);
+                break;
             case RUS:
-                loadCustomKeywordsForLanguage("rus");
+                loadCustomKeywordsForLanguage(RUSSIAN_LANGUAGE_FOLDER);
                 break;
         }
 
         logger.info("Done editing keywords");
     }
 
-    private void loadCustomKeywordsForLanguage(String language) {
+    private void loadCustomKeywordsForLanguage(String languageFolder) {
         Gson gson = new Gson();
 
-        String keywordStrings = Gdx.files.internal(String.format(KEYWORD_STRINGS_PATH, language)).readString(String.valueOf(StandardCharsets.UTF_8));
+        String keywordStrings = Gdx.files.internal(String.format(KEYWORD_STRINGS_PATH, languageFolder)).readString(String.valueOf(StandardCharsets.UTF_8));
         Type typeToken = new TypeToken<Map<String, Keyword>>() {
         }.getType();
 

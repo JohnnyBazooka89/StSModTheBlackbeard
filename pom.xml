@@ -5,7 +5,7 @@
 
     <groupId>StSMod</groupId>
     <artifactId>StSModTheBlackbeard</artifactId>
-    <version>1.7.11</version>
+    <version>1.7.12</version>
     <packaging>jar</packaging>
     <name>StSModTheBlackbeard</name>
     <description>Adds a new character to Slay the Spire, The Blackbeard.</description>
@@ -13,7 +13,7 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <!-- Path where your Slay The Spire is installed -->
+        <!-- Path where your Slay the Spire is installed -->
         <slayTheSpirePath>C:\Program Files (x86)\Steam\steamapps\common\SlayTheSpire</slayTheSpirePath>
     </properties>
 

@@ -16,6 +16,7 @@ public class SwordDance extends CustomCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 1;
     private static final int NUMBER_OF_ATTACKS = 3;
     private static final int UPGRADED_PLUS_NUMBER_OF_ATTACKS = 2;
@@ -37,6 +38,8 @@ public class SwordDance extends CustomCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeMagicNumber(UPGRADED_PLUS_NUMBER_OF_ATTACKS);
+            this.rawDescription = UPGRADE_DESCRIPTION;
+            this.initializeDescription();
         }
     }
 }

@@ -1,0 +1,27 @@
+{
+  "blackbeard:WeaponKeyword": {
+    "NAMES": [
+      "broń",
+      "broni",
+      "broniom"
+    ],
+    "DESCRIPTION": "Kiedykolwiek zagrasz kartę Ataku, #b1 pkt. Wytrzymałości broni jest używany, aby zwiększyć obrażenia tej karty o siłę Ataku broni. Możesz wyposażyć się maksymalnie w #b10 broni. Miejsca na sfery są tworzone i usuwane automatycznie."
+  },
+  "blackbeard:CannonballKeyword": {
+    "NAMES": [
+      "kula",
+      "kulę",
+      "kuli",
+      "kule",
+      "kul"
+    ],
+    "DESCRIPTION": "Karta Ataku, która kosztuje #b0 energii, zadaje #b8 #b(10) pkt. obrażeń #bi jest #ywykluczana po zagraniu."
+  },
+  "blackbeard:ResistanceKeyword": {
+    "NAMES": [
+      "odporność",
+      "odporności"
+    ],
+    "DESCRIPTION": "Otrzymujesz mniej pkt. obrażeń od ataków przeciwników. (Zamiary przeciwników pokazują rzeczywiste nadchodzące obrażenia, z Odpornością wziętą pod uwagę.) Odporność może być ujemna."
+  }
+}

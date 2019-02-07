@@ -1,0 +1,12 @@
+{
+  "blackbeard:BlackbeardCharacter": {
+    "NAMES": [
+      "Czarnobrody"
+    ],
+    "TEXT": [
+      "Podążając za swoją zakurzoną mapą, trafił prosto do Iglicy. NL Doświadczony w używaniu Broni, chce wszystkie jej skarby dla siebie.",
+      "NL Szykujesz swoją Broń...",
+      "Idąc wzdłuż spowitej mrokiem ulicy, dostrzegasz grupę zakapturzonych postaci, odprawiających jakiś mroczny rytuał. Gdy się zbliżasz, jednocześnie zwracają się w twoją stronę. Najwyższy z nich obnaża długie kły i wyciąga w twoją stronę chudą, bladą rękę. NL ~\"Dołącz~ ~do~ ~nas,~ ~o~ ~wielki~ ~kapitanie~ ~i~ ~poczuj~ ~żar~ ~Iglicy.\"~"
+    ]
+  }
+}

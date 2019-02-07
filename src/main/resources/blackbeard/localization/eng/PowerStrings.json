@@ -39,8 +39,8 @@
     "NAME": "Infinite Barrage",
     "DESCRIPTIONS": [
       "At the start of your turn, add #b",
-      " Cannonball",
-      " Cannonballs",
+      " #yCannonball",
+      " #yCannonballs",
       " into your hand."
     ]
   },
@@ -48,11 +48,11 @@
     "NAME": "Toast",
     "DESCRIPTIONS": [
       "At the start of your next turn, lose #b",
-      " Resistance."
+      " #yResistance."
     ]
   },
   "blackbeard:DamageAtTheEndOfNextTurnPower": {
-    "NAME": "Next Turn Damage",
+    "NAME": "End Of Next Turn Damage",
     "DESCRIPTIONS": [
       "At the end of next turn, you take #b",
       " damage."
@@ -91,14 +91,14 @@
     "NAME": "Armor Up",
     "DESCRIPTIONS": [
       "This turn, whenever you attack with a Weapon, gain #b",
-      " Block."
+      " #yBlock."
     ]
   },
   "blackbeard:IntoxicationPower": {
-    "NAME": "Intoxication Power",
+    "NAME": "Intoxication",
     "DESCRIPTIONS": [
       "At the start of your turn, lose #b",
-      " Resistance."
+      " #yResistance."
     ]
   },
   "blackbeard:PenknifePower": {
@@ -124,9 +124,9 @@
   "blackbeard:WeaponProficiencyPower": {
     "NAME": "Weapon Proficiency",
     "DESCRIPTIONS": [
-      "Your attacks use ",
-      " additional Weapon.",
-      " additional Weapons."
+      "Your attacks use #b",
+      " additional #yWeapon.",
+      " additional #yWeapons."
     ]
   }
 }

@@ -1,0 +1,17 @@
+{
+  "blackbeard:RumPotion": {
+    "NAME": "Butelka rumu",
+    "DESCRIPTIONS": [
+      "Zyskaj #b",
+      " pkt. #yOdporności."
+    ]
+  },
+  "blackbeard:ToastPotion": {
+    "NAME": "Szybkie shoty rumu",
+    "DESCRIPTIONS": [
+      "Zyskaj #b",
+      " pkt. #yOdporności. Na początku następnej tury, utrać #b",
+      " pkt. #yOdporności."
+    ]
+  }
+}

@@ -2,7 +2,7 @@
 
 **Update: Slay the Spire added the official Workshop for mods. Please check [Installation](#installation) section for more details.** 
 
-This mod adds a new character for Slay The Spire, named The Blackbeard, with 75 new cards and 14 new relics (1 starter, 5 common, 4 uncommon, 2 rare, 1 boss and 1 shop). 
+This mod adds a new character for Slay the Spire, named The Blackbeard, with 75 new cards and 14 new relics (1 starter, 5 common, 4 uncommon, 2 rare, 1 boss and 1 shop). 
 
 The Blackbeard is a new class based on pirate theme. His most important mechanic are Weapons. There are many cards that allow to Equip a Weapon and each Weapon is characterized by its Attack and Durability. You can equip many Weapons, and they are queued using Defect's orb system. Every time you play an attack card, one Durability of your rightmost Weapon is used and card's damage is increased by Weapon's attack. You can Equip maximum of 10 Weapons. Weapons with zero durability are automatically destroyed. Orb slots are created automatically when you equip a Weapon and are automatically destroyed when Weapon is destroyed.
 
@@ -40,7 +40,9 @@ If you want to play Ascension 20 straight away, you have to:
 ```
 
 ## Localizations ##
-The mod is now available in Russian, thanks to [Jedi](https://github.com/Jedi515).
+The mod is available in:
+- Polish
+- Russian, thanks to [Jedi](https://github.com/Jedi515).
 
 ## Special Thanks ##
 1. Thanks to the [developers](https://www.megacrit.com/) of **SlayTheSpire** for making such a good game.

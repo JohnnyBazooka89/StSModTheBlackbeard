@@ -34,13 +34,13 @@
     ]
   },
   "blackbeard:SwordOfWisdomOrb": {
-    "NAME": "Sword Of Wisdom",
+    "NAME": "Sword of Wisdom",
     "DESCRIPTION": [
       "Whenever you attack with this Weapon, draw a card."
     ]
   },
   "blackbeard:SwordOfChaosOrb": {
-    "NAME": "Sword Of Chaos",
+    "NAME": "Sword of Chaos",
     "DESCRIPTION": [
       "Whenever you attack with this Weapon, add a random card to your hand."
     ]
@@ -48,7 +48,7 @@
   "blackbeard:CatONineTailsOrb": {
     "NAME": "Cat O' Nine Tails",
     "DESCRIPTION": [
-      "After you attack with this Weapon, give it + 2 Attack."
+      "After you attack with this Weapon, give it #b+2 Attack."
     ]
   },
   "blackbeard:DaggerOrb": {
@@ -66,7 +66,7 @@
   "blackbeard:SmithingHammerOrb": {
     "NAME": "Smithing Hammer",
     "DESCRIPTION": [
-      "After you attack with this Weapon and passively at the start of your turn using 1 durability, upgrade a random card in your hand for the rest of the combat."
+      "After you attack with this Weapon and passively at the start of your turn using #b1 durability, upgrade a random card in your hand for the rest of the combat."
     ]
   },
   "blackbeard:SpearOrb": {
@@ -76,7 +76,7 @@
     ]
   },
   "blackbeard:SwordOfFireOrb": {
-    "NAME": "Sword Of Fire",
+    "NAME": "Sword of Fire",
     "DESCRIPTION": [
       "Whenever you attack with this Weapon, deal #b3 damage to all enemies."
     ]
