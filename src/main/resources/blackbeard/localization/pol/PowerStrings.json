@@ -66,7 +66,7 @@
     ]
   },
   "blackbeard:WeaponMasteryPower": {
-    "NAME": "Mistrzostwo w uż. broni",
+    "NAME": "Mistrzostwo w uż. Broni",
     "DESCRIPTIONS": [
       "Kiedykolwiek wyposażysz się w Broń, dobierz #b",
       " kartę.",
@@ -122,7 +122,7 @@
     ]
   },
   "blackbeard:WeaponProficiencyPower": {
-    "NAME": "Biegłość w uż. broni",
+    "NAME": "Biegłość w uż. Broni",
     "DESCRIPTIONS": [
       "Twoje Ataki używają #b",
       " dodatkową #yBroń.",
