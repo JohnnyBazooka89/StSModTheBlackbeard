@@ -105,20 +105,28 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
 
     }
 
-    public static String getCardImagePath(String cardID) {
-        return "blackbeard/img/cards/" + cardID.replaceFirst("blackbeard:", "") + ".png";
+    public static String getCardImagePath(String cardId) {
+        return "blackbeard/img/cards/" + cardId.replaceFirst("blackbeard:", "") + ".png";
     }
 
-    public static String getRelicImagePath(String cardID) {
-        return "blackbeard/img/relics/" + cardID.replaceFirst("blackbeard:", "") + ".png";
+    public static String getRelicImagePath(String relicId) {
+        return "blackbeard/img/relics/" + relicId.replaceFirst("blackbeard:", "") + ".png";
     }
 
-    public static String getRelicOutlineImagePath(String cardID) {
-        return "blackbeard/img/relics/outlines/" + cardID.replaceFirst("blackbeard:", "") + ".png";
+    public static String getRelicOutlineImagePath(String relicId) {
+        return "blackbeard/img/relics/outlines/" + relicId.replaceFirst("blackbeard:", "") + ".png";
     }
 
-    public static String getOrbImagePath(String cardID) {
-        return "blackbeard/img/orbs/" + cardID.replaceFirst("blackbeard:", "") + ".png";
+    public static String getOrbImagePath(String orbId) {
+        return "blackbeard/img/orbs/" + orbId.replaceFirst("blackbeard:", "") + ".png";
+    }
+
+    public static String getPower128ImagePath(String powerId) {
+        return "blackbeard/img/powers/128/" + powerId.replaceFirst("blackbeard:", "").replaceFirst("Power", "") + ".png";
+    }
+
+    public static String getPower48ImagePath(String powerId) {
+        return "blackbeard/img/powers/48/" + powerId.replaceFirst("blackbeard:", "").replaceFirst("Power", "") + ".png";
     }
 
     public static void initialize() {
