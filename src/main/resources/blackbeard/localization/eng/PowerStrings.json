@@ -2,7 +2,7 @@
   "blackbeard:WeaponPower": {
     "NAME": "Weapons",
     "DESCRIPTIONS": [
-      "Whenever you play an attack card, one Durability of your rightmost Weapon is used and card's damage is increased by Weapon's attack."
+      "Whenever you play an attack card, one Durability of your rightmost Weapon is used and card's damage is increased by Weapon's Attack."
     ]
   },
   "blackbeard:ParrotPower": {
@@ -68,7 +68,7 @@
   "blackbeard:WeaponMasteryPower": {
     "NAME": "Weapon Mastery",
     "DESCRIPTIONS": [
-      "Whenever you Equip a Weapon, draw #b",
+      "Whenever you equip a #yWeapon, draw #b",
       " card.",
       " cards."
     ]
@@ -76,7 +76,7 @@
   "blackbeard:SalvagerPower": {
     "NAME": "Salvager",
     "DESCRIPTIONS": [
-      "Whenever a Weapon is destroyed, gain #b",
+      "Whenever a #yWeapon is destroyed, gain #b",
       " [E] ."
     ]
   },
@@ -90,7 +90,7 @@
   "blackbeard:ArmorUpPower": {
     "NAME": "Armor Up",
     "DESCRIPTIONS": [
-      "This turn, whenever you attack with a Weapon, gain #b",
+      "This turn, whenever you attack with a #yWeapon, gain #b",
       " #yBlock."
     ]
   },
@@ -104,13 +104,13 @@
   "blackbeard:PenknifePower": {
     "NAME": "Penknife",
     "DESCRIPTIONS": [
-      "Your next #yAttack that uses at least one Weapon deals double damage."
+      "Your next #yAttack that uses at least one #yWeapon deals double damage."
     ]
   },
   "blackbeard:DamageWhenIntangibleEndsPower": {
     "NAME": "End Of Intangible Damage",
     "DESCRIPTIONS": [
-      "At the start of the turn on which you are no longer Intangible, you take #b",
+      "At the start of the turn on which you are no longer #yIntangible, you take #b",
       " damage."
     ]
   },

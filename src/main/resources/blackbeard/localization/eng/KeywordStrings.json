@@ -4,7 +4,7 @@
       "weapon",
       "weapons"
     ],
-    "DESCRIPTION": "Whenever you play an attack card, one Durability of your rightmost Weapon is used and card's damage is increased by Weapon's attack. You can equip maximum of #b10 Weapons. Orb slots are created and destroyed automatically."
+    "DESCRIPTION": "Whenever you play an attack card, one Durability of your rightmost Weapon is used and card's damage is increased by Weapon's Attack."
   },
   "blackbeard:CannonballKeyword": {
     "NAMES": [

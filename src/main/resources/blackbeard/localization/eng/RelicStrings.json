@@ -31,7 +31,7 @@
     "NAME": "White Pearl",
     "FLAVOR": "Both beautiful and powerful.",
     "DESCRIPTIONS": [
-      "Whenever you Equip a #yWeapon, give it #b+1 Attack."
+      "Whenever you equip a #yWeapon, give it #b+1 Attack."
     ]
   },
   "blackbeard:CannonballsOfSteel": {

@@ -54,7 +54,7 @@
   "blackbeard:DaggerOrb": {
     "NAME": "Sztylet",
     "DESCRIPTION": [
-      ""
+      "Na początku każdej tury, #b1 pkt. Wytrzymałości Sztyletu jest użyty, aby zadać obrażenia równe jego pkt. Ataku losowemu przeciwnikowi."
     ]
   },
   "blackbeard:SwordOrb": {
@@ -78,7 +78,7 @@
   "blackbeard:SwordOfFireOrb": {
     "NAME": "Miecz ognia",
     "DESCRIPTION": [
-      "Kiedykolwiek zaatakujesz tą bronią, zadaj 3 pkt. obrażeń WSZYSTKIM przeciwnikom."
+      "Kiedykolwiek zaatakujesz tą bronią, zadaj #b3 pkt. obrażeń WSZYSTKIM przeciwnikom."
     ]
   }
 }

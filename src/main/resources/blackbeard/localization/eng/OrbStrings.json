@@ -54,7 +54,7 @@
   "blackbeard:DaggerOrb": {
     "NAME": "Dagger",
     "DESCRIPTION": [
-      ""
+      "At the start of your turn, #b1 Durability from Dagger is used to deal damage equal to its Attack to a random enemy."
     ]
   },
   "blackbeard:SwordOrb": {
@@ -66,7 +66,7 @@
   "blackbeard:SmithingHammerOrb": {
     "NAME": "Smithing Hammer",
     "DESCRIPTION": [
-      "After you attack with this Weapon and passively at the start of your turn using #b1 durability, upgrade a random card in your hand for the rest of the combat."
+      "After you attack with this Weapon and passively at the start of your turn using #b1 Durability, upgrade a random card in your hand for the rest of the combat."
     ]
   },
   "blackbeard:SpearOrb": {

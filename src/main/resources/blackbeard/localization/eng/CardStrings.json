@@ -266,7 +266,7 @@
   },
   "blackbeard:SmithingHammer": {
     "NAME": "Smithing Hammer",
-    "DESCRIPTION": "Equip a {A} / !M! Weapon. After you attack with this Weapon and passively at the start of your turn using 1 durability, upgrade a random card in your hand for the rest of the combat. Exhaust."
+    "DESCRIPTION": "Equip a {A} / !M! Weapon. After you attack with this Weapon and passively at the start of your turn using 1 Durability, upgrade a random card in your hand for the rest of the combat. Exhaust."
   },
   "blackbeard:Spear": {
     "NAME": "Spear",
@@ -274,8 +274,8 @@
   },
   "blackbeard:WeaponMastery": {
     "NAME": "Weapon Mastery",
-    "DESCRIPTION": "Whenever you Equip a Weapon, draw !M! card.",
-    "UPGRADE_DESCRIPTION": "Whenever you Equip a Weapon, draw !M! cards."
+    "DESCRIPTION": "Whenever you equip a Weapon, draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Whenever you equip a Weapon, draw !M! cards."
   },
   "blackbeard:Salvager": {
     "NAME": "Salvager",

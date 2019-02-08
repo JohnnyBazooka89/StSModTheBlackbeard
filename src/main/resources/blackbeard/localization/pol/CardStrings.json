@@ -42,8 +42,8 @@
   },
   "blackbeard:SwordDance": {
     "NAME": "Taniec mieczy",
-    "DESCRIPTION": "W tej turze, następne !M! Ataki używają wszystkich twoich wyposażonych Broni.",
-    "UPGRADE_DESCRIPTION": "W tej turze, następne !M! Ataków używa wszystkich twoich wyposażonych Broni."
+    "DESCRIPTION": "W tej turze, następne !M! ataki używają wszystkich twoich wyposażonych Broni.",
+    "UPGRADE_DESCRIPTION": "W tej turze, następne !M! ataków używa wszystkich twoich wyposażonych Broni."
   },
   "blackbeard:Cannonball": {
     "NAME": "Kula",
@@ -374,6 +374,6 @@
   },
   "blackbeard:WeaponProficiency": {
     "NAME": "Biegłość w uż. Broni",
-    "DESCRIPTION": "Twoje Ataki używają dodatkową Broń."
+    "DESCRIPTION": "Twoje ataki używają dodatkową Broń."
   }
 }

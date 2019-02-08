@@ -5,7 +5,7 @@
       "broni",
       "broniom"
     ],
-    "DESCRIPTION": "Kiedykolwiek zagrasz kartę Ataku, #b1 pkt. Wytrzymałości broni jest używany, aby zwiększyć obrażenia tej karty o siłę Ataku broni. Możesz wyposażyć się maksymalnie w #b10 broni. Miejsca na sfery są tworzone i usuwane automatycznie."
+    "DESCRIPTION": "Kiedykolwiek zagrasz kartę Ataku, #b1 pkt. Wytrzymałości broni jest używany, aby zwiększyć obrażenia tej karty o siłę Ataku broni."
   },
   "blackbeard:CannonballKeyword": {
     "NAMES": [
