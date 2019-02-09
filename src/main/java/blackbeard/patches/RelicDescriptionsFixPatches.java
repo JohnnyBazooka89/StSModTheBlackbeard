@@ -19,6 +19,7 @@ public class RelicDescriptionsFixPatches {
 
         @SpireInsertPatch(locator = RemoveSpecialWordLocator.class, localvars = {"word"})
         public static void Insert(SpriteBatch sb, BitmapFont font, String msg, float x, float y, float lineWidth, float lineSpacing, Color baseColor, @ByRef String[] word) {
+            removeSpace = false;
             if (word[0].startsWith(BLACKBEARD_REMOVE_SPACE)) {
                 word[0] = word[0].replace(BLACKBEARD_REMOVE_SPACE, StringUtils.EMPTY);
                 removeSpace = true;
