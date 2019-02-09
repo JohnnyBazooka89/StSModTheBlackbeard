@@ -41,6 +41,7 @@ If you want to play Ascension 20 straight away, you have to:
 
 ## Localizations ##
 The mod is available in:
+- English
 - Polish
 - Russian, thanks to [Jedi](https://github.com/Jedi515).
 
