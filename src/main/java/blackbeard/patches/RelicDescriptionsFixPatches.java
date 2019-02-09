@@ -18,7 +18,7 @@ public class RelicDescriptionsFixPatches {
         public static boolean removeSpace = false;
 
         @SpireInsertPatch(locator = RemoveSpecialWordLocator.class, localvars = {"word"})
-        public static void Insert(SpriteBatch sb, BitmapFont font, String msg, float x, float y, float lineWidth, float lineSpacing, Color baseColor, @ByRef String word[]) {
+        public static void Insert(SpriteBatch sb, BitmapFont font, String msg, float x, float y, float lineWidth, float lineSpacing, Color baseColor, @ByRef String[] word) {
             if (word[0].startsWith(BLACKBEARD_REMOVE_SPACE)) {
                 word[0] = word[0].replace(BLACKBEARD_REMOVE_SPACE, StringUtils.EMPTY);
                 removeSpace = true;
@@ -38,7 +38,7 @@ public class RelicDescriptionsFixPatches {
         }
 
         @SpireInsertPatch(locator = RemoveSpaceLocator.class, localvars = {"curWidth", "spaceWidth"})
-        public static void Insert(SpriteBatch sb, BitmapFont font, String msg, float x, float y, float lineWidth, float lineSpacing, Color baseColor, @ByRef float curWidth[], float spaceWidth) {
+        public static void Insert(SpriteBatch sb, BitmapFont font, String msg, float x, float y, float lineWidth, float lineSpacing, Color baseColor, @ByRef float[] curWidth, float spaceWidth) {
             if (removeSpace) {
                 curWidth[0] -= spaceWidth;
             }
@@ -57,7 +57,7 @@ public class RelicDescriptionsFixPatches {
     public static class FontHelperGetSmartHeightPatch {
 
         @SpireInsertPatch(locator = RemoveSpecialWordLocator.class, localvars = {"word"})
-        public static void Insert(BitmapFont font, String msg, float lineWidth, float lineSpacing, @ByRef String word[]) {
+        public static void Insert(BitmapFont font, String msg, float lineWidth, float lineSpacing, @ByRef String[] word) {
             if (word[0].startsWith(BLACKBEARD_REMOVE_SPACE)) {
                 word[0] = word[0].replace(BLACKBEARD_REMOVE_SPACE, StringUtils.EMPTY);
             }
