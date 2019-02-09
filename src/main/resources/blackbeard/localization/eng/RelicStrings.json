@@ -38,7 +38,7 @@
     "NAME": "Cannonballs of Steel",
     "FLAVOR": "Much stronger than regular cannonballs.",
     "DESCRIPTIONS": [
-      "Your Cannonballs deal #b2 more damage. (Works with every type of Cannonball.)"
+      "Your #yCannonballs deal #b2 more damage. (Works with every type of #yCannonball [blackbeard:REMOVE_SPACE].)"
     ]
   },
   "blackbeard:GoldenRing": {
@@ -59,7 +59,7 @@
     "NAME": "Penknife",
     "FLAVOR": "If you have it in your pocket, don't forget to use it.",
     "DESCRIPTIONS": [
-      "Every #b8th Attack that uses at least one Weapon deals double damage."
+      "Every #b8th Attack that uses at least one #yWeapon deals double damage."
     ]
   },
   "blackbeard:PoorMathSkills": {

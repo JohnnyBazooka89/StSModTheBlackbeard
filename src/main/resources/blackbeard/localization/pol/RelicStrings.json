@@ -38,7 +38,7 @@
     "NAME": "Kule ze stali",
     "FLAVOR": "O wiele mocniejsze niż zwykłe kule.",
     "DESCRIPTIONS": [
-      "Twoje #yKule zadają #b2 pkt. obrażeń więcej. (Działa z każdym typem #yKuli.)"
+      "Twoje #yKule zadają #b2 pkt. obrażeń więcej. (Działa z każdym typem #yKuli [blackbeard:REMOVE_SPACE].)"
     ]
   },
   "blackbeard:GoldenRing": {
