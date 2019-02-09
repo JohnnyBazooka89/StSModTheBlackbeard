@@ -48,7 +48,7 @@ public class GoldenGuillotine extends CustomCard implements IGoldenCard {
     @Override
     public void setGoldenValuesAndUpdateDescription() {
         this.baseDamage = this.damage = this.magicNumber * GoldenCardsUtil.getBlackbeardGoldGained() / 100;
-        this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(this.upgraded, DESCRIPTION, DESCRIPTION, EXTENDED_DESCRIPTION);
+        this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(this.upgraded, DESCRIPTION, UPGRADE_DESCRIPTION, EXTENDED_DESCRIPTION);
         this.initializeDescription();
     }
 
