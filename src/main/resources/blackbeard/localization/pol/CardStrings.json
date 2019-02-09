@@ -273,7 +273,7 @@
     "DESCRIPTION": "Wyposaż się w Broń !M! / {D}."
   },
   "blackbeard:WeaponMastery": {
-    "NAME": "Mistrzostwo w uż. Broni",
+    "NAME": "Mistrzostwo w uż. broni",
     "DESCRIPTION": "Kiedykolwiek wyposażysz się w Broń, dobierz !M! kartę.",
     "UPGRADE_DESCRIPTION": "Kiedykolwiek wyposażysz się w Broń, dobierz !M! karty."
   },
@@ -373,7 +373,7 @@
     "DESCRIPTION": "Zyskaj !M! pkt. Nieuchwytności. NL Na starcie tury, w której nie masz ani jednego pkt. Nieuchwytności, otrzymaj 30 pkt. obrażeń."
   },
   "blackbeard:WeaponProficiency": {
-    "NAME": "Biegłość w uż. Broni",
+    "NAME": "Biegłość w uż. broni",
     "DESCRIPTION": "Twoje ataki używają dodatkową Broń."
   }
 }
