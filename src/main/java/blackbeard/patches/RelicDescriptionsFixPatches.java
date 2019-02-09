@@ -34,10 +34,6 @@ public class RelicDescriptionsFixPatches {
             }
         }
 
-        public static void Postfix(SpriteBatch sb, BitmapFont font, String msg, float x, float y, float lineWidth, float lineSpacing, Color baseColor) {
-            removeSpace = false;
-        }
-
         @SpireInsertPatch(locator = RemoveSpaceLocator.class, localvars = {"curWidth", "spaceWidth"})
         public static void Insert(SpriteBatch sb, BitmapFont font, String msg, float x, float y, float lineWidth, float lineSpacing, Color baseColor, @ByRef float[] curWidth, float spaceWidth) {
             if (removeSpace) {
