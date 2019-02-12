@@ -20,7 +20,7 @@ import java.util.List;
 public class LongTitlesPatches {
 
     private static List<String> cardIDsToFixInEnglish = Arrays.asList(CloakAndCannonball.ID, HumongousCannonball.ID, IntimidatingStrike.ID, TheDrunkenSailor.ID, WeaponProficiency.ID);
-    private static List<String> cardIDsToFixInPolish = Arrays.asList(IntimidatingStrike.ID, RearmingStrike.ID, WeaponMastery.ID);
+    private static List<String> cardIDsToFixInPolish = Arrays.asList(IntimidatingStrike.ID, RearmingStrike.ID);
     private static List<String> cardIDsToFixInRussian = Arrays.asList(BountyHunter.ID, FinalBarrage.ID, IntimidatingStrike.ID, Lifeboat.ID, MegaUpgrade.ID, RearmingStrike.ID, TacticalRetreat.ID, WeaponMastery.ID);
 
     @SpirePatch(clz = FontHelper.class, method = "initialize", paramtypez = {})

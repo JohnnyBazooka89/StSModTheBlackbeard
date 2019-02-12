@@ -38,7 +38,7 @@
   },
   "blackbeard:TheDrunkenSailor": {
     "NAME": "Morskie opowieści",
-    "DESCRIPTION": "Twoje mikstury są użyte dodatkowy raz."
+    "DESCRIPTION": "Kiedykolwiek użyjesz mikstury, użyj jej dodatkowy raz."
   },
   "blackbeard:SwordDance": {
     "NAME": "Taniec mieczy",
@@ -273,7 +273,7 @@
     "DESCRIPTION": "Wyposaż się w Broń !M! / {D}."
   },
   "blackbeard:WeaponMastery": {
-    "NAME": "Mistrzostwo w uż. broni",
+    "NAME": "Mistrzostwo w broni",
     "DESCRIPTION": "Kiedykolwiek wyposażysz się w Broń, dobierz !M! kartę.",
     "UPGRADE_DESCRIPTION": "Kiedykolwiek wyposażysz się w Broń, dobierz !M! karty."
   },
@@ -374,7 +374,7 @@
     "DESCRIPTION": "Zyskaj !M! pkt. Nieuchwytności. NL Na starcie tury, w której nie masz ani jednego pkt. Nieuchwytności, otrzymaj 30 pkt. obrażeń."
   },
   "blackbeard:WeaponProficiency": {
-    "NAME": "Biegłość w uż. broni",
+    "NAME": "Biegłość w broni",
     "DESCRIPTION": "Twoje ataki używają dodatkową Broń."
   }
 }

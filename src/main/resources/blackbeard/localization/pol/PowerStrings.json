@@ -14,7 +14,7 @@
   "blackbeard:TheDrunkenSailorPower": {
     "NAME": "Morskie opowieści",
     "DESCRIPTIONS": [
-      "Twoje mikstury są użyte #b",
+      "Kiedykolwiek użyjesz mikstury, użyj jej #b",
       " razy."
     ]
   },
@@ -66,7 +66,7 @@
     ]
   },
   "blackbeard:WeaponMasteryPower": {
-    "NAME": "Mistrzostwo w uż. Broni",
+    "NAME": "Mistrzostwo w broni",
     "DESCRIPTIONS": [
       "Kiedykolwiek wyposażysz się w Broń, dobierz #b",
       " kartę.",
@@ -122,7 +122,7 @@
     ]
   },
   "blackbeard:WeaponProficiencyPower": {
-    "NAME": "Biegłość w uż. Broni",
+    "NAME": "Biegłość w broni",
     "DESCRIPTIONS": [
       "Twoje Ataki używają #b",
       " dodatkową #yBroń.",
