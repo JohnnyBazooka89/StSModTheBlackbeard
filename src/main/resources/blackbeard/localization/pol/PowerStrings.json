@@ -128,5 +128,13 @@
       " dodatkową #yBroń.",
       " dodatkowe/dodatkowych #yBronie/Broni."
     ]
+  },
+  "blackbeard:GoldToLootPower": {
+    "NAME": "Złoto do złupienia",
+    "DESCRIPTIONS": [
+      "Kiedykolwiek zaatakujesz przeciwnika, zyskaj #b",
+      " szt. #yZłota za kazde uderzenie. Możesz zyskać jeszcze #b",
+      " szt. #yZłota."
+    ]
   }
 }

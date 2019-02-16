@@ -174,7 +174,7 @@
   },
   "blackbeard:Bandana": {
     "NAME": "Bandana",
-    "DESCRIPTION": "Gain !M! Dexterity."
+    "DESCRIPTION": "Whenever you attack an enemy, gain 5 Gold per hit. Maximum of !M! Gold."
   },
   "blackbeard:TacticalRetreat": {
     "NAME": "Tactical Retreat",
@@ -367,7 +367,8 @@
   },
   "blackbeard:CloakAndCannonball": {
     "NAME": "Cloak and Cannonball",
-    "DESCRIPTION": "Gain !B! Block. NL  Add a Cannonball to your hand."
+    "DESCRIPTION": "Gain !B! Block. NL Add a Cannonball to your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add an upgraded Cannonball to your hand."
   },
   "blackbeard:UndeadForm": {
     "NAME": "Undead Form",

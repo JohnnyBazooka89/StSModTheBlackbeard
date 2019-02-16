@@ -7,7 +7,7 @@ This mod adds a new character for Slay the Spire, named The Blackbeard, with 75 
 The Blackbeard is a new class based on pirate theme. His most important mechanic are Weapons. There are many cards that allow to equip a Weapon and each Weapon is characterized by its Attack and Durability. You can equip many Weapons, and they are queued using Defect's orb system. Every time you play an attack card, one Durability of your rightmost Weapon is used and card's damage is increased by Weapon's Attack. You can equip maximum of 10 Weapons. Weapons with zero Durability are automatically destroyed. Orb slots are created and destroyed automatically.
 
 Other mechanics are: 
-- Cannonballs - 0 cost attacks that deal 8 (10) damage and exhaust.
+- Cannonballs - 0 cost attacks that deal 6 (8) damage and exhaust.
 - Resistance - for each point of Resistance you take 1 damage less from enemies.
 - Gold scaling cards - some cards scale with how much Gold you gained this run.
 - Debuff cleansing - The Blackbeard is able to play powerful cards with negative effects, and later cleanse his debuffs.

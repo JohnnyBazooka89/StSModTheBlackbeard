@@ -128,5 +128,13 @@
       " additional #yWeapon.",
       " additional #yWeapons."
     ]
+  },
+  "blackbeard:GoldToLootPower": {
+    "NAME": "Gold to Loot",
+    "DESCRIPTIONS": [
+      "Whenever you attack an enemy, gain #b",
+      " #yGold per hit. You can gain #b",
+      " #yGold more."
+    ]
   }
 }

@@ -174,7 +174,7 @@
   },
   "blackbeard:Bandana": {
     "NAME": "Bandana",
-    "DESCRIPTION": "Zyskaj !M! pkt. Zręczności."
+    "DESCRIPTION": "Kiedykolwiek zaatakujesz przeciwnika, zyskaj 5 szt. Złota za każde uderzenie. Maksymalnie !M! szt. Złota."
   },
   "blackbeard:TacticalRetreat": {
     "NAME": "Taktyczny odwrót",
@@ -358,8 +358,8 @@
   },
   "blackbeard:DoubleCannonball": {
     "NAME": "Podwójna kula",
-    "DESCRIPTION": "Zadaj !D! pkt. obrażeń. Wykluczenie. NL Dodaj Kulę do ręki.",
-    "UPGRADE_DESCRIPTION": "Zadaj !D! pkt. obrażeń. Wykluczenie. NL Dodaj ulepszoną Kulę do ręki."
+    "DESCRIPTION": "Zadaj !D! pkt. obrażeń. NL Dodaj Kulę do ręki. NL Wykluczenie.",
+    "UPGRADE_DESCRIPTION": "Zadaj !D! pkt. obrażeń. NL Dodaj ulepszoną Kulę do ręki. NL Wykluczenie."
   },
   "blackbeard:SwordOfFire": {
     "NAME": "Miecz ognia",
@@ -367,7 +367,8 @@
   },
   "blackbeard:CloakAndCannonball": {
     "NAME": "Płaszcz i kula",
-    "DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL  Dodaj Kulę do ręki."
+    "DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL  Dodaj Kulę do ręki.",
+    "UPGRADE_DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL  Dodaj ulepszoną Kulę do ręki."
   },
   "blackbeard:UndeadForm": {
     "NAME": "Nieumarła forma",

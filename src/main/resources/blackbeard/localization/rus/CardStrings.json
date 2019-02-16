@@ -174,7 +174,7 @@
   },
   "blackbeard:Bandana": {
     "NAME": "Бандана",
-    "DESCRIPTION": "Даёт !M! Ловкости."
+    "DESCRIPTION": "Даёт 5 золота, когда вы атакуете врага, вплоть до !M! золота суммарно."
   },
   "blackbeard:TacticalRetreat": {
     "NAME": "Тактическое отступление",
@@ -367,7 +367,8 @@
   },
   "blackbeard:CloakAndCannonball": {
     "NAME": "Плащ и ядро",
-    "DESCRIPTION": "Даёт !B! Защиты. NL Добавляет в руку Ядро."
+    "DESCRIPTION": "Даёт !B! Защиты. NL Добавляет в руку Ядро.",
+    "UPGRADE_DESCRIPTION": "Даёт !B! Защиты. NL Добавляет в руку улучшенное Ядро."
   },
   "blackbeard:UndeadForm": {
     "NAME": "Облик нежити",

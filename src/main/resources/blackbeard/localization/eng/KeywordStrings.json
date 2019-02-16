@@ -11,7 +11,7 @@
       "cannonball",
       "cannonballs"
     ],
-    "DESCRIPTION": "Cannonballs are #b0 cost attacks that deal #b8 #b(10) damage and exhaust."
+    "DESCRIPTION": "Cannonballs are #b0 cost attacks that deal #b6 #b(8) damage and exhaust."
   },
   "blackbeard:ResistanceKeyword": {
     "NAMES": [

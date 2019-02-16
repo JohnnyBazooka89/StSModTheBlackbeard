@@ -65,7 +65,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
 
     private static final String ENERGY_ORB_IN_DESCRIPTION = "blackbeard/img/energy/energyOrbInDescription.png";
 
-    //Blackbeard assets
+    //Assets
     private static final String BLACKBEARD_BUTTON = "blackbeard/img/charSelect/blackbeardButton.png";
     private static final String BLACKBEARD_PORTRAIT = "blackbeard/img/charSelect/blackbeardPortrait.jpg";
 
@@ -81,12 +81,13 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     private static final String KEYWORD_STRINGS_PATH = "blackbeard/localization/%s/KeywordStrings.json";
     private static final String POTION_STRINGS_PATH = "blackbeard/localization/%s/PotionStrings.json";
 
+    //Languages
     public static final String DEFAULT_LANGUAGE = "eng";
     public static final String POLISH_LANGUAGE_FOLDER = "pol";
     public static final String RUSSIAN_LANGUAGE_FOLDER = "rus";
 
+    //Keywords
     public static Map<String, Keyword> keywords = new HashMap<>();
-
     public static final String WEAPON_KEYWORD = "blackbeard:WeaponKeyword";
     public static final String CANNONBALL_KEYWORD = "blackbeard:CannonballKeyword";
     public static final String RESISTANCE_KEYWORD = "blackbeard:ResistanceKeyword";

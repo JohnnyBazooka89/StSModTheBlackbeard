@@ -3,13 +3,13 @@ package blackbeard.cards;
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.enums.AbstractCardEnum;
+import blackbeard.powers.GoldToLootPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.DexterityPower;
 
 public class Bandana extends CustomCard {
     public static final String ID = "blackbeard:Bandana";
@@ -17,26 +17,26 @@ public class Bandana extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
-    private static final int DEXTERITY_VALUE = 2;
-    private static final int UPGRADED_PLUS_DEXTERITY_VALUE = 1;
+    private static final int LOOTING_CAP_TO_GAIN = 30;
+    private static final int UPGRADE_PLUS_LOOTING_CAP_TO_GAIN = 10;
 
     public Bandana() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.POWER,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
 
-        this.baseMagicNumber = this.magicNumber = DEXTERITY_VALUE;
+        this.baseMagicNumber = this.magicNumber = LOOTING_CAP_TO_GAIN;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DexterityPower(p, this.magicNumber), this.magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new GoldToLootPower(p, this.magicNumber), this.magicNumber));
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADED_PLUS_DEXTERITY_VALUE);
+            this.upgradeMagicNumber(UPGRADE_PLUS_LOOTING_CAP_TO_GAIN);
         }
     }
 }
