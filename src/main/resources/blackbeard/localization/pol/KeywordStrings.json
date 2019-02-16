@@ -23,5 +23,12 @@
       "odporności"
     ],
     "DESCRIPTION": "Otrzymujesz mniej pkt. obrażeń od ataków przeciwników. (Zamiary przeciwników pokazują rzeczywiste nadchodzące obrażenia, z Odpornością wziętą pod uwagę.) Odporność może być ujemna."
+  },
+  "blackbeard:GraveKeyword": {
+    "NAMES": [
+      "zakopanie",
+      "zakopana"
+    ],
+    "DESCRIPTION": "Na początku walki, ta karta trafia do stosu kart odrzuconych."
   }
 }

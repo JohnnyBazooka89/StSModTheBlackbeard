@@ -167,7 +167,7 @@
   },
   "blackbeard:Murder": {
     "NAME": "Morderstwo",
-    "DESCRIPTION": "Zadaj !D! pkt. obrażeń     NL Normalnemu przeciwnikowi. NL (Nie może być zagrana przeciwko Elitarnym przeciwnikom i Bossom). NL Eteryczna.",
+    "DESCRIPTION": "Zadaj !D! pkt. obrażeń     NL Normalnemu przeciwnikowi. NL (Nie może być zagrana przeciwko Elitarnym przeciwnikom i Bossom). NL Zakopana. Eteryczna.",
     "EXTENDED_DESCRIPTION": [
       "Muszę wybrać #rNormalnego przeciwnika!"
     ]

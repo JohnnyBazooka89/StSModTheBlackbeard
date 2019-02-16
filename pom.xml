@@ -5,7 +5,7 @@
 
     <groupId>StSMod</groupId>
     <artifactId>StSModTheBlackbeard</artifactId>
-    <version>1.8.1</version>
+    <version>1.8.2</version>
     <packaging>jar</packaging>
     <name>StSModTheBlackbeard</name>
     <description>Adds a new character to Slay the Spire, The Blackbeard.</description>
@@ -38,6 +38,13 @@
             <version>5.4.0</version>
             <scope>system</scope>
             <systemPath>${slayTheSpirePath}\..\..\workshop\content\646570\1605833019\BaseMod.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.evacipated.cardcrawl.mod</groupId>
+            <artifactId>stslib</artifactId>
+            <version>1.14.0</version>
+            <scope>system</scope>
+            <systemPath>${slayTheSpirePath}\..\..\workshop\content\646570\1609158507\StSLib.jar</systemPath>
         </dependency>
     </dependencies>
 
