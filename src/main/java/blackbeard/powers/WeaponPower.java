@@ -1,6 +1,7 @@
 package blackbeard.powers;
 
 import blackbeard.orbs.WeaponOrb;
+import blackbeard.relics.Penknife;
 import blackbeard.relics.Spearhead;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
@@ -53,7 +54,7 @@ public class WeaponPower extends AbstractPower {
 
     public void refreshWeapons() {
         destroyWeaponsWithNoDurability();
-        setSpearheadPulsing();
+        setRelicPulsing();
     }
 
     private void destroyWeaponsWithNoDurability() {
@@ -105,10 +106,9 @@ public class WeaponPower extends AbstractPower {
         }
     }
 
-    private void setSpearheadPulsing() {
+    private void setRelicPulsing() {
         if (AbstractDungeon.player.hasRelic(Spearhead.ID)) {
             Spearhead spearhead = (Spearhead) AbstractDungeon.player.getRelic(Spearhead.ID);
-            spearhead.stopPulse();
             boolean shouldPulse = false;
             for (WeaponOrb weaponOrb : getWeaponsToUse()) {
                 if (weaponOrb.getDurability() == 1) {
@@ -117,6 +117,17 @@ public class WeaponPower extends AbstractPower {
             }
             if (shouldPulse) {
                 spearhead.beginLongPulse();
+            } else {
+                spearhead.stopPulse();
+            }
+        }
+        if (AbstractDungeon.player.hasRelic(Penknife.ID)) {
+            Penknife penknife = (Penknife) AbstractDungeon.player.getRelic(Penknife.ID);
+            boolean shouldPulse = getNumberOfWeapons() > 0 && (penknife.counter == Penknife.COUNT - 1);
+            if (shouldPulse) {
+                penknife.beginLongPulse();
+            } else {
+                penknife.stopPulse();
             }
         }
     }

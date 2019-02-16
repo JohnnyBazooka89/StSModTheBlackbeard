@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 
@@ -31,10 +32,7 @@ public class Penknife extends CustomRelic {
             if (this.counter == COUNT) {
                 this.counter = 0;
                 this.flash();
-                this.pulse = false;
             } else if (this.counter == COUNT - 1) {
-                this.beginPulse();
-                this.pulse = true;
                 AbstractDungeon.player.hand.refreshHandLayout();
                 AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new PenknifePower(AbstractDungeon.player, 1), 1, true));

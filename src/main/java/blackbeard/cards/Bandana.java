@@ -25,6 +25,8 @@ public class Bandana extends CustomCard {
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
 
         this.baseMagicNumber = this.magicNumber = LOOTING_CAP_TO_GAIN;
+
+        this.tags.add(CardTags.HEALING); //It doesn't heal, but I don't want gaining Gold to be abused.
     }
 
     @Override
