@@ -4,7 +4,7 @@ import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.enums.AbstractCardEnum;
 import blackbeard.interfaces.IGoldenCard;
-import blackbeard.utils.GoldenCardsUtil;
+import blackbeard.utils.GoldenCardsUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -47,8 +47,8 @@ public class GoldenGuillotine extends CustomCard implements IGoldenCard {
 
     @Override
     public void setGoldenValuesAndUpdateDescription() {
-        this.baseDamage = this.damage = this.magicNumber * GoldenCardsUtil.getBlackbeardGoldGained() / 100;
-        this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(this.upgraded, DESCRIPTION, UPGRADE_DESCRIPTION, EXTENDED_DESCRIPTION);
+        this.baseDamage = this.damage = this.magicNumber * GoldenCardsUtils.getBlackbeardGoldGained() / 100;
+        this.rawDescription = GoldenCardsUtils.getGoldenCardDescription(this.upgraded, DESCRIPTION, UPGRADE_DESCRIPTION, EXTENDED_DESCRIPTION);
         this.initializeDescription();
     }
 

@@ -4,7 +4,7 @@
       "weapon",
       "weapons"
     ],
-    "DESCRIPTION": "Whenever you play an attack card, one Durability of your rightmost Weapon is used and card's damage is increased by Weapon's Attack."
+    "DESCRIPTION": "Whenever you play an attack card, one Durability of your rightmost Weapon is used and card's damage is increased by Weapon's Attack. You can equip maximum of #b10 Weapons."
   },
   "blackbeard:CannonballKeyword": {
     "NAMES": [

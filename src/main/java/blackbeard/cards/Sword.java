@@ -6,7 +6,7 @@ import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.SwordDiscoveryAction;
 import blackbeard.enums.AbstractCardEnum;
 import blackbeard.patches.SwordDiscoveryPatch;
-import blackbeard.utils.WeaponCardsUtil;
+import blackbeard.utils.WeaponCardsUtils;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -25,7 +25,7 @@ public class Sword extends CustomCard {
     private static final int WEAPON_DURABILITY = 4;
     private static final int UPGRADED_PLUS_WEAPON_ATTACK = 1;
     public static final String NAME = cardStrings.NAME;
-    public static final String DESCRIPTION = WeaponCardsUtil.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);
+    public static final String DESCRIPTION = WeaponCardsUtils.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);
     public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
 
     public Sword() {

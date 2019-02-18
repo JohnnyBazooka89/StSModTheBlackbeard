@@ -5,7 +5,7 @@ import blackbeard.TheBlackbeardMod;
 import blackbeard.enums.AbstractCardEnum;
 import blackbeard.enums.CardTagsEnum;
 import blackbeard.interfaces.IGoldenCard;
-import blackbeard.utils.GoldenCardsUtil;
+import blackbeard.utils.GoldenCardsUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -51,8 +51,8 @@ public class GoldenCannonball extends CustomCard implements IGoldenCard {
 
     @Override
     public void setGoldenValuesAndUpdateDescription() {
-        this.baseDamage = this.damage = this.magicNumber + GoldenCardsUtil.getBlackbeardGoldGained() / 50;
-        this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(upgraded, DESCRIPTION, UPGRADE_DESCRIPTION, EXTENDED_DESCRIPTION);
+        this.baseDamage = this.damage = this.magicNumber + GoldenCardsUtils.getBlackbeardGoldGained() / 50;
+        this.rawDescription = GoldenCardsUtils.getGoldenCardDescription(upgraded, DESCRIPTION, UPGRADE_DESCRIPTION, EXTENDED_DESCRIPTION);
         this.initializeDescription();
     }
 

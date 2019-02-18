@@ -2,7 +2,7 @@
   "blackbeard:WeaponPower": {
     "NAME": "Bronie",
     "DESCRIPTIONS": [
-      "Kiedykolwiek zagrasz kartę Ataku, #b1 pkt. Wytrzymałości broni jest używany, aby zwiększyć obrażenia tej karty o siłę Ataku broni."
+      "Kiedykolwiek zagrasz kartę Ataku, #b1 pkt. Wytrzymałości Broni jest używany, aby zwiększyć obrażenia tej karty o siłę Ataku Broni. Możesz wyposażyć się maksymalnie w #b10 Broni."
     ]
   },
   "blackbeard:ParrotPower": {

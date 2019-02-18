@@ -5,7 +5,8 @@ import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.EquipAction;
 import blackbeard.enums.AbstractCardEnum;
 import blackbeard.orbs.SmithingHammerOrb;
-import blackbeard.utils.WeaponCardsUtil;
+import blackbeard.utils.KeywordsUtils;
+import blackbeard.utils.WeaponCardsUtils;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -21,7 +22,7 @@ public class SmithingHammer extends CustomCard {
     private static final int WEAPON_DURABILITY = 4;
     private static final int UPGRADED_PLUS_WEAPON_DURABILITY = 2;
     public static final String NAME = cardStrings.NAME;
-    public static final String DESCRIPTION = WeaponCardsUtil.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);
+    public static final String DESCRIPTION = WeaponCardsUtils.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);
 
     public SmithingHammer() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
@@ -34,6 +35,12 @@ public class SmithingHammer extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new EquipAction(new SmithingHammerOrb(WEAPON_ATTACK, this.magicNumber, false)));
+    }
+
+    @Override
+    public void initializeDescription() {
+        super.initializeDescription();
+        KeywordsUtils.removeExhaustFromTooltips(this);
     }
 
     @Override

@@ -4,7 +4,7 @@ import blackbeard.relics.PoorMathSkills;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
-public class GoldenCardsUtil {
+public class GoldenCardsUtils {
 
     public static String getGoldenCardDescription(boolean upgraded, String description, String upgradeDescription, String[] extendedDescription) {
         String result = upgraded ? upgradeDescription : description;

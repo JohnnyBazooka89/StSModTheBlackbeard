@@ -5,7 +5,7 @@ import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.EquipAction;
 import blackbeard.enums.AbstractCardEnum;
 import blackbeard.orbs.CutlassOrb;
-import blackbeard.utils.WeaponCardsUtil;
+import blackbeard.utils.WeaponCardsUtils;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -22,7 +22,7 @@ public class Cutlass extends CustomCard {
     private static final int WEAPON_ATTACK = 4;
     private static final int WEAPON_DURABILITY = 2;
     public static final String NAME = cardStrings.NAME;
-    public static final String DESCRIPTION = WeaponCardsUtil.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);
+    public static final String DESCRIPTION = WeaponCardsUtils.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);
 
     public Cutlass() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(Cutlass.ID), COST, DESCRIPTION, AbstractCard.CardType.SKILL,

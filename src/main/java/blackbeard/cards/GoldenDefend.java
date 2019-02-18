@@ -4,7 +4,7 @@ import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.enums.AbstractCardEnum;
 import blackbeard.interfaces.IGoldenCard;
-import blackbeard.utils.GoldenCardsUtil;
+import blackbeard.utils.GoldenCardsUtils;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -45,8 +45,8 @@ public class GoldenDefend extends CustomCard implements IGoldenCard {
 
     @Override
     public void setGoldenValuesAndUpdateDescription() {
-        this.baseBlock = this.block = this.magicNumber + (3 * GoldenCardsUtil.getBlackbeardGoldGained() / 200);
-        this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(this.upgraded, DESCRIPTION, UPGRADE_DESCRIPTION, EXTENDED_DESCRIPTION);
+        this.baseBlock = this.block = this.magicNumber + (3 * GoldenCardsUtils.getBlackbeardGoldGained() / 200);
+        this.rawDescription = GoldenCardsUtils.getGoldenCardDescription(this.upgraded, DESCRIPTION, UPGRADE_DESCRIPTION, EXTENDED_DESCRIPTION);
         this.initializeDescription();
     }
 

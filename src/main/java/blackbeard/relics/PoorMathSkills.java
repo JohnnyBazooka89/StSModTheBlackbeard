@@ -15,7 +15,7 @@ public class PoorMathSkills extends CustomRelic {
         super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.MAGICAL);
     }
 
-    /* Logic is in GoldenCardsUtil. */
+    /* Logic is in GoldenCardsUtils. */
 
     @Override
     public String getUpdatedDescription() {

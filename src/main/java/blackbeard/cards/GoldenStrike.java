@@ -4,7 +4,7 @@ import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.enums.AbstractCardEnum;
 import blackbeard.interfaces.IGoldenCard;
-import blackbeard.utils.GoldenCardsUtil;
+import blackbeard.utils.GoldenCardsUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -49,8 +49,8 @@ public class GoldenStrike extends CustomCard implements IGoldenCard {
 
     @Override
     public void setGoldenValuesAndUpdateDescription() {
-        this.baseDamage = this.damage = this.magicNumber + (3 * GoldenCardsUtil.getBlackbeardGoldGained() / 200);
-        this.rawDescription = GoldenCardsUtil.getGoldenCardDescription(upgraded, DESCRIPTION, UPGRADE_DESCRIPTION, EXTENDED_DESCRIPTION);
+        this.baseDamage = this.damage = this.magicNumber + (3 * GoldenCardsUtils.getBlackbeardGoldGained() / 200);
+        this.rawDescription = GoldenCardsUtils.getGoldenCardDescription(upgraded, DESCRIPTION, UPGRADE_DESCRIPTION, EXTENDED_DESCRIPTION);
         this.initializeDescription();
     }
 
