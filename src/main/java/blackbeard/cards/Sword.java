@@ -21,9 +21,9 @@ public class Sword extends CustomCard {
     public static final String ID = "blackbeard:Sword";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final int COST = 1;
-    private static final int WEAPON_ATTACK = 2;
-    private static final int WEAPON_DURABILITY = 4;
-    private static final int UPGRADED_PLUS_WEAPON_ATTACK = 1;
+    private static final int WEAPON_ATTACK = 3;
+    private static final int WEAPON_DURABILITY = 3;
+    private static final int UPGRADED_PLUS_WEAPON_DURABILITY = 1;
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = WeaponCardsUtils.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);
     public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
@@ -32,7 +32,7 @@ public class Sword extends CustomCard {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.SELF);
 
-        this.baseMagicNumber = this.magicNumber = WEAPON_ATTACK;
+        this.baseMagicNumber = this.magicNumber = WEAPON_DURABILITY;
     }
 
     @Override
@@ -46,7 +46,7 @@ public class Sword extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADED_PLUS_WEAPON_ATTACK);
+            this.upgradeMagicNumber(UPGRADED_PLUS_WEAPON_DURABILITY);
         }
     }
 

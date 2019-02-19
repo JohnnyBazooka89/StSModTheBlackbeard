@@ -95,11 +95,11 @@
   },
   "blackbeard:SwordOfWisdom": {
     "NAME": "Sword of Wisdom",
-    "DESCRIPTION": "Equip a !M! / {D} Weapon. Whenever you attack with this Weapon, draw a card."
+    "DESCRIPTION": "Equip a {A} / !M! Weapon. Whenever you attack with this Weapon, draw a card."
   },
   "blackbeard:SwordOfChaos": {
     "NAME": "Sword of Chaos",
-    "DESCRIPTION": "Equip a !M! / {D} Weapon. Whenever you attack with this Weapon, add a random card to your hand."
+    "DESCRIPTION": "Equip a {A} / !M! Weapon. Whenever you attack with this Weapon, add a random card to your hand."
   },
   "blackbeard:PirateStrength": {
     "NAME": "Pirate Strength",
@@ -174,7 +174,7 @@
   },
   "blackbeard:Bandana": {
     "NAME": "Bandana",
-    "DESCRIPTION": "Whenever you attack an enemy, gain 5 Gold per hit. Maximum of !M! Gold."
+    "DESCRIPTION": "Whenever you hit an enemy, gain 5 Gold, NL up to a maximum of !M! Gold."
   },
   "blackbeard:TacticalRetreat": {
     "NAME": "Tactical Retreat",
@@ -240,7 +240,7 @@
   },
   "blackbeard:Sword": {
     "NAME": "Sword",
-    "DESCRIPTION": "Choose 1 of 3 Swords. NL Equip a !M! / {D} Weapon with an additional effect.",
+    "DESCRIPTION": "Choose 1 of 3 Swords. NL Equip a {A} / !M! Weapon with an additional effect.",
     "EXTENDED_DESCRIPTION": [
       "Additional Effects",
       "#rFire: Whenever you attack with this Weapon, deal #b3 damage to ALL enemies. NL #yWisdom: Whenever you attack with this Weapon, draw a card. NL #pChaos: Whenever you attack with this Weapon, add a random card to your hand."
@@ -363,7 +363,7 @@
   },
   "blackbeard:SwordOfFire": {
     "NAME": "Sword of Fire",
-    "DESCRIPTION": "Equip a !M! / {D} Weapon. Whenever you attack with this Weapon, deal 3 damage to ALL enemies."
+    "DESCRIPTION": "Equip a {A} / !M! Weapon. Whenever you attack with this Weapon, deal 3 damage to ALL enemies."
   },
   "blackbeard:CloakAndCannonball": {
     "NAME": "Cloak and Cannonball",

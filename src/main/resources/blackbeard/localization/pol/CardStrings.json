@@ -95,11 +95,11 @@
   },
   "blackbeard:SwordOfWisdom": {
     "NAME": "Miecz mądrości",
-    "DESCRIPTION": "Wyposaż się w NL Broń !M! / {D}. NL Kiedykolwiek zaatakujesz tą bronią, dobierz 1 kartę."
+    "DESCRIPTION": "Wyposaż się w NL Broń {A} / !M!. NL Kiedykolwiek zaatakujesz tą bronią, dobierz 1 kartę."
   },
   "blackbeard:SwordOfChaos": {
     "NAME": "Miecz chaosu",
-    "DESCRIPTION": "Wyposaż się w NL Broń !M! / {D}. NL Kiedykolwiek zaatakujesz tą bronią, dodaj losową kartę do ręki."
+    "DESCRIPTION": "Wyposaż się w NL Broń {A} / !M!. NL Kiedykolwiek zaatakujesz tą bronią, dodaj losową kartę do ręki."
   },
   "blackbeard:PirateStrength": {
     "NAME": "Piracka siła",
@@ -174,7 +174,7 @@
   },
   "blackbeard:Bandana": {
     "NAME": "Bandana",
-    "DESCRIPTION": "Kiedykolwiek zaatakujesz przeciwnika, zyskaj 5 szt. Złota za każde uderzenie. Maksymalnie !M! szt. Złota."
+    "DESCRIPTION": "Kiedykolwiek zaatakujesz przeciwnika, zyskaj 5 szt. Złota za każde uderzenie. NL Maksymalnie !M! szt. Złota."
   },
   "blackbeard:TacticalRetreat": {
     "NAME": "Taktyczny odwrót",
@@ -240,7 +240,7 @@
   },
   "blackbeard:Sword": {
     "NAME": "Miecz",
-    "DESCRIPTION": "Wybierz 1 z 3 Mieczy. NL Wyposaż się w Broń !M! / {D} z dodatkowym efektem.",
+    "DESCRIPTION": "Wybierz 1 z 3 Mieczy. NL Wyposaż się w Broń {A} / !M! z dodatkowym efektem.",
     "EXTENDED_DESCRIPTION": [
       "Dodatkowe efekty",
       "#rOgień: Kiedykolwiek zaatakujesz tą bronią, zadaj #b3 pkt. obrażeń WSZYSTKIM przeciwnikom. NL #yMądrość: Kiedykolwiek zaatakujesz tą bronią, dobierz 1 kartę. NL #pChaos: Kiedykolwiek zaatakujesz tą bronią, dodaj losową kartę do ręki."
@@ -363,7 +363,7 @@
   },
   "blackbeard:SwordOfFire": {
     "NAME": "Miecz ognia",
-    "DESCRIPTION": "Wyposaż się w NL Broń !M! / {D}. NL Kiedykolwiek zaatakujesz tą bronią, zadaj 3 pkt. obrażeń WSZYSTKIM przeciwnikom."
+    "DESCRIPTION": "Wyposaż się w NL Broń {A} / !M!. NL Kiedykolwiek zaatakujesz tą bronią, zadaj 3 pkt. obrażeń WSZYSTKIM przeciwnikom."
   },
   "blackbeard:CloakAndCannonball": {
     "NAME": "Płaszcz i kula",
