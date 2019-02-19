@@ -139,7 +139,7 @@
     "DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dodaj !M! Kulę do ręki.",
     "UPGRADE_DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dodaj !M! Kule do ręki."
   },
-  "blackbeard:GoldenDefend": {
+  "blackbeard:GoldenDefense": {
     "NAME": "Złota obrona",
     "DESCRIPTION": "Zyskaj pkt. Bloku równe NL 1.5% szt. Złota zdobytych w tej wyprawie.",
     "UPGRADE_DESCRIPTION": "Zyskaj pkt. Bloku równe NL !M! + 1.5% szt. Złota zdobytych w tej wyprawie.",
@@ -254,12 +254,12 @@
     "NAME": "Zastraszające uderzenie",
     "DESCRIPTION": "Zadaj !D! pkt. obrażeń. NL Nałóż !M! pkt. Słabości."
   },
-  "blackbeard:WiseDefend": {
+  "blackbeard:WiseDefense": {
     "NAME": "Roztropna obrona",
     "DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dobierz !M! kartę.",
     "UPGRADE_DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dobierz !M! karty."
   },
-  "blackbeard:ChaoticDefend": {
+  "blackbeard:ChaoticDefense": {
     "NAME": "Chaotyczna obrona",
     "DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dodaj !M! losową kartę do ręki.",
     "UPGRADE_DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dodaj !M! losowe karty do ręki."

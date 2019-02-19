@@ -48,7 +48,7 @@
         "size": 6.708204
       }
     ],
-    "blackbeard:GoldenDefend": [
+    "blackbeard:GoldenDefense": [
       {
         "x": 126.0,
         "y": 301.0,
@@ -120,7 +120,7 @@
         "size": 20.615528
       }
     ],
-    "blackbeard:ChaoticDefend": [
+    "blackbeard:ChaoticDefense": [
       {
         "x": 126.0,
         "y": 301.0,
@@ -253,7 +253,7 @@
         "size": 25.0
       }
     ],
-    "blackbeard:WiseDefend": [
+    "blackbeard:WiseDefense": [
       {
         "x": 126.0,
         "y": 301.0,

@@ -139,8 +139,8 @@
     "DESCRIPTION": "Gain !B! Block. NL Add !M! Cannonball to your hand.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add !M! Cannonballs to your hand."
   },
-  "blackbeard:GoldenDefend": {
-    "NAME": "Golden Defend",
+  "blackbeard:GoldenDefense": {
+    "NAME": "Golden Defense",
     "DESCRIPTION": "Gain Block equal to NL 1.5% of Gold gained NL this run.",
     "UPGRADE_DESCRIPTION": "Gain Block equal to NL !M! + 1.5% of Gold gained NL this run.",
     "EXTENDED_DESCRIPTION": [
@@ -254,13 +254,13 @@
     "NAME": "Intimidating Strike",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak."
   },
-  "blackbeard:WiseDefend": {
-    "NAME": "Wise Defend",
+  "blackbeard:WiseDefense": {
+    "NAME": "Wise Defense",
     "DESCRIPTION": "Gain !B! Block. NL Draw !M! card.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Draw !M! cards."
   },
-  "blackbeard:ChaoticDefend": {
-    "NAME": "Chaotic Defend",
+  "blackbeard:ChaoticDefense": {
+    "NAME": "Chaotic Defense",
     "DESCRIPTION": "Gain !B! Block. NL Add !M! random card to your hand.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add !M! random cards to your hand."
   },

@@ -139,7 +139,7 @@
     "DESCRIPTION": "Даёт !B! Защиты. NL Добавляет в руку !M! Ядро.",
     "UPGRADE_DESCRIPTION": "Даёт !B! Защиты. NL Добавляет в руку !M! Ядра."
   },
-  "blackbeard:GoldenDefend": {
+  "blackbeard:GoldenDefense": {
     "NAME": "Золотая оборона",
     "DESCRIPTION": "Даёт Защиту, равную NL 1.5% Золота, полученного NL в данной вылазке.",
     "UPGRADE_DESCRIPTION": "Даёт Защиту, равную NL !M! + 1.5% Золота, полученного NL в данной вылазке.",
@@ -254,12 +254,12 @@
     "NAME": "Устрашающий удар",
     "DESCRIPTION": "Наносит !D! урона. NL Накладывает !M! Слабости."
   },
-  "blackbeard:WiseDefend": {
+  "blackbeard:WiseDefense": {
     "NAME": "Мудрая оборона",
     "DESCRIPTION": "Даёт !B! Защиты. NL Вы берёте !M! карту.",
     "UPGRADE_DESCRIPTION": "Даёт !B! Защиты. NL Вы берёте !M! карты."
   },
-  "blackbeard:ChaoticDefend": {
+  "blackbeard:ChaoticDefense": {
     "NAME": "Хаотичная оборона",
     "DESCRIPTION": "Даёт !B! Защиты. NL Добавляет в руку !M! случайную карту",
     "UPGRADE_DESCRIPTION": "Даёт !B! Защиты. NL Добавляет в руку !M! случайные карты."
