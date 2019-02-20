@@ -1,10 +1,7 @@
 package blackbeard.orbs;
 
 import blackbeard.TheBlackbeardMod;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.core.AbstractCreature;
+import blackbeard.actions.WeaponDamageAllEnemiesAction;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.OrbStrings;
@@ -30,7 +27,7 @@ public class PowderKegOrb extends WeaponOrb {
     @Override
     public void onEvoke() {
         super.onEvoke();
-        AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction((AbstractCreature)null, DamageInfo.createDamageMatrix(this.damageOnDestroy, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE));
+        AbstractDungeon.actionManager.addToBottom(new WeaponDamageAllEnemiesAction(this.damageOnDestroy));
     }
 
     @Override
