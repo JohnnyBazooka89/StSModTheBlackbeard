@@ -7,6 +7,7 @@ import blackbeard.cards.*;
 import blackbeard.characters.TheBlackbeard;
 import blackbeard.enums.AbstractCardEnum;
 import blackbeard.enums.TheBlackbeardEnum;
+import blackbeard.events.SssserpentBlackbeardEvent;
 import blackbeard.potions.RumPotion;
 import blackbeard.potions.ToastPotion;
 import blackbeard.relics.*;
@@ -18,6 +19,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.Exordium;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.*;
@@ -165,9 +167,10 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addPotion(RumPotion.class, rumColor.cpy(), rumShadeColor.cpy(), null, "blackbeard:RumPotion", TheBlackbeardEnum.BLACKBEARD_CLASS);
         BaseMod.addPotion(ToastPotion.class, rumColor.cpy(), rumShadeColor.cpy(), null, "blackbeard:ToastPotion", TheBlackbeardEnum.BLACKBEARD_CLASS);
 
+        BaseMod.addEvent(SssserpentBlackbeardEvent.ID, SssserpentBlackbeardEvent.class, Exordium.ID);
+
         logger.info("Done editing characters");
     }
-
 
     @Override
     public void receiveEditRelics() {
