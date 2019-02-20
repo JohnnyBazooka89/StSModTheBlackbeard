@@ -19,7 +19,7 @@ public class SssserpentBlackbeardEvent extends AbstractImageEvent {
     private static final EventStrings eventStrings;
     public static final String NAME;
     public static final String[] DESCRIPTIONS;
-    public static final String[] OPTIONS;
+    private static final String[] OPTIONS;
     private static final String DIALOG_1;
     private static final String AGREE_DIALOG;
     private static final String DISAGREE_DIALOG;
@@ -34,6 +34,7 @@ public class SssserpentBlackbeardEvent extends AbstractImageEvent {
     private AbstractCard curse;
     private AbstractRelic relic;
 
+    @Override
     public void onEnterRoom() {
         if (Settings.AMBIANCE_ON) {
             CardCrawlGame.sound.play("EVENT_SERPENT");
@@ -123,6 +124,6 @@ public class SssserpentBlackbeardEvent extends AbstractImageEvent {
         AGREE,
         DISAGREE,
         YARR,
-        COMPLETE;
+        COMPLETE
     }
 }
