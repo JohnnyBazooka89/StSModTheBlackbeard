@@ -4,7 +4,7 @@ import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.EquipAction;
 import blackbeard.enums.AbstractCardEnum;
-import blackbeard.orbs.DefaultWeaponOrb;
+import blackbeard.orbs.CutlassOrb;
 import blackbeard.utils.WeaponCardsUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -39,7 +39,7 @@ public class RearmingStrike extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        AbstractDungeon.actionManager.addToBottom(new EquipAction(new DefaultWeaponOrb(WEAPON_ATTACK, WEAPON_DURABILITY, true)));
+        AbstractDungeon.actionManager.addToBottom(new EquipAction(new CutlassOrb(WEAPON_ATTACK, WEAPON_DURABILITY, true)));
     }
 
     @Override

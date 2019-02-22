@@ -15,7 +15,7 @@ import java.lang.reflect.Method;
 /* Copied from The Mystic Mod:
    https://github.com/JohnnyDevo/The-Mystic-Project/blob/master/src/main/java/mysticmod/Patches/MysticMetricsPatch.java
  */
-public class MetricsPatch {
+public class MetricsPatches {
 
     @SpirePatch(clz = Metrics.class, method = "sendPost", paramtypez = {String.class, String.class})
     public static class SendPostPatch {

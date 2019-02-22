@@ -8,12 +8,6 @@
       "Durability: #b"
     ]
   },
-  "blackbeard:DefaultWeaponOrb": {
-    "NAME": "Sword",
-    "DESCRIPTION": [
-      ""
-    ]
-  },
   "blackbeard:CutlassOrb": {
     "NAME": "Cutlass",
     "DESCRIPTION": [
@@ -23,7 +17,7 @@
   "blackbeard:HalberdOrb": {
     "NAME": "Halberd",
     "DESCRIPTION": [
-      "A Rare Weapon!"
+      " Whenever you attack with this Weapon, apply 3 blackbeard:Bleed to a target per hit."
     ]
   },
   "blackbeard:PowderKegOrb": {
@@ -79,6 +73,12 @@
     "NAME": "Sword of Fire",
     "DESCRIPTION": [
       "Whenever you attack with this Weapon, deal #b3 damage to all enemies."
+    ]
+  },
+  "blackbeard:VampiricScepterOrb": {
+    "NAME": "Vampiric Scepter",
+    "DESCRIPTION": [
+      ""
     ]
   }
 }

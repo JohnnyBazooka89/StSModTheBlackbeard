@@ -18,7 +18,7 @@ public class Revenge extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
     private static final int COST = 2;
-    private static final int MAXIMUM_DAMAGE = 40;
+    private static final int MAXIMUM_DAMAGE = 50;
     private static final int UPGRADE_PLUS_MAXIMUM_DAMAGE = 10;
 
     public Revenge() {

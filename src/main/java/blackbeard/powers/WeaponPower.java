@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardType;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -165,6 +166,14 @@ public class WeaponPower extends AbstractPower {
             return super.atDamageGive(damage, type) + weaponAttack;
         } else {
             return super.atDamageGive(damage, type);
+        }
+    }
+
+    @Override
+    public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
+        super.onAttack(info, damageAmount, target);
+        for (WeaponOrb weaponOrb : getWeaponsToUse()) {
+            weaponOrb.effectOnAttack(info, damageAmount, target);
         }
     }
 

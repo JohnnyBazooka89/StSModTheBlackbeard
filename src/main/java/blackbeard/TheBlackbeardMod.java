@@ -15,6 +15,7 @@ import blackbeard.variables.MagicNumberPlusOneVariable;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
+import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -44,7 +45,6 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     public static final String DEFAULT_POWER_CARD_ID = "blackbeard:BetaPower";
     public static final String DEFAULT_SKILL_CARD_ID = "blackbeard:BetaSkill";
     public static final String DEFAULT_ATTACK_CARD_ID = "blackbeard:Beta";
-    public static final String DEFAULT_WEAPON_ORB_ID = "blackbeard:WeaponOrb";
 
     //Mod metadata
     private static final String MOD_NAME = "The Blackbeard";
@@ -146,6 +146,17 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         Texture badgeTexture = ImageMaster.loadImage(BADGE_IMG);
         ModPanel settingsPanel = new ModPanel();
         BaseMod.registerModBadge(badgeTexture, MOD_NAME, AUTHOR, DESCRIPTION, settingsPanel);
+
+        // Events
+        BaseMod.addEvent(SssserpentBlackbeardEvent.ID, SssserpentBlackbeardEvent.class, Exordium.ID);
+
+        // Potions
+        BaseMod.addPotion(BloodPotion.class, Color.WHITE.cpy(), Color.LIGHT_GRAY.cpy(), null, "blackbeard:BloodPotion", TheBlackbeardEnum.BLACKBEARD_CLASS);
+        BaseMod.addPotion(GhostInAJar.class, Color.WHITE.cpy(), Color.LIGHT_GRAY.cpy(), null, "blackbeard:GhostInAJar", TheBlackbeardEnum.BLACKBEARD_CLASS);
+        Color rumColor = new Color(211 / 255.0F, 102 / 255.0F, 0, 1);
+        Color rumShadeColor = new Color(160 / 255.0F, 77 / 255.0F, 0, 1);
+        BaseMod.addPotion(RumPotion.class, rumColor.cpy(), rumShadeColor.cpy(), null, "blackbeard:RumPotion", TheBlackbeardEnum.BLACKBEARD_CLASS);
+        BaseMod.addPotion(ToastPotion.class, rumColor.cpy(), rumShadeColor.cpy(), null, "blackbeard:ToastPotion", TheBlackbeardEnum.BLACKBEARD_CLASS);
     }
 
     @Override
@@ -159,15 +170,6 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
                 BLACKBEARD_PORTRAIT,
                 TheBlackbeardEnum.BLACKBEARD_CLASS
         );
-
-        BaseMod.addPotion(BloodPotion.class, Color.WHITE.cpy(), Color.LIGHT_GRAY.cpy(), null, "blackbeard:BloodPotion", TheBlackbeardEnum.BLACKBEARD_CLASS);
-        BaseMod.addPotion(GhostInAJar.class, Color.WHITE.cpy(), Color.LIGHT_GRAY.cpy(), null, "blackbeard:GhostInAJar", TheBlackbeardEnum.BLACKBEARD_CLASS);
-        Color rumColor = new Color(211 / 255.0F, 102 / 255.0F, 0, 1);
-        Color rumShadeColor = new Color(160 / 255.0F, 77 / 255.0F, 0, 1);
-        BaseMod.addPotion(RumPotion.class, rumColor.cpy(), rumShadeColor.cpy(), null, "blackbeard:RumPotion", TheBlackbeardEnum.BLACKBEARD_CLASS);
-        BaseMod.addPotion(ToastPotion.class, rumColor.cpy(), rumShadeColor.cpy(), null, "blackbeard:ToastPotion", TheBlackbeardEnum.BLACKBEARD_CLASS);
-
-        BaseMod.addEvent(SssserpentBlackbeardEvent.ID, SssserpentBlackbeardEvent.class, Exordium.ID);
 
         logger.info("Done editing characters");
     }
@@ -277,12 +279,14 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addCard(new CloakAndCannonball());
         BaseMod.addCard(new UndeadForm());
         BaseMod.addCard(new WeaponProficiency());
+        BaseMod.addCard(new FieryDefense());
+        BaseMod.addCard(new ReapersScythe());
 
-        //Cards with special rarity are not added to BaseMod.
-        //BaseMod.addCard(new Cannonball());
-        //BaseMod.addCard(new SwordOfChaos());
-        //BaseMod.addCard(new SwordOfWisdom());
-        //BaseMod.addCard(new SwordOfFire());
+        BaseMod.addCard(new Cannonball());
+        BaseMod.addCard(new SwordOfChaos());
+        BaseMod.addCard(new SwordOfWisdom());
+        BaseMod.addCard(new SwordOfFire());
+        BaseMod.addCard(new VampiricScepter());
 
         logger.info("Done editing cards");
     }
@@ -341,7 +345,13 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
 
         keywords = gson.fromJson(keywordStrings, typeToken);
 
-        keywords.forEach((k, v) -> BaseMod.addKeyword(v.NAMES, v.DESCRIPTION));
+        keywords.forEach((k, v) -> {
+            if (v.PROPER_NAME != null) {
+                BaseMod.addKeyword("blackbeard:", v.PROPER_NAME, v.NAMES, v.DESCRIPTION);
+            } else {
+                BaseMod.addKeyword(v.NAMES, v.DESCRIPTION);
+            }
+        });
     }
 
 }

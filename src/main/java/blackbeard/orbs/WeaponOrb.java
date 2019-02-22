@@ -7,6 +7,8 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -24,8 +26,8 @@ public abstract class WeaponOrb extends AbstractOrb {
     protected boolean justAddedUsingAttackCard;
     private String imagePath;
 
-    public static final String WEAPON_ORB_ID = "blackbeard:WeaponOrb";
-    private static final OrbStrings orbStrings = CardCrawlGame.languagePack.getOrbString(WEAPON_ORB_ID);
+    public static final String ABSTRACT_WEAPON_ORB_ID = "blackbeard:WeaponOrb";
+    private static final OrbStrings orbStrings = CardCrawlGame.languagePack.getOrbString(ABSTRACT_WEAPON_ORB_ID);
 
     public WeaponOrb(String id, String name, String rawDecription, String imagePath, int attack, int durability, boolean justAddedUsingAttackCard) {
         this.ID = id;
@@ -71,8 +73,8 @@ public abstract class WeaponOrb extends AbstractOrb {
 
     @Override
     protected void renderText(SpriteBatch sb) {
-        FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, Integer.toString(this.attack), this.cX + NUM_X_OFFSET - 40.0F * Settings.scale, this.cY + this.bobEffect.y / 2.0F + NUM_Y_OFFSET - 4.0F * Settings.scale, this.c, this.fontScale);
-        FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, Integer.toString(this.durability), this.cX + NUM_X_OFFSET + 4.0F * Settings.scale, this.cY + this.bobEffect.y / 2.0F + NUM_Y_OFFSET - 4.0F * Settings.scale, new Color(0.2F, 1.0F, 1.0F, this.c.a), this.fontScale);
+        FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, Integer.toString(this.attack), this.cX + NUM_X_OFFSET - 44.0F * Settings.scale, this.cY + this.bobEffect.y / 2.0F + NUM_Y_OFFSET - 4.0F * Settings.scale, this.c, this.fontScale);
+        FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, Integer.toString(this.durability), this.cX + NUM_X_OFFSET + 8.0F * Settings.scale, this.cY + this.bobEffect.y / 2.0F + NUM_Y_OFFSET - 4.0F * Settings.scale, new Color(0.2F, 1.0F, 1.0F, this.c.a), this.fontScale);
     }
 
     @Override
@@ -141,6 +143,10 @@ public abstract class WeaponOrb extends AbstractOrb {
     }
 
     public void effectAtStartOfTurnPostDraw() {
+        //method can be overridden in subclasses
+    }
+
+    public void effectOnAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
         //method can be overridden in subclasses
     }
 }
