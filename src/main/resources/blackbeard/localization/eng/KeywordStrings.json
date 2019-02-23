@@ -25,5 +25,12 @@
       "bleed"
     ],
     "DESCRIPTION": "Bleeding creatures lose HP at the start of their turn."
+  },
+  "blackbeard:ReapersMarkKeyword": {
+    "PROPER_NAME": "Reaper's Mark",
+    "NAMES": [
+      "reaper's mark"
+    ],
+    "DESCRIPTION": "For every #b3 stacks, creature loses HP equal to #b40% of its missing HP."
   }
 }

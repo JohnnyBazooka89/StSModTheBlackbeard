@@ -12,6 +12,7 @@ import blackbeard.potions.RumPotion;
 import blackbeard.potions.ToastPotion;
 import blackbeard.relics.*;
 import blackbeard.variables.MagicNumberPlusOneVariable;
+import blackbeard.variables.SecondMagicNumberVariable;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
@@ -39,7 +40,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         EditCardsSubscriber, EditRelicsSubscriber, EditCharactersSubscriber,
         EditStringsSubscriber, EditKeywordsSubscriber {
 
-    public static final Logger logger = LogManager.getLogger(TheBlackbeardMod.class.getName());
+    private static final Logger logger = LogManager.getLogger(TheBlackbeardMod.class.getName());
 
     //Default cards and orbs
     public static final String DEFAULT_POWER_CARD_ID = "blackbeard:BetaPower";
@@ -142,7 +143,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
 
     @Override
     public void receivePostInitialize() {
-        // Mod badge
+        // Mod settings
         Texture badgeTexture = ImageMaster.loadImage(BADGE_IMG);
         ModPanel settingsPanel = new ModPanel();
         BaseMod.registerModBadge(badgeTexture, MOD_NAME, AUTHOR, DESCRIPTION, settingsPanel);
@@ -203,6 +204,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         logger.info("Add cards for " + TheBlackbeardEnum.BLACKBEARD_CLASS.toString());
 
         BaseMod.addDynamicVariable(new MagicNumberPlusOneVariable());
+        BaseMod.addDynamicVariable(new SecondMagicNumberVariable());
 
         BaseMod.addCard(new StrikeBlackbeard());
         BaseMod.addCard(new DefendBlackbeard());

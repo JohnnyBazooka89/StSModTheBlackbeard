@@ -12,8 +12,8 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 public class BloodOrange extends CustomRelic {
 
     public static final String ID = "blackbeard:BloodOrange";
-    public static final Texture IMG = ImageMaster.loadImage(TheBlackbeardMod.getRelicImagePath(ID));
-    public static final Texture OUTLINE = ImageMaster.loadImage(TheBlackbeardMod.getRelicOutlineImagePath(ID));
+    private static final Texture IMG = ImageMaster.loadImage(TheBlackbeardMod.getRelicImagePath(ID));
+    private static final Texture OUTLINE = ImageMaster.loadImage(TheBlackbeardMod.getRelicOutlineImagePath(ID));
 
     public BloodOrange() {
         super(ID, IMG, OUTLINE, RelicTier.SHOP, LandingSound.MAGICAL);

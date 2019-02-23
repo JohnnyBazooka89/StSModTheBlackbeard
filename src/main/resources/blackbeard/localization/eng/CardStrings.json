@@ -385,12 +385,11 @@
   },
   "blackbeard:VampiricScepter": {
     "NAME": "Vampiric Scepter",
-    "DESCRIPTION": "todo",
-    "UPGRADE_DESCRIPTION": "todo"
+    "DESCRIPTION": "Equip a !M! / {D} Weapon. Whenever you attack with this Weapon, heal !blackbeard:M2! HP.",
+    "UPGRADE_DESCRIPTION": "Equip a !M! / {D} Weapon. Whenever you attack with this Weapon, heal !blackbeard:M2! HP."
   },
   "blackbeard:ReapersScythe": {
     "NAME": "Reaper's Scythe",
-    "DESCRIPTION": "todo",
-    "UPGRADE_DESCRIPTION": "todo"
+    "DESCRIPTION": "Equip a !M! / {D} Weapon. Whenever you attack with this Weapon, apply 1 blackbeard:Reaper's Mark to a target per hit."
   }
 }

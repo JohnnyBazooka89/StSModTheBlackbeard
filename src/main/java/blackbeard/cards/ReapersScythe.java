@@ -4,7 +4,7 @@ import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.EquipAction;
 import blackbeard.enums.AbstractCardEnum;
-import blackbeard.orbs.VampiricScepterOrb;
+import blackbeard.orbs.ReapersScytheOrb;
 import blackbeard.utils.WeaponCardsUtils;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -26,11 +26,13 @@ public class ReapersScythe extends CustomCard {
     public ReapersScythe() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ReapersScythe.ID), COST, DESCRIPTION, CardType.SKILL,
                 AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.RARE, CardTarget.SELF);
+
+        this.baseMagicNumber = this.magicNumber = WEAPON_ATTACK;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new EquipAction(new VampiricScepterOrb(WEAPON_ATTACK, WEAPON_DURABILITY, false)));
+        AbstractDungeon.actionManager.addToBottom(new EquipAction(new ReapersScytheOrb(this.magicNumber, WEAPON_DURABILITY, false)));
     }
 
     @Override
