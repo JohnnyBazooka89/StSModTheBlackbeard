@@ -7,4 +7,5 @@ public class LibraryTypeEnum {
 
     @SpireEnum
     public static CardLibrary.LibraryType BLACKBEARD_BLACK;
+
 }

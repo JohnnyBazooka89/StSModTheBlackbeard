@@ -7,4 +7,5 @@ public class TheBlackbeardEnum {
 
     @SpireEnum
     public static AbstractPlayer.PlayerClass BLACKBEARD_CLASS;
+
 }

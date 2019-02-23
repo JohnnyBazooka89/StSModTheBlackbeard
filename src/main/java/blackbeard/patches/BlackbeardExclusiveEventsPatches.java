@@ -9,10 +9,10 @@ import com.megacrit.cardcrawl.events.exordium.Sssserpent;
 public class BlackbeardExclusiveEventsPatches {
 
     @SpirePatch(clz = Exordium.class, method = "initializeEventList")
-    public static class initializeEventListExordium {
+    public static class InitializeEventListExordium {
         public static void Postfix(AbstractDungeon dungeon) {
-            if (dungeon.player.chosenClass == TheBlackbeardEnum.BLACKBEARD_CLASS) {
-                dungeon.eventList.removeIf(d -> d.equals(Sssserpent.ID));
+            if (AbstractDungeon.player.chosenClass == TheBlackbeardEnum.BLACKBEARD_CLASS) {
+                AbstractDungeon.eventList.removeIf(d -> d.equals(Sssserpent.ID));
             }
         }
     }

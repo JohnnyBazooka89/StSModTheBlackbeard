@@ -40,7 +40,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         EditCardsSubscriber, EditRelicsSubscriber, EditCharactersSubscriber,
         EditStringsSubscriber, EditKeywordsSubscriber {
 
-    private static final Logger logger = LogManager.getLogger(TheBlackbeardMod.class.getName());
+    private static final Logger logger = LogManager.getLogger(TheBlackbeardMod.class);
 
     //Default cards and orbs
     public static final String DEFAULT_POWER_CARD_ID = "blackbeard:BetaPower";
@@ -110,7 +110,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     }
 
     public static String getCardImagePath(String cardId) {
-        return "blackbeard/img/cards/" + cardId.replaceFirst("blackbeard:", "") + ".png";
+        return "blackbeard/img/cards/" + cardId.replaceFirst("blackbeard:", "") + ".png"; //NOSONAR
     }
 
     public static String getRelicImagePath(String relicId) {
@@ -306,6 +306,9 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
             case RUS:
                 loadCustomStringsForLanguage(RUSSIAN_LANGUAGE_FOLDER);
                 break;
+            default:
+                // Nothing - default language was already loaded
+                break;
         }
 
         logger.info("Done editing strings");
@@ -332,6 +335,9 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
                 break;
             case RUS:
                 loadCustomKeywordsForLanguage(RUSSIAN_LANGUAGE_FOLDER);
+                break;
+            default:
+                // Nothing - default language was already loaded
                 break;
         }
 

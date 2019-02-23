@@ -15,7 +15,7 @@ public class RelicDescriptionsFixPatches {
     @SpirePatch(clz = FontHelper.class, method = "renderSmartText", paramtypez = {SpriteBatch.class, BitmapFont.class, String.class, float.class, float.class, float.class, float.class, Color.class})
     public static class FontHelperRenderSmartTextPatch {
 
-        public static boolean removeSpace = false;
+        private static boolean removeSpace = false;
 
         @SpireInsertPatch(locator = RemoveSpecialWordLocator.class, localvars = {"word"})
         public static void Insert(SpriteBatch sb, BitmapFont font, String msg, float x, float y, float lineWidth, float lineSpacing, Color baseColor, @ByRef String[] word) {

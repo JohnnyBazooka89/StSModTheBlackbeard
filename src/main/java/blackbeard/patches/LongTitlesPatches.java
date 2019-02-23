@@ -10,8 +10,6 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.screens.SingleCardViewPopup;
 import javassist.CtBehavior;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;
@@ -25,8 +23,6 @@ public class LongTitlesPatches {
 
     @SpirePatch(clz = FontHelper.class, method = "initialize", paramtypez = {})
     public static class FontHelperPatch {
-
-        public static final Logger logger = LogManager.getLogger(FontHelperPatch.class);
 
         public static BitmapFont smallerCardTitleFontSmallN;
         public static BitmapFont smallerCardTitleFontSmallL;
@@ -51,8 +47,6 @@ public class LongTitlesPatches {
 
     @SpirePatch(clz = FontHelper.class, method = "initialize", paramtypez = {})
     public static class FontHelperSingleCardViewPatch {
-
-        public static final Logger logger = LogManager.getLogger(FontHelperSingleCardViewPatch.class);
 
         public static BitmapFont smallerSCPCardTitleFontSmall;
 
@@ -116,22 +110,9 @@ public class LongTitlesPatches {
     }
 
     private static boolean shouldFixLongTitle(AbstractCard card) {
-        if (Settings.language == Settings.GameLanguage.ENG) {
-            if (cardIDsToFixInEnglish.contains(card.cardID)) {
-                return true;
-            }
-        }
-        if (Settings.language == Settings.GameLanguage.POL) {
-            if (cardIDsToFixInPolish.contains(card.cardID)) {
-                return true;
-            }
-        }
-        if (Settings.language == Settings.GameLanguage.RUS) {
-            if (cardIDsToFixInRussian.contains(card.cardID)) {
-                return true;
-            }
-        }
-        return false;
+        return (Settings.language == Settings.GameLanguage.ENG && cardIDsToFixInEnglish.contains(card.cardID)) ||
+                (Settings.language == Settings.GameLanguage.POL && cardIDsToFixInPolish.contains(card.cardID)) ||
+                (Settings.language == Settings.GameLanguage.RUS && cardIDsToFixInRussian.contains(card.cardID));
     }
 
 }
