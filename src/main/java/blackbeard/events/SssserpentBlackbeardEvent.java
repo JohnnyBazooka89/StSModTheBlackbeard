@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.vfx.RainingGoldEffect;
 
 public class SssserpentBlackbeardEvent extends AbstractImageEvent {
-    public static final String ID = "blackbeard:SssserpentBlackbeardEvent";
+    public static final String ID = "blackbeard:Sssserpent";
     private static final EventStrings eventStrings;
     public static final String NAME;
     public static final String[] DESCRIPTIONS;
@@ -62,7 +62,7 @@ public class SssserpentBlackbeardEvent extends AbstractImageEvent {
                     this.imageEventText.removeDialogOption(1);
                     this.imageEventText.updateDialogOption(0, OPTIONS[4]);
                     this.screen = SssserpentBlackbeardEvent.CUR_SCREEN.DISAGREE;
-                    AbstractEvent.logMetricIgnored(Sssserpent.ID);
+                    AbstractEvent.logMetricIgnored(ID);
                 }
                 break;
             case YARR:

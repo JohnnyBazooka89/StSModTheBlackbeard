@@ -8,6 +8,7 @@ import blackbeard.characters.TheBlackbeard;
 import blackbeard.enums.AbstractCardEnum;
 import blackbeard.enums.TheBlackbeardEnum;
 import blackbeard.events.SssserpentBlackbeardEvent;
+import blackbeard.events.VampiresBlackbeardEvent;
 import blackbeard.potions.RumPotion;
 import blackbeard.potions.ToastPotion;
 import blackbeard.relics.*;
@@ -22,6 +23,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.Exordium;
+import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.*;
@@ -150,6 +152,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
 
         // Events
         BaseMod.addEvent(SssserpentBlackbeardEvent.ID, SssserpentBlackbeardEvent.class, Exordium.ID);
+        BaseMod.addEvent(VampiresBlackbeardEvent.ID, VampiresBlackbeardEvent.class, TheCity.ID);
 
         // Potions
         BaseMod.addPotion(BloodPotion.class, Color.WHITE.cpy(), Color.LIGHT_GRAY.cpy(), null, "blackbeard:BloodPotion", TheBlackbeardEnum.BLACKBEARD_CLASS);
