@@ -7,7 +7,7 @@ import blackbeard.cards.*;
 import blackbeard.characters.TheBlackbeard;
 import blackbeard.enums.AbstractCardEnum;
 import blackbeard.enums.TheBlackbeardEnum;
-import blackbeard.events.SssserpentBlackbeardEvent;
+import blackbeard.events.SsssserpentBlackbeardEvent;
 import blackbeard.events.VampiresBlackbeardEvent;
 import blackbeard.potions.RumPotion;
 import blackbeard.potions.ToastPotion;
@@ -85,11 +85,12 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     private static final String ORB_STRINGS_PATH = "blackbeard/localization/%s/OrbStrings.json";
     private static final String KEYWORD_STRINGS_PATH = "blackbeard/localization/%s/KeywordStrings.json";
     private static final String POTION_STRINGS_PATH = "blackbeard/localization/%s/PotionStrings.json";
+    private static final String EVENT_STRINGS_PATH = "blackbeard/localization/%s/EventStrings.json";
 
     //Languages
-    public static final String DEFAULT_LANGUAGE = "eng";
-    public static final String POLISH_LANGUAGE_FOLDER = "pol";
-    public static final String RUSSIAN_LANGUAGE_FOLDER = "rus";
+    private static final String DEFAULT_LANGUAGE_FOLDER = "eng";
+    private static final String POLISH_LANGUAGE_FOLDER = "pol";
+    private static final String RUSSIAN_LANGUAGE_FOLDER = "rus";
 
     //Keywords
     public static Map<String, Keyword> keywords = new HashMap<>();
@@ -151,7 +152,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.registerModBadge(badgeTexture, MOD_NAME, AUTHOR, DESCRIPTION, settingsPanel);
 
         // Events
-        BaseMod.addEvent(SssserpentBlackbeardEvent.ID, SssserpentBlackbeardEvent.class, Exordium.ID);
+        BaseMod.addEvent(SsssserpentBlackbeardEvent.ID, SsssserpentBlackbeardEvent.class, Exordium.ID);
         BaseMod.addEvent(VampiresBlackbeardEvent.ID, VampiresBlackbeardEvent.class, TheCity.ID);
 
         // Potions
@@ -300,7 +301,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     public void receiveEditStrings() {
         logger.info("Begin editing strings");
 
-        loadCustomStringsForLanguage(DEFAULT_LANGUAGE);
+        loadCustomStringsForLanguage(DEFAULT_LANGUAGE_FOLDER);
 
         switch (Settings.language) {
             case POL:
@@ -324,13 +325,14 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.loadCustomStringsFile(PowerStrings.class, String.format(POWER_STRINGS_PATH, languageFolder));
         BaseMod.loadCustomStringsFile(OrbStrings.class, String.format(ORB_STRINGS_PATH, languageFolder));
         BaseMod.loadCustomStringsFile(PotionStrings.class, String.format(POTION_STRINGS_PATH, languageFolder));
+        BaseMod.loadCustomStringsFile(EventStrings.class, String.format(EVENT_STRINGS_PATH, languageFolder));
     }
 
     @Override
     public void receiveEditKeywords() {
         logger.info("Begin editing keywords");
 
-        loadCustomKeywordsForLanguage(DEFAULT_LANGUAGE);
+        loadCustomKeywordsForLanguage(DEFAULT_LANGUAGE_FOLDER);
 
         switch (Settings.language) {
             case POL:

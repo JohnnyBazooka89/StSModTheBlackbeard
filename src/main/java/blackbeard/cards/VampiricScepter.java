@@ -28,6 +28,7 @@ public class VampiricScepter extends CustomCard implements ISecondMagicNumber {
     public static final String DESCRIPTION = WeaponCardsUtils.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);
 
     private int customHeal;
+    private boolean customHealDisplayUpgradesModified;
 
     public VampiricScepter() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(VampiricScepter.ID), COST, DESCRIPTION, CardType.SKILL,
@@ -35,6 +36,7 @@ public class VampiricScepter extends CustomCard implements ISecondMagicNumber {
 
         this.baseMagicNumber = this.magicNumber = WEAPON_ATTACK;
         this.customHeal = HEAL_VALUE;
+        this.customHealDisplayUpgradesModified = false;
     }
 
     @Override
@@ -53,7 +55,7 @@ public class VampiricScepter extends CustomCard implements ISecondMagicNumber {
 
     @Override
     public boolean isModified(AbstractCard card) {
-        return false;
+        return this.customHealDisplayUpgradesModified;
     }
 
     @Override
@@ -69,5 +71,13 @@ public class VampiricScepter extends CustomCard implements ISecondMagicNumber {
     @Override
     public boolean upgraded(AbstractCard card) {
         return upgraded;
+    }
+
+    @Override
+    public void displayUpgrades() {
+        super.displayUpgrades();
+        if (this.upgraded) {
+            customHealDisplayUpgradesModified = true;
+        }
     }
 }

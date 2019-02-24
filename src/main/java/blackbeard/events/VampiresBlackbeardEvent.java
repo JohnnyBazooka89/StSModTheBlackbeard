@@ -25,9 +25,10 @@ import java.util.List;
 public class VampiresBlackbeardEvent extends AbstractImageEvent {
     public static final String ID = "blackbeard:Vampires";
     private static final EventStrings eventStrings;
+    private static final EventStrings customEventStrings;
     public static final String NAME;
     public static final String[] DESCRIPTIONS;
-    public static final String[] OPTIONS;
+    private static final String[] OPTIONS;
     private static final String ACCEPT_BODY;
     private static final String EXIT_BODY;
     private static final String GIVE_VIAL;
@@ -43,7 +44,7 @@ public class VampiresBlackbeardEvent extends AbstractImageEvent {
         super(NAME, "test", "images/events/vampires.jpg");
         this.vampiricScepterCard = new VampiricScepter();
         this.body = AbstractDungeon.player.getVampireText();
-        this.bites = new ArrayList();
+        this.bites = new ArrayList<>();
         this.hasVial = AbstractDungeon.player.hasRelic("Blood Vial");
         this.imageEventText.setDialogOption(OPTIONS[0] + HP_DRAIN_PERCENT + OPTIONS[1], new Bite());
         if (this.hasVial) {
@@ -51,9 +52,9 @@ public class VampiresBlackbeardEvent extends AbstractImageEvent {
             this.imageEventText.setDialogOption(OPTIONS[3] + vialName + OPTIONS[4], new Bite());
         }
         if (AbstractDungeon.player.gold >= VAMPIRIC_SCEPTER_PRICE) {
-            this.imageEventText.setDialogOption("[Talk Business] #y125 #yGold: #gObtain #ga #gVampiric #gScepter.", vampiricScepterCard);
+            this.imageEventText.setDialogOption(customEventStrings.OPTIONS[0] + VAMPIRIC_SCEPTER_PRICE + customEventStrings.OPTIONS[1], vampiricScepterCard);
         } else {
-            this.imageEventText.setDialogOption("[Requires at least 125 Gold]", true);
+            this.imageEventText.setDialogOption(customEventStrings.OPTIONS[2] + VAMPIRIC_SCEPTER_PRICE + customEventStrings.OPTIONS[3], true);
         }
         this.imageEventText.setDialogOption(OPTIONS[2]);
     }
@@ -126,13 +127,13 @@ public class VampiresBlackbeardEvent extends AbstractImageEvent {
 
     private void buyVampiricScepter() {
         CardCrawlGame.sound.play("EVENT_VAMP_BITE");
-        this.imageEventText.updateBodyText(ACCEPT_BODY);
+        this.imageEventText.updateBodyText(customEventStrings.DESCRIPTIONS[0]);
         AbstractDungeon.player.loseGold(VAMPIRIC_SCEPTER_PRICE);
         AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(vampiricScepterCard, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
 
-        List<String> temp = new ArrayList();
+        List<String> temp = new ArrayList<>();
         temp.add(vampiricScepterCard.cardID);
-        logMetric(ID, "Bought Vampiric Scepter", temp, (List) null, (List) null, (List) null, (List) null, (List) null, (List) null, 0, 0, 0, 0, 0, 125);
+        logMetric(ID, "Bought Vampiric Scepter", temp, null, null, null, null, null, null, 0, 0, 0, 0, 0, 125);
 
         this.screenNum = 1;
         this.imageEventText.updateDialogOption(0, OPTIONS[5]);
@@ -158,6 +159,7 @@ public class VampiresBlackbeardEvent extends AbstractImageEvent {
 
     static {
         eventStrings = CardCrawlGame.languagePack.getEventString(Vampires.ID);
+        customEventStrings = CardCrawlGame.languagePack.getEventString(ID);
         NAME = eventStrings.NAME;
         DESCRIPTIONS = eventStrings.DESCRIPTIONS;
         OPTIONS = eventStrings.OPTIONS;
