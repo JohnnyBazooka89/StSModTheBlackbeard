@@ -113,7 +113,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     }
 
     public static String getCardImagePath(String cardId) {
-        return "blackbeard/img/cards/" + cardId.replaceFirst("blackbeard:", "") + ".png"; //NOSONAR
+        return "blackbeard/img/cards/" + cardId.replaceFirst("blackbeard:", "") + ".png";
     }
 
     public static String getRelicImagePath(String relicId) {
