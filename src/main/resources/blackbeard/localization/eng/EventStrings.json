@@ -1,0 +1,25 @@
+{
+  "blackbeard:Ssssserpent": {
+    "NAME": "The Ssssserpent",
+    "DESCRIPTIONS": [
+      "\"Ho, ho, hooo! NL NL I appreciate your enthusiasm. NL NL Gold and treasuresssss. Gold and treasuresssss. NL ~GOLD~ ~AND~ ~TREASURESSSSS.~ NL NL ~Take~ ~thissssss!~ @*TAKE*@ @*THISSSSSS*!\"@"
+    ],
+    "OPTIONS": [
+      "[Yarr!!!] #gGain #g",
+      " #gGold. #gGain #ga #gRelic. You have no doubt in your mind.",
+      "[Accept the Relic]"
+    ]
+  },
+  "blackbeard:Vampires": {
+    "NAME": "Vampires(?)",
+    "DESCRIPTIONS": [
+      "\"Oh, so you are interested in the weaponry enchanted with our ~POWER?~ NL NL Very well, for the gold you are offering I can give you this #y~Vampiric~ #y~Scepter.~ NL NL Perhaps next time you will join us, to #rfeed with your own teeth.\""
+    ],
+    "OPTIONS": [
+      "[Talk Business] #y",
+      " #yGold: #gReceive #ga #gVampiric #gScepter.",
+      "[Locked] Requires: ",
+      " Gold."
+    ]
+  }
+}

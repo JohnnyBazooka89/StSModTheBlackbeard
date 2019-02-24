@@ -7,10 +7,10 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
 
-public class WeaponDamageAllEnemiesAction extends AbstractGameAction {
+public class DamageAllEnemiesWithDamageMatrixAction extends AbstractGameAction {
     private int damage;
 
-    public WeaponDamageAllEnemiesAction(int damage) {
+    public DamageAllEnemiesWithDamageMatrixAction(int damage) {
         this.damage = damage;
     }
 

@@ -8,6 +8,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.metrics.Metrics;
 import com.megacrit.cardcrawl.monsters.MonsterGroup;
 import com.megacrit.cardcrawl.screens.DeathScreen;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -15,12 +17,14 @@ import java.lang.reflect.Method;
 /* Copied from The Mystic Mod:
    https://github.com/JohnnyDevo/The-Mystic-Project/blob/master/src/main/java/mysticmod/Patches/MysticMetricsPatch.java
  */
-public class MetricsPatch {
+public class MetricsPatches {
+
+    private static final Logger logger = LogManager.getLogger(MetricsPatches.class);
 
     @SpirePatch(clz = Metrics.class, method = "sendPost", paramtypez = {String.class, String.class})
     public static class SendPostPatch {
 
-        public static void Prefix(Metrics __instance, @ByRef String[] url, String fileName) {
+        public static void Prefix(Metrics metrics, @ByRef String[] url, String fileName) {
             if (AbstractDungeon.player.chosenClass == TheBlackbeardEnum.BLACKBEARD_CLASS) {
                 url[0] = "http://www.theblackbeardmod.com/metrics/";
             }
@@ -29,13 +33,13 @@ public class MetricsPatch {
     }
 
     @SpirePatch(clz = DeathScreen.class, method = "shouldUploadMetricData")
-    public static class shouldUploadMetricData {
+    public static class ShouldUploadMetricData {
 
-        public static boolean Postfix(boolean __returnValue) {
+        public static boolean Postfix(boolean returnValue) {
             if (AbstractDungeon.player.chosenClass == TheBlackbeardEnum.BLACKBEARD_CLASS) {
-                __returnValue = Settings.UPLOAD_DATA;
+                returnValue = Settings.UPLOAD_DATA;
             }
-            return __returnValue;
+            return returnValue;
         }
 
     }
@@ -43,14 +47,14 @@ public class MetricsPatch {
     @SpirePatch(clz = Metrics.class, method = "run")
     public static class RunPatch {
 
-        public static void Postfix(Metrics __instance) {
-            if (__instance.type == Metrics.MetricRequestType.UPLOAD_METRICS && AbstractDungeon.player.chosenClass == TheBlackbeardEnum.BLACKBEARD_CLASS) {
+        public static void Postfix(Metrics metrics) {
+            if (metrics.type == Metrics.MetricRequestType.UPLOAD_METRICS && AbstractDungeon.player.chosenClass == TheBlackbeardEnum.BLACKBEARD_CLASS) {
                 try {
                     Method m = Metrics.class.getDeclaredMethod("gatherAllDataAndSend", boolean.class, boolean.class, MonsterGroup.class);
                     m.setAccessible(true);
-                    m.invoke(__instance, __instance.death, __instance.trueVictory, __instance.monsters);
+                    m.invoke(metrics, metrics.death, metrics.trueVictory, metrics.monsters);
                 } catch (NoSuchMethodException | InvocationTargetException | IllegalAccessException e) {
-                    e.printStackTrace();
+                    logger.error("Exception while sending metrics", e);
                 }
             }
         }

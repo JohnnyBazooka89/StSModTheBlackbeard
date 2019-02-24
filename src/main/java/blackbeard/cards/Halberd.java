@@ -19,7 +19,7 @@ public class Halberd extends CustomCard {
     private static final int COST = 2;
     private static final int WEAPON_ATTACK = 6;
     private static final int UPGRADED_PLUS_WEAPON_ATTACK = 3;
-    private static final int WEAPON_DURABILITY = 5;
+    private static final int WEAPON_DURABILITY = 4;
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = WeaponCardsUtils.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);
 

@@ -34,7 +34,7 @@
   },
   "blackbeard:Halberd": {
     "NAME": "Halberd",
-    "DESCRIPTION": "Equip a !M! / {D} Weapon."
+    "DESCRIPTION": "Equip a !M! / {D} Weapon. Whenever you attack with this Weapon, apply 3 blackbeard:Bleed to a target per hit."
   },
   "blackbeard:TheDrunkenSailor": {
     "NAME": "The Drunken Sailor",
@@ -377,5 +377,18 @@
   "blackbeard:WeaponProficiency": {
     "NAME": "Weapon Proficiency",
     "DESCRIPTION": "Your attacks use an additional Weapon."
+  },
+  "blackbeard:FieryDefense": {
+    "NAME": "Fiery Defense",
+    "DESCRIPTION": "Gain !B! Block. NL Deal 3 damage to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Deal 3 damage to ALL enemies twice."
+  },
+  "blackbeard:VampiricScepter": {
+    "NAME": "Vampiric Scepter",
+    "DESCRIPTION": "Equip a !M! / {D} Weapon. Whenever you attack with this Weapon, heal !blackbeard:M2! HP."
+  },
+  "blackbeard:ReapersScythe": {
+    "NAME": "Reaper's Scythe",
+    "DESCRIPTION": "Equip a !M! / {D} Weapon. Whenever you attack with this Weapon, apply 1 blackbeard:Reaper's Mark to a target per hit."
   }
 }

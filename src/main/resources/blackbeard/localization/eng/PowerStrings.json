@@ -136,5 +136,18 @@
       " #yGold. You can gain #b",
       " #yGold more."
     ]
+  },
+  "blackbeard:BleedPower": {
+    "NAME": "Bleed",
+    "DESCRIPTIONS": [
+      "At the start of its turn, loses #b",
+      " HP."
+    ]
+  },
+  "blackbeard:ReapersMarkPower": {
+    "NAME": "Reaper's Mark",
+    "DESCRIPTIONS": [
+      "For every #b3 stacks, creature loses HP equal to #b40% of its missing HP."
+    ]
   }
 }

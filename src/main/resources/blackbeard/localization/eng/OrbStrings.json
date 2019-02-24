@@ -1,17 +1,11 @@
 {
-  "blackbeard:WeaponOrb": {
+  "blackbeard:AbstractWeaponOrb": {
     "NAME": "Weapon",
     "DESCRIPTION": [
       " NL ",
       "Attack: ",
       " NL ",
       "Durability: #b"
-    ]
-  },
-  "blackbeard:DefaultWeaponOrb": {
-    "NAME": "Sword",
-    "DESCRIPTION": [
-      ""
     ]
   },
   "blackbeard:CutlassOrb": {
@@ -23,7 +17,7 @@
   "blackbeard:HalberdOrb": {
     "NAME": "Halberd",
     "DESCRIPTION": [
-      "A Rare Weapon!"
+      "Whenever you attack with this Weapon, apply 3 blackbeard:Bleed to a target per hit."
     ]
   },
   "blackbeard:PowderKegOrb": {
@@ -79,6 +73,19 @@
     "NAME": "Sword of Fire",
     "DESCRIPTION": [
       "Whenever you attack with this Weapon, deal #b3 damage to all enemies."
+    ]
+  },
+  "blackbeard:VampiricScepterOrb": {
+    "NAME": "Vampiric Scepter",
+    "DESCRIPTION": [
+      "Whenever you attack with this Weapon, heal #b",
+      " HP."
+    ]
+  },
+  "blackbeard:ReapersScytheOrb": {
+    "NAME": "Reaper's Scythe",
+    "DESCRIPTION": [
+      "Whenever you attack with this Weapon, apply #b1 #yReaper's #yMark to a target per hit."
     ]
   }
 }

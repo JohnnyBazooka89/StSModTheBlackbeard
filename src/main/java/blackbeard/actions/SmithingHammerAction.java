@@ -25,7 +25,7 @@ public class SmithingHammerAction extends AbstractGameAction {
 
     public void update() {
         if (this.duration == Settings.ACTION_DUR_FAST) {
-            if (this.p.hand.group.size() <= 0) {
+            if (this.p.hand.group.isEmpty()) {
                 this.isDone = true;
             } else {
                 CardGroup upgradeable = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);

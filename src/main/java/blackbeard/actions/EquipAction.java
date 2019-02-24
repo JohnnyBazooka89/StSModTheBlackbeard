@@ -1,7 +1,7 @@
 package blackbeard.actions;
 
 import blackbeard.cards.AgileStrike;
-import blackbeard.orbs.WeaponOrb;
+import blackbeard.orbs.AbstractWeaponOrb;
 import blackbeard.powers.WeaponPower;
 import blackbeard.relics.WhitePearl;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -13,9 +13,9 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
 
 public class EquipAction extends AbstractGameAction {
-    private WeaponOrb weaponOrb;
+    private AbstractWeaponOrb weaponOrb;
 
-    public EquipAction(WeaponOrb weaponOrb) {
+    public EquipAction(AbstractWeaponOrb weaponOrb) {
         this.weaponOrb = weaponOrb;
         this.duration = Settings.ACTION_DUR_FAST;
     }

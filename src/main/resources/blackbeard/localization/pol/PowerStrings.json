@@ -136,5 +136,18 @@
       " szt. #yZłota za kazde uderzenie. Możesz zyskać jeszcze #b",
       " szt. #yZłota."
     ]
+  },
+  "blackbeard:BleedPower": {
+    "NAME": "Krwawienie",
+    "DESCRIPTIONS": [
+      "Na początku swojej tury, traci #b",
+      " PŻ."
+    ]
+  },
+  "blackbeard:ReapersMarkPower": {
+    "NAME": "Znak żniwiarza",
+    "DESCRIPTIONS": [
+      "Każde #b3 pkt. #yZnaku #yżniwiarza powodują, że są one usunięte, a przeciwnik traci PŻ równe #b40% jego brakujących PŻ."
+    ]
   }
 }

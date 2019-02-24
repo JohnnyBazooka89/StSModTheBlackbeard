@@ -56,8 +56,8 @@ public class HumongousCannonball extends CustomCard {
                 return TheBlackbeardMod.getCardImagePath(POLISH_IMAGE_ID);
             case RUS:
                 return TheBlackbeardMod.getCardImagePath(RUSSIAN_IMAGE_ID);
+            default:
+                return TheBlackbeardMod.getCardImagePath(DEFAULT_IMAGE_ID);
         }
-
-        return TheBlackbeardMod.getCardImagePath(DEFAULT_IMAGE_ID);
     }
 }

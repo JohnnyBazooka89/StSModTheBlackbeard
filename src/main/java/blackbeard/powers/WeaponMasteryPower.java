@@ -1,6 +1,6 @@
 package blackbeard.powers;
 
-import blackbeard.orbs.WeaponOrb;
+import blackbeard.orbs.AbstractWeaponOrb;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -36,7 +36,7 @@ public class WeaponMasteryPower extends AbstractPower {
 
     @Override
     public void onChannel(AbstractOrb orb) {
-        if (orb instanceof WeaponOrb) {
+        if (orb instanceof AbstractWeaponOrb) {
             AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, this.amount));
             this.flash();
         }

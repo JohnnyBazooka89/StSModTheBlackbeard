@@ -12,8 +12,8 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 public class PowderCan extends CustomRelic {
 
     public static final String ID = "blackbeard:PowderCan";
-    public static final Texture IMG = ImageMaster.loadImage(TheBlackbeardMod.getRelicImagePath(ID));
-    public static final Texture OUTLINE = ImageMaster.loadImage(TheBlackbeardMod.getRelicOutlineImagePath(ID));
+    private static final Texture IMG = ImageMaster.loadImage(TheBlackbeardMod.getRelicImagePath(ID));
+    private static final Texture OUTLINE = ImageMaster.loadImage(TheBlackbeardMod.getRelicOutlineImagePath(ID));
     private static final int WEAPON_ATTACK = 0;
     private static final int WEAPON_DURABILITY = 1;
     private static final int DAMAGE_ON_DESTROY = 8;

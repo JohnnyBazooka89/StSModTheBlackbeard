@@ -49,6 +49,9 @@ public class ResistancePower extends AbstractPower {
 
     @Override
     public float atDamageReceive(float damage, DamageInfo.DamageType type) {
-        return damage - this.amount;
+        if (type == DamageInfo.DamageType.NORMAL) {
+            return damage - this.amount;
+        }
+        return damage;
     }
 }

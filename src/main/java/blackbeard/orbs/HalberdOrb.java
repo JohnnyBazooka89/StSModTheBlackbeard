@@ -1,10 +1,15 @@
 package blackbeard.orbs;
 
 import blackbeard.TheBlackbeardMod;
+import blackbeard.powers.BleedPower;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 
-public class HalberdOrb extends WeaponOrb {
+public class HalberdOrb extends AbstractWeaponOrb {
 
     public static final String ID = "blackbeard:HalberdOrb";
     private static final OrbStrings orbStrings = CardCrawlGame.languagePack.getOrbString(ID);
@@ -17,4 +22,8 @@ public class HalberdOrb extends WeaponOrb {
         this.durability = durability;
     }
 
+    @Override
+    public void effectOnAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(target, AbstractDungeon.player, new BleedPower(target, 3), 3));
+    }
 }

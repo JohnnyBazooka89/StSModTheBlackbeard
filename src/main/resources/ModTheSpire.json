@@ -6,7 +6,7 @@
   ],
   "credits": "Jedi - Russian localization",
   "description": "Adds The Blackbeard as a new playable character.\n\nMore info: https://steamcommunity.com/sharedfiles/filedetails/?id=1612105245\n\nGithub: https://github.com/JohnnyBazooka89/StSModTheBlackbeard",
-  "version": "1.8.6",
+  "version": "1.9.0",
   "dependencies": [
     "basemod", "stslib"
   ],

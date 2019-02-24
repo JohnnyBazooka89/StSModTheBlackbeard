@@ -7,17 +7,23 @@ import blackbeard.cards.*;
 import blackbeard.characters.TheBlackbeard;
 import blackbeard.enums.AbstractCardEnum;
 import blackbeard.enums.TheBlackbeardEnum;
+import blackbeard.events.SsssserpentBlackbeardEvent;
+import blackbeard.events.VampiresBlackbeardEvent;
 import blackbeard.potions.RumPotion;
 import blackbeard.potions.ToastPotion;
 import blackbeard.relics.*;
 import blackbeard.variables.MagicNumberPlusOneVariable;
+import blackbeard.variables.SecondMagicNumberVariable;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
+import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.Exordium;
+import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.*;
@@ -36,13 +42,12 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         EditCardsSubscriber, EditRelicsSubscriber, EditCharactersSubscriber,
         EditStringsSubscriber, EditKeywordsSubscriber {
 
-    public static final Logger logger = LogManager.getLogger(TheBlackbeardMod.class.getName());
+    private static final Logger logger = LogManager.getLogger(TheBlackbeardMod.class);
 
     //Default cards and orbs
     public static final String DEFAULT_POWER_CARD_ID = "blackbeard:BetaPower";
     public static final String DEFAULT_SKILL_CARD_ID = "blackbeard:BetaSkill";
     public static final String DEFAULT_ATTACK_CARD_ID = "blackbeard:Beta";
-    public static final String DEFAULT_WEAPON_ORB_ID = "blackbeard:WeaponOrb";
 
     //Mod metadata
     private static final String MOD_NAME = "The Blackbeard";
@@ -80,11 +85,12 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     private static final String ORB_STRINGS_PATH = "blackbeard/localization/%s/OrbStrings.json";
     private static final String KEYWORD_STRINGS_PATH = "blackbeard/localization/%s/KeywordStrings.json";
     private static final String POTION_STRINGS_PATH = "blackbeard/localization/%s/PotionStrings.json";
+    private static final String EVENT_STRINGS_PATH = "blackbeard/localization/%s/EventStrings.json";
 
     //Languages
-    public static final String DEFAULT_LANGUAGE = "eng";
-    public static final String POLISH_LANGUAGE_FOLDER = "pol";
-    public static final String RUSSIAN_LANGUAGE_FOLDER = "rus";
+    private static final String DEFAULT_LANGUAGE_FOLDER = "eng";
+    private static final String POLISH_LANGUAGE_FOLDER = "pol";
+    private static final String RUSSIAN_LANGUAGE_FOLDER = "rus";
 
     //Keywords
     public static Map<String, Keyword> keywords = new HashMap<>();
@@ -140,10 +146,22 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
 
     @Override
     public void receivePostInitialize() {
-        // Mod badge
+        // Mod settings
         Texture badgeTexture = ImageMaster.loadImage(BADGE_IMG);
         ModPanel settingsPanel = new ModPanel();
         BaseMod.registerModBadge(badgeTexture, MOD_NAME, AUTHOR, DESCRIPTION, settingsPanel);
+
+        // Events
+        BaseMod.addEvent(SsssserpentBlackbeardEvent.ID, SsssserpentBlackbeardEvent.class, Exordium.ID);
+        BaseMod.addEvent(VampiresBlackbeardEvent.ID, VampiresBlackbeardEvent.class, TheCity.ID);
+
+        // Potions
+        BaseMod.addPotion(BloodPotion.class, Color.WHITE.cpy(), Color.LIGHT_GRAY.cpy(), null, "blackbeard:BloodPotion", TheBlackbeardEnum.BLACKBEARD_CLASS);
+        BaseMod.addPotion(GhostInAJar.class, Color.WHITE.cpy(), Color.LIGHT_GRAY.cpy(), null, "blackbeard:GhostInAJar", TheBlackbeardEnum.BLACKBEARD_CLASS);
+        Color rumColor = new Color(211 / 255.0F, 102 / 255.0F, 0, 1);
+        Color rumShadeColor = new Color(160 / 255.0F, 77 / 255.0F, 0, 1);
+        BaseMod.addPotion(RumPotion.class, rumColor.cpy(), rumShadeColor.cpy(), null, "blackbeard:RumPotion", TheBlackbeardEnum.BLACKBEARD_CLASS);
+        BaseMod.addPotion(ToastPotion.class, rumColor.cpy(), rumShadeColor.cpy(), null, "blackbeard:ToastPotion", TheBlackbeardEnum.BLACKBEARD_CLASS);
     }
 
     @Override
@@ -158,16 +176,8 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
                 TheBlackbeardEnum.BLACKBEARD_CLASS
         );
 
-        BaseMod.addPotion(BloodPotion.class, Color.WHITE.cpy(), Color.LIGHT_GRAY.cpy(), null, "blackbeard:BloodPotion", TheBlackbeardEnum.BLACKBEARD_CLASS);
-        BaseMod.addPotion(GhostInAJar.class, Color.WHITE.cpy(), Color.LIGHT_GRAY.cpy(), null, "blackbeard:GhostInAJar", TheBlackbeardEnum.BLACKBEARD_CLASS);
-        Color rumColor = new Color(211 / 255.0F, 102 / 255.0F, 0, 1);
-        Color rumShadeColor = new Color(160 / 255.0F, 77 / 255.0F, 0, 1);
-        BaseMod.addPotion(RumPotion.class, rumColor.cpy(), rumShadeColor.cpy(), null, "blackbeard:RumPotion", TheBlackbeardEnum.BLACKBEARD_CLASS);
-        BaseMod.addPotion(ToastPotion.class, rumColor.cpy(), rumShadeColor.cpy(), null, "blackbeard:ToastPotion", TheBlackbeardEnum.BLACKBEARD_CLASS);
-
         logger.info("Done editing characters");
     }
-
 
     @Override
     public void receiveEditRelics() {
@@ -198,6 +208,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         logger.info("Add cards for " + TheBlackbeardEnum.BLACKBEARD_CLASS.toString());
 
         BaseMod.addDynamicVariable(new MagicNumberPlusOneVariable());
+        BaseMod.addDynamicVariable(new SecondMagicNumberVariable());
 
         BaseMod.addCard(new StrikeBlackbeard());
         BaseMod.addCard(new DefendBlackbeard());
@@ -274,12 +285,14 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addCard(new CloakAndCannonball());
         BaseMod.addCard(new UndeadForm());
         BaseMod.addCard(new WeaponProficiency());
+        BaseMod.addCard(new FieryDefense());
+        BaseMod.addCard(new ReapersScythe());
 
-        //Cards with special rarity are not added to BaseMod.
-        //BaseMod.addCard(new Cannonball());
-        //BaseMod.addCard(new SwordOfChaos());
-        //BaseMod.addCard(new SwordOfWisdom());
-        //BaseMod.addCard(new SwordOfFire());
+        BaseMod.addCard(new Cannonball());
+        BaseMod.addCard(new SwordOfChaos());
+        BaseMod.addCard(new SwordOfWisdom());
+        BaseMod.addCard(new SwordOfFire());
+        BaseMod.addCard(new VampiricScepter());
 
         logger.info("Done editing cards");
     }
@@ -288,7 +301,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     public void receiveEditStrings() {
         logger.info("Begin editing strings");
 
-        loadCustomStringsForLanguage(DEFAULT_LANGUAGE);
+        loadCustomStringsForLanguage(DEFAULT_LANGUAGE_FOLDER);
 
         switch (Settings.language) {
             case POL:
@@ -296,6 +309,9 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
                 break;
             case RUS:
                 loadCustomStringsForLanguage(RUSSIAN_LANGUAGE_FOLDER);
+                break;
+            default:
+                // Nothing - default language was already loaded
                 break;
         }
 
@@ -309,13 +325,14 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.loadCustomStringsFile(PowerStrings.class, String.format(POWER_STRINGS_PATH, languageFolder));
         BaseMod.loadCustomStringsFile(OrbStrings.class, String.format(ORB_STRINGS_PATH, languageFolder));
         BaseMod.loadCustomStringsFile(PotionStrings.class, String.format(POTION_STRINGS_PATH, languageFolder));
+        BaseMod.loadCustomStringsFile(EventStrings.class, String.format(EVENT_STRINGS_PATH, languageFolder));
     }
 
     @Override
     public void receiveEditKeywords() {
         logger.info("Begin editing keywords");
 
-        loadCustomKeywordsForLanguage(DEFAULT_LANGUAGE);
+        loadCustomKeywordsForLanguage(DEFAULT_LANGUAGE_FOLDER);
 
         switch (Settings.language) {
             case POL:
@@ -323,6 +340,9 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
                 break;
             case RUS:
                 loadCustomKeywordsForLanguage(RUSSIAN_LANGUAGE_FOLDER);
+                break;
+            default:
+                // Nothing - default language was already loaded
                 break;
         }
 
@@ -338,7 +358,13 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
 
         keywords = gson.fromJson(keywordStrings, typeToken);
 
-        keywords.forEach((k, v) -> BaseMod.addKeyword(v.NAMES, v.DESCRIPTION));
+        keywords.forEach((k, v) -> {
+            if (v.PROPER_NAME != null) {
+                BaseMod.addKeyword("blackbeard:", v.PROPER_NAME, v.NAMES, v.DESCRIPTION);
+            } else {
+                BaseMod.addKeyword(v.NAMES, v.DESCRIPTION);
+            }
+        });
     }
 
 }

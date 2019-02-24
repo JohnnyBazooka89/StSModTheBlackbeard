@@ -1,12 +1,13 @@
 package blackbeard.powers;
 
-import blackbeard.orbs.WeaponOrb;
+import blackbeard.orbs.AbstractWeaponOrb;
 import blackbeard.relics.Penknife;
 import blackbeard.relics.Spearhead;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.AbstractCard.CardType;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -42,7 +43,7 @@ public class WeaponPower extends AbstractPower {
     @Override
     public void onAfterUseCard(AbstractCard card, UseCardAction action) {
         if (card.type.equals(CardType.ATTACK)) {
-            for (WeaponOrb weaponOrb : getWeaponsToUse()) {
+            for (AbstractWeaponOrb weaponOrb : getWeaponsToUse()) {
                 if (!weaponOrb.isJustAddedUsingAttackCard()) {
                     weaponOrb.use(true);
                 }
@@ -65,8 +66,8 @@ public class WeaponPower extends AbstractPower {
         List<AbstractOrb> orbsList = AbstractDungeon.player.orbs;
         for (int i = 0; i < orbsList.size(); i++) {
             AbstractOrb orb = orbsList.get(i);
-            if (orb instanceof WeaponOrb) {
-                WeaponOrb weaponOrb = (WeaponOrb) orb;
+            if (orb instanceof AbstractWeaponOrb) {
+                AbstractWeaponOrb weaponOrb = (AbstractWeaponOrb) orb;
                 if (weaponOrb.getDurability() <= 0) {
                     weaponsToRemove.add(orb);
                 } else {
@@ -76,7 +77,7 @@ public class WeaponPower extends AbstractPower {
         }
 
         for (int i = 0; i < weaponsToRemove.size(); i++) {
-            WeaponOrb weaponOrb = (WeaponOrb) weaponsToRemove.get(i);
+            AbstractWeaponOrb weaponOrb = (AbstractWeaponOrb) weaponsToRemove.get(i);
             weaponOrb.onEvoke();
         }
         orbsList.removeAll(weaponsToRemove);
@@ -99,8 +100,8 @@ public class WeaponPower extends AbstractPower {
         List<AbstractOrb> orbsList = AbstractDungeon.player.orbs;
         for (int i = 0; i < orbsList.size(); i++) {
             AbstractOrb orb = orbsList.get(i);
-            if (orb instanceof WeaponOrb) {
-                WeaponOrb weaponOrb = (WeaponOrb) orb;
+            if (orb instanceof AbstractWeaponOrb) {
+                AbstractWeaponOrb weaponOrb = (AbstractWeaponOrb) orb;
                 weaponOrb.clearJustAddedUsingAttackCard();
             }
         }
@@ -110,7 +111,7 @@ public class WeaponPower extends AbstractPower {
         if (AbstractDungeon.player.hasRelic(Spearhead.ID)) {
             Spearhead spearhead = (Spearhead) AbstractDungeon.player.getRelic(Spearhead.ID);
             boolean shouldPulse = false;
-            for (WeaponOrb weaponOrb : getWeaponsToUse()) {
+            for (AbstractWeaponOrb weaponOrb : getWeaponsToUse()) {
                 if (weaponOrb.getDurability() == 1) {
                     shouldPulse = true;
                 }
@@ -137,7 +138,7 @@ public class WeaponPower extends AbstractPower {
         List<AbstractOrb> orbsList = AbstractDungeon.player.orbs;
         for (int i = 0; i < orbsList.size(); i++) {
             AbstractOrb orb = orbsList.get(i);
-            if (orb instanceof WeaponOrb) {
+            if (orb instanceof AbstractWeaponOrb) {
                 result++;
             }
         }
@@ -148,8 +149,8 @@ public class WeaponPower extends AbstractPower {
     public void atStartOfTurnPostDraw() {
         super.atStartOfTurnPostDraw();
         for (AbstractOrb o : AbstractDungeon.player.orbs) {
-            if (o instanceof WeaponOrb) {
-                WeaponOrb weaponOrb = (WeaponOrb) o;
+            if (o instanceof AbstractWeaponOrb) {
+                AbstractWeaponOrb weaponOrb = (AbstractWeaponOrb) o;
                 weaponOrb.effectAtStartOfTurnPostDraw();
             }
         }
@@ -159,7 +160,7 @@ public class WeaponPower extends AbstractPower {
     public float atDamageGive(float damage, DamageType type) {
         if (type.equals(DamageType.NORMAL)) {
             int weaponAttack = 0;
-            for (WeaponOrb weaponOrb : getWeaponsToUse()) {
+            for (AbstractWeaponOrb weaponOrb : getWeaponsToUse()) {
                 weaponAttack += weaponOrb.getDamageToDeal();
             }
             return super.atDamageGive(damage, type) + weaponAttack;
@@ -168,7 +169,15 @@ public class WeaponPower extends AbstractPower {
         }
     }
 
-    private List<WeaponOrb> getWeaponsToUse() {
+    @Override
+    public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
+        super.onAttack(info, damageAmount, target);
+        for (AbstractWeaponOrb weaponOrb : getWeaponsToUse()) {
+            weaponOrb.effectOnAttack(info, damageAmount, target);
+        }
+    }
+
+    private List<AbstractWeaponOrb> getWeaponsToUse() {
         int numberOfWeaponsToUse = 1;
         if (AbstractDungeon.player.hasPower(WeaponProficiencyPower.POWER_ID)) {
             WeaponProficiencyPower weaponProficiencyPower = (WeaponProficiencyPower) AbstractDungeon.player.getPower(WeaponProficiencyPower.POWER_ID);
@@ -178,11 +187,11 @@ public class WeaponPower extends AbstractPower {
             numberOfWeaponsToUse = Integer.MAX_VALUE;
         }
 
-        List<WeaponOrb> weaponsToUseResult = new ArrayList<>();
+        List<AbstractWeaponOrb> weaponsToUseResult = new ArrayList<>();
         int counter = 0;
         for (AbstractOrb o : AbstractDungeon.player.orbs) {
-            if (o instanceof WeaponOrb) {
-                WeaponOrb weaponOrb = (WeaponOrb) o;
+            if (o instanceof AbstractWeaponOrb) {
+                AbstractWeaponOrb weaponOrb = (AbstractWeaponOrb) o;
                 weaponsToUseResult.add(weaponOrb);
                 counter++;
                 if (counter == numberOfWeaponsToUse) {

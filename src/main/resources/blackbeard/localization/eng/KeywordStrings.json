@@ -18,5 +18,19 @@
       "resistance"
     ],
     "DESCRIPTION": "You take less damage from enemy attacks. (Enemy intents always show actual incoming damage, with Resistance taken into account.) Resistance can be negative."
+  },
+  "blackbeard:BleedKeyword": {
+    "PROPER_NAME": "Bleed",
+    "NAMES": [
+      "bleed"
+    ],
+    "DESCRIPTION": "Bleeding creatures lose HP at the start of their turn."
+  },
+  "blackbeard:ReapersMarkKeyword": {
+    "PROPER_NAME": "Reaper's Mark",
+    "NAMES": [
+      "reaper's mark"
+    ],
+    "DESCRIPTION": "For every #b3 stacks, they are consumed and the creature loses HP equal to #b40% of its missing HP."
   }
 }

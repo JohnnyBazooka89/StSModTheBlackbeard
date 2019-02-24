@@ -34,7 +34,7 @@
   },
   "blackbeard:Halberd": {
     "NAME": "Алебарда",
-    "DESCRIPTION": "Снаряжает вас Оружием !M! / {D}."
+    "DESCRIPTION": "Снаряжает вас Оружием !M! / {D}. Накладывает на врага 3 blackbeard:Кровотечения, когда Атака наносит ему урон и вы используете данное Оружие."
   },
   "blackbeard:TheDrunkenSailor": {
     "NAME": "Пьяный моряк",
@@ -377,5 +377,18 @@
   "blackbeard:WeaponProficiency": {
     "NAME": "Оружейный опыт",
     "DESCRIPTION": "Ваши Атаки используют дополнительное Оружие."
+  },
+  "blackbeard:FieryDefense": {
+    "NAME": "Пылкая оборона",
+    "DESCRIPTION": "Даёт !B! Защиты. NL Наносит 3 урона ВСЕМ врагам.",
+    "UPGRADE_DESCRIPTION": "Даёт !B! Защиты. NL Наносит 3 урона ВСЕМ врагам дважды."
+  },
+  "blackbeard:VampiricScepter": {
+    "NAME": "Вампирский скипетр",
+    "DESCRIPTION": "Снаряжает вас Оружием !M! / {D}. Восполняет !blackbeard:M2! ОЗ, когда вы используете данное Оружие."
+  },
+  "blackbeard:ReapersScythe": {
+    "NAME": "Коса Жнеца",
+    "DESCRIPTION": "Снаряжает вас Оружием !M! / {D}. Накладывает на врага 1 blackbeard:Метку Жнеца когда Атака наносит ему урон и вы используете данное Оружие."
   }
 }

@@ -7,4 +7,5 @@ public class CardTagsEnum {
 
     @SpireEnum
     public static AbstractCard.CardTags CANNONBALL;
+
 }
