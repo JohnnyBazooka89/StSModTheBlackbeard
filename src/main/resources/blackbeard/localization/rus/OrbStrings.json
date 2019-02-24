@@ -1,5 +1,5 @@
 {
-  "blackbeard:WeaponOrb": {
+  "blackbeard:AbstractWeaponOrb": {
     "NAME": "Оружие",
     "DESCRIPTION": [
       " NL ",
@@ -23,7 +23,7 @@
   "blackbeard:HalberdOrb": {
     "NAME": "Алебарда",
     "DESCRIPTION": [
-      "Редкое Оружие!"
+      "Накладывает на врага #b3 #yКровотечения, когда #yАтака наносит ему урон и вы используете данное #yОружие."
     ]
   },
   "blackbeard:PowderKegOrb": {
@@ -79,6 +79,19 @@
     "NAME": "Меч огня",
     "DESCRIPTION": [
       "Наносит #b3 урона ВСЕМ врагам, когда вы используете данное #yОружие."
+    ]
+  },
+  "blackbeard:VampiricScepterOrb": {
+    "NAME": "Вампирский скипетр",
+    "DESCRIPTION": [
+      "Восполняет #b",
+      " ОЗ, когда вы используете данное #yОружие."
+    ]
+  },
+  "blackbeard:ReapersScytheOrb": {
+    "NAME": "Коса Жнеца",
+    "DESCRIPTION": [
+      "Накладывает на врага #b1 #yМетку #yЖнеца когда #yАтака наносит ему урон и вы используете данное #yОружие."
     ]
   }
 }

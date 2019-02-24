@@ -34,7 +34,7 @@
   },
   "blackbeard:Halberd": {
     "NAME": "Halabarda",
-    "DESCRIPTION": "Wyposaż się w Broń !M! / {D}."
+    "DESCRIPTION": "Wyposaż się w Broń NL !M! / {D}. Kiedykolwiek zaatakujesz tą bronią, nałóż 3 pkt. blackbeard:Krwawienia na przeciwnika za każde udеrzеniе."
   },
   "blackbeard:TheDrunkenSailor": {
     "NAME": "Morskie opowieści",
@@ -174,7 +174,7 @@
   },
   "blackbeard:Bandana": {
     "NAME": "Bandana",
-    "DESCRIPTION": "Kiedykolwiek zaatakujesz przeciwnika, zyskaj 5 szt. Złota za każde uderzenie. NL Maksymalnie !M! szt. Złota."
+    "DESCRIPTION": "Kiedykolwiek zaatakujesz przeciwnika, zyskaj 5 szt. Złota za każde udеrzеniе. NL Maksymalnie !M! szt. Złota."
   },
   "blackbeard:TacticalRetreat": {
     "NAME": "Taktyczny odwrót",
@@ -367,8 +367,8 @@
   },
   "blackbeard:CloakAndCannonball": {
     "NAME": "Płaszcz i kula",
-    "DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL  Dodaj Kulę do ręki.",
-    "UPGRADE_DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL  Dodaj ulepszoną Kulę do ręki."
+    "DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dodaj Kulę do ręki.",
+    "UPGRADE_DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dodaj ulepszoną Kulę do ręki."
   },
   "blackbeard:UndeadForm": {
     "NAME": "Nieumarła forma",
@@ -377,5 +377,18 @@
   "blackbeard:WeaponProficiency": {
     "NAME": "Biegłość w broni",
     "DESCRIPTION": "Twoje ataki używają dodatkową Broń."
+  },
+  "blackbeard:FieryDefense": {
+    "NAME": "Ognista obrona",
+    "DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Zadaj 3 pkt. obrażeń WSZYSTKIM przeciwnikom.",
+    "UPGRADE_DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Zadaj dwukrotnie 3 pkt. obrażeń WSZYSTKIM przeciwnikom."
+  },
+  "blackbeard:VampiricScepter": {
+    "NAME": "Berło wampirów",
+    "DESCRIPTION": "Wyposaż się w Broń NL !M! / {D}. Kiedykolwiek zaatakujesz tą bronią, przywróć !blackbeard:M2! PŻ."
+  },
+  "blackbeard:ReapersScythe": {
+    "NAME": "Kosa żniwiarza",
+    "DESCRIPTION": "Wyposaż się w Broń NL !M! / {D}. Kiedykolwiek zaatakujesz tą bronią, nałóż 3 pkt. blackbeard:Znaku żniwiarza na przeciwnika za każde udеrzеniе."
   }
 }

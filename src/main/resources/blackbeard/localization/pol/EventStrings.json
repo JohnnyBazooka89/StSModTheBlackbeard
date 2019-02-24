@@ -1,2 +1,25 @@
 {
+  "blackbeard:Ssssserpent": {
+    "NAME": "Gadzina",
+    "DESCRIPTIONS": [
+      "\"Ho, ho, hooo! NL NL Doceniam twój entuzjazm. NL NL Złoto i ssskarby. Złoto i ssskarby. NL ~ZŁOTO~ ~I~ ~SSSKABRY.~ NL NL ~WEŹ~ ~TO!~ @*WEŹ*@ @*TOOOOO*!\"@"
+    ],
+    "OPTIONS": [
+      "[Arrr!!!] #gZyskaj #g",
+      " #gszt. #gZłota. #gZyskaj #gArtefakt. Nie ogarnia cię zwątpienie.",
+      "[Przyjmij Artefakt]"
+    ]
+  },
+  "blackbeard:Vampires": {
+    "NAME": "Wampiry(?)",
+    "DESCRIPTIONS": [
+      "\"Aha, czyli jesteś zainteresowany broniami wzmocnionymi naszą ~MOCĄ?~ NL NL Jak sobie życzysz, za złoto które oferujesz, mogę ci dać to #y~Berło~ #y~wampirów.~ NL NL Być może następnym razem dołączysz do nas, aby żywić się #rkrwią swoimi własnymi zębami.\""
+    ],
+    "OPTIONS": [
+      "[Porozmawiaj o interesach] #y",
+      " #yszt. #yZłota: #gOtrzymaj #gBerło #gwampirów.",
+      "[Zablokowane] Wymagania: ",
+      " szt. złota."
+    ]
+  }
 }

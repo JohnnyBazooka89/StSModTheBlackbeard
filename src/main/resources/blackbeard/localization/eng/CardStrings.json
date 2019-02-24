@@ -385,8 +385,7 @@
   },
   "blackbeard:VampiricScepter": {
     "NAME": "Vampiric Scepter",
-    "DESCRIPTION": "Equip a !M! / {D} Weapon. Whenever you attack with this Weapon, heal !blackbeard:M2! HP.",
-    "UPGRADE_DESCRIPTION": "Equip a !M! / {D} Weapon. Whenever you attack with this Weapon, heal !blackbeard:M2! HP."
+    "DESCRIPTION": "Equip a !M! / {D} Weapon. Whenever you attack with this Weapon, heal !blackbeard:M2! HP."
   },
   "blackbeard:ReapersScythe": {
     "NAME": "Reaper's Scythe",

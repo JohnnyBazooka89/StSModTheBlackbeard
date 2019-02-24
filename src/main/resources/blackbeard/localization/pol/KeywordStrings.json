@@ -31,5 +31,21 @@
       "zakopana"
     ],
     "DESCRIPTION": "Na początku walki, ta karta trafia do stosu kart odrzuconych."
+  },
+  "blackbeard:BleedKeyword": {
+    "PROPER_NAME": "Krwawienie",
+    "NAMES": [
+      "krwawienie",
+      "krwawienia"
+    ],
+    "DESCRIPTION": "Krwawiące istoty tracą PŻ na początku swojej tury."
+  },
+  "blackbeard:ReapersMarkKeyword": {
+    "PROPER_NAME": "Znak żniwiarza",
+    "NAMES": [
+      "znak żniwiarza",
+      "znaku żniwiarza"
+    ],
+    "DESCRIPTION": "Każde #b3 pkt. Znaku żniwiarza powodują, że są one usunięte, a przeciwnik traci PŻ równe #b40% jego brakujących PŻ."
   }
 }

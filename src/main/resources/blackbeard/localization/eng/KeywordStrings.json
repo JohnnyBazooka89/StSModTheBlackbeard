@@ -31,6 +31,6 @@
     "NAMES": [
       "reaper's mark"
     ],
-    "DESCRIPTION": "For every #b3 stacks, creature loses HP equal to #b40% of its missing HP."
+    "DESCRIPTION": "For every #b3 stacks, they are consumed and the creature loses HP equal to #b40% of its missing HP."
   }
 }

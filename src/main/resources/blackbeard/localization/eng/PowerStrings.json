@@ -147,7 +147,7 @@
   "blackbeard:ReapersMarkPower": {
     "NAME": "Reaper's Mark",
     "DESCRIPTIONS": [
-      "For every #b3 stacks, creature loses HP equal to #b30% of its missing HP."
+      "For every #b3 stacks, creature loses HP equal to #b40% of its missing HP."
     ]
   }
 }

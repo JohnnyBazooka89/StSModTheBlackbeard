@@ -13,11 +13,11 @@
   "blackbeard:Vampires": {
     "NAME": "Vampires(?)",
     "DESCRIPTIONS": [
-      "\"Oh, so you are interested in the weaponry enchanted with our ~POWER?~ NL NL Very well, for the money you are offering I can give you this #y~Vampiric~ #y~Scepter.~ NL NL Perhaps next time you will join us, to #rfeed with your own teeth.\""
+      "\"Oh, so you are interested in the weaponry enchanted with our ~POWER?~ NL NL Very well, for the gold you are offering I can give you this #y~Vampiric~ #y~Scepter.~ NL NL Perhaps next time you will join us, to #rfeed with your own teeth.\""
     ],
     "OPTIONS": [
       "[Talk Business] #y",
-      " #yGold: #gObtain #ga #gVampiric #gScepter.",
+      " #yGold: #gReceive #ga #gVampiric #gScepter.",
       "[Locked] Requires: ",
       " Gold."
     ]
