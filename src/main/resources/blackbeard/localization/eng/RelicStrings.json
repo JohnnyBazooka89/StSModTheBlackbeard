@@ -66,7 +66,7 @@
     "NAME": "Poor Math Skills",
     "FLAVOR": "Sometimes failing a math class is a good thing.",
     "DESCRIPTIONS": [
-      "You think that you have gained #b500 more #yGold this run than you actually did. (It matters for cards that scale with Gold gained this run.)"
+      "You think that you have gained #b500 more #yGold this run than you actually did. (It matters for cards that scale with #yGold gained this run.)"
     ]
   },
   "blackbeard:PowderCan": {
