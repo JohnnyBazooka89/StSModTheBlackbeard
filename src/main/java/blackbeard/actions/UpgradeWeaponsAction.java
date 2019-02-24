@@ -1,7 +1,7 @@
 package blackbeard.actions;
 
 import blackbeard.enums.WeaponsToUseEnum;
-import blackbeard.orbs.WeaponOrb;
+import blackbeard.orbs.AbstractWeaponOrb;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -24,8 +24,8 @@ public class UpgradeWeaponsAction extends AbstractGameAction {
         if (this.duration == Settings.ACTION_DUR_FAST) {
 
             for (AbstractOrb orb : AbstractDungeon.player.orbs) {
-                if (orb instanceof WeaponOrb) {
-                    WeaponOrb weaponOrb = (WeaponOrb) orb;
+                if (orb instanceof AbstractWeaponOrb) {
+                    AbstractWeaponOrb weaponOrb = (AbstractWeaponOrb) orb;
                     weaponOrb.upgrade(attackUpgrade, durabilityUpgrade);
                     if (weaponsToUse.equals(WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON)) {
                         break;

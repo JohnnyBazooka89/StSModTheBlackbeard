@@ -29,7 +29,7 @@ public class ArmorUpPower extends AbstractPower {
         this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
     }
 
-    /* Logic is in WeaponOrb. */
+    /* Logic is in AbstractWeaponOrb. */
 
     @Override
     public void atEndOfTurn(boolean isPlayer) {

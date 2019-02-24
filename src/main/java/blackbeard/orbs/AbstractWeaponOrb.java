@@ -18,7 +18,7 @@ import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import org.apache.commons.lang3.StringUtils;
 
-public abstract class WeaponOrb extends AbstractOrb {
+public abstract class AbstractWeaponOrb extends AbstractOrb {
 
     protected int attack;
     protected int durability;
@@ -26,10 +26,10 @@ public abstract class WeaponOrb extends AbstractOrb {
     protected boolean justAddedUsingAttackCard;
     private String imagePath;
 
-    public static final String ABSTRACT_WEAPON_ORB_ID = "blackbeard:WeaponOrb";
+    public static final String ABSTRACT_WEAPON_ORB_ID = "blackbeard:AbstractWeaponOrb";
     private static final OrbStrings orbStrings = CardCrawlGame.languagePack.getOrbString(ABSTRACT_WEAPON_ORB_ID);
 
-    public WeaponOrb(String id, String name, String rawDecription, String imagePath, int attack, int durability, boolean justAddedUsingAttackCard) {
+    public AbstractWeaponOrb(String id, String name, String rawDecription, String imagePath, int attack, int durability, boolean justAddedUsingAttackCard) {
         this.ID = id;
         this.name = name;
         this.imagePath = imagePath;
@@ -82,11 +82,11 @@ public abstract class WeaponOrb extends AbstractOrb {
         //Do nothing
     }
 
-    public WeaponOrb makeCopy() {
+    public AbstractWeaponOrb makeCopy() {
         try {
             return this.getClass().getDeclaredConstructor(int.class, int.class, boolean.class).newInstance(attack, durability, justAddedUsingAttackCard);
         } catch (Exception e) {
-            throw new RuntimeException("WeaponOrb failed to auto-generate makeCopy for orb: " + this.ID);
+            throw new RuntimeException("AbstractWeaponOrb failed to auto-generate makeCopy for orb: " + this.ID);
         }
     }
 

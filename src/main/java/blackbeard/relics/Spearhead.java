@@ -15,7 +15,7 @@ public class Spearhead extends CustomRelic {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.MAGICAL);
     }
 
-    /* Logic is in WeaponOrb::getDamageToDeal. */
+    /* Logic is in AbstractWeaponOrb::getDamageToDeal. */
 
     @Override
     public String getUpdatedDescription() {

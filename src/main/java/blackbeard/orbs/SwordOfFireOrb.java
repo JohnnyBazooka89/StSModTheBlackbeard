@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 
-public class SwordOfFireOrb extends WeaponOrb {
+public class SwordOfFireOrb extends AbstractWeaponOrb {
 
     public static final String ID = "blackbeard:SwordOfFireOrb";
     private static final OrbStrings orbStrings = CardCrawlGame.languagePack.getOrbString(ID);

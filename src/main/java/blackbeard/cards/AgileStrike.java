@@ -3,7 +3,7 @@ package blackbeard.cards;
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.enums.AbstractCardEnum;
-import blackbeard.orbs.WeaponOrb;
+import blackbeard.orbs.AbstractWeaponOrb;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -58,7 +58,7 @@ public class AgileStrike extends CustomCard {
 
         while (orbsChanneledThisTurn.hasNext()) {
             AbstractOrb orb = orbsChanneledThisTurn.next();
-            if (orb instanceof WeaponOrb) {
+            if (orb instanceof AbstractWeaponOrb) {
                 shouldCostBeReduced = true;
             }
         }

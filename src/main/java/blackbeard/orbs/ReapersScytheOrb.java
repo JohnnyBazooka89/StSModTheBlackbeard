@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 
-public class ReapersScytheOrb extends WeaponOrb {
+public class ReapersScytheOrb extends AbstractWeaponOrb {
 
     public static final String ID = "blackbeard:ReapersScytheOrb";
     private static final OrbStrings orbStrings = CardCrawlGame.languagePack.getOrbString(ID);

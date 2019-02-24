@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 
-public class VampiricScepterOrb extends WeaponOrb {
+public class VampiricScepterOrb extends AbstractWeaponOrb {
 
     public static final String ID = "blackbeard:VampiricScepterOrb";
     private static final OrbStrings orbStrings = CardCrawlGame.languagePack.getOrbString(ID);
@@ -30,7 +30,7 @@ public class VampiricScepterOrb extends WeaponOrb {
     }
 
     @Override
-    public WeaponOrb makeCopy() {
+    public AbstractWeaponOrb makeCopy() {
         return new PowderKegOrb(attack, durability, healOnUse, justAddedUsingAttackCard);
     }
 }

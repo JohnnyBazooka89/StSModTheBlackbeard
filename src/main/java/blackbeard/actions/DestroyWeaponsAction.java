@@ -1,7 +1,7 @@
 package blackbeard.actions;
 
 import blackbeard.enums.WeaponsToUseEnum;
-import blackbeard.orbs.WeaponOrb;
+import blackbeard.orbs.AbstractWeaponOrb;
 import blackbeard.powers.WeaponPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.core.Settings;
@@ -21,8 +21,8 @@ public class DestroyWeaponsAction extends AbstractGameAction {
         if (this.duration == Settings.ACTION_DUR_FAST) {
 
             for (AbstractOrb orb : AbstractDungeon.player.orbs) {
-                if (orb instanceof WeaponOrb) {
-                    WeaponOrb weaponOrb = (WeaponOrb) orb;
+                if (orb instanceof AbstractWeaponOrb) {
+                    AbstractWeaponOrb weaponOrb = (AbstractWeaponOrb) orb;
                     weaponOrb.setDurabilityToZero();
                     if (weaponsToUse.equals(WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON)) {
                         break;
