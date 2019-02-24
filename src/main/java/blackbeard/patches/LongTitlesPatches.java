@@ -24,8 +24,8 @@ public class LongTitlesPatches {
     @SpirePatch(clz = FontHelper.class, method = "initialize", paramtypez = {})
     public static class FontHelperPatch {
 
-        public static BitmapFont smallerCardTitleFontSmallN;
-        public static BitmapFont smallerCardTitleFontSmallL;
+        private static BitmapFont smallerCardTitleFontSmallN;
+        private static BitmapFont smallerCardTitleFontSmallL;
 
         @SpireInsertPatch(locator = Locator.class)
         public static void CardTitleFontInsert() throws Exception {
@@ -48,7 +48,7 @@ public class LongTitlesPatches {
     @SpirePatch(clz = FontHelper.class, method = "initialize", paramtypez = {})
     public static class FontHelperSingleCardViewPatch {
 
-        public static BitmapFont smallerSCPCardTitleFontSmall;
+        private static BitmapFont smallerSCPCardTitleFontSmall;
 
         @SpireInsertPatch(locator = Locator.class)
         public static void SCPCardTitleFontLocatorInsert() throws Exception {
@@ -110,9 +110,14 @@ public class LongTitlesPatches {
     }
 
     private static boolean shouldFixLongTitle(AbstractCard card) {
-        return (Settings.language == Settings.GameLanguage.ENG && cardIDsToFixInEnglish.contains(card.cardID)) ||
-                (Settings.language == Settings.GameLanguage.POL && cardIDsToFixInPolish.contains(card.cardID)) ||
-                (Settings.language == Settings.GameLanguage.RUS && cardIDsToFixInRussian.contains(card.cardID));
+        switch (Settings.language) {
+            case POL:
+                return cardIDsToFixInPolish.contains(card.cardID);
+            case RUS:
+                return cardIDsToFixInRussian.contains(card.cardID);
+            default:
+                return cardIDsToFixInEnglish.contains(card.cardID);
+        }
     }
 
 }
