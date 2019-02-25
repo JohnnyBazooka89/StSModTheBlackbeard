@@ -7,7 +7,6 @@ import blackbeard.enums.AbstractCardEnum;
 import blackbeard.interfaces.ISecondMagicNumber;
 import blackbeard.orbs.VampiricScepterOrb;
 import blackbeard.utils.WeaponCardsUtils;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -54,22 +53,22 @@ public class VampiricScepter extends CustomCard implements ISecondMagicNumber {
     }
 
     @Override
-    public boolean isModified(AbstractCard card) {
+    public boolean isModified() {
         return this.customHealDisplayUpgradesModified;
     }
 
     @Override
-    public int value(AbstractCard card) {
+    public int value() {
         return this.customHeal;
     }
 
     @Override
-    public int baseValue(AbstractCard card) {
+    public int baseValue() {
         return this.customHeal;
     }
 
     @Override
-    public boolean upgraded(AbstractCard card) {
+    public boolean upgraded() {
         return upgraded;
     }
 

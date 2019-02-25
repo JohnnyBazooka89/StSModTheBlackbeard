@@ -1,16 +1,14 @@
 package blackbeard.interfaces;
 
 
-import com.megacrit.cardcrawl.cards.AbstractCard;
-
 public interface ISecondMagicNumber {
 
-    boolean isModified(AbstractCard card);
+    boolean isModified();
 
-    int value(AbstractCard card);
+    int value();
 
-    int baseValue(AbstractCard card);
+    int baseValue();
 
-    boolean upgraded(AbstractCard card);
+    boolean upgraded();
 
 }
