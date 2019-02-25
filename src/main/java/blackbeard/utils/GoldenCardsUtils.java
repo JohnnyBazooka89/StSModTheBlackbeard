@@ -9,7 +9,7 @@ public class GoldenCardsUtils {
     public static String getGoldenCardDescription(boolean upgraded, String description, String upgradeDescription, String[] extendedDescription) {
         String result = upgraded ? upgradeDescription : description;
         if (CardCrawlGame.isInARun()) {
-            result += extendedDescription[0] + extendedDescription[1] + getBlackbeardGoldGained() + extendedDescription[2] + " ";
+            result += extendedDescription[0] + extendedDescription[1] + getBlackbeardGoldGained() + extendedDescription[2];
         }
         return result;
     }
