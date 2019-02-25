@@ -172,8 +172,10 @@ public class WeaponPower extends AbstractPower {
     @Override
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
         super.onAttack(info, damageAmount, target);
-        for (AbstractWeaponOrb weaponOrb : getWeaponsToUse()) {
-            weaponOrb.effectOnAttack(info, damageAmount, target);
+        if (target != this.owner && info.type == DamageInfo.DamageType.NORMAL) {
+            for (AbstractWeaponOrb weaponOrb : getWeaponsToUse()) {
+                weaponOrb.effectOnAttack(info, damageAmount, target);
+            }
         }
     }
 
