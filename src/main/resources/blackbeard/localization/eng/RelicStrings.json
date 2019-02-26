@@ -38,7 +38,7 @@
     "NAME": "Cannonballs of Steel",
     "FLAVOR": "Much stronger than regular cannonballs.",
     "DESCRIPTIONS": [
-      "Your #yCannonballs deal #b2 more damage. (Works with every type of #yCannonball [blackbeard:REMOVE_SPACE].)"
+      "Your #yCannonballs deal #b2 more damage. (Works with every type of #yCannonball [REMOVE_SPACE].)"
     ]
   },
   "blackbeard:GoldenRing": {

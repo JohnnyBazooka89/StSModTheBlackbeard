@@ -29,7 +29,7 @@
   },
   "blackbeard:Parrot": {
     "NAME": "Parrot",
-    "DESCRIPTION": "The last card played each turn is played an additional time. This power does not stack. NL Ethereal.",
+    "DESCRIPTION": "Ethereal. NL The last card played each turn is played an additional time. This power does not stack.",
     "UPGRADE_DESCRIPTION": "The last card played each turn is played an additional time. This power does not stack."
   },
   "blackbeard:Halberd": {
@@ -167,7 +167,7 @@
   },
   "blackbeard:Murder": {
     "NAME": "Murder",
-    "DESCRIPTION": "Deal !D! damage     NL to a Normal enemy. NL (Cannot be used on Elite or Boss). NL Grave. Ethereal.",
+    "DESCRIPTION": "Ethereal. Grave. NL Deal !D! damage     NL to a Normal enemy. NL (Cannot be used on Elite or Boss).",
     "EXTENDED_DESCRIPTION": [
       "I have to target a #rNormal enemy!"
     ]

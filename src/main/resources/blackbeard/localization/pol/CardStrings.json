@@ -29,7 +29,7 @@
   },
   "blackbeard:Parrot": {
     "NAME": "Papuga",
-    "DESCRIPTION": "Ostatnia karta zagrana w każdej turze jest zagrywana jeszcze raz. Ta moc nie kumuluje się. NL Eteryczna.",
+    "DESCRIPTION": "Eteryczna. NL Ostatnia karta zagrana w każdej turze jest zagrywana jeszcze raz. Ta moc nie kumuluje się.",
     "UPGRADE_DESCRIPTION": "Ostatnia karta zagrana w każdej turze jest zagrywana jeszcze raz. Ta moc nie kumuluje się."
   },
   "blackbeard:Halberd": {
@@ -167,7 +167,7 @@
   },
   "blackbeard:Murder": {
     "NAME": "Morderstwo",
-    "DESCRIPTION": "Zadaj !D! pkt. obrażeń     NL Normalnemu przeciwnikowi. NL (Nie może być zagrana przeciwko Elitarnym przeciwnikom i Bossom). NL blackbeard:Zakopana. Eteryczna.",
+    "DESCRIPTION": "Eteryczna. blackbeard:Zakopana. NL Zadaj !D! pkt. obrażeń     NL Normalnemu przeciwnikowi. NL (Nie może być zagrana przeciwko Elitarnym przeciwnikom i Bossom).",
     "EXTENDED_DESCRIPTION": [
       "Muszę wybrać #rNormalnego przeciwnika!"
     ]
