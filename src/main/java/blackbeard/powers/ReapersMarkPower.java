@@ -4,9 +4,8 @@ import blackbeard.TheBlackbeardMod;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -38,7 +37,7 @@ public class ReapersMarkPower extends AbstractPower {
         super.stackPower(stackAmount);
         if (this.amount >= 3) {
             int damage = (this.owner.maxHealth - this.owner.currentHealth) * 4 / 10;
-            AbstractDungeon.actionManager.addToTop(new DamageAction(this.owner, new DamageInfo(this.owner, damage), AbstractGameAction.AttackEffect.FIRE));
+            AbstractDungeon.actionManager.addToTop(new LoseHPAction(this.owner, this.owner, damage, AbstractGameAction.AttackEffect.FIRE));
             AbstractDungeon.actionManager.addToTop(new ReducePowerAction(this.owner, this.owner, this.ID, 3));
         }
     }
