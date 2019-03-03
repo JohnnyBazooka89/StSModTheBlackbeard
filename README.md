@@ -18,7 +18,7 @@ Gameplay:
 ![Gameplay](screenshots/Gameplay.jpg)
 
 Starting deck: 
-![Gameplay](screenshots/StartingDeck.png)
+![Gameplay](screenshots/StartingDeck.jpg)
 
 List of all cards, relics and potions can be found [here](http://www.theblackbeardmod.com). (Exported using [Slay the Spire exporter](https://github.com/twanvl/sts-exporter).)
 
