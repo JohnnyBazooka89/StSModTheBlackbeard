@@ -34,7 +34,7 @@
   },
   "blackbeard:Halberd": {
     "NAME": "Halabarda",
-    "DESCRIPTION": "Wyposaż się w Broń NL !M! / {D}. Kiedykolwiek zaatakujesz tą bronią, nałóż 3 pkt. blackbeard:Krwawienia na przeciwnika za każde udеrzеniе."
+    "DESCRIPTION": "Wyposaż się w Broń NL !M! / {D}. Kiedykolwiek zaatakujesz tą bronią, nałóż 3 pkt. blackbeard:Krwawienia na przeciwnika za każde [#FFF6E2]uderzenie[]."
   },
   "blackbeard:TheDrunkenSailor": {
     "NAME": "Morskie opowieści",
@@ -174,7 +174,7 @@
   },
   "blackbeard:Bandana": {
     "NAME": "Bandana",
-    "DESCRIPTION": "Kiedykolwiek zaatakujesz przeciwnika, zyskaj 5 szt. Złota za każde udеrzеniе. NL Maksymalnie !M! szt. Złota."
+    "DESCRIPTION": "Kiedykolwiek zaatakujesz przeciwnika, zyskaj 5 szt. Złota za każde [#FFF6E2]uderzenie[]. NL Maksymalnie !M! szt. Złota."
   },
   "blackbeard:TacticalRetreat": {
     "NAME": "Taktyczny odwrót",
@@ -389,6 +389,6 @@
   },
   "blackbeard:ReapersScythe": {
     "NAME": "Kosa żniwiarza",
-    "DESCRIPTION": "Wyposaż się w Broń NL !M! / {D}. Kiedykolwiek zaatakujesz tą bronią, nałóż 3 pkt. blackbeard:Znaku żniwiarza na przeciwnika za każde udеrzеniе."
+    "DESCRIPTION": "Wyposaż się w Broń NL !M! / {D}. Kiedykolwiek zaatakujesz tą bronią, nałóż 3 pkt. blackbeard:Znaku żniwiarza na przeciwnika za każde [#FFF6E2]uderzenie[]."
   }
 }
