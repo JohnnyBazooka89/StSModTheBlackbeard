@@ -350,7 +350,7 @@
   },
   "blackbeard:FishingNets": {
     "NAME": "Sieci rybackie",
-    "DESCRIPTION": "Zyskaj !M! pkt. Zardzewiałych Cierni. (Kiedy jesteś atakowany, zadaj obrażenia atakującemu przeciwnikowi i zmniejsz ilość Zardzewiałych Cierni o 1.)"
+    "DESCRIPTION": "Zyskaj !M! pkt. blackbeard:Zardzewiałych cierni."
   },
   "blackbeard:BuriedTreasure": {
     "NAME": "Zakopany skarb",

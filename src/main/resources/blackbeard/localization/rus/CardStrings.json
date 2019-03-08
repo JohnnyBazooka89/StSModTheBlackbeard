@@ -350,7 +350,7 @@
   },
   "blackbeard:FishingNets": {
     "NAME": "Рыболовные сети",
-    "DESCRIPTION": "Даёт !M! Ржавых Шипов. NL (В ответ на каждую атаку наносит врагу урон и понижается на 1.)"
+    "DESCRIPTION": "Даёт !M! blackbeard:Ржавых Шипов."
   },
   "blackbeard:BuriedTreasure": {
     "NAME": "Зарытое сокровище",

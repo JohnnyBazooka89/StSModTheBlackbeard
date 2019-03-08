@@ -47,5 +47,13 @@
       "znaku żniwiarza"
     ],
     "DESCRIPTION": "Każde #b3 pkt. Znaku żniwiarza powodują, że są one usunięte, a przeciwnik traci PŻ równe #b40% jego brakujących PŻ."
+  },
+  "blackbeard:RustyThorns": {
+    "PROPER_NAME": "Zardzewiałe ciernie",
+    "NAMES": [
+      "zardzewiałe ciernie",
+      "zardzewiałych cierni"
+    ],
+    "DESCRIPTION": "Kiedy jesteś atakowany, zadaj obrażenia atakującemu przeciwnikowi i zmniejsz ilość Zardzewiałych cierni o #b1."
   }
 }

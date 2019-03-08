@@ -350,7 +350,7 @@
   },
   "blackbeard:FishingNets": {
     "NAME": "Fishing Nets",
-    "DESCRIPTION": "Gain !M! Rusty Thorns. NL (When attacked, deals damage back and reduces Rusty Thorns by 1.)"
+    "DESCRIPTION": "Gain !M! blackbeard:Rusty Thorns."
   },
   "blackbeard:BuriedTreasure": {
     "NAME": "Buried Treasure",
