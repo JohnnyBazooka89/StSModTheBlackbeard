@@ -21,5 +21,10 @@
       "[Locked] Requires: ",
       " Gold."
     ]
+  },
+  "blackbeard:SensoryStone": {
+    "DESCRIPTIONS": [
+      "#y<Once #yupon #ya #ytime #yin #ya #ysmall #ytavern, #yin #ythe #ymiddle #yof #ynowhere> NL - @Barkeeper!@ Give me your strongest rum!!! NL - The strongest rum in this tavern? Are you sure? I knew only one man who could drink it... he was a great pirate... the greatest pirate... NL - Knew him? Ha, that man is only a myth. And you say you knew him? Hahahaha. ~That's~ ~ridiculous.~ NL - Oh, he existed and I have a proof. Look at this golden coin he paid me with... he had 10000 of such coins. He loved gold, even more than rum from this tavern... NL - 10000 golden coins? So where is he now? And where are his treasures? NL - He still wanted more... He should have never made a deal with this talking whale... NL - Wait, what? ~A...~ ~talking...~ ~whale?...~"
+    ]
   }
 }
