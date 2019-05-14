@@ -3,24 +3,17 @@ package blackbeard.patches;
 import blackbeard.enums.TheBlackbeardEnum;
 import blackbeard.events.SsssserpentBlackbeardEvent;
 import blackbeard.events.VampiresBlackbeardEvent;
-import javassist.CtBehavior;
-
-import com.evacipated.cardcrawl.modthespire.lib.LineFinder;
-import com.evacipated.cardcrawl.modthespire.lib.Matcher;
-import com.evacipated.cardcrawl.modthespire.lib.SpireInsertLocator;
-import com.evacipated.cardcrawl.modthespire.lib.SpireInsertPatch;
-import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
+import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.dungeons.Exordium;
-import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.events.city.Vampires;
 import com.megacrit.cardcrawl.events.exordium.Sssserpent;
 import com.megacrit.cardcrawl.random.Random;
+import javassist.CtBehavior;
 
 import java.util.ArrayList;
 
 @SpirePatch(clz = AbstractDungeon.class, method = "getEvent")
-public class BlackbeardExclusiveEventsPatches {
+public class BlackbeardExclusiveEventsPatch {
 
     @SpireInsertPatch(locator = Locator.class, localvars = {"tmp"})
     public static void Insert(Random rng, ArrayList<String> tmp) {
