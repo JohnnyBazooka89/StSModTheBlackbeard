@@ -2,7 +2,7 @@ package blackbeard.cards;
 
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
-import blackbeard.enums.AbstractCardEnum;
+import blackbeard.enums.CardColorEnum;
 import blackbeard.interfaces.IGoldenCard;
 import blackbeard.utils.GoldenCardsUtils;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
@@ -25,7 +25,7 @@ public class GoldenDefense extends CustomCard implements IGoldenCard {
 
     public GoldenDefense() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.SELF);
+                CardColorEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.SELF);
 
         this.baseMagicNumber = this.magicNumber = BLOCK_AMOUNT;
 

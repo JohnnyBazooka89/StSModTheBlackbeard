@@ -5,8 +5,8 @@ import basemod.ModPanel;
 import basemod.interfaces.*;
 import blackbeard.cards.*;
 import blackbeard.characters.TheBlackbeard;
-import blackbeard.enums.AbstractCardEnum;
-import blackbeard.enums.TheBlackbeardEnum;
+import blackbeard.enums.CardColorEnum;
+import blackbeard.enums.PlayerClassEnum;
 import blackbeard.events.SsssserpentBlackbeardEvent;
 import blackbeard.events.VampiresBlackbeardEvent;
 import blackbeard.potions.RumPotion;
@@ -101,9 +101,9 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     public TheBlackbeardMod() {
         BaseMod.subscribe(this);
 
-        logger.info("Creating the color " + AbstractCardEnum.BLACKBEARD_BLACK.toString());
+        logger.info("Creating the color " + CardColorEnum.BLACKBEARD_BLACK.toString());
 
-        BaseMod.addColor(AbstractCardEnum.BLACKBEARD_BLACK,
+        BaseMod.addColor(CardColorEnum.BLACKBEARD_BLACK,
                 BLACK,
                 ATTACK_BLACK, SKILL_BLACK, POWER_BLACK,
                 ENERGY_ORB_BLACK,
@@ -156,24 +156,24 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addEvent(VampiresBlackbeardEvent.ID, VampiresBlackbeardEvent.class, TheCity.ID);
 
         // Potions
-        BaseMod.addPotion(BloodPotion.class, Color.WHITE.cpy(), Color.LIGHT_GRAY.cpy(), null, "blackbeard:BloodPotion", TheBlackbeardEnum.BLACKBEARD_CLASS);
-        BaseMod.addPotion(GhostInAJar.class, Color.WHITE.cpy(), Color.LIGHT_GRAY.cpy(), null, "blackbeard:GhostInAJar", TheBlackbeardEnum.BLACKBEARD_CLASS);
+        BaseMod.addPotion(BloodPotion.class, Color.WHITE.cpy(), Color.LIGHT_GRAY.cpy(), null, "blackbeard:BloodPotion", PlayerClassEnum.BLACKBEARD_CLASS);
+        BaseMod.addPotion(GhostInAJar.class, Color.WHITE.cpy(), Color.LIGHT_GRAY.cpy(), null, "blackbeard:GhostInAJar", PlayerClassEnum.BLACKBEARD_CLASS);
         Color rumColor = new Color(211 / 255.0F, 102 / 255.0F, 0, 1);
         Color rumShadeColor = new Color(160 / 255.0F, 77 / 255.0F, 0, 1);
-        BaseMod.addPotion(RumPotion.class, rumColor.cpy(), rumShadeColor.cpy(), null, "blackbeard:RumPotion", TheBlackbeardEnum.BLACKBEARD_CLASS);
-        BaseMod.addPotion(ToastPotion.class, rumColor.cpy(), rumShadeColor.cpy(), null, "blackbeard:ToastPotion", TheBlackbeardEnum.BLACKBEARD_CLASS);
+        BaseMod.addPotion(RumPotion.class, rumColor.cpy(), rumShadeColor.cpy(), null, "blackbeard:RumPotion", PlayerClassEnum.BLACKBEARD_CLASS);
+        BaseMod.addPotion(ToastPotion.class, rumColor.cpy(), rumShadeColor.cpy(), null, "blackbeard:ToastPotion", PlayerClassEnum.BLACKBEARD_CLASS);
     }
 
     @Override
     public void receiveEditCharacters() {
         logger.info("Begin editing characters");
-        logger.info("Add " + TheBlackbeardEnum.BLACKBEARD_CLASS.toString());
+        logger.info("Add " + PlayerClassEnum.BLACKBEARD_CLASS.toString());
 
         BaseMod.addCharacter(
                 new TheBlackbeard(MOD_NAME),
                 BLACKBEARD_BUTTON,
                 BLACKBEARD_PORTRAIT,
-                TheBlackbeardEnum.BLACKBEARD_CLASS
+                PlayerClassEnum.BLACKBEARD_CLASS
         );
 
         logger.info("Done editing characters");
@@ -184,20 +184,20 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         logger.info("Begin editing relics");
 
         // Add relics
-        BaseMod.addRelicToCustomPool(new LoadTheCannons(), AbstractCardEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new BloodOrange(), AbstractCardEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new HipFlask(), AbstractCardEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new TreasureChest(), AbstractCardEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new WhitePearl(), AbstractCardEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new CannonballsOfSteel(), AbstractCardEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new GoldenRing(), AbstractCardEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new MagicalCauldron(), AbstractCardEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new Penknife(), AbstractCardEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new PoorMathSkills(), AbstractCardEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new PowderCan(), AbstractCardEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new Soberminded(), AbstractCardEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new Spearhead(), AbstractCardEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new CrossedSwords(), AbstractCardEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new LoadTheCannons(), CardColorEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new BloodOrange(), CardColorEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new HipFlask(), CardColorEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new TreasureChest(), CardColorEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new WhitePearl(), CardColorEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new CannonballsOfSteel(), CardColorEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new GoldenRing(), CardColorEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new MagicalCauldron(), CardColorEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new Penknife(), CardColorEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new PoorMathSkills(), CardColorEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new PowderCan(), CardColorEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new Soberminded(), CardColorEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new Spearhead(), CardColorEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new CrossedSwords(), CardColorEnum.BLACKBEARD_BLACK);
 
         logger.info("Done editing relics");
     }
@@ -205,7 +205,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     @Override
     public void receiveEditCards() {
         logger.info("Begin editing cards");
-        logger.info("Add cards for " + TheBlackbeardEnum.BLACKBEARD_CLASS.toString());
+        logger.info("Add cards for " + PlayerClassEnum.BLACKBEARD_CLASS.toString());
 
         BaseMod.addDynamicVariable(new MagicNumberPlusOneVariable());
         BaseMod.addDynamicVariable(new SecondMagicNumberVariable());

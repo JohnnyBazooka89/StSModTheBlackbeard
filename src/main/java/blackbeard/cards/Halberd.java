@@ -3,7 +3,7 @@ package blackbeard.cards;
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.EquipAction;
-import blackbeard.enums.AbstractCardEnum;
+import blackbeard.enums.CardColorEnum;
 import blackbeard.orbs.HalberdOrb;
 import blackbeard.utils.WeaponCardsUtils;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -25,7 +25,7 @@ public class Halberd extends CustomCard {
 
     public Halberd() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.RARE, CardTarget.SELF);
+                CardColorEnum.BLACKBEARD_BLACK, CardRarity.RARE, CardTarget.SELF);
 
         this.baseMagicNumber = this.magicNumber = WEAPON_ATTACK;
     }

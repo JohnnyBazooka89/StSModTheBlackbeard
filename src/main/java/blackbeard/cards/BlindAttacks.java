@@ -2,7 +2,7 @@ package blackbeard.cards;
 
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
-import blackbeard.enums.AbstractCardEnum;
+import blackbeard.enums.CardColorEnum;
 import com.megacrit.cardcrawl.actions.unique.SwordBoomerangAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -23,7 +23,7 @@ public class BlindAttacks extends CustomCard {
 
     public BlindAttacks() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.ALL_ENEMY);
+                CardColorEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.ALL_ENEMY);
 
         this.baseDamage = this.damage = ATTACK_DMG;
     }

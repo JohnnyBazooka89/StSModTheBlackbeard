@@ -3,7 +3,7 @@ package blackbeard.cards;
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.EquipAction;
-import blackbeard.enums.AbstractCardEnum;
+import blackbeard.enums.CardColorEnum;
 import blackbeard.orbs.SmithingHammerOrb;
 import blackbeard.utils.KeywordsUtils;
 import blackbeard.utils.WeaponCardsUtils;
@@ -26,7 +26,7 @@ public class SmithingHammer extends CustomCard {
 
     public SmithingHammer() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
+                CardColorEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
 
         this.baseMagicNumber = this.magicNumber = WEAPON_DURABILITY;
         this.exhaust = true;

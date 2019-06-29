@@ -2,7 +2,7 @@ package blackbeard.cards;
 
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
-import blackbeard.enums.AbstractCardEnum;
+import blackbeard.enums.CardColorEnum;
 import blackbeard.powers.SwordDancePower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -23,7 +23,7 @@ public class SwordDance extends CustomCard {
 
     public SwordDance() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.SELF);
+                CardColorEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.SELF);
 
         this.baseMagicNumber = this.magicNumber = NUMBER_OF_ATTACKS;
     }

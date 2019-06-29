@@ -3,7 +3,7 @@ package blackbeard.cards;
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.EquipAction;
-import blackbeard.enums.AbstractCardEnum;
+import blackbeard.enums.CardColorEnum;
 import blackbeard.orbs.CutlassOrb;
 import blackbeard.utils.WeaponCardsUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -29,7 +29,7 @@ public class RearmingStrike extends CustomCard {
 
     public RearmingStrike() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.COMMON, AbstractCard.CardTarget.ENEMY);
+                CardColorEnum.BLACKBEARD_BLACK, CardRarity.COMMON, AbstractCard.CardTarget.ENEMY);
 
         this.baseDamage = this.damage = DAMAGE;
 

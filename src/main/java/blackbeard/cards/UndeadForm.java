@@ -3,7 +3,7 @@ package blackbeard.cards;
 import basemod.abstracts.CustomCard;
 import basemod.helpers.BaseModCardTags;
 import blackbeard.TheBlackbeardMod;
-import blackbeard.enums.AbstractCardEnum;
+import blackbeard.enums.CardColorEnum;
 import blackbeard.powers.DamageWhenIntangibleEndsPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -25,7 +25,7 @@ public class UndeadForm extends CustomCard {
 
     public UndeadForm() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.POWER,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.RARE, CardTarget.SELF);
+                CardColorEnum.BLACKBEARD_BLACK, CardRarity.RARE, CardTarget.SELF);
 
         this.baseMagicNumber = this.magicNumber = INTANGIBLE_VALUE;
         this.tags.add(BaseModCardTags.FORM);

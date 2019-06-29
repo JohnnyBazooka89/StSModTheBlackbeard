@@ -2,7 +2,7 @@ package blackbeard.cards;
 
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
-import blackbeard.enums.AbstractCardEnum;
+import blackbeard.enums.CardColorEnum;
 import blackbeard.powers.ResistancePower;
 import blackbeard.powers.ToastPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -23,7 +23,7 @@ public class Toast extends CustomCard {
 
     public Toast() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.SELF);
+                CardColorEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.SELF);
 
         this.baseMagicNumber = this.magicNumber = RESISTANCE_VALUE;
         this.exhaust = true;

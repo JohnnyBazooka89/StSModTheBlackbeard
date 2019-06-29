@@ -2,7 +2,7 @@ package blackbeard.cards;
 
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
-import blackbeard.enums.AbstractCardEnum;
+import blackbeard.enums.CardColorEnum;
 import blackbeard.powers.IntoxicationPower;
 import blackbeard.powers.ResistancePower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -24,7 +24,7 @@ public class Intoxication extends CustomCard {
 
     public Intoxication() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.POWER,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.RARE, CardTarget.SELF);
+                CardColorEnum.BLACKBEARD_BLACK, CardRarity.RARE, CardTarget.SELF);
 
         this.baseMagicNumber = this.magicNumber = RESISTANCE_VALUE;
     }

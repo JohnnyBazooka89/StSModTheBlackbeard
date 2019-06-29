@@ -2,7 +2,7 @@ package blackbeard.cards;
 
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
-import blackbeard.enums.AbstractCardEnum;
+import blackbeard.enums.CardColorEnum;
 import blackbeard.interfaces.IGoldenCard;
 import blackbeard.utils.GoldenCardsUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -26,7 +26,7 @@ public class GoldenRain extends CustomCard implements IGoldenCard {
 
     public GoldenRain() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.RARE, CardTarget.ALL_ENEMY);
+                CardColorEnum.BLACKBEARD_BLACK, CardRarity.RARE, CardTarget.ALL_ENEMY);
 
         this.baseMagicNumber = this.magicNumber = PERMILLES_OF_GOLD_GAINED;
         this.isMultiDamage = true;

@@ -3,7 +3,7 @@ package blackbeard.cards;
 import basemod.abstracts.CustomCard;
 import basemod.helpers.BaseModCardTags;
 import blackbeard.TheBlackbeardMod;
-import blackbeard.enums.AbstractCardEnum;
+import blackbeard.enums.CardColorEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -25,7 +25,7 @@ public class StrikeBlackbeard extends CustomCard {
 
     public StrikeBlackbeard() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, AbstractCard.CardType.ATTACK,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.BASIC, AbstractCard.CardTarget.ENEMY);
+                CardColorEnum.BLACKBEARD_BLACK, CardRarity.BASIC, AbstractCard.CardTarget.ENEMY);
 
         this.baseDamage = this.damage = ATTACK_DMG;
 

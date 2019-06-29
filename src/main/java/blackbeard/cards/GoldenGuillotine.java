@@ -2,7 +2,7 @@ package blackbeard.cards;
 
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
-import blackbeard.enums.AbstractCardEnum;
+import blackbeard.enums.CardColorEnum;
 import blackbeard.interfaces.IGoldenCard;
 import blackbeard.utils.GoldenCardsUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -27,7 +27,7 @@ public class GoldenGuillotine extends CustomCard implements IGoldenCard {
 
     public GoldenGuillotine() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.RARE, CardTarget.ENEMY);
+                CardColorEnum.BLACKBEARD_BLACK, CardRarity.RARE, CardTarget.ENEMY);
 
         this.baseMagicNumber = this.magicNumber = PERCENT_OF_GOLD_GAINED;
 

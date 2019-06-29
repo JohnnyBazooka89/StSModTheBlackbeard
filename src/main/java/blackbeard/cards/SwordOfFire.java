@@ -3,7 +3,7 @@ package blackbeard.cards;
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.EquipAction;
-import blackbeard.enums.AbstractCardEnum;
+import blackbeard.enums.CardColorEnum;
 import blackbeard.orbs.SwordOfFireOrb;
 import blackbeard.utils.WeaponCardsUtils;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -25,7 +25,7 @@ public class SwordOfFire extends CustomCard {
 
     public SwordOfFire() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.SPECIAL, CardTarget.SELF);
+                CardColorEnum.BLACKBEARD_BLACK, CardRarity.SPECIAL, CardTarget.SELF);
 
         this.baseMagicNumber = this.magicNumber = WEAPON_DURABILITY;
     }

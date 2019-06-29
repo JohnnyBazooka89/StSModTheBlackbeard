@@ -1,6 +1,6 @@
 package blackbeard.patches;
 
-import blackbeard.enums.TheBlackbeardEnum;
+import blackbeard.enums.PlayerClassEnum;
 import blackbeard.events.SsssserpentBlackbeardEvent;
 import blackbeard.events.VampiresBlackbeardEvent;
 import com.evacipated.cardcrawl.modthespire.lib.*;
@@ -17,7 +17,7 @@ public class BlackbeardExclusiveEventsPatch {
 
     @SpireInsertPatch(locator = Locator.class, localvars = {"tmp"})
     public static void Insert(Random rng, ArrayList<String> tmp) {
-        if (AbstractDungeon.player.chosenClass == TheBlackbeardEnum.BLACKBEARD_CLASS) {
+        if (AbstractDungeon.player.chosenClass == PlayerClassEnum.BLACKBEARD_CLASS) {
             tmp.removeIf(d -> d.equals(Sssserpent.ID));
             tmp.removeIf(d -> d.equals(Vampires.ID));
         } else {

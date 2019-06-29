@@ -4,7 +4,7 @@ import basemod.abstracts.CustomCard;
 import basemod.helpers.TooltipInfo;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.SwordDiscoveryAction;
-import blackbeard.enums.AbstractCardEnum;
+import blackbeard.enums.CardColorEnum;
 import blackbeard.patches.SwordDiscoveryPatch;
 import blackbeard.utils.WeaponCardsUtils;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -30,7 +30,7 @@ public class Sword extends CustomCard {
 
     public Sword() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.SELF);
+                CardColorEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.SELF);
 
         this.baseMagicNumber = this.magicNumber = WEAPON_DURABILITY;
     }

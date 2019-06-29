@@ -2,7 +2,7 @@ package blackbeard.cards;
 
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
-import blackbeard.enums.AbstractCardEnum;
+import blackbeard.enums.CardColorEnum;
 import blackbeard.enums.CardTagsEnum;
 import blackbeard.interfaces.IGoldenCard;
 import blackbeard.utils.GoldenCardsUtils;
@@ -28,7 +28,7 @@ public class GoldenCannonball extends CustomCard implements IGoldenCard {
 
     public GoldenCannonball() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
+                CardColorEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
 
         this.baseMagicNumber = this.magicNumber = ATTACK_DMG;
         this.exhaust = true;

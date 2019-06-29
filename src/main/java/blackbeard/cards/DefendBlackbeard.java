@@ -3,7 +3,7 @@ package blackbeard.cards;
 import basemod.abstracts.CustomCard;
 import basemod.helpers.BaseModCardTags;
 import blackbeard.TheBlackbeardMod;
-import blackbeard.enums.AbstractCardEnum;
+import blackbeard.enums.CardColorEnum;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -23,7 +23,7 @@ public class DefendBlackbeard extends CustomCard {
 
     public DefendBlackbeard() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, AbstractCard.CardType.SKILL,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.BASIC, AbstractCard.CardTarget.SELF);
+                CardColorEnum.BLACKBEARD_BLACK, CardRarity.BASIC, AbstractCard.CardTarget.SELF);
 
         this.baseBlock = this.block = BLOCK_AMOUNT;
 

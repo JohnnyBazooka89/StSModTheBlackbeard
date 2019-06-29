@@ -3,7 +3,7 @@ package blackbeard.cards;
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.EquipAction;
-import blackbeard.enums.AbstractCardEnum;
+import blackbeard.enums.CardColorEnum;
 import blackbeard.interfaces.ISecondMagicNumber;
 import blackbeard.orbs.VampiricScepterOrb;
 import blackbeard.utils.WeaponCardsUtils;
@@ -31,7 +31,7 @@ public class VampiricScepter extends CustomCard implements ISecondMagicNumber {
 
     public VampiricScepter() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(VampiricScepter.ID), COST, DESCRIPTION, CardType.SKILL,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.SPECIAL, CardTarget.SELF);
+                CardColorEnum.BLACKBEARD_BLACK, CardRarity.SPECIAL, CardTarget.SELF);
 
         this.baseMagicNumber = this.magicNumber = WEAPON_ATTACK;
         this.customHeal = HEAL_VALUE;

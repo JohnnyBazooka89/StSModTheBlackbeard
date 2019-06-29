@@ -1,6 +1,6 @@
 package blackbeard.patches;
 
-import blackbeard.enums.TheBlackbeardEnum;
+import blackbeard.enums.PlayerClassEnum;
 import com.evacipated.cardcrawl.modthespire.lib.ByRef;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.megacrit.cardcrawl.core.Settings;
@@ -25,7 +25,7 @@ public class MetricsPatches {
     public static class SendPostPatch {
 
         public static void Prefix(Metrics metrics, @ByRef String[] url, String fileName) {
-            if (AbstractDungeon.player.chosenClass == TheBlackbeardEnum.BLACKBEARD_CLASS) {
+            if (AbstractDungeon.player.chosenClass == PlayerClassEnum.BLACKBEARD_CLASS) {
                 url[0] = "http://www.theblackbeardmod.com/metrics/";
             }
         }
@@ -36,7 +36,7 @@ public class MetricsPatches {
     public static class ShouldUploadMetricData {
 
         public static boolean Postfix(boolean returnValue) {
-            if (AbstractDungeon.player.chosenClass == TheBlackbeardEnum.BLACKBEARD_CLASS) {
+            if (AbstractDungeon.player.chosenClass == PlayerClassEnum.BLACKBEARD_CLASS) {
                 returnValue = Settings.UPLOAD_DATA;
             }
             return returnValue;
@@ -48,7 +48,7 @@ public class MetricsPatches {
     public static class RunPatch {
 
         public static void Postfix(Metrics metrics) {
-            if (metrics.type == Metrics.MetricRequestType.UPLOAD_METRICS && AbstractDungeon.player.chosenClass == TheBlackbeardEnum.BLACKBEARD_CLASS) {
+            if (metrics.type == Metrics.MetricRequestType.UPLOAD_METRICS && AbstractDungeon.player.chosenClass == PlayerClassEnum.BLACKBEARD_CLASS) {
                 try {
                     Method m = Metrics.class.getDeclaredMethod("gatherAllDataAndSend", boolean.class, boolean.class, MonsterGroup.class);
                     m.setAccessible(true);

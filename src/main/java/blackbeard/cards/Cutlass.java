@@ -3,7 +3,7 @@ package blackbeard.cards;
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.EquipAction;
-import blackbeard.enums.AbstractCardEnum;
+import blackbeard.enums.CardColorEnum;
 import blackbeard.orbs.CutlassOrb;
 import blackbeard.utils.WeaponCardsUtils;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -26,7 +26,7 @@ public class Cutlass extends CustomCard {
 
     public Cutlass() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(Cutlass.ID), COST, DESCRIPTION, AbstractCard.CardType.SKILL,
-                AbstractCardEnum.BLACKBEARD_BLACK, CardRarity.BASIC, AbstractCard.CardTarget.SELF);
+                CardColorEnum.BLACKBEARD_BLACK, CardRarity.BASIC, AbstractCard.CardTarget.SELF);
     }
 
     @Override
