@@ -1,7 +1,7 @@
 This page is the destination for metric uploads.
 
 <?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($_SERVER['REQUEST_METHOD'] === 'PUT') {
     $json = file_get_contents('php://input');
 
     $directory = 'runs/' . date("Y") . "/" . date("m") . "/" . date("d") . "/";

@@ -1,13 +1,14 @@
 package blackbeard.patches;
 
 import blackbeard.enums.PlayerClassEnum;
-import com.evacipated.cardcrawl.modthespire.lib.ByRef;
-import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
+import com.badlogic.gdx.Net;
+import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.metrics.Metrics;
 import com.megacrit.cardcrawl.monsters.MonsterGroup;
 import com.megacrit.cardcrawl.screens.DeathScreen;
+import javassist.CtBehavior;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -31,6 +32,27 @@ public class MetricsPatches {
         }
 
     }
+
+    @SpirePatch(clz = Metrics.class, method = "sendPost", paramtypez = {String.class, String.class})
+    public static class SendPutInsteadOfPostPatch {
+
+        @SpireInsertPatch(locator = Locator.class, localvars = "httpRequest")
+        public static void Insert(Metrics metrics, String url, String fileName, Net.HttpRequest httpRequest) {
+            if (AbstractDungeon.player.chosenClass == PlayerClassEnum.BLACKBEARD_CLASS) {
+                httpRequest.setMethod("PUT");
+            }
+        }
+
+        private static class Locator extends SpireInsertLocator {
+            @Override
+            public int[] Locate(CtBehavior method) throws Exception {
+                Matcher matcher = new Matcher.MethodCallMatcher(Net.HttpRequest.class, "setContent");
+                return LineFinder.findInOrder(method, matcher);
+            }
+        }
+
+    }
+
 
     @SpirePatch(clz = DeathScreen.class, method = "shouldUploadMetricData")
     public static class ShouldUploadMetricData {
