@@ -1,6 +1,5 @@
 package blackbeard.cards;
 
-import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.enums.CardColorEnum;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -12,7 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 
-public class WoodenLeg extends CustomCard {
+public class WoodenLeg extends AbstractBlackbeardCard {
     public static final String ID = "blackbeard:WoodenLeg";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

@@ -1,6 +1,5 @@
 package blackbeard.cards;
 
-import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.enums.CardColorEnum;
 import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.GraveField;
@@ -15,7 +14,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.MonsterRoomBoss;
 import com.megacrit.cardcrawl.rooms.MonsterRoomElite;
 
-public class Murder extends CustomCard {
+public class Murder extends AbstractBlackbeardCard {
     public static final String ID = "blackbeard:Murder";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

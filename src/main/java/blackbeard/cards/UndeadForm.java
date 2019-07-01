@@ -1,6 +1,5 @@
 package blackbeard.cards;
 
-import basemod.abstracts.CustomCard;
 import basemod.helpers.BaseModCardTags;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.enums.CardColorEnum;
@@ -13,7 +12,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
 
-public class UndeadForm extends CustomCard {
+public class UndeadForm extends AbstractBlackbeardCard {
     public static final String ID = "blackbeard:UndeadForm";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

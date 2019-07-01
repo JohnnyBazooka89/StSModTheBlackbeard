@@ -1,6 +1,5 @@
 package blackbeard.cards;
 
-import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.DestroyWeaponsAction;
 import blackbeard.enums.CardColorEnum;
@@ -13,7 +12,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class Scrap extends CustomCard {
+public class Scrap extends AbstractBlackbeardCard {
 
     public static final String ID = "blackbeard:Scrap";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);

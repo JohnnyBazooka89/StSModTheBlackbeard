@@ -1,6 +1,5 @@
 package blackbeard.cards;
 
-import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.enums.CardColorEnum;
 import blackbeard.powers.DamageWhenIntangibleEndsPower;
@@ -12,7 +11,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
 
-public class VengefulSpirit extends CustomCard {
+public class VengefulSpirit extends AbstractBlackbeardCard {
     public static final String ID = "blackbeard:VengefulSpirit";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

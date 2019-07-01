@@ -1,6 +1,5 @@
 package blackbeard.cards;
 
-import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.enums.CardColorEnum;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
@@ -12,7 +11,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class CloakAndCannonball extends CustomCard {
+public class CloakAndCannonball extends AbstractBlackbeardCard {
 
     public static final String ID = "blackbeard:CloakAndCannonball";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);

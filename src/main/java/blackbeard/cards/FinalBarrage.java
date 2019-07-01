@@ -1,6 +1,5 @@
 package blackbeard.cards;
 
-import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.enums.CardColorEnum;
 import blackbeard.enums.CardTagsEnum;
@@ -17,7 +16,7 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
 import java.util.Iterator;
 
-public class FinalBarrage extends CustomCard {
+public class FinalBarrage extends AbstractBlackbeardCard {
     public static final String ID = "blackbeard:FinalBarrage";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

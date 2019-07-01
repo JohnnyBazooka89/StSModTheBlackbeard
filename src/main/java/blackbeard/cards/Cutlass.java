@@ -1,6 +1,5 @@
 package blackbeard.cards;
 
-import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.EquipAction;
 import blackbeard.enums.CardColorEnum;
@@ -13,7 +12,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class Cutlass extends CustomCard {
+public class Cutlass extends AbstractBlackbeardCard {
 
     public static final String ID = "blackbeard:Cutlass";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);

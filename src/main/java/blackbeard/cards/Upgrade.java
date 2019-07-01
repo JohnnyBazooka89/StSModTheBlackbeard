@@ -1,6 +1,5 @@
 package blackbeard.cards;
 
-import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.UpgradeWeaponsAction;
 import blackbeard.enums.CardColorEnum;
@@ -11,7 +10,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class Upgrade extends CustomCard {
+public class Upgrade extends AbstractBlackbeardCard {
 
     public static final String ID = "blackbeard:Upgrade";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);

@@ -1,6 +1,5 @@
 package blackbeard.cards;
 
-import basemod.abstracts.CustomCard;
 import basemod.helpers.TooltipInfo;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.SwordDiscoveryAction;
@@ -16,7 +15,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Sword extends CustomCard {
+public class Sword extends AbstractBlackbeardCard {
 
     public static final String ID = "blackbeard:Sword";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);

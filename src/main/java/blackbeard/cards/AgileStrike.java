@@ -1,6 +1,5 @@
 package blackbeard.cards;
 
-import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.enums.CardColorEnum;
 import blackbeard.orbs.AbstractWeaponOrb;
@@ -17,7 +16,7 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
 import java.util.Iterator;
 
-public class AgileStrike extends CustomCard {
+public class AgileStrike extends AbstractBlackbeardCard {
     public static final String ID = "blackbeard:AgileStrike";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

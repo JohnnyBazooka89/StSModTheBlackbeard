@@ -1,6 +1,5 @@
 package blackbeard.cards;
 
-import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.EquipAction;
 import blackbeard.enums.CardColorEnum;
@@ -13,7 +12,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class VampiricScepter extends CustomCard implements ISecondMagicNumber {
+public class VampiricScepter extends AbstractBlackbeardCard implements ISecondMagicNumber {
 
     public static final String ID = "blackbeard:VampiricScepter";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);

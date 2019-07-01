@@ -5,7 +5,7 @@
 
     <groupId>StSMod</groupId>
     <artifactId>StSModTheBlackbeard</artifactId>
-    <version>1.9.8</version>
+    <version>1.9.9</version>
     <packaging>jar</packaging>
     <name>StSModTheBlackbeard</name>
     <description>Adds a new character to Slay the Spire, The Blackbeard.</description>
@@ -21,28 +21,28 @@
         <dependency>
             <groupId>com.megacrit.cardcrawl</groupId>
             <artifactId>slaythespire</artifactId>
-            <version>053</version>
+            <version>1.1</version>
             <scope>system</scope>
             <systemPath>${slayTheSpirePath}\desktop-1.0.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.evacipated.cardcrawl</groupId>
             <artifactId>ModTheSpire</artifactId>
-            <version>3.6.3</version>
+            <version>3.11.0</version>
             <scope>system</scope>
             <systemPath>${slayTheSpirePath}\..\..\workshop\content\646570\1605060445\ModTheSpire.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.evacipated.cardcrawl</groupId>
             <artifactId>BaseMod</artifactId>
-            <version>5.4.0</version>
+            <version>5.14.0</version>
             <scope>system</scope>
             <systemPath>${slayTheSpirePath}\..\..\workshop\content\646570\1605833019\BaseMod.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.evacipated.cardcrawl.mod</groupId>
             <artifactId>stslib</artifactId>
-            <version>1.14.0</version>
+            <version>1.17.0</version>
             <scope>system</scope>
             <systemPath>${slayTheSpirePath}\..\..\workshop\content\646570\1609158507\StSLib.jar</systemPath>
         </dependency>

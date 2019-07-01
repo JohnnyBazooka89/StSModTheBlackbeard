@@ -1,6 +1,5 @@
 package blackbeard.cards;
 
-import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.enums.CardColorEnum;
 import com.megacrit.cardcrawl.actions.common.HealAction;
@@ -11,7 +10,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class RemoveScurvy extends CustomCard {
+public class RemoveScurvy extends AbstractBlackbeardCard {
 
     public static final String ID = "blackbeard:RemoveScurvy";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);

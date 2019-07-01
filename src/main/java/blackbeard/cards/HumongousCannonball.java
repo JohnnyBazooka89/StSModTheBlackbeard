@@ -1,6 +1,5 @@
 package blackbeard.cards;
 
-import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.enums.CardColorEnum;
 import blackbeard.enums.CardTagsEnum;
@@ -14,7 +13,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class HumongousCannonball extends CustomCard {
+public class HumongousCannonball extends AbstractBlackbeardCard {
     public static final String ID = "blackbeard:HumongousCannonball";
     public static final String DEFAULT_IMAGE_ID = "HumongousCannonballENG";
     public static final String POLISH_IMAGE_ID = "HumongousCannonballPOL";
