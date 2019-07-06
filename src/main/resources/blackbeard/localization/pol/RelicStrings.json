@@ -31,7 +31,7 @@
     "NAME": "Biała perła",
     "FLAVOR": "Jednocześnie piękna i potężna.",
     "DESCRIPTIONS": [
-      "Kiedykolwiek wyposażysz się w Broń, daj jej #b+1 do Ataku."
+      "Kiedykolwiek wyposażysz się w #yBroń, daj jej #b+1 do Ataku."
     ]
   },
   "blackbeard:CannonballsOfSteel": {
@@ -95,6 +95,13 @@
     "FLAVOR": "Idealne do walki dwiema broniami naraz.",
     "DESCRIPTIONS": [
       "Twoje ataki używają dodatkową #yBroń."
+    ]
+  },
+  "blackbeard:KarateGi": {
+    "NAME": "Kimono do karate",
+    "FLAVOR": "Gdy tylko je założysz, natychmiast poznajesz nowe style walki.",
+    "DESCRIPTIONS": [
+      "Twoje #yBronie mają nieskończoną wytrzymałość. Kiedykolwiek zaatakujesz #yBronią, ta #yBroń idzie na ostatnią pozycję."
     ]
   }
 }

@@ -2,6 +2,7 @@ package blackbeard.orbs;
 
 import blackbeard.powers.ArmorUpPower;
 import blackbeard.powers.SalvagerPower;
+import blackbeard.relics.KarateGi;
 import blackbeard.relics.Spearhead;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -73,8 +74,16 @@ public abstract class AbstractWeaponOrb extends AbstractOrb {
 
     @Override
     protected void renderText(SpriteBatch sb) {
-        FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, Integer.toString(this.attack), this.cX + NUM_X_OFFSET - 44.0F * Settings.scale, this.cY + this.bobEffect.y / 2.0F + NUM_Y_OFFSET - 4.0F * Settings.scale, this.c, this.fontScale);
-        FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, Integer.toString(this.durability), this.cX + NUM_X_OFFSET + 8.0F * Settings.scale, this.cY + this.bobEffect.y / 2.0F + NUM_Y_OFFSET - 4.0F * Settings.scale, new Color(0.2F, 1.0F, 1.0F, this.c.a), this.fontScale);
+        FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, Integer.toString(this.attack), this.cX + NUM_X_OFFSET - 44.0F * Settings.scale,
+                this.cY + this.bobEffect.y / 2.0F + NUM_Y_OFFSET - 4.0F * Settings.scale, this.c, this.fontScale);
+        String durability;
+        if (AbstractDungeon.player.hasRelic(KarateGi.ID)) {
+            durability = "inf";
+        } else {
+            durability = Integer.toString(this.durability);
+        }
+        FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, durability, this.cX + NUM_X_OFFSET + 8.0F * Settings.scale,
+                this.cY + this.bobEffect.y / 2.0F + NUM_Y_OFFSET - 4.0F * Settings.scale, new Color(0.2F, 1.0F, 1.0F, this.c.a), this.fontScale);
     }
 
     @Override
@@ -111,7 +120,9 @@ public abstract class AbstractWeaponOrb extends AbstractOrb {
     }
 
     public void use(boolean triggerEffectOnUse) {
-        durability--;
+        if (!AbstractDungeon.player.hasRelic(KarateGi.ID)) {
+            durability--;
+        }
         if (AbstractDungeon.player.hasPower(ArmorUpPower.POWER_ID)) {
             ArmorUpPower armorUpPower = (ArmorUpPower) AbstractDungeon.player.getPower(ArmorUpPower.POWER_ID);
             AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, armorUpPower.amount));

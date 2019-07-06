@@ -96,5 +96,12 @@
     "DESCRIPTIONS": [
       "Your attacks use an additional #yWeapon."
     ]
+  },
+  "blackbeard:KarateGi": {
+    "NAME": "Karate Gi",
+    "FLAVOR": "When you wear it, you instantly learn new styles of combat.",
+    "DESCRIPTIONS": [
+      "Your #yWeapons have infinite Durability. After you attack with a #yWeapon, it goes to the last position."
+    ]
   }
 }
