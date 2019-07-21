@@ -13,10 +13,14 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.MathUtils;
 import com.esotericsoftware.spine.AnimationState;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.TalkAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
+import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
@@ -39,11 +43,17 @@ public class TheBlackbeard extends CustomPlayer {
     private static final String BLACKBEARD_SHOULDER_2 = "blackbeard/img/char/blackbeard/shoulder2.png";
     private static final String BLACKBEARD_CORPSE = "blackbeard/img/char/blackbeard/corpse.png";
 
+    public static final String CAPTAIN_ABE_ENCOUNTER_STRINGS_ID = "blackbeard:CaptainAbeEncounter";
+    public static final CharacterStrings captainAbeEncounterStrings = CardCrawlGame.languagePack.getCharacterString(CAPTAIN_ABE_ENCOUNTER_STRINGS_ID);
+
     public TheBlackbeard(String name) {
         super(name, PlayerClassEnum.BLACKBEARD_CLASS, null, null, (String) null, null);
 
         initializeClass(null, BLACKBEARD_SHOULDER_2, BLACKBEARD_SHOULDER_1, BLACKBEARD_CORPSE,
                 getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(ENERGY_PER_TURN));
+
+        this.dialogX = (this.drawX + 30.0F * Settings.scale);
+        this.dialogY = (this.drawY + 200.0F * Settings.scale);
 
         this.loadAnimation(BLACKBEARD_SKELETON_ATLAS_PATH, BLACKBEARD_SKELETON_JSON_PATH, 1.0f);
         AnimationState.TrackEntry e = this.state.setAnimation(0, "animation", true);
@@ -158,4 +168,13 @@ public class TheBlackbeard extends CustomPlayer {
         return characterStrings.TEXT[2];
     }
 
+    @Override
+    public void applyStartOfCombatLogic() {
+        super.applyStartOfCombatLogic();
+        if (AbstractDungeon.lastCombatMetricKey.equals("Pondfish")) {
+            int i = AbstractDungeon.cardRandomRng.random(0, captainAbeEncounterStrings.TEXT.length - 1);
+            AbstractDungeon.actionManager.addToBottom(new SFXAction("BLACKBEARD_YARR"));
+            AbstractDungeon.actionManager.addToBottom(new TalkAction(true, captainAbeEncounterStrings.TEXT[i], 0.0F, 3.0F));
+        }
+    }
 }

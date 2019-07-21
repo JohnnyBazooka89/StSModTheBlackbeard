@@ -18,6 +18,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
+import com.evacipated.cardcrawl.modthespire.Loader;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -98,6 +99,9 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     public static final String CANNONBALL_KEYWORD = "blackbeard:CannonballKeyword";
     public static final String RESISTANCE_KEYWORD = "blackbeard:ResistanceKeyword";
 
+    //Mod integrations
+    public static boolean replayTheSpireLoaded;
+
     public TheBlackbeardMod() {
         BaseMod.subscribe(this);
 
@@ -140,6 +144,8 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         logger.info("========================= THE BLACKBEARD INIT =========================");
 
         new TheBlackbeardMod();
+
+        replayTheSpireLoaded = Loader.isModLoaded("ReplayTheSpireMod");
 
         logger.info("=======================================================================");
     }
