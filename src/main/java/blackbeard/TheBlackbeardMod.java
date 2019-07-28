@@ -40,7 +40,7 @@ import java.util.Map;
 @SpireInitializer
 public class TheBlackbeardMod implements PostInitializeSubscriber,
         EditCardsSubscriber, EditRelicsSubscriber, EditCharactersSubscriber,
-        EditStringsSubscriber, EditKeywordsSubscriber {
+        EditStringsSubscriber, EditKeywordsSubscriber, AddAudioSubscriber {
 
     private static final Logger logger = LogManager.getLogger(TheBlackbeardMod.class);
 
@@ -71,8 +71,8 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     private static final String ENERGY_ORB_IN_DESCRIPTION = "blackbeard/img/energy/energyOrbInDescription.png";
 
     //Assets
-    private static final String BLACKBEARD_BUTTON = "blackbeard/img/charSelect/blackbeardButton.png";
-    private static final String BLACKBEARD_PORTRAIT = "blackbeard/img/charSelect/blackbeardPortrait.jpg";
+    private static final String BUTTON = "blackbeard/img/charSelect/blackbeardButton.png";
+    private static final String PORTRAIT = "blackbeard/img/charSelect/blackbeardPortrait.jpg";
 
     //Badge
     private static final String BADGE_IMG = "blackbeard/img/ModBadge.png";
@@ -97,6 +97,10 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     public static final String WEAPON_KEYWORD = "blackbeard:WeaponKeyword";
     public static final String CANNONBALL_KEYWORD = "blackbeard:CannonballKeyword";
     public static final String RESISTANCE_KEYWORD = "blackbeard:ResistanceKeyword";
+
+    //Sounds
+    public static final String SOUND_YARR_KEY = "BLACKBEARD_YARR";
+    public static final String SOUND_YARR_FILEPATH = getSoundFilePath("yarr");
 
     public TheBlackbeardMod() {
         BaseMod.subscribe(this);
@@ -150,16 +154,16 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
 
     @Override
     public void receivePostInitialize() {
-        // Mod settings
+        //Mod settings
         Texture badgeTexture = ImageMaster.loadImage(BADGE_IMG);
         ModPanel settingsPanel = new ModPanel();
         BaseMod.registerModBadge(badgeTexture, MOD_NAME, AUTHOR, DESCRIPTION, settingsPanel);
 
-        // Events
+        //Events
         BaseMod.addEvent(SsssserpentBlackbeardEvent.ID, SsssserpentBlackbeardEvent.class, Exordium.ID);
         BaseMod.addEvent(VampiresBlackbeardEvent.ID, VampiresBlackbeardEvent.class, TheCity.ID);
 
-        // Potions
+        //Potions
         BaseMod.addPotion(BloodPotion.class, Color.WHITE.cpy(), Color.LIGHT_GRAY.cpy(), null, "blackbeard:BloodPotion", PlayerClassEnum.BLACKBEARD_CLASS);
         BaseMod.addPotion(GhostInAJar.class, Color.WHITE.cpy(), Color.LIGHT_GRAY.cpy(), null, "blackbeard:GhostInAJar", PlayerClassEnum.BLACKBEARD_CLASS);
         Color rumColor = new Color(211 / 255.0F, 102 / 255.0F, 0, 1);
@@ -175,8 +179,8 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
 
         BaseMod.addCharacter(
                 new TheBlackbeard(MOD_NAME),
-                BLACKBEARD_BUTTON,
-                BLACKBEARD_PORTRAIT,
+                BUTTON,
+                PORTRAIT,
                 PlayerClassEnum.BLACKBEARD_CLASS
         );
 
@@ -187,7 +191,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     public void receiveEditRelics() {
         logger.info("Begin editing relics");
 
-        // Add relics
+        //Add relics
         BaseMod.addRelicToCustomPool(new LoadTheCannons(), CardColorEnum.BLACKBEARD_BLACK);
         BaseMod.addRelicToCustomPool(new BloodOrange(), CardColorEnum.BLACKBEARD_BLACK);
         BaseMod.addRelicToCustomPool(new HipFlask(), CardColorEnum.BLACKBEARD_BLACK);
@@ -293,6 +297,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addCard(new FieryDefense());
         BaseMod.addCard(new ReapersScythe());
 
+        //Special cards are registered, but they are not shown in the library, because of DoNotShowSpecialCardsInLibraryPatch.
         BaseMod.addCard(new Cannonball());
         BaseMod.addCard(new SwordOfChaos());
         BaseMod.addCard(new SwordOfWisdom());
@@ -316,7 +321,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
                 loadCustomStringsForLanguage(RUSSIAN_LANGUAGE_FOLDER);
                 break;
             default:
-                // Nothing - default language was already loaded
+                //Nothing - default language was already loaded
                 break;
         }
 
@@ -347,7 +352,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
                 loadCustomKeywordsForLanguage(RUSSIAN_LANGUAGE_FOLDER);
                 break;
             default:
-                // Nothing - default language was already loaded
+                //Nothing - default language was already loaded
                 break;
         }
 
@@ -372,4 +377,8 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         });
     }
 
+    @Override
+    public void receiveAddAudio() {
+        BaseMod.addAudio(SOUND_YARR_KEY, SOUND_YARR_FILEPATH);
+    }
 }

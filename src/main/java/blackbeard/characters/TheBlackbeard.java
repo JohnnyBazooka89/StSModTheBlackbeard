@@ -1,13 +1,13 @@
 package blackbeard.characters;
 
 import basemod.abstracts.CustomPlayer;
+import blackbeard.TheBlackbeardMod;
 import blackbeard.cards.Cutlass;
 import blackbeard.cards.DefendBlackbeard;
 import blackbeard.cards.IntimidatingStrike;
 import blackbeard.cards.StrikeBlackbeard;
 import blackbeard.enums.CardColorEnum;
 import blackbeard.enums.PlayerClassEnum;
-import blackbeard.patches.AddSoundsPatch;
 import blackbeard.relics.LoadTheCannons;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
@@ -174,7 +174,7 @@ public class TheBlackbeard extends CustomPlayer {
         super.applyStartOfCombatLogic();
         if (AbstractDungeon.lastCombatMetricKey.equals("Pondfish")) {
             int i = AbstractDungeon.cardRandomRng.random(0, captainAbeEncounterStrings.TEXT.length - 1);
-            AbstractDungeon.actionManager.addToBottom(new SFXAction(AddSoundsPatch.BLACKBEARD_YARR_SOUND_KEY));
+            AbstractDungeon.actionManager.addToBottom(new SFXAction(TheBlackbeardMod.SOUND_YARR_KEY));
             AbstractDungeon.actionManager.addToBottom(new TalkAction(true, captainAbeEncounterStrings.TEXT[i], 0.0F, 3.0F));
         }
     }
