@@ -4,7 +4,6 @@ import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.EquipAction;
 import blackbeard.enums.CardColorEnum;
 import blackbeard.orbs.SmithingHammerOrb;
-import blackbeard.utils.KeywordsUtils;
 import blackbeard.utils.WeaponCardsUtils;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -34,12 +33,6 @@ public class SmithingHammer extends AbstractBlackbeardCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new EquipAction(new SmithingHammerOrb(WEAPON_ATTACK, this.magicNumber, false)));
-    }
-
-    @Override
-    public void initializeDescription() {
-        super.initializeDescription();
-        KeywordsUtils.removeExhaustFromTooltips(this);
     }
 
     @Override

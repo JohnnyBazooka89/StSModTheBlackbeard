@@ -3,7 +3,6 @@ package blackbeard.cards;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.enums.CardColorEnum;
 import blackbeard.powers.ResistancePower;
-import blackbeard.utils.KeywordsUtils;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -33,12 +32,6 @@ public class GhostInTheRum extends AbstractBlackbeardCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new IntangiblePlayerPower(p, 1), 1));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ResistancePower(p, -this.magicNumber), -this.magicNumber));
-    }
-
-    @Override
-    public void initializeDescription() {
-        super.initializeDescription();
-        KeywordsUtils.removeExhaustFromTooltips(this);
     }
 
     @Override
