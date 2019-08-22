@@ -9,16 +9,20 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
-@SpirePatch(clz = AbstractPlayer.class, method = "damage", paramtypez = {DamageInfo.class})
-@SpirePatch(clz = AbstractCreature.class, method = "heal", paramtypez = {int.class, boolean.class})
-public class UpdateRevengePatch {
+public class UpdateRevengePatches {
 
-    public static void Postfix(AbstractPlayer abstractPlayer, DamageInfo info) {
-        updateRevenge();
+    @SpirePatch(clz = AbstractPlayer.class, method = "damage", paramtypez = {DamageInfo.class})
+    public static class DamagePatch {
+        public static void Postfix(AbstractPlayer abstractPlayer, DamageInfo info) {
+            updateRevenge();
+        }
     }
 
-    public static void Postfix(AbstractCreature abstractCreature, int healAmount, boolean showEffect) {
-        updateRevenge();
+    @SpirePatch(clz = AbstractCreature.class, method = "heal", paramtypez = {int.class, boolean.class})
+    public static class HealPatch {
+        public static void Postfix(AbstractCreature abstractCreature, int healAmount, boolean showEffect) {
+            updateRevenge();
+        }
     }
 
     private static void updateRevenge() {

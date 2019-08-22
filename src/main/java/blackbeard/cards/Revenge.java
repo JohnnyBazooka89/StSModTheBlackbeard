@@ -44,7 +44,7 @@ public class Revenge extends AbstractBlackbeardCard {
         super.applyPowers();
     }
 
-    /* Refreshing logic is in UpdateRevengePatch. */
+    /* Refreshing logic is in UpdateRevengePatches. */
 
     public void setBaseDamageAndUpdateDescription() {
         /*For example, when max HP = 75, then it deals 0% at 75HP, 50% at 38HP, and 100% at 1HP*/
