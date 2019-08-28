@@ -76,13 +76,7 @@ public abstract class AbstractWeaponOrb extends AbstractOrb {
     protected void renderText(SpriteBatch sb) {
         FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, Integer.toString(this.attack), this.cX + NUM_X_OFFSET - 44.0F * Settings.scale,
                 this.cY + this.bobEffect.y / 2.0F + NUM_Y_OFFSET - 4.0F * Settings.scale, this.c, this.fontScale);
-        String durability;
-        if (AbstractDungeon.player.hasRelic(KarateGi.ID)) {
-            durability = "inf";
-        } else {
-            durability = Integer.toString(this.durability);
-        }
-        FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, durability, this.cX + NUM_X_OFFSET + 8.0F * Settings.scale,
+        FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, getDurabilityToDisplay(), this.cX + NUM_X_OFFSET + 8.0F * Settings.scale,
                 this.cY + this.bobEffect.y / 2.0F + NUM_Y_OFFSET - 4.0F * Settings.scale, new Color(0.2F, 1.0F, 1.0F, this.c.a), this.fontScale);
     }
 
@@ -107,9 +101,24 @@ public abstract class AbstractWeaponOrb extends AbstractOrb {
         return durability;
     }
 
+    public int getDurabilityForCombat() {
+        if (AbstractDungeon.player.hasRelic(KarateGi.ID)) {
+            return Integer.MAX_VALUE;
+        }
+        return durability;
+    }
+
+    public String getDurabilityToDisplay() {
+        int durabilityForCombat = getDurabilityForCombat();
+        if (durabilityForCombat == Integer.MAX_VALUE) {
+            return "inf";
+        }
+        return Integer.toString(durabilityForCombat);
+    }
+
     public int getDamageToDeal() {
         int additionalAttack = 0;
-        if (AbstractDungeon.player.hasRelic(Spearhead.ID) && durability == 1) {
+        if (AbstractDungeon.player.hasRelic(Spearhead.ID) && getDurabilityForCombat() == 1) {
             additionalAttack += 3;
         }
         return attack + additionalAttack;

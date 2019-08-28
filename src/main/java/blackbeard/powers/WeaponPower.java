@@ -118,7 +118,7 @@ public class WeaponPower extends AbstractPower {
             Spearhead spearhead = (Spearhead) AbstractDungeon.player.getRelic(Spearhead.ID);
             boolean shouldPulse = false;
             for (AbstractWeaponOrb weaponOrb : getWeaponsToUse()) {
-                if (weaponOrb.getDurability() == 1) {
+                if (weaponOrb.getDurabilityForCombat() == 1) {
                     shouldPulse = true;
                 }
             }

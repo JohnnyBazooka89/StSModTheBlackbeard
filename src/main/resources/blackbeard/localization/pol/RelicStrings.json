@@ -87,7 +87,7 @@
     "NAME": "Grot",
     "FLAVOR": "Wytrzymałość twojej Broni kończy się... tak jak życie twojego przeciwnika.",
     "DESCRIPTIONS": [
-      "Jeżeli #yBroń ma #b1 pkt. Wytrzymałości, to zadaje o #b3 pkt. obrażeń więcej."
+      "Gdy #yBroń ma #b1 pkt. Wytrzymałości, to zadaje o #b3 pkt. obrażeń więcej."
     ]
   },
   "blackbeard:CrossedSwords": {

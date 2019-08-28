@@ -334,7 +334,7 @@
   },
   "blackbeard:DoubleBottom": {
     "NAME": "Double Bottom",
-    "DESCRIPTION": "Gain !B! Block. NL Next turn gain !B! Block."
+    "DESCRIPTION": "Gain !B! Block. NL Next turn, gain !B! Block."
   },
   "blackbeard:Lifeboat": {
     "NAME": "Lifeboat",

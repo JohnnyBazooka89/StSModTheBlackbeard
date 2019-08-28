@@ -87,7 +87,7 @@
     "NAME": "Spearhead",
     "FLAVOR": "The durability of your Weapon ends... and so does the life of your enemy.",
     "DESCRIPTIONS": [
-      "If a #yWeapon has #b1 Durability, it deals #b3 more damage."
+      "When a #yWeapon has #b1 Durability, it deals #b3 more damage."
     ]
   },
   "blackbeard:CrossedSwords": {
