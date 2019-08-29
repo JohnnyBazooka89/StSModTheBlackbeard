@@ -342,7 +342,7 @@
   },
   "blackbeard:Provisioning": {
     "NAME": "Provisioning",
-    "DESCRIPTION": "Obtain a random potion. NL Exhaust."
+    "DESCRIPTION": "Obtain a random potion. NL Next turn, obtain a random potion. NL Exhaust."
   },
   "blackbeard:TerrorOfTheSeas": {
     "NAME": "Terror of the Seas",

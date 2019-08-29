@@ -149,5 +149,14 @@
     "DESCRIPTIONS": [
       "For every #b3 stacks, creature loses HP equal to #b40% of its missing HP."
     ]
+  },
+  "blackbeard:ProvisioningPower": {
+    "NAME": "Provisioning",
+    "DESCRIPTIONS": [
+      "Next turn, obtain #b",
+      " random potion",
+      " random potions",
+      "."
+    ]
   }
 }

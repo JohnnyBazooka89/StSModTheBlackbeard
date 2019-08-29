@@ -149,5 +149,14 @@
     "DESCRIPTIONS": [
       "Każde #b3 pkt. #yZnaku #yżniwiarza powodują, że są one usunięte, a przeciwnik traci PŻ równe #b40% jego brakujących PŻ."
     ]
+  },
+  "blackbeard:ProvisioningPower": {
+    "NAME": "Zaopatrzenie",
+    "DESCRIPTIONS": [
+      "Otrzymaj #b",
+      " losową miksturę",
+      " losowe/losowych mikstury/mikstur",
+      " w następnej turze."
+    ]
   }
 }

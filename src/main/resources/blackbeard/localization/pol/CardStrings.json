@@ -342,7 +342,7 @@
   },
   "blackbeard:Provisioning": {
     "NAME": "Zaopatrzenie",
-    "DESCRIPTION": "Otrzymaj losową miksturę. NL Wykluczenie."
+    "DESCRIPTION": "Otrzymaj losową miksturę. NL Otrzymaj losową miksturę w następnej turze. NL Wykluczenie."
   },
   "blackbeard:TerrorOfTheSeas": {
     "NAME": "Postrach mórz",

@@ -342,7 +342,7 @@
   },
   "blackbeard:Provisioning": {
     "NAME": "Продовольствие",
-    "DESCRIPTION": "Даёт случ. зелье. NL Сжигается."
+    "DESCRIPTION": "Даёт случ. зелье. NL Даёт случ. зелье в начале след. NL Сжигается."
   },
   "blackbeard:TerrorOfTheSeas": {
     "NAME": "Ужас морей",
