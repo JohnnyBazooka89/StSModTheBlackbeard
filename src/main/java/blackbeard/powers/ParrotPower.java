@@ -99,11 +99,11 @@ public class ParrotPower extends AbstractPower {
             attachment.setRegion(region);
             attachment.setWidth(tex.getWidth());
             attachment.setHeight(tex.getHeight());
-            attachment.setX(15 * Settings.scale);
-            attachment.setY(70 * Settings.scale);
+            attachment.setX(5 * Settings.scale);
+            attachment.setY(-10 * Settings.scale);
             attachment.setScaleX(1 * Settings.scale);
             attachment.setScaleY(1 * Settings.scale);
-            attachment.setRotation(90.0f);
+            attachment.setRotation(0.0f);
             attachment.updateOffset();
 
             Skin skin = skeleton.getData().getDefaultSkin();
