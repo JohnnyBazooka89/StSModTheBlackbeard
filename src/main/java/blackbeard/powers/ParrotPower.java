@@ -3,10 +3,10 @@ package blackbeard.powers;
 import basemod.ReflectionHacks;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.enums.PlayerClassEnum;
+import blackbeard.spineUtils.RegionAttachmentRenderedWithNoPremultipliedAlpha;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.utils.Array;
 import com.esotericsoftware.spine.Skeleton;
 import com.esotericsoftware.spine.Skin;
 import com.esotericsoftware.spine.Slot;
@@ -33,6 +33,11 @@ public class ParrotPower extends AbstractPower {
     private static final Texture power48Image = ImageMaster.loadImage(TheBlackbeardMod.getPower48ImagePath(POWER_ID));
 
     private static final String BLACKBEARD_PARROT_PATH = "blackbeard/img/char/blackbeard/Parrot.png";
+
+    private static Texture tex = ImageMaster.loadImage(BLACKBEARD_PARROT_PATH);
+
+    private static String ATTACH_NAME = "Parrot";
+    private static String ATTACH_CLONE_NAME = "ParrotClone";
 
     public CardQueueItem lastCardQueueItem = null;
 
@@ -85,46 +90,54 @@ public class ParrotPower extends AbstractPower {
     public void onInitialApplication() {
         if (AbstractDungeon.player.chosenClass == PlayerClassEnum.BLACKBEARD_CLASS) {
             Skeleton skeleton = (Skeleton) ReflectionHacks.getPrivate(AbstractDungeon.player, AbstractCreature.class, "skeleton");
-            String attachName = "Parrot";
-            String attachCloneName = "ParrotClone";
-            int origSlotIndex = skeleton.findSlotIndex(attachName);
 
-            // Create a new slot for the attachment
-            Slot origSlot = skeleton.findSlot(attachName);
-            Slot slotClone = new Slot(new SlotData(origSlot.getData().getIndex(), attachCloneName, origSlot.getBone().getData()), origSlot.getBone());
-            slotClone.getData().setBlendMode(origSlot.getData().getBlendMode());
-
-            skeleton.getSlots().insert(origSlotIndex, slotClone);
-
-            // Add new slot to draw order
-            Array<Slot> drawOrder = skeleton.getDrawOrder();
-            drawOrder.add(slotClone);
-            skeleton.setDrawOrder(drawOrder);
-
-            Texture tex = ImageMaster.loadImage(BLACKBEARD_PARROT_PATH);
-            tex.setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
+            int origSlotIndex = skeleton.findSlotIndex(ATTACH_NAME);
+            createANewSlotForTheAttachmentIfItsNotAlreadyCreated(skeleton, origSlotIndex);
 
             TextureRegion region = new TextureRegion(tex);
-            RegionAttachment attachment = new RegionAttachment("ParrotClone");
+            RegionAttachment attachment = new RegionAttachmentRenderedWithNoPremultipliedAlpha("ParrotClone");
             attachment.setRegion(region);
             attachment.setWidth(tex.getWidth());
             attachment.setHeight(tex.getHeight());
-            attachment.setX(0 * Settings.scale);
-            attachment.setY(0 * Settings.scale);
+            attachment.setX(15 * Settings.scale);
+            attachment.setY(70 * Settings.scale);
             attachment.setScaleX(1 * Settings.scale);
             attachment.setScaleY(1 * Settings.scale);
-            attachment.setRotation(0.0f);
+            attachment.setRotation(90.0f);
             attachment.updateOffset();
 
             Skin skin = skeleton.getData().getDefaultSkin();
             skin.addAttachment(origSlotIndex, attachment.getName(), attachment);
 
-            skeleton.setAttachment(attachCloneName, attachment.getName());
+            skeleton.setAttachment(ATTACH_CLONE_NAME, attachment.getName());
         }
+    }
+
+    private void createANewSlotForTheAttachmentIfItsNotAlreadyCreated(Skeleton skeleton, int origSlotIndex) {
+
+        if (skeleton.findSlot(ATTACH_CLONE_NAME) != null) {
+            return;
+        }
+
+        Slot origSlot = skeleton.findSlot(ATTACH_NAME);
+        Slot slotClone = new Slot(new SlotData(origSlot.getData().getIndex(), ATTACH_CLONE_NAME, origSlot.getBone().getData()), origSlot.getBone());
+        slotClone.getData().setBlendMode(origSlot.getData().getBlendMode());
+        skeleton.getSlots().insert(origSlotIndex, slotClone);
+        skeleton.getDrawOrder().insert(skeleton.findSlotIndex(ATTACH_NAME), slotClone);
+
     }
 
     @Override
     public void onRemove() {
+        removeParrotModelFromCharacter();
+    }
 
+    public static void removeParrotModelFromCharacter() {
+        if (AbstractDungeon.player.chosenClass == PlayerClassEnum.BLACKBEARD_CLASS) {
+            Skeleton skeleton = (Skeleton) ReflectionHacks.getPrivate(AbstractDungeon.player, AbstractCreature.class, "skeleton");
+            if (skeleton.findSlot(ATTACH_CLONE_NAME) != null) {
+                skeleton.setAttachment(ATTACH_CLONE_NAME, null);
+            }
+        }
     }
 }
