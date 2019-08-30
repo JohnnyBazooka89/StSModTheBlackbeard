@@ -1,6 +1,7 @@
 package blackbeard.cards;
 
 import blackbeard.TheBlackbeardMod;
+import blackbeard.actions.ShootAnythingAction;
 import blackbeard.enums.CardColorEnum;
 import blackbeard.enums.CardTagsEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -40,6 +41,7 @@ public class FinalBarrage extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        AbstractDungeon.actionManager.addToBottom(new ShootAnythingAction(m, cannonballTexture));
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
     }
 

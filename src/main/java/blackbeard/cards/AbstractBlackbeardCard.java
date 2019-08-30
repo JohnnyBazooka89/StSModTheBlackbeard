@@ -1,6 +1,9 @@
 package blackbeard.cards;
 
 import basemod.abstracts.CustomCard;
+import blackbeard.TheBlackbeardMod;
+import blackbeard.utils.TextureLoader;
+import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.core.Settings;
 
 import java.util.Arrays;
@@ -14,6 +17,11 @@ public abstract class AbstractBlackbeardCard extends CustomCard {
 
     private float smallerFontSize = 17.0f;
     private float defaultFontSize = -1.0f;
+
+    public static Texture cannonballTexture = TextureLoader.getTexture(TheBlackbeardMod.getVfxImagePath("Cannonball"));
+    public static Texture goldenCannonballTexture = TextureLoader.getTexture(TheBlackbeardMod.getVfxImagePath("GoldenCannonball"));
+    public static Texture humongousCannonballTexture = TextureLoader.getTexture(TheBlackbeardMod.getVfxImagePath("HumongousCannonball"));
+
 
     public AbstractBlackbeardCard(String id, String name, String img, int cost, String rawDescription, CardType type, CardColor color, CardRarity rarity, CardTarget target) {
         super(id, name, img, cost, rawDescription, type, color, rarity, target);

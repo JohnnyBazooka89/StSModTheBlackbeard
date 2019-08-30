@@ -140,6 +140,10 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         return "blackbeard/img/powers/48/" + powerId.replaceFirst("blackbeard:", "").replaceFirst("Power", "") + ".png";
     }
 
+    public static String getVfxImagePath(String vfxName) {
+        return "blackbeard/img/vfx/" + vfxName + ".png";
+    }
+
     public static String getSoundFilePath(String soundName) {
         return "blackbeard/sounds/" + soundName + ".wav";
     }
