@@ -1767,8 +1767,8 @@
       "Parrot": {
         "Parrot": {
           "name": "Parrot",
-          "width": 100,
-          "height": 133,
+          "width": 1,
+          "height": 1,
           "x": 17.28,
           "y": 73.84,
           "rotation": 88.94

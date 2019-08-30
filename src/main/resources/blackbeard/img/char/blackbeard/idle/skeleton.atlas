@@ -6,154 +6,154 @@ filter: Linear,Linear
 repeat: none
 images/shadow
   rotate: false
-  xy: 103, 102
+  xy: 1, 184
   size: 303, 31
   orig: 312, 31
   offset: 0, 0
   index: -1
 images/body
   rotate: false
-  xy: 103, 1
+  xy: 1, 83
   size: 102, 99
   orig: 102, 101
   offset: 0, 1
   index: -1
 images/legs
   rotate: false
-  xy: 1, 136
+  xy: 1, 1
   size: 128, 80
   orig: 128, 80
   offset: 0, 0
   index: -1
 images/belt
   rotate: false
-  xy: 334, 179
+  xy: 257, 144
   size: 71, 24
   orig: 71, 24
   offset: 0, 0
   index: -1
 images/armleft
   rotate: false
-  xy: 389, 135
+  xy: 276, 217
   size: 27, 29
   orig: 28, 29
   offset: 1, 0
   index: -1
 images/hair
   rotate: false
-  xy: 359, 205
+  xy: 306, 170
   size: 28, 48
   orig: 28, 48
   offset: 0, 0
   index: -1
 images/helmet
   rotate: false
-  xy: 310, 135
+  xy: 105, 137
   size: 47, 42
   orig: 47, 42
   offset: 0, 0
   index: -1
 images/hat
   rotate: false
-  xy: 207, 135
+  xy: 105, 83
   size: 101, 52
   orig: 101, 52
   offset: 0, 0
   index: -1
 images/eye
   rotate: false
-  xy: 486, 236
+  xy: 330, 149
   size: 18, 16
   orig: 18, 16
   offset: 0, 0
   index: -1
 images/llp
   rotate: false
-  xy: 459, 236
+  xy: 154, 167
   size: 25, 15
   orig: 26, 15
   offset: 1, 0
   index: -1
 images/armright
   rotate: false
-  xy: 428, 205
+  xy: 193, 148
   size: 29, 34
   orig: 29, 34
   offset: 0, 0
   index: -1
 images/pauldronleft
   rotate: false
-  xy: 459, 205
+  xy: 241, 217
   size: 33, 29
   orig: 33, 29
   offset: 0, 0
   index: -1
 images/lrp
   rotate: false
-  xy: 389, 235
+  xy: 330, 131
   size: 26, 16
   orig: 26, 16
   offset: 0, 0
   index: -1
 images/pauldronright
   rotate: false
-  xy: 389, 205
+  xy: 154, 137
   size: 37, 28
   orig: 37, 28
   offset: 0, 0
   index: -1
 Parrot
   rotate: false
-  xy: 1, 1
-  size: 100, 133
-  orig: 100, 133
+  xy: 254, 148
+  size: 1, 1
+  orig: 1, 1
   offset: 0, 0
   index: -1
 images/sword
   rotate: false
-  xy: 1, 218
+  xy: 1, 217
   size: 238, 28
   orig: 238, 28
   offset: 0, 0
   index: -1
 images/handright
   rotate: false
-  xy: 286, 189
+  xy: 302, 83
   size: 46, 46
   orig: 46, 46
   offset: 0, 0
   index: -1
 images/handleft
   rotate: false
-  xy: 359, 135
+  xy: 224, 148
   size: 28, 29
   orig: 28, 29
   offset: 0, 0
   index: -1
 rightleg
   rotate: false
-  xy: 506, 236
+  xy: 254, 151
   size: 1, 1
   orig: 1, 1
   offset: 0, 0
   index: -1
 leftlg
   rotate: false
-  xy: 509, 236
+  xy: 254, 154
   size: 1, 1
   orig: 1, 1
   offset: 0, 0
   index: -1
 images/bootleft
   rotate: false
-  xy: 241, 189
+  xy: 257, 83
   size: 43, 59
   orig: 43, 59
   offset: 0, 0
   index: -1
 images/bootright
   rotate: false
-  xy: 131, 135
+  xy: 208, 83
   size: 47, 63
   orig: 47, 63
   offset: 0, 0
