@@ -1,6 +1,7 @@
 package blackbeard.cards;
 
 import blackbeard.TheBlackbeardMod;
+import blackbeard.actions.ShootAnythingAction;
 import blackbeard.enums.CardColorEnum;
 import blackbeard.enums.CardTagsEnum;
 import blackbeard.interfaces.IGoldenCard;
@@ -39,6 +40,7 @@ public class GoldenCannonball extends AbstractBlackbeardCard implements IGoldenC
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        AbstractDungeon.actionManager.addToBottom(new ShootAnythingAction(m, goldenCannonTex));
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
     }
 
