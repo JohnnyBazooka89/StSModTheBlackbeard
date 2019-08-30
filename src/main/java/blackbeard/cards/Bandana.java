@@ -16,8 +16,8 @@ public class Bandana extends AbstractBlackbeardCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
-    private static final int LOOTING_CAP_TO_GAIN = 30;
-    private static final int UPGRADE_PLUS_LOOTING_CAP_TO_GAIN = 10;
+    private static final int LOOTING_CAP_TO_GAIN = 25;
+    private static final int UPGRADE_PLUS_LOOTING_CAP_TO_GAIN = 5;
 
     public Bandana() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.POWER,
