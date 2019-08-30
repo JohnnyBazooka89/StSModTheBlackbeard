@@ -1,9 +1,11 @@
 package blackbeard.patches;
 
+import basemod.ReflectionHacks;
 import blackbeard.spineUtils.RegionAttachmentRenderedWithNoPremultipliedAlpha;
 import com.badlogic.gdx.graphics.g2d.PolygonSpriteBatch;
 import com.esotericsoftware.spine.Skeleton;
 import com.esotericsoftware.spine.SkeletonMeshRenderer;
+import com.esotericsoftware.spine.SkeletonRenderer;
 import com.esotericsoftware.spine.attachments.Attachment;
 import com.esotericsoftware.spine.attachments.RegionAttachment;
 import com.evacipated.cardcrawl.modthespire.lib.*;
@@ -16,6 +18,7 @@ public class SkeletonMeshRendererPatch {
 
     @SpireInsertPatch(locator = Locator.class, localvars = {"premultipliedAlpha", "attachment"})
     public static void Insert(SkeletonMeshRenderer skeletonMeshRenderer, PolygonSpriteBatch batch, Skeleton skeleton, @ByRef boolean[] premultipliedAlpha, Attachment attachment) {
+        premultipliedAlpha[0] = (boolean) ReflectionHacks.getPrivate(skeletonMeshRenderer, SkeletonRenderer.class, "premultipliedAlpha");
         if (attachment instanceof RegionAttachmentRenderedWithNoPremultipliedAlpha) {
             premultipliedAlpha[0] = false;
         }
