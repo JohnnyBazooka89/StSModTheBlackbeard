@@ -32,7 +32,7 @@ public class ParrotPower extends AbstractPower {
     private static final Texture power128Image = ImageMaster.loadImage(TheBlackbeardMod.getPower128ImagePath(POWER_ID));
     private static final Texture power48Image = ImageMaster.loadImage(TheBlackbeardMod.getPower48ImagePath(POWER_ID));
 
-    private static final String BLACKBEARD_PARROT_PATH = "blackbeard/char/blackbeard/idle/Parrot.png";
+    private static final String BLACKBEARD_PARROT_PATH = "blackbeard/img/char/blackbeard/Parrot.png";
 
     public CardQueueItem lastCardQueueItem = null;
 
@@ -93,6 +93,7 @@ public class ParrotPower extends AbstractPower {
             Slot origSlot = skeleton.findSlot(attachName);
             Slot slotClone = new Slot(new SlotData(origSlot.getData().getIndex(), attachCloneName, origSlot.getBone().getData()), origSlot.getBone());
             slotClone.getData().setBlendMode(origSlot.getData().getBlendMode());
+
             skeleton.getSlots().insert(origSlotIndex, slotClone);
 
             // Add new slot to draw order
@@ -102,6 +103,7 @@ public class ParrotPower extends AbstractPower {
 
             Texture tex = ImageMaster.loadImage(BLACKBEARD_PARROT_PATH);
             tex.setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
+
             TextureRegion region = new TextureRegion(tex);
             RegionAttachment attachment = new RegionAttachment("ParrotClone");
             attachment.setRegion(region);

@@ -380,8 +380,7 @@
     },
     {
       "name": "Parrot",
-      "bone": "parrot",
-      "attachment": "Parrot"
+      "bone": "parrot"
     },
     {
       "name": "images/sword",
@@ -1762,16 +1761,6 @@
             5.39
           ],
           "type": "mesh"
-        }
-      },
-      "Parrot": {
-        "Parrot": {
-          "name": "Parrot",
-          "width": 1,
-          "height": 1,
-          "x": 17.28,
-          "y": 73.84,
-          "rotation": 88.94
         }
       },
       "images/hat": {

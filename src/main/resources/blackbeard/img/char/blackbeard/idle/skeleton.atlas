@@ -102,13 +102,6 @@ images/pauldronright
   orig: 37, 28
   offset: 0, 0
   index: -1
-Parrot
-  rotate: false
-  xy: 254, 148
-  size: 1, 1
-  orig: 1, 1
-  offset: 0, 0
-  index: -1
 images/sword
   rotate: false
   xy: 1, 217
@@ -132,14 +125,14 @@ images/handleft
   index: -1
 rightleg
   rotate: false
-  xy: 254, 151
+  xy: 254, 148
   size: 1, 1
   orig: 1, 1
   offset: 0, 0
   index: -1
 leftlg
   rotate: false
-  xy: 254, 154
+  xy: 254, 151
   size: 1, 1
   orig: 1, 1
   offset: 0, 0
