@@ -86,7 +86,7 @@
   },
   "blackbeard:RemoveScurvy": {
     "NAME": "Убрать цингу",
-    "DESCRIPTION": "Восполняет 10% от Макс. ОЗ. NL Снимает с вас все отриц. эффекты. NL Сжигается."
+    "DESCRIPTION": "Восполняет !M! ОЗ. NL Снимает с вас все отриц. эффекты. NL Сжигается."
   },
   "blackbeard:InfiniteBarrage": {
     "NAME": "Уйма ядер",

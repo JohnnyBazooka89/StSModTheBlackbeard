@@ -86,7 +86,7 @@
   },
   "blackbeard:RemoveScurvy": {
     "NAME": "Remove Scurvy",
-    "DESCRIPTION": "Heal 10% of your maximum HP. NL Remove all of your Debuffs. NL Exhaust."
+    "DESCRIPTION": "Heal !M! HP. NL Remove all of your Debuffs. NL Exhaust."
   },
   "blackbeard:InfiniteBarrage": {
     "NAME": "Infinite Barrage",
