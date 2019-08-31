@@ -46,6 +46,6 @@ public class ToastPotion extends CustomPotion {
 
     @Override
     public int getPotency(int ascensionLevel) {
-        return 5;
+        return 4;
     }
 }
