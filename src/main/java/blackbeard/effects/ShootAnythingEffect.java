@@ -1,4 +1,4 @@
-package blackbeard.utils;
+package blackbeard.effects;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
@@ -128,11 +128,10 @@ public class ShootAnythingEffect extends AbstractGameEffect {
                 rotation += radialvelocity;
 
                 if (hit > 1) {
+                    opacity -= dispersalspeed / 300F;
                     if (opacity <= 0F) {
                         opacity = 0F;
                         hit = 3;
-                    } else {
-                        opacity -= dispersalspeed / 300F;
                     }
                 }
             }

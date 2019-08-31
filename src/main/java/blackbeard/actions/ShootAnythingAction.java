@@ -1,6 +1,6 @@
 package blackbeard.actions;
 
-import blackbeard.utils.ShootAnythingEffect;
+import blackbeard.effects.ShootAnythingEffect;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
