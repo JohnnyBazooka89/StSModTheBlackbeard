@@ -45,7 +45,9 @@ public class TheBlackbeard extends CustomPlayer {
     private static final String BLACKBEARD_CORPSE = "blackbeard/img/char/blackbeard/corpse.png";
 
     public static final String CAPTAIN_ABE_ENCOUNTER_STRINGS_ID = "blackbeard:CaptainAbeEncounter";
+    public static final String MAXIMUM_WEAPONS_REACHED_STRINGS_ID = "blackbeard:MaximumWeaponsReached";
     public static final CharacterStrings captainAbeEncounterStrings = CardCrawlGame.languagePack.getCharacterString(CAPTAIN_ABE_ENCOUNTER_STRINGS_ID);
+    public static final CharacterStrings maximumWeaponsReachedStrings = CardCrawlGame.languagePack.getCharacterString(MAXIMUM_WEAPONS_REACHED_STRINGS_ID);
 
     public TheBlackbeard(String name) {
         super(name, PlayerClassEnum.BLACKBEARD_CLASS, null, null, (String) null, null);

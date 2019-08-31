@@ -16,5 +16,10 @@
       "The Spire's treasure is mine, matey!",
       "There can be only one Captain in the Spire."
     ]
+  },
+  "blackbeard:MaximumWeaponsReached": {
+    "TEXT": [
+      "I can't hold more than #r10 Weapons."
+    ]
   }
 }

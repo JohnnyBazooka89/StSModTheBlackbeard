@@ -8,5 +8,10 @@
       "NL Szykujesz swoją Broń...",
       "Idąc wzdłuż spowitej mrokiem ulicy, dostrzegasz grupę zakapturzonych postaci, odprawiających jakiś mroczny rytuał. Gdy się zbliżasz, jednocześnie zwracają się w twoją stronę. Najwyższy z nich obnaża długie kły i wyciąga w twoją stronę chudą, bladą rękę. NL ~\"Dołącz~ ~do~ ~nas,~ ~o~ ~wielki~ ~kapitanie~ ~i~ ~poczuj~ ~żar~ ~Iglicy.\"~"
     ]
+  },
+  "blackbeard:MaximumWeaponsReached": {
+    "TEXT": [
+      "Nie mogę trzymać więcej niż #r10 Broni!"
+    ]
   }
 }
