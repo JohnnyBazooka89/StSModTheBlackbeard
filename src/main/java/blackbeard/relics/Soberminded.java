@@ -21,6 +21,25 @@ public class Soberminded extends CustomRelic {
 
     @Override
     public void atBattleStart() {
+        this.counter = -1;
+        loseResistance();
+    }
+
+    @Override
+    public void onVictory() {
+        this.counter = -1;
+    }
+
+    @Override
+    public void atTurnStart() {
+        this.counter++;
+        if (this.counter == 4) {
+            this.counter = 0;
+            loseResistance();
+        }
+    }
+
+    private void loseResistance() {
         this.flash();
         AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ResistancePower(AbstractDungeon.player, -1), -1));
