@@ -196,20 +196,27 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         logger.info("Begin editing relics");
 
         //Add relics
+        //Starter
         BaseMod.addRelicToCustomPool(new LoadTheCannons(), CardColorEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new BloodOrange(), CardColorEnum.BLACKBEARD_BLACK);
+        //Common
+        BaseMod.addRelicToCustomPool(new CannonballsOfSteel(), CardColorEnum.BLACKBEARD_BLACK);
         BaseMod.addRelicToCustomPool(new HipFlask(), CardColorEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new Spearhead(), CardColorEnum.BLACKBEARD_BLACK);
         BaseMod.addRelicToCustomPool(new TreasureChest(), CardColorEnum.BLACKBEARD_BLACK);
         BaseMod.addRelicToCustomPool(new WhitePearl(), CardColorEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new CannonballsOfSteel(), CardColorEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new GoldenRing(), CardColorEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new MagicalCauldron(), CardColorEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new Penknife(), CardColorEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new PoorMathSkills(), CardColorEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new PowderCan(), CardColorEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new Soberminded(), CardColorEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new Spearhead(), CardColorEnum.BLACKBEARD_BLACK);
+        //Uncommon
         BaseMod.addRelicToCustomPool(new CrossedSwords(), CardColorEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new GoldenRing(), CardColorEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new Penknife(), CardColorEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new PowderCan(), CardColorEnum.BLACKBEARD_BLACK);
+        //Rare
+        BaseMod.addRelicToCustomPool(new MagicalCauldron(), CardColorEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new PoorMathSkills(), CardColorEnum.BLACKBEARD_BLACK);
+        //Boss
+        BaseMod.addRelicToCustomPool(new Soberminded(), CardColorEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new LoadTheGoldenCannons(), CardColorEnum.BLACKBEARD_BLACK);
+        //Shop
+        BaseMod.addRelicToCustomPool(new BloodOrange(), CardColorEnum.BLACKBEARD_BLACK);
         BaseMod.addRelicToCustomPool(new KarateGi(), CardColorEnum.BLACKBEARD_BLACK);
 
         logger.info("Done editing relics");

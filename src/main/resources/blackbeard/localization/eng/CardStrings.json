@@ -51,8 +51,8 @@
   },
   "blackbeard:CannonBarrage": {
     "NAME": "Cannon Barrage",
-    "DESCRIPTION": "Add X Cannonballs to your hand.",
-    "UPGRADE_DESCRIPTION": "Add X+1 Cannonballs to your hand."
+    "DESCRIPTION": "Add X Cannonballs into your hand.",
+    "UPGRADE_DESCRIPTION": "Add X+1 Cannonballs into your hand."
   },
   "blackbeard:Rum": {
     "NAME": "Rum",
@@ -99,7 +99,7 @@
   },
   "blackbeard:SwordOfChaos": {
     "NAME": "Sword of Chaos",
-    "DESCRIPTION": "Equip a {A} / !M! Weapon. Whenever you attack with this Weapon, add a random card to your hand."
+    "DESCRIPTION": "Equip a {A} / !M! Weapon. Whenever you attack with this Weapon, add a random card into your hand."
   },
   "blackbeard:PirateStrength": {
     "NAME": "Pirate Strength",
@@ -136,8 +136,8 @@
   },
   "blackbeard:CaptainsCabin": {
     "NAME": "Captain's Cabin",
-    "DESCRIPTION": "Gain !B! Block. NL Add !M! Cannonball to your hand.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add !M! Cannonballs to your hand."
+    "DESCRIPTION": "Gain !B! Block. NL Add !M! Cannonball into your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add !M! Cannonballs into your hand."
   },
   "blackbeard:GoldenDefense": {
     "NAME": "Golden Defense",
@@ -243,7 +243,7 @@
     "DESCRIPTION": "Choose 1 of 3 Swords. NL Equip a {A} / !M! Weapon with an additional effect.",
     "EXTENDED_DESCRIPTION": [
       "Additional Effects",
-      "#rFire: Whenever you attack with this Weapon, deal #b3 damage to ALL enemies. NL #yWisdom: Whenever you attack with this Weapon, draw a card. NL #pChaos: Whenever you attack with this Weapon, add a random card to your hand."
+      "#rFire: Whenever you attack with this Weapon, deal #b3 damage to ALL enemies. NL #yWisdom: Whenever you attack with this Weapon, draw a card. NL #pChaos: Whenever you attack with this Weapon, add a random card into your hand."
     ]
   },
   "blackbeard:BeatUp": {
@@ -261,8 +261,8 @@
   },
   "blackbeard:ChaoticDefense": {
     "NAME": "Chaotic Defense",
-    "DESCRIPTION": "Gain !B! Block. NL Add !M! random card to your hand.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add !M! random cards to your hand."
+    "DESCRIPTION": "Gain !B! Block. NL Add !M! random card into your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add !M! random cards into your hand."
   },
   "blackbeard:SmithingHammer": {
     "NAME": "Smithing Hammer",
@@ -315,8 +315,8 @@
   },
   "blackbeard:CannonballSupply": {
     "NAME": "Cannonball Supply",
-    "DESCRIPTION": "Add 3 Cannonballs to your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Add 3 Cannonballs to your hand."
+    "DESCRIPTION": "Add 3 Cannonballs into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add 3 Cannonballs into your hand."
   },
   "blackbeard:BountyHunter": {
     "NAME": "Bounty Hunter",
@@ -358,8 +358,8 @@
   },
   "blackbeard:DoubleCannonball": {
     "NAME": "Double Cannonball",
-    "DESCRIPTION": "Deal !D! damage. NL Add a Cannonball to your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add an upgraded Cannonball to your hand. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Add a Cannonball into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add an upgraded Cannonball into your hand. NL Exhaust."
   },
   "blackbeard:SwordOfFire": {
     "NAME": "Sword of Fire",
@@ -367,8 +367,8 @@
   },
   "blackbeard:CloakAndCannonball": {
     "NAME": "Cloak and Cannonball",
-    "DESCRIPTION": "Gain !B! Block. NL Add a Cannonball to your hand.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add an upgraded Cannonball to your hand."
+    "DESCRIPTION": "Gain !B! Block. NL Add a Cannonball into your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add an upgraded Cannonball into your hand."
   },
   "blackbeard:UndeadForm": {
     "NAME": "Undead Form",

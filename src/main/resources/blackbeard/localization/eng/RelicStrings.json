@@ -3,7 +3,8 @@
     "NAME": "Load the Cannons",
     "FLAVOR": "Ready... Aim... Fire!!!",
     "DESCRIPTIONS": [
-      "At the start of each combat, and then every #b4 turns, add a #yCannonball to your hand."
+      "At the start of each combat, and then every #b4 turns, add a #yCannonball into your hand.",
+      "At the start of each combat, and then every #b4 turns, add a #yCannonball NL into your hand."
     ]
   },
   "blackbeard:HipFlask": {
@@ -102,6 +103,13 @@
     "FLAVOR": "When you wear it, you instantly learn new styles of combat.",
     "DESCRIPTIONS": [
       "Your #yWeapons have infinite Durability. After you attack with a #yWeapon, it goes to the last position."
+    ]
+  },
+  "blackbeard:LoadTheGoldenCannons": {
+    "NAME": "Load the Golden Cannons",
+    "FLAVOR": "Is it even worth to shoot all these golden cannonballs?!?",
+    "DESCRIPTIONS": [
+      "Replaces #yLoad #ythe #yCannons. At the start of each combat, and then every #b4 turns, add a #yblackbeard:Golden Cannonball into your hand."
     ]
   }
 }

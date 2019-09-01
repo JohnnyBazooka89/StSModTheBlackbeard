@@ -1,8 +1,9 @@
 {
   "blackbeard:LoadTheCannons": {
-    "NAME": "Załadowanie działa",
+    "NAME": "Załadowanie dział",
     "FLAVOR": "Gotów... Cel... Pal!!!",
     "DESCRIPTIONS": [
+      "Na początku każdej walki, a następnie co #b4 tury, dodaj #yKulę do ręki.",
       "Na początku każdej walki, a następnie co #b4 tury, dodaj #yKulę do ręki."
     ]
   },
@@ -102,6 +103,13 @@
     "FLAVOR": "Gdy tylko je założysz, natychmiast poznajesz nowe style walki.",
     "DESCRIPTIONS": [
       "Twoje #yBronie mają nieskończoną wytrzymałość. Kiedykolwiek zaatakujesz #yBronią, ta #yBroń idzie na ostatnią pozycję."
+    ]
+  },
+  "blackbeard:LoadTheGoldenCannons": {
+    "NAME": "Załadowanie złotych dział",
+    "FLAVOR": "Czy naprawdę warto strzelać tymi złotymi kulami?!?",
+    "DESCRIPTIONS": [
+      "Zastępuje #yZaładowanie #ydział. Na początku każdej walki, a następnie co #b4 tury, dodaj #yblackbeard:Złotą kulę do ręki."
     ]
   }
 }

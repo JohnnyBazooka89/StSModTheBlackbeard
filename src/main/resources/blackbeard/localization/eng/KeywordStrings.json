@@ -39,5 +39,12 @@
       "rusty thorns"
     ],
     "DESCRIPTION": "When attacked, deals damage back and reduces Rusty Thorns by #b1."
+  },
+  "blackbeard:GoldenCannonball": {
+    "PROPER_NAME": "Golden Cannonball",
+    "NAMES": [
+      "golden cannonball"
+    ],
+    "DESCRIPTION": "Golden Cannonballs are #b0 cost attacks that deal damage equal to 2% of Gold gained this run and exhaust."
   }
 }
