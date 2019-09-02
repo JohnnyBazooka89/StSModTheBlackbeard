@@ -17,7 +17,7 @@ public class GhostInTheRum extends AbstractBlackbeardCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
-    private static final int RESISTANCE_DEBUFF_VALUE = 3;
+    private static final int RESISTANCE_DEBUFF_VALUE = 2;
     private static final int UPGRADED_MINUS_RESISTANCE_DEBUFF_VALUE = 1;
 
     public GhostInTheRum() {
