@@ -47,7 +47,7 @@
   },
   "blackbeard:Cannonball": {
     "NAME": "Cannonball",
-    "DESCRIPTION": "Deal !D! damage. Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust."
   },
   "blackbeard:CannonBarrage": {
     "NAME": "Cannon Barrage",
@@ -107,12 +107,12 @@
   },
   "blackbeard:HumongousCannonball": {
     "NAME": "Humongous Cannonball",
-    "DESCRIPTION": "Deal !D! damage. Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust."
   },
   "blackbeard:GoldenCannonball": {
     "NAME": "Golden Cannonball",
-    "DESCRIPTION": "Deal damage equal to NL 2% of Gold gained NL this run. Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal damage equal to NL !M! + 2% of Gold gained NL this run. Exhaust.",
+    "DESCRIPTION": "Deal damage equal to NL 2% of Gold gained this run. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal damage equal to NL !M! + 2% of Gold gained this run. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deals !D! damage.)",
       " NL You have gained ",
@@ -121,7 +121,7 @@
   },
   "blackbeard:FinalBarrage": {
     "NAME": "Final Barrage",
-    "DESCRIPTION": "Deal damage equal to !M! times the amount of Cannonballs played this combat. (Every type of Cannonball counts.)",
+    "DESCRIPTION": "Deal damage equal to !M! times the amount of Cannonballs played this combat. NL (Every type of Cannonball counts.)",
     "EXTENDED_DESCRIPTION": [
       " NL (Deals !D! damage.)"
     ]
@@ -132,7 +132,7 @@
   },
   "blackbeard:JollyRoger": {
     "NAME": "Jolly Roger",
-    "DESCRIPTION": "Apply !M! Weak to ALL enemies. Exhaust."
+    "DESCRIPTION": "Apply !M! Weak to ALL enemies. NL Exhaust."
   },
   "blackbeard:CaptainsCabin": {
     "NAME": "Captain's Cabin",
@@ -266,7 +266,7 @@
   },
   "blackbeard:SmithingHammer": {
     "NAME": "Smithing Hammer",
-    "DESCRIPTION": "Equip a {A} / !M! Weapon. After you attack with this Weapon and passively at the start of your turn using 1 Durability, upgrade a random card in your hand for the rest of the combat. Exhaust."
+    "DESCRIPTION": "Equip a {A} / !M! Weapon. After you attack with this Weapon and passively at the start of your turn using 1 Durability, upgrade a random card in your hand for the rest of the combat. NL Exhaust."
   },
   "blackbeard:Spear": {
     "NAME": "Spear",
@@ -346,7 +346,7 @@
   },
   "blackbeard:TerrorOfTheSeas": {
     "NAME": "Terror of the Seas",
-    "DESCRIPTION": "Apply !M! Vulnerable to ALL enemies. Exhaust."
+    "DESCRIPTION": "Apply !M! Vulnerable to ALL enemies. NL Exhaust."
   },
   "blackbeard:FishingNets": {
     "NAME": "Fishing Nets",

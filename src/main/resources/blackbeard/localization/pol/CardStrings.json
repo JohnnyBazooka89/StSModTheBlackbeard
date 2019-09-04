@@ -47,7 +47,7 @@
   },
   "blackbeard:Cannonball": {
     "NAME": "Kula",
-    "DESCRIPTION": "Zadaj !D! pkt. obrażeń. Wykluczenie."
+    "DESCRIPTION": "Zadaj !D! pkt. obrażeń. NL Wykluczenie."
   },
   "blackbeard:CannonBarrage": {
     "NAME": "Kanonada",
@@ -107,12 +107,12 @@
   },
   "blackbeard:HumongousCannonball": {
     "NAME": "Ogromniasta kula",
-    "DESCRIPTION": "Zadaj !D! pkt. obrażeń. Wykluczenie."
+    "DESCRIPTION": "Zadaj !D! pkt. obrażeń. NL Wykluczenie."
   },
   "blackbeard:GoldenCannonball": {
     "NAME": "Złota kula",
-    "DESCRIPTION": "Zadaj obrażenia równe NL 2% szt. Złota zdobytych w tej wyprawie. Wykluczenie.",
-    "UPGRADE_DESCRIPTION": "Zadaj obrażenia równe NL !M! + 2% szt. Złota zdobytych w tej wyprawie. Wykluczenie.",
+    "DESCRIPTION": "Zadaj obrażenia równe NL 2% szt. Złota zdobytych w tej wyprawie. NL Wykluczenie.",
+    "UPGRADE_DESCRIPTION": "Zadaj obrażenia równe NL !M! + 2% szt. Złota zdobytych w tej wyprawie. NL Wykluczenie.",
     "EXTENDED_DESCRIPTION": [
       " NL (Zadaje !D! pkt. obrażeń.)",
       " NL Zdobyłeś ",
@@ -121,7 +121,7 @@
   },
   "blackbeard:FinalBarrage": {
     "NAME": "Ostateczny ostrzał",
-    "DESCRIPTION": "Zadaj obrażenia równe !M! razy ilość Kul zagranych w tej walce. (Każdy rodzaj Kuli się liczy.)",
+    "DESCRIPTION": "Zadaj obrażenia równe !M! razy ilość Kul zagranych w tej walce. NL (Każdy rodzaj Kuli się liczy.)",
     "EXTENDED_DESCRIPTION": [
       " NL (Zadaje !D! pkt. obrażeń.)"
     ]
@@ -266,7 +266,7 @@
   },
   "blackbeard:SmithingHammer": {
     "NAME": "Młot kuźniczy",
-    "DESCRIPTION": "Wyposaż się w Broń {A} / !M!. NL Po ataku tą bronią i pasywnie na starcie każdej tury używając 1 pkt. Wytrzymałości, ulepsz losową kartę z ręki do końca walki. Wykluczenie."
+    "DESCRIPTION": "Wyposaż się w Broń {A} / !M!. NL Po ataku tą bronią i pasywnie na starcie każdej tury używając 1 pkt. Wytrzymałości, ulepsz losową kartę z ręki do końca walki. NL Wykluczenie."
   },
   "blackbeard:Spear": {
     "NAME": "Włócznia",
