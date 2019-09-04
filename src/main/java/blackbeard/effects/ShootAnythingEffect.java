@@ -16,9 +16,10 @@ public class ShootAnythingEffect extends AbstractGameEffect {
     private static final float frictionX = 0.1F * Settings.scale;
     private static final float frictionY = 0.2F * Settings.scale;
     private static final float dispersalspeed = 4;
-    private static int flightTime;
-    public boolean finishedAction;
+
+    private int flightTime;
     private CandyInfo letsago;
+    public boolean finishedAction;
 
     public ShootAnythingEffect(AbstractMonster target, Texture img, int flight) {
         letsago = new CandyInfo(target, img);
@@ -31,6 +32,7 @@ public class ShootAnythingEffect extends AbstractGameEffect {
         sb.setColor(Color.WHITE);
     }
 
+    @Override
     public void update() {
         boolean finishedEffect = true;
 

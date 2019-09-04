@@ -30,9 +30,7 @@ public class CharacterOptionScreenPatch {
                     counter[0]++;
                 }
             }
-        }
-
-                ;
+        };
     }
 
 }

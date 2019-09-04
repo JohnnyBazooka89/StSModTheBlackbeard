@@ -27,6 +27,7 @@ public abstract class AbstractBlackbeardCard extends CustomCard {
         super(id, name, img, cost, rawDescription, type, color, rarity, target);
     }
 
+    @Override
     public float getTitleFontSize() {
         switch (Settings.language) {
             case POL:

@@ -25,9 +25,9 @@ public class EquipAction extends AbstractGameAction {
     public void update() {
         if (this.duration == Settings.ACTION_DUR_FAST) {
 
-            this.isInEquipActionWhileIncreasingMaxOrbSlots = true;
+            isInEquipActionWhileIncreasingMaxOrbSlots = true;
             AbstractDungeon.player.increaseMaxOrbSlots(1, true);
-            this.isInEquipActionWhileIncreasingMaxOrbSlots = false;
+            isInEquipActionWhileIncreasingMaxOrbSlots = false;
 
             if (AbstractDungeon.player.hasRelic(WhitePearl.ID)) {
                 weaponOrb.upgrade(1, 0);
