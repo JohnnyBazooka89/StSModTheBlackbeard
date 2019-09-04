@@ -21,7 +21,7 @@
   },
   "blackbeard:RearmingStrike": {
     "NAME": "Rearming Strike",
-    "DESCRIPTION": "Deal !D! damage. Equip a {A} / {D} Weapon."
+    "DESCRIPTION": "Deal !D! damage. NL Equip a {A} / {D} Weapon."
   },
   "blackbeard:Fencing": {
     "NAME": "Fencing",
@@ -34,7 +34,7 @@
   },
   "blackbeard:Halberd": {
     "NAME": "Halberd",
-    "DESCRIPTION": "Equip a !M! / {D} Weapon. Whenever you attack with this Weapon, apply 3 blackbeard:Bleed to a target per hit."
+    "DESCRIPTION": "Equip a !M! / {D} Weapon. NL Whenever you attack with this Weapon, apply 3 blackbeard:Bleed to a target per hit."
   },
   "blackbeard:TheDrunkenSailor": {
     "NAME": "The Drunken Sailor",
@@ -74,7 +74,7 @@
   },
   "blackbeard:PowderKeg": {
     "NAME": "Powder Keg",
-    "DESCRIPTION": "Equip a {A} / {D} Weapon. When it is destroyed, deal !M! damage to ALL enemies."
+    "DESCRIPTION": "Equip a {A} / {D} Weapon. NL When it is destroyed, deal !M! damage to ALL enemies."
   },
   "blackbeard:Scrap": {
     "NAME": "Scrap",
@@ -95,11 +95,11 @@
   },
   "blackbeard:SwordOfWisdom": {
     "NAME": "Sword of Wisdom",
-    "DESCRIPTION": "Equip a {A} / !M! Weapon. Whenever you attack with this Weapon, draw a card."
+    "DESCRIPTION": "Equip a {A} / !M! Weapon. NL Whenever you attack with this Weapon, draw a card."
   },
   "blackbeard:SwordOfChaos": {
     "NAME": "Sword of Chaos",
-    "DESCRIPTION": "Equip a {A} / !M! Weapon. Whenever you attack with this Weapon, add a random card into your hand."
+    "DESCRIPTION": "Equip a {A} / !M! Weapon. NL Whenever you attack with this Weapon, add a random card into your hand."
   },
   "blackbeard:PirateStrength": {
     "NAME": "Pirate Strength",
@@ -159,7 +159,7 @@
   },
   "blackbeard:CatONineTails": {
     "NAME": "Cat O' Nine Tails",
-    "DESCRIPTION": "Equip a !M! / {D} Weapon. After you attack with this Weapon, give it + 2 Attack."
+    "DESCRIPTION": "Equip a !M! / {D} Weapon. NL After you attack with this Weapon, give it + 2 Attack."
   },
   "blackbeard:PirateEarring": {
     "NAME": "Pirate Earring",
@@ -266,7 +266,7 @@
   },
   "blackbeard:SmithingHammer": {
     "NAME": "Smithing Hammer",
-    "DESCRIPTION": "Equip a {A} / !M! Weapon. After you attack with this Weapon and passively at the start of your turn using 1 Durability, upgrade a random card in your hand for the rest of the combat. NL Exhaust."
+    "DESCRIPTION": "Equip a {A} / !M! Weapon. NL After you attack with this Weapon and passively at the start of your turn using 1 Durability, upgrade a random card in your hand for the rest of the combat. NL Exhaust."
   },
   "blackbeard:Spear": {
     "NAME": "Spear",
@@ -320,7 +320,7 @@
   },
   "blackbeard:BountyHunter": {
     "NAME": "Bounty Hunter",
-    "DESCRIPTION": "Deal !D! damage. If this kills a non-minion enemy, gain !M! Gold. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL If this kills a non-minion enemy, gain !M! Gold. NL Exhaust."
   },
   "blackbeard:GoldenGuillotine": {
     "NAME": "Golden Guillotine",
@@ -363,7 +363,7 @@
   },
   "blackbeard:SwordOfFire": {
     "NAME": "Sword of Fire",
-    "DESCRIPTION": "Equip a {A} / !M! Weapon. Whenever you attack with this Weapon, deal 3 damage to ALL enemies."
+    "DESCRIPTION": "Equip a {A} / !M! Weapon. NL Whenever you attack with this Weapon, deal 3 damage to ALL enemies."
   },
   "blackbeard:CloakAndCannonball": {
     "NAME": "Cloak and Cannonball",
@@ -385,10 +385,10 @@
   },
   "blackbeard:VampiricScepter": {
     "NAME": "Vampiric Scepter",
-    "DESCRIPTION": "Equip a !M! / {D} Weapon. Whenever you attack with this Weapon, heal !blackbeard:M2! HP."
+    "DESCRIPTION": "Equip a !M! / {D} Weapon. NL Whenever you attack with this Weapon, heal !blackbeard:M2! HP."
   },
   "blackbeard:ReapersScythe": {
     "NAME": "Reaper's Scythe",
-    "DESCRIPTION": "Equip a !M! / {D} Weapon. Whenever you attack with this Weapon, apply 1 blackbeard:Reaper's Mark to a target per hit."
+    "DESCRIPTION": "Equip a !M! / {D} Weapon. NL Whenever you attack with this Weapon, apply 1 blackbeard:Reaper's Mark to a target per hit."
   }
 }
