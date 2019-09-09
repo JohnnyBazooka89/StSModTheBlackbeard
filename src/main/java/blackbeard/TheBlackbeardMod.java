@@ -61,12 +61,12 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     private static final String ATTACK_BLACK = "blackbeard/img/512/bg_attack_black.png";
     private static final String SKILL_BLACK = "blackbeard/img/512/bg_skill_black.png";
     private static final String POWER_BLACK = "blackbeard/img/512/bg_power_black.png";
-    private static final String ENERGY_ORB_BLACK = "blackbeard/img/512/card_red_orb.png";
+    private static final String ENERGY_ORB_BLACK = "blackbeard/img/512/card_black_orb.png";
 
     private static final String ATTACK_BLACK_PORTRAIT = "blackbeard/img/1024/bg_attack_black.png";
     private static final String SKILL_BLACK_PORTRAIT = "blackbeard/img/1024/bg_skill_black.png";
     private static final String POWER_BLACK_PORTRAIT = "blackbeard/img/1024/bg_power_black.png";
-    private static final String ENERGY_ORB_BLACK_PORTRAIT = "blackbeard/img/1024/card_red_orb.png";
+    private static final String ENERGY_ORB_BLACK_PORTRAIT = "blackbeard/img/1024/card_black_orb.png";
 
     private static final String ENERGY_ORB_IN_DESCRIPTION = "blackbeard/img/energy/energyOrbInDescription.png";
 
