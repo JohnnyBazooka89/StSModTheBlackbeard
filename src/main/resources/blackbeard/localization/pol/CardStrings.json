@@ -34,7 +34,7 @@
   },
   "blackbeard:Halberd": {
     "NAME": "Halabarda",
-    "DESCRIPTION": "Wyposaż się w Broń NL !M! / {D}. Kiedykolwiek zaatakujesz tą bronią, nałóż 3 pkt. blackbeard:Krwawienia na przeciwnika za każde [#FFF6E2]uderzenie[]."
+    "DESCRIPTION": "Wyposaż się w Broń NL !M! / {D}. Kiedykolwiek zaatakujesz tą bronią, nałóż 3 pkt. blackbeard:Krwawienia na przeciwnika za każde udеrzenie."
   },
   "blackbeard:TheDrunkenSailor": {
     "NAME": "Morskie opowieści",
@@ -51,8 +51,8 @@
   },
   "blackbeard:CannonBarrage": {
     "NAME": "Kanonada",
-    "DESCRIPTION": "Dodaj X Kul do ręki.",
-    "UPGRADE_DESCRIPTION": "Dodaj X+1 Kul do ręki."
+    "DESCRIPTION": "Dodaj X *Kul do ręki.",
+    "UPGRADE_DESCRIPTION": "Dodaj X+1 *Kul do ręki."
   },
   "blackbeard:Rum": {
     "NAME": "Rum",
@@ -90,8 +90,8 @@
   },
   "blackbeard:InfiniteBarrage": {
     "NAME": "Nieustanny ostrzał",
-    "DESCRIPTION": "Na początku każdej tury dodaj Kulę do ręki.",
-    "UPGRADE_DESCRIPTION": "Startowa. NL Na początku każdej tury dodaj Kulę do ręki."
+    "DESCRIPTION": "Na początku każdej tury, dodaj *Kulę do ręki.",
+    "UPGRADE_DESCRIPTION": "Startowa. NL Na początku każdej tury, dodaj *Kulę do ręki."
   },
   "blackbeard:SwordOfWisdom": {
     "NAME": "Miecz mądrości",
@@ -128,7 +128,7 @@
   },
   "blackbeard:BrownPants": {
     "NAME": "Brązowe spodnie",
-    "DESCRIPTION": "Zyskaj !M! pkt. [#EFC851]Pancerza[]."
+    "DESCRIPTION": "Zyskaj !M! pkt. *Pancerza."
   },
   "blackbeard:JollyRoger": {
     "NAME": "Bandera piracka",
@@ -136,8 +136,8 @@
   },
   "blackbeard:CaptainsCabin": {
     "NAME": "Kabina kapitańska",
-    "DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dodaj !M! Kulę do ręki.",
-    "UPGRADE_DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dodaj !M! Kule do ręki."
+    "DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dodaj !M! *Kulę do ręki.",
+    "UPGRADE_DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dodaj !M! *Kule do ręki."
   },
   "blackbeard:GoldenDefense": {
     "NAME": "Złota obrona",
@@ -174,7 +174,7 @@
   },
   "blackbeard:Bandana": {
     "NAME": "Bandana",
-    "DESCRIPTION": "Kiedykolwiek zaatakujesz przeciwnika, zyskaj 5 szt. Złota za każde [#FFF6E2]uderzenie[]. NL Maksymalnie !M! szt. Złota."
+    "DESCRIPTION": "Kiedykolwiek zaatakujesz przeciwnika, zyskaj 5 szt. Złota za każde udеrzenie. NL Maksymalnie !M! szt. Złota."
   },
   "blackbeard:TacticalRetreat": {
     "NAME": "Taktyczny odwrót",
@@ -315,8 +315,8 @@
   },
   "blackbeard:CannonballSupply": {
     "NAME": "Dostawa kul",
-    "DESCRIPTION": "Dodaj 3 Kule do ręki. NL Wykluczenie.",
-    "UPGRADE_DESCRIPTION": "Dodaj 3 Kule do ręki."
+    "DESCRIPTION": "Dodaj 3 *Kule do ręki. NL Wykluczenie.",
+    "UPGRADE_DESCRIPTION": "Dodaj 3 *Kule do ręki."
   },
   "blackbeard:BountyHunter": {
     "NAME": "Łowca nagród",
@@ -358,8 +358,8 @@
   },
   "blackbeard:DoubleCannonball": {
     "NAME": "Podwójna kula",
-    "DESCRIPTION": "Zadaj !D! pkt. obrażeń. NL Dodaj Kulę do ręki. NL Wykluczenie.",
-    "UPGRADE_DESCRIPTION": "Zadaj !D! pkt. obrażeń. NL Dodaj ulepszoną Kulę do ręki. NL Wykluczenie."
+    "DESCRIPTION": "Zadaj !D! pkt. obrażeń. NL Dodaj *Kulę do ręki. NL Wykluczenie.",
+    "UPGRADE_DESCRIPTION": "Zadaj !D! pkt. obrażeń. NL Dodaj ulepszoną *Kulę do ręki. NL Wykluczenie."
   },
   "blackbeard:SwordOfFire": {
     "NAME": "Miecz ognia",
@@ -367,8 +367,8 @@
   },
   "blackbeard:CloakAndCannonball": {
     "NAME": "Płaszcz i kula",
-    "DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dodaj Kulę do ręki.",
-    "UPGRADE_DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dodaj ulepszoną Kulę do ręki."
+    "DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dodaj *Kulę do ręki.",
+    "UPGRADE_DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dodaj ulepszoną *Kulę do ręki."
   },
   "blackbeard:UndeadForm": {
     "NAME": "Nieumarła forma",
@@ -389,6 +389,6 @@
   },
   "blackbeard:ReapersScythe": {
     "NAME": "Kosa żniwiarza",
-    "DESCRIPTION": "Wyposaż się w Broń NL !M! / {D}. Kiedykolwiek zaatakujesz tą bronią, nałóż 3 pkt. blackbeard:Znaku żniwiarza na przeciwnika za każde [#FFF6E2]uderzenie[]."
+    "DESCRIPTION": "Wyposaż się w Broń NL !M! / {D}. Kiedykolwiek zaatakujesz tą bronią, nałóż 3 pkt. blackbeard:Znaku żniwiarza na przeciwnika za każde udеrzenie."
   }
 }

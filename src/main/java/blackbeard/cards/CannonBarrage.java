@@ -21,6 +21,8 @@ public class CannonBarrage extends AbstractBlackbeardCard {
     public CannonBarrage() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
                 CardColorEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
+
+        this.cardsToPreview = new Cannonball();
     }
 
     @Override

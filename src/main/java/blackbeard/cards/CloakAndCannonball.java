@@ -45,8 +45,8 @@ public class CloakAndCannonball extends AbstractBlackbeardCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeBlock(UPGRADED_PLUS_BLOCK_AMOUNT);
-            this.rawDescription = UPGRADE_DESCRIPTION;
             this.cardsToPreview.upgrade();
+            this.rawDescription = UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }
     }

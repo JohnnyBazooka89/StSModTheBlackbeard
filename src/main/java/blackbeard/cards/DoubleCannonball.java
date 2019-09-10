@@ -53,6 +53,7 @@ public class DoubleCannonball extends AbstractBlackbeardCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeDamage(UPGRADE_PLUS_ATTACK_DMG);
+            this.cardsToPreview.upgrade();
             this.rawDescription = UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

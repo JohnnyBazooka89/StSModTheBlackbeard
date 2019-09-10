@@ -51,8 +51,8 @@
   },
   "blackbeard:CannonBarrage": {
     "NAME": "Пушечный обстрел",
-    "DESCRIPTION": "Добавляет в руку X Ядер.",
-    "UPGRADE_DESCRIPTION": "Добавляет в руку X+1 Ядер."
+    "DESCRIPTION": "Добавляет в руку X *Ядер.",
+    "UPGRADE_DESCRIPTION": "Добавляет в руку X+1 *Ядер."
   },
   "blackbeard:Rum": {
     "NAME": "Ром",
@@ -90,8 +90,8 @@
   },
   "blackbeard:InfiniteBarrage": {
     "NAME": "Уйма ядер",
-    "DESCRIPTION": "Добавляет в руку Ядро в начале вашего хода.",
-    "UPGRADE_DESCRIPTION": "Начальная. NL Добавляет в руку Ядро в начале вашего хода."
+    "DESCRIPTION": "Добавляет в руку *Ядро в начале вашего хода.",
+    "UPGRADE_DESCRIPTION": "Начальная. NL Добавляет в руку *Ядро в начале вашего хода."
   },
   "blackbeard:SwordOfWisdom": {
     "NAME": "Меч мудрости",
@@ -136,8 +136,8 @@
   },
   "blackbeard:CaptainsCabin": {
     "NAME": "Каюта капитана",
-    "DESCRIPTION": "Даёт !B! Защиты. NL Добавляет в руку !M! Ядро.",
-    "UPGRADE_DESCRIPTION": "Даёт !B! Защиты. NL Добавляет в руку !M! Ядра."
+    "DESCRIPTION": "Даёт !B! Защиты. NL Добавляет в руку !M! *Ядро.",
+    "UPGRADE_DESCRIPTION": "Даёт !B! Защиты. NL Добавляет в руку !M! *Ядра."
   },
   "blackbeard:GoldenDefense": {
     "NAME": "Золотая оборона",
@@ -315,8 +315,8 @@
   },
   "blackbeard:CannonballSupply": {
     "NAME": "Запас ядер",
-    "DESCRIPTION": "Добавляет в руку 3 Ядра. NL Сжигается.",
-    "UPGRADE_DESCRIPTION": "Добавляет в руку 3 Ядра"
+    "DESCRIPTION": "Добавляет в руку 3 *Ядра. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Добавляет в руку 3 *Ядра."
   },
   "blackbeard:BountyHunter": {
     "NAME": "Охотник за головами",
@@ -358,8 +358,8 @@
   },
   "blackbeard:DoubleCannonball": {
     "NAME": "Сдвоенное ядро",
-    "DESCRIPTION": "Наносит !D! урона. NL Добавляет в руку Ядро. NL Сжигается.",
-    "UPGRADE_DESCRIPTION": "Наносит !D! урона. NL Добавляет в руку улучшенное Ядро. NL Сжигается."
+    "DESCRIPTION": "Наносит !D! урона. NL Добавляет в руку *Ядро. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Наносит !D! урона. NL Добавляет в руку улучшенное *Ядро. NL Сжигается."
   },
   "blackbeard:SwordOfFire": {
     "NAME": "Меч огня",
@@ -367,8 +367,8 @@
   },
   "blackbeard:CloakAndCannonball": {
     "NAME": "Плащ и ядро",
-    "DESCRIPTION": "Даёт !B! Защиты. NL Добавляет в руку Ядро.",
-    "UPGRADE_DESCRIPTION": "Даёт !B! Защиты. NL Добавляет в руку улучшенное Ядро."
+    "DESCRIPTION": "Даёт !B! Защиты. NL Добавляет в руку *Ядро.",
+    "UPGRADE_DESCRIPTION": "Даёт !B! Защиты. NL Добавляет в руку улучшенное *Ядро."
   },
   "blackbeard:UndeadForm": {
     "NAME": "Облик нежити",
