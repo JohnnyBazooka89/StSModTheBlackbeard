@@ -27,6 +27,7 @@ public class CloakAndCannonball extends AbstractBlackbeardCard {
                 CardColorEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.SELF);
 
         this.baseBlock = this.block = BLOCK_AMOUNT;
+        this.cardsToPreview = new Cannonball();
     }
 
     @Override
@@ -45,6 +46,7 @@ public class CloakAndCannonball extends AbstractBlackbeardCard {
             this.upgradeName();
             this.upgradeBlock(UPGRADED_PLUS_BLOCK_AMOUNT);
             this.rawDescription = UPGRADE_DESCRIPTION;
+            this.cardsToPreview.upgrade();
             this.initializeDescription();
         }
     }

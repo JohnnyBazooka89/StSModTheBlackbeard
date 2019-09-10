@@ -55,7 +55,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     private static final String DESCRIPTION = "Adds The Blackbeard as a new playable character.";
 
     //General color
-    private static final Color BLACK = CardHelper.getColor(0.0f, 0.0f, 0.0f);
+    private static final Color BLACK = CardHelper.getColor(0, 0, 0);
 
     //Card backgrounds and energy orbs
     private static final String ATTACK_BLACK = "blackbeard/img/512/bg_attack_black.png";

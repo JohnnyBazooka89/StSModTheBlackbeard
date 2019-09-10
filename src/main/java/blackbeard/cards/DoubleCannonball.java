@@ -33,6 +33,7 @@ public class DoubleCannonball extends AbstractBlackbeardCard {
         this.exhaust = true;
 
         this.tags.add(CardTagsEnum.CANNONBALL);
+        this.cardsToPreview = new Cannonball();
     }
 
     @Override
