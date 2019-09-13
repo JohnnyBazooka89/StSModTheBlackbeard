@@ -169,7 +169,8 @@
     "NAME": "Murder",
     "DESCRIPTION": "Ethereal. Grave. NL Deal !D! damage     NL to a Normal enemy. NL (Cannot be used on Elite or Boss).",
     "EXTENDED_DESCRIPTION": [
-      "I have to target a #rNormal enemy!"
+      "I have to target a #rNormal enemy!",
+      "MURDER"
     ]
   },
   "blackbeard:Bandana": {
@@ -225,7 +226,8 @@
     "NAME": "Revenge",
     "DESCRIPTION": "Deal 0 - !M! damage to ALL enemies, based on how many % of HP you are missing.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Deals !D! damage.)"
+      " NL (Deals !D! damage.)",
+      "REVENGE"
     ]
   },
   "blackbeard:GoldenRain": {

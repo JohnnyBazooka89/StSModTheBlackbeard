@@ -169,7 +169,8 @@
     "NAME": "Morderstwo",
     "DESCRIPTION": "Eteryczna. blackbeard:Zakopana. NL Zadaj !D! pkt. obrażeń     NL Normalnemu przeciwnikowi. NL (Nie może być zagrana przeciwko Elitarnym przeciwnikom i Bossom).",
     "EXTENDED_DESCRIPTION": [
-      "Muszę wybrać #rNormalnego przeciwnika!"
+      "Muszę wybrać #rNormalnego przeciwnika!",
+      "MORDERSTWO"
     ]
   },
   "blackbeard:Bandana": {
@@ -225,7 +226,8 @@
     "NAME": "Zemsta",
     "DESCRIPTION": "Zadaj od 0 do !M! pkt. obrażeń WSZYSTKIM przeciwnikom, w zależności od tego ile procent PŻ ci brakuje.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Zadaje !D! pkt. obrażeń.)"
+      " NL (Zadaje !D! pkt. obrażeń.)",
+      "ZEMSTA"
     ]
   },
   "blackbeard:GoldenRain": {
