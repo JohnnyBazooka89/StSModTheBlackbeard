@@ -23,11 +23,7 @@ public class CharacterOptionPatches {
                     if (methodCall.getMethodName().equals("renderSmartText")) {
                         if (counter[0] == 1) {
                             methodCall.replace(
-                                    "if(" + LoadTheCannons.class.getName() + ".ID" + ".equals(" + RelicLibrary.class.getName() + ".getRelic((String) this.charInfo.relics.get(0)).relicId)) { " +
-                                            "$proceed($1, $2, (" + RelicLibrary.class.getName() + ".getRelic((String) this.charInfo.relics.get(0)).DESCRIPTIONS[1]" + "), $4, $5, $6, (30.0F * " + Settings.class.getName() + ".scale), $8);" +
-                                            "} else {" +
-                                            "$proceed($$); " +
-                                            "}"
+                                    "$proceed($1, $2, (" + LoadTheCannons.class.getName() + ".ID" + ".equals(" + RelicLibrary.class.getName() + ".getRelic((String) this.charInfo.relics.get(0)).relicId)) ? (" + RelicLibrary.class.getName() + ".getRelic((String) this.charInfo.relics.get(0)).DESCRIPTIONS[1]" + ") : $3, $4, $5, $6, (30.0F * " + Settings.class.getName() + ".scale), $8);"
                             );
                         }
                         counter[0]++;
@@ -49,11 +45,7 @@ public class CharacterOptionPatches {
                     if (methodCall.getMethodName().equals("renderSmartText")) {
                         if (counter[0] == 4 || counter[0] == 5) {
                             methodCall.replace(
-                                    "if(this.c.chosenClass == " + PlayerClassEnum.class.getName() + ".BLACKBEARD_CLASS" + ") { " +
-                                            "$proceed($1, $2, $3, $4, ($5 - (30.0F * " + Settings.class.getName() + ".scale)), $6, $7, $8);" +
-                                            "} else {" +
-                                            "$proceed($$); " +
-                                            "}"
+                                    "$proceed($1, $2, $3, $4, (this.c.chosenClass == " + PlayerClassEnum.class.getName() + ".BLACKBEARD_CLASS" + ") ? ($5 - (30.0F * " + Settings.class.getName() + ".scale)) : $5, $6, $7, $8);"
                             );
                         }
                         counter[0]++;
