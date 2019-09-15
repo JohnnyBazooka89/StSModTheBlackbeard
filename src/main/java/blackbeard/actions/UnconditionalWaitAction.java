@@ -1,4 +1,4 @@
-package blackbeard.effects;
+package blackbeard.actions;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 
