@@ -13,7 +13,7 @@ public class TextureLoader {
     private static HashMap<String, Texture> textures = new HashMap<>();
 
     public static Texture getTexture(final String textureString) {
-        if (textures.get(textureString) == null) {
+        if (!textures.containsKey(textureString)) {
             loadTexture(textureString);
         }
         return textures.get(textureString);
