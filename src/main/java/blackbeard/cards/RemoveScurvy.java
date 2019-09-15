@@ -17,7 +17,7 @@ public class RemoveScurvy extends AbstractBlackbeardCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
-    private static final int HEAL_VALUE = 6;
+    private static final int HEAL_VALUE = 5;
     private static final int UPGRADED_HEAL_VALUE = 3;
 
     public RemoveScurvy() {
