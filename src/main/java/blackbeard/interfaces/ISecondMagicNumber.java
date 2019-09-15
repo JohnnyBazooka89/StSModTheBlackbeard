@@ -1,6 +1,5 @@
 package blackbeard.interfaces;
 
-
 public interface ISecondMagicNumber {
 
     boolean isModified();
