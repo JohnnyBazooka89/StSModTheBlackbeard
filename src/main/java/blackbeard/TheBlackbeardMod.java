@@ -12,6 +12,7 @@ import blackbeard.events.VampiresBlackbeardEvent;
 import blackbeard.potions.RumPotion;
 import blackbeard.potions.ToastPotion;
 import blackbeard.relics.*;
+import blackbeard.utils.TextureLoader;
 import blackbeard.variables.MagicNumberPlusOneVariable;
 import blackbeard.variables.SecondMagicNumberVariable;
 import com.badlogic.gdx.Gdx;
@@ -25,7 +26,6 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.Exordium;
 import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.CardHelper;
-import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.potions.BloodPotion;
 import com.megacrit.cardcrawl.potions.GhostInAJar;
@@ -159,7 +159,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     @Override
     public void receivePostInitialize() {
         //Mod settings
-        Texture badgeTexture = ImageMaster.loadImage(BADGE_IMG);
+        Texture badgeTexture = TextureLoader.getTexture(BADGE_IMG);
         ModPanel settingsPanel = new ModPanel();
         BaseMod.registerModBadge(badgeTexture, MOD_NAME, AUTHOR, DESCRIPTION, settingsPanel);
 

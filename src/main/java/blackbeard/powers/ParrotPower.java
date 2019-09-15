@@ -4,6 +4,7 @@ import basemod.ReflectionHacks;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.enums.PlayerClassEnum;
 import blackbeard.spineUtils.RegionAttachmentRenderedWithNoPremultipliedAlpha;
+import blackbeard.utils.TextureLoader;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
@@ -19,7 +20,6 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
@@ -29,12 +29,12 @@ public class ParrotPower extends AbstractPower {
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    private static final Texture power128Image = ImageMaster.loadImage(TheBlackbeardMod.getPower128ImagePath(POWER_ID));
-    private static final Texture power48Image = ImageMaster.loadImage(TheBlackbeardMod.getPower48ImagePath(POWER_ID));
+    private static final Texture power128Image = TextureLoader.getTexture(TheBlackbeardMod.getPower128ImagePath(POWER_ID));
+    private static final Texture power48Image = TextureLoader.getTexture(TheBlackbeardMod.getPower48ImagePath(POWER_ID));
 
     private static final String BLACKBEARD_PARROT_PATH = "blackbeard/img/char/blackbeard/Parrot.png";
 
-    private static Texture tex = ImageMaster.loadImage(BLACKBEARD_PARROT_PATH);
+    private static Texture tex = TextureLoader.getTexture(BLACKBEARD_PARROT_PATH);
 
     private static String ATTACH_NAME = "Parrot";
     private static String ATTACH_CLONE_NAME = "ParrotClone";

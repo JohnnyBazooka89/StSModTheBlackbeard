@@ -2,14 +2,14 @@ package blackbeard.relics;
 
 import basemod.abstracts.CustomRelic;
 import blackbeard.TheBlackbeardMod;
+import blackbeard.utils.TextureLoader;
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.helpers.ImageMaster;
 
 public class WhitePearl extends CustomRelic {
 
     public static final String ID = "blackbeard:WhitePearl";
-    private static final Texture IMG = ImageMaster.loadImage(TheBlackbeardMod.getRelicImagePath(ID));
-    private static final Texture OUTLINE = ImageMaster.loadImage(TheBlackbeardMod.getRelicOutlineImagePath(ID));
+    private static final Texture IMG = TextureLoader.getTexture(TheBlackbeardMod.getRelicImagePath(ID));
+    private static final Texture OUTLINE = TextureLoader.getTexture(TheBlackbeardMod.getRelicOutlineImagePath(ID));
 
     public WhitePearl() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.MAGICAL);
