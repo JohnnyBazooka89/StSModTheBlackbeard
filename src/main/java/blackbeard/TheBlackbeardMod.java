@@ -148,6 +148,10 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         return "blackbeard/sounds/" + soundName + ".wav";
     }
 
+    public static String getHeartPanelImagePath(int i) {
+        return "blackbeard/img/char/blackbeard/heart/blackbeard" + i + ".png";
+    }
+
     public static void initialize() {
         logger.info("========================= THE BLACKBEARD INIT =========================");
 
