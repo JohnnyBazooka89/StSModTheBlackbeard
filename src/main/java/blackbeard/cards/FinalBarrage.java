@@ -1,7 +1,7 @@
 package blackbeard.cards;
 
 import blackbeard.TheBlackbeardMod;
-import blackbeard.actions.DropAnythingAction;
+import blackbeard.actions.DropCannonballOnHeadAction;
 import blackbeard.enums.CardColorEnum;
 import blackbeard.enums.CardTagsEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -41,22 +41,22 @@ public class FinalBarrage extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        ArrayList<Integer> datums = new ArrayList<>();
+        ArrayList<Integer> indexes = new ArrayList<>();
         for (AbstractCard card : AbstractDungeon.actionManager.cardsPlayedThisCombat) {
             if (card.hasTag(CardTagsEnum.CANNONBALL)) {
-                datums.add(AbstractDungeon.actionManager.cardsPlayedThisCombat.indexOf(card));
+                indexes.add(AbstractDungeon.actionManager.cardsPlayedThisCombat.indexOf(card));
             }
         }
-        for (Integer datum : datums) {
-            switch (AbstractDungeon.actionManager.cardsPlayedThisCombat.get(datum).name) {
-                case "Humongous Cannonball":
-                    AbstractDungeon.actionManager.addToBottom(new DropAnythingAction(m, humongousCannonballTexture));
+        for (Integer index : indexes) {
+            switch (AbstractDungeon.actionManager.cardsPlayedThisCombat.get(index).cardID) {
+                case HumongousCannonball.ID:
+                    AbstractDungeon.actionManager.addToBottom(new DropCannonballOnHeadAction(m, humongousCannonballTexture));
                     break;
-                case "Golden Cannonball":
-                    AbstractDungeon.actionManager.addToBottom(new DropAnythingAction(m, goldenCannonballTexture));
+                case GoldenCannonball.ID:
+                    AbstractDungeon.actionManager.addToBottom(new DropCannonballOnHeadAction(m, goldenCannonballTexture));
                     break;
                 default:
-                    AbstractDungeon.actionManager.addToBottom(new DropAnythingAction(m, cannonballTexture));
+                    AbstractDungeon.actionManager.addToBottom(new DropCannonballOnHeadAction(m, cannonballTexture));
                     break;
             }
         }

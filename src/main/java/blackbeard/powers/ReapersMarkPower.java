@@ -1,15 +1,10 @@
 package blackbeard.powers;
 
 import blackbeard.TheBlackbeardMod;
-import blackbeard.effects.DamageCurvy;
-import blackbeard.effects.DamageLine;
+import blackbeard.actions.ReapersMarkAction;
 import blackbeard.utils.TextureLoader;
-import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.badlogic.gdx.math.MathUtils;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -25,7 +20,6 @@ public class ReapersMarkPower extends AbstractPower {
     private static final Texture power128Image = TextureLoader.getTexture(TheBlackbeardMod.getPower128ImagePath(POWER_ID));
     private static final Texture power48Image = TextureLoader.getTexture(TheBlackbeardMod.getPower48ImagePath(POWER_ID));
 
-    protected float offset = MathUtils.random(-180.0F, 180.0F);
 
     public ReapersMarkPower(AbstractCreature owner, int amount) {
         this.name = NAME;
@@ -42,14 +36,7 @@ public class ReapersMarkPower extends AbstractPower {
     public void stackPower(int stackAmount) {
         super.stackPower(stackAmount);
         if (this.amount >= 3) {
-            for (int i = 0; i < 36; i++) {
-                AbstractDungeon.effectList.add(new DamageLine(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, new Color(0.552F, 0F, 0.819F, 1), ((10 * i) + MathUtils.random(-10, 10) + offset)));
-                if (i % 2 == 0) {
-                    AbstractDungeon.effectList.add(new DamageCurvy(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, new Color(0.552F, 0F, 0.819F, 1)));
-                }
-            }
-            int damage = (this.owner.maxHealth - this.owner.currentHealth) * 4 / 10;
-            AbstractDungeon.actionManager.addToTop(new LoseHPAction(this.owner, this.owner, damage, AbstractGameAction.AttackEffect.FIRE));
+            AbstractDungeon.actionManager.addToTop(new ReapersMarkAction(this.owner));
             AbstractDungeon.actionManager.addToTop(new ReducePowerAction(this.owner, this.owner, this.ID, 3));
         }
     }

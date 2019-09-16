@@ -1,6 +1,5 @@
 package blackbeard.actions;
 
-import blackbeard.utils.GoldenCardsUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
@@ -14,18 +13,20 @@ import com.megacrit.cardcrawl.vfx.combat.GoldenSlashEffect;
 public class GoldenRainAction extends AbstractGameAction {
 
     private DamageAllEnemiesAction damageAllEnemiesAction;
+    private int gold;
 
-    public GoldenRainAction(DamageAllEnemiesAction damageAllEnemiesAction) {
+    public GoldenRainAction(DamageAllEnemiesAction damageAllEnemiesAction, int gold) {
         this.duration = Settings.ACTION_DUR_FAST;
         this.damageAllEnemiesAction = damageAllEnemiesAction;
+        this.gold = gold;
     }
 
     public void update() {
         if (this.duration == Settings.ACTION_DUR_FAST) {
-            AbstractDungeon.actionManager.addToBottom(new VFXAction(new RainingGoldEffect(GoldenCardsUtils.getBlackbeardGoldGained() / 10)));
+            AbstractDungeon.actionManager.addToBottom(new VFXAction(new RainingGoldEffect(gold)));
             AbstractDungeon.actionManager.addToBottom(new UnconditionalWaitAction(2.5F));
             for (AbstractMonster mo : AbstractDungeon.getMonsters().monsters) {
-                if (!mo.isDying && !mo.isDead) {
+                if (!mo.isDeadOrEscaped()) {
                     AbstractDungeon.actionManager.addToBottom(new VFXAction(new GoldenSlashEffect(mo.hb.cX, mo.hb.cY, true)));
                 }
             }
