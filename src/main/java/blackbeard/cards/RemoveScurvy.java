@@ -1,7 +1,11 @@
 package blackbeard.cards;
 
 import blackbeard.TheBlackbeardMod;
+import blackbeard.effects.DamageCurvy;
+import blackbeard.effects.DamageLine;
 import blackbeard.enums.CardColorEnum;
+import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.actions.unique.RemoveDebuffsAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -20,6 +24,8 @@ public class RemoveScurvy extends AbstractBlackbeardCard {
     private static final int HEAL_VALUE = 5;
     private static final int UPGRADED_HEAL_VALUE = 3;
 
+    protected float offset = MathUtils.random(-180.0F, 180.0F);
+
     public RemoveScurvy() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
                 CardColorEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
@@ -32,6 +38,12 @@ public class RemoveScurvy extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        for (int i = 0; i < 36; i++) {
+            AbstractDungeon.effectList.add(new DamageLine(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, new Color(1F, 0.576F, 0.160F, 1), ((10 * i) + MathUtils.random(-10, 10) + offset)));
+            if (i % 2 == 0) {
+                AbstractDungeon.effectList.add(new DamageCurvy(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, new Color(1F, 0.576F, 0.160F, 1)));
+            }
+        }
         AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, this.magicNumber));
         AbstractDungeon.actionManager.addToBottom(new RemoveDebuffsAction(p));
     }

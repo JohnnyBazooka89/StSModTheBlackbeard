@@ -7,6 +7,7 @@ import blackbeard.relics.Spearhead;
 import blackbeard.utils.TextureLoader;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -26,6 +27,8 @@ public abstract class AbstractWeaponOrb extends AbstractOrb {
     protected String rawDescription;
     protected boolean justAddedUsingAttackCard;
     private String imagePath;
+
+    protected float offset = MathUtils.random(-180.0F, 180.0F);
 
     public static final String ABSTRACT_WEAPON_ORB_ID = "blackbeard:AbstractWeaponOrb";
     private static final OrbStrings orbStrings = CardCrawlGame.languagePack.getOrbString(ABSTRACT_WEAPON_ORB_ID);
