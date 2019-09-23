@@ -392,5 +392,9 @@
   "blackbeard:ReapersScythe": {
     "NAME": "Reaper's Scythe",
     "DESCRIPTION": "Equip a !M! / {D} Weapon. NL Whenever you attack with this Weapon, apply 1 blackbeard:Reaper's Mark to a target per hit."
+  },
+  "blackbeard:PirateHook": {
+    "NAME": "Pirate Hook",
+    "DESCRIPTION": "Deal !D! damage. NL If this deals at least 12 damage, deal !D! damage again."
   }
 }

@@ -307,6 +307,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addCard(new WeaponProficiency());
         BaseMod.addCard(new FieryDefense());
         BaseMod.addCard(new ReapersScythe());
+        BaseMod.addCard(new PirateHook());
 
         //Special cards are registered, but they are not shown in the library, because of DoNotShowSpecialCardsInLibraryPatch.
         BaseMod.addCard(new Cannonball());
