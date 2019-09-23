@@ -13,6 +13,7 @@ import blackbeard.potions.OrangeJuicePotion;
 import blackbeard.potions.RumPotion;
 import blackbeard.potions.WeaponProficiencyPotion;
 import blackbeard.relics.*;
+import blackbeard.utils.TextureLoader;
 import blackbeard.variables.MagicNumberPlusOneVariable;
 import blackbeard.variables.SecondMagicNumberVariable;
 import com.badlogic.gdx.Gdx;
@@ -26,7 +27,6 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.Exordium;
 import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.CardHelper;
-import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -147,6 +147,10 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         return "blackbeard/sounds/" + soundName + ".wav";
     }
 
+    public static String getHeartPanelImagePath(int i) {
+        return "blackbeard/img/char/blackbeard/heart/blackbeard" + i + ".png";
+    }
+
     public static void initialize() {
         logger.info("========================= THE BLACKBEARD INIT =========================");
 
@@ -158,7 +162,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     @Override
     public void receivePostInitialize() {
         //Mod settings
-        Texture badgeTexture = ImageMaster.loadImage(BADGE_IMG);
+        Texture badgeTexture = TextureLoader.getTexture(BADGE_IMG);
         ModPanel settingsPanel = new ModPanel();
         BaseMod.registerModBadge(badgeTexture, MOD_NAME, AUTHOR, DESCRIPTION, settingsPanel);
 

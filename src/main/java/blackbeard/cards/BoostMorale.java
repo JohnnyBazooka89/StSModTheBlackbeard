@@ -1,7 +1,11 @@
 package blackbeard.cards;
 
 import blackbeard.TheBlackbeardMod;
+import blackbeard.effects.DamageCurvy;
+import blackbeard.effects.DamageLine;
 import blackbeard.enums.CardColorEnum;
+import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -23,6 +27,8 @@ public class BoostMorale extends AbstractBlackbeardCard {
     private static final int ENERGY_TO_GET = 1;
     private static final int UPGRADED_PLUS_ENERGY_TO_GET = 1;
 
+    protected float offset = MathUtils.random(-180.0F, 180.0F);
+
     public BoostMorale() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
                 CardColorEnum.BLACKBEARD_BLACK, CardRarity.RARE, CardTarget.SELF);
@@ -33,6 +39,12 @@ public class BoostMorale extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        for (int i = 0; i < 36; i++) {
+            AbstractDungeon.effectList.add(new DamageLine(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, new Color(MathUtils.random(), MathUtils.random(), MathUtils.random(), 1), ((10 * i) + MathUtils.random(-10, 10) + offset)));
+            if (i % 2 == 0) {
+                AbstractDungeon.effectList.add(new DamageCurvy(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, new Color(MathUtils.random(), MathUtils.random(), MathUtils.random(), 1)));
+            }
+        }
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.magicNumber));
         AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(ENERGY_TO_GET + (this.upgraded ? UPGRADED_PLUS_ENERGY_TO_GET : 0)));
     }

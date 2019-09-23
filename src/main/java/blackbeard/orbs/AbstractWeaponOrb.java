@@ -4,8 +4,10 @@ import blackbeard.powers.ArmorUpPower;
 import blackbeard.powers.SalvagerPower;
 import blackbeard.relics.KarateGi;
 import blackbeard.relics.Spearhead;
+import blackbeard.utils.TextureLoader;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -14,7 +16,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.FontHelper;
-import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import org.apache.commons.lang3.StringUtils;
@@ -27,6 +28,8 @@ public abstract class AbstractWeaponOrb extends AbstractOrb {
     protected boolean justAddedUsingAttackCard;
     private String imagePath;
 
+    protected float offset = MathUtils.random(-180.0F, 180.0F);
+
     public static final String ABSTRACT_WEAPON_ORB_ID = "blackbeard:AbstractWeaponOrb";
     private static final OrbStrings orbStrings = CardCrawlGame.languagePack.getOrbString(ABSTRACT_WEAPON_ORB_ID);
 
@@ -34,7 +37,7 @@ public abstract class AbstractWeaponOrb extends AbstractOrb {
         this.ID = id;
         this.name = name;
         this.imagePath = imagePath;
-        this.img = ImageMaster.loadImage(this.imagePath);
+        this.img = TextureLoader.getTexture(this.imagePath);
         this.attack = attack;
         this.durability = durability;
         this.justAddedUsingAttackCard = justAddedUsingAttackCard;

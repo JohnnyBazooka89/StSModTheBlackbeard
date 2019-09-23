@@ -208,7 +208,7 @@
   },
   "blackbeard:Boarding": {
     "NAME": "Boarding",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Draw !M! cards."
+    "DESCRIPTION": "Deal !D! damage to ALL enemies twice. NL Draw !M! cards."
   },
   "blackbeard:AgileStrike": {
     "NAME": "Agile Strike",

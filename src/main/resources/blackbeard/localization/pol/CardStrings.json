@@ -208,7 +208,7 @@
   },
   "blackbeard:Boarding": {
     "NAME": "Abordaż",
-    "DESCRIPTION": "Zadaj !D! pkt. obrażeń. WSZYSTKIM przeciwnikom. NL Dobierz !M! karty."
+    "DESCRIPTION": "Zadaj dwukrotnie !D! pkt. obrażeń. WSZYSTKIM przeciwnikom. NL Dobierz !M! karty."
   },
   "blackbeard:AgileStrike": {
     "NAME": "Zręczne uderzenie",

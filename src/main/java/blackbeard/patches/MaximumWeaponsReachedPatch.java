@@ -18,11 +18,7 @@ public class MaximumWeaponsReachedPatch {
             public void edit(NewExpr newExpr) throws CannotCompileException {
                 if (newExpr.getClassName().equals(ThoughtBubble.class.getName())) {
                     newExpr.replace(
-                            "if(" + EquipAction.class.getName() + ".isInEquipActionWhileIncreasingMaxOrbSlots){" +
-                                    "$_ = $proceed($1, $2, $3, " + TheBlackbeard.class.getName() + ".maximumWeaponsReachedStrings.TEXT[0], $5);" +
-                                    "} else {" +
-                                    "$_ = $proceed($$); " +
-                                    "}"
+                            "$_ = $proceed($1, $2, $3, (" + EquipAction.class.getName() + ".isInEquipActionWhileIncreasingMaxOrbSlots) ? (" + TheBlackbeard.class.getName() + ".maximumWeaponsReachedStrings.TEXT[0]) : $4, $5);"
                     );
                 }
             }

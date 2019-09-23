@@ -1,6 +1,7 @@
 package blackbeard.cards;
 
 import blackbeard.TheBlackbeardMod;
+import blackbeard.actions.DropCannonballOnHeadAction;
 import blackbeard.enums.CardColorEnum;
 import blackbeard.enums.CardTagsEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -14,7 +15,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
-import java.util.Iterator;
+import java.util.ArrayList;
 
 public class FinalBarrage extends AbstractBlackbeardCard {
     public static final String ID = "blackbeard:FinalBarrage";
@@ -40,6 +41,25 @@ public class FinalBarrage extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        ArrayList<Integer> indexes = new ArrayList<>();
+        for (AbstractCard card : AbstractDungeon.actionManager.cardsPlayedThisCombat) {
+            if (card.hasTag(CardTagsEnum.CANNONBALL)) {
+                indexes.add(AbstractDungeon.actionManager.cardsPlayedThisCombat.indexOf(card));
+            }
+        }
+        for (Integer index : indexes) {
+            switch (AbstractDungeon.actionManager.cardsPlayedThisCombat.get(index).cardID) {
+                case HumongousCannonball.ID:
+                    AbstractDungeon.actionManager.addToBottom(new DropCannonballOnHeadAction(m, humongousCannonballTexture));
+                    break;
+                case GoldenCannonball.ID:
+                    AbstractDungeon.actionManager.addToBottom(new DropCannonballOnHeadAction(m, goldenCannonballTexture));
+                    break;
+                default:
+                    AbstractDungeon.actionManager.addToBottom(new DropCannonballOnHeadAction(m, cannonballTexture));
+                    break;
+            }
+        }
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
     }
 
@@ -63,10 +83,8 @@ public class FinalBarrage extends AbstractBlackbeardCard {
 
     private void setBaseDamageAndUpdateDescription() {
         int cannonballsPlayedThisCombat = 0;
-        Iterator<AbstractCard> cardsPlayedThisCombatIt = AbstractDungeon.actionManager.cardsPlayedThisCombat.iterator();
 
-        while (cardsPlayedThisCombatIt.hasNext()) {
-            AbstractCard card = cardsPlayedThisCombatIt.next();
+        for (AbstractCard card : AbstractDungeon.actionManager.cardsPlayedThisCombat) {
             if (card.hasTag(CardTagsEnum.CANNONBALL)) {
                 cannonballsPlayedThisCombat++;
             }

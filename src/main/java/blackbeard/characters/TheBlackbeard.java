@@ -21,6 +21,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.cutscenes.CutscenePanel;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
@@ -29,6 +30,7 @@ import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class TheBlackbeard extends CustomPlayer {
 
@@ -179,5 +181,14 @@ public class TheBlackbeard extends CustomPlayer {
             AbstractDungeon.actionManager.addToBottom(new SFXAction(TheBlackbeardMod.SOUND_YARR_KEY));
             AbstractDungeon.actionManager.addToBottom(new TalkAction(true, captainAbeEncounterStrings.TEXT[i], 0.0F, 3.0F));
         }
+    }
+
+    @Override
+    public List<CutscenePanel> getCutscenePanels() {
+        List<CutscenePanel> panels = new ArrayList<CutscenePanel>();
+        panels.add(new CutscenePanel(TheBlackbeardMod.getHeartPanelImagePath(1)));
+        panels.add(new CutscenePanel(TheBlackbeardMod.getHeartPanelImagePath(2)));
+        panels.add(new CutscenePanel(TheBlackbeardMod.getHeartPanelImagePath(3)));
+        return panels;
     }
 }

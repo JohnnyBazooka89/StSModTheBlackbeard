@@ -208,7 +208,7 @@
   },
   "blackbeard:Boarding": {
     "NAME": "На абордаж!",
-    "DESCRIPTION": "Наносит !D! урона ВСЕМ врагам. NL Вы берёте !M! карты."
+    "DESCRIPTION": "Наносит !D! урона ВСЕМ врагам дважды. NL Вы берёте !M! карты."
   },
   "blackbeard:AgileStrike": {
     "NAME": "Ловкий удар",
