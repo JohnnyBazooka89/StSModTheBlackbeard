@@ -9,8 +9,9 @@ import blackbeard.enums.CardColorEnum;
 import blackbeard.enums.PlayerClassEnum;
 import blackbeard.events.SsssserpentBlackbeardEvent;
 import blackbeard.events.VampiresBlackbeardEvent;
+import blackbeard.potions.OrangeJuicePotion;
 import blackbeard.potions.RumPotion;
-import blackbeard.potions.ToastPotion;
+import blackbeard.potions.WeaponProficiencyPotion;
 import blackbeard.relics.*;
 import blackbeard.variables.MagicNumberPlusOneVariable;
 import blackbeard.variables.SecondMagicNumberVariable;
@@ -27,8 +28,6 @@ import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.*;
-import com.megacrit.cardcrawl.potions.BloodPotion;
-import com.megacrit.cardcrawl.potions.GhostInAJar;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -168,12 +167,13 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addEvent(VampiresBlackbeardEvent.ID, VampiresBlackbeardEvent.class, TheCity.ID);
 
         //Potions
-        BaseMod.addPotion(BloodPotion.class, Color.WHITE.cpy(), Color.LIGHT_GRAY.cpy(), null, "blackbeard:BloodPotion", PlayerClassEnum.BLACKBEARD_CLASS);
-        BaseMod.addPotion(GhostInAJar.class, Color.WHITE.cpy(), Color.LIGHT_GRAY.cpy(), null, "blackbeard:GhostInAJar", PlayerClassEnum.BLACKBEARD_CLASS);
-        Color rumColor = new Color(211 / 255.0F, 102 / 255.0F, 0, 1);
-        Color rumShadeColor = new Color(160 / 255.0F, 77 / 255.0F, 0, 1);
-        BaseMod.addPotion(RumPotion.class, rumColor.cpy(), rumShadeColor.cpy(), null, "blackbeard:RumPotion", PlayerClassEnum.BLACKBEARD_CLASS);
-        BaseMod.addPotion(ToastPotion.class, rumColor.cpy(), rumShadeColor.cpy(), null, "blackbeard:ToastPotion", PlayerClassEnum.BLACKBEARD_CLASS);
+        Color rumLiquidColor = new Color(211 / 255.0F, 102 / 255.0F, 0, 1);
+        Color rumHybridColor = new Color(160 / 255.0F, 77 / 255.0F, 0, 1);
+        Color orangeJuiceLiquidColor = new Color(255 / 255.0F, 179 / 255.0F, 63 / 255.0F, 1);
+        Color orangeJuiceSpotsColor = new Color(255 / 255.0F, 154 / 255.0F, 0 / 255.0F, 1);
+        BaseMod.addPotion(RumPotion.class, rumLiquidColor.cpy(), rumHybridColor.cpy(), null, "blackbeard:RumPotion", PlayerClassEnum.BLACKBEARD_CLASS);
+        BaseMod.addPotion(OrangeJuicePotion.class, orangeJuiceLiquidColor.cpy(), null, orangeJuiceSpotsColor.cpy(), "blackbeard:OrangeJuicePotion", PlayerClassEnum.BLACKBEARD_CLASS);
+        BaseMod.addPotion(WeaponProficiencyPotion.class, Color.BLACK.cpy(), Color.RED.cpy(), null, "blackbeard:WeaponProficiencyPotion", PlayerClassEnum.BLACKBEARD_CLASS);
     }
 
     @Override
