@@ -6,7 +6,6 @@ import blackbeard.enums.CardTagsEnum;
 import blackbeard.utils.TextureLoader;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.helpers.ImageMaster;
 
 public class CannonballsOfSteel extends CustomRelic {
 
