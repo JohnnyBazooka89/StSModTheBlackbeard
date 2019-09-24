@@ -53,7 +53,7 @@
     "NAME": "Magiczny kocioł",
     "FLAVOR": "W pełni automatyczny.",
     "DESCRIPTIONS": [
-      "Na początku każdej walki, otrzymaj losową miksturę."
+      "Na końcu każdej walki, otrzymaj losową miksturę."
     ]
   },
   "blackbeard:Penknife": {
