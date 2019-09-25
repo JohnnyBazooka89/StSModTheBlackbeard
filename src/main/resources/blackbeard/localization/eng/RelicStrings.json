@@ -74,7 +74,7 @@
     "NAME": "Powder Can",
     "FLAVOR": "Just like a Powder Keg, but smaller.",
     "DESCRIPTIONS": [
-      "At the start of each combat, equip a 0 / #b1 #yWeapon. When it is destroyed, deal #b8 damage to ALL enemies."
+      "At the start of each combat, equip a #b0 / #b1 #yWeapon. When it is destroyed, deal #b8 damage to ALL enemies."
     ]
   },
   "blackbeard:Soberminded": {

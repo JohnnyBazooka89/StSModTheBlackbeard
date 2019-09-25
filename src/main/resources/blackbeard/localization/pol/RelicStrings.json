@@ -74,7 +74,7 @@
     "NAME": "Puszka prochu",
     "FLAVOR": "Zupełnie jak beczka prochu, tylko mniejsza.",
     "DESCRIPTIONS": [
-      "Na początku każdej walki, wyposaż się w #yBroń 0 / #b1. Gdy zostanie zniszczona, zadaj #b8 pkt. obrażeń WSZYSTKIM przeciwnikom."
+      "Na początku każdej walki, wyposaż się w #yBroń #b0 / #b1. Gdy zostanie zniszczona, zadaj #b8 pkt. obrażeń WSZYSTKIM przeciwnikom."
     ]
   },
   "blackbeard:Soberminded": {
