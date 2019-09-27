@@ -6,6 +6,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -32,10 +33,7 @@ public class PirateHook extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int hits = 1;
-        if (this.damage >= 12) {
-            hits = 2;
-        }
+        int hits = this.damage >= 12 ? 2 : 1;
         for (int i = 0; i < hits; i++) {
             AbstractDungeon.actionManager.addToBottom(new VFXAction(new RipAndTearEffect(m.hb.cX, m.hb.cY, Color.RED, Color.GOLD)));
             AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
@@ -44,10 +42,7 @@ public class PirateHook extends AbstractBlackbeardCard {
 
     @Override
     public void triggerOnGlowCheck() {
-        this.gColor = GlowColor.BLUE;
-        if (this.damage >= 12) {
-            this.gColor = GlowColor.GOLD;
-        }
+        this.glowColor = this.damage >= 12 ? AbstractCard.GOLD_BORDER_GLOW_COLOR : AbstractCard.BLUE_BORDER_GLOW_COLOR;
     }
 
     @Override
