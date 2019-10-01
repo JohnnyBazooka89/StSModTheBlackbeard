@@ -396,5 +396,9 @@
   "blackbeard:PirateHook": {
     "NAME": "Hak pirata",
     "DESCRIPTION": "Zadaj !D! pkt. obrażeń. NL Jeśli zadajesz przynajmniej 12 pkt. obrażeń, zadaj !D! pkt. obrażeń jeszcze raz."
+  },
+  "blackbeard:DeadlyArsenal": {
+    "NAME": "Zabójczy arsenał",
+    "DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dobierz 1 kartę za każdą posiadaną, unikalną Broń."
   }
 }
