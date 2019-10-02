@@ -4,7 +4,6 @@ import basemod.helpers.TooltipInfo;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.SwordDiscoveryAction;
 import blackbeard.enums.CardColorEnum;
-import blackbeard.patches.SwordDiscoveryPatch;
 import blackbeard.utils.WeaponCardsUtils;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -36,9 +35,7 @@ public class Sword extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        SwordDiscoveryPatch.swordDiscovery = true;
-        SwordDiscoveryPatch.upgraded = this.upgraded;
-        AbstractDungeon.actionManager.addToBottom(new SwordDiscoveryAction());
+        AbstractDungeon.actionManager.addToBottom(new SwordDiscoveryAction(this.upgraded));
     }
 
     @Override
