@@ -81,7 +81,7 @@
     "NAME": "Trzeźwo myślący",
     "FLAVOR": "Bycie trzeźwym nie jest naturalnym stanem dla Czarnobrodego.",
     "DESCRIPTIONS": [
-      "Zyskaj [E] na początku każdej tury. Na początku każdej walki, a następnie co #b4 tury, utrać #b1 pkt. #yOdporności."
+      "Zyskaj [E] na początku każdej tury. Na początku każdej walki, a następnie co #b6 tur, utrać #b1 pkt. #yOdporności."
     ]
   },
   "blackbeard:Spearhead": {

@@ -33,7 +33,7 @@ public class Soberminded extends CustomRelic {
     @Override
     public void atTurnStart() {
         this.counter++;
-        if (this.counter == 4) {
+        if (this.counter == 6) {
             this.counter = 0;
             loseResistance();
         }
