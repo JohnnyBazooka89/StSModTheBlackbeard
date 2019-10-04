@@ -13,12 +13,12 @@
       " PŻ. Pozbądź się wszystkich negatywnych efektów."
     ]
   },
-  "blackbeard:WeaponProficiencyPotion": {
-    "NAME": "Mikstura biegłości",
+  "blackbeard:UpgradePotion": {
+    "NAME": "Mikstura ulepszenia",
     "DESCRIPTIONS": [
-      "Twoje ataki używają #b",
-      " dodatkową #yBroń.",
-      " dodatkowe #yBronie."
+      "Daj wszystkim swoim #yBroniom #b+",
+      " / #b+",
+      "."
     ]
   }
 }

@@ -2,9 +2,9 @@ package blackbeard.potions;
 
 import basemod.abstracts.CustomPotion;
 import blackbeard.TheBlackbeardMod;
-import blackbeard.powers.WeaponProficiencyPower;
+import blackbeard.actions.UpgradeWeaponsAction;
+import blackbeard.enums.WeaponsToUseEnum;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -15,15 +15,15 @@ import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.relics.SacredBark;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
-public class WeaponProficiencyPotion extends CustomPotion {
+public class UpgradePotion extends CustomPotion {
 
-    private static final String ID = "blackbeard:WeaponProficiencyPotion";
+    private static final String ID = "blackbeard:UpgradePotion";
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(ID);
     public static final String NAME = potionStrings.NAME;
     public static final String[] DESCRIPTIONS = potionStrings.DESCRIPTIONS;
-    private static final int POTENCY = 1;
+    private static final int POTENCY = 3;
 
-    public WeaponProficiencyPotion() {
+    public UpgradePotion() {
         super(NAME, ID, PotionRarity.UNCOMMON, PotionSize.SPHERE, PotionColor.FEAR);
         this.isThrown = false;
     }
@@ -32,11 +32,7 @@ public class WeaponProficiencyPotion extends CustomPotion {
     @Override
     public void initializeData() {
         this.potency = this.getPotency();
-        if (this.potency == 1) {
-            this.description = DESCRIPTIONS[0] + this.potency + DESCRIPTIONS[1];
-        } else {
-            this.description = DESCRIPTIONS[0] + this.potency + DESCRIPTIONS[2];
-        }
+        this.description = DESCRIPTIONS[0] + this.potency + DESCRIPTIONS[1] + this.potency + DESCRIPTIONS[2];
         this.tips.clear();
         this.tips.add(new PowerTip(this.name, this.description));
         Keyword weaponKeyword = TheBlackbeardMod.keywords.get(TheBlackbeardMod.WEAPON_KEYWORD);
@@ -46,12 +42,12 @@ public class WeaponProficiencyPotion extends CustomPotion {
     @Override
     public void use(AbstractCreature unused) {
         if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new WeaponProficiencyPower(AbstractDungeon.player, this.potency), this.potency));
+            AbstractDungeon.actionManager.addToBottom(new UpgradeWeaponsAction(this.potency, this.potency, WeaponsToUseEnum.ALL_WEAPONS));
         }
     }
 
     public AbstractPotion makeCopy() {
-        return new WeaponProficiencyPotion();
+        return new UpgradePotion();
     }
 
     @Override

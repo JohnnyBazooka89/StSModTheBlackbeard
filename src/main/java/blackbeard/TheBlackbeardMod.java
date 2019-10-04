@@ -11,7 +11,7 @@ import blackbeard.events.SsssserpentBlackbeardEvent;
 import blackbeard.events.VampiresBlackbeardEvent;
 import blackbeard.potions.OrangeJuicePotion;
 import blackbeard.potions.RumPotion;
-import blackbeard.potions.WeaponProficiencyPotion;
+import blackbeard.potions.UpgradePotion;
 import blackbeard.relics.*;
 import blackbeard.utils.TextureLoader;
 import blackbeard.variables.MagicNumberPlusOneVariable;
@@ -177,7 +177,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         Color orangeJuiceSpotsColor = new Color(255 / 255.0F, 154 / 255.0F, 0 / 255.0F, 1);
         BaseMod.addPotion(RumPotion.class, rumLiquidColor.cpy(), rumHybridColor.cpy(), null, "blackbeard:RumPotion", PlayerClassEnum.BLACKBEARD_CLASS);
         BaseMod.addPotion(OrangeJuicePotion.class, orangeJuiceLiquidColor.cpy(), null, orangeJuiceSpotsColor.cpy(), "blackbeard:OrangeJuicePotion", PlayerClassEnum.BLACKBEARD_CLASS);
-        BaseMod.addPotion(WeaponProficiencyPotion.class, Color.BLACK.cpy(), Color.RED.cpy(), null, "blackbeard:WeaponProficiencyPotion", PlayerClassEnum.BLACKBEARD_CLASS);
+        BaseMod.addPotion(UpgradePotion.class, Color.DARK_GRAY.cpy(), null, Color.CORAL.cpy(), "blackbeard:UpgradePotion", PlayerClassEnum.BLACKBEARD_CLASS);
     }
 
     @Override

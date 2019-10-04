@@ -13,12 +13,12 @@
       " HP. Remove all of your Debuffs."
     ]
   },
-  "blackbeard:WeaponProficiencyPotion": {
-    "NAME": "Proficiency Potion",
+  "blackbeard:UpgradePotion": {
+    "NAME": "Upgrade Potion",
     "DESCRIPTIONS": [
-      "Your attacks use #b",
-      " additional #yWeapon.",
-      " additional #yWeapons."
+      "Give all your equipped #yWeapons #b+",
+      " / #b+",
+      "."
     ]
   }
 }
