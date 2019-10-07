@@ -7,6 +7,7 @@ import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.GraveField;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -48,11 +49,20 @@ public class Murder extends AbstractBlackbeardCard {
         if (!canUse) {
             return false;
         }
-        if ((AbstractDungeon.getCurrRoom() instanceof MonsterRoomElite) || (AbstractDungeon.getCurrRoom() instanceof MonsterRoomBoss)) {
+        if (isEliteOrBossMonsterRoom()) {
             canUse = false;
             this.cantUseMessage = EXTENDED_DESCRIPTION[0];
         }
         return canUse;
+    }
+
+    @Override
+    public void triggerOnGlowCheck() {
+        this.glowColor = !isEliteOrBossMonsterRoom() ? AbstractCard.GOLD_BORDER_GLOW_COLOR : AbstractCard.BLUE_BORDER_GLOW_COLOR;
+    }
+
+    private boolean isEliteOrBossMonsterRoom() {
+        return (AbstractDungeon.getCurrRoom() instanceof MonsterRoomElite) || (AbstractDungeon.getCurrRoom() instanceof MonsterRoomBoss);
     }
 
     @Override
