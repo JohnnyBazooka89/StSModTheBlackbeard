@@ -46,9 +46,10 @@ public class TheBlackbeard extends CustomPlayer {
     private static final String BLACKBEARD_SHOULDER_2 = "blackbeard/img/char/blackbeard/shoulder2.png";
     private static final String BLACKBEARD_CORPSE = "blackbeard/img/char/blackbeard/corpse.png";
 
-    public static final String CAPTAIN_ABE_ENCOUNTER_STRINGS_ID = "blackbeard:CaptainAbeEncounter";
-    public static final String MAXIMUM_WEAPONS_REACHED_STRINGS_ID = "blackbeard:MaximumWeaponsReached";
-    public static final CharacterStrings captainAbeEncounterStrings = CardCrawlGame.languagePack.getCharacterString(CAPTAIN_ABE_ENCOUNTER_STRINGS_ID);
+    private static final String CAPTAIN_ABE_ENCOUNTER_STRINGS_ID = "blackbeard:CaptainAbeEncounter";
+    private static final String MAXIMUM_WEAPONS_REACHED_STRINGS_ID = "blackbeard:MaximumWeaponsReached";
+    private static final CharacterStrings captainAbeEncounterStrings = CardCrawlGame.languagePack.getCharacterString(CAPTAIN_ABE_ENCOUNTER_STRINGS_ID);
+    @SuppressWarnings("unused") //Used in MaximumWeaponsReachedPatch
     public static final CharacterStrings maximumWeaponsReachedStrings = CardCrawlGame.languagePack.getCharacterString(MAXIMUM_WEAPONS_REACHED_STRINGS_ID);
 
     public TheBlackbeard(String name) {
@@ -185,7 +186,7 @@ public class TheBlackbeard extends CustomPlayer {
 
     @Override
     public List<CutscenePanel> getCutscenePanels() {
-        List<CutscenePanel> panels = new ArrayList<CutscenePanel>();
+        List<CutscenePanel> panels = new ArrayList<>();
         panels.add(new CutscenePanel(TheBlackbeardMod.getHeartPanelImagePath(1)));
         panels.add(new CutscenePanel(TheBlackbeardMod.getHeartPanelImagePath(2)));
         panels.add(new CutscenePanel(TheBlackbeardMod.getHeartPanelImagePath(3)));
