@@ -398,7 +398,7 @@
     "DESCRIPTION": "Deal !D! damage. NL If this deals at least 12 damage, deal !D! damage again."
   },
   "blackbeard:DeadlyArsenal": {
-    "NAME": "DeadlyArsenal",
-    "DESCRIPTION": "Gain !B! Block. NL Draw 1 card for each unique Weapon you have."
+    "NAME": "Deadly Arsenal",
+    "DESCRIPTION": "Gain !B! Block. NL Draw 1 card for each unique Weapon you have currently equipped."
   }
 }
