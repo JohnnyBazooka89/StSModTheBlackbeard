@@ -25,7 +25,6 @@ public class OrangeJuicePotion extends CustomPotion {
         this.isThrown = false;
     }
 
-
     @Override
     public void initializeData() {
         this.potency = this.getPotency();

@@ -24,10 +24,9 @@ public class UpgradePotion extends CustomPotion {
     private static final int POTENCY = 3;
 
     public UpgradePotion() {
-        super(NAME, ID, PotionRarity.RARE, PotionSize.SPHERE, PotionColor.FEAR);
+        super(NAME, ID, PotionRarity.RARE, PotionSize.SPHERE, PotionColor.STRENGTH);
         this.isThrown = false;
     }
-
 
     @Override
     public void initializeData() {
