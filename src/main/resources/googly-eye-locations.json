@@ -1,17 +1,5 @@
 {
   "cards": {
-    "blackbeard:RearmingStrike": [
-      {
-        "x": 202.0,
-        "y": 244.0,
-        "size": 20.0
-      },
-      {
-        "x": 246.0,
-        "y": 228.0,
-        "size": 20.0
-      }
-    ],
     "blackbeard:SwordOfFire": [
       {
         "x": 153.0,
