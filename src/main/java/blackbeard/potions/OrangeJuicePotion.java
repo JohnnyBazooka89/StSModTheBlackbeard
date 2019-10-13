@@ -21,7 +21,7 @@ public class OrangeJuicePotion extends CustomPotion {
     private static final int POTENCY = 8;
 
     public OrangeJuicePotion() {
-        super(NAME, ID, PotionRarity.UNCOMMON, PotionSize.BOTTLE, PotionColor.ELIXIR);
+        super(NAME, ID, PotionRarity.COMMON, PotionSize.BOTTLE, PotionColor.ELIXIR);
         this.isThrown = false;
     }
 
