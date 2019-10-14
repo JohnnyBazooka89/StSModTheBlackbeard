@@ -84,7 +84,7 @@
                             <target>
                                 <copy file="target/TheBlackbeardMod.jar" tofile="${slayTheSpirePath}\mods\TheBlackbeardMod.jar"/>
                                 <copy file="target/TheBlackbeardMod.jar"
-                                      tofile="${slayTheSpirePath}\TheBlackbeardMod\content\TheBlackbeardMod.jar"/>
+                                      tofile="${slayTheSpirePath}\TheBlackbeardMod\content\beta\TheBlackbeardMod.jar"/>
                             </target>
                         </configuration>
                         <goals>
