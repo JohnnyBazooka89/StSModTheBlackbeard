@@ -200,7 +200,7 @@
   },
   "blackbeard:CaptainsHat": {
     "NAME": "Kapitański kapelusz",
-    "DESCRIPTION": "Zyskaj !blackbeard:M+1! pkt. Siły. NL Zyskaj !M! pkt. Odporności."
+    "DESCRIPTION": "Zyskaj !M! pkt. Siły. NL Zyskaj 2 pkt. Odporności."
   },
   "blackbeard:BlindAttacks": {
     "NAME": "Ataki na ślepo",

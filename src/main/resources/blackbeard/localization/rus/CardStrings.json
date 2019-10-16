@@ -200,7 +200,7 @@
   },
   "blackbeard:CaptainsHat": {
     "NAME": "Шляпа капитана",
-    "DESCRIPTION": "Даёт !blackbeard:M+1! Силы. NL Даёт !M! Сопротивляемости."
+    "DESCRIPTION": "Даёт !M! Силы. NL Даёт 2 Сопротивляемости."
   },
   "blackbeard:BlindAttacks": {
     "NAME": "Слепые атаки",
