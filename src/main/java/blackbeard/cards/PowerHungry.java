@@ -3,7 +3,6 @@ package blackbeard.cards;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.PowerCardFromDrawPileToHandAction;
 import blackbeard.enums.CardColorEnum;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -28,26 +27,6 @@ public class PowerHungry extends AbstractBlackbeardCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new PowerCardFromDrawPileToHandAction(1));
-    }
-
-    @Override
-    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        boolean canUse = super.canUse(p, m);
-        if (!canUse) {
-            return false;
-        } else {
-            boolean hasPower = false;
-            for (AbstractCard c : p.drawPile.group) {
-                if (c.type == CardType.POWER) {
-                    hasPower = true;
-                }
-            }
-            if (!hasPower) {
-                this.cantUseMessage = cardStrings.EXTENDED_DESCRIPTION[0];
-                canUse = false;
-            }
-            return canUse;
-        }
     }
 
     @Override
