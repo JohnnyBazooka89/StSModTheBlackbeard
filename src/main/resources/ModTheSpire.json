@@ -4,7 +4,7 @@
   "author_list": [
     "JohnnyBazooka89"
   ],
-  "credits": "Jedi - Russian localization, Vex'd - Cannonball animations, various visual effects",
+  "credits": "Jedi - Russian localization, Vex'd - Cannonball animations, various visual effects, Venim - card backgrounds",
   "description": "Adds The Blackbeard as a new playable character.\n\nMore info: https://steamcommunity.com/sharedfiles/filedetails/?id=1612105245\n\nGithub: https://github.com/JohnnyBazooka89/StSModTheBlackbeard",
   "version": "${project.version}",
   "dependencies": [
