@@ -90,8 +90,7 @@
   },
   "blackbeard:InfiniteBarrage": {
     "NAME": "Nieustanny ostrzał",
-    "DESCRIPTION": "Na początku każdej tury, dodaj *Kulę do ręki.",
-    "UPGRADE_DESCRIPTION": "Startowa. NL Na początku każdej tury, dodaj *Kulę do ręki."
+    "DESCRIPTION": "Na początku każdej tury, dodaj *Kulę do ręki."
   },
   "blackbeard:SwordOfWisdom": {
     "NAME": "Miecz mądrości",

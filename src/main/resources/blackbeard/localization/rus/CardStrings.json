@@ -90,8 +90,7 @@
   },
   "blackbeard:InfiniteBarrage": {
     "NAME": "Уйма ядер",
-    "DESCRIPTION": "Добавляет в руку *Ядро в начале вашего хода.",
-    "UPGRADE_DESCRIPTION": "Начальная. NL Добавляет в руку *Ядро в начале вашего хода."
+    "DESCRIPTION": "Добавляет в руку *Ядро в начале вашего хода."
   },
   "blackbeard:SwordOfWisdom": {
     "NAME": "Меч мудрости",
