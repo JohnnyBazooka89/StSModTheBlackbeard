@@ -77,7 +77,7 @@
       "At the start of each combat, equip a #b0 / #b1 #yWeapon. When it is destroyed, deal #b8 damage to ALL enemies."
     ]
   },
-  "blackbeard:Soberminded": {
+  "blackbeard:SoberMinded": {
     "NAME": "Sober-minded",
     "FLAVOR": "Being sober is not a natural state for The Blackbeard.",
     "DESCRIPTIONS": [

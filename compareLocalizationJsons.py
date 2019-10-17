@@ -4,7 +4,8 @@
 import json
 
 languages = ['pol', 'rus']
-jsonFilenames = ['CardStrings.json', 'CharacterStrings.json', 'EventStrings.json', 'KeywordStrings.json', 'OrbStrings.json', 'PotionStrings.json', 'PowerStrings.json', 'RelicStrings.json'];
+jsonFilenames = ['CardStrings.json', 'CharacterStrings.json', 'EventStrings.json', 'KeywordStrings.json',
+                 'OrbStrings.json', 'PotionStrings.json', 'PowerStrings.json', 'RelicStrings.json', 'UiStrings.json'];
 localizationParentPath = 'src\\main\\resources\\blackbeard\\localization'
 
 for language in languages:

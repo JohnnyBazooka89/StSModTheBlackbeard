@@ -399,5 +399,13 @@
   "blackbeard:DeadlyArsenal": {
     "NAME": "Deadly Arsenal",
     "DESCRIPTION": "Gain !B! Block. NL Draw 1 card for each unique Weapon you have currently equipped."
+  },
+  "blackbeard:PowerHungry": {
+    "NAME": "Power-hungry",
+    "DESCRIPTION": "Put a Power card from your draw pile into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Put a Power card from your draw pile into your hand. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      "There are no Power cards in my draw pile."
+    ]
   }
 }

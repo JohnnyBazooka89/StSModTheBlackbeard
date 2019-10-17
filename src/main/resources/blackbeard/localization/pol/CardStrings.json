@@ -399,5 +399,13 @@
   "blackbeard:DeadlyArsenal": {
     "NAME": "Zabójczy arsenał",
     "DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dobierz 1 kartę za każdą posiadaną, unikalną Broń."
+  },
+  "blackbeard:PowerHungry": {
+    "NAME": "Żądny mocy",
+    "DESCRIPTION": "Wybierz kartę Mocy ze stosu rozgrywającego i umieść ją w ręce. NL Wykluczenie.",
+    "UPGRADE_DESCRIPTION": "Startowa. NL Wybierz kartę Mocy ze stosu rozgrywającego i umieść ją w ręce. NL Wykluczenie.",
+    "EXTENDED_DESCRIPTION": [
+      "Nie posiadam żadnych kart Mocy w stosie rozgrywającym."
+    ]
   }
 }

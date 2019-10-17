@@ -85,6 +85,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     private static final String KEYWORD_STRINGS_PATH = "blackbeard/localization/%s/KeywordStrings.json";
     private static final String POTION_STRINGS_PATH = "blackbeard/localization/%s/PotionStrings.json";
     private static final String EVENT_STRINGS_PATH = "blackbeard/localization/%s/EventStrings.json";
+    private static final String UI_STRINGS_PATH = "blackbeard/localization/%s/UiStrings.json";
 
     //Languages
     private static final String DEFAULT_LANGUAGE_FOLDER = "eng";
@@ -217,7 +218,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addRelicToCustomPool(new MagicalCauldron(), CardColorEnum.BLACKBEARD_BLACK);
         BaseMod.addRelicToCustomPool(new PoorMathSkills(), CardColorEnum.BLACKBEARD_BLACK);
         //Boss
-        BaseMod.addRelicToCustomPool(new Soberminded(), CardColorEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new SoberMinded(), CardColorEnum.BLACKBEARD_BLACK);
         BaseMod.addRelicToCustomPool(new LoadTheGoldenCannons(), CardColorEnum.BLACKBEARD_BLACK);
         //Shop
         BaseMod.addRelicToCustomPool(new BloodOrange(), CardColorEnum.BLACKBEARD_BLACK);
@@ -313,6 +314,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addCard(new ReapersScythe());
         BaseMod.addCard(new PirateHook());
         BaseMod.addCard(new DeadlyArsenal());
+        BaseMod.addCard(new PowerHungry());
 
         //Special cards are registered, but they are not shown in the library, because of DoNotShowSpecialCardsInLibraryPatch.
         BaseMod.addCard(new Cannonball());
@@ -353,6 +355,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.loadCustomStringsFile(OrbStrings.class, String.format(ORB_STRINGS_PATH, languageFolder));
         BaseMod.loadCustomStringsFile(PotionStrings.class, String.format(POTION_STRINGS_PATH, languageFolder));
         BaseMod.loadCustomStringsFile(EventStrings.class, String.format(EVENT_STRINGS_PATH, languageFolder));
+        BaseMod.loadCustomStringsFile(UIStrings.class, String.format(UI_STRINGS_PATH, languageFolder));
     }
 
     @Override
