@@ -12,7 +12,7 @@ Other mechanics are:
 - Gold scaling cards - some cards scale with how much Gold you gained this run.
 - Debuff cleansing - The Blackbeard is able to play powerful cards with negative effects, and later cleanse his debuffs.
 
-The Blackbeard has access to 3 character-specific potions, one for each rarity.
+The Blackbeard has access to 3 character-specific potions, one for each rarity, similar to the base game characters.
 
 Gameplay: 
 ![Gameplay](screenshots/Gameplay.jpg)
