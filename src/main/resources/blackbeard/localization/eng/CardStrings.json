@@ -360,7 +360,7 @@
   "blackbeard:DoubleCannonball": {
     "NAME": "Double Cannonball",
     "DESCRIPTION": "Deal !D! damage. NL Add a *Cannonball into your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add an upgraded *Cannonball into your hand. NL Exhaust."
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add a *Cannonball+ into your hand. NL Exhaust."
   },
   "blackbeard:SwordOfFire": {
     "NAME": "Sword of Fire",
@@ -369,7 +369,7 @@
   "blackbeard:CloakAndCannonball": {
     "NAME": "Cloak and Cannonball",
     "DESCRIPTION": "Gain !B! Block. NL Add a *Cannonball into your hand.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add an upgraded *Cannonball into your hand."
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add a *Cannonball+ into your hand."
   },
   "blackbeard:UndeadForm": {
     "NAME": "Undead Form",
