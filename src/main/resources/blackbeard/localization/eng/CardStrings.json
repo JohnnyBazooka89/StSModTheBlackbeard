@@ -34,7 +34,7 @@
   },
   "blackbeard:Halberd": {
     "NAME": "Halberd",
-    "DESCRIPTION": "Equip a !M! / {D} Weapon. NL Whenever you attack with this Weapon, apply 3 blackbeard:Bleed to a target per hit."
+    "DESCRIPTION": "Equip a !M! / {D} Weapon. NL Whenever you attack with this Weapon, apply 2 blackbeard:Bleed to a target per hit."
   },
   "blackbeard:TheDrunkenSailor": {
     "NAME": "The Drunken Sailor",

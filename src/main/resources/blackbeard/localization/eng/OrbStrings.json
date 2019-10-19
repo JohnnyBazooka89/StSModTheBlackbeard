@@ -17,7 +17,7 @@
   "blackbeard:HalberdOrb": {
     "NAME": "Halberd",
     "DESCRIPTION": [
-      "Whenever you attack with this Weapon, apply 3 #yBleed to a target per hit."
+      "Whenever you attack with this Weapon, apply 2 #yBleed to a target per hit."
     ]
   },
   "blackbeard:PowderKegOrb": {
