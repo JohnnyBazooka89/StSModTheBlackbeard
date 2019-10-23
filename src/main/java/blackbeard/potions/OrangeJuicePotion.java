@@ -9,7 +9,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
-import com.megacrit.cardcrawl.relics.SacredBark;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
 public class OrangeJuicePotion extends CustomPotion {
@@ -47,10 +46,6 @@ public class OrangeJuicePotion extends CustomPotion {
 
     @Override
     public int getPotency(int ascensionLevel) {
-        if (AbstractDungeon.player == null) {
-            return POTENCY;
-        } else {
-            return AbstractDungeon.player.hasRelic(SacredBark.ID) ? 2 * POTENCY : POTENCY;
-        }
+        return POTENCY;
     }
 }
