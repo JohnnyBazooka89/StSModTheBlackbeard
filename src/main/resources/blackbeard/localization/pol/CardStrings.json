@@ -402,7 +402,7 @@
   },
   "blackbeard:PowerHungry": {
     "NAME": "Żądny mocy",
-    "DESCRIPTION": "Wybierz kartę Mocy ze stosu rozgrywającego i umieść ją w ręce. NL Wykluczenie.",
-    "UPGRADE_DESCRIPTION": "Startowa. NL Wybierz kartę Mocy ze stosu rozgrywającego i umieść ją w ręce. NL Wykluczenie."
+    "DESCRIPTION": "Startowa. NL Wybierz !M! kartę Mocy ze stosu rozgrywającego i umieść ją w ręce. NL Wykluczenie.",
+    "UPGRADE_DESCRIPTION": "Startowa. NL Wybierz !M! karty Mocy ze stosu rozgrywającego i umieść je w ręce. NL Wykluczenie."
   }
 }

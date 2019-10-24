@@ -402,7 +402,7 @@
   },
   "blackbeard:PowerHungry": {
     "NAME": "Power-hungry",
-    "DESCRIPTION": "Put a Power card from your draw pile into your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Put a Power card from your draw pile into your hand. NL Exhaust."
+    "DESCRIPTION": "Innate. NL Put !M! Power card from your draw pile into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Put !M! Power cards from your draw pile into your hand. NL Exhaust."
   }
 }
