@@ -31,7 +31,7 @@
     "NAMES": [
       "reaper's mark"
     ],
-    "DESCRIPTION": "For every #b3 stacks, they are consumed and the creature loses HP equal to #b40% of its missing HP."
+    "DESCRIPTION": "Whenever #b3 stacks are applied, they are removed and the creature loses HP equal to #b40% of its missing HP."
   },
   "blackbeard:RustyThorns": {
     "PROPER_NAME": "Rusty Thorns",
