@@ -43,11 +43,6 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
 
     private static final Logger logger = LogManager.getLogger(TheBlackbeardMod.class);
 
-    //Default cards and orbs
-    public static final String DEFAULT_POWER_CARD_ID = "blackbeard:BetaPower";
-    public static final String DEFAULT_SKILL_CARD_ID = "blackbeard:BetaSkill";
-    public static final String DEFAULT_ATTACK_CARD_ID = "blackbeard:Beta";
-
     //Mod metadata
     private static final String MOD_NAME = "The Blackbeard";
     private static final String AUTHOR = "JohnnyBazooka89";
@@ -95,7 +90,6 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     //Keywords
     public static Map<String, Keyword> keywords = new HashMap<>();
     public static final String WEAPON_KEYWORD = "blackbeard:WeaponKeyword";
-    public static final String CANNONBALL_KEYWORD = "blackbeard:CannonballKeyword";
     public static final String RESISTANCE_KEYWORD = "blackbeard:ResistanceKeyword";
 
     //Sounds
