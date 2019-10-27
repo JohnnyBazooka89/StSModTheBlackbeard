@@ -178,7 +178,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         Color orangeJuiceSpotsColor = new Color(255 / 255.0F, 154 / 255.0F, 0 / 255.0F, 1);
         BaseMod.addPotion(RumPotion.class, rumLiquidColor.cpy(), rumHybridColor.cpy(), null, "blackbeard:RumPotion", PlayerClassEnum.BLACKBEARD_CLASS);
         BaseMod.addPotion(OrangeJuicePotion.class, orangeJuiceLiquidColor.cpy(), null, orangeJuiceSpotsColor.cpy(), "blackbeard:OrangeJuicePotion", PlayerClassEnum.BLACKBEARD_CLASS);
-        BaseMod.addPotion(UpgradePotion.class, Color.DARK_GRAY.cpy(), null, Color.CORAL.cpy(), "blackbeard:UpgradePotion", PlayerClassEnum.BLACKBEARD_CLASS);
+        BaseMod.addPotion(UpgradePotion.class, Color.DARK_GRAY.cpy(), Color.CORAL.cpy(), null, "blackbeard:UpgradePotion", PlayerClassEnum.BLACKBEARD_CLASS);
     }
 
     @Override
