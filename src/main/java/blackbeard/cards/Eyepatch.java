@@ -20,15 +20,18 @@ public class Eyepatch extends AbstractBlackbeardCard {
     private static final int COST = 0;
     private static final int WEAK_TO_GAIN = 3;
     private static final int ADDITIONAL_CARDS_TO_DRAW_EACH_TURN = 1;
+    private static final int UPGRADED_MINUS_WEAK_TO_GAIN = 1;
 
     public Eyepatch() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.POWER,
                 CardColorEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
+
+        this.baseMagicNumber = this.magicNumber = WEAK_TO_GAIN;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new WeakPower(p, WEAK_TO_GAIN, false), WEAK_TO_GAIN));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new WeakPower(p, this.magicNumber, false), this.magicNumber));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DrawPower(p, ADDITIONAL_CARDS_TO_DRAW_EACH_TURN), ADDITIONAL_CARDS_TO_DRAW_EACH_TURN));
     }
 
@@ -36,9 +39,7 @@ public class Eyepatch extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.isInnate = true;
-            this.rawDescription = UPGRADE_DESCRIPTION;
-            this.initializeDescription();
+            this.upgradeMagicNumber(-UPGRADED_MINUS_WEAK_TO_GAIN);
         }
     }
 }

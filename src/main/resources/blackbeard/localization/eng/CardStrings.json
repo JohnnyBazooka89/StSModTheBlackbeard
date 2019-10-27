@@ -194,8 +194,7 @@
   },
   "blackbeard:Eyepatch": {
     "NAME": "Eyepatch",
-    "DESCRIPTION": "Gain 3 Weak. NL At the start of your turn, draw 1 additional card.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Gain 3 Weak. NL At the start of your turn, draw 1 additional card."
+    "DESCRIPTION": "Gain !M! Weak. NL At the start of your turn, draw 1 additional card."
   },
   "blackbeard:CaptainsHat": {
     "NAME": "Captain's Hat",

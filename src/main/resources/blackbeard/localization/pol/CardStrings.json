@@ -194,8 +194,7 @@
   },
   "blackbeard:Eyepatch": {
     "NAME": "Przepaska na oko",
-    "DESCRIPTION": "Otrzymaj 3 pkt. Słabości. NL Na początku każdej tury, dobierz 1 dodatkową kartę.",
-    "UPGRADE_DESCRIPTION": "Startowa. NL Otrzymaj 3 pkt. Słabości. NL Na początku każdej tury, dobierz 1 dodatkową kartę."
+    "DESCRIPTION": "Otrzymaj !M! pkt. Słabości. NL Na początku każdej tury, dobierz 1 dodatkową kartę."
   },
   "blackbeard:CaptainsHat": {
     "NAME": "Kapitański kapelusz",
