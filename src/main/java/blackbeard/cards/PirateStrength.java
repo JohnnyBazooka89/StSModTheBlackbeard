@@ -19,7 +19,7 @@ public class PirateStrength extends AbstractBlackbeardCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 3;
     private static final int STRENGTH = 6;
-    private static final int UPGRADED_PLUS_STRENGTH = 3;
+    private static final int UPGRADED_PLUS_STRENGTH = 2;
 
     public PirateStrength() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.POWER,
@@ -39,7 +39,6 @@ public class PirateStrength extends AbstractBlackbeardCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeMagicNumber(UPGRADED_PLUS_STRENGTH);
-            this.initializeDescription();
         }
     }
 }

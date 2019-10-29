@@ -39,7 +39,6 @@ public class GhostInTheRum extends AbstractBlackbeardCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeMagicNumber(-UPGRADED_MINUS_RESISTANCE_DEBUFF_VALUE);
-            this.initializeDescription();
         }
     }
 }

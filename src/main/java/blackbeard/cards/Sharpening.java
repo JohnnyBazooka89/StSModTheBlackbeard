@@ -26,7 +26,6 @@ public class Sharpening extends AbstractBlackbeardCard {
                 CardColorEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.SELF);
 
         this.baseMagicNumber = this.magicNumber = WEAPON_ATTACK;
-
     }
 
     @Override

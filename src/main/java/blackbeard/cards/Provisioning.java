@@ -40,7 +40,6 @@ public class Provisioning extends AbstractBlackbeardCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeBaseCost(UPGRADED_COST);
-            this.initializeDescription();
         }
     }
 }
