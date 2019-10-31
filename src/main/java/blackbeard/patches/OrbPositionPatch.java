@@ -17,7 +17,7 @@ public class OrbPositionPatch {
     @SpireInsertPatch(locator = Locator.class)
     public static void Insert(AbstractOrb abstractOrb, int slotNum, int maxOrbs) {
         if (AbstractDungeon.player.chosenClass == PlayerClassEnum.BLACKBEARD_CLASS && TheBlackbeardMod.shouldUseChristmasTheme() && maxOrbs == 1) {
-            abstractOrb.tY += 30.0F * Settings.scale;
+            abstractOrb.tY += 35.0F * Settings.scale;
         }
     }
 

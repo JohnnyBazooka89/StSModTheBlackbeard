@@ -47,8 +47,10 @@ public class TheBlackbeard extends CustomPlayer {
     private static final String BLACKBEARD_CORPSE = "blackbeard/img/char/blackbeard/corpse.png";
 
     private static final String CAPTAIN_ABE_ENCOUNTER_STRINGS_ID = "blackbeard:CaptainAbeEncounter";
+    private static final String CHRISTMAS_THEME_GREETING_STRINGS_ID = "blackbeard:ChristmasThemeGreeting";
     private static final String MAXIMUM_WEAPONS_REACHED_STRINGS_ID = "blackbeard:MaximumWeaponsReached";
     private static final CharacterStrings captainAbeEncounterStrings = CardCrawlGame.languagePack.getCharacterString(CAPTAIN_ABE_ENCOUNTER_STRINGS_ID);
+    private static final CharacterStrings christmasThemeGreetingStrings = CardCrawlGame.languagePack.getCharacterString(CHRISTMAS_THEME_GREETING_STRINGS_ID);
     @SuppressWarnings("unused") //Used in MaximumWeaponsReachedPatch
     public static final CharacterStrings maximumWeaponsReachedStrings = CardCrawlGame.languagePack.getCharacterString(MAXIMUM_WEAPONS_REACHED_STRINGS_ID);
 
@@ -177,6 +179,9 @@ public class TheBlackbeard extends CustomPlayer {
     @Override
     public void applyStartOfCombatLogic() {
         super.applyStartOfCombatLogic();
+        if (TheBlackbeardMod.shouldUseChristmasTheme() && AbstractDungeon.floorNum == 1) {
+            AbstractDungeon.actionManager.addToBottom(new TalkAction(true, christmasThemeGreetingStrings.TEXT[0], 0.0F, 3.0F));
+        }
         if (AbstractDungeon.lastCombatMetricKey.equals("Pondfish")) {
             int i = AbstractDungeon.cardRandomRng.random(0, captainAbeEncounterStrings.TEXT.length - 1);
             AbstractDungeon.actionManager.addToBottom(new SFXAction(TheBlackbeardMod.SOUND_YARR_KEY));
