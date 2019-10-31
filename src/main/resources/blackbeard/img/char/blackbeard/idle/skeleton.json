@@ -253,6 +253,12 @@
 			"y": 0.12
 		},
 		{
+          "name": "christmasHat",
+          "parent": "helmet",
+          "x": 12.18,
+          "y": 0.12
+        },
+      {
 			"name": "eye",
 			"parent": "helmet",
 			"x": 8,
@@ -356,6 +362,11 @@
 			"attachment": "images/hat"
 		},
 		{
+          "name": "images/christmasHat",
+          "bone": "christmasHat",
+          "attachment": "images/christmasHat"
+        },
+      {
 			"name": "images/eye",
 			"bone": "eye",
 			"attachment": "images/eye"
@@ -1647,6 +1658,7 @@
 					"height": 50
 				}
 			},
+          "images/christmasHat": {},
 			"images/legs": {
 				"images/legs": {
 					"type": "mesh",
