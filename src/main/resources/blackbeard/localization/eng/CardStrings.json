@@ -320,7 +320,7 @@
   },
   "blackbeard:BountyHunter": {
     "NAME": "Bounty Hunter",
-    "DESCRIPTION": "Deal !D! damage. NL If this kills a non-minion enemy, gain !M! Gold. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL If Fatal, gain !M! Gold. NL Exhaust."
   },
   "blackbeard:GoldenGuillotine": {
     "NAME": "Golden Guillotine",
