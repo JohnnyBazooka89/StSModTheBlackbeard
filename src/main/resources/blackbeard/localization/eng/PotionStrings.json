@@ -10,7 +10,7 @@
     "NAME": "Orange Juice",
     "DESCRIPTIONS": [
       "Heal #b",
-      " HP. Remove all of your Debuffs."
+      " HP. Remove all of your debuffs."
     ]
   },
   "blackbeard:UpgradePotion": {

@@ -86,7 +86,7 @@
   },
   "blackbeard:RemoveScurvy": {
     "NAME": "Remove Scurvy",
-    "DESCRIPTION": "Heal !M! HP. NL Remove all of your Debuffs. NL Exhaust."
+    "DESCRIPTION": "Heal !M! HP. NL Remove all of your debuffs. NL Exhaust."
   },
   "blackbeard:InfiniteBarrage": {
     "NAME": "Infinite Barrage",
@@ -186,7 +186,7 @@
   },
   "blackbeard:PiratesWill": {
     "NAME": "Pirate's Will",
-    "DESCRIPTION": "Remove all of your Debuffs. NL Draw a card. NL Exhaust."
+    "DESCRIPTION": "Remove all of your debuffs. NL Draw a card. NL Exhaust."
   },
   "blackbeard:WoodenLeg": {
     "NAME": "Wooden Leg",
