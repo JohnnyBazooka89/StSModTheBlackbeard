@@ -14,8 +14,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.rooms.MonsterRoomBoss;
-import com.megacrit.cardcrawl.rooms.MonsterRoomElite;
 
 public class Murder extends AbstractBlackbeardCard {
     public static final String ID = "blackbeard:Murder";
@@ -49,7 +47,7 @@ public class Murder extends AbstractBlackbeardCard {
         if (!canUse) {
             return false;
         }
-        if (isEliteOrBossMonsterRoom()) {
+        if (isEliteOrBoss()) {
             canUse = false;
             this.cantUseMessage = EXTENDED_DESCRIPTION[0];
         }
@@ -58,11 +56,17 @@ public class Murder extends AbstractBlackbeardCard {
 
     @Override
     public void triggerOnGlowCheck() {
-        this.glowColor = !isEliteOrBossMonsterRoom() ? AbstractCard.GOLD_BORDER_GLOW_COLOR : AbstractCard.BLUE_BORDER_GLOW_COLOR;
+        this.glowColor = !isEliteOrBoss() ? AbstractCard.GOLD_BORDER_GLOW_COLOR : AbstractCard.BLUE_BORDER_GLOW_COLOR;
     }
 
-    private boolean isEliteOrBossMonsterRoom() {
-        return (AbstractDungeon.getCurrRoom() instanceof MonsterRoomElite) || (AbstractDungeon.getCurrRoom() instanceof MonsterRoomBoss);
+    private boolean isEliteOrBoss() {
+        boolean eliteOrBoss = (AbstractDungeon.getCurrRoom()).eliteTrigger;
+        for (AbstractMonster m : (AbstractDungeon.getMonsters()).monsters) {
+            if (m.type == AbstractMonster.EnemyType.BOSS) {
+                eliteOrBoss = true;
+            }
+        }
+        return eliteOrBoss;
     }
 
     @Override
