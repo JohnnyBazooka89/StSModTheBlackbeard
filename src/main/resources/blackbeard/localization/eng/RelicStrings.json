@@ -3,8 +3,7 @@
     "NAME": "Load the Cannons",
     "FLAVOR": "Ready... Aim... Fire!!!",
     "DESCRIPTIONS": [
-      "At the start of each combat, and then every #b4 turns, add a #yCannonball into your hand.",
-      "At the start of each combat, and then every #b4 turns, add a #yCannonball NL into your hand."
+      "At the start of each combat, and then every #b4 turns, add a #yCannonball into your hand."
     ]
   },
   "blackbeard:HipFlask": {
