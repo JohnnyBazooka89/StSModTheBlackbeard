@@ -580,18 +580,6 @@
         "size": 25.0
       }
     ],
-    "blackbeard:StrikeBlackbeard": [
-      {
-        "x": 219.0,
-        "y": 139.0,
-        "size": 25.0
-      },
-      {
-        "x": 268.0,
-        "y": 123.0,
-        "size": 25.0
-      }
-    ],
     "blackbeard:BeatUp": [
       {
         "x": 201.0,
@@ -729,18 +717,6 @@
         "x": 238.0,
         "y": 272.0,
         "size": 18.788294
-      }
-    ],
-    "blackbeard:GoldenStrike": [
-      {
-        "x": 219.0,
-        "y": 139.0,
-        "size": 25.0
-      },
-      {
-        "x": 268.0,
-        "y": 123.0,
-        "size": 25.0
       }
     ],
     "blackbeard:GoldenCannonball": [
