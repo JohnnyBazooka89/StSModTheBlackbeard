@@ -27,7 +27,7 @@ public class VampiresBlackbeardEvent extends AbstractImageEvent {
     private static final String GIVE_VIAL;
     private static final int HP_DRAIN_PERCENT = 30;
     private static final float HP_PERCENT = 0.7F;
-    private static final int VAMPIRIC_SCEPTER_PRICE = 125;
+    private static final int VAMPIRIC_SCEPTER_PRICE = 100;
     private int screenNum = 0;
     private boolean hasVial;
     private AbstractCard vampiricScepterCard;
