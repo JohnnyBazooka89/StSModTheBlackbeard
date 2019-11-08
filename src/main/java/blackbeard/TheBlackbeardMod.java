@@ -45,6 +45,10 @@ import org.apache.logging.log4j.Logger;
 
 import java.lang.reflect.Type;
 import java.nio.charset.StandardCharsets;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
+import java.time.temporal.TemporalAdjusters;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -439,15 +443,14 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     }
 
     private static boolean isChristmasTime() {
-        return true; //TODO: only for tests, change this before releasing
-
-        /*LocalDateTime now = LocalDateTime.now();
-        LocalDate lastDay = now.with(TemporalAdjusters.firstDayOfNextYear()).toLocalDate();
-        LocalDate firstDay = lastDay.minus(14, ChronoUnit.DAYS);
+        LocalDateTime now = LocalDateTime.now();
+        LocalDate firstDayOfNextYear = now.with(TemporalAdjusters.firstDayOfNextYear()).toLocalDate();
+        LocalDate firstDay = firstDayOfNextYear.minus(21, ChronoUnit.DAYS);
+        LocalDate lastDay = firstDayOfNextYear.plus(7, ChronoUnit.DAYS);
         if (!now.isBefore(firstDay.atStartOfDay()) && !now.isAfter(lastDay.atStartOfDay())) {
             return true;
         }
-        return false;*/
+        return false;
     }
 
     @Override
