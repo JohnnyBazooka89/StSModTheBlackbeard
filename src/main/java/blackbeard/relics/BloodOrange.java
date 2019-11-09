@@ -4,10 +4,11 @@ import basemod.abstracts.CustomRelic;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.utils.TextureLoader;
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.unique.RemoveDebuffsAction;
+import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class BloodOrange extends CustomRelic {
 
@@ -30,13 +31,14 @@ public class BloodOrange extends CustomRelic {
     }
 
     @Override
-    public void onPlayCard(AbstractCard card, AbstractMonster m) {
+    public void onUseCard(AbstractCard card, UseCardAction action) {
         if (this.counter < 6) {
             ++this.counter;
         }
         if (this.counter >= 6) {
             this.flash();
-            AbstractDungeon.actionManager.addToBottom(new RemoveDebuffsAction(AbstractDungeon.player));
+            this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+            this.addToBot(new RemoveDebuffsAction(AbstractDungeon.player));
             this.counter = 0;
         }
     }

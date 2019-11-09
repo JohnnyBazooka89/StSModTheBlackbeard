@@ -9,8 +9,9 @@ import blackbeard.enums.CardColorEnum;
 import blackbeard.enums.PlayerClassEnum;
 import blackbeard.events.SsssserpentBlackbeardEvent;
 import blackbeard.events.VampiresBlackbeardEvent;
+import blackbeard.potions.OrangeJuicePotion;
 import blackbeard.potions.RumPotion;
-import blackbeard.potions.ToastPotion;
+import blackbeard.potions.UpgradePotion;
 import blackbeard.relics.*;
 import blackbeard.utils.TextureLoader;
 import blackbeard.variables.MagicNumberPlusOneVariable;
@@ -27,8 +28,6 @@ import com.megacrit.cardcrawl.dungeons.Exordium;
 import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.localization.*;
-import com.megacrit.cardcrawl.potions.BloodPotion;
-import com.megacrit.cardcrawl.potions.GhostInAJar;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -44,18 +43,13 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
 
     private static final Logger logger = LogManager.getLogger(TheBlackbeardMod.class);
 
-    //Default cards and orbs
-    public static final String DEFAULT_POWER_CARD_ID = "blackbeard:BetaPower";
-    public static final String DEFAULT_SKILL_CARD_ID = "blackbeard:BetaSkill";
-    public static final String DEFAULT_ATTACK_CARD_ID = "blackbeard:Beta";
-
     //Mod metadata
     private static final String MOD_NAME = "The Blackbeard";
     private static final String AUTHOR = "JohnnyBazooka89";
     private static final String DESCRIPTION = "Adds The Blackbeard as a new playable character.";
 
     //General color
-    private static final Color BLACK = CardHelper.getColor(0.0f, 0.0f, 0.0f);
+    private static final Color BLACK = CardHelper.getColor(0, 0, 0);
 
     //Card backgrounds and energy orbs
     private static final String ATTACK_BLACK = "blackbeard/img/512/bg_attack_black.png";
@@ -86,6 +80,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     private static final String KEYWORD_STRINGS_PATH = "blackbeard/localization/%s/KeywordStrings.json";
     private static final String POTION_STRINGS_PATH = "blackbeard/localization/%s/PotionStrings.json";
     private static final String EVENT_STRINGS_PATH = "blackbeard/localization/%s/EventStrings.json";
+    private static final String UI_STRINGS_PATH = "blackbeard/localization/%s/UiStrings.json";
 
     //Languages
     private static final String DEFAULT_LANGUAGE_FOLDER = "eng";
@@ -95,7 +90,6 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     //Keywords
     public static Map<String, Keyword> keywords = new HashMap<>();
     public static final String WEAPON_KEYWORD = "blackbeard:WeaponKeyword";
-    public static final String CANNONBALL_KEYWORD = "blackbeard:CannonballKeyword";
     public static final String RESISTANCE_KEYWORD = "blackbeard:ResistanceKeyword";
 
     //Sounds
@@ -172,12 +166,13 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addEvent(VampiresBlackbeardEvent.ID, VampiresBlackbeardEvent.class, TheCity.ID);
 
         //Potions
-        BaseMod.addPotion(BloodPotion.class, Color.WHITE.cpy(), Color.LIGHT_GRAY.cpy(), null, "blackbeard:BloodPotion", PlayerClassEnum.BLACKBEARD_CLASS);
-        BaseMod.addPotion(GhostInAJar.class, Color.WHITE.cpy(), Color.LIGHT_GRAY.cpy(), null, "blackbeard:GhostInAJar", PlayerClassEnum.BLACKBEARD_CLASS);
-        Color rumColor = new Color(211 / 255.0F, 102 / 255.0F, 0, 1);
-        Color rumShadeColor = new Color(160 / 255.0F, 77 / 255.0F, 0, 1);
-        BaseMod.addPotion(RumPotion.class, rumColor.cpy(), rumShadeColor.cpy(), null, "blackbeard:RumPotion", PlayerClassEnum.BLACKBEARD_CLASS);
-        BaseMod.addPotion(ToastPotion.class, rumColor.cpy(), rumShadeColor.cpy(), null, "blackbeard:ToastPotion", PlayerClassEnum.BLACKBEARD_CLASS);
+        Color rumLiquidColor = new Color(211 / 255.0F, 102 / 255.0F, 0, 1);
+        Color rumHybridColor = new Color(160 / 255.0F, 77 / 255.0F, 0, 1);
+        Color orangeJuiceLiquidColor = new Color(255 / 255.0F, 179 / 255.0F, 63 / 255.0F, 1);
+        Color orangeJuiceSpotsColor = new Color(255 / 255.0F, 154 / 255.0F, 0 / 255.0F, 1);
+        BaseMod.addPotion(RumPotion.class, rumLiquidColor.cpy(), rumHybridColor.cpy(), null, "blackbeard:RumPotion", PlayerClassEnum.BLACKBEARD_CLASS);
+        BaseMod.addPotion(OrangeJuicePotion.class, orangeJuiceLiquidColor.cpy(), null, orangeJuiceSpotsColor.cpy(), "blackbeard:OrangeJuicePotion", PlayerClassEnum.BLACKBEARD_CLASS);
+        BaseMod.addPotion(UpgradePotion.class, Color.DARK_GRAY.cpy(), Color.CORAL.cpy(), null, "blackbeard:UpgradePotion", PlayerClassEnum.BLACKBEARD_CLASS);
     }
 
     @Override
@@ -209,7 +204,6 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addRelicToCustomPool(new TreasureChest(), CardColorEnum.BLACKBEARD_BLACK);
         BaseMod.addRelicToCustomPool(new WhitePearl(), CardColorEnum.BLACKBEARD_BLACK);
         //Uncommon
-        BaseMod.addRelicToCustomPool(new CrossedSwords(), CardColorEnum.BLACKBEARD_BLACK);
         BaseMod.addRelicToCustomPool(new GoldenRing(), CardColorEnum.BLACKBEARD_BLACK);
         BaseMod.addRelicToCustomPool(new Penknife(), CardColorEnum.BLACKBEARD_BLACK);
         BaseMod.addRelicToCustomPool(new PowderCan(), CardColorEnum.BLACKBEARD_BLACK);
@@ -217,11 +211,12 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addRelicToCustomPool(new MagicalCauldron(), CardColorEnum.BLACKBEARD_BLACK);
         BaseMod.addRelicToCustomPool(new PoorMathSkills(), CardColorEnum.BLACKBEARD_BLACK);
         //Boss
-        BaseMod.addRelicToCustomPool(new Soberminded(), CardColorEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new Karategi(), CardColorEnum.BLACKBEARD_BLACK);
         BaseMod.addRelicToCustomPool(new LoadTheGoldenCannons(), CardColorEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new SoberMinded(), CardColorEnum.BLACKBEARD_BLACK);
         //Shop
         BaseMod.addRelicToCustomPool(new BloodOrange(), CardColorEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new KarateGi(), CardColorEnum.BLACKBEARD_BLACK);
+        BaseMod.addRelicToCustomPool(new CrossedSwords(), CardColorEnum.BLACKBEARD_BLACK);
 
         logger.info("Done editing relics");
     }
@@ -311,6 +306,9 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addCard(new WeaponProficiency());
         BaseMod.addCard(new FieryDefense());
         BaseMod.addCard(new ReapersScythe());
+        BaseMod.addCard(new PirateHook());
+        BaseMod.addCard(new DeadlyArsenal());
+        BaseMod.addCard(new PowerHungry());
 
         //Special cards are registered, but they are not shown in the library, because of DoNotShowSpecialCardsInLibraryPatch.
         BaseMod.addCard(new Cannonball());
@@ -351,6 +349,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.loadCustomStringsFile(OrbStrings.class, String.format(ORB_STRINGS_PATH, languageFolder));
         BaseMod.loadCustomStringsFile(PotionStrings.class, String.format(POTION_STRINGS_PATH, languageFolder));
         BaseMod.loadCustomStringsFile(EventStrings.class, String.format(EVENT_STRINGS_PATH, languageFolder));
+        BaseMod.loadCustomStringsFile(UIStrings.class, String.format(UI_STRINGS_PATH, languageFolder));
     }
 
     @Override

@@ -2,7 +2,7 @@ package blackbeard.orbs;
 
 import blackbeard.powers.ArmorUpPower;
 import blackbeard.powers.SalvagerPower;
-import blackbeard.relics.KarateGi;
+import blackbeard.relics.Karategi;
 import blackbeard.relics.Spearhead;
 import blackbeard.utils.TextureLoader;
 import com.badlogic.gdx.graphics.Color;
@@ -105,7 +105,7 @@ public abstract class AbstractWeaponOrb extends AbstractOrb {
     }
 
     public int getDurabilityForCombat() {
-        if (AbstractDungeon.player.hasRelic(KarateGi.ID)) {
+        if (AbstractDungeon.player.hasRelic(Karategi.ID)) {
             return Integer.MAX_VALUE;
         }
         return durability;
@@ -132,7 +132,7 @@ public abstract class AbstractWeaponOrb extends AbstractOrb {
     }
 
     public void use(boolean triggerEffectOnUse) {
-        if (!AbstractDungeon.player.hasRelic(KarateGi.ID)) {
+        if (!AbstractDungeon.player.hasRelic(Karategi.ID)) {
             durability--;
         }
         if (AbstractDungeon.player.hasPower(ArmorUpPower.POWER_ID)) {

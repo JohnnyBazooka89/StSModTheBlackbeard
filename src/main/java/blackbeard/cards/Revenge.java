@@ -1,8 +1,10 @@
 package blackbeard.cards;
 
 import blackbeard.TheBlackbeardMod;
+import blackbeard.effects.GiantTextEffect;
 import blackbeard.enums.CardColorEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -34,7 +36,12 @@ public class Revenge extends AbstractBlackbeardCard {
     }
 
     @Override
-    public void use(AbstractPlayer p, AbstractMonster m) {
+    public void use(AbstractPlayer p, AbstractMonster nullValue) {
+        for (AbstractMonster m : AbstractDungeon.getCurrRoom().monsters.monsters) {
+            if (!m.isDeadOrEscaped()) {
+                addToBot(new VFXAction(new GiantTextEffect(m.hb.cX, m.hb.cY, EXTENDED_DESCRIPTION[1])));
+            }
+        }
         AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.BLUNT_HEAVY));
     }
 

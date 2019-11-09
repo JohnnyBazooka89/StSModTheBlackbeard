@@ -3,8 +3,7 @@
     "NAME": "Load the Cannons",
     "FLAVOR": "Ready... Aim... Fire!!!",
     "DESCRIPTIONS": [
-      "At the start of each combat, and then every #b4 turns, add a #yCannonball into your hand.",
-      "At the start of each combat, and then every #b4 turns, add a #yCannonball NL into your hand."
+      "At the start of each combat, and then every #b4 turns, add a #yCannonball into your hand."
     ]
   },
   "blackbeard:HipFlask": {
@@ -18,7 +17,7 @@
     "NAME": "Blood Orange",
     "FLAVOR": "This citrus seems to have an interesting power.",
     "DESCRIPTIONS": [
-      "Whenever you play #b6 cards in the same turn, remove all of your Debuffs."
+      "Whenever you play #b6 cards in the same turn, remove all of your debuffs."
     ]
   },
   "blackbeard:TreasureChest": {
@@ -53,7 +52,7 @@
     "NAME": "Magical Cauldron",
     "FLAVOR": "Fully automatic.",
     "DESCRIPTIONS": [
-      "At the start of each combat, obtain a random potion."
+      "At the end of each combat, obtain a random potion."
     ]
   },
   "blackbeard:Penknife": {
@@ -74,14 +73,14 @@
     "NAME": "Powder Can",
     "FLAVOR": "Just like a Powder Keg, but smaller.",
     "DESCRIPTIONS": [
-      "At the start of each combat, equip a 0 / #b1 #yWeapon. When it is destroyed, deal #b8 damage to ALL enemies."
+      "At the start of each combat, equip a #b0 / #b1 #yWeapon. When it is destroyed, deal #b8 damage to ALL enemies."
     ]
   },
-  "blackbeard:Soberminded": {
+  "blackbeard:SoberMinded": {
     "NAME": "Sober-minded",
     "FLAVOR": "Being sober is not a natural state for The Blackbeard.",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of your turn. At the start of each combat, and then every #b4 turns, lose #b1 #yResistance."
+      "Gain [E] at the start of your turn. At the start of each combat, and then every #b6 turns, lose #b1 #yResistance."
     ]
   },
   "blackbeard:Spearhead": {
@@ -98,8 +97,8 @@
       "Your attacks use an additional #yWeapon."
     ]
   },
-  "blackbeard:KarateGi": {
-    "NAME": "Karate Gi",
+  "blackbeard:Karategi": {
+    "NAME": "Karategi",
     "FLAVOR": "When you wear it, you instantly learn new styles of combat.",
     "DESCRIPTIONS": [
       "Your #yWeapons have infinite Durability. After you attack with a #yWeapon, it goes to the last position."

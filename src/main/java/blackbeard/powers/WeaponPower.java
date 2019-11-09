@@ -1,7 +1,7 @@
 package blackbeard.powers;
 
 import blackbeard.orbs.AbstractWeaponOrb;
-import blackbeard.relics.KarateGi;
+import blackbeard.relics.Karategi;
 import blackbeard.relics.Penknife;
 import blackbeard.relics.Spearhead;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
@@ -50,7 +50,7 @@ public class WeaponPower extends AbstractPower {
                 }
             }
             clearJustAddedUsingAttackCardFlagInWeapons();
-            if (AbstractDungeon.player.hasRelic(KarateGi.ID)) {
+            if (AbstractDungeon.player.hasRelic(Karategi.ID)) {
                 List<AbstractWeaponOrb> weaponsToUse = getWeaponsToUse();
                 AbstractDungeon.player.orbs.removeAll(weaponsToUse);
                 AbstractDungeon.player.orbs.addAll(weaponsToUse);

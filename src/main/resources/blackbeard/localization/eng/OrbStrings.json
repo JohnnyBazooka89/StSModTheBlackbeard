@@ -17,7 +17,7 @@
   "blackbeard:HalberdOrb": {
     "NAME": "Halberd",
     "DESCRIPTION": [
-      "Whenever you attack with this Weapon, apply 3 blackbeard:Bleed to a target per hit."
+      "Whenever you attack with this Weapon, apply 2 #yBleed to a target per hit."
     ]
   },
   "blackbeard:PowderKegOrb": {
@@ -60,7 +60,7 @@
   "blackbeard:SmithingHammerOrb": {
     "NAME": "Smithing Hammer",
     "DESCRIPTION": [
-      "After you attack with this Weapon and passively at the start of your turn using #b1 Durability, upgrade a random card in your hand for the rest of the combat."
+      "After you attack with this Weapon and passively at the start of your turn using #b1 Durability, Upgrade a random card in your hand for the rest of combat."
     ]
   },
   "blackbeard:SpearOrb": {

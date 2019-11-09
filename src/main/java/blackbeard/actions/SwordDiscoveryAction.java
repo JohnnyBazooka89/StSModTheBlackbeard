@@ -1,20 +1,26 @@
 package blackbeard.actions;
 
+import blackbeard.patches.SwordDiscoveryPatch;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
 public class SwordDiscoveryAction extends AbstractGameAction {
-    private boolean retrieveCard = false;
+    private boolean retrieveCard;
+    private boolean upgraded;
 
-    public SwordDiscoveryAction() {
+    public SwordDiscoveryAction(boolean upgraded) {
         this.actionType = ActionType.CARD_MANIPULATION;
         this.duration = Settings.ACTION_DUR_FAST;
+        this.retrieveCard = false;
+        this.upgraded = upgraded;
     }
 
     public void update() {
         if (this.duration == Settings.ACTION_DUR_FAST) {
+            SwordDiscoveryPatch.swordDiscovery = true;
+            SwordDiscoveryPatch.upgraded = this.upgraded;
             AbstractDungeon.cardRewardScreen.discoveryOpen();
             this.tickDuration();
         } else {

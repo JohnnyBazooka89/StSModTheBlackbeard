@@ -1,14 +1,8 @@
 package blackbeard.events;
 
-import basemod.abstracts.CustomCard;
-import basemod.helpers.BaseModCardTags;
-import basemod.helpers.CardTags;
 import blackbeard.cards.VampiricScepter;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.blue.Strike_Blue;
 import com.megacrit.cardcrawl.cards.colorless.Bite;
-import com.megacrit.cardcrawl.cards.green.Strike_Green;
-import com.megacrit.cardcrawl.cards.red.Strike_Red;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -19,7 +13,6 @@ import com.megacrit.cardcrawl.relics.BloodVial;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class VampiresBlackbeardEvent extends AbstractImageEvent {
@@ -34,7 +27,7 @@ public class VampiresBlackbeardEvent extends AbstractImageEvent {
     private static final String GIVE_VIAL;
     private static final int HP_DRAIN_PERCENT = 30;
     private static final float HP_PERCENT = 0.7F;
-    private static final int VAMPIRIC_SCEPTER_PRICE = 125;
+    private static final int VAMPIRIC_SCEPTER_PRICE = 100;
     private int screenNum = 0;
     private boolean hasVial;
     private AbstractCard vampiricScepterCard;
@@ -141,19 +134,19 @@ public class VampiresBlackbeardEvent extends AbstractImageEvent {
     }
 
     private void replaceAttacks() {
-        for (Iterator<AbstractCard> i = AbstractDungeon.player.masterDeck.group.iterator(); i.hasNext(); ) {
-            AbstractCard e = i.next();
-            if ((e instanceof Strike_Red) || (e instanceof Strike_Green) || (e instanceof Strike_Blue)) {
-                i.remove();
-            }
-            if ((e instanceof CustomCard && ((CustomCard) e).isStrike()) || CardTags.hasTag(e, BaseModCardTags.BASIC_STRIKE)) {
-                i.remove();
+        ArrayList<AbstractCard> masterDeck = AbstractDungeon.player.masterDeck.group;
+
+        for (int i = masterDeck.size() - 1; i >= 0; i--) {
+            AbstractCard card = masterDeck.get(i);
+            if (card.tags.contains(AbstractCard.CardTags.STARTER_STRIKE)) {
+                AbstractDungeon.player.masterDeck.removeCard(card);
             }
         }
+
         for (int i = 0; i < 5; i++) {
-            AbstractCard c = new Bite();
-            AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(c, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
-            this.bites.add(c.cardID);
+            Bite bite = new Bite();
+            AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(bite, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
+            this.bites.add(bite.cardID);
         }
     }
 

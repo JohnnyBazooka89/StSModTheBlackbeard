@@ -1,18 +1,19 @@
 package blackbeard.cards;
 
 import blackbeard.TheBlackbeardMod;
+import blackbeard.effects.GiantTextEffect;
 import blackbeard.enums.CardColorEnum;
 import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.GraveField;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.rooms.MonsterRoomBoss;
-import com.megacrit.cardcrawl.rooms.MonsterRoomElite;
 
 public class Murder extends AbstractBlackbeardCard {
     public static final String ID = "blackbeard:Murder";
@@ -35,6 +36,7 @@ public class Murder extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        addToBot(new VFXAction(new GiantTextEffect(m.hb.cX, m.hb.cY, EXTENDED_DESCRIPTION[1])));
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn),
                 AbstractGameAction.AttackEffect.BLUNT_HEAVY));
     }
@@ -45,11 +47,26 @@ public class Murder extends AbstractBlackbeardCard {
         if (!canUse) {
             return false;
         }
-        if ((AbstractDungeon.getCurrRoom() instanceof MonsterRoomElite) || (AbstractDungeon.getCurrRoom() instanceof MonsterRoomBoss)) {
+        if (isEliteOrBoss()) {
             canUse = false;
             this.cantUseMessage = EXTENDED_DESCRIPTION[0];
         }
         return canUse;
+    }
+
+    @Override
+    public void triggerOnGlowCheck() {
+        this.glowColor = !isEliteOrBoss() ? AbstractCard.GOLD_BORDER_GLOW_COLOR : AbstractCard.BLUE_BORDER_GLOW_COLOR;
+    }
+
+    private boolean isEliteOrBoss() {
+        boolean eliteOrBoss = (AbstractDungeon.getCurrRoom()).eliteTrigger;
+        for (AbstractMonster m : (AbstractDungeon.getMonsters()).monsters) {
+            if (m.type == AbstractMonster.EnemyType.BOSS) {
+                eliteOrBoss = true;
+            }
+        }
+        return eliteOrBoss;
     }
 
     @Override

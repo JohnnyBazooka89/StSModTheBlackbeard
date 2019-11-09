@@ -1,17 +1,5 @@
 {
   "cards": {
-    "blackbeard:RearmingStrike": [
-      {
-        "x": 202.0,
-        "y": 244.0,
-        "size": 20.0
-      },
-      {
-        "x": 246.0,
-        "y": 228.0,
-        "size": 20.0
-      }
-    ],
     "blackbeard:SwordOfFire": [
       {
         "x": 153.0,
@@ -539,9 +527,9 @@
     ],
     "blackbeard:Parrot": [
       {
-        "x": 236.0,
-        "y": 235.0,
-        "size": 40.0
+        "x": 237.25003,
+        "y": 240.75,
+        "size": 31.508926
       }
     ],
     "blackbeard:HumongousCannonball": [
@@ -580,8 +568,8 @@
     ],
     "blackbeard:Anchor": [
       {
-        "x": 296.0,
-        "y": 301.0,
+        "x": 293.50003,
+        "y": 302.25,
         "size": 25.0
       }
     ],
@@ -589,18 +577,6 @@
       {
         "x": 331.0,
         "y": 336.0,
-        "size": 25.0
-      }
-    ],
-    "blackbeard:StrikeBlackbeard": [
-      {
-        "x": 219.0,
-        "y": 139.0,
-        "size": 25.0
-      },
-      {
-        "x": 268.0,
-        "y": 123.0,
         "size": 25.0
       }
     ],
@@ -743,18 +719,6 @@
         "size": 18.788294
       }
     ],
-    "blackbeard:GoldenStrike": [
-      {
-        "x": 219.0,
-        "y": 139.0,
-        "size": 25.0
-      },
-      {
-        "x": 268.0,
-        "y": 123.0,
-        "size": 25.0
-      }
-    ],
     "blackbeard:GoldenCannonball": [
       {
         "x": 202.0,
@@ -803,9 +767,9 @@
     ],
     "blackbeard:PirateStrength": [
       {
-        "x": 219.0,
-        "y": 250.0,
-        "size": 20.09975
+        "x": 211.75003,
+        "y": 248.25,
+        "size": 16.854155
       }
     ],
     "blackbeard:BoostMorale": [
@@ -902,6 +866,73 @@
         "x": 300.0,
         "y": 242.0,
         "size": 15.264338
+      }
+    ],
+    "blackbeard:DeadlyArsenal": [
+      {
+        "x": 289.00003,
+        "y": 275.25,
+        "size": 10.816654
+      },
+      {
+        "x": 311.50003,
+        "y": 267.75,
+        "size": 11.34956
+      }
+    ],
+    "blackbeard:PirateHook": [
+      {
+        "x": 214.00003,
+        "y": 158.25,
+        "size": 18.155577
+      },
+      {
+        "x": 249.25003,
+        "y": 136.5,
+        "size": 18.929144
+      }
+    ],
+    "blackbeard:PowerHungry": [
+      {
+        "x": 233.50003,
+        "y": 217.5,
+        "size": 26.420872
+      }
+    ],
+    "blackbeard:RearmingStrike": [
+      {
+        "x": 214.00003,
+        "y": 135.0,
+        "size": 20.852158
+      },
+      {
+        "x": 250.75003,
+        "y": 159.75,
+        "size": 21.120192
+      }
+    ],
+    "blackbeard:StrikeBlackbeard": [
+      {
+        "x": 265.00003,
+        "y": 198.0,
+        "size": 25.0
+      },
+      {
+        "x": 218.50003,
+        "y": 192.75,
+        "size": 25.0
+      }
+    ],
+    "blackbeard:GoldenStrike": [
+      {
+        "x": 265.00003,
+        "y": 198.0,
+        "size": 25.0
+      },
+      {
+        "x": 218.50003,
+        "y": 192.75,
+        "size": 25.0
       }
     ]
   },

@@ -34,7 +34,7 @@
   },
   "blackbeard:Halberd": {
     "NAME": "Halabarda",
-    "DESCRIPTION": "Wyposaż się w Broń NL !M! / {D}. Kiedykolwiek zaatakujesz tą bronią, nałóż 3 pkt. blackbeard:Krwawienia na przeciwnika za każde [#FFF6E2]uderzenie[]."
+    "DESCRIPTION": "Wyposaż się w Broń NL !M! / {D}. Kiedykolwiek zaatakujesz tą bronią, nałóż 2 pkt. blackbeard:Krwawienia na przeciwnika za każde [#FFF6E2]uderzenie[]."
   },
   "blackbeard:TheDrunkenSailor": {
     "NAME": "Morskie opowieści",
@@ -51,8 +51,8 @@
   },
   "blackbeard:CannonBarrage": {
     "NAME": "Kanonada",
-    "DESCRIPTION": "Dodaj X Kul do ręki.",
-    "UPGRADE_DESCRIPTION": "Dodaj X+1 Kul do ręki."
+    "DESCRIPTION": "Dodaj X *Kul do ręki.",
+    "UPGRADE_DESCRIPTION": "Dodaj X+1 *Kul do ręki."
   },
   "blackbeard:Rum": {
     "NAME": "Rum",
@@ -90,8 +90,7 @@
   },
   "blackbeard:InfiniteBarrage": {
     "NAME": "Nieustanny ostrzał",
-    "DESCRIPTION": "Na początku każdej tury dodaj Kulę do ręki.",
-    "UPGRADE_DESCRIPTION": "Startowa. NL Na początku każdej tury dodaj Kulę do ręki."
+    "DESCRIPTION": "Na początku każdej tury, dodaj *Kulę do ręki."
   },
   "blackbeard:SwordOfWisdom": {
     "NAME": "Miecz mądrości",
@@ -128,7 +127,7 @@
   },
   "blackbeard:BrownPants": {
     "NAME": "Brązowe spodnie",
-    "DESCRIPTION": "Zyskaj !M! pkt. [#EFC851]Pancerza[]."
+    "DESCRIPTION": "Zyskaj !M! pkt. *Pancerza."
   },
   "blackbeard:JollyRoger": {
     "NAME": "Bandera piracka",
@@ -136,8 +135,8 @@
   },
   "blackbeard:CaptainsCabin": {
     "NAME": "Kabina kapitańska",
-    "DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dodaj !M! Kulę do ręki.",
-    "UPGRADE_DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dodaj !M! Kule do ręki."
+    "DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dodaj !M! *Kulę do ręki.",
+    "UPGRADE_DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dodaj !M! *Kule do ręki."
   },
   "blackbeard:GoldenDefense": {
     "NAME": "Złota obrona",
@@ -169,7 +168,8 @@
     "NAME": "Morderstwo",
     "DESCRIPTION": "Eteryczna. blackbeard:Zakopana. NL Zadaj !D! pkt. obrażeń     NL Normalnemu przeciwnikowi. NL (Nie może być zagrana przeciwko Elitarnym przeciwnikom i Bossom).",
     "EXTENDED_DESCRIPTION": [
-      "Muszę wybrać #rNormalnego przeciwnika!"
+      "Muszę wybrać #rNormalnego przeciwnika!",
+      "MORDERSTWO"
     ]
   },
   "blackbeard:Bandana": {
@@ -194,8 +194,7 @@
   },
   "blackbeard:Eyepatch": {
     "NAME": "Przepaska na oko",
-    "DESCRIPTION": "Otrzymaj 3 pkt. Słabości. NL Na początku każdej tury, dobierz 1 dodatkową kartę.",
-    "UPGRADE_DESCRIPTION": "Startowa. NL Otrzymaj 3 pkt. Słabości. NL Na początku każdej tury, dobierz 1 dodatkową kartę."
+    "DESCRIPTION": "Otrzymaj !M! pkt. Słabości. NL Na początku każdej tury, dobierz 1 dodatkową kartę."
   },
   "blackbeard:CaptainsHat": {
     "NAME": "Kapitański kapelusz",
@@ -225,7 +224,8 @@
     "NAME": "Zemsta",
     "DESCRIPTION": "Zadaj od 0 do !M! pkt. obrażeń WSZYSTKIM przeciwnikom, w zależności od tego ile procent PŻ ci brakuje.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Zadaje !D! pkt. obrażeń.)"
+      " NL (Zadaje !D! pkt. obrażeń.)",
+      "ZEMSTA"
     ]
   },
   "blackbeard:GoldenRain": {
@@ -255,7 +255,7 @@
     "DESCRIPTION": "Zadaj !D! pkt. obrażeń. NL Nałóż !M! pkt. Słabości."
   },
   "blackbeard:WiseDefense": {
-    "NAME": "Roztropna obrona",
+    "NAME": "Mądra obrona",
     "DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dobierz !M! kartę.",
     "UPGRADE_DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dobierz !M! karty."
   },
@@ -315,8 +315,8 @@
   },
   "blackbeard:CannonballSupply": {
     "NAME": "Dostawa kul",
-    "DESCRIPTION": "Dodaj 3 Kule do ręki. NL Wykluczenie.",
-    "UPGRADE_DESCRIPTION": "Dodaj 3 Kule do ręki."
+    "DESCRIPTION": "Dodaj 3 *Kule do ręki. NL Wykluczenie.",
+    "UPGRADE_DESCRIPTION": "Dodaj 3 *Kule do ręki."
   },
   "blackbeard:BountyHunter": {
     "NAME": "Łowca nagród",
@@ -358,8 +358,8 @@
   },
   "blackbeard:DoubleCannonball": {
     "NAME": "Podwójna kula",
-    "DESCRIPTION": "Zadaj !D! pkt. obrażeń. NL Dodaj Kulę do ręki. NL Wykluczenie.",
-    "UPGRADE_DESCRIPTION": "Zadaj !D! pkt. obrażeń. NL Dodaj ulepszoną Kulę do ręki. NL Wykluczenie."
+    "DESCRIPTION": "Zadaj !D! pkt. obrażeń. NL Dodaj *Kulę do ręki. NL Wykluczenie.",
+    "UPGRADE_DESCRIPTION": "Zadaj !D! pkt. obrażeń. NL Dodaj ulepszoną *Kulę do ręki. NL Wykluczenie."
   },
   "blackbeard:SwordOfFire": {
     "NAME": "Miecz ognia",
@@ -367,8 +367,8 @@
   },
   "blackbeard:CloakAndCannonball": {
     "NAME": "Płaszcz i kula",
-    "DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dodaj Kulę do ręki.",
-    "UPGRADE_DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dodaj ulepszoną Kulę do ręki."
+    "DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dodaj *Kulę do ręki.",
+    "UPGRADE_DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dodaj ulepszoną *Kulę do ręki."
   },
   "blackbeard:UndeadForm": {
     "NAME": "Nieumarła forma",
@@ -390,5 +390,18 @@
   "blackbeard:ReapersScythe": {
     "NAME": "Kosa żniwiarza",
     "DESCRIPTION": "Wyposaż się w Broń NL !M! / {D}. Kiedykolwiek zaatakujesz tą bronią, nałóż 3 pkt. blackbeard:Znaku żniwiarza na przeciwnika za każde [#FFF6E2]uderzenie[]."
+  },
+  "blackbeard:PirateHook": {
+    "NAME": "Hak pirata",
+    "DESCRIPTION": "Zadaj !D! pkt. obrażeń. NL Jeśli zadajesz przynajmniej 12 pkt. obrażeń, zadaj !D! pkt. obrażeń jeszcze raz."
+  },
+  "blackbeard:DeadlyArsenal": {
+    "NAME": "Zabójczy arsenał",
+    "DESCRIPTION": "Zyskaj !B! pkt. Bloku. NL Dobierz 1 kartę za każdą posiadaną, unikalną Broń."
+  },
+  "blackbeard:PowerHungry": {
+    "NAME": "Żądny mocy",
+    "DESCRIPTION": "Startowa. NL Wybierz !M! kartę Mocy ze stosu rozgrywającego i umieść ją w ręce. NL Wykluczenie.",
+    "UPGRADE_DESCRIPTION": "Startowa. NL Wybierz !M! karty Mocy ze stosu rozgrywającego i umieść je w ręce. NL Wykluczenie."
   }
 }

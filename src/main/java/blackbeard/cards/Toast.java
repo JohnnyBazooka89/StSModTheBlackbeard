@@ -39,7 +39,6 @@ public class Toast extends AbstractBlackbeardCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeMagicNumber(UPGRADED_PLUS_RESISTANCE_VALUE);
-            this.initializeDescription();
         }
     }
 }

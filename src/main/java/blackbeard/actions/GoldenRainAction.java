@@ -24,7 +24,7 @@ public class GoldenRainAction extends AbstractGameAction {
     public void update() {
         if (this.duration == Settings.ACTION_DUR_FAST) {
             AbstractDungeon.actionManager.addToBottom(new VFXAction(new RainingGoldEffect(gold)));
-            AbstractDungeon.actionManager.addToBottom(new UnconditionalWaitAction(2.5F));
+            AbstractDungeon.actionManager.addToBottom(new UnconditionalWaitAction(2.0F));
             for (AbstractMonster mo : AbstractDungeon.getMonsters().monsters) {
                 if (!mo.isDeadOrEscaped()) {
                     AbstractDungeon.actionManager.addToBottom(new VFXAction(new GoldenSlashEffect(mo.hb.cX, mo.hb.cY, true)));

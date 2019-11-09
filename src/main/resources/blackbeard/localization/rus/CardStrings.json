@@ -34,7 +34,7 @@
   },
   "blackbeard:Halberd": {
     "NAME": "Алебарда",
-    "DESCRIPTION": "Снаряжает вас Оружием !M! / {D}. Накладывает на врага 3 blackbeard:Кровотечения, когда Атака наносит ему урон и вы используете данное Оружие."
+    "DESCRIPTION": "Снаряжает вас Оружием !M! / {D}. Накладывает на врага 2 blackbeard:Кровотечения, когда Атака наносит ему урон и вы используете данное Оружие."
   },
   "blackbeard:TheDrunkenSailor": {
     "NAME": "Пьяный моряк",
@@ -51,8 +51,8 @@
   },
   "blackbeard:CannonBarrage": {
     "NAME": "Пушечный обстрел",
-    "DESCRIPTION": "Добавляет в руку X Ядер.",
-    "UPGRADE_DESCRIPTION": "Добавляет в руку X+1 Ядер."
+    "DESCRIPTION": "Добавляет в руку X *Ядер.",
+    "UPGRADE_DESCRIPTION": "Добавляет в руку X+1 *Ядер."
   },
   "blackbeard:Rum": {
     "NAME": "Ром",
@@ -90,8 +90,7 @@
   },
   "blackbeard:InfiniteBarrage": {
     "NAME": "Уйма ядер",
-    "DESCRIPTION": "Добавляет в руку Ядро в начале вашего хода.",
-    "UPGRADE_DESCRIPTION": "Начальная. NL Добавляет в руку Ядро в начале вашего хода."
+    "DESCRIPTION": "Добавляет в руку *Ядро в начале вашего хода."
   },
   "blackbeard:SwordOfWisdom": {
     "NAME": "Меч мудрости",
@@ -136,8 +135,8 @@
   },
   "blackbeard:CaptainsCabin": {
     "NAME": "Каюта капитана",
-    "DESCRIPTION": "Даёт !B! Защиты. NL Добавляет в руку !M! Ядро.",
-    "UPGRADE_DESCRIPTION": "Даёт !B! Защиты. NL Добавляет в руку !M! Ядра."
+    "DESCRIPTION": "Даёт !B! Защиты. NL Добавляет в руку !M! *Ядро.",
+    "UPGRADE_DESCRIPTION": "Даёт !B! Защиты. NL Добавляет в руку !M! *Ядра."
   },
   "blackbeard:GoldenDefense": {
     "NAME": "Золотая оборона",
@@ -169,7 +168,8 @@
     "NAME": "Убийство",
     "DESCRIPTION": "Эфирная. Закопанная. NL Наносит !D! урона     NL обычному врагу. NL (Нельзя разыграть на Элитных врагах и Боссах).",
     "EXTENDED_DESCRIPTION": [
-      "Можно разыграть только по #rОбычному врагу!"
+      "Можно разыграть только по #rОбычному врагу!",
+      "УБИЙСТВО"
     ]
   },
   "blackbeard:Bandana": {
@@ -194,8 +194,7 @@
   },
   "blackbeard:Eyepatch": {
     "NAME": "Повязка на глаз",
-    "DESCRIPTION": "Вы получаете 3 Слабости. NL В начале вашего хода вы берёте 1 доп. карту.",
-    "UPGRADE_DESCRIPTION": "Начальная. NL Вы получаете 3 Слабости. NL В начале вашего хода вы берёте 1 доп. карту."
+    "DESCRIPTION": "Вы получаете !M! Слабости. NL В начале вашего хода вы берёте 1 доп. карту."
   },
   "blackbeard:CaptainsHat": {
     "NAME": "Шляпа капитана",
@@ -225,7 +224,8 @@
     "NAME": "Возмездие",
     "DESCRIPTION": "Наносит от 0 до !M! урона ВСЕМ врагам, в зависимости от ваших недостающих ОЗ.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Наносит !D! урона.)"
+      " NL (Наносит !D! урона.)",
+      "ВОЗМЕЗДИЕ"
     ]
   },
   "blackbeard:GoldenRain": {
@@ -315,8 +315,8 @@
   },
   "blackbeard:CannonballSupply": {
     "NAME": "Запас ядер",
-    "DESCRIPTION": "Добавляет в руку 3 Ядра. NL Сжигается.",
-    "UPGRADE_DESCRIPTION": "Добавляет в руку 3 Ядра"
+    "DESCRIPTION": "Добавляет в руку 3 *Ядра. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Добавляет в руку 3 *Ядра."
   },
   "blackbeard:BountyHunter": {
     "NAME": "Охотник за головами",
@@ -358,8 +358,8 @@
   },
   "blackbeard:DoubleCannonball": {
     "NAME": "Сдвоенное ядро",
-    "DESCRIPTION": "Наносит !D! урона. NL Добавляет в руку Ядро. NL Сжигается.",
-    "UPGRADE_DESCRIPTION": "Наносит !D! урона. NL Добавляет в руку улучшенное Ядро. NL Сжигается."
+    "DESCRIPTION": "Наносит !D! урона. NL Добавляет в руку *Ядро. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Наносит !D! урона. NL Добавляет в руку улучшенное *Ядро. NL Сжигается."
   },
   "blackbeard:SwordOfFire": {
     "NAME": "Меч огня",
@@ -367,8 +367,8 @@
   },
   "blackbeard:CloakAndCannonball": {
     "NAME": "Плащ и ядро",
-    "DESCRIPTION": "Даёт !B! Защиты. NL Добавляет в руку Ядро.",
-    "UPGRADE_DESCRIPTION": "Даёт !B! Защиты. NL Добавляет в руку улучшенное Ядро."
+    "DESCRIPTION": "Даёт !B! Защиты. NL Добавляет в руку *Ядро.",
+    "UPGRADE_DESCRIPTION": "Даёт !B! Защиты. NL Добавляет в руку улучшенное *Ядро."
   },
   "blackbeard:UndeadForm": {
     "NAME": "Облик нежити",

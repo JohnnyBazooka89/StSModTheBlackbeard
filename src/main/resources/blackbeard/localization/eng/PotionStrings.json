@@ -1,17 +1,24 @@
 {
   "blackbeard:RumPotion": {
-    "NAME": "Bottle of Rum",
+    "NAME": "Rum",
     "DESCRIPTIONS": [
       "Gain #b",
       " #yResistance."
     ]
   },
-  "blackbeard:ToastPotion": {
-    "NAME": "Quick Shots of Rum",
+  "blackbeard:OrangeJuicePotion": {
+    "NAME": "Orange Juice",
     "DESCRIPTIONS": [
-      "Gain #b",
-      " #yResistance. At the start of your next turn, lose #b",
-      " #yResistance."
+      "Heal #b",
+      " HP. Remove all of your debuffs."
+    ]
+  },
+  "blackbeard:UpgradePotion": {
+    "NAME": "Upgrade Potion",
+    "DESCRIPTIONS": [
+      "Give all your equipped #yWeapons #b+",
+      " / #b+",
+      "."
     ]
   }
 }

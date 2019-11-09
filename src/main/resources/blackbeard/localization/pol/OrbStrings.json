@@ -8,12 +8,6 @@
       "Wytrzymałość: #b"
     ]
   },
-  "blackbeard:DefaultWeaponOrb": {
-    "NAME": "Miecz",
-    "DESCRIPTION": [
-      ""
-    ]
-  },
   "blackbeard:CutlassOrb": {
     "NAME": "Kordelas",
     "DESCRIPTION": [
@@ -23,7 +17,7 @@
   "blackbeard:HalberdOrb": {
     "NAME": "Halabarda",
     "DESCRIPTION": [
-      "Kiedykolwiek zaatakujesz tą bronią, nałóż #b3 pkt. #yKrwawienia na przeciwnika za każde uderzenie."
+      "Kiedykolwiek zaatakujesz tą bronią, nałóż #b2 pkt. #yKrwawienia na przeciwnika za każde uderzenie."
     ]
   },
   "blackbeard:PowderKegOrb": {

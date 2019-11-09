@@ -1,17 +1,24 @@
 {
   "blackbeard:RumPotion": {
-    "NAME": "Butelka rumu",
+    "NAME": "Rum",
     "DESCRIPTIONS": [
       "Zyskaj #b",
       " pkt. #yOdporności."
     ]
   },
-  "blackbeard:ToastPotion": {
-    "NAME": "Szybkie shoty rumu",
+  "blackbeard:OrangeJuicePotion": {
+    "NAME": "Sok pomarańczowy",
     "DESCRIPTIONS": [
-      "Zyskaj #b",
-      " pkt. #yOdporności. Na początku następnej tury, utrać #b",
-      " pkt. #yOdporności."
+      "Przywróć #b",
+      " PŻ. Pozbądź się wszystkich negatywnych efektów."
+    ]
+  },
+  "blackbeard:UpgradePotion": {
+    "NAME": "Mikstura ulepszenia",
+    "DESCRIPTIONS": [
+      "Daj wszystkim swoim #yBroniom #b+",
+      " / #b+",
+      "."
     ]
   }
 }

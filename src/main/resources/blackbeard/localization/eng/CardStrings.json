@@ -34,7 +34,7 @@
   },
   "blackbeard:Halberd": {
     "NAME": "Halberd",
-    "DESCRIPTION": "Equip a !M! / {D} Weapon. NL Whenever you attack with this Weapon, apply 3 blackbeard:Bleed to a target per hit."
+    "DESCRIPTION": "Equip a !M! / {D} Weapon. NL Whenever you attack with this Weapon, apply 2 blackbeard:Bleed to a target per hit."
   },
   "blackbeard:TheDrunkenSailor": {
     "NAME": "The Drunken Sailor",
@@ -51,8 +51,8 @@
   },
   "blackbeard:CannonBarrage": {
     "NAME": "Cannon Barrage",
-    "DESCRIPTION": "Add X Cannonballs into your hand.",
-    "UPGRADE_DESCRIPTION": "Add X+1 Cannonballs into your hand."
+    "DESCRIPTION": "Add X *Cannonballs into your hand.",
+    "UPGRADE_DESCRIPTION": "Add X+1 *Cannonballs into your hand."
   },
   "blackbeard:Rum": {
     "NAME": "Rum",
@@ -86,12 +86,11 @@
   },
   "blackbeard:RemoveScurvy": {
     "NAME": "Remove Scurvy",
-    "DESCRIPTION": "Heal !M! HP. NL Remove all of your Debuffs. NL Exhaust."
+    "DESCRIPTION": "Heal !M! HP. NL Remove all of your debuffs. NL Exhaust."
   },
   "blackbeard:InfiniteBarrage": {
     "NAME": "Infinite Barrage",
-    "DESCRIPTION": "At the start of your turn, add a Cannonball into your hand.",
-    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, add a Cannonball into your hand."
+    "DESCRIPTION": "At the start of your turn, add a *Cannonball into your hand."
   },
   "blackbeard:SwordOfWisdom": {
     "NAME": "Sword of Wisdom",
@@ -136,8 +135,8 @@
   },
   "blackbeard:CaptainsCabin": {
     "NAME": "Captain's Cabin",
-    "DESCRIPTION": "Gain !B! Block. NL Add !M! Cannonball into your hand.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add !M! Cannonballs into your hand."
+    "DESCRIPTION": "Gain !B! Block. NL Add !M! *Cannonball into your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add !M! *Cannonballs into your hand."
   },
   "blackbeard:GoldenDefense": {
     "NAME": "Golden Defense",
@@ -169,7 +168,8 @@
     "NAME": "Murder",
     "DESCRIPTION": "Ethereal. Grave. NL Deal !D! damage     NL to a Normal enemy. NL (Cannot be used on Elite or Boss).",
     "EXTENDED_DESCRIPTION": [
-      "I have to target a #rNormal enemy!"
+      "I have to target a #rNormal enemy!",
+      "MURDER"
     ]
   },
   "blackbeard:Bandana": {
@@ -186,7 +186,7 @@
   },
   "blackbeard:PiratesWill": {
     "NAME": "Pirate's Will",
-    "DESCRIPTION": "Remove all of your Debuffs. NL Draw a card. NL Exhaust."
+    "DESCRIPTION": "Remove all of your debuffs. NL Draw a card. NL Exhaust."
   },
   "blackbeard:WoodenLeg": {
     "NAME": "Wooden Leg",
@@ -194,8 +194,7 @@
   },
   "blackbeard:Eyepatch": {
     "NAME": "Eyepatch",
-    "DESCRIPTION": "Gain 3 Weak. NL At the start of your turn, draw 1 additional card.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Gain 3 Weak. NL At the start of your turn, draw 1 additional card."
+    "DESCRIPTION": "Gain !M! Weak. NL At the start of your turn, draw 1 additional card."
   },
   "blackbeard:CaptainsHat": {
     "NAME": "Captain's Hat",
@@ -225,7 +224,8 @@
     "NAME": "Revenge",
     "DESCRIPTION": "Deal 0 - !M! damage to ALL enemies, based on how many % of HP you are missing.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Deals !D! damage.)"
+      " NL (Deals !D! damage.)",
+      "REVENGE"
     ]
   },
   "blackbeard:GoldenRain": {
@@ -266,7 +266,7 @@
   },
   "blackbeard:SmithingHammer": {
     "NAME": "Smithing Hammer",
-    "DESCRIPTION": "Equip a {A} / !M! Weapon. NL After you attack with this Weapon and passively at the start of your turn using 1 Durability, upgrade a random card in your hand for the rest of the combat. NL Exhaust."
+    "DESCRIPTION": "Equip a {A} / !M! Weapon. NL After you attack with this Weapon and passively at the start of your turn using 1 Durability, Upgrade a random card in your hand for the rest of combat. NL Exhaust."
   },
   "blackbeard:Spear": {
     "NAME": "Spear",
@@ -315,12 +315,12 @@
   },
   "blackbeard:CannonballSupply": {
     "NAME": "Cannonball Supply",
-    "DESCRIPTION": "Add 3 Cannonballs into your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Add 3 Cannonballs into your hand."
+    "DESCRIPTION": "Add 3 *Cannonballs into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add 3 *Cannonballs into your hand."
   },
   "blackbeard:BountyHunter": {
     "NAME": "Bounty Hunter",
-    "DESCRIPTION": "Deal !D! damage. NL If this kills a non-minion enemy, gain !M! Gold. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL If Fatal, gain !M! Gold. NL Exhaust."
   },
   "blackbeard:GoldenGuillotine": {
     "NAME": "Golden Guillotine",
@@ -358,8 +358,8 @@
   },
   "blackbeard:DoubleCannonball": {
     "NAME": "Double Cannonball",
-    "DESCRIPTION": "Deal !D! damage. NL Add a Cannonball into your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add an upgraded Cannonball into your hand. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Add a *Cannonball into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add a *Cannonball+ into your hand. NL Exhaust."
   },
   "blackbeard:SwordOfFire": {
     "NAME": "Sword of Fire",
@@ -367,8 +367,8 @@
   },
   "blackbeard:CloakAndCannonball": {
     "NAME": "Cloak and Cannonball",
-    "DESCRIPTION": "Gain !B! Block. NL Add a Cannonball into your hand.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add an upgraded Cannonball into your hand."
+    "DESCRIPTION": "Gain !B! Block. NL Add a *Cannonball into your hand.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add a *Cannonball+ into your hand."
   },
   "blackbeard:UndeadForm": {
     "NAME": "Undead Form",
@@ -390,5 +390,18 @@
   "blackbeard:ReapersScythe": {
     "NAME": "Reaper's Scythe",
     "DESCRIPTION": "Equip a !M! / {D} Weapon. NL Whenever you attack with this Weapon, apply 1 blackbeard:Reaper's Mark to a target per hit."
+  },
+  "blackbeard:PirateHook": {
+    "NAME": "Pirate Hook",
+    "DESCRIPTION": "Deal !D! damage. NL If this deals at least 12 damage, deal !D! damage again."
+  },
+  "blackbeard:DeadlyArsenal": {
+    "NAME": "Deadly Arsenal",
+    "DESCRIPTION": "Gain !B! Block. NL Draw 1 card for each unique Weapon you have currently equipped."
+  },
+  "blackbeard:PowerHungry": {
+    "NAME": "Power-hungry",
+    "DESCRIPTION": "Innate. NL Put !M! Power card from your draw pile into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Put !M! Power cards from your draw pile into your hand. NL Exhaust."
   }
 }

@@ -5,14 +5,14 @@ import blackbeard.TheBlackbeardMod;
 import blackbeard.utils.TextureLoader;
 import com.badlogic.gdx.graphics.Texture;
 
-public class KarateGi extends CustomRelic {
+public class Karategi extends CustomRelic {
 
-    public static final String ID = "blackbeard:KarateGi";
+    public static final String ID = "blackbeard:Karategi";
     private static final Texture IMG = TextureLoader.getTexture(TheBlackbeardMod.getRelicImagePath(ID));
     private static final Texture OUTLINE = TextureLoader.getTexture(TheBlackbeardMod.getRelicOutlineImagePath(ID));
 
-    public KarateGi() {
-        super(ID, IMG, OUTLINE, RelicTier.SHOP, LandingSound.MAGICAL);
+    public Karategi() {
+        super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.MAGICAL);
     }
 
     @Override

@@ -2,8 +2,10 @@ package blackbeard.relics;
 
 import basemod.abstracts.CustomRelic;
 import blackbeard.TheBlackbeardMod;
+import blackbeard.enums.CardTagsEnum;
 import blackbeard.utils.TextureLoader;
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 
 public class CannonballsOfSteel extends CustomRelic {
 
@@ -15,7 +17,10 @@ public class CannonballsOfSteel extends CustomRelic {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.MAGICAL);
     }
 
-    /* Logic is in CannonballsOfSteelApplyPowersPatch and CannonballsOfSteelCalculateCardDamagePatch. */
+    @Override
+    public float atDamageModify(float damage, AbstractCard c) {
+        return c.hasTag(CardTagsEnum.CANNONBALL) ? damage + 2.0F : damage;
+    }
 
     @Override
     public String getUpdatedDescription() {

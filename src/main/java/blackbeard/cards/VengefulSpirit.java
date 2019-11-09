@@ -39,7 +39,6 @@ public class VengefulSpirit extends AbstractBlackbeardCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeMagicNumber(-UPGRADED_MINUS_DAMAGE_TO_TAKE);
-            this.initializeDescription();
         }
     }
 }

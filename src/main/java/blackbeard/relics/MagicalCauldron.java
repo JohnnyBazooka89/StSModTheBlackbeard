@@ -5,7 +5,6 @@ import blackbeard.TheBlackbeardMod;
 import blackbeard.utils.TextureLoader;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ObtainPotionAction;
-import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
 public class MagicalCauldron extends CustomRelic {
@@ -19,10 +18,10 @@ public class MagicalCauldron extends CustomRelic {
     }
 
     @Override
-    public void atBattleStart() {
+    public void onVictory() {
         this.flash();
-        AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-        AbstractDungeon.actionManager.addToBottom(new ObtainPotionAction(AbstractDungeon.returnRandomPotion(true)));
+        ObtainPotionAction obtainPotionAction = new ObtainPotionAction(AbstractDungeon.returnRandomPotion(true));
+        obtainPotionAction.update();
     }
 
     @Override

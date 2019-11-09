@@ -9,13 +9,13 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
-public class Soberminded extends CustomRelic {
+public class SoberMinded extends CustomRelic {
 
-    public static final String ID = "blackbeard:Soberminded";
+    public static final String ID = "blackbeard:SoberMinded";
     private static final Texture IMG = TextureLoader.getTexture(TheBlackbeardMod.getRelicImagePath(ID));
     private static final Texture OUTLINE = TextureLoader.getTexture(TheBlackbeardMod.getRelicOutlineImagePath(ID));
 
-    public Soberminded() {
+    public SoberMinded() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.MAGICAL);
     }
 
@@ -33,7 +33,7 @@ public class Soberminded extends CustomRelic {
     @Override
     public void atTurnStart() {
         this.counter++;
-        if (this.counter == 4) {
+        if (this.counter == 6) {
             this.counter = 0;
             loseResistance();
         }
