@@ -2,7 +2,7 @@
 
 **Update: Slay the Spire added the official Workshop for mods. Please check [Installation](#installation) section for more details.** 
 
-This mod adds a new character for Slay the Spire, named The Blackbeard, with 75+ new cards and 16 new relics (1 starter, 5 common, 3 uncommon, 2 rare, 3 boss and 2 shop). 
+This mod adds a new character for Slay the Spire, named The Blackbeard, with 75+ new cards and 15 new relics (1 starter, 4 common, 3 uncommon, 2 rare, 3 boss and 2 shop). 
 
 The Blackbeard is a new class based on pirate theme. His most important mechanic are Weapons. There are many cards that allow to equip a Weapon and each Weapon is characterized by its Attack and Durability. You can equip many Weapons, and they are queued using Defect's orb system. Every time you play an attack card, one Durability of your rightmost Weapon is used and card's damage is increased by Weapon's Attack. You can equip maximum of 10 Weapons. Weapons with zero Durability are automatically destroyed. Orb slots are created and destroyed automatically.
 
@@ -11,8 +11,6 @@ Other mechanics are:
 - Resistance - for each point of Resistance you take 1 damage less from enemies.
 - Gold scaling cards - some cards scale with how much Gold you gained this run.
 - Debuff cleansing - The Blackbeard is able to play powerful cards with negative effects, and later cleanse his debuffs.
-
-The Blackbeard has access to 3 character-specific potions, one for each rarity, similar to the base game characters.
 
 Gameplay: 
 ![Gameplay](screenshots/Gameplay.jpg)
