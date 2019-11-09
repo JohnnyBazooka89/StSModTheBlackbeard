@@ -1,22 +1,13 @@
 package blackbeard.potions;
 
 import basemod.abstracts.CustomPotion;
-import blackbeard.TheBlackbeardMod;
-import blackbeard.actions.UpgradeWeaponsAction;
-import blackbeard.enums.WeaponsToUseEnum;
-import com.evacipated.cardcrawl.mod.stslib.Keyword;
-import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.PowerTip;
-import com.megacrit.cardcrawl.helpers.TipHelper;
-import com.megacrit.cardcrawl.localization.PotionStrings;
-import com.megacrit.cardcrawl.potions.AbstractPotion;
-import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
-public class UpgradePotion extends CustomPotion {
+public abstract class UpgradePotion extends CustomPotion {  //TODO: Fix, when Watcher releases
+    public UpgradePotion(String name, String id, PotionRarity rarity, PotionSize size, PotionColor color) {
+        super(name, id, rarity, size, color);
+    }
 
-    private static final String ID = "blackbeard:UpgradePotion";
+    /*private static final String ID = "blackbeard:UpgradePotion";
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(ID);
     public static final String NAME = potionStrings.NAME;
     public static final String[] DESCRIPTIONS = potionStrings.DESCRIPTIONS;
@@ -51,5 +42,5 @@ public class UpgradePotion extends CustomPotion {
     @Override
     public int getPotency(int ascensionLevel) {
         return POTENCY;
-    }
+    }*/
 }

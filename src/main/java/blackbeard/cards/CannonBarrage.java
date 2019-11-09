@@ -22,7 +22,7 @@ public class CannonBarrage extends AbstractBlackbeardCard {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
                 CardColorEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
 
-        this.cardsToPreview = new Cannonball();
+        //this.cardsToPreview = new Cannonball();  //TODO: Fix, when Watcher releases
     }
 
     @Override

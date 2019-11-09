@@ -1,13 +1,7 @@
 package blackbeard.relics;
 
-import basemod.abstracts.CustomRelic;
-import blackbeard.TheBlackbeardMod;
-import blackbeard.enums.CardTagsEnum;
-import blackbeard.utils.TextureLoader;
-import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.cards.AbstractCard;
-
-public class CannonballsOfSteel extends CustomRelic {
+//TODO: Fix, when Watcher releases
+/*public class CannonballsOfSteel extends CustomRelic {
 
     public static final String ID = "blackbeard:CannonballsOfSteel";
     private static final Texture IMG = TextureLoader.getTexture(TheBlackbeardMod.getRelicImagePath(ID));
@@ -27,3 +21,4 @@ public class CannonballsOfSteel extends CustomRelic {
         return DESCRIPTIONS[0];
     }
 }
+*/

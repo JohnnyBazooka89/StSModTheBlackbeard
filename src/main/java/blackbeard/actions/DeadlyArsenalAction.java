@@ -30,7 +30,7 @@ public class DeadlyArsenalAction extends AbstractGameAction {
 
         int toDraw = weaponList.size();
         if (toDraw > 0) {
-            this.addToTop(new DrawCardAction(this.source, toDraw));
+            AbstractDungeon.actionManager.addToTop(new DrawCardAction(this.source, toDraw));
         }
 
         this.isDone = true;

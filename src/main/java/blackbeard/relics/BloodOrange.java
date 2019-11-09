@@ -37,8 +37,8 @@ public class BloodOrange extends CustomRelic {
         }
         if (this.counter >= 6) {
             this.flash();
-            this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-            this.addToBot(new RemoveDebuffsAction(AbstractDungeon.player));
+            AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+            AbstractDungeon.actionManager.addToBottom(new RemoveDebuffsAction(AbstractDungeon.player));
             this.counter = 0;
         }
     }

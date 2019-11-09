@@ -29,7 +29,7 @@ public class StrikeBlackbeard extends AbstractBlackbeardCard {
         this.baseDamage = this.damage = ATTACK_DMG;
 
         this.tags.add(CardTags.STRIKE);
-        this.tags.add(CardTags.STARTER_STRIKE);
+        //this.tags.add(CardTags.STARTER_STRIKE); //TODO: Fix, when Watcher releases
         this.tags.add(BaseModCardTags.BASIC_STRIKE);
     }
 

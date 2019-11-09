@@ -1,5 +1,6 @@
 package blackbeard.events;
 
+import basemod.helpers.BaseModCardTags;
 import blackbeard.cards.VampiricScepter;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.colorless.Bite;
@@ -138,7 +139,7 @@ public class VampiresBlackbeardEvent extends AbstractImageEvent {
 
         for (int i = masterDeck.size() - 1; i >= 0; i--) {
             AbstractCard card = masterDeck.get(i);
-            if (card.tags.contains(AbstractCard.CardTags.STARTER_STRIKE)) {
+            if (/*card.tags.contains(AbstractCard.CardTags.STARTER_STRIKE) || */ card.tags.contains(BaseModCardTags.BASIC_STRIKE)) { //TODO: Fix, when Watcher releases
                 AbstractDungeon.player.masterDeck.removeCard(card);
             }
         }

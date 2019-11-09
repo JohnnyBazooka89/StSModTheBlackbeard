@@ -9,9 +9,6 @@ import blackbeard.enums.CardColorEnum;
 import blackbeard.enums.PlayerClassEnum;
 import blackbeard.events.SsssserpentBlackbeardEvent;
 import blackbeard.events.VampiresBlackbeardEvent;
-import blackbeard.potions.OrangeJuicePotion;
-import blackbeard.potions.RumPotion;
-import blackbeard.potions.UpgradePotion;
 import blackbeard.relics.*;
 import blackbeard.utils.TextureLoader;
 import blackbeard.variables.MagicNumberPlusOneVariable;
@@ -166,13 +163,14 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addEvent(VampiresBlackbeardEvent.ID, VampiresBlackbeardEvent.class, TheCity.ID);
 
         //Potions
-        Color rumLiquidColor = new Color(211 / 255.0F, 102 / 255.0F, 0, 1);
+        //TODO: Fix, when Watcher releases
+        /*Color rumLiquidColor = new Color(211 / 255.0F, 102 / 255.0F, 0, 1);
         Color rumHybridColor = new Color(160 / 255.0F, 77 / 255.0F, 0, 1);
         Color orangeJuiceLiquidColor = new Color(255 / 255.0F, 179 / 255.0F, 63 / 255.0F, 1);
         Color orangeJuiceSpotsColor = new Color(255 / 255.0F, 154 / 255.0F, 0 / 255.0F, 1);
         BaseMod.addPotion(RumPotion.class, rumLiquidColor.cpy(), rumHybridColor.cpy(), null, "blackbeard:RumPotion", PlayerClassEnum.BLACKBEARD_CLASS);
         BaseMod.addPotion(OrangeJuicePotion.class, orangeJuiceLiquidColor.cpy(), null, orangeJuiceSpotsColor.cpy(), "blackbeard:OrangeJuicePotion", PlayerClassEnum.BLACKBEARD_CLASS);
-        BaseMod.addPotion(UpgradePotion.class, Color.DARK_GRAY.cpy(), Color.CORAL.cpy(), null, "blackbeard:UpgradePotion", PlayerClassEnum.BLACKBEARD_CLASS);
+        BaseMod.addPotion(UpgradePotion.class, Color.DARK_GRAY.cpy(), Color.CORAL.cpy(), null, "blackbeard:UpgradePotion", PlayerClassEnum.BLACKBEARD_CLASS);*/
     }
 
     @Override
@@ -198,7 +196,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         //Starter
         BaseMod.addRelicToCustomPool(new LoadTheCannons(), CardColorEnum.BLACKBEARD_BLACK);
         //Common
-        BaseMod.addRelicToCustomPool(new CannonballsOfSteel(), CardColorEnum.BLACKBEARD_BLACK);
+        //BaseMod.addRelicToCustomPool(new CannonballsOfSteel(), CardColorEnum.BLACKBEARD_BLACK); //TODO: Fix, when Watcher releases
         BaseMod.addRelicToCustomPool(new HipFlask(), CardColorEnum.BLACKBEARD_BLACK);
         BaseMod.addRelicToCustomPool(new Spearhead(), CardColorEnum.BLACKBEARD_BLACK);
         BaseMod.addRelicToCustomPool(new TreasureChest(), CardColorEnum.BLACKBEARD_BLACK);
