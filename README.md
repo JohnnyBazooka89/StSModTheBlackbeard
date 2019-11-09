@@ -13,7 +13,8 @@ Other mechanics are:
 - Debuff cleansing - The Blackbeard is able to play powerful cards with negative effects, and later cleanse his debuffs.
 
 Gameplay: 
-![Gameplay](screenshots/Gameplay.jpg)
+![Gameplay](screenshots/Gameplay1.jpg)
+![Gameplay](screenshots/Gameplay2.jpg)
 
 Starting deck: 
 ![Gameplay](screenshots/StartingDeck.jpg)
