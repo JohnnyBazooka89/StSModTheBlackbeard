@@ -4,11 +4,12 @@ import basemod.patches.com.megacrit.cardcrawl.screens.compendium.CardLibraryScre
 import blackbeard.enums.CardColorEnum;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.screens.compendium.CardLibraryScreen;
 
-@SpirePatch(clz = EverythingFix.Initialize.class, method = "Insert", paramtypez = {Object.class})
+@SpirePatch(clz = CardLibraryScreen.class, method = "initialize", paramtypez = {})
 public class DoNotShowSpecialCardsInLibraryPatch {
 
-    public static void Postfix(Object object) {
+    public static void Postfix(CardLibraryScreen cardLibraryScreen) {
         EverythingFix.Fields.cardGroupMap.get(CardColorEnum.BLACKBEARD_BLACK).group.removeIf(c -> c.rarity == AbstractCard.CardRarity.SPECIAL);
     }
 }
