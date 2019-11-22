@@ -18,7 +18,7 @@ Gameplay:
 
 Character Select Screen and Starting Relic:
 ![Character Select Screen](screenshots/CharacterSelectScreen.jpg) 
-![Starting Relic](screenshots/StartingRelic.jpg)
+![Starting Relic](screenshots/StartingRelic.png)
 
 Starting Deck: 
 ![Starting Deck](screenshots/StartingDeck.jpg)
