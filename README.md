@@ -13,11 +13,15 @@ Other mechanics are:
 - Debuff cleansing - The Blackbeard is able to play powerful cards with negative effects, and later cleanse his debuffs.
 
 Gameplay: 
-![Gameplay](screenshots/Gameplay1.jpg)
-![Gameplay](screenshots/Gameplay2.jpg)
+![Gameplay 1](screenshots/Gameplay1.jpg)
+![Gameplay 2](screenshots/Gameplay2.jpg)
 
-Starting deck: 
-![Gameplay](screenshots/StartingDeck.jpg)
+Character Select Screen and Starting Relic:
+![Character Select Screen](screenshots/CharacterSelectScreen.jpg) 
+![Starting Relic](screenshots/StartingRelic.jpg)
+
+Starting Deck: 
+![Starting Deck](screenshots/StartingDeck.jpg)
 
 List of all cards, relics and potions can be found [here](http://www.theblackbeardmod.com). (Exported using [Slay the Spire exporter](https://github.com/twanvl/sts-exporter).)
 
