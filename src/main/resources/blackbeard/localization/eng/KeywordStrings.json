@@ -45,6 +45,6 @@
     "NAMES": [
       "golden cannonball"
     ],
-    "DESCRIPTION": "Golden Cannonballs are #b0 cost attacks that deal damage equal to 2% of Gold gained this run and exhaust."
+    "DESCRIPTION": "Golden Cannonballs are #b0 cost attacks that deal damage equal to 2% of #yGold gained this run and exhaust."
   }
 }

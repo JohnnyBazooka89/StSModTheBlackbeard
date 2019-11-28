@@ -62,6 +62,6 @@
       "złota kula",
       "złotą kulę"
     ],
-    "DESCRIPTION": "Karta Ataku, która kosztuje #b0 energii, zadaje obrażenia równe NL 2% szt. Złota zdobytych w tej wyprawie i jest #ywykluczana po zagraniu."
+    "DESCRIPTION": "Karta Ataku, która kosztuje #b0 energii, zadaje obrażenia równe NL 2% szt. #yZłota zdobytych w tej wyprawie i jest #ywykluczana po zagraniu."
   }
 }

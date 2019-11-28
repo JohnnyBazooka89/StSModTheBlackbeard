@@ -89,6 +89,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     public static Map<String, Keyword> keywords = new HashMap<>();
     public static final String WEAPON_KEYWORD = "blackbeard:WeaponKeyword";
     public static final String RESISTANCE_KEYWORD = "blackbeard:ResistanceKeyword";
+    public static final String GOLDEN_CANNONBALL_KEYWORD = "blackbeard:GoldenCannonball";
 
     //Sounds
     public static final String SOUND_YARR_KEY = "BLACKBEARD_YARR";

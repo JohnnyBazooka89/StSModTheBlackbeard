@@ -3,11 +3,16 @@ package blackbeard.relics;
 import basemod.abstracts.CustomRelic;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.cards.GoldenCannonball;
+import blackbeard.characters.TheBlackbeard;
+import blackbeard.utils.GoldenCardsUtils;
 import blackbeard.utils.TextureLoader;
 import com.badlogic.gdx.graphics.Texture;
+import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.PowerTip;
 import org.apache.commons.lang3.StringUtils;
 
 public class LoadTheGoldenCannons extends CustomRelic {
@@ -18,6 +23,7 @@ public class LoadTheGoldenCannons extends CustomRelic {
 
     public LoadTheGoldenCannons() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.MAGICAL);
+        refreshTips();
     }
 
     @Override
@@ -68,5 +74,19 @@ public class LoadTheGoldenCannons extends CustomRelic {
     @Override
     public String getUpdatedDescription() {
         return DESCRIPTIONS[0];
+    }
+
+    public void refreshTips() {
+        this.tips.clear();
+        this.tips.add(new PowerTip(this.name, this.description));
+        this.initializeTips();
+        if (CardCrawlGame.isInARun()) {
+            Keyword goldenCannonballKeyword = TheBlackbeardMod.keywords.get(TheBlackbeardMod.GOLDEN_CANNONBALL_KEYWORD);
+            for (PowerTip tip : this.tips) {
+                if (tip.header.equalsIgnoreCase(goldenCannonballKeyword.PROPER_NAME)) {
+                    tip.body = tip.body + TheBlackbeard.goldGainedThisRunStrings.TEXT[0] + GoldenCardsUtils.getBlackbeardGoldGained() / 50 + TheBlackbeard.goldGainedThisRunStrings.TEXT[1] + TheBlackbeard.goldGainedThisRunStrings.TEXT[2] + GoldenCardsUtils.getBlackbeardGoldGained() + TheBlackbeard.goldGainedThisRunStrings.TEXT[3];
+                }
+            }
+        }
     }
 }

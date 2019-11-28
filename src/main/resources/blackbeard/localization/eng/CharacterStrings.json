@@ -21,5 +21,13 @@
     "TEXT": [
       "I can't hold more than #r10 Weapons."
     ]
+  },
+  "blackbeard:GoldGainedThisRun": {
+    "TEXT": [
+      " (They deal #b",
+      " damage.)",
+      " You have gained #b",
+      " #yGold this run."
+    ]
   }
 }
