@@ -393,7 +393,7 @@
   },
   "blackbeard:PirateHook": {
     "NAME": "Pirate Hook",
-    "DESCRIPTION": "Deal !D! damage. NL If this deals at least 12 damage, deal !D! damage again."
+    "DESCRIPTION": "Deal !D! damage. NL If this deals at least 10 damage, deal !D! damage again."
   },
   "blackbeard:DeadlyArsenal": {
     "NAME": "Deadly Arsenal",

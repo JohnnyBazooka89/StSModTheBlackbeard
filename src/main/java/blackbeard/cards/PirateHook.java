@@ -20,8 +20,8 @@ public class PirateHook extends AbstractBlackbeardCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
-    private static final int ATTACK_DMG = 8;
-    private static final int UPGRADE_PLUS_ATTACK_DMG = 3;
+    private static final int ATTACK_DMG = 7;
+    private static final int UPGRADE_PLUS_ATTACK_DMG = 2;
 
     public PirateHook() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK,
@@ -32,7 +32,7 @@ public class PirateHook extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int hits = this.damage >= 12 ? 2 : 1;
+        int hits = this.damage >= 10 ? 2 : 1;
         for (int i = 0; i < hits; i++) {
             AbstractDungeon.actionManager.addToBottom(new VFXAction(new RipAndTearEffect(m.hb.cX, m.hb.cY, Color.RED, Color.GOLD)));
             AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
@@ -42,7 +42,7 @@ public class PirateHook extends AbstractBlackbeardCard {
     //TODO: Fix, when Watcher releases
     /*@Override
     public void triggerOnGlowCheck() {
-        this.glowColor = this.damage >= 12 ? AbstractCard.GOLD_BORDER_GLOW_COLOR : AbstractCard.BLUE_BORDER_GLOW_COLOR;
+        this.glowColor = this.damage >= 10 ? AbstractCard.GOLD_BORDER_GLOW_COLOR : AbstractCard.BLUE_BORDER_GLOW_COLOR;
     }*/
 
     @Override
