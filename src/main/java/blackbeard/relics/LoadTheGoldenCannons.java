@@ -76,6 +76,11 @@ public class LoadTheGoldenCannons extends CustomRelic {
         return DESCRIPTIONS[0];
     }
 
+    @Override
+    public void onGainGold() {
+        refreshTips();
+    }
+
     public void refreshTips() {
         this.tips.clear();
         this.tips.add(new PowerTip(this.name, this.description));

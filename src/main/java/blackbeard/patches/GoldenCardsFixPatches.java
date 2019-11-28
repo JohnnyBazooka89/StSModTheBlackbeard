@@ -1,13 +1,11 @@
 package blackbeard.patches;
 
 import blackbeard.interfaces.IGoldenCard;
-import blackbeard.relics.LoadTheGoldenCannons;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.screens.CardRewardScreen;
 
 public class GoldenCardsFixPatches {
@@ -34,12 +32,6 @@ public class GoldenCardsFixPatches {
             refreshGoldenCardsInCardGroup(AbstractDungeon.curseCardPool);
             refreshGoldenCardsInCardGroup(AbstractDungeon.rareCardPool);
             refreshGoldenCardsInCardGroup(AbstractDungeon.uncommonCardPool);
-
-            for (AbstractRelic relic : abstractPlayer.relics) {
-                if (relic instanceof LoadTheGoldenCannons) {
-                    ((LoadTheGoldenCannons) (relic)).refreshTips();
-                }
-            }
         }
 
         private static void refreshGoldenCardsInCardGroup(CardGroup cardGroup) {
