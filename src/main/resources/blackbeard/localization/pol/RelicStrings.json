@@ -43,9 +43,9 @@
   },
   "blackbeard:GoldenRing": {
     "NAME": "Złoty pierścień",
-    "FLAVOR": "Pasuje dla każdego pirata.",
+    "FLAVOR": "Odpowiedni dla każdego pirata.",
     "DESCRIPTIONS": [
-      "Na początku każdej walki zyskaj #b1 pkt. #yHartu."
+      "Na początku każdej walki, zyskaj #b1 pkt. #yHartu."
     ]
   },
   "blackbeard:MagicalCauldron": {
