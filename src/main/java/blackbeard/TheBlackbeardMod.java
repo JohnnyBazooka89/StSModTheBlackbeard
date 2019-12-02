@@ -450,9 +450,8 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
 
     private static boolean isChristmasTime() {
         LocalDateTime now = LocalDateTime.now();
-        LocalDate firstDayOfNextYear = now.minus(7, ChronoUnit.DAYS).with(TemporalAdjusters.firstDayOfNextYear()).toLocalDate();
-        LocalDate firstDay = firstDayOfNextYear.minus(21, ChronoUnit.DAYS);
-        LocalDate lastDay = firstDayOfNextYear.plus(8, ChronoUnit.DAYS);
+        LocalDate lastDay = now.with(TemporalAdjusters.firstDayOfNextYear()).toLocalDate();
+        LocalDate firstDay = lastDay.minus(28, ChronoUnit.DAYS);
         if (!now.isBefore(firstDay.atStartOfDay()) && !now.isAfter(lastDay.atStartOfDay())) {
             return true;
         }
