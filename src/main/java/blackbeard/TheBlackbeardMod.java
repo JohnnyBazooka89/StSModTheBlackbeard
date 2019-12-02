@@ -1,7 +1,9 @@
 package blackbeard;
 
 import basemod.BaseMod;
+import basemod.ModLabeledToggleButton;
 import basemod.ModPanel;
+import basemod.ReflectionHacks;
 import basemod.interfaces.*;
 import blackbeard.cards.*;
 import blackbeard.characters.TheBlackbeard;
@@ -17,27 +19,41 @@ import blackbeard.variables.SecondMagicNumberVariable;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.utils.Array;
+import com.esotericsoftware.spine.Skeleton;
+import com.esotericsoftware.spine.Skin;
+import com.esotericsoftware.spine.Slot;
+import com.esotericsoftware.spine.SlotData;
+import com.esotericsoftware.spine.attachments.RegionAttachment;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.dungeons.Exordium;
 import com.megacrit.cardcrawl.dungeons.TheCity;
-import com.megacrit.cardcrawl.helpers.CardHelper;
+import com.megacrit.cardcrawl.helpers.*;
 import com.megacrit.cardcrawl.localization.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.lang.reflect.Type;
 import java.nio.charset.StandardCharsets;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
+import java.time.temporal.TemporalAdjusters;
 import java.util.HashMap;
 import java.util.Map;
 
 @SpireInitializer
 public class TheBlackbeardMod implements PostInitializeSubscriber,
         EditCardsSubscriber, EditRelicsSubscriber, EditCharactersSubscriber,
-        EditStringsSubscriber, EditKeywordsSubscriber, AddAudioSubscriber {
+        EditStringsSubscriber, EditKeywordsSubscriber, AddAudioSubscriber, StartGameSubscriber {
 
     private static final Logger logger = LogManager.getLogger(TheBlackbeardMod.class);
 
@@ -94,6 +110,15 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     //Sounds
     public static final String SOUND_YARR_KEY = "BLACKBEARD_YARR";
     public static final String SOUND_YARR_FILEPATH = getSoundFilePath("yarr");
+
+    //Christmas Theme
+    public static final String BLACKBEARD_CHRISTMAS_HAT = "blackbeard/img/char/blackbeard/christmasHat.png";
+    public static final String DISABLE_CHRISTMAS_THEME_KEY = "disableChristmasTheme";
+
+    //Mod prefs
+    public static final String BLACKBEARD_MOD_PREFS_ID = "BlackbeardModPrefs";
+    public static final String BLACKBEARD_UI_SETTINGS_ID = "blackbeard:Settings";
+    public static Prefs modPrefs; //initialized in receivePostInitialize
 
     public TheBlackbeardMod() {
         BaseMod.subscribe(this);
@@ -158,6 +183,23 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         //Mod settings
         Texture badgeTexture = TextureLoader.getTexture(BADGE_IMG);
         ModPanel settingsPanel = new ModPanel();
+
+        UIStrings uiSettingsStrings = CardCrawlGame.languagePack.getUIString(BLACKBEARD_UI_SETTINGS_ID);
+
+        modPrefs = SaveHelper.getPrefs(BLACKBEARD_MOD_PREFS_ID);
+
+        //Set default values to mod prefs
+        if (!modPrefs.data.containsKey(DISABLE_CHRISTMAS_THEME_KEY)) {
+            modPrefs.putBoolean(DISABLE_CHRISTMAS_THEME_KEY, false);
+            modPrefs.flush();
+        }
+
+        settingsPanel.addUIElement(new ModLabeledToggleButton(uiSettingsStrings.TEXT[0], 360, 700, Settings.CREAM_COLOR, FontHelper.charDescFont, modPrefs.getBoolean(DISABLE_CHRISTMAS_THEME_KEY), settingsPanel, l -> {
+        }, button -> {
+            modPrefs.putBoolean(DISABLE_CHRISTMAS_THEME_KEY, button.enabled);
+            modPrefs.flush();
+        }));
+
         BaseMod.registerModBadge(badgeTexture, MOD_NAME, AUTHOR, DESCRIPTION, settingsPanel);
 
         //Events
@@ -400,5 +442,60 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     @Override
     public void receiveAddAudio() {
         BaseMod.addAudio(SOUND_YARR_KEY, SOUND_YARR_FILEPATH);
+    }
+
+    public static boolean shouldUseChristmasTheme() {
+        return !modPrefs.getBoolean(DISABLE_CHRISTMAS_THEME_KEY, false) && isChristmasTime();
+    }
+
+    private static boolean isChristmasTime() {
+        LocalDateTime now = LocalDateTime.now();
+        LocalDate firstDayOfNextYear = now.minus(7, ChronoUnit.DAYS).with(TemporalAdjusters.firstDayOfNextYear()).toLocalDate();
+        LocalDate firstDay = firstDayOfNextYear.minus(21, ChronoUnit.DAYS);
+        LocalDate lastDay = firstDayOfNextYear.plus(8, ChronoUnit.DAYS);
+        if (!now.isBefore(firstDay.atStartOfDay()) && !now.isAfter(lastDay.atStartOfDay())) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public void receiveStartGame() {
+        if (AbstractDungeon.player.chosenClass == PlayerClassEnum.BLACKBEARD_CLASS && TheBlackbeardMod.shouldUseChristmasTheme()) {
+            Skeleton skeleton = (Skeleton) ReflectionHacks.getPrivate(AbstractDungeon.player, AbstractCreature.class, "skeleton");
+            String attachName = "images/christmasHat";
+            String attachCloneName = "images/christmasHatClone";
+            int origSlotIndex = skeleton.findSlotIndex(attachName);
+
+            // Create a new slot for the attachment
+            Slot origSlot = skeleton.findSlot(attachName);
+            Slot slotClone = new Slot(new SlotData(origSlot.getData().getIndex(), attachCloneName, origSlot.getBone().getData()), origSlot.getBone());
+            slotClone.getData().setBlendMode(origSlot.getData().getBlendMode());
+            skeleton.getSlots().insert(origSlotIndex, slotClone);
+
+            // Add new slot to draw order
+            Array<Slot> drawOrder = skeleton.getDrawOrder();
+            drawOrder.add(slotClone);
+            skeleton.setDrawOrder(drawOrder);
+
+            Texture tex = ImageMaster.loadImage(BLACKBEARD_CHRISTMAS_HAT);
+            tex.setFilter(Texture.TextureFilter.Linear, Texture.TextureFilter.Linear);
+            TextureRegion region = new TextureRegion(tex);
+            RegionAttachment attachment = new RegionAttachment("images/christmasHatClone");
+            attachment.setRegion(region);
+            attachment.setWidth(tex.getWidth());
+            attachment.setHeight(tex.getHeight());
+            attachment.setX(-30.0f * Settings.scale);
+            attachment.setY(60.0f * Settings.scale);
+            attachment.setScaleX(0.5f * Settings.scale);
+            attachment.setScaleY(0.5f * Settings.scale);
+            attachment.setRotation(0.0f);
+            attachment.updateOffset();
+
+            Skin skin = skeleton.getData().getDefaultSkin();
+            skin.addAttachment(origSlotIndex, attachment.getName(), attachment);
+
+            skeleton.setAttachment(attachCloneName, attachment.getName());
+        }
     }
 }

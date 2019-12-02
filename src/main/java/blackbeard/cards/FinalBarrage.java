@@ -50,13 +50,13 @@ public class FinalBarrage extends AbstractBlackbeardCard {
         for (Integer index : indexes) {
             switch (AbstractDungeon.actionManager.cardsPlayedThisCombat.get(index).cardID) {
                 case HumongousCannonball.ID:
-                    AbstractDungeon.actionManager.addToBottom(new DropCannonballOnHeadAction(m, humongousCannonballTexture));
+                    AbstractDungeon.actionManager.addToBottom(new DropCannonballOnHeadAction(m, getHumongousCannonballTexture()));
                     break;
                 case GoldenCannonball.ID:
-                    AbstractDungeon.actionManager.addToBottom(new DropCannonballOnHeadAction(m, goldenCannonballTexture));
+                    AbstractDungeon.actionManager.addToBottom(new DropCannonballOnHeadAction(m, getGoldenCannonballTexture()));
                     break;
                 default:
-                    AbstractDungeon.actionManager.addToBottom(new DropCannonballOnHeadAction(m, cannonballTexture));
+                    AbstractDungeon.actionManager.addToBottom(new DropCannonballOnHeadAction(m, getCannonballTexture()));
                     break;
             }
         }

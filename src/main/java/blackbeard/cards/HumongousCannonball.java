@@ -38,7 +38,7 @@ public class HumongousCannonball extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ShootAnythingAction(m, humongousCannonballTexture));
+        AbstractDungeon.actionManager.addToBottom(new ShootAnythingAction(m, getHumongousCannonballTexture()));
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn),
                 AbstractGameAction.AttackEffect.BLUNT_HEAVY));
     }

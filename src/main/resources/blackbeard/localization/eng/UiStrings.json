@@ -3,5 +3,10 @@
     "TEXT": [
       "Choose a Power Card to Put into Your Hand."
     ]
+  },
+  "blackbeard:Settings": {
+    "TEXT": [
+      "Disable Christmas Theme."
+    ]
   }
 }
