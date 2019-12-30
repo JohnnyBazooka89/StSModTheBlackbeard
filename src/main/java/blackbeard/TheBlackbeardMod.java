@@ -9,6 +9,8 @@ import blackbeard.cards.*;
 import blackbeard.characters.TheBlackbeard;
 import blackbeard.enums.CardColorEnum;
 import blackbeard.enums.PlayerClassEnum;
+import blackbeard.events.GoldsmithEvent;
+import blackbeard.events.ShipwreckEvent;
 import blackbeard.events.SsssserpentBlackbeardEvent;
 import blackbeard.events.VampiresBlackbeardEvent;
 import blackbeard.potions.RumPotion;
@@ -162,6 +164,20 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         return "blackbeard/img/vfx/" + vfxName + ".png";
     }
 
+    public static String getEventImagePath(String eventId) {
+        return getJpgOrPngForPath("blackbeard/img/events/" + eventId.replaceFirst("blackbeard:", "").replaceFirst("Event", ""));
+    }
+
+    private static String getJpgOrPngForPath(String path) {
+        if (Gdx.files.internal(path + ".jpg").exists()) {
+            return path + ".jpg";
+        }
+        if (Gdx.files.internal(path + ".png").exists()) {
+            return path + ".png";
+        }
+        throw new RuntimeException("Could not find neither jpg nor png for path: " + path);
+    }
+
     public static String getSoundFilePath(String soundName) {
         return "blackbeard/sounds/" + soundName + ".wav";
     }
@@ -205,6 +221,8 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         //Events
         BaseMod.addEvent(SsssserpentBlackbeardEvent.ID, SsssserpentBlackbeardEvent.class, Exordium.ID);
         BaseMod.addEvent(VampiresBlackbeardEvent.ID, VampiresBlackbeardEvent.class, TheCity.ID);
+        BaseMod.addEvent(GoldsmithEvent.EVENT_ID, GoldsmithEvent.class, Exordium.ID);
+        BaseMod.addEvent(ShipwreckEvent.EVENT_ID, ShipwreckEvent.class, TheCity.ID);
 
         //Potions
         //TODO: Fix, when Watcher releases

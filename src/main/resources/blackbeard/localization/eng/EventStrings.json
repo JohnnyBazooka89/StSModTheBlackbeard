@@ -26,5 +26,46 @@
     "DESCRIPTIONS": [
       "#y<Once #yupon #ya #ytime #yin #ya #ysmall #ytavern, #yin #ythe #ymiddle #yof #ynowhere> NL - @Barkeeper!@ Give me your strongest rum!!! NL - The strongest rum in this tavern? Are you sure? I knew only one man who could drink it... he was a great pirate... the greatest pirate... NL - Knew him? Ha, that man is only a myth. And you say you knew him? Hahahaha. ~That's~ ~ridiculous.~ NL - Oh, he existed and I have a proof. Look at this golden coin he paid me with... he had 10000 of such coins. He loved gold, even more than rum from this tavern... NL - 10000 golden coins? So where is he now? And where are his treasures? NL - He still wanted more... He should have never made a deal with this talking whale... NL - Wait, what? ~A...~ ~talking...~ ~whale?...~"
     ]
+  },
+  "blackbeard:GoldsmithEvent": {
+    "NAME": "The Goldsmith",
+    "DESCRIPTIONS": [
+      "While walking through Exordium, you noticed a strange looking man with a golden hammer. NL NL - ~Hi!~ I'm a goldsmith! Did you know that you can use gold from the spire to gild your cards? Why won't you try with one of your Strikes or Defends? NL NL You are unsure about this idea, but it wouldn't hurt to try.",
+      "- ~All~ ~done!~ - said the goldsmith. NL NL You noticed that one of your Strikes is a new shiny #yGolden #yStrike. You thank the goldsmith and continue on your adventure.",
+      "- ~All~ ~done!~ - said the goldsmith. NL NL You noticed that one of your Defends is a new shiny #yGolden #yDefense. You thank the goldsmith and continue on your adventure.",
+      "You didn't take the offer. You continue on your adventure."
+    ],
+    "OPTIONS": [
+      "[Gild a Strike] #rLose #r",
+      " #rGold. #gTransform #gone #gof #gyour #gStrikes #ginto #ga #gGolden #gStrike.",
+      "[Gild a Defend] #rLose #r",
+      " #rGold. #gTransform #gone #gof #gyour #gDefends #ginto #ga #gGolden #gDefense.",
+      "[Locked] Requires: At least 50 Gold.",
+      "[Locked] Requires: At least one Strike.",
+      "[Locked] Requires: At least one Defend.",
+      "[Refuse]",
+      "[Continue on your adventure]"
+    ]
+  },
+  "blackbeard:ShipwreckEvent": {
+    "NAME": "Shipwreck",
+    "DESCRIPTIONS": [
+      "Traveling through the City, you noticed the docks you have never seen before. Looking closely, you discovered a strange looking shipwreck which may contain useful items. You can decide to search a part of the shipwreck, but on the other hand, you worry that getting close to the shipwreck would be physically exhausting.",
+      "You found an Anchor, which may prove useful on your adventure. You are exhaused, but happy with your finding.",
+      "You found a Horn Cleat, which may prove useful on your adventure. You are exhaused, but happy with your finding.",
+      "You found a Captain's Wheel, which may prove useful on your adventure. You are exhaused, but happy with your finding.",
+      "You decided that it's not worth the hassle."
+    ],
+    "OPTIONS": [
+      "[Search the stern] #gObtain #gan #gAnchor. #rLose #r",
+      "[Search the port side] #gObtain #ga #gHorn #gCleat. #rLose #r",
+      "[Search the starboard side] #gObtain #ga #gCaptain's #gWheel. #rLose #r",
+      " #rHP.",
+      "[Locked] You already have an Anchor.",
+      "[Locked] You already have a Horn Cleat.",
+      "[Locked] You already have a Captain's Wheel.",
+      "[Ignore the shipwreck]",
+      "[Continue]"
+    ]
   }
 }

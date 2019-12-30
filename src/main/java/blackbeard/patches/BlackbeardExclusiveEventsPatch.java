@@ -1,6 +1,7 @@
 package blackbeard.patches;
 
 import blackbeard.enums.PlayerClassEnum;
+import blackbeard.events.GoldsmithEvent;
 import blackbeard.events.SsssserpentBlackbeardEvent;
 import blackbeard.events.VampiresBlackbeardEvent;
 import com.evacipated.cardcrawl.modthespire.lib.*;
@@ -23,6 +24,7 @@ public class BlackbeardExclusiveEventsPatch {
         } else {
             tmp.removeIf(d -> d.equals(SsssserpentBlackbeardEvent.ID));
             tmp.removeIf(d -> d.equals(VampiresBlackbeardEvent.ID));
+            tmp.removeIf(d -> d.equals(GoldsmithEvent.EVENT_ID));
         }
     }
 
