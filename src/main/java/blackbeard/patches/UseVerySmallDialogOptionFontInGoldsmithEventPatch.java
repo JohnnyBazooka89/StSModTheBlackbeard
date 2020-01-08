@@ -9,7 +9,7 @@ import javassist.expr.ExprEditor;
 import javassist.expr.MethodCall;
 
 @SpirePatch(clz = LargeDialogOptionButton.class, method = "render", paramtypez = {SpriteBatch.class})
-public class UseVerySmallDialogOptionFontInGoldsmithEvent {
+public class UseVerySmallDialogOptionFontInGoldsmithEventPatch {
 
     public static ExprEditor Instrument() {
         return new ExprEditor() {
@@ -17,7 +17,7 @@ public class UseVerySmallDialogOptionFontInGoldsmithEvent {
             public void edit(MethodCall m) throws CannotCompileException {
                 if (m.getMethodName().equals("renderSmartText")) {
                     m.replace(
-                            "$_ = $proceed($1, (" + UseVerySmallDialogOptionFontInGoldsmithEvent.class.getName() + ".shouldChangeFont($3) ? " + FontHelperPrepareVerySmallDialogOptionFontPatch.class.getName() + ".verySmallDialogOptionFont : $2), $3, $4, $5, $6, $7, $8);"
+                            "$_ = $proceed($1, (" + UseVerySmallDialogOptionFontInGoldsmithEventPatch.class.getName() + ".shouldChangeFont($3) ? " + FontHelperPrepareVerySmallDialogOptionFontPatch.class.getName() + ".verySmallDialogOptionFont : $2), $3, $4, $5, $6, $7, $8);"
                     );
                 }
             }
