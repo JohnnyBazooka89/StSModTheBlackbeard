@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.vfx.RainingGoldEffect;
 
-public class SsssserpentBlackbeardEvent extends AbstractImageEvent {
+public class BlackbeardSsssserpentEvent extends AbstractImageEvent {
     public static final String ID = "blackbeard:Ssssserpent";
     private static final EventStrings eventStrings;
     private static final EventStrings customEventStrings;
@@ -21,7 +21,7 @@ public class SsssserpentBlackbeardEvent extends AbstractImageEvent {
     private static final String YARR_DIALOG;
     private static final String DISAGREE_DIALOG;
     private static final String GOLD_RAIN_MSG;
-    private SsssserpentBlackbeardEvent.CUR_SCREEN screen;
+    private BlackbeardSsssserpentEvent.CUR_SCREEN screen;
     private static final int GOLD_REWARD = 225;
     private static final int A_2_GOLD_REWARD = 200;
     private int goldReward;
@@ -34,9 +34,9 @@ public class SsssserpentBlackbeardEvent extends AbstractImageEvent {
         }
     }
 
-    public SsssserpentBlackbeardEvent() {
+    public BlackbeardSsssserpentEvent() {
         super(NAME, DIALOG_1, "images/events/liarsGame.jpg");
-        this.screen = SsssserpentBlackbeardEvent.CUR_SCREEN.INTRO;
+        this.screen = BlackbeardSsssserpentEvent.CUR_SCREEN.INTRO;
         if (AbstractDungeon.ascensionLevel >= 15) {
             this.goldReward = A_2_GOLD_REWARD;
         } else {
@@ -56,13 +56,13 @@ public class SsssserpentBlackbeardEvent extends AbstractImageEvent {
                     this.imageEventText.updateBodyText(YARR_DIALOG);
                     this.imageEventText.removeDialogOption(1);
                     this.imageEventText.updateDialogOption(0, customEventStrings.OPTIONS[2]);
-                    this.screen = SsssserpentBlackbeardEvent.CUR_SCREEN.YARR;
+                    this.screen = BlackbeardSsssserpentEvent.CUR_SCREEN.YARR;
                     AbstractEvent.logMetricGainGoldAndRelic(ID, "YARR", this.relic, this.goldReward);
                 } else if (buttonPressed == 1) {
                     this.imageEventText.updateBodyText(DISAGREE_DIALOG);
                     this.imageEventText.removeDialogOption(1);
                     this.imageEventText.updateDialogOption(0, OPTIONS[4]);
-                    this.screen = SsssserpentBlackbeardEvent.CUR_SCREEN.DISAGREE;
+                    this.screen = BlackbeardSsssserpentEvent.CUR_SCREEN.DISAGREE;
                     AbstractEvent.logMetricIgnored(ID);
                 }
                 break;
@@ -72,7 +72,7 @@ public class SsssserpentBlackbeardEvent extends AbstractImageEvent {
                 AbstractDungeon.player.gainGold(this.goldReward);
                 this.imageEventText.updateBodyText(GOLD_RAIN_MSG);
                 this.imageEventText.updateDialogOption(0, OPTIONS[4]);
-                this.screen = SsssserpentBlackbeardEvent.CUR_SCREEN.COMPLETE;
+                this.screen = BlackbeardSsssserpentEvent.CUR_SCREEN.COMPLETE;
                 break;
             default:
                 this.openMap();

@@ -16,7 +16,7 @@ import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 import java.util.ArrayList;
 import java.util.List;
 
-public class VampiresBlackbeardEvent extends AbstractImageEvent {
+public class BlackbeardVampiresEvent extends AbstractImageEvent {
     public static final String ID = "blackbeard:Vampires";
     private static final EventStrings eventStrings;
     private static final EventStrings customEventStrings;
@@ -34,7 +34,7 @@ public class VampiresBlackbeardEvent extends AbstractImageEvent {
     private AbstractCard vampiricScepterCard;
     private List<String> bites;
 
-    public VampiresBlackbeardEvent() {
+    public BlackbeardVampiresEvent() {
         super(NAME, "test", "images/events/vampires.jpg");
         this.vampiricScepterCard = new VampiricScepter();
         this.body = AbstractDungeon.player.getVampireText();

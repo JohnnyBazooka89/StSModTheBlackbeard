@@ -1,9 +1,9 @@
 package blackbeard.patches;
 
 import blackbeard.enums.PlayerClassEnum;
+import blackbeard.events.BlackbeardSsssserpentEvent;
+import blackbeard.events.BlackbeardVampiresEvent;
 import blackbeard.events.GoldsmithEvent;
-import blackbeard.events.SsssserpentBlackbeardEvent;
-import blackbeard.events.VampiresBlackbeardEvent;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.city.Vampires;
@@ -22,8 +22,8 @@ public class BlackbeardExclusiveEventsPatch {
             tmp.removeIf(d -> d.equals(Sssserpent.ID));
             tmp.removeIf(d -> d.equals(Vampires.ID));
         } else {
-            tmp.removeIf(d -> d.equals(SsssserpentBlackbeardEvent.ID));
-            tmp.removeIf(d -> d.equals(VampiresBlackbeardEvent.ID));
+            tmp.removeIf(d -> d.equals(BlackbeardSsssserpentEvent.ID));
+            tmp.removeIf(d -> d.equals(BlackbeardVampiresEvent.ID));
             tmp.removeIf(d -> d.equals(GoldsmithEvent.EVENT_ID));
         }
     }

@@ -9,10 +9,10 @@ import blackbeard.cards.*;
 import blackbeard.characters.TheBlackbeard;
 import blackbeard.enums.CardColorEnum;
 import blackbeard.enums.PlayerClassEnum;
+import blackbeard.events.BlackbeardSsssserpentEvent;
+import blackbeard.events.BlackbeardVampiresEvent;
 import blackbeard.events.GoldsmithEvent;
 import blackbeard.events.ShipwreckEvent;
-import blackbeard.events.SsssserpentBlackbeardEvent;
-import blackbeard.events.VampiresBlackbeardEvent;
 import blackbeard.potions.RumPotion;
 import blackbeard.relics.*;
 import blackbeard.utils.TextureLoader;
@@ -219,8 +219,8 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.registerModBadge(badgeTexture, MOD_NAME, AUTHOR, DESCRIPTION, settingsPanel);
 
         //Events
-        BaseMod.addEvent(SsssserpentBlackbeardEvent.ID, SsssserpentBlackbeardEvent.class, Exordium.ID);
-        BaseMod.addEvent(VampiresBlackbeardEvent.ID, VampiresBlackbeardEvent.class, TheCity.ID);
+        BaseMod.addEvent(BlackbeardSsssserpentEvent.ID, BlackbeardSsssserpentEvent.class, Exordium.ID);
+        BaseMod.addEvent(BlackbeardVampiresEvent.ID, BlackbeardVampiresEvent.class, TheCity.ID);
         BaseMod.addEvent(GoldsmithEvent.EVENT_ID, GoldsmithEvent.class, Exordium.ID);
         BaseMod.addEvent(ShipwreckEvent.EVENT_ID, ShipwreckEvent.class, TheCity.ID);
 
