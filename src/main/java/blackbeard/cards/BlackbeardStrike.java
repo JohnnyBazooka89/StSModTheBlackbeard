@@ -13,8 +13,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class StrikeBlackbeard extends AbstractBlackbeardCard {
-    public static final String ID = "blackbeard:StrikeBlackbeard";
+public class BlackbeardStrike extends AbstractBlackbeardCard {
+    public static final String ID = "blackbeard:BlackbeardStrike";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
@@ -22,7 +22,7 @@ public class StrikeBlackbeard extends AbstractBlackbeardCard {
     private static final int ATTACK_DMG = 6;
     private static final int UPGRADE_PLUS_ATTACK_DMG = 3;
 
-    public StrikeBlackbeard() {
+    public BlackbeardStrike() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, AbstractCard.CardType.ATTACK,
                 CardColorEnum.BLACKBEARD_BLACK, CardRarity.BASIC, AbstractCard.CardTarget.ENEMY);
 

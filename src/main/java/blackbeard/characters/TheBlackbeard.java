@@ -2,10 +2,10 @@ package blackbeard.characters;
 
 import basemod.abstracts.CustomPlayer;
 import blackbeard.TheBlackbeardMod;
+import blackbeard.cards.BlackbeardDefend;
+import blackbeard.cards.BlackbeardStrike;
 import blackbeard.cards.Cutlass;
-import blackbeard.cards.DefendBlackbeard;
 import blackbeard.cards.IntimidatingStrike;
-import blackbeard.cards.StrikeBlackbeard;
 import blackbeard.enums.CardColorEnum;
 import blackbeard.enums.PlayerClassEnum;
 import blackbeard.relics.LoadTheCannons;
@@ -74,15 +74,15 @@ public class TheBlackbeard extends CustomPlayer {
 
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> startingDeck = new ArrayList<>();
-        startingDeck.add(StrikeBlackbeard.ID);
-        startingDeck.add(StrikeBlackbeard.ID);
-        startingDeck.add(StrikeBlackbeard.ID);
-        startingDeck.add(StrikeBlackbeard.ID);
+        startingDeck.add(BlackbeardStrike.ID);
+        startingDeck.add(BlackbeardStrike.ID);
+        startingDeck.add(BlackbeardStrike.ID);
+        startingDeck.add(BlackbeardStrike.ID);
         startingDeck.add(IntimidatingStrike.ID);
-        startingDeck.add(DefendBlackbeard.ID);
-        startingDeck.add(DefendBlackbeard.ID);
-        startingDeck.add(DefendBlackbeard.ID);
-        startingDeck.add(DefendBlackbeard.ID);
+        startingDeck.add(BlackbeardDefend.ID);
+        startingDeck.add(BlackbeardDefend.ID);
+        startingDeck.add(BlackbeardDefend.ID);
+        startingDeck.add(BlackbeardDefend.ID);
         startingDeck.add(Cutlass.ID);
 
         return startingDeck;

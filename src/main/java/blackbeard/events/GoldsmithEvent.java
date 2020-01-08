@@ -1,10 +1,10 @@
 package blackbeard.events;
 
 import blackbeard.TheBlackbeardMod;
-import blackbeard.cards.DefendBlackbeard;
+import blackbeard.cards.BlackbeardDefend;
+import blackbeard.cards.BlackbeardStrike;
 import blackbeard.cards.GoldenDefense;
 import blackbeard.cards.GoldenStrike;
-import blackbeard.cards.StrikeBlackbeard;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
@@ -68,8 +68,8 @@ public class GoldsmithEvent extends AbstractImageEvent {
 
     private void setCards() {
         this.hasEnoughGold = AbstractDungeon.player.gold >= GOLD_COST;
-        this.hasStrike = CardHelper.hasCardWithID(StrikeBlackbeard.ID);
-        this.hasDefend = CardHelper.hasCardWithID(DefendBlackbeard.ID);
+        this.hasStrike = CardHelper.hasCardWithID(BlackbeardStrike.ID);
+        this.hasDefend = CardHelper.hasCardWithID(BlackbeardDefend.ID);
         this.goldenStrike = new GoldenStrike();
         this.goldenDefense = new GoldenDefense();
     }
@@ -83,13 +83,13 @@ public class GoldsmithEvent extends AbstractImageEvent {
                 switch (buttonPressed) {
                     case 0:
                         this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
-                        gildACard(StrikeBlackbeard.ID, goldenStrike);
+                        gildACard(BlackbeardStrike.ID, goldenStrike);
                         AbstractDungeon.player.loseGold(GOLD_COST);
                         logMetricObtainCard(EVENT_ID, GoldenStrike.ID, goldenStrike);
                         break;
                     case 1:
                         this.imageEventText.updateBodyText(DESCRIPTIONS[2]);
-                        gildACard(DefendBlackbeard.ID, goldenDefense);
+                        gildACard(BlackbeardDefend.ID, goldenDefense);
                         AbstractDungeon.player.loseGold(GOLD_COST);
                         logMetricObtainCard(EVENT_ID, GoldenDefense.ID, goldenDefense);
                         break;

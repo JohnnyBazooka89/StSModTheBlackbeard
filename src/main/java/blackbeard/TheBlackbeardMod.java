@@ -295,8 +295,8 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addDynamicVariable(new MagicNumberPlusOneVariable());
         BaseMod.addDynamicVariable(new SecondMagicNumberVariable());
 
-        BaseMod.addCard(new StrikeBlackbeard());
-        BaseMod.addCard(new DefendBlackbeard());
+        BaseMod.addCard(new BlackbeardStrike());
+        BaseMod.addCard(new BlackbeardDefend());
         BaseMod.addCard(new Cutlass());
         BaseMod.addCard(new Upgrade());
         BaseMod.addCard(new Sharpening());
