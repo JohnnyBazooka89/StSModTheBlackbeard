@@ -40,7 +40,7 @@ public class UndeadForm extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADED_MINUS_DAMAGE_TO_TAKE);
+            this.upgradeMagicNumber(-UPGRADED_MINUS_DAMAGE_TO_TAKE);
         }
     }
 }

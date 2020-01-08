@@ -198,7 +198,7 @@
   },
   "blackbeard:CaptainsHat": {
     "NAME": "Captain's Hat",
-    "DESCRIPTION": "Gain !M! Strength. NL Gain 2 Resistance."
+    "DESCRIPTION": "Gain !M! Strength. NL Gain !M! Resistance."
   },
   "blackbeard:BlindAttacks": {
     "NAME": "Blind Attacks",
