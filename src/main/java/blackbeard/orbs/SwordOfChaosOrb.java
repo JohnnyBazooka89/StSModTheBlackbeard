@@ -1,8 +1,8 @@
 package blackbeard.orbs;
 
 import blackbeard.TheBlackbeardMod;
-import blackbeard.effects.DamageCurvy;
-import blackbeard.effects.DamageLine;
+import blackbeard.effects.DamageCurvyEffect;
+import blackbeard.effects.DamageLineEffect;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
@@ -26,9 +26,9 @@ public class SwordOfChaosOrb extends AbstractWeaponOrb {
     @Override
     public void effectOnUse() {
         for (int i = 0; i < 36; i++) {
-            AbstractDungeon.effectList.add(new DamageLine(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, new Color(0.905F, 0F, 0.905F, 1), ((10 * i) + MathUtils.random(-10, 10) + offset)));
+            AbstractDungeon.effectList.add(new DamageLineEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, new Color(0.905F, 0F, 0.905F, 1), ((10 * i) + MathUtils.random(-10, 10) + offset)));
             if (i % 2 == 0) {
-                AbstractDungeon.effectList.add(new DamageCurvy(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, new Color(0.905F, 0F, 0.905F, 1)));
+                AbstractDungeon.effectList.add(new DamageCurvyEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, new Color(0.905F, 0F, 0.905F, 1)));
             }
         }
         AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(AbstractDungeon.returnTrulyRandomCardInCombat().makeCopy(), false));

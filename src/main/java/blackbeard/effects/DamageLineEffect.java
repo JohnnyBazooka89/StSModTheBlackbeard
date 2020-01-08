@@ -7,12 +7,12 @@ import com.badlogic.gdx.math.Vector2;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.vfx.combat.DamageImpactLineEffect;
 
-public class DamageLine extends DamageImpactLineEffect {
-    public DamageLine(float x, float y, Color color, double initialAngle) {
+public class DamageLineEffect extends DamageImpactLineEffect {
+    public DamageLineEffect(float x, float y, Color color, double initialAngle) {
         this(x, y, color, initialAngle, MathUtils.random(20.0F * Settings.scale, 40.0F * Settings.scale), 0.5F);
     }
 
-    public DamageLine(float x, float y, Color color, double initialAngle, float speed, float duration) {
+    public DamageLineEffect(float x, float y, Color color, double initialAngle, float speed, float duration) {
         super(x, y);
 
         this.duration = duration;

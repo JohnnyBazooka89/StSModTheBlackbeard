@@ -1,8 +1,8 @@
 package blackbeard.cards;
 
 import blackbeard.TheBlackbeardMod;
-import blackbeard.effects.DamageCurvy;
-import blackbeard.effects.DamageLine;
+import blackbeard.effects.DamageCurvyEffect;
+import blackbeard.effects.DamageLineEffect;
 import blackbeard.enums.CardColorEnum;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.math.MathUtils;
@@ -39,9 +39,9 @@ public class RemoveScurvy extends AbstractBlackbeardCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         for (int i = 0; i < 36; i++) {
-            AbstractDungeon.effectList.add(new DamageLine(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, new Color(1F, 0.576F, 0.160F, 1), ((10 * i) + MathUtils.random(-10, 10) + offset)));
+            AbstractDungeon.effectList.add(new DamageLineEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, new Color(1F, 0.576F, 0.160F, 1), ((10 * i) + MathUtils.random(-10, 10) + offset)));
             if (i % 2 == 0) {
-                AbstractDungeon.effectList.add(new DamageCurvy(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, new Color(1F, 0.576F, 0.160F, 1)));
+                AbstractDungeon.effectList.add(new DamageCurvyEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, new Color(1F, 0.576F, 0.160F, 1)));
             }
         }
         AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, this.magicNumber));
