@@ -166,9 +166,9 @@
   },
   "blackbeard:Murder": {
     "NAME": "Murder",
-    "DESCRIPTION": "Ethereal. Grave. NL Deal !D! damage     NL to a Normal enemy. NL (Cannot be used on Elite or Boss).",
+    "DESCRIPTION": "Deal !D! damage     NL to a non-Boss enemy. NL Fleeting.",
     "EXTENDED_DESCRIPTION": [
-      "I have to target a #rNormal enemy!",
+      "I have to target a #rnon-Boss enemy!",
       "MURDER"
     ]
   },
@@ -372,7 +372,7 @@
   },
   "blackbeard:UndeadForm": {
     "NAME": "Undead Form",
-    "DESCRIPTION": "Gain !M! Intangible. NL At the start of the turn on which you are no longer Intangible, you take 30 damage."
+    "DESCRIPTION": "Gain 3 Intangible. NL At the start of the turn on which you are no longer Intangible, you take !M! damage."
   },
   "blackbeard:WeaponProficiency": {
     "NAME": "Weapon Proficiency",

@@ -3,7 +3,7 @@ package blackbeard.cards;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.effects.GiantTextEffect;
 import blackbeard.enums.CardColorEnum;
-import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.GraveField;
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.FleetingField;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -29,8 +29,7 @@ public class Murder extends AbstractBlackbeardCard {
                 CardColorEnum.BLACKBEARD_BLACK, CardRarity.RARE, CardTarget.ENEMY);
 
         this.baseDamage = this.damage = ATTACK_DMG;
-        GraveField.grave.set(this, true);
-        this.isEthereal = true;
+        FleetingField.fleeting.set(this, true);
     }
 
     @Override
@@ -46,7 +45,7 @@ public class Murder extends AbstractBlackbeardCard {
         if (!canUse) {
             return false;
         }
-        if (isEliteOrBoss()) {
+        if (isBoss()) {
             canUse = false;
             this.cantUseMessage = EXTENDED_DESCRIPTION[0];
         }
@@ -56,17 +55,16 @@ public class Murder extends AbstractBlackbeardCard {
     //TODO: Fix, when Watcher releases
     /*@Override
     public void triggerOnGlowCheck() {
-        this.glowColor = !isEliteOrBoss() ? AbstractCard.GOLD_BORDER_GLOW_COLOR : AbstractCard.BLUE_BORDER_GLOW_COLOR;
+        this.glowColor = !isBoss() ? AbstractCard.GOLD_BORDER_GLOW_COLOR : AbstractCard.BLUE_BORDER_GLOW_COLOR;
     }*/
 
-    private boolean isEliteOrBoss() {
-        boolean eliteOrBoss = (AbstractDungeon.getCurrRoom()).eliteTrigger;
+    private boolean isBoss() {
         for (AbstractMonster m : (AbstractDungeon.getMonsters()).monsters) {
             if (m.type == AbstractMonster.EnemyType.BOSS) {
-                eliteOrBoss = true;
+                return true;
             }
         }
-        return eliteOrBoss;
+        return false;
     }
 
     @Override

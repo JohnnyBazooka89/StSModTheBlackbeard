@@ -166,9 +166,9 @@
   },
   "blackbeard:Murder": {
     "NAME": "Morderstwo",
-    "DESCRIPTION": "Eteryczna. blackbeard:Zakopana. NL Zadaj !D! pkt. obrażeń     NL Normalnemu przeciwnikowi. NL (Nie może być zagrana przeciwko Elitarnym przeciwnikom i Bossom).",
+    "DESCRIPTION": "Zadaj !D! pkt. obrażeń     NL przeciwnikowi, który nie jest Bossem. NL Usuń tę kartę z talii.",
     "EXTENDED_DESCRIPTION": [
-      "Muszę wybrać #rNormalnego przeciwnika!",
+      "Muszę wybrać przeciwnika, który nie jest Bossem!",
       "MORDERSTWO"
     ]
   },
@@ -372,7 +372,7 @@
   },
   "blackbeard:UndeadForm": {
     "NAME": "Nieumarła forma",
-    "DESCRIPTION": "Zyskaj !M! pkt. Nieuchwytności. NL Na starcie tury, w której nie masz ani jednego pkt. Nieuchwytności, otrzymaj 30 pkt. obrażeń."
+    "DESCRIPTION": "Zyskaj 3 pkt. Nieuchwytności. NL Na starcie tury, w której nie masz ani jednego pkt. Nieuchwytności, otrzymaj !M! pkt. obrażeń."
   },
   "blackbeard:WeaponProficiency": {
     "NAME": "Biegłość w broni",

@@ -18,29 +18,29 @@ public class UndeadForm extends AbstractBlackbeardCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 3;
-    private static final int INTANGIBLE_VALUE = 2;
-    private static final int UPGRADED_PLUS_INTANGIBLE_VALUE = 1;
-    private static final int DAMAGE_TO_TAKE = 30;
+    private static final int INTANGIBLE_VALUE = 3;
+    private static final int DAMAGE_TO_TAKE = 45;
+    private static final int UPGRADED_MINUS_DAMAGE_TO_TAKE = 15;
 
     public UndeadForm() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.POWER,
                 CardColorEnum.BLACKBEARD_BLACK, CardRarity.RARE, CardTarget.SELF);
 
-        this.baseMagicNumber = this.magicNumber = INTANGIBLE_VALUE;
+        this.baseMagicNumber = this.magicNumber = DAMAGE_TO_TAKE;
         this.tags.add(BaseModCardTags.FORM);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new IntangiblePlayerPower(p, this.magicNumber), this.magicNumber));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DamageWhenIntangibleEndsPower(p, DAMAGE_TO_TAKE), DAMAGE_TO_TAKE));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new IntangiblePlayerPower(p, INTANGIBLE_VALUE), INTANGIBLE_VALUE));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DamageWhenIntangibleEndsPower(p, this.magicNumber), this.magicNumber));
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADED_PLUS_INTANGIBLE_VALUE);
+            this.upgradeMagicNumber(UPGRADED_MINUS_DAMAGE_TO_TAKE);
         }
     }
 }
