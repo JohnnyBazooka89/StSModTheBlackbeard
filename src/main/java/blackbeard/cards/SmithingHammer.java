@@ -27,7 +27,6 @@ public class SmithingHammer extends AbstractBlackbeardCard {
                 CardColorEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
 
         this.baseMagicNumber = this.magicNumber = WEAPON_DURABILITY;
-        this.exhaust = true;
     }
 
     @Override
