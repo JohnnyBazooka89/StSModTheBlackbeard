@@ -1,9 +1,9 @@
 {
-  "blackbeard:StrikeBlackbeard": {
+  "blackbeard:BlackbeardStrike": {
     "NAME": "Uderzenie",
     "DESCRIPTION": "Zadaj !D! pkt. obrażeń."
   },
-  "blackbeard:DefendBlackbeard": {
+  "blackbeard:BlackbeardDefend": {
     "NAME": "Obrona",
     "DESCRIPTION": "Zyskaj !B! pkt. Bloku."
   },

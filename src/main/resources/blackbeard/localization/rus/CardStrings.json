@@ -1,9 +1,9 @@
 {
-  "blackbeard:StrikeBlackbeard": {
+  "blackbeard:BlackbeardStrike": {
     "NAME": "Удар",
     "DESCRIPTION": "Наносит !D! урона."
   },
-  "blackbeard:DefendBlackbeard": {
+  "blackbeard:BlackbeardDefend": {
     "NAME": "Оборона",
     "DESCRIPTION": "Даёт !B! Защиты."
   },

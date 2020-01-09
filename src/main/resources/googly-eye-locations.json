@@ -409,7 +409,7 @@
         "size": 25.0
       }
     ],
-    "blackbeard:DefendBlackbeard": [
+    "blackbeard:BlackbeardDefend": [
       {
         "x": 210.0,
         "y": 253.0,
@@ -926,7 +926,7 @@
         "size": 21.120192
       }
     ],
-    "blackbeard:StrikeBlackbeard": [
+    "blackbeard:BlackbeardStrike": [
       {
         "x": 265.00003,
         "y": 198.0,

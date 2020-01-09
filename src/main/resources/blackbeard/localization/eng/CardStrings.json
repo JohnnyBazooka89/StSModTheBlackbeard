@@ -1,9 +1,9 @@
 {
-  "blackbeard:StrikeBlackbeard": {
+  "blackbeard:BlackbeardStrike": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage."
   },
-  "blackbeard:DefendBlackbeard": {
+  "blackbeard:BlackbeardDefend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
