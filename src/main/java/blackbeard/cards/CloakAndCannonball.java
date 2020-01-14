@@ -27,7 +27,7 @@ public class CloakAndCannonball extends AbstractBlackbeardCard {
                 CardColorEnum.BLACKBEARD_BLACK, CardRarity.COMMON, CardTarget.SELF);
 
         this.baseBlock = this.block = BLOCK_AMOUNT;
-        //this.cardsToPreview = new Cannonball(); //TODO: Fix, when Watcher releases
+        this.cardsToPreview = new Cannonball();
     }
 
     @Override
@@ -45,7 +45,7 @@ public class CloakAndCannonball extends AbstractBlackbeardCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeBlock(UPGRADED_PLUS_BLOCK_AMOUNT);
-            //this.cardsToPreview.upgrade(); //TODO: Fix, when Watcher releases
+            this.cardsToPreview.upgrade();
             this.rawDescription = UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

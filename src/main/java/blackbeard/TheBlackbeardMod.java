@@ -13,7 +13,9 @@ import blackbeard.events.BlackbeardSsssserpentEvent;
 import blackbeard.events.BlackbeardVampiresEvent;
 import blackbeard.events.GoldsmithEvent;
 import blackbeard.events.ShipwreckEvent;
+import blackbeard.potions.OrangeJuicePotion;
 import blackbeard.potions.RumPotion;
+import blackbeard.potions.UpgradePotion;
 import blackbeard.relics.*;
 import blackbeard.utils.TextureLoader;
 import blackbeard.variables.MagicNumberPlusOneVariable;
@@ -225,19 +227,13 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addEvent(ShipwreckEvent.EVENT_ID, ShipwreckEvent.class, TheCity.ID);
 
         //Potions
-        //TODO: Fix, when Watcher releases
-        /*Color rumLiquidColor = new Color(211 / 255.0F, 102 / 255.0F, 0, 1);
+        Color rumLiquidColor = new Color(211 / 255.0F, 102 / 255.0F, 0, 1);
         Color rumHybridColor = new Color(160 / 255.0F, 77 / 255.0F, 0, 1);
         Color orangeJuiceLiquidColor = new Color(255 / 255.0F, 179 / 255.0F, 63 / 255.0F, 1);
         Color orangeJuiceSpotsColor = new Color(255 / 255.0F, 154 / 255.0F, 0 / 255.0F, 1);
-        BaseMod.addPotion(NewRumPotion.class, rumLiquidColor.cpy(), rumHybridColor.cpy(), null, "blackbeard:NewRumPotion", PlayerClassEnum.BLACKBEARD_CLASS);
+        BaseMod.addPotion(RumPotion.class, rumLiquidColor.cpy(), rumHybridColor.cpy(), null, "blackbeard:RumPotion", PlayerClassEnum.BLACKBEARD_CLASS);
         BaseMod.addPotion(OrangeJuicePotion.class, orangeJuiceLiquidColor.cpy(), null, orangeJuiceSpotsColor.cpy(), "blackbeard:OrangeJuicePotion", PlayerClassEnum.BLACKBEARD_CLASS);
-        BaseMod.addPotion(UpgradePotion.class, Color.DARK_GRAY.cpy(), Color.CORAL.cpy(), null, "blackbeard:UpgradePotion", PlayerClassEnum.BLACKBEARD_CLASS);*/
-
-        //TODO: Fix, when Watcher releases
-        Color rumColor = new Color(211 / 255.0F, 102 / 255.0F, 0, 1);
-        Color rumShadeColor = new Color(160 / 255.0F, 77 / 255.0F, 0, 1);
-        BaseMod.addPotion(RumPotion.class, rumColor.cpy(), rumShadeColor.cpy(), null, "blackbeard:RumPotion", PlayerClassEnum.BLACKBEARD_CLASS);
+        BaseMod.addPotion(UpgradePotion.class, Color.DARK_GRAY.cpy(), Color.CORAL.cpy(), null, "blackbeard:UpgradePotion", PlayerClassEnum.BLACKBEARD_CLASS);
     }
 
     @Override
@@ -263,8 +259,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         //Starter
         BaseMod.addRelicToCustomPool(new LoadTheCannons(), CardColorEnum.BLACKBEARD_BLACK);
         //Common
-        BaseMod.addRelicToCustomPool(new CannonballsOfSteel(), CardColorEnum.BLACKBEARD_BLACK); //TODO: Fix, when Watcher releases
-        //BaseMod.addRelicToCustomPool(new NewCannonballsOfSteel(), CardColorEnum.BLACKBEARD_BLACK); //TODO: Fix, when Watcher releases
+        BaseMod.addRelicToCustomPool(new CannonballsOfSteel(), CardColorEnum.BLACKBEARD_BLACK);
         BaseMod.addRelicToCustomPool(new HipFlask(), CardColorEnum.BLACKBEARD_BLACK);
         BaseMod.addRelicToCustomPool(new Spearhead(), CardColorEnum.BLACKBEARD_BLACK);
         BaseMod.addRelicToCustomPool(new TreasureChest(), CardColorEnum.BLACKBEARD_BLACK);
@@ -470,10 +465,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         LocalDateTime now = LocalDateTime.now();
         LocalDate lastDay = now.with(TemporalAdjusters.firstDayOfNextYear()).toLocalDate();
         LocalDate firstDay = lastDay.minus(14, ChronoUnit.DAYS);
-        if (!now.isBefore(firstDay.atStartOfDay()) && !now.isAfter(lastDay.atStartOfDay())) {
-            return true;
-        }
-        return false;
+        return !now.isBefore(firstDay.atStartOfDay()) && !now.isAfter(lastDay.atStartOfDay());
     }
 
     @Override

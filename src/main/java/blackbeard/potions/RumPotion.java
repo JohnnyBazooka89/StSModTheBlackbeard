@@ -20,12 +20,18 @@ public class RumPotion extends CustomPotion {
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(ID);
     public static final String NAME = potionStrings.NAME;
     public static final String[] DESCRIPTIONS = potionStrings.DESCRIPTIONS;
+    private static final int POTENCY = 2;
 
     public RumPotion() {
         super(NAME, ID, PotionRarity.UNCOMMON, PotionSize.H, PotionColor.ELIXIR);
+        this.isThrown = false;
+    }
+
+    @Override
+    public void initializeData() {
         this.potency = this.getPotency();
         this.description = DESCRIPTIONS[0] + this.potency + DESCRIPTIONS[1];
-        this.isThrown = false;
+        this.tips.clear();
         this.tips.add(new PowerTip(this.name, this.description));
         Keyword resistanceKeyword = TheBlackbeardMod.keywords.get(TheBlackbeardMod.RESISTANCE_KEYWORD);
         this.tips.add(new PowerTip(TipHelper.capitalize(resistanceKeyword.NAMES[0]), resistanceKeyword.DESCRIPTION));
@@ -44,6 +50,7 @@ public class RumPotion extends CustomPotion {
 
     @Override
     public int getPotency(int ascensionLevel) {
-        return 2;
+        return POTENCY;
     }
+
 }

@@ -37,7 +37,7 @@
             <artifactId>BaseMod</artifactId>
             <version>5.14.0</version>
             <scope>system</scope>
-            <systemPath>${slayTheSpirePath}\..\..\workshop\content\646570\1605833019\BaseMod.jar</systemPath>
+            <systemPath>${slayTheSpirePath}\..\..\workshop\content\646570\1605833019\beta\BaseMod.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.evacipated.cardcrawl.mod</groupId>

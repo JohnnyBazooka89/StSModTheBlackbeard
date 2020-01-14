@@ -139,7 +139,7 @@ public class BlackbeardVampiresEvent extends AbstractImageEvent {
 
         for (int i = masterDeck.size() - 1; i >= 0; i--) {
             AbstractCard card = masterDeck.get(i);
-            if (/*card.tags.contains(AbstractCard.CardTags.STARTER_STRIKE) || */ card.tags.contains(BaseModCardTags.BASIC_STRIKE)) { //TODO: Fix, when Watcher releases
+            if (card.tags.contains(AbstractCard.CardTags.STARTER_STRIKE) || card.tags.contains(BaseModCardTags.BASIC_STRIKE)) {
                 AbstractDungeon.player.masterDeck.removeCard(card);
             }
         }

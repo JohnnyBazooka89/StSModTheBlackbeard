@@ -8,8 +8,8 @@ import com.megacrit.cardcrawl.events.AbstractImageEvent;
 import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.relics.Anchor;
-import com.megacrit.cardcrawl.relics.HappyFlower;
-import com.megacrit.cardcrawl.relics.Lantern;
+import com.megacrit.cardcrawl.relics.CaptainsWheel;
+import com.megacrit.cardcrawl.relics.HornCleat;
 
 public class ShipwreckEvent extends AbstractImageEvent {
 
@@ -42,11 +42,11 @@ public class ShipwreckEvent extends AbstractImageEvent {
 
     private void setRelics() {
         this.hasAnchor = AbstractDungeon.player.hasRelic(Anchor.ID);
-        this.hasHornCleat = AbstractDungeon.player.hasRelic(HappyFlower.ID); //TODO: Fix, when Watcher releases
-        this.hasCaptainsWheel = AbstractDungeon.player.hasRelic(Lantern.ID); //TODO: Fix, when Watcher releases
+        this.hasHornCleat = AbstractDungeon.player.hasRelic(HornCleat.ID);
+        this.hasCaptainsWheel = AbstractDungeon.player.hasRelic(CaptainsWheel.ID);
         this.anchor = new Anchor();
-        this.hornCleat = new HappyFlower(); //TODO: Fix, when Watcher releases
-        this.captainsWheel = new Lantern(); //TODO: Fix, when Watcher releases
+        this.hornCleat = new HornCleat();
+        this.captainsWheel = new CaptainsWheel();
     }
 
     protected void buttonEffect(int buttonPressed) {
@@ -66,13 +66,13 @@ public class ShipwreckEvent extends AbstractImageEvent {
                         this.imageEventText.updateBodyText(DESCRIPTIONS[2]);
                         AbstractDungeon.getCurrRoom().spawnRelicAndObtain(this.drawX, this.drawY, hornCleat);
                         takeDamage();
-                        logMetricObtainRelic(EVENT_ID, HappyFlower.ID, hornCleat); //TODO: Fix, when Watcher releases
+                        logMetricObtainRelic(EVENT_ID, HornCleat.ID, hornCleat);
                         break;
                     case 2:
                         this.imageEventText.updateBodyText(DESCRIPTIONS[3]);
                         AbstractDungeon.getCurrRoom().spawnRelicAndObtain(this.drawX, this.drawY, captainsWheel);
                         takeDamage();
-                        logMetricObtainRelic(EVENT_ID, Lantern.ID, captainsWheel); //TODO: Fix, when Watcher releases
+                        logMetricObtainRelic(EVENT_ID, CaptainsWheel.ID, captainsWheel);
                         break;
                     case 3:
                         this.imageEventText.updateBodyText(DESCRIPTIONS[4]);

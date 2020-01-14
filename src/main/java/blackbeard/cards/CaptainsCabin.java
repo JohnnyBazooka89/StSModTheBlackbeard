@@ -28,7 +28,7 @@ public class CaptainsCabin extends AbstractBlackbeardCard {
 
         this.baseMagicNumber = this.magicNumber = AMOUNT_OF_CANNONBALLS;
         this.baseBlock = this.block = BLOCK_AMOUNT;
-        //this.cardsToPreview = new Cannonball(); //TODO: Fix, when Watcher releases
+        this.cardsToPreview = new Cannonball();
     }
 
     @Override

@@ -23,7 +23,7 @@ public class CannonballSupply extends AbstractBlackbeardCard {
                 CardColorEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
 
         this.exhaust = true;
-        //this.cardsToPreview = new Cannonball(); //TODO: Fix, when Watcher releases
+        this.cardsToPreview = new Cannonball();
     }
 
     @Override

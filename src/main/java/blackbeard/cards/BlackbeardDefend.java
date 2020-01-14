@@ -26,7 +26,7 @@ public class BlackbeardDefend extends AbstractBlackbeardCard {
 
         this.baseBlock = this.block = BLOCK_AMOUNT;
 
-        //this.tags.add(CardTags.STARTER_DEFEND); //TODO: Fix, when Watcher releases
+        this.tags.add(CardTags.STARTER_DEFEND);
         this.tags.add(BaseModCardTags.BASIC_DEFEND);
     }
 

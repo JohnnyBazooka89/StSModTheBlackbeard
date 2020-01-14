@@ -1,13 +1,19 @@
 package blackbeard.potions;
 
 import basemod.abstracts.CustomPotion;
+import com.megacrit.cardcrawl.actions.common.HealAction;
+import com.megacrit.cardcrawl.actions.unique.RemoveDebuffsAction;
+import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.PowerTip;
+import com.megacrit.cardcrawl.localization.PotionStrings;
+import com.megacrit.cardcrawl.potions.AbstractPotion;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
-public abstract class OrangeJuicePotion extends CustomPotion { //TODO: Fix, when Watcher releases
-    public OrangeJuicePotion(String name, String id, PotionRarity rarity, PotionSize size, PotionColor color) {
-        super(name, id, rarity, size, color);
-    }
+public class OrangeJuicePotion extends CustomPotion {
 
-    /*private static final String ID = "blackbeard:OrangeJuicePotion";
+    private static final String ID = "blackbeard:OrangeJuicePotion";
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(ID);
     public static final String NAME = potionStrings.NAME;
     public static final String[] DESCRIPTIONS = potionStrings.DESCRIPTIONS;
@@ -41,5 +47,6 @@ public abstract class OrangeJuicePotion extends CustomPotion { //TODO: Fix, when
     @Override
     public int getPotency(int ascensionLevel) {
         return POTENCY;
-    }*/
+    }
+
 }

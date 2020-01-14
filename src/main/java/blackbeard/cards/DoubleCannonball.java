@@ -33,7 +33,7 @@ public class DoubleCannonball extends AbstractBlackbeardCard {
         this.exhaust = true;
 
         this.tags.add(CardTagsEnum.CANNONBALL);
-        //this.cardsToPreview = new Cannonball(); //TODO: Fix, when Watcher releases
+        this.cardsToPreview = new Cannonball();
     }
 
     @Override
@@ -53,7 +53,7 @@ public class DoubleCannonball extends AbstractBlackbeardCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeDamage(UPGRADE_PLUS_ATTACK_DMG);
-            //this.cardsToPreview.upgrade(); //TODO: Fix, when Watcher releases
+            this.cardsToPreview.upgrade();
             this.rawDescription = UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

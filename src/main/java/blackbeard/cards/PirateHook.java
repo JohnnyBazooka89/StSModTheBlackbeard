@@ -6,6 +6,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -39,11 +40,10 @@ public class PirateHook extends AbstractBlackbeardCard {
         }
     }
 
-    //TODO: Fix, when Watcher releases
-    /*@Override
+    @Override
     public void triggerOnGlowCheck() {
         this.glowColor = this.damage >= 10 ? AbstractCard.GOLD_BORDER_GLOW_COLOR : AbstractCard.BLUE_BORDER_GLOW_COLOR;
-    }*/
+    }
 
     @Override
     public void upgrade() {
