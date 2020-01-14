@@ -10,7 +10,7 @@
   "dependencies": [
     "basemod", "stslib"
   ],
-  "sts_version": "07-17-2019",
-  "mts_version": "3.11.0",
+  "sts_version": "01-14-2020",
+  "mts_version": "3.15.0",
   "update_json": "https://api.github.com/repos/JohnnyBazooka89/StSModTheBlackbeard/releases/latest"
 }
