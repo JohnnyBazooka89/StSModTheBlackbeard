@@ -29,8 +29,8 @@ public class FontHelperPrepareVerySmallDialogOptionFontPatch {
 
     public static class Locator extends SpireInsertLocator {
         public int[] Locate(CtBehavior ctMethodToPatch) throws CannotCompileException, PatchingException {
-            Matcher matcher = new Matcher.FieldAccessMatcher(FontHelper.class, "textOnlyEventBody");
-            return LineFinder.findInOrder(ctMethodToPatch, matcher);
+            Matcher matcher = new Matcher.FieldAccessMatcher(FontHelper.class, "smallDialogOptionFont");
+            return new int[]{LineFinder.findInOrder(ctMethodToPatch, matcher)[0] + 2};
         }
     }
 

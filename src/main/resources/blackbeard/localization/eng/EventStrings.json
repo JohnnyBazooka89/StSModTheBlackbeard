@@ -50,7 +50,7 @@
   "blackbeard:ShipwreckEvent": {
     "NAME": "Shipwreck",
     "DESCRIPTIONS": [
-      "Traveling through the City, you noticed the docks you have never seen before. Looking closely, you discovered a strange looking shipwreck which may contain useful items. You can decide to search a part of the shipwreck, but on the other hand, you worry that getting close to the shipwreck would be physically exhausting.",
+      "Traveling through the City, you noticed the #ydocks you have never seen before. Looking closely, you discovered a strange looking #yshipwreck which may contain useful items. You can decide to search a part of the shipwreck, but on the other hand, you worry that getting close to the shipwreck and searching it would be #rphysically #rexhausting.",
       "You found an Anchor, which may prove useful on your adventure. You are exhaused, but happy with your finding.",
       "You found a Horn Cleat, which may prove useful on your adventure. You are exhaused, but happy with your finding.",
       "You found a Captain's Wheel, which may prove useful on your adventure. You are exhaused, but happy with your finding.",
