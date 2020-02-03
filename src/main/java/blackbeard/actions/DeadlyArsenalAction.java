@@ -18,19 +18,19 @@ public class DeadlyArsenalAction extends AbstractGameAction {
 
     public void update() {
 
-        ArrayList<String> weaponList = new ArrayList();
+        ArrayList<String> uniqueWeaponsList = new ArrayList<>();
 
         for (AbstractOrb orb : AbstractDungeon.player.orbs) {
             if (orb instanceof AbstractWeaponOrb) {
-                if (!weaponList.contains(orb.ID)) {
-                    weaponList.add(orb.ID);
+                if (!uniqueWeaponsList.contains(orb.ID)) {
+                    uniqueWeaponsList.add(orb.ID);
                 }
             }
         }
 
-        int toDraw = weaponList.size();
-        if (toDraw > 0) {
-            AbstractDungeon.actionManager.addToTop(new DrawCardAction(this.source, toDraw));
+        int amountOfCardsToDraw = uniqueWeaponsList.size();
+        if (amountOfCardsToDraw > 0) {
+            AbstractDungeon.actionManager.addToTop(new DrawCardAction(this.source, amountOfCardsToDraw));
         }
 
         this.isDone = true;
