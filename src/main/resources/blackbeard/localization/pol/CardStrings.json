@@ -38,7 +38,7 @@
   },
   "blackbeard:TheDrunkenSailor": {
     "NAME": "Morskie opowieści",
-    "DESCRIPTION": "Kiedykolwiek użyjesz mikstury, użyj jej dodatkowy raz."
+    "DESCRIPTION": "Kiedykolwiek użyjesz mikstury, jej efekt jest nakładany dodatkowy raz."
   },
   "blackbeard:SwordDance": {
     "NAME": "Taniec mieczy",

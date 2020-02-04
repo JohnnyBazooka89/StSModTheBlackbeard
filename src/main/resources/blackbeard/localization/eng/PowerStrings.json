@@ -14,7 +14,7 @@
   "blackbeard:TheDrunkenSailorPower": {
     "NAME": "The Drunken Sailor",
     "DESCRIPTIONS": [
-      "Whenever you use a potion, use it #b",
+      "Whenever you use a potion, its effect is applied #b",
       " times."
     ]
   },
