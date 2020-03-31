@@ -1,7 +1,7 @@
 package blackbeard.cards;
 
 import blackbeard.TheBlackbeardMod;
-import blackbeard.actions.DropCannonballOnHeadAction;
+import blackbeard.actions.ShootAnythingAction;
 import blackbeard.enums.CardColorEnum;
 import blackbeard.enums.CardTagsEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -50,13 +50,13 @@ public class FinalBarrage extends AbstractBlackbeardCard {
         for (Integer index : indexes) {
             switch (AbstractDungeon.actionManager.cardsPlayedThisCombat.get(index).cardID) {
                 case HumongousCannonball.ID:
-                    AbstractDungeon.actionManager.addToBottom(new DropCannonballOnHeadAction(m, getHumongousCannonballTexture()));
+                    AbstractDungeon.actionManager.addToBottom(new ShootAnythingAction(m, getHumongousCannonballTexture(), true));
                     break;
                 case GoldenCannonball.ID:
-                    AbstractDungeon.actionManager.addToBottom(new DropCannonballOnHeadAction(m, getGoldenCannonballTexture()));
+                    AbstractDungeon.actionManager.addToBottom(new ShootAnythingAction(m, getGoldenCannonballTexture(), true));
                     break;
                 default:
-                    AbstractDungeon.actionManager.addToBottom(new DropCannonballOnHeadAction(m, getCannonballTexture()));
+                    AbstractDungeon.actionManager.addToBottom(new ShootAnythingAction(m, getCannonballTexture(), true));
                     break;
             }
         }

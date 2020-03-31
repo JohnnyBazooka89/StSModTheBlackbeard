@@ -40,7 +40,7 @@ public class GoldenCannonball extends AbstractBlackbeardCard implements IGoldenC
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ShootAnythingAction(m, getGoldenCannonballTexture()));
+        AbstractDungeon.actionManager.addToBottom(new ShootAnythingAction(m, getGoldenCannonballTexture(), false));
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
     }
 

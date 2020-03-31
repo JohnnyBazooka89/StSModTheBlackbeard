@@ -16,9 +16,9 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class HumongousCannonball extends AbstractBlackbeardCard {
     public static final String ID = "blackbeard:HumongousCannonball";
-    public static final String DEFAULT_IMAGE_ID = "HumongousCannonballENG";
-    public static final String POLISH_IMAGE_ID = "HumongousCannonballPOL";
-    public static final String RUSSIAN_IMAGE_ID = "HumongousCannonballRUS";
+    private static final String DEFAULT_IMAGE_ID = "HumongousCannonballENG";
+    private static final String POLISH_IMAGE_ID = "HumongousCannonballPOL";
+    private static final String RUSSIAN_IMAGE_ID = "HumongousCannonballRUS";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
@@ -38,7 +38,7 @@ public class HumongousCannonball extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ShootAnythingAction(m, getHumongousCannonballTexture()));
+        AbstractDungeon.actionManager.addToBottom(new ShootAnythingAction(m, getHumongousCannonballTexture(), false));
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn),
                 AbstractGameAction.AttackEffect.BLUNT_HEAVY));
     }

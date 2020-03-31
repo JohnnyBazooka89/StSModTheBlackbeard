@@ -1,5 +1,6 @@
 package blackbeard.effects;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -7,134 +8,94 @@ import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 
 public class ShootAnythingEffect extends AbstractGameEffect {
 
-    private static final float gravity = 0.5F * Settings.scale;
-    private static final float frictionX = 0.1F * Settings.scale;
-    private static final float frictionY = 0.2F * Settings.scale;
-    private static final float dispersalspeed = 4;
+    private static final float DROP_ON_HEAD_STARTING_DURATION = 0.25f;
+    private static final float SHOOT_ANYTHING_STARTING_DURATION = 0.4f;
 
-    private int flightTime;
-    private CandyInfo letsago;
-    public boolean finishedAction;
+    private Projectile projectile;
+    private boolean dropOnHead;
+    private AbstractCreature abstractCreature;
+    private Texture texture;
 
-    public ShootAnythingEffect(AbstractMonster target, Texture img, int flight) {
-        letsago = new CandyInfo(target, img);
-        flightTime = flight;
+    public ShootAnythingEffect(AbstractCreature abstractCreature, Texture texture, boolean dropOnHead) {
+        this.abstractCreature = abstractCreature;
+        this.texture = texture;
+        this.dropOnHead = dropOnHead;
+        this.projectile = new Projectile();
     }
 
     @Override
     public void render(SpriteBatch sb) {
-        letsago.render(sb);
+        projectile.render(sb);
         sb.setColor(Color.WHITE);
     }
 
     @Override
     public void update() {
-        boolean finishedEffect = true;
+        boolean hit = projectile.update();
 
-        int wahoo = letsago.update();
-
-        if (wahoo != 3) {
-            finishedEffect = false;
-        }
-
-        if (wahoo == 1) {
-            finishedAction = true;
-        }
-
-        if (finishedEffect) {
+        if (hit) {
             this.isDone = true;
         }
     }
 
     public void dispose() {
-
+        //empty
     }
 
-    class CandyInfo {
+    class Projectile {
         private float x;
         private float y;
         private float targetX;
         private float targetY;
         private float rotation;
-        private float radialvelocity;
-        private float bounceplane;
-        private float opacity;
-        private int hit;
-        private int frames;
-        private AbstractCreature ac;
-        private Texture image;
+        private boolean hit;
+        private float duration;
+        private float startingDuration;
 
-        CandyInfo(AbstractCreature ac, Texture blah) {
-            targetX = ac.hb.cX + MathUtils.random(ac.hb.width) - ac.hb.width * 1 / 4;
-            targetY = ac.hb.cY + MathUtils.random(ac.hb.height) - ac.hb.height * 1 / 4;
+        Projectile() {
+            this.startingDuration = dropOnHead ? DROP_ON_HEAD_STARTING_DURATION : SHOOT_ANYTHING_STARTING_DURATION;
 
-            x = AbstractDungeon.player.hb.cX;
-            y = AbstractDungeon.player.hb.cY;
+            targetX = abstractCreature.hb.cX + MathUtils.random(abstractCreature.hb.width) - abstractCreature.hb.width * 1 / 4;
+            targetY = abstractCreature.hb.cY + MathUtils.random(abstractCreature.hb.height) - abstractCreature.hb.height * 1 / 4;
 
-            this.ac = ac;
+            if (dropOnHead) {
+                x = abstractCreature.hb.cX;
+                y = abstractCreature.hb.cY + 1000;
+            } else {
+                x = AbstractDungeon.player.hb.cX;
+                y = AbstractDungeon.player.hb.cY;
+            }
 
-            hit = 0;
-            frames = 0;
-
-            bounceplane = ac.hb.y + MathUtils.random(ac.hb.height / 4, ac.hb.height / 4);
-
-            opacity = 1F;
-
-            this.image = blah;
+            hit = false;
+            duration = startingDuration;
 
             rotation = (MathUtils.random(-30.0F, 30.0F));
-            radialvelocity = (MathUtils.random(-10.0F, 10.0F));
         }
 
-        public void render(SpriteBatch sb) {
-            sb.setColor(1F, 1F, 1F, opacity);
-            sb.draw(this.image, (this.x - (this.image.getWidth() / 2F)), (this.y - (this.image.getHeight() / 2F)), this.image.getWidth() / 2F, this.image.getHeight() / 2F, this.image.getWidth(), this.image.getHeight(), Settings.scale, Settings.scale, this.rotation, 0, 0, this.image.getWidth(), this.image.getHeight(), false, false);
+        void render(SpriteBatch sb) {
+            sb.setColor(1F, 1F, 1F, 1F);
+            sb.draw(texture, (this.x - (texture.getWidth() / 2F)), (this.y - (texture.getHeight() / 2F)), texture.getWidth() / 2F, texture.getHeight() / 2F, texture.getWidth(), texture.getHeight(), Settings.scale, Settings.scale, this.rotation, 0, 0, texture.getWidth(), texture.getHeight(), false, false);
         }
 
-        public int update() {
-            if (hit == 0) {
-                x = AbstractDungeon.player.hb.cX + (targetX - AbstractDungeon.player.hb.cX) / (float) flightTime * frames;
-                y = AbstractDungeon.player.hb.cY + (targetY - AbstractDungeon.player.hb.cY) / (float) flightTime * frames;
+        public boolean update() {
+            if (!hit) {
+                float progress = (this.startingDuration - this.duration) / this.startingDuration;
 
-                if (frames++ == flightTime) {
-                    frames = 0;
-                    hit = 1;
-
-                    radialvelocity = MathUtils.random(-30, 30);
-
-                    targetX = (targetX - ac.hb.cX - ac.hb.width / 4) / 4;
-                    targetY = (targetY - ac.hb.cY) / 4;
-                }
-            } else {
-                this.targetX += (this.targetX > 0 ? -frictionX : frictionX);
-
-                if (y + this.targetY <= bounceplane) {
-                    this.targetY = Math.abs(this.targetY);
-                    if (this.targetY > 1 * Settings.scale) {
-                        this.radialvelocity = MathUtils.random(-30, 30);
-                    } else {
-                        this.radialvelocity = 0;
-                    }
-                    hit = 2;
+                if (dropOnHead) {
+                    x = abstractCreature.hb.cX + (targetX - abstractCreature.hb.cX) * progress;
+                    y = (abstractCreature.hb.cY + 1000) + (targetY - (abstractCreature.hb.cY + 1000)) * progress;
                 } else {
-                    this.targetY -= (this.targetY > 0 ? frictionY : -frictionY);
-                    this.targetY -= gravity;
+                    x = AbstractDungeon.player.hb.cX + (targetX - AbstractDungeon.player.hb.cX) * progress;
+                    y = AbstractDungeon.player.hb.cY + (targetY - AbstractDungeon.player.hb.cY) * progress;
                 }
-                x += targetX;
-                y += targetY;
-                rotation += radialvelocity;
 
-                if (hit > 1) {
-                    opacity -= dispersalspeed / 300F;
-                    if (opacity <= 0F) {
-                        opacity = 0F;
-                        hit = 3;
-                    }
+                this.duration -= Gdx.graphics.getDeltaTime();
+                if (duration < 0) {
+                    hit = true;
                 }
             }
             return hit;

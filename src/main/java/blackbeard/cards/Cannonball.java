@@ -34,7 +34,7 @@ public class Cannonball extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ShootAnythingAction(m, getCannonballTexture()));
+        AbstractDungeon.actionManager.addToBottom(new ShootAnythingAction(m, getCannonballTexture(), false));
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn),
                 AbstractGameAction.AttackEffect.BLUNT_LIGHT));
     }
