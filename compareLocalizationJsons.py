@@ -10,19 +10,19 @@ localizationParentPath = 'src\\main\\resources\\blackbeard\\localization'
 
 for language in languages:
 
-    print 'Language: {0}'.format(language)
+    print ('Language: {0}'.format(language))
 
     for jsonFilename in jsonFilenames:
 
-        print 'File: {0}'.format(jsonFilename)
+        print ('File: {0}'.format(jsonFilename))
 
-        englishJson = json.loads(open(localizationParentPath + '\\eng\\' + jsonFilename, 'r').read())
-        otherLanguageJson = json.loads(open(localizationParentPath + "\\" + language + '\\' + jsonFilename, 'r').read())
+        englishJson = json.loads(open(localizationParentPath + '\\eng\\' + jsonFilename, 'r', encoding='utf-8').read())
+        otherLanguageJson = json.loads(open(localizationParentPath + "\\" + language + '\\' + jsonFilename, 'r', encoding='utf-8').read())
 
         for key in englishJson.keys():
             if key not in otherLanguageJson:
-                print 'Found key {0} without value'.format(key)
+                print ('Found key {0} without value'.format(key))
 
         for key in otherLanguageJson.keys():
             if key not in englishJson:
-                print 'Found key {0} that is not needed'.format(key)
+                print ('Found key {0} that is not needed'.format(key))
