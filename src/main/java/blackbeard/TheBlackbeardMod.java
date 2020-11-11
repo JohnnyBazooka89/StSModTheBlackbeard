@@ -23,6 +23,7 @@ import blackbeard.variables.SecondMagicNumberVariable;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.utils.Array;
 import com.esotericsoftware.spine.Skeleton;
@@ -123,6 +124,9 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     public static final String BLACKBEARD_MOD_PREFS_ID = "BlackbeardModPrefs";
     public static final String BLACKBEARD_UI_SETTINGS_ID = "blackbeard:Settings";
     public static Prefs modPrefs; //initialized in receivePostInitialize
+
+    //Custom Fonts
+    public static BitmapFont fontForInfinitySymbol; //initialized in FontForInfinitySymbolPatch
 
     public TheBlackbeardMod() {
         BaseMod.subscribe(this);

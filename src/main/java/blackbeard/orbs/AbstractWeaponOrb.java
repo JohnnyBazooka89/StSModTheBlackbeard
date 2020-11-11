@@ -1,5 +1,6 @@
 package blackbeard.orbs;
 
+import blackbeard.TheBlackbeardMod;
 import blackbeard.powers.ArmorUpPower;
 import blackbeard.powers.SalvagerPower;
 import blackbeard.relics.Karategi;
@@ -33,7 +34,7 @@ public abstract class AbstractWeaponOrb extends AbstractOrb {
     public static final String ABSTRACT_WEAPON_ORB_ID = "blackbeard:AbstractWeaponOrb";
     private static final OrbStrings orbStrings = CardCrawlGame.languagePack.getOrbString(ABSTRACT_WEAPON_ORB_ID);
 
-    public AbstractWeaponOrb(String id, String name, String rawDecription, String imagePath, int attack, int durability, boolean justAddedUsingAttackCard) {
+    public AbstractWeaponOrb(String id, String name, String rawDescription, String imagePath, int attack, int durability, boolean justAddedUsingAttackCard) {
         this.ID = id;
         this.name = name;
         this.imagePath = imagePath;
@@ -41,7 +42,7 @@ public abstract class AbstractWeaponOrb extends AbstractOrb {
         this.attack = attack;
         this.durability = durability;
         this.justAddedUsingAttackCard = justAddedUsingAttackCard;
-        this.rawDescription = rawDecription;
+        this.rawDescription = rawDescription;
         this.updateDescription();
         this.channelAnimTimer = 0.5F;
     }
@@ -54,7 +55,7 @@ public abstract class AbstractWeaponOrb extends AbstractOrb {
         if (StringUtils.isNotEmpty(descriptionToSet)) {
             descriptionToSet += orbStrings.DESCRIPTION[0];
         }
-        descriptionToSet += orbStrings.DESCRIPTION[1] + attack + orbStrings.DESCRIPTION[2] + orbStrings.DESCRIPTION[3] + durability;
+        descriptionToSet += orbStrings.DESCRIPTION[1] + attack + orbStrings.DESCRIPTION[2] + orbStrings.DESCRIPTION[3] + getDurabilityToDisplay(false);
         this.description = descriptionToSet;
     }
 
@@ -79,7 +80,7 @@ public abstract class AbstractWeaponOrb extends AbstractOrb {
     protected void renderText(SpriteBatch sb) {
         FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, Integer.toString(this.attack), this.cX + NUM_X_OFFSET - 44.0F * Settings.scale,
                 this.cY + this.bobEffect.y / 2.0F + NUM_Y_OFFSET - 4.0F * Settings.scale, this.c, this.fontScale);
-        FontHelper.renderFontCentered(sb, FontHelper.cardEnergyFont_L, getDurabilityToDisplay(), this.cX + NUM_X_OFFSET + 8.0F * Settings.scale,
+        FontHelper.renderFontCentered(sb, isDurabilityInfinite() ? TheBlackbeardMod.fontForInfinitySymbol : FontHelper.cardEnergyFont_L, getDurabilityToDisplay(true), this.cX + NUM_X_OFFSET + 8.0F * Settings.scale,
                 this.cY + this.bobEffect.y / 2.0F + NUM_Y_OFFSET - 4.0F * Settings.scale, new Color(0.2F, 1.0F, 1.0F, this.c.a), this.fontScale);
     }
 
@@ -111,12 +112,15 @@ public abstract class AbstractWeaponOrb extends AbstractOrb {
         return durability;
     }
 
-    public String getDurabilityToDisplay() {
-        int durabilityForCombat = getDurabilityForCombat();
-        if (durabilityForCombat == Integer.MAX_VALUE) {
-            return "inf";
+    public String getDurabilityToDisplay(boolean useInfinitySymbol) {
+        if (isDurabilityInfinite()) {
+            return useInfinitySymbol ? "∞" : "inf.";
         }
-        return Integer.toString(durabilityForCombat);
+        return Integer.toString(getDurabilityForCombat());
+    }
+
+    public boolean isDurabilityInfinite() {
+        return getDurabilityForCombat() == Integer.MAX_VALUE;
     }
 
     public int getDamageToDeal() {
