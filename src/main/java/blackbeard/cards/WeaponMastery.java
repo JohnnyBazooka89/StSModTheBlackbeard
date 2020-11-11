@@ -18,7 +18,7 @@ public class WeaponMastery extends AbstractBlackbeardCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int CARDS_TO_DRAW = 1;
-    private static final int UPGRADED_PLUS_CARDS_TO_DRAW = 1;
+    private static final int UPGRADE_PLUS_CARDS_TO_DRAW = 1;
 
     public WeaponMastery() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.POWER,
@@ -36,7 +36,7 @@ public class WeaponMastery extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADED_PLUS_CARDS_TO_DRAW);
+            this.upgradeMagicNumber(UPGRADE_PLUS_CARDS_TO_DRAW);
             this.rawDescription = UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

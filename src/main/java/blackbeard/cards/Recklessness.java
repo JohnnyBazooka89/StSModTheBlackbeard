@@ -20,7 +20,7 @@ public class Recklessness extends AbstractBlackbeardCard {
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 0;
     private static final int ENERGY_TO_GET = 2;
-    private static final int UPGRADED_PLUS_ENERGY_TO_GET = 1;
+    private static final int UPGRADE_PLUS_ENERGY_TO_GET = 1;
     private static final int ENERGY_TO_LOSE_NEXT_TURN = 2;
 
     public Recklessness() {
@@ -40,7 +40,7 @@ public class Recklessness extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADED_PLUS_ENERGY_TO_GET);
+            this.upgradeMagicNumber(UPGRADE_PLUS_ENERGY_TO_GET);
             this.rawDescription = UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

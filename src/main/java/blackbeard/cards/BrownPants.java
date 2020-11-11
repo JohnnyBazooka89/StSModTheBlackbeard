@@ -17,7 +17,7 @@ public class BrownPants extends AbstractBlackbeardCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 2;
     private static final int PLATED_ARMOR_VALUE = 5;
-    private static final int UPGRADED_PLUS_PLATED_ARMOR_VALUE = 1;
+    private static final int UPGRADE_PLUS_PLATED_ARMOR_VALUE = 1;
 
     public BrownPants() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.POWER,
@@ -36,7 +36,7 @@ public class BrownPants extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADED_PLUS_PLATED_ARMOR_VALUE);
+            this.upgradeMagicNumber(UPGRADE_PLUS_PLATED_ARMOR_VALUE);
         }
     }
 }

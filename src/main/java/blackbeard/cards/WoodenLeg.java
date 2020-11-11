@@ -18,7 +18,7 @@ public class WoodenLeg extends AbstractBlackbeardCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
     private static final int STRENGTH = 4;
-    private static final int UPGRADED_PLUS_STRENGTH = 1;
+    private static final int UPGRADE_PLUS_STRENGTH = 1;
     private static final int DEXTERITY_TO_LOSE = 2;
 
     public WoodenLeg() {
@@ -38,7 +38,7 @@ public class WoodenLeg extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADED_PLUS_STRENGTH);
+            this.upgradeMagicNumber(UPGRADE_PLUS_STRENGTH);
         }
     }
 }

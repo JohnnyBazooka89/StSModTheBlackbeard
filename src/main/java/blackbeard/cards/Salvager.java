@@ -18,7 +18,7 @@ public class Salvager extends AbstractBlackbeardCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int ENERGY_TO_GAIN = 1;
-    private static final int UPGRADED_PLUS_ENERGY_TO_GAIN = 1;
+    private static final int UPGRADE_PLUS_ENERGY_TO_GAIN = 1;
 
     public Salvager() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.POWER,
@@ -36,7 +36,7 @@ public class Salvager extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADED_PLUS_ENERGY_TO_GAIN);
+            this.upgradeMagicNumber(UPGRADE_PLUS_ENERGY_TO_GAIN);
             this.rawDescription = UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

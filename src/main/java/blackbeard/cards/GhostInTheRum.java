@@ -18,7 +18,7 @@ public class GhostInTheRum extends AbstractBlackbeardCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
     private static final int RESISTANCE_DEBUFF_VALUE = 2;
-    private static final int UPGRADED_MINUS_RESISTANCE_DEBUFF_VALUE = 1;
+    private static final int UPGRADE_MINUS_RESISTANCE_DEBUFF_VALUE = 1;
 
     public GhostInTheRum() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
@@ -38,7 +38,7 @@ public class GhostInTheRum extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(-UPGRADED_MINUS_RESISTANCE_DEBUFF_VALUE);
+            this.upgradeMagicNumber(-UPGRADE_MINUS_RESISTANCE_DEBUFF_VALUE);
         }
     }
 }

@@ -18,7 +18,7 @@ public class ArmorUp extends AbstractBlackbeardCard {
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 0;
     private static final int BLOCK_FOR_WEAPON_ATTACK = 4;
-    private static final int UPGRADED_PLUS_BLOCK_FOR_WEAPON_ATTACK = 2;
+    private static final int UPGRADE_PLUS_BLOCK_FOR_WEAPON_ATTACK = 2;
 
     public ArmorUp() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
@@ -36,7 +36,7 @@ public class ArmorUp extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADED_PLUS_BLOCK_FOR_WEAPON_ATTACK);
+            this.upgradeMagicNumber(UPGRADE_PLUS_BLOCK_FOR_WEAPON_ATTACK);
         }
     }
 }

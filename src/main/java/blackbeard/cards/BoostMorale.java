@@ -23,9 +23,9 @@ public class BoostMorale extends AbstractBlackbeardCard {
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 0;
     private static final int CARDS_TO_DRAW = 2;
-    private static final int UPGRADED_PLUS_CARDS_TO_DRAW = 1;
+    private static final int UPGRADE_PLUS_CARDS_TO_DRAW = 1;
     private static final int ENERGY_TO_GET = 1;
-    private static final int UPGRADED_PLUS_ENERGY_TO_GET = 1;
+    private static final int UPGRADE_PLUS_ENERGY_TO_GET = 1;
 
     protected float offset = MathUtils.random(-180.0F, 180.0F);
 
@@ -46,14 +46,14 @@ public class BoostMorale extends AbstractBlackbeardCard {
             }
         }
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.magicNumber));
-        AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(ENERGY_TO_GET + (this.upgraded ? UPGRADED_PLUS_ENERGY_TO_GET : 0)));
+        AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(ENERGY_TO_GET + (this.upgraded ? UPGRADE_PLUS_ENERGY_TO_GET : 0)));
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADED_PLUS_CARDS_TO_DRAW);
+            this.upgradeMagicNumber(UPGRADE_PLUS_CARDS_TO_DRAW);
             this.rawDescription = UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

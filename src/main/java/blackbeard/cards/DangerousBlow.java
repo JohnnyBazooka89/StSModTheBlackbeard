@@ -21,7 +21,8 @@ public class DangerousBlow extends AbstractBlackbeardCard {
     private static final int COST = 1;
     private static final int ATTACK_DMG = 16;
     private static final int UPGRADE_PLUS_ATTACK_DMG = 4;
-    private static final int DAMAGE_TO_TAKE = 4;
+    private static final int DAMAGE_TO_TAKE = 3;
+    private static final int UPGRADE_MINUS_DAMAGE_TO_TAKE = 1;
 
     public DangerousBlow() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK,
@@ -42,6 +43,7 @@ public class DangerousBlow extends AbstractBlackbeardCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeDamage(UPGRADE_PLUS_ATTACK_DMG);
+            this.upgradeMagicNumber(-UPGRADE_MINUS_DAMAGE_TO_TAKE);
         }
     }
 }

@@ -20,7 +20,7 @@ public class TacticalRetreat extends AbstractBlackbeardCard {
     private static final int COST = 1;
     private static final int BLOCK_AMOUNT = 8;
     private static final int CARDS_TO_DRAW = 1;
-    private static final int UPGRADED_PLUS_BLOCK_AMOUNT = 3;
+    private static final int UPGRADE_PLUS_BLOCK_AMOUNT = 3;
 
     public TacticalRetreat() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
@@ -40,7 +40,7 @@ public class TacticalRetreat extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBlock(UPGRADED_PLUS_BLOCK_AMOUNT);
+            this.upgradeBlock(UPGRADE_PLUS_BLOCK_AMOUNT);
         }
     }
 }

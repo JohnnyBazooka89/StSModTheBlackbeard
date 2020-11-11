@@ -20,7 +20,7 @@ public class Eyepatch extends AbstractBlackbeardCard {
     private static final int COST = 0;
     private static final int WEAK_TO_GAIN = 3;
     private static final int ADDITIONAL_CARDS_TO_DRAW_EACH_TURN = 1;
-    private static final int UPGRADED_MINUS_WEAK_TO_GAIN = 1;
+    private static final int UPGRADE_MINUS_WEAK_TO_GAIN = 1;
 
     public Eyepatch() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.POWER,
@@ -39,7 +39,7 @@ public class Eyepatch extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(-UPGRADED_MINUS_WEAK_TO_GAIN);
+            this.upgradeMagicNumber(-UPGRADE_MINUS_WEAK_TO_GAIN);
         }
     }
 }

@@ -17,7 +17,7 @@ public class Halberd extends AbstractBlackbeardCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final int COST = 2;
     private static final int WEAPON_ATTACK = 6;
-    private static final int UPGRADED_PLUS_WEAPON_ATTACK = 2;
+    private static final int UPGRADE_PLUS_WEAPON_ATTACK = 2;
     private static final int WEAPON_DURABILITY = 4;
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = WeaponCardsUtils.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);
@@ -38,7 +38,7 @@ public class Halberd extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADED_PLUS_WEAPON_ATTACK);
+            this.upgradeMagicNumber(UPGRADE_PLUS_WEAPON_ATTACK);
         }
     }
 

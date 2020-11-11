@@ -18,7 +18,7 @@ public class Toast extends AbstractBlackbeardCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 0;
     private static final int RESISTANCE_VALUE = 3;
-    private static final int UPGRADED_PLUS_RESISTANCE_VALUE = 1;
+    private static final int UPGRADE_PLUS_RESISTANCE_VALUE = 1;
 
     public Toast() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
@@ -38,7 +38,7 @@ public class Toast extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADED_PLUS_RESISTANCE_VALUE);
+            this.upgradeMagicNumber(UPGRADE_PLUS_RESISTANCE_VALUE);
         }
     }
 }

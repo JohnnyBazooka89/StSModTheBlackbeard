@@ -21,8 +21,8 @@ public class FieryDefense extends AbstractBlackbeardCard {
     private static final int BLOCK_AMOUNT = 7;
     private static final int DAMAGE_AMOUNT = 3;
     private static final int DAMAGE_TIMES = 1;
-    private static final int UPGRADED_PLUS_BLOCK_AMOUNT = 2;
-    private static final int UPGRADED_PLUS_DAMAGE_TIMES = 1;
+    private static final int UPGRADE_PLUS_BLOCK_AMOUNT = 2;
+    private static final int UPGRADE_PLUS_DAMAGE_TIMES = 1;
 
     public FieryDefense() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
@@ -44,8 +44,8 @@ public class FieryDefense extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBlock(UPGRADED_PLUS_BLOCK_AMOUNT);
-            this.upgradeMagicNumber(UPGRADED_PLUS_DAMAGE_TIMES);
+            this.upgradeBlock(UPGRADE_PLUS_BLOCK_AMOUNT);
+            this.upgradeMagicNumber(UPGRADE_PLUS_DAMAGE_TIMES);
             this.rawDescription = UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

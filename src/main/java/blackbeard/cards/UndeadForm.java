@@ -20,7 +20,7 @@ public class UndeadForm extends AbstractBlackbeardCard {
     private static final int COST = 3;
     private static final int INTANGIBLE_VALUE = 3;
     private static final int DAMAGE_TO_TAKE = 45;
-    private static final int UPGRADED_MINUS_DAMAGE_TO_TAKE = 15;
+    private static final int UPGRADE_MINUS_DAMAGE_TO_TAKE = 15;
 
     public UndeadForm() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.POWER,
@@ -40,7 +40,7 @@ public class UndeadForm extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(-UPGRADED_MINUS_DAMAGE_TO_TAKE);
+            this.upgradeMagicNumber(-UPGRADE_MINUS_DAMAGE_TO_TAKE);
         }
     }
 }

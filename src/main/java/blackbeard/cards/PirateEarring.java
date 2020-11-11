@@ -17,7 +17,7 @@ public class PirateEarring extends AbstractBlackbeardCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 0;
     private static final int ARTIFACT_VALUE = 1;
-    private static final int UPGRADED_PLUS_ARTIFACT_VALUE = 1;
+    private static final int UPGRADE_PLUS_ARTIFACT_VALUE = 1;
 
     public PirateEarring() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.POWER,
@@ -35,7 +35,7 @@ public class PirateEarring extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADED_PLUS_ARTIFACT_VALUE);
+            this.upgradeMagicNumber(UPGRADE_PLUS_ARTIFACT_VALUE);
         }
     }
 }

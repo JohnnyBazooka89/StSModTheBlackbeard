@@ -18,7 +18,7 @@ public class Intoxication extends AbstractBlackbeardCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
     private static final int RESISTANCE_VALUE = 4;
-    private static final int UPGRADED_PLUS_RESISTANCE_VALUE = 1;
+    private static final int UPGRADE_PLUS_RESISTANCE_VALUE = 1;
     private static final int RESISTANCE_TO_LOSE_EACH_TURN = 1;
 
     public Intoxication() {
@@ -38,7 +38,7 @@ public class Intoxication extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADED_PLUS_RESISTANCE_VALUE);
+            this.upgradeMagicNumber(UPGRADE_PLUS_RESISTANCE_VALUE);
         }
     }
 }

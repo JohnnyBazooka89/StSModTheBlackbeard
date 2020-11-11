@@ -19,7 +19,8 @@ public class DelayedPain extends AbstractBlackbeardCard {
     private static final int COST = 1;
     private static final int BLOCK_AMOUNT = 16;
     private static final int UPGRADE_PLUS_ATTACK_DMG = 4;
-    private static final int DAMAGE_TO_TAKE = 4;
+    private static final int DAMAGE_TO_TAKE = 3;
+    private static final int UPGRADE_MINUS_DAMAGE_TO_TAKE = 1;
 
     public DelayedPain() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
@@ -40,6 +41,7 @@ public class DelayedPain extends AbstractBlackbeardCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeBlock(UPGRADE_PLUS_ATTACK_DMG);
+            this.upgradeMagicNumber(-UPGRADE_MINUS_DAMAGE_TO_TAKE);
         }
     }
 }
