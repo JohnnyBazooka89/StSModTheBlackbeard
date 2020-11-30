@@ -23,7 +23,7 @@ public class Murder extends AbstractBlackbeardCard {
     public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
     private static final int COST = 4;
     private static final int ATTACK_DMG = 500;
-    private static final int UPGRADED_PLUS_ATTACK_DMG = 500;
+    private static final int UPGRADE_PLUS_ATTACK_DMG = 500;
 
     public Murder() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK,
@@ -71,7 +71,7 @@ public class Murder extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(UPGRADED_PLUS_ATTACK_DMG);
+            this.upgradeDamage(UPGRADE_PLUS_ATTACK_DMG);
         }
     }
 }

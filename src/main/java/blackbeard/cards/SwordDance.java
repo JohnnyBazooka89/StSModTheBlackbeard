@@ -18,7 +18,7 @@ public class SwordDance extends AbstractBlackbeardCard {
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 0;
     private static final int NUMBER_OF_ATTACKS = 3;
-    private static final int UPGRADED_PLUS_NUMBER_OF_ATTACKS = 2;
+    private static final int UPGRADE_PLUS_NUMBER_OF_ATTACKS = 2;
 
     public SwordDance() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
@@ -36,7 +36,7 @@ public class SwordDance extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADED_PLUS_NUMBER_OF_ATTACKS);
+            this.upgradeMagicNumber(UPGRADE_PLUS_NUMBER_OF_ATTACKS);
             this.rawDescription = UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

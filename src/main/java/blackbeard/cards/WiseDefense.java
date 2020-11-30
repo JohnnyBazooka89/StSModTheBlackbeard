@@ -20,8 +20,8 @@ public class WiseDefense extends AbstractBlackbeardCard {
     private static final int COST = 1;
     private static final int BLOCK_AMOUNT = 7;
     private static final int CARDS_TO_DRAW = 1;
-    private static final int UPGRADED_PLUS_BLOCK_AMOUNT = 2;
-    private static final int UPGRADED_PLUS_CARDS_TO_DRAW = 1;
+    private static final int UPGRADE_PLUS_BLOCK_AMOUNT = 2;
+    private static final int UPGRADE_PLUS_CARDS_TO_DRAW = 1;
 
     public WiseDefense() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
@@ -41,8 +41,8 @@ public class WiseDefense extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBlock(UPGRADED_PLUS_BLOCK_AMOUNT);
-            this.upgradeMagicNumber(UPGRADED_PLUS_CARDS_TO_DRAW);
+            this.upgradeBlock(UPGRADE_PLUS_BLOCK_AMOUNT);
+            this.upgradeMagicNumber(UPGRADE_PLUS_CARDS_TO_DRAW);
             this.rawDescription = UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

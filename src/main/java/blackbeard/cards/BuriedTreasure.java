@@ -15,7 +15,7 @@ public class BuriedTreasure extends AbstractBlackbeardCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 0;
     private static final int GOLD_TO_GAIN = 15;
-    private static final int UPGRADED_PLUS_GOLD_TO_GAIN = 5;
+    private static final int UPGRADE_PLUS_GOLD_TO_GAIN = 5;
 
     public BuriedTreasure() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
@@ -38,7 +38,7 @@ public class BuriedTreasure extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADED_PLUS_GOLD_TO_GAIN);
+            this.upgradeMagicNumber(UPGRADE_PLUS_GOLD_TO_GAIN);
         }
     }
 }

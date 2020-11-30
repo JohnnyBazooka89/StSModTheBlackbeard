@@ -25,7 +25,7 @@ public class FinalBarrage extends AbstractBlackbeardCard {
     public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
     private static final int COST = 0;
     private static final int ATTACK_PER_CANNONBALL = 4;
-    private static final int UPGRADED_PLUS_ATTACK_PER_CANNONBALL = 2;
+    private static final int UPGRADE_PLUS_ATTACK_PER_CANNONBALL = 2;
 
     public FinalBarrage() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK,
@@ -99,7 +99,7 @@ public class FinalBarrage extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADED_PLUS_ATTACK_PER_CANNONBALL);
+            this.upgradeMagicNumber(UPGRADE_PLUS_ATTACK_PER_CANNONBALL);
         }
     }
 }

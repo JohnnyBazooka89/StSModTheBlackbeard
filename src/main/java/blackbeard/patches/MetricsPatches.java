@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.metrics.Metrics;
 import com.megacrit.cardcrawl.monsters.MonsterGroup;
-import com.megacrit.cardcrawl.screens.DeathScreen;
+import com.megacrit.cardcrawl.screens.GameOverScreen;
 import javassist.CtBehavior;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -54,7 +54,7 @@ public class MetricsPatches {
     }
 
 
-    @SpirePatch(clz = DeathScreen.class, method = "shouldUploadMetricData")
+    @SpirePatch(clz = GameOverScreen.class, method = "shouldUploadMetricData")
     public static class ShouldUploadMetricData {
 
         public static boolean Postfix(boolean returnValue) {

@@ -20,7 +20,7 @@ public class CaptainsCabin extends AbstractBlackbeardCard {
     private static final int COST = 2;
     private static final int AMOUNT_OF_CANNONBALLS = 1;
     private static final int BLOCK_AMOUNT = 12;
-    private static final int UPGRADED_PLUS_AMOUNT_OF_CANNONBALLS = 1;
+    private static final int UPGRADE_PLUS_AMOUNT_OF_CANNONBALLS = 1;
 
     public CaptainsCabin() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
@@ -41,7 +41,7 @@ public class CaptainsCabin extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADED_PLUS_AMOUNT_OF_CANNONBALLS);
+            this.upgradeMagicNumber(UPGRADE_PLUS_AMOUNT_OF_CANNONBALLS);
             this.rawDescription = UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

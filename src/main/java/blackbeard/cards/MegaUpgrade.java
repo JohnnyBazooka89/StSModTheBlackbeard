@@ -16,7 +16,7 @@ public class MegaUpgrade extends AbstractBlackbeardCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final int COST = 2;
     private static final int UPGRADE_VALUE = 3;
-    private static final int UPGRADED_PLUS_UPGRADE_VALUE = 2;
+    private static final int UPGRADE_PLUS_UPGRADE_VALUE = 2;
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
@@ -36,7 +36,7 @@ public class MegaUpgrade extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADED_PLUS_UPGRADE_VALUE);
+            this.upgradeMagicNumber(UPGRADE_PLUS_UPGRADE_VALUE);
         }
     }
 }

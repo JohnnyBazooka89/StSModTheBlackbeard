@@ -18,7 +18,7 @@ public class CaptainsHat extends AbstractBlackbeardCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 2;
     private static final int STRENGTH_AND_RESISTANCE_AMOUNT = 2;
-    private static final int UPGRADED_PLUS_STRENGTH_AND_RESISTANCE = 1;
+    private static final int UPGRADE_PLUS_STRENGTH_AND_RESISTANCE = 1;
 
     public CaptainsHat() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.POWER,
@@ -37,7 +37,7 @@ public class CaptainsHat extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADED_PLUS_STRENGTH_AND_RESISTANCE);
+            this.upgradeMagicNumber(UPGRADE_PLUS_STRENGTH_AND_RESISTANCE);
         }
     }
 }

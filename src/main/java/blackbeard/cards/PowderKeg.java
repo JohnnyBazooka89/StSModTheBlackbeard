@@ -19,7 +19,7 @@ public class PowderKeg extends AbstractBlackbeardCard {
     private static final int WEAPON_ATTACK = 0;
     private static final int WEAPON_DURABILITY = 1;
     private static final int DAMAGE_ON_DESTROY = 15;
-    private static final int UPGRADED_PLUS_DAMAGE_ON_DESTROY = 5;
+    private static final int UPGRADE_PLUS_DAMAGE_ON_DESTROY = 5;
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = WeaponCardsUtils.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);
 
@@ -39,7 +39,7 @@ public class PowderKeg extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADED_PLUS_DAMAGE_ON_DESTROY);
+            this.upgradeMagicNumber(UPGRADE_PLUS_DAMAGE_ON_DESTROY);
         }
     }
 }

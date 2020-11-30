@@ -16,7 +16,7 @@ public class FishingNets extends AbstractBlackbeardCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
-    private static final int THORNS_TO_GET = 5;
+    private static final int THORNS_TO_GET = 6;
     private static final int UPGRADED_PLUS_THORNS_TO_GET = 2;
 
     public FishingNets() {

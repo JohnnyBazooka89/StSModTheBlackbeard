@@ -19,7 +19,7 @@ public class Anchor extends AbstractBlackbeardCard {
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 0;
     private static final int BLOCK_AMOUNT = 10;
-    private static final int UPGRADED_PLUS_CARDS_TO_DRAW = 1;
+    private static final int UPGRADE_PLUS_CARDS_TO_DRAW = 1;
 
     public Anchor() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
@@ -34,7 +34,7 @@ public class Anchor extends AbstractBlackbeardCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
         if (this.upgraded) {
-            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, UPGRADED_PLUS_CARDS_TO_DRAW));
+            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, UPGRADE_PLUS_CARDS_TO_DRAW));
         }
     }
 
