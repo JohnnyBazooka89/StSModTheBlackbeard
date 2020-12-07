@@ -12,6 +12,7 @@ SHOW_KILLED_BY = True
 SHOW_AMOUNT_OF_SPECIFIC_CARDS_AND_WIN_RATIO = True
 SHOW_HOSTS = True
 
+SKIP_ENDLESS_RUNS = True
 CARD_CHOICES_CARDS_THRESHOLD = 3
 WIN_RATIO_CARDS_THRESHOLD = 3
 WIN_RATIO_GROUP_UPGRADED_AND_NOT_UPGRADED = False
@@ -37,6 +38,8 @@ for root, dirs, files in os.walk(METRICS_PATH):
         absPath = path.join(root, file)
         if path.isfile(absPath): 
             runJson = json.loads(open(absPath, 'r', encoding='utf-8').read())
+            if runJson["event"]["is_endless"] and SKIP_ENDLESS_RUNS:
+                continue
             character = runJson["event"]["character_chosen"]
             characterKeys.add(character)
             asc = runJson["event"]["ascension_level"]
