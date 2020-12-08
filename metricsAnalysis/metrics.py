@@ -4,27 +4,31 @@ from os import path
 
 METRICS_PATH = 'D:\\metrics_runs\\metrics\\2020'
 CHARACTER_CARD_PREFIX = 'blackbeard:'
+RELIC_PREFIX = ''
 
 SHOW_WIN_RATIO = True
 SHOW_CARD_CHOICES = True
-SHOW_IS_SPECIFIC_CARD_IN_DECK_AND_WIN_RATIO = True
 SHOW_KILLED_BY = True
+SHOW_IS_SPECIFIC_CARD_IN_DECK_AND_WIN_RATIO = True
 SHOW_AMOUNT_OF_SPECIFIC_CARDS_AND_WIN_RATIO = True
+SHOW_HAS_SPECIFIC_RELIC_AND_WIN_RATIO = True
 SHOW_HOSTS = True
 
 SKIP_ENDLESS_RUNS = True
 CARD_CHOICES_CARDS_THRESHOLD = 3
 WIN_RATIO_CARDS_THRESHOLD = 3
 WIN_RATIO_GROUP_UPGRADED_AND_NOT_UPGRADED = False
+WIN_RATIO_RELICS_THRESHOLD = 10
 HOSTS_THRESHOLD = 5
 
 wonRuns = {}
 lostRuns = {}
+killedBy = {}
 cardChoices = {}
 isSpecificCardInDeckAndWinRatio = {}
 amountOfSpecificCardsAndWinRatio = {}
+hasSpecificRelicAndWinRatio = {}
 hosts = {}
-killedBy = {}
 
 characterKeys = set()                                                                                                         
 ascKeys = set()                                                                                                         
@@ -81,6 +85,15 @@ for root, dirs, files in os.walk(METRICS_PATH):
                     else:
                         isSpecificCardInDeckAndWinRatio[character][asc][key][1] += 1
                         amountOfSpecificCardsAndWinRatio[character][asc][key][value][1] += 1
+            relics = runJson["event"]["relics"]
+            for key in relics:
+                initIfNeeded(hasSpecificRelicAndWinRatio, character, {})
+                initIfNeeded(hasSpecificRelicAndWinRatio[character], asc, {})
+                initIfNeeded(hasSpecificRelicAndWinRatio[character][asc], key, [0,0])
+                if victory:
+                    hasSpecificRelicAndWinRatio[character][asc][key][0] += 1
+                else:
+                    hasSpecificRelicAndWinRatio[character][asc][key][1] += 1
             if victory:
                 initIfNeeded(wonRuns, character, {})
                 initIfNeeded(wonRuns[character], asc, 0)
@@ -128,13 +141,25 @@ def printIsSpecificCardInDeckAndWinRatio(isSpecificCardInDeckAndWinRatio):
 
 def printAmountOfSpecificCardsAndWinRatio(amountOfSpecificCardsAndWinRatio):
     for cardKey, cardValue in sorted(amountOfSpecificCardsAndWinRatio.items(), key=lambda e: e[0]):
-        if cardKey.startswith(CHARACTER_CARD_PREFIX):
-            for amountKey, amountValue in sorted(cardValue.items(), key=lambda e: e[0]):
-                won = amountValue[0]
-                lost = amountValue[1]
-                if won + lost < WIN_RATIO_CARDS_THRESHOLD: 
-                    continue
-                print(cardKey + ", " + str(amountKey) + ", W=" + str(won) + ", L=" + str(lost)  + ", R=" + winRatioString(won, lost))
+        if not cardKey.startswith(CHARACTER_CARD_PREFIX):
+            continue
+        for amountKey, amountValue in sorted(cardValue.items(), key=lambda e: e[0]):
+            won = amountValue[0]
+            lost = amountValue[1]
+            if won + lost < WIN_RATIO_CARDS_THRESHOLD: 
+                continue
+            print(cardKey + ", " + str(amountKey) + ", W=" + str(won) + ", L=" + str(lost)  + ", R=" + winRatioString(won, lost))
+    print()
+
+def printHasSpecificRelicAndWinRatio(hasSpecificRelicAndWinRatio):
+    for relicKey, relicValue in sorted(hasSpecificRelicAndWinRatio.items(), key=lambda e: -e[1][0]/(e[1][0]+e[1][1])):
+        if not relicKey.startswith(RELIC_PREFIX):
+            continue
+        won = relicValue[0]
+        lost = relicValue[1]
+        if won + lost < WIN_RATIO_RELICS_THRESHOLD: 
+            continue
+        print(relicKey + ", W=" + str(won) + ", L=" + str(lost)  + ", R=" + winRatioString(won, lost))
     print()
 
 def printHosts(hosts):
@@ -146,27 +171,30 @@ def printHosts(hosts):
 
 wonRunsByCharacters = {}
 lostRunsByCharacters = {}
+killedByByCharacters = {}
 cardChoicesByCharacters = {}
 isSpecificCardInDeckAndWinRatioByCharacters = {}
 amountOfSpecificCardsAndWinRatioByCharacters = {}
+hasSpecificRelicAndWinRatioByCharacters = {}
 hostsByCharacters = {}
-killedByByCharacters = {}
 
 wonRunsByAscensions = {}
 lostRunsByAscensions = {}
+killedByByAscensions = {}
 cardChoicesByAscensions = {}
 isSpecificCardInDeckAndWinRatioByAscensions = {}
 amountOfSpecificCardsAndWinRatioByAscensions = {}
+hasSpecificRelicAndWinRatioByAscensions = {}
 hostsByAscensions = {}
-killedByByAscensions = {}
 
 wonRunsAll = 0
 lostRunsAll = 0
+killedByAll = {}
 cardChoicesAll = {}
 isSpecificCardInDeckAndWinRatioAll = {}
 amountOfSpecificCardsAndWinRatioAll = {}
+hasSpecificRelicAndWinRatioAll = {}
 hostsAll = {}
-killedByAll = {}
 
 for character in characterKeys:
     for asc in ascKeys:
@@ -204,6 +232,18 @@ for character in characterKeys:
             initIfNeeded(isSpecificCardInDeckAndWinRatioAll, key, [0,0])
             isSpecificCardInDeckAndWinRatioAll[key][0] += value[0]
             isSpecificCardInDeckAndWinRatioAll[key][1] += value[1]
+        for key, value in hasSpecificRelicAndWinRatio.get(character,{}).get(asc, {}).items():
+            initIfNeeded(hasSpecificRelicAndWinRatioByCharacters, character, {})
+            initIfNeeded(hasSpecificRelicAndWinRatioByCharacters[character], key, [0,0])
+            hasSpecificRelicAndWinRatioByCharacters[character][key][0] += value[0]
+            hasSpecificRelicAndWinRatioByCharacters[character][key][1] += value[1]
+            initIfNeeded(hasSpecificRelicAndWinRatioByAscensions, asc, {})
+            initIfNeeded(hasSpecificRelicAndWinRatioByAscensions[asc], key, [0,0])
+            hasSpecificRelicAndWinRatioByAscensions[asc][key][0] += value[0]
+            hasSpecificRelicAndWinRatioByAscensions[asc][key][1] += value[1]
+            initIfNeeded(hasSpecificRelicAndWinRatioAll, key, [0,0])
+            hasSpecificRelicAndWinRatioAll[key][0] += value[0]
+            hasSpecificRelicAndWinRatioAll[key][1] += value[1]
         for key, value in amountOfSpecificCardsAndWinRatio.get(character,{}).get(asc, {}).items():
             for amountKey, amountValue in value.items():
                 initIfNeeded(amountOfSpecificCardsAndWinRatioByCharacters, character, {})
@@ -314,6 +354,21 @@ if SHOW_AMOUNT_OF_SPECIFIC_CARDS_AND_WIN_RATIO:
             for asc in onlyTheHighestAscension:
                 print("Amount of specific cards and win ratio on character " + character + " on ascension " + str(asc) + ":")
                 printAmountOfSpecificCardsAndWinRatio(amountOfSpecificCardsAndWinRatio.get(character, {}).get(asc,{}))
+
+if SHOW_HAS_SPECIFIC_RELIC_AND_WIN_RATIO:
+    print("Has a specific relic and win ratio on all characters on all ascensions:")
+    printHasSpecificRelicAndWinRatio(hasSpecificRelicAndWinRatioAll)
+    for asc in onlyTheHighestAscension:
+        print("Has a specific relic and win ratio on all characters on ascension " + str(asc) + ":")
+        printHasSpecificRelicAndWinRatio(hasSpecificRelicAndWinRatioByAscensions.get(asc,{}))
+    if len(characterKeys) > 1:
+        for character in sorted(characterKeys):
+            print("Has a specific relic and win ratio and win ratio on character " + character + " on all ascensions:")
+            printHasSpecificRelicAndWinRatio(hasSpecificRelicAndWinRatioByCharacters.get(character, {}))
+            for asc in onlyTheHighestAscension:
+                print("Has a specific relic and win ratio and win ratio on character " + character + " on ascension " + str(asc) + ":")
+                printHasSpecificRelicAndWinRatio(hasSpecificRelicAndWinRatio.get(character, {}).get(asc,{}))
+
 
 if SHOW_HOSTS:
     print("Hosts on all characters on all ascensions:")
