@@ -19,8 +19,8 @@ SHOW_HOSTS = True
 
 SKIP_ENDLESS_RUNS = True
 AVERAGE_DAMAGE_TAKEN_COUNT_THRESHOLD = 5
-CARD_CHOICES_CARDS_THRESHOLD = 3
-WIN_RATIO_CARDS_THRESHOLD = 3
+CARD_CHOICES_CARDS_THRESHOLD = 5
+WIN_RATIO_CARDS_THRESHOLD = 5
 WIN_RATIO_GROUP_UPGRADED_AND_NOT_UPGRADED = False
 WIN_RATIO_RELICS_THRESHOLD = 10
 HOSTS_THRESHOLD = 5
@@ -37,8 +37,8 @@ amountOfSpecificCardsAndWinRatio = {}
 hasSpecificRelicAndWinRatio = {}
 hosts = {}
 
-characterKeys = set()                                                                                                         
-ascKeys = set()                                                                                                         
+characterKeys = set()
+ascKeys = set()
 
 def initIfNeeded(map, key, defaultValue):
     if not key in map:
@@ -53,7 +53,7 @@ def getNewEmptySumAndCountDict():
 for root, dirs, files in os.walk(METRICS_PATH):
     for file in files:
         absPath = path.join(root, file)
-        if path.isfile(absPath): 
+        if path.isfile(absPath):
             runJson = json.loads(open(absPath, 'r', encoding='utf-8').read())
             if runJson["event"]["is_endless"] and SKIP_ENDLESS_RUNS:
                 continue
@@ -111,24 +111,25 @@ for root, dirs, files in os.walk(METRICS_PATH):
             masterDeckGrouped = {}
             for card in masterDeck:
                 initIfNeeded(masterDeckGrouped, card, 0)
-                masterDeckGrouped[card] += 1        
+                masterDeckGrouped[card] += 1
             for key, value in masterDeckGrouped.items():
-                if key.endswith("+1") or key.find("+") == -1:
-                    if WIN_RATIO_GROUP_UPGRADED_AND_NOT_UPGRADED:
-                        key = key.replace("+1","")
-                    initIfNeeded(isSpecificCardInDeckAndWinRatio, character, {})
-                    initIfNeeded(isSpecificCardInDeckAndWinRatio[character], asc, {})
-                    initIfNeeded(isSpecificCardInDeckAndWinRatio[character][asc], key, getNewEmptyWonAndLostDict())
-                    initIfNeeded(amountOfSpecificCardsAndWinRatio, character, {})
-                    initIfNeeded(amountOfSpecificCardsAndWinRatio[character], asc, {})
-                    initIfNeeded(amountOfSpecificCardsAndWinRatio[character][asc], key, {})
-                    initIfNeeded(amountOfSpecificCardsAndWinRatio[character][asc][key], value, getNewEmptyWonAndLostDict())
-                    if victory:
-                        isSpecificCardInDeckAndWinRatio[character][asc][key]["won"] += 1
-                        amountOfSpecificCardsAndWinRatio[character][asc][key][value]["won"] += 1
-                    else:
-                        isSpecificCardInDeckAndWinRatio[character][asc][key]["lost"] += 1
-                        amountOfSpecificCardsAndWinRatio[character][asc][key][value]["lost"] += 1
+                if WIN_RATIO_GROUP_UPGRADED_AND_NOT_UPGRADED:
+                    index = key.rfind('+')
+                    if index != -1:
+                        key = key[:index]
+                initIfNeeded(isSpecificCardInDeckAndWinRatio, character, {})
+                initIfNeeded(isSpecificCardInDeckAndWinRatio[character], asc, {})
+                initIfNeeded(isSpecificCardInDeckAndWinRatio[character][asc], key, getNewEmptyWonAndLostDict())
+                initIfNeeded(amountOfSpecificCardsAndWinRatio, character, {})
+                initIfNeeded(amountOfSpecificCardsAndWinRatio[character], asc, {})
+                initIfNeeded(amountOfSpecificCardsAndWinRatio[character][asc], key, {})
+                initIfNeeded(amountOfSpecificCardsAndWinRatio[character][asc][key], value, getNewEmptyWonAndLostDict())
+                if victory:
+                    isSpecificCardInDeckAndWinRatio[character][asc][key]["won"] += 1
+                    amountOfSpecificCardsAndWinRatio[character][asc][key][value]["won"] += 1
+                else:
+                    isSpecificCardInDeckAndWinRatio[character][asc][key]["lost"] += 1
+                    amountOfSpecificCardsAndWinRatio[character][asc][key][value]["lost"] += 1
             relics = runJson["event"]["relics"]
             for key in relics:
                 initIfNeeded(hasSpecificRelicAndWinRatio, character, {})
