@@ -54,91 +54,94 @@ for root, dirs, files in os.walk(METRICS_PATH):
     for file in files:
         absPath = path.join(root, file)
         if path.isfile(absPath):
-            runJson = json.loads(open(absPath, 'r', encoding='utf-8').read())
-            if runJson["event"]["is_endless"] and SKIP_ENDLESS_RUNS:
-                continue
-            character = runJson["event"]["character_chosen"]
-            characterKeys.add(character)
-            asc = runJson["event"]["ascension_level"]
-            ascKeys.add(asc)
-            host = runJson["host"] if "host" in runJson else "unknown"
-            initIfNeeded(hosts, character, {})
-            initIfNeeded(hosts[character], asc, {})
-            initIfNeeded(hosts[character][asc], host, 0)
-            hosts[character][asc][host] += 1
-            victory = runJson["event"]["victory"]
-            if victory:
-                initIfNeeded(wonRuns, character, {})
-                initIfNeeded(wonRuns[character], asc, 0)
-                wonRuns[character][asc] += 1
-                initIfNeeded(averageLengthWonRuns, character, {})
-                initIfNeeded(averageLengthWonRuns[character], asc, getNewEmptySumAndCountDict())
-                averageLengthWonRuns[character][asc]["sum"] += runJson["event"]["playtime"]
-                averageLengthWonRuns[character][asc]["count"] += 1
-            else:
-                initIfNeeded(lostRuns, character, {})
-                initIfNeeded(lostRuns[character], asc, 0)
-                lostRuns[character][asc] += 1
-                initIfNeeded(averageLengthLostRuns, character, {})
-                initIfNeeded(averageLengthLostRuns[character], asc, getNewEmptySumAndCountDict())
-                averageLengthLostRuns[character][asc]["sum"] += runJson["event"]["playtime"]
-                averageLengthLostRuns[character][asc]["count"] += 1
-            for damageTakenEntry in runJson["event"]["damage_taken"]:
-                if damageTakenEntry["damage"] >= 99999:
-                    continue;
-                enemies = damageTakenEntry["enemies"]
-                initIfNeeded(averageDamageTaken, character, {})
-                initIfNeeded(averageDamageTaken[character], asc, {})
-                initIfNeeded(averageDamageTaken[character][asc], enemies, getNewEmptySumAndCountDict())
-                averageDamageTaken[character][asc][enemies]["sum"] += damageTakenEntry["damage"]
-                averageDamageTaken[character][asc][enemies]["count"] += 1
-            if "killed_by" in runJson["event"]:
-                enemyKilling = runJson["event"]["killed_by"]
-                initIfNeeded(killedBy, character, {})
-                initIfNeeded(killedBy[character], asc, {})
-                initIfNeeded(killedBy[character][asc], enemyKilling, 0)
-                killedBy[character][asc][enemyKilling] += 1
-            for cardChoice in runJson["event"]["card_choices"]:
-                initIfNeeded(cardChoices, character, {})
-                initIfNeeded(cardChoices[character], asc, {})
-                initIfNeeded(cardChoices[character][asc], cardChoice["picked"], getNewEmptyWonAndLostDict())
-                cardChoices[character][asc][cardChoice["picked"]]["won"] += 1
-                for notPicked in cardChoice["not_picked"]:
+            try:
+                runJson = json.loads(open(absPath, 'r', encoding='utf-8').read())
+                if runJson["event"]["is_endless"] and SKIP_ENDLESS_RUNS:
+                    continue
+                character = runJson["event"]["character_chosen"]
+                characterKeys.add(character)
+                asc = runJson["event"]["ascension_level"]
+                ascKeys.add(asc)
+                host = runJson["host"] if "host" in runJson else "unknown"
+                initIfNeeded(hosts, character, {})
+                initIfNeeded(hosts[character], asc, {})
+                initIfNeeded(hosts[character][asc], host, 0)
+                hosts[character][asc][host] += 1
+                victory = runJson["event"]["victory"]
+                if victory:
+                    initIfNeeded(wonRuns, character, {})
+                    initIfNeeded(wonRuns[character], asc, 0)
+                    wonRuns[character][asc] += 1
+                    initIfNeeded(averageLengthWonRuns, character, {})
+                    initIfNeeded(averageLengthWonRuns[character], asc, getNewEmptySumAndCountDict())
+                    averageLengthWonRuns[character][asc]["sum"] += runJson["event"]["playtime"]
+                    averageLengthWonRuns[character][asc]["count"] += 1
+                else:
+                    initIfNeeded(lostRuns, character, {})
+                    initIfNeeded(lostRuns[character], asc, 0)
+                    lostRuns[character][asc] += 1
+                    initIfNeeded(averageLengthLostRuns, character, {})
+                    initIfNeeded(averageLengthLostRuns[character], asc, getNewEmptySumAndCountDict())
+                    averageLengthLostRuns[character][asc]["sum"] += runJson["event"]["playtime"]
+                    averageLengthLostRuns[character][asc]["count"] += 1
+                for damageTakenEntry in runJson["event"]["damage_taken"]:
+                    if damageTakenEntry["damage"] >= 99999:
+                        continue;
+                    enemies = damageTakenEntry["enemies"]
+                    initIfNeeded(averageDamageTaken, character, {})
+                    initIfNeeded(averageDamageTaken[character], asc, {})
+                    initIfNeeded(averageDamageTaken[character][asc], enemies, getNewEmptySumAndCountDict())
+                    averageDamageTaken[character][asc][enemies]["sum"] += damageTakenEntry["damage"]
+                    averageDamageTaken[character][asc][enemies]["count"] += 1
+                if "killed_by" in runJson["event"]:
+                    enemyKilling = runJson["event"]["killed_by"]
+                    initIfNeeded(killedBy, character, {})
+                    initIfNeeded(killedBy[character], asc, {})
+                    initIfNeeded(killedBy[character][asc], enemyKilling, 0)
+                    killedBy[character][asc][enemyKilling] += 1
+                for cardChoice in runJson["event"]["card_choices"]:
+                    initIfNeeded(cardChoices, character, {})
                     initIfNeeded(cardChoices[character], asc, {})
-                    initIfNeeded(cardChoices[character][asc], notPicked, getNewEmptyWonAndLostDict())
-                    cardChoices[character][asc][notPicked]["lost"] += 1
-            masterDeck = runJson["event"]["master_deck"]
-            masterDeckGrouped = {}
-            for card in masterDeck:
-                initIfNeeded(masterDeckGrouped, card, 0)
-                masterDeckGrouped[card] += 1
-            for key, value in masterDeckGrouped.items():
-                if WIN_RATIO_GROUP_UPGRADED_AND_NOT_UPGRADED:
-                    index = key.rfind('+')
-                    if index != -1:
-                        key = key[:index]
-                initIfNeeded(isSpecificCardInDeckAndWinRatio, character, {})
-                initIfNeeded(isSpecificCardInDeckAndWinRatio[character], asc, {})
-                initIfNeeded(isSpecificCardInDeckAndWinRatio[character][asc], key, getNewEmptyWonAndLostDict())
-                initIfNeeded(amountOfSpecificCardsAndWinRatio, character, {})
-                initIfNeeded(amountOfSpecificCardsAndWinRatio[character], asc, {})
-                initIfNeeded(amountOfSpecificCardsAndWinRatio[character][asc], key, {})
-                initIfNeeded(amountOfSpecificCardsAndWinRatio[character][asc][key], value, getNewEmptyWonAndLostDict())
-                if victory:
-                    isSpecificCardInDeckAndWinRatio[character][asc][key]["won"] += 1
-                    amountOfSpecificCardsAndWinRatio[character][asc][key][value]["won"] += 1
-                else:
-                    isSpecificCardInDeckAndWinRatio[character][asc][key]["lost"] += 1
-                    amountOfSpecificCardsAndWinRatio[character][asc][key][value]["lost"] += 1
-            relics = runJson["event"]["relics"]
-            for key in relics:
-                initIfNeeded(hasSpecificRelicAndWinRatio, character, {})
-                initIfNeeded(hasSpecificRelicAndWinRatio[character], asc, {})
-                initIfNeeded(hasSpecificRelicAndWinRatio[character][asc], key, getNewEmptyWonAndLostDict())
-                if victory:
-                    hasSpecificRelicAndWinRatio[character][asc][key]["won"] += 1
-                else:
-                    hasSpecificRelicAndWinRatio[character][asc][key]["lost"] += 1
+                    initIfNeeded(cardChoices[character][asc], cardChoice["picked"], getNewEmptyWonAndLostDict())
+                    cardChoices[character][asc][cardChoice["picked"]]["won"] += 1
+                    for notPicked in cardChoice["not_picked"]:
+                        initIfNeeded(cardChoices[character], asc, {})
+                        initIfNeeded(cardChoices[character][asc], notPicked, getNewEmptyWonAndLostDict())
+                        cardChoices[character][asc][notPicked]["lost"] += 1
+                masterDeck = runJson["event"]["master_deck"]
+                masterDeckGrouped = {}
+                for card in masterDeck:
+                    initIfNeeded(masterDeckGrouped, card, 0)
+                    masterDeckGrouped[card] += 1
+                for key, value in masterDeckGrouped.items():
+                    if WIN_RATIO_GROUP_UPGRADED_AND_NOT_UPGRADED:
+                        index = key.rfind('+')
+                        if index != -1:
+                            key = key[:index]
+                    initIfNeeded(isSpecificCardInDeckAndWinRatio, character, {})
+                    initIfNeeded(isSpecificCardInDeckAndWinRatio[character], asc, {})
+                    initIfNeeded(isSpecificCardInDeckAndWinRatio[character][asc], key, getNewEmptyWonAndLostDict())
+                    initIfNeeded(amountOfSpecificCardsAndWinRatio, character, {})
+                    initIfNeeded(amountOfSpecificCardsAndWinRatio[character], asc, {})
+                    initIfNeeded(amountOfSpecificCardsAndWinRatio[character][asc], key, {})
+                    initIfNeeded(amountOfSpecificCardsAndWinRatio[character][asc][key], value, getNewEmptyWonAndLostDict())
+                    if victory:
+                        isSpecificCardInDeckAndWinRatio[character][asc][key]["won"] += 1
+                        amountOfSpecificCardsAndWinRatio[character][asc][key][value]["won"] += 1
+                    else:
+                        isSpecificCardInDeckAndWinRatio[character][asc][key]["lost"] += 1
+                        amountOfSpecificCardsAndWinRatio[character][asc][key][value]["lost"] += 1
+                relics = runJson["event"]["relics"]
+                for key in relics:
+                    initIfNeeded(hasSpecificRelicAndWinRatio, character, {})
+                    initIfNeeded(hasSpecificRelicAndWinRatio[character], asc, {})
+                    initIfNeeded(hasSpecificRelicAndWinRatio[character][asc], key, getNewEmptyWonAndLostDict())
+                    if victory:
+                        hasSpecificRelicAndWinRatio[character][asc][key]["won"] += 1
+                    else:
+                        hasSpecificRelicAndWinRatio[character][asc][key]["lost"] += 1
+            except Exception as e:
+                print("File: " + absPath + " was skipped, because: " + str(e))
 
 def timeString(timeInSeconds):
     return time.strftime('%H:%M:%S', time.gmtime(timeInSeconds))
@@ -167,15 +170,15 @@ def printKilledBy(killedBy):
     for key, value in sorted(killedBy.items(), key=lambda e: -e[1]):
         print(str(key) + " -> " + str(value))
     print()
-   
+
 def printCardChoices(cardChoices):
     for key, value in sorted(cardChoices.items(), key=lambda e: -e[1]["won"] / (e[1]["won"]+e[1]["lost"])):
         if not key.startswith(CHARACTER_CARD_PREFIX):
             continue
         won = value["won"]
         lost = value["lost"]
-        if won + lost < CARD_CHOICES_CARDS_THRESHOLD: 
-            continue    
+        if won + lost < CARD_CHOICES_CARDS_THRESHOLD:
+            continue
         print(key + ": " + str(won) + ", " + str(lost) + ", %.6f" % (won / (won+lost)))
     print()
 
@@ -185,7 +188,7 @@ def printIsSpecificCardInDeckAndWinRatio(isSpecificCardInDeckAndWinRatio):
             continue
         won = cardValue["won"]
         lost = cardValue["lost"]
-        if won + lost < WIN_RATIO_CARDS_THRESHOLD: 
+        if won + lost < WIN_RATIO_CARDS_THRESHOLD:
             continue
         print(cardKey + ", W=" + str(won) + ", L=" + str(lost)  + ", R=" + winRatioString(won, lost))
     print()
@@ -197,7 +200,7 @@ def printAmountOfSpecificCardsAndWinRatio(amountOfSpecificCardsAndWinRatio):
         for amountKey, amountValue in sorted(cardValue.items(), key=lambda e: e[0]):
             won = amountValue["won"]
             lost = amountValue["lost"]
-            if won + lost < WIN_RATIO_CARDS_THRESHOLD: 
+            if won + lost < WIN_RATIO_CARDS_THRESHOLD:
                 continue
             print(cardKey + ", " + str(amountKey) + ", W=" + str(won) + ", L=" + str(lost)  + ", R=" + winRatioString(won, lost))
     print()
@@ -208,7 +211,7 @@ def printHasSpecificRelicAndWinRatio(hasSpecificRelicAndWinRatio):
             continue
         won = relicValue["won"]
         lost = relicValue["lost"]
-        if won + lost < WIN_RATIO_RELICS_THRESHOLD: 
+        if won + lost < WIN_RATIO_RELICS_THRESHOLD:
             continue
         print(relicKey + ", W=" + str(won) + ", L=" + str(lost)  + ", R=" + winRatioString(won, lost))
     print()
@@ -507,7 +510,6 @@ if SHOW_HAS_SPECIFIC_RELIC_AND_WIN_RATIO:
             for asc in onlyTheHighestAscension:
                 print("Has a specific relic and win ratio and win ratio on character " + character + " on ascension " + str(asc) + ":")
                 printHasSpecificRelicAndWinRatio(hasSpecificRelicAndWinRatio.get(character, {}).get(asc,{}))
-
 
 if SHOW_HOSTS:
     print("Hosts on all ascensions:")
