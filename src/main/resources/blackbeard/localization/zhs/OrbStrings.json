@@ -1,0 +1,91 @@
+{
+  "blackbeard:AbstractWeaponOrb": {
+    "NAME": "武器",
+    "DESCRIPTION": [
+      " NL ",
+      "攻击力： ",
+      " NL ",
+      "耐久度： #b"
+    ]
+  },
+  "blackbeard:CutlassOrb": {
+    "NAME": "弯刀",
+    "DESCRIPTION": [
+      ""
+    ]
+  },
+  "blackbeard:HalberdOrb": {
+    "NAME": "戟",
+    "DESCRIPTION": [
+      "每当你使用这把 #y武器 攻击，每次攻击给予2点 #y流血 。"
+    ]
+  },
+  "blackbeard:PowderKegOrb": {
+    "NAME": "火药桶",
+    "DESCRIPTION": [
+      " 当它被摧毁时，对所有敌人造成 #b",
+      " 点伤害。"
+    ]
+  },
+  "blackbeard:SwordOfWisdomOrb": {
+    "NAME": "智慧之剑",
+    "DESCRIPTION": [
+      "每当你使用这把 #y武器 攻击，抽一张牌。"
+    ]
+  },
+  "blackbeard:SwordOfChaosOrb": {
+    "NAME": "混乱之剑",
+    "DESCRIPTION": [
+      "每当你使用这把 #y武器 攻击，将一张随机牌加入你的手牌。"
+    ]
+  },
+  "blackbeard:CatONineTailsOrb": {
+    "NAME": "九尾猫",
+    "DESCRIPTION": [
+      "在你使用这把 #y武器 攻击后，使其获得 #b+2 攻击力。"
+    ]
+  },
+  "blackbeard:DaggerOrb": {
+    "NAME": "匕首",
+    "DESCRIPTION": [
+      "在你的回合开始时，匕首失去 #b1 点耐久度，对一个随机敌人造成等同于匕首攻击力的伤害。"
+    ]
+  },
+  "blackbeard:SwordOrb": {
+    "NAME": "剑",
+    "DESCRIPTION": [
+      ""
+    ]
+  },
+  "blackbeard:SmithingHammerOrb": {
+    "NAME": "锻锤",
+    "DESCRIPTION": [
+      "在你使用这把 #y武器 攻击后，以及在你的回合开始时，锻锤失去 #b1 点耐久度，在本场战斗中升级你手牌中的一张随机牌。"
+    ]
+  },
+  "blackbeard:SpearOrb": {
+    "NAME": "矛",
+    "DESCRIPTION": [
+      ""
+    ]
+  },
+  "blackbeard:SwordOfFireOrb": {
+    "NAME": "火焰之剑",
+    "DESCRIPTION": [
+      "每当你使用这把 #y武器 攻击，对所有敌人造成 #b3 点伤害。"
+    ]
+  },
+  "blackbeard:VampiricScepterOrb": {
+    "NAME": "吸血鬼权杖",
+    "DESCRIPTION": [
+      "每当你使用这把 #y武器 攻击，回复 #b",
+      " 点生命值。"
+    ]
+  },
+  "blackbeard:ReapersScytheOrb": {
+    "NAME": "收割之镰",
+    "DESCRIPTION": [
+      "每当你使用这把 #y武器 攻击，每次攻击给予目标敌人 #b1 层 #y收割者印记 。"
+    ]
+  }
+}

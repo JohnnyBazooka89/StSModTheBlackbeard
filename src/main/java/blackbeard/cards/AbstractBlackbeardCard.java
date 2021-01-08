@@ -8,12 +8,14 @@ import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.core.Settings;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public abstract class AbstractBlackbeardCard extends CustomCard {
 
     private static List<String> smallerFontInPolishCardIds = Arrays.asList(IntimidatingStrike.ID, RearmingStrike.ID);
     private static List<String> smallerFontInRussianCardIds = Arrays.asList(BountyHunter.ID, FinalBarrage.ID, IntimidatingStrike.ID, Lifeboat.ID, MegaUpgrade.ID, RearmingStrike.ID, TacticalRetreat.ID, WeaponMastery.ID);
+    private static List<String> smallerFontInSimplifiedChineseCardIds = Collections.emptyList();
     private static List<String> smallerFontInEnglishCardIds = Arrays.asList(CloakAndCannonball.ID, HumongousCannonball.ID, IntimidatingStrike.ID, TheDrunkenSailor.ID, WeaponProficiency.ID);
 
     private float smallerFontSize = 17.0f;
@@ -60,6 +62,8 @@ public abstract class AbstractBlackbeardCard extends CustomCard {
                 return smallerFontInPolishCardIds.contains(this.cardID) ? smallerFontSize : defaultFontSize;
             case RUS:
                 return smallerFontInRussianCardIds.contains(this.cardID) ? smallerFontSize : defaultFontSize;
+            case ZHS:
+                return smallerFontInSimplifiedChineseCardIds.contains(this.cardID) ? smallerFontSize : defaultFontSize;
             default:
                 return smallerFontInEnglishCardIds.contains(this.cardID) ? smallerFontSize : defaultFontSize;
         }

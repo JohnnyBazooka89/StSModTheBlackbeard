@@ -1,0 +1,162 @@
+{
+  "blackbeard:WeaponPower": {
+    "NAME": "武器",
+    "DESCRIPTIONS": [
+      "每当你打出一张攻击牌，消耗你的最右边的武器1耐久度，这张牌额外造成等于该武器的攻击力的伤害。你最多可以同时装备 #b10 把武器。"
+    ]
+  },
+  "blackbeard:ParrotPower": {
+    "NAME": "鹦鹉",
+    "DESCRIPTIONS": [
+      "你每回合打出的最后一张牌额外打出一次。"
+    ]
+  },
+  "blackbeard:TheDrunkenSailorPower": {
+    "NAME": "醉酒水手",
+    "DESCRIPTIONS": [
+      "每当你使用一瓶药水，触发 #b",
+      " 次效果。"
+    ]
+  },
+  "blackbeard:SwordDancePower": {
+    "NAME": "剑舞",
+    "DESCRIPTIONS": [
+      "在这个回合，你的下1张攻击牌使用所有装备着的武器。",
+      "在这个回合，你的下 #b",
+      " 张攻击牌使用所有装备着的武器。"
+    ]
+  },
+  "blackbeard:ResistancePower": {
+    "NAME": "抵抗",
+    "DESCRIPTIONS": [
+      "你受到来自敌人的 #b",
+      " 点更少",
+      " 点更多",
+      " 的攻击伤害。（敌人的意图总是显示实际将对你造成的伤害，抵抗考虑在内。）"
+    ]
+  },
+  "blackbeard:InfiniteBarragePower": {
+    "NAME": "无尽弹幕",
+    "DESCRIPTIONS": [
+      "在你的回合开始时，将 #b",
+      " 张 #y炮弹",
+      " 张 #y炮弹",
+      " 加入你的手牌。"
+    ]
+  },
+  "blackbeard:ToastPower": {
+    "NAME": "干杯",
+    "DESCRIPTIONS": [
+      "在你的回合开始时，失去 #b",
+      " 点 #y抵抗 。"
+    ]
+  },
+  "blackbeard:DamageAtTheEndOfNextTurnPower": {
+    "NAME": "下回合结束受伤害",
+    "DESCRIPTIONS": [
+      "在你的下回合结束时, 你受到 #b",
+      " 点伤害。"
+    ]
+  },
+  "blackbeard:DamageAtTheEndOfThisTurnPower": {
+    "NAME": "本回合结束受伤害",
+    "DESCRIPTIONS": [
+      "在你的本回合结束时, 你受到 #b",
+      " 点伤害。"
+    ]
+  },
+  "blackbeard:WeaponMasteryPower": {
+    "NAME": "武器专精",
+    "DESCRIPTIONS": [
+      "每当你装备一把 #y武器 ,抽 #b",
+      " 张卡。",
+      " 张卡。"
+    ]
+  },
+  "blackbeard:SalvagerPower": {
+    "NAME": "营救者",
+    "DESCRIPTIONS": [
+      "每当一把 #y武器 被摧毁，获得 #b",
+      " [E] 。"
+    ]
+  },
+  "blackbeard:LoseEnergyNextTurnPower": {
+    "NAME": "下回合失去能量",
+    "DESCRIPTIONS": [
+      "在你的下个回合开始时，失去 #b",
+      " [E] 。"
+    ]
+  },
+  "blackbeard:ArmorUpPower": {
+    "NAME": "穿上盔甲",
+    "DESCRIPTIONS": [
+      "在这个回合，每当你使用 #y武器 攻击，获得 #b",
+      " 点 #y格挡 。"
+    ]
+  },
+  "blackbeard:IntoxicationPower": {
+    "NAME": "沉醉",
+    "DESCRIPTIONS": [
+      "在你的回合开始时，失去 #b",
+      " 点 #y抵抗 。"
+    ]
+  },
+  "blackbeard:PenknifePower": {
+    "NAME": "折叠刀",
+    "DESCRIPTIONS": [
+      "你打出的下一张使用了 #y武器 （至少一把）的 #y攻击牌 造成双倍伤害。"
+    ]
+  },
+  "blackbeard:DamageWhenIntangibleEndsPower": {
+    "NAME": "无实体结束受伤害",
+    "DESCRIPTIONS": [
+      "在你不再是 无实体 状态的那回合开始时，你受到 #b",
+      "  点伤害。"
+    ]
+  },
+  "blackbeard:RustyThorns": {
+    "NAME": "生锈的荆棘",
+    "DESCRIPTIONS": [
+      "受到攻击时，对攻击者造成 #b ",
+      " 点反伤，然后生锈的荆棘减少 #b1 层。"
+    ]
+  },
+  "blackbeard:WeaponProficiencyPower": {
+    "NAME": "武器娴熟",
+    "DESCRIPTIONS": [
+      "你的攻击额外使用 #b",
+      " 把 #y武器 。",
+      " 把 #y武器 。"
+    ]
+  },
+  "blackbeard:GoldToLootPower": {
+    "NAME": "打劫金币",
+    "DESCRIPTIONS": [
+      "每当你攻击一名敌人，获得 #b",
+      " #y金币 。本场对战你可以再获得 #b",
+      " #y金币 。"
+    ]
+  },
+  "blackbeard:BleedPower": {
+    "NAME": "流血",
+    "DESCRIPTIONS": [
+      "在它的回合开始时, 失去 #b",
+      " 点生命值。"
+    ]
+  },
+  "blackbeard:ReapersMarkPower": {
+    "NAME": "收割之镰",
+    "DESCRIPTIONS": [
+      "每当获得 #b3 层时，移除这些层，该生物失去等于已损失生命值 #b40% 的生命值。"
+    ]
+  },
+  "blackbeard:ProvisioningPower": {
+    "NAME": "航程补给",
+    "DESCRIPTIONS": [
+      "在下一回合，获得 #b",
+      " 瓶随机药水",
+      " 瓶随机药水",
+      "。"
+    ]
+  }
+}

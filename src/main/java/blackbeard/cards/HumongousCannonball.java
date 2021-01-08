@@ -19,6 +19,7 @@ public class HumongousCannonball extends AbstractBlackbeardCard {
     private static final String DEFAULT_IMAGE_ID = "HumongousCannonballENG";
     private static final String POLISH_IMAGE_ID = "HumongousCannonballPOL";
     private static final String RUSSIAN_IMAGE_ID = "HumongousCannonballRUS";
+    private static final String SIMPLIFIED_CHINESE_IMAGE_ID = "HumongousCannonballZHS";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
@@ -57,6 +58,8 @@ public class HumongousCannonball extends AbstractBlackbeardCard {
                 return TheBlackbeardMod.getCardImagePath(POLISH_IMAGE_ID);
             case RUS:
                 return TheBlackbeardMod.getCardImagePath(RUSSIAN_IMAGE_ID);
+            case ZHS:
+                return TheBlackbeardMod.getCardImagePath(SIMPLIFIED_CHINESE_IMAGE_ID);
             default:
                 return TheBlackbeardMod.getCardImagePath(DEFAULT_IMAGE_ID);
         }

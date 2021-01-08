@@ -105,6 +105,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     private static final String DEFAULT_LANGUAGE_FOLDER = "eng";
     private static final String POLISH_LANGUAGE_FOLDER = "pol";
     private static final String RUSSIAN_LANGUAGE_FOLDER = "rus";
+    private static final String SIMPLIFIED_CHINESE_LANGUAGE_FOLDER = "zhs";
 
     //Keywords
     public static Map<String, Keyword> keywords = new HashMap<>();
@@ -398,6 +399,9 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
             case RUS:
                 loadCustomStringsForLanguage(RUSSIAN_LANGUAGE_FOLDER);
                 break;
+            case ZHS:
+                loadCustomStringsForLanguage(SIMPLIFIED_CHINESE_LANGUAGE_FOLDER);
+                break;
             default:
                 //Nothing - default language was already loaded
                 break;
@@ -429,6 +433,9 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
                 break;
             case RUS:
                 loadCustomKeywordsForLanguage(RUSSIAN_LANGUAGE_FOLDER);
+                break;
+            case ZHS:
+                loadCustomKeywordsForLanguage(SIMPLIFIED_CHINESE_LANGUAGE_FOLDER);
                 break;
             default:
                 //Nothing - default language was already loaded
@@ -475,7 +482,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     @Override
     public void receiveStartGame() {
         if (AbstractDungeon.player.chosenClass == PlayerClassEnum.BLACKBEARD_CLASS && TheBlackbeardMod.shouldUseChristmasTheme()) {
-            Skeleton skeleton = (Skeleton) ReflectionHacks.getPrivate(AbstractDungeon.player, AbstractCreature.class, "skeleton");
+            Skeleton skeleton = ReflectionHacks.getPrivate(AbstractDungeon.player, AbstractCreature.class, "skeleton");
             String attachName = "images/christmasHat";
             String attachCloneName = "images/christmasHatClone";
             int origSlotIndex = skeleton.findSlotIndex(attachName);

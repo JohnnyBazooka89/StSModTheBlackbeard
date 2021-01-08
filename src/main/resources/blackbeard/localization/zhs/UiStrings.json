@@ -1,0 +1,12 @@
+{
+  "blackbeard:PowerCardFromDrawPileToHandAction": {
+    "TEXT": [
+      "选择一张能力牌加入你的手牌。"
+    ]
+  },
+  "blackbeard:Settings": {
+    "TEXT": [
+      "禁用圣诞主题（仅在12月的最后两周可用）。"
+    ]
+  }
+}
