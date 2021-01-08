@@ -12,8 +12,8 @@ import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 
 public class ShootAnythingEffect extends AbstractGameEffect {
 
-    private static final float DROP_ON_HEAD_STARTING_DURATION = 0.4f;
-    private static final float SHOOT_ANYTHING_STARTING_DURATION = 0.6f;
+    private static final float DROP_ON_HEAD_STARTING_DURATION = 0.35f;
+    private static final float SHOOT_ANYTHING_STARTING_DURATION = 0.50f;
 
     private Projectile projectile;
     private boolean dropOnHead;
