@@ -72,9 +72,13 @@ public class MetricsPatches {
         public static void Postfix(Metrics metrics) {
             if (metrics.type == Metrics.MetricRequestType.UPLOAD_METRICS && AbstractDungeon.player.chosenClass == PlayerClassEnum.BLACKBEARD_CLASS) {
                 try {
-                    Method m = Metrics.class.getDeclaredMethod("gatherAllDataAndSend", boolean.class, boolean.class, MonsterGroup.class);
-                    m.setAccessible(true);
-                    m.invoke(metrics, metrics.death, metrics.trueVictory, metrics.monsters);
+                    Method addDataMethod = Metrics.class.getDeclaredMethod("addData", Object.class, Object.class);
+                    addDataMethod.setAccessible(true);
+                    addDataMethod.invoke(metrics, "language", Settings.language);
+
+                    Method gatherAllDataAndSendMethod = Metrics.class.getDeclaredMethod("gatherAllDataAndSend", boolean.class, boolean.class, MonsterGroup.class);
+                    gatherAllDataAndSendMethod.setAccessible(true);
+                    gatherAllDataAndSendMethod.invoke(metrics, metrics.death, metrics.trueVictory, metrics.monsters);
                 } catch (NoSuchMethodException | InvocationTargetException | IllegalAccessException e) {
                     logger.error("Exception while sending metrics", e);
                 }
