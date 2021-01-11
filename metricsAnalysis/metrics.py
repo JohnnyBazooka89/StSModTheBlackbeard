@@ -147,7 +147,7 @@ def timeString(timeInSeconds):
     return time.strftime('%H:%M:%S', time.gmtime(timeInSeconds))
 
 def winRatioString(won, lost):
-    return str("??.??%%" if (won+lost)==0 else ("%.2f%%" % round(100*won/(won+lost), 2)))
+    return str("??.??%" if (won+lost)==0 else ("%.2f%%" % round(100*won/(won+lost), 2)))
 
 def printWinRatio(wonRuns, lostRuns):
     print("Played: " + str(wonRuns+lostRuns) + ", R=" + winRatioString(wonRuns,lostRuns) + ", W=" +str(wonRuns) + ", L=" + str(lostRuns))
