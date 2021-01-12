@@ -40,6 +40,7 @@ hosts = {}
 characterKeys = set()
 ascKeys = set()
 
+totalRuns = 0
 endlessRuns = 0
 exceptionRuns = 0
 
@@ -58,6 +59,7 @@ for root, dirs, files in os.walk(METRICS_PATH):
         absPath = path.join(root, file)
         if path.isfile(absPath):
             try:
+                totalRuns += 1
                 runJson = json.loads(open(absPath, 'r', encoding='utf-8').read())
                 if runJson["event"]["is_endless"] and SKIP_ENDLESS_RUNS:
                     endlessRuns += 1
@@ -150,6 +152,7 @@ for root, dirs, files in os.walk(METRICS_PATH):
                 #print("File: " + absPath + " was skipped, because: " + str(e))
                 exceptionRuns += 1
 
+print(str(totalRuns) + " total runs")
 print(str(endlessRuns) + " endless runs were skipped")
 print(str(exceptionRuns) + " runs threw an exception")
 print()
