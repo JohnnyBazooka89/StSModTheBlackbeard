@@ -152,6 +152,7 @@ for root, dirs, files in os.walk(METRICS_PATH):
 
 print(str(endlessRuns) + " endless runs were skipped")
 print(str(exceptionRuns) + " runs threw an exception")
+print()
 
 def timeString(timeInSeconds):
     return time.strftime('%H:%M:%S', time.gmtime(timeInSeconds))
