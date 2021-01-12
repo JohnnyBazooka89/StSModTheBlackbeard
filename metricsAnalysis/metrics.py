@@ -60,6 +60,7 @@ for root, dirs, files in os.walk(METRICS_PATH):
             try:
                 runJson = json.loads(open(absPath, 'r', encoding='utf-8').read())
                 if runJson["event"]["is_endless"] and SKIP_ENDLESS_RUNS:
+                    endlessRuns += 1
                     continue
                 character = runJson["event"]["character_chosen"]
                 characterKeys.add(character)
