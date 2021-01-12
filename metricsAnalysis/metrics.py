@@ -40,6 +40,9 @@ hosts = {}
 characterKeys = set()
 ascKeys = set()
 
+endlessRuns = 0
+exceptionRuns = 0
+
 def initIfNeeded(map, key, defaultValue):
     if not key in map:
         map[key] = defaultValue
@@ -87,6 +90,8 @@ for root, dirs, files in os.walk(METRICS_PATH):
                 for damageTakenEntry in runJson["event"]["damage_taken"]:
                     if damageTakenEntry["damage"] >= 99999:
                         continue;
+                    if not "enemies" in damageTakenEntry:
+                        continue
                     enemies = damageTakenEntry["enemies"]
                     initIfNeeded(averageDamageTaken, character, {})
                     initIfNeeded(averageDamageTaken[character], asc, {})
@@ -141,7 +146,11 @@ for root, dirs, files in os.walk(METRICS_PATH):
                     else:
                         hasSpecificRelicAndWinRatio[character][asc][key]["lost"] += 1
             except Exception as e:
-                print("File: " + absPath + " was skipped, because: " + str(e))
+                #print("File: " + absPath + " was skipped, because: " + str(e))
+                exceptionRuns += 1
+
+print(str(endlessRuns) + " endless runs were skipped")
+print(str(exceptionRuns) + " runs threw an exception")
 
 def timeString(timeInSeconds):
     return time.strftime('%H:%M:%S', time.gmtime(timeInSeconds))
