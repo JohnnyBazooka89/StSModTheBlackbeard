@@ -46,8 +46,8 @@ If you want to play Ascension 20 straight away, you have to:
 The mod is available in:
 - English
 - Polish
-- Russian, thanks to [Jedi](https://github.com/Jedi515).
-- Simplified Chinese, thanks to 旅渚.
+- Russian, thanks to [Jedi](https://github.com/Jedi515)
+- Simplified Chinese, thanks to 旅渚
 
 ## Special Thanks ##
 1. Thanks to the [developers](https://www.megacrit.com/) of **SlayTheSpire** for making such a good game.
