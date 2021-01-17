@@ -65,7 +65,7 @@ for root, dirs, files in os.walk(METRICS_PATH):
                 if runJson["event"]["is_endless"] and SKIP_ENDLESS_RUNS:
                     endlessRuns += 1
                     continue
-                if runJson["event"]["floor_reached"] <= 0:
+                if runJson["event"]["floor_reached"] <= 1:
                     leftTooEarlyRuns += 1
                     continue
                 character = runJson["event"]["character_chosen"]
