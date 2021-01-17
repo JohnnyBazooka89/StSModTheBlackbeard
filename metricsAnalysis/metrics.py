@@ -43,6 +43,7 @@ ascKeys = set()
 totalRuns = 0
 endlessRuns = 0
 exceptionRuns = 0
+leftTooEarlyRuns = 0
 
 def initIfNeeded(map, key, defaultValue):
     if not key in map:
@@ -63,6 +64,9 @@ for root, dirs, files in os.walk(METRICS_PATH):
                 runJson = json.loads(open(absPath, 'r', encoding='utf-8').read())
                 if runJson["event"]["is_endless"] and SKIP_ENDLESS_RUNS:
                     endlessRuns += 1
+                    continue
+                if runJson["event"]["floor_reached"] <= 0:
+                    leftTooEarlyRuns += 1
                     continue
                 character = runJson["event"]["character_chosen"]
                 characterKeys.add(character)
@@ -154,6 +158,7 @@ for root, dirs, files in os.walk(METRICS_PATH):
 
 print(str(totalRuns) + " total runs")
 print(str(endlessRuns) + " endless runs were skipped")
+print(str(leftTooEarlyRuns) + " runs were skipped, because they were left too early")
 print(str(exceptionRuns) + " runs threw an exception")
 print()
 
