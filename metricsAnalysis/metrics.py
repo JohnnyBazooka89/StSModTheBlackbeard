@@ -10,11 +10,11 @@ RELIC_PREFIX = ''
 SHOW_WIN_RATIO = True
 SHOW_AVERAGE_LENGTH = False
 SHOW_CARD_CHOICES = True
-SHOW_AVERAGE_DAMAGE_TAKEN = True
-SHOW_KILLED_BY = True
 SHOW_IS_SPECIFIC_CARD_IN_DECK_AND_WIN_RATIO = True
 SHOW_AMOUNT_OF_SPECIFIC_CARDS_AND_WIN_RATIO = True
 SHOW_HAS_SPECIFIC_RELIC_AND_WIN_RATIO = True
+SHOW_AVERAGE_DAMAGE_TAKEN = True
+SHOW_KILLED_BY = True
 SHOW_HOSTS = True
 
 SKIP_ENDLESS_RUNS = True
@@ -460,33 +460,6 @@ if SHOW_CARD_CHOICES:
                 print("Card choices on character " + character + " on ascension " + str(asc) + ":")
                 printCardChoices(cardChoices.get(character, {}).get(asc,{}))
 
-if SHOW_AVERAGE_DAMAGE_TAKEN:
-    print("Average damage taken on all ascensions:")
-    printAverageDamageTaken(averageDamageTakenAll)
-    for asc in onlyTheHighestAscension:
-        print("Average damage taken on ascension " + str(asc) + ":")
-        printAverageDamageTaken(averageDamageTakenByAscensions.get(asc,{}))
-    if len(characterKeys) > 1:
-        for character in sorted(characterKeys):
-            print("Average damage taken on character " + character + " on all ascensions:")
-            printAverageDamageTaken(averageDamageTakenByCharacters.get(character, {}))
-            for asc in onlyTheHighestAscension:
-                print("Average damage taken on character " + character + " on ascension " + str(asc) + ":")
-                printAverageDamageTaken(averageDamageTaken.get(character, {}).get(asc,{}))
-
-if SHOW_KILLED_BY:
-    print("Killed by on all ascensions:")
-    printKilledBy(killedByAll)
-    for asc in onlyTheHighestAscension:
-        print("Killed by on ascension " + str(asc) + ":")
-        printKilledBy(killedByByAscensions.get(asc,{}))
-    if len(characterKeys) > 1:
-        for character in sorted(characterKeys):
-            print("Killed by on character " + character + " on all ascensions:")
-            printKilledBy(killedByByCharacters.get(character, {}))
-            for asc in onlyTheHighestAscension:
-                print("Killed by on character " + character + " on ascension " + str(asc) + ":")
-                printKilledBy(killedBy.get(character, {}).get(asc,{}))
 
 if SHOW_IS_SPECIFIC_CARD_IN_DECK_AND_WIN_RATIO:
     print("Is a specific card in deck and win ratio on all ascensions:")
@@ -529,6 +502,34 @@ if SHOW_HAS_SPECIFIC_RELIC_AND_WIN_RATIO:
             for asc in onlyTheHighestAscension:
                 print("Has a specific relic and win ratio and win ratio on character " + character + " on ascension " + str(asc) + ":")
                 printHasSpecificRelicAndWinRatio(hasSpecificRelicAndWinRatio.get(character, {}).get(asc,{}))
+
+if SHOW_AVERAGE_DAMAGE_TAKEN:
+    print("Average damage taken on all ascensions:")
+    printAverageDamageTaken(averageDamageTakenAll)
+    for asc in onlyTheHighestAscension:
+        print("Average damage taken on ascension " + str(asc) + ":")
+        printAverageDamageTaken(averageDamageTakenByAscensions.get(asc,{}))
+    if len(characterKeys) > 1:
+        for character in sorted(characterKeys):
+            print("Average damage taken on character " + character + " on all ascensions:")
+            printAverageDamageTaken(averageDamageTakenByCharacters.get(character, {}))
+            for asc in onlyTheHighestAscension:
+                print("Average damage taken on character " + character + " on ascension " + str(asc) + ":")
+                printAverageDamageTaken(averageDamageTaken.get(character, {}).get(asc,{}))
+
+if SHOW_KILLED_BY:
+    print("Killed by on all ascensions:")
+    printKilledBy(killedByAll)
+    for asc in onlyTheHighestAscension:
+        print("Killed by on ascension " + str(asc) + ":")
+        printKilledBy(killedByByAscensions.get(asc,{}))
+    if len(characterKeys) > 1:
+        for character in sorted(characterKeys):
+            print("Killed by on character " + character + " on all ascensions:")
+            printKilledBy(killedByByCharacters.get(character, {}))
+            for asc in onlyTheHighestAscension:
+                print("Killed by on character " + character + " on ascension " + str(asc) + ":")
+                printKilledBy(killedBy.get(character, {}).get(asc,{}))
 
 if SHOW_HOSTS:
     print("Hosts on all ascensions:")
