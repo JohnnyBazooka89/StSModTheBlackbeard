@@ -46,7 +46,7 @@ public class Murder extends AbstractBlackbeardCard {
         if (!canUse) {
             return false;
         }
-        if (isBoss()) {
+        if (!canUseOnMonster(m)) {
             canUse = false;
             this.cantUseMessage = EXTENDED_DESCRIPTION[0];
         }
@@ -55,12 +55,23 @@ public class Murder extends AbstractBlackbeardCard {
 
     @Override
     public void triggerOnGlowCheck() {
-        this.glowColor = !isBoss() ? AbstractCard.GOLD_BORDER_GLOW_COLOR : AbstractCard.BLUE_BORDER_GLOW_COLOR;
+        this.glowColor = isAnyNonBoss() ? AbstractCard.GOLD_BORDER_GLOW_COLOR : AbstractCard.BLUE_BORDER_GLOW_COLOR;
     }
 
-    private boolean isBoss() {
+    private boolean canUseOnMonster(AbstractMonster m) {
+        if (m == null) {
+            return isAnyNonBoss();
+        }
+        return isNonBoss(m);
+    }
+
+    private boolean isNonBoss(AbstractMonster m) {
+        return m.type != AbstractMonster.EnemyType.BOSS;
+    }
+
+    private boolean isAnyNonBoss() {
         for (AbstractMonster m : (AbstractDungeon.getMonsters()).monsters) {
-            if (m.type == AbstractMonster.EnemyType.BOSS) {
+            if (!m.isDeadOrEscaped() && isNonBoss(m)) {
                 return true;
             }
         }
