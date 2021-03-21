@@ -12,19 +12,21 @@ import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 
 public class ShootAnythingEffect extends AbstractGameEffect {
 
-    private static final float DROP_ON_HEAD_STARTING_DURATION = 0.35f;
+    private static final float DROP_ON_HEAD_STARTING_DURATION = 0.40f;
     private static final float SHOOT_ANYTHING_STARTING_DURATION = 0.50f;
 
     private Projectile projectile;
     private boolean dropOnHead;
     private AbstractCreature abstractCreature;
     private Texture texture;
+    private int count;
 
-    public ShootAnythingEffect(AbstractCreature abstractCreature, Texture texture, boolean dropOnHead) {
+    public ShootAnythingEffect(AbstractCreature abstractCreature, Texture texture, boolean dropOnHead, int count) {
         this.abstractCreature = abstractCreature;
         this.texture = texture;
         this.dropOnHead = dropOnHead;
-        this.projectile = new Projectile();
+        this.count = count;
+        this.projectile = new Projectile(this.count);
     }
 
     @Override
@@ -56,8 +58,8 @@ public class ShootAnythingEffect extends AbstractGameEffect {
         private float duration;
         private float startingDuration;
 
-        Projectile() {
-            this.startingDuration = dropOnHead ? DROP_ON_HEAD_STARTING_DURATION : SHOOT_ANYTHING_STARTING_DURATION;
+        Projectile(int count) {
+            this.startingDuration = dropOnHead ? getDropOnHeadStartingDuration(count) : SHOOT_ANYTHING_STARTING_DURATION;
 
             targetX = abstractCreature.hb.cX + MathUtils.random(abstractCreature.hb.width) - abstractCreature.hb.width * 1 / 4;
             targetY = abstractCreature.hb.cY + MathUtils.random(abstractCreature.hb.height) - abstractCreature.hb.height * 1 / 4;
@@ -74,6 +76,11 @@ public class ShootAnythingEffect extends AbstractGameEffect {
             duration = startingDuration;
 
             rotation = (MathUtils.random(-30.0F, 30.0F));
+        }
+
+        private float getDropOnHeadStartingDuration(int count) {
+            float limitedCounter = (float) Math.min(count, 7);
+            return DROP_ON_HEAD_STARTING_DURATION * (1f - (limitedCounter / (limitedCounter + 7)));
         }
 
         void render(SpriteBatch sb) {

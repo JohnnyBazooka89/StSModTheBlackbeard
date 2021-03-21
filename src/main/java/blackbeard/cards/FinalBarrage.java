@@ -47,18 +47,20 @@ public class FinalBarrage extends AbstractBlackbeardCard {
                 indexes.add(AbstractDungeon.actionManager.cardsPlayedThisCombat.indexOf(card));
             }
         }
-        for (Integer index : indexes) {
+        int count = 0;
+        for (int index : indexes) {
             switch (AbstractDungeon.actionManager.cardsPlayedThisCombat.get(index).cardID) {
                 case HumongousCannonball.ID:
-                    AbstractDungeon.actionManager.addToBottom(new ShootAnythingAction(m, getHumongousCannonballTexture(), true));
+                    AbstractDungeon.actionManager.addToBottom(new ShootAnythingAction(m, getHumongousCannonballTexture(), true, count));
                     break;
                 case GoldenCannonball.ID:
-                    AbstractDungeon.actionManager.addToBottom(new ShootAnythingAction(m, getGoldenCannonballTexture(), true));
+                    AbstractDungeon.actionManager.addToBottom(new ShootAnythingAction(m, getGoldenCannonballTexture(), true, count));
                     break;
                 default:
-                    AbstractDungeon.actionManager.addToBottom(new ShootAnythingAction(m, getCannonballTexture(), true));
+                    AbstractDungeon.actionManager.addToBottom(new ShootAnythingAction(m, getCannonballTexture(), true, count));
                     break;
             }
+            count++;
         }
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
     }
