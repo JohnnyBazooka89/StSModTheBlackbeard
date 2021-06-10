@@ -16,6 +16,8 @@ CREATE TABLE damage_taken(
     run_file_path varchar,
 	enemies varchar,
 	damage int,
+	floor int,
+	turns int,
 	CONSTRAINT fk_damage_taken_run_file_path FOREIGN KEY(run_file_path) REFERENCES run(file_path)
 );
 
@@ -46,8 +48,8 @@ CREATE TABLE relic(
 
 CREATE INDEX idx_run_ascension ON run(ascension);
 CREATE INDEX idx_run_character ON run(character);
-CREATE INDEX idx_damage_taken ON damage_taken(enemies);
-CREATE INDEX idx_killed_by_enemy ON killed_by(enemy_id);
+CREATE INDEX idx_damage_taken_enemies ON damage_taken(enemies);
+CREATE INDEX idx_killed_by_enemy_id ON killed_by(enemy_id);
 CREATE INDEX idx_card_choice_card_id ON card_choice(card_id);
 CREATE INDEX idx_master_deck_card_id ON master_deck(card_id);
 CREATE INDEX idx_relic_relic_id ON relic(relic_id);
