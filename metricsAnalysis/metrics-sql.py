@@ -874,7 +874,7 @@ try:
                         )
                         printAverageDamageTaken(getAverageDamageTaken(asc, character))
 
-    with open("report/09_average_damage_taken.txt", "w") as f:
+    with open("report/09_average_combat_length.txt", "w") as f:
         with redirect_stdout(f):
             print("Average combat length on all ascensions:")
             printAverageCombatLength(getAverageCombatLength(None, None))
