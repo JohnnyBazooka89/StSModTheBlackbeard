@@ -4,6 +4,7 @@ import sys
 import time
 import traceback
 from contextlib import redirect_stdout
+from os import path
 
 import psycopg2
 
@@ -477,15 +478,15 @@ try:
     conn = psycopg2.connect(database="metrics", user="postgres", password="secret")
     cur = conn.cursor()
 
-    # for root, dirs, files in os.walk(METRICS_PATH):
-    #     for file in files:
-    #         absPath = path.join(root, file)
-    #         if path.isfile(absPath):
-    #             cur.execute(
-    #                 "INSERT INTO run(file_path, status) VALUES (%s, %s) ON CONFLICT (file_path) DO NOTHING",
-    #                 (absPath, "NEW"),
-    #             )
-    #             conn.commit()
+    for root, dirs, files in os.walk(METRICS_PATH):
+        for file in files:
+            absPath = path.join(root, file)
+            if path.isfile(absPath):
+                cur.execute(
+                    "INSERT INTO run(file_path, status) VALUES (%s, %s) ON CONFLICT (file_path) DO NOTHING",
+                    (absPath, "NEW"),
+                )
+                conn.commit()
 
     cur.execute("SELECT file_path FROM run WHERE status = 'NEW'")
     rows = cur.fetchall()
@@ -632,57 +633,71 @@ try:
             )
             print(str(exceptionRuns) + " runs threw an exception")
 
-    with open("report/02_win_ratio.txt", "w") as f:
-        with redirect_stdout(f):
-            print("Win ratio on all ascensions:", end=" ")
-            printWinRatio(getWinRatio(None, None, True), getWinRatio(None, None, False))
-            print()
-            for ascInt in sorted(ascKeysInts):
-                asc = str(ascInt)
-                print("Win ratio on ascension " + asc + ":", end=" ")
+    def printWinRatioSortedBy(fileName, keyLambda):
+        global f, ascInt, asc, winRatio, character
+        with open(fileName, "w") as f:
+            with redirect_stdout(f):
+                print("Win ratio on all ascensions:", end=" ")
                 printWinRatio(
-                    getWinRatio(asc, None, True), getWinRatio(asc, None, False)
+                    getWinRatio(None, None, True), getWinRatio(None, None, False)
                 )
-            print()
-            if len(characterKeys) > 1:
-                winRatio = {}
-                for character in characterKeys:
-                    won = getWinRatio(None, character, True)
-                    lost = getWinRatio(None, character, False)
-                    winRatio[character] = {"won": won, "lost": lost}
-                for character in sorted(
-                    characterKeys,
-                    key=lambda e: -winRatio[e]["won"]
-                    / (winRatio[e]["won"] + winRatio[e]["lost"]),
-                ):
-                    won = winRatio[character]["won"]
-                    lost = winRatio[character]["lost"]
-                    if won + lost <= CHARACTER_GAMES_THRESHOLD:
-                        continue
-                    print(
-                        "Win ratio on character " + character + " on all ascensions:",
-                        end=" ",
+                print()
+                for ascInt in sorted(ascKeysInts):
+                    asc = str(ascInt)
+                    print("Win ratio on ascension " + asc + ":", end=" ")
+                    printWinRatio(
+                        getWinRatio(asc, None, True), getWinRatio(asc, None, False)
                     )
-                    printWinRatio(won, lost)
-                    print()
-                    for ascInt in sorted(ascKeysInts):
-                        asc = str(ascInt)
-                        won = getWinRatio(asc, character, True)
-                        lost = getWinRatio(asc, character, False)
-                        if won + lost == 0:
+                print()
+                if len(characterKeys) > 1:
+                    winRatio = {}
+                    for character in characterKeys:
+                        won = getWinRatio(None, character, True)
+                        lost = getWinRatio(None, character, False)
+                        winRatio[character] = {"won": won, "lost": lost}
+                    for character in sorted(characterKeys, key=keyLambda):
+                        won = winRatio[character]["won"]
+                        lost = winRatio[character]["lost"]
+                        if won + lost <= CHARACTER_GAMES_THRESHOLD:
                             continue
                         print(
                             "Win ratio on character "
                             + character
-                            + " on ascension "
-                            + str(asc)
-                            + ":",
+                            + " on all ascensions:",
                             end=" ",
                         )
                         printWinRatio(won, lost)
-                    print()
+                        print()
+                        for ascInt in sorted(ascKeysInts):
+                            asc = str(ascInt)
+                            won = getWinRatio(asc, character, True)
+                            lost = getWinRatio(asc, character, False)
+                            if won + lost == 0:
+                                continue
+                            print(
+                                "Win ratio on character "
+                                + character
+                                + " on ascension "
+                                + str(asc)
+                                + ":",
+                                end=" ",
+                            )
+                            printWinRatio(won, lost)
+                        print()
 
-    with open("report/03_average_length_won.txt", "w") as f:
+    printWinRatioSortedBy(
+        "report/02_win_ratio_sorted_alphabetically.txt", lambda e: e[0]
+    )
+    printWinRatioSortedBy(
+        "report/03_win_ratio_sorted_by_most_played.txt",
+        lambda e: -(winRatio[e]["won"] + winRatio[e]["lost"]),
+    )
+    printWinRatioSortedBy(
+        "report/04_win_ratio_sorted_by_value.txt",
+        lambda e: -winRatio[e]["won"] / (winRatio[e]["won"] + winRatio[e]["lost"]),
+    )
+
+    with open("report/05_average_length_won.txt", "w") as f:
         with redirect_stdout(f):
             print("Average length of won runs on all ascensions:", end=" ")
             printAverageLength(getAverageLength(None, None, True))
@@ -737,7 +752,7 @@ try:
                     print()
             f.close()
 
-    with open("report/04_average_length_lost.txt", "w") as f:
+    with open("report/06_average_length_lost.txt", "w") as f:
         with redirect_stdout(f):
             print("Average length of lost runs on all ascensions:", end=" ")
             printAverageLength(getAverageLength(None, None, False))
@@ -792,7 +807,7 @@ try:
                     print()
             f.close()
 
-    with open("report/05_median_length_won.txt", "w") as f:
+    with open("report/07_median_length_won.txt", "w") as f:
         with redirect_stdout(f):
             print("Median length of won runs on all ascensions:", end=" ")
             median = getMedianLength(None, None, True)
@@ -848,7 +863,7 @@ try:
                     print()
             f.close()
 
-    with open("report/06_median_length_lost.txt", "w") as f:
+    with open("report/08_median_length_lost.txt", "w") as f:
         with redirect_stdout(f):
             print("Median length of lost runs on all ascensions:", end=" ")
             median = getMedianLength(None, None, False)
@@ -904,7 +919,7 @@ try:
                     print()
             f.close()
 
-    with open("report/07_card_choices.txt", "w") as f:
+    with open("report/09_card_choices.txt", "w") as f:
         with redirect_stdout(f):
             print("P = Picked")
             print("NP = Not Picked")
@@ -934,7 +949,7 @@ try:
                         )
                         printCardChoices(getCardChoices(asc, character))
 
-    with open("report/08_is_a_specific_card_in_deck_and_win_ratio.txt", "w") as f:
+    with open("report/10_is_a_specific_card_in_deck_and_win_ratio.txt", "w") as f:
         with redirect_stdout(f):
             # It doesn't really make sense to show it without specifying a character
             # print("Is a specific card in deck and win ratio on all ascensions:")
@@ -966,7 +981,7 @@ try:
                             getIsSpecificCardInDeckAndWinRatio(asc, character)
                         )
 
-    with open("report/09_amount_of_specific_cards_and_win_ratio.txt", "w") as f:
+    with open("report/11_amount_of_specific_cards_and_win_ratio.txt", "w") as f:
         with redirect_stdout(f):
             # It doesn't really make sense to show it without specifying a character
             # print("Amount of specific cards and win ratio on all ascensions:")
@@ -998,7 +1013,7 @@ try:
                             getAmountOfSpecificCardsAndWinRatio(asc, character)
                         )
 
-    with open("report/10_has_specific_relic_and_win_ratio.txt", "w") as f:
+    with open("report/12_has_specific_relic_and_win_ratio.txt", "w") as f:
         with redirect_stdout(f):
             print("Has a specific relic and win ratio on all ascensions:")
             printHasSpecificRelicAndWinRatio(getHasSpecificRelicAndWinRatio(None, None))
@@ -1033,7 +1048,7 @@ try:
                             getHasSpecificRelicAndWinRatio(asc, character)
                         )
 
-    with open("report/11_average_damage_taken.txt", "w") as f:
+    with open("report/13_average_damage_taken.txt", "w") as f:
         with redirect_stdout(f):
             print("Average damage taken on all ascensions:")
             printAverageDamageTaken(getAverageDamageTaken(None, None))
@@ -1060,7 +1075,7 @@ try:
                         )
                         printAverageDamageTaken(getAverageDamageTaken(asc, character))
 
-    with open("report/12_average_combat_length.txt", "w") as f:
+    with open("report/14_average_combat_length.txt", "w") as f:
         with redirect_stdout(f):
             print("Average combat length on all ascensions:")
             printAverageCombatLength(getAverageCombatLength(None, None))
@@ -1087,7 +1102,7 @@ try:
                         )
                         printAverageCombatLength(getAverageCombatLength(asc, character))
 
-    with open("report/13_killed_by.txt", "w") as f:
+    with open("report/15_killed_by.txt", "w") as f:
         with redirect_stdout(f):
             print("Killed by on all ascensions:")
             printKilledBy(getKilledBy(None, None))
@@ -1110,7 +1125,7 @@ try:
                         )
                         printKilledBy(getKilledBy(asc, character))
 
-    with open("report/14_hosts.txt", "w") as f:
+    with open("report/16_hosts.txt", "w") as f:
         with redirect_stdout(f):
             print("Hosts on all ascensions:")
             printHosts(getHosts(None, None))
@@ -1133,7 +1148,7 @@ try:
                         )
                         printHosts(getHosts(asc, character))
 
-    with open("report/15_language.txt", "w") as f:
+    with open("report/17_language.txt", "w") as f:
         with redirect_stdout(f):
             print("Language on all ascensions:")
             printLanguage(getLanguage(None, None))
