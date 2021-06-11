@@ -12,6 +12,8 @@ METRICS_PATH = "D:\\metrics_runs\\minty_runs"
 CHARACTER_CARD_PREFIX = ""
 RELIC_PREFIX = ""
 
+FIND_NEW_RUNS_TO_PROCESS = True
+PROCESS_RUNS = True
 SKIP_ENDLESS_RUNS = True
 AVERAGE_DAMAGE_TAKEN_COUNT_THRESHOLD = 5
 CARD_CHOICES_CARDS_THRESHOLD = 5
@@ -156,21 +158,21 @@ def printIsSpecificCardInDeckAndWinRatio(isSpecificCardInDeckAndWinRatio):
     print()
 
 
-def printAmountOfSpecificCardsAndWinRatio(amountOfSpecificCardsAndWinRatio):
+def printNumberOfSpecificCardsAndWinRatio(numberOfSpecificCardsAndWinRatio):
     for cardKey, cardValue in sorted(
-        amountOfSpecificCardsAndWinRatio.items(), key=lambda e: e[0]
+        numberOfSpecificCardsAndWinRatio.items(), key=lambda e: e[0]
     ):
         if not cardKey.startswith(CHARACTER_CARD_PREFIX):
             continue
-        for amountKey, amountValue in sorted(cardValue.items(), key=lambda e: e[0]):
-            won = amountValue["won"]
-            lost = amountValue["lost"]
+        for numberKey, numberValue in sorted(cardValue.items(), key=lambda e: e[0]):
+            won = numberValue["won"]
+            lost = numberValue["lost"]
             if won + lost < WIN_RATIO_CARDS_THRESHOLD:
                 continue
             print(
                 cardKey
                 + ", "
-                + str(amountKey)
+                + str(numberKey)
                 + ", W="
                 + str(won)
                 + ", L="
@@ -335,35 +337,35 @@ def getIsSpecificCardInDeckAndWinRatio(asc, character):
     return results
 
 
-def getAmountOfSpecificCardsAndWinRatio(asc, character):
+def getNumberOfSpecificCardsAndWinRatio(asc, character):
     cur.execute(
-        """SELECT card_id, amount, victory, count(*)
+        """SELECT card_id, number, victory, count(*)
         FROM 
 		(
-            SELECT card_id, victory, count(*) as amount
+            SELECT card_id, victory, count(*) as number
 		    FROM master_deck md 
             LEFT JOIN run r
             ON (md.run_file_path = r.file_path)
             WHERE status = 'PROCESSED' and (ascension = %(asc)s or %(asc)s = '') and (character = %(character)s or %(character)s = '')
 		    GROUP BY card_id, file_path, victory
 		) AS amd
-        GROUP BY card_id, amount, victory""",
+        GROUP BY card_id, number, victory""",
         {"asc": emptyStringIfNone(asc), "character": emptyStringIfNone(character)},
     )
     rows = cur.fetchall()
     results = {}
     for row in rows:
         cardId = row[0]
-        amount = row[1]
+        number = row[1]
         victory = row[2]
         if not cardId in results:
             results[cardId] = {}
-        if not amount in results[cardId]:
-            results[cardId][amount] = getNewEmptyWonAndLostDict()
+        if not number in results[cardId]:
+            results[cardId][number] = getNewEmptyWonAndLostDict()
         if victory:
-            results[cardId][amount]["won"] = row[3]
+            results[cardId][number]["won"] = row[3]
         else:
-            results[cardId][amount]["lost"] = row[3]
+            results[cardId][number]["lost"] = row[3]
     return results
 
 
@@ -478,117 +480,119 @@ try:
     conn = psycopg2.connect(database="metrics", user="postgres", password="secret")
     cur = conn.cursor()
 
-    for root, dirs, files in os.walk(METRICS_PATH):
-        for file in files:
-            absPath = path.join(root, file)
-            if path.isfile(absPath):
-                cur.execute(
-                    "INSERT INTO run(file_path, status) VALUES (%s, %s) ON CONFLICT (file_path) DO NOTHING",
-                    (absPath, "NEW"),
-                )
-                conn.commit()
+    if FIND_NEW_RUNS_TO_PROCESS:
+        for root, dirs, files in os.walk(METRICS_PATH):
+            for file in files:
+                absPath = path.join(root, file)
+                if path.isfile(absPath):
+                    cur.execute(
+                        "INSERT INTO run(file_path, status) VALUES (%s, %s) ON CONFLICT (file_path) DO NOTHING",
+                        (absPath, "NEW"),
+                    )
+                    conn.commit()
 
-    cur.execute("SELECT file_path FROM run WHERE status = 'NEW'")
-    rows = cur.fetchall()
-    for row in rows:
-        absPath = row[0]
-        try:
-            runJson = json.loads(open(absPath, "r", encoding="utf-8").read())
-            if runJson["event"]["is_endless"] and SKIP_ENDLESS_RUNS:
-                cur.execute(
-                    "UPDATE run SET status = %s, is_endless = %s where file_path = %s",
-                    ("SKIPPED", True, absPath),
-                )
-                conn.commit()
-                continue
-            if runJson["event"]["floor_reached"] <= 1:
-                cur.execute(
-                    "UPDATE run SET status = %s, left_too_early = %s where file_path = %s",
-                    ("SKIPPED", True, absPath),
-                )
-                conn.commit()
-                continue
-
-            character = runJson["event"]["character_chosen"]
-            asc = runJson["event"]["ascension_level"]
-            host = runJson["host"] if "host" in runJson else "unknown"
-            language = (
-                runJson["event"]["language"]
-                if "language" in runJson["event"]
-                else "unknown"
-            )
-            victory = runJson["event"]["victory"]
-            playTime = runJson["event"]["playtime"]
-
-            cur.execute(
-                "UPDATE run SET character = %s, ascension = %s, host = %s, language = %s, victory = %s, play_time = %s where file_path = %s",
-                (character, asc, host, language, victory, playTime, absPath),
-            )
-            conn.commit()
-
-            for damageTakenEntry in runJson["event"]["damage_taken"]:
-                if damageTakenEntry["damage"] >= 99999:
+    if PROCESS_RUNS:
+        cur.execute("SELECT file_path FROM run WHERE status = 'NEW'")
+        rows = cur.fetchall()
+        for row in rows:
+            absPath = row[0]
+            try:
+                runJson = json.loads(open(absPath, "r", encoding="utf-8").read())
+                if runJson["event"]["is_endless"] and SKIP_ENDLESS_RUNS:
+                    cur.execute(
+                        "UPDATE run SET status = %s, is_endless = %s where file_path = %s",
+                        ("SKIPPED", True, absPath),
+                    )
+                    conn.commit()
                     continue
-                if not "enemies" in damageTakenEntry:
+                if runJson["event"]["floor_reached"] <= 1:
+                    cur.execute(
+                        "UPDATE run SET status = %s, left_too_early = %s where file_path = %s",
+                        ("SKIPPED", True, absPath),
+                    )
+                    conn.commit()
                     continue
-                enemies = damageTakenEntry["enemies"]
-                damage = damageTakenEntry["damage"]
-                cur.execute(
-                    "INSERT INTO damage_taken(run_file_path, enemies, damage) VALUES (%s, %s, %s)",
-                    (absPath, enemies, damage),
-                )
-            conn.commit()
 
-            if "killed_by" in runJson["event"]:
-                enemyKilling = runJson["event"]["killed_by"]
+                character = runJson["event"]["character_chosen"]
+                asc = runJson["event"]["ascension_level"]
+                host = runJson["host"] if "host" in runJson else "unknown"
+                language = (
+                    runJson["event"]["language"]
+                    if "language" in runJson["event"]
+                    else "unknown"
+                )
+                victory = runJson["event"]["victory"]
+                playTime = runJson["event"]["playtime"]
+
                 cur.execute(
-                    "INSERT INTO killed_by(run_file_path, enemy_id) VALUES (%s, %s)",
-                    (absPath, enemyKilling),
+                    "UPDATE run SET character = %s, ascension = %s, host = %s, language = %s, victory = %s, play_time = %s where file_path = %s",
+                    (character, asc, host, language, victory, playTime, absPath),
                 )
                 conn.commit()
 
-            for cardChoice in runJson["event"]["card_choices"]:
-                cardPicked = cardChoice["picked"]
-                cur.execute(
-                    "INSERT INTO card_choice(run_file_path, card_id, picked) VALUES (%s, %s, %s)",
-                    (absPath, cardPicked, True),
-                )
-                for notPicked in cardChoice["not_picked"]:
+                for damageTakenEntry in runJson["event"]["damage_taken"]:
+                    if damageTakenEntry["damage"] >= 99999:
+                        continue
+                    if not "enemies" in damageTakenEntry:
+                        continue
+                    enemies = damageTakenEntry["enemies"]
+                    damage = damageTakenEntry["damage"]
+                    cur.execute(
+                        "INSERT INTO damage_taken(run_file_path, enemies, damage) VALUES (%s, %s, %s)",
+                        (absPath, enemies, damage),
+                    )
+                conn.commit()
+
+                if "killed_by" in runJson["event"]:
+                    enemyKilling = runJson["event"]["killed_by"]
+                    cur.execute(
+                        "INSERT INTO killed_by(run_file_path, enemy_id) VALUES (%s, %s)",
+                        (absPath, enemyKilling),
+                    )
+                    conn.commit()
+
+                for cardChoice in runJson["event"]["card_choices"]:
+                    cardPicked = cardChoice["picked"]
                     cur.execute(
                         "INSERT INTO card_choice(run_file_path, card_id, picked) VALUES (%s, %s, %s)",
-                        (absPath, notPicked, False),
+                        (absPath, cardPicked, True),
                     )
-            conn.commit()
+                    for notPicked in cardChoice["not_picked"]:
+                        cur.execute(
+                            "INSERT INTO card_choice(run_file_path, card_id, picked) VALUES (%s, %s, %s)",
+                            (absPath, notPicked, False),
+                        )
+                conn.commit()
 
-            masterDeck = runJson["event"]["master_deck"]
-            masterDeckGrouped = {}
-            for card in masterDeck:
+                masterDeck = runJson["event"]["master_deck"]
+                masterDeckGrouped = {}
+                for card in masterDeck:
+                    cur.execute(
+                        "INSERT INTO master_deck(run_file_path, card_id) VALUES (%s, %s)",
+                        (absPath, card),
+                    )
+                conn.commit()
+
+                relics = runJson["event"]["relics"]
+                for relicId in relics:
+                    cur.execute(
+                        "INSERT INTO relic(run_file_path, relic_id) VALUES (%s, %s)",
+                        (absPath, relicId),
+                    )
+                conn.commit()
+
                 cur.execute(
-                    "INSERT INTO master_deck(run_file_path, card_id) VALUES (%s, %s)",
-                    (absPath, card),
+                    "UPDATE run SET status = %s WHERE file_path = %s",
+                    ("PROCESSED", absPath),
                 )
-            conn.commit()
+                conn.commit()
 
-            relics = runJson["event"]["relics"]
-            for relicId in relics:
+            except Exception as e:
                 cur.execute(
-                    "INSERT INTO relic(run_file_path, relic_id) VALUES (%s, %s)",
-                    (absPath, relicId),
+                    "UPDATE run SET status = %s, error_message = %s WHERE file_path = %s",
+                    ("ERROR", traceback.format_exc(), absPath),
                 )
-            conn.commit()
-
-            cur.execute(
-                "UPDATE run SET status = %s WHERE file_path = %s",
-                ("PROCESSED", absPath),
-            )
-            conn.commit()
-
-        except Exception as e:
-            cur.execute(
-                "UPDATE run SET status = %s, error_message = %s WHERE file_path = %s",
-                ("ERROR", traceback.format_exc(), absPath),
-            )
-            conn.commit()
+                conn.commit()
 
     ascKeysInts = set()
     characterKeys = set()
@@ -981,36 +985,36 @@ try:
                             getIsSpecificCardInDeckAndWinRatio(asc, character)
                         )
 
-    with open("report/11_amount_of_specific_cards_and_win_ratio.txt", "w") as f:
+    with open("report/11_number_of_specific_cards_and_win_ratio.txt", "w") as f:
         with redirect_stdout(f):
             # It doesn't really make sense to show it without specifying a character
-            # print("Amount of specific cards and win ratio on all ascensions:")
-            # printAmountOfSpecificCardsAndWinRatio(getAmountOfSpecificCardsAndWinRatio(None, None))
+            # print("Number of specific cards and win ratio on all ascensions:")
+            # printNumberOfSpecificCardsAndWinRatio(getNumberOfSpecificCardsAndWinRatio(None, None))
             # for ascInt in onlyTheHighestAscension:
             #     asc = str(ascInt)
-            #     print("Amount of specific cards and win ratio on ascension " + str(asc) + ":")
-            #     printAmountOfSpecificCardsAndWinRatio(getAmountOfSpecificCardsAndWinRatio(asc, None))
+            #     print("Number of specific cards and win ratio on ascension " + str(asc) + ":")
+            #     printNumberOfSpecificCardsAndWinRatio(getNumberOfSpecificCardsAndWinRatio(asc, None))
             if len(characterKeys) > 1:
                 for character in sorted(characterKeys):
                     print(
-                        "Amount of specific cards and win ratio on character "
+                        "Number of specific cards and win ratio on character "
                         + character
                         + " on all ascensions:"
                     )
-                    printAmountOfSpecificCardsAndWinRatio(
-                        getAmountOfSpecificCardsAndWinRatio(None, character)
+                    printNumberOfSpecificCardsAndWinRatio(
+                        getNumberOfSpecificCardsAndWinRatio(None, character)
                     )
                     for ascInt in onlyTheHighestAscension:
                         asc = str(ascInt)
                         print(
-                            "Amount of specific cards and win ratio on character "
+                            "Number of specific cards and win ratio on character "
                             + character
                             + " on ascension "
                             + str(asc)
                             + ":"
                         )
-                        printAmountOfSpecificCardsAndWinRatio(
-                            getAmountOfSpecificCardsAndWinRatio(asc, character)
+                        printNumberOfSpecificCardsAndWinRatio(
+                            getNumberOfSpecificCardsAndWinRatio(asc, character)
                         )
 
     with open("report/12_has_specific_relic_and_win_ratio.txt", "w") as f:
