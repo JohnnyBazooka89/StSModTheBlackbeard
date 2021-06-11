@@ -68,7 +68,7 @@ def printMedianLength(averageLength):
 
 def printAverageDamageTaken(averageDamageTaken):
     for enemiesKey, enemiesValue in sorted(
-            averageDamageTaken.items(), key=lambda e: -e[1]["sum"] / e[1]["count"]
+        averageDamageTaken.items(), key=lambda e: -e[1]["sum"] / e[1]["count"]
     ):
         sum = enemiesValue["sum"]
         count = enemiesValue["count"]
@@ -87,7 +87,7 @@ def printAverageDamageTaken(averageDamageTaken):
 
 def printAverageCombatLength(averageCombatLength):
     for enemiesKey, enemiesValue in sorted(
-            averageCombatLength.items(), key=lambda e: -e[1]["sum"] / e[1]["count"]
+        averageCombatLength.items(), key=lambda e: -e[1]["sum"] / e[1]["count"]
     ):
         sum = enemiesValue["sum"]
         count = enemiesValue["count"]
@@ -110,8 +110,8 @@ def printKilledBy(killedBy):
 
 def printCardChoices(cardChoices):
     for key, value in sorted(
-            cardChoices.items(),
-            key=lambda e: -e[1]["picked"] / (e[1]["picked"] + e[1]["not_picked"]),
+        cardChoices.items(),
+        key=lambda e: -e[1]["picked"] / (e[1]["picked"] + e[1]["not_picked"]),
     ):
         if not key.startswith(CHARACTER_CARD_PREFIX):
             continue
@@ -134,8 +134,8 @@ def printCardChoices(cardChoices):
 
 def printIsSpecificCardInDeckAndWinRatio(isSpecificCardInDeckAndWinRatio):
     for cardKey, cardValue in sorted(
-            isSpecificCardInDeckAndWinRatio.items(),
-            key=lambda e: -e[1]["won"] / (e[1]["won"] + e[1]["lost"]),
+        isSpecificCardInDeckAndWinRatio.items(),
+        key=lambda e: -e[1]["won"] / (e[1]["won"] + e[1]["lost"]),
     ):
         if not cardKey.startswith(CHARACTER_CARD_PREFIX):
             continue
@@ -157,7 +157,7 @@ def printIsSpecificCardInDeckAndWinRatio(isSpecificCardInDeckAndWinRatio):
 
 def printAmountOfSpecificCardsAndWinRatio(amountOfSpecificCardsAndWinRatio):
     for cardKey, cardValue in sorted(
-            amountOfSpecificCardsAndWinRatio.items(), key=lambda e: e[0]
+        amountOfSpecificCardsAndWinRatio.items(), key=lambda e: e[0]
     ):
         if not cardKey.startswith(CHARACTER_CARD_PREFIX):
             continue
@@ -182,8 +182,8 @@ def printAmountOfSpecificCardsAndWinRatio(amountOfSpecificCardsAndWinRatio):
 
 def printHasSpecificRelicAndWinRatio(hasSpecificRelicAndWinRatio):
     for relicKey, relicValue in sorted(
-            hasSpecificRelicAndWinRatio.items(),
-            key=lambda e: -e[1]["won"] / (e[1]["won"] + e[1]["lost"]),
+        hasSpecificRelicAndWinRatio.items(),
+        key=lambda e: -e[1]["won"] / (e[1]["won"] + e[1]["lost"]),
     ):
         if not relicKey.startswith(RELIC_PREFIX):
             continue
@@ -651,9 +651,9 @@ try:
                     lost = getWinRatio(None, character, False)
                     winRatio[character] = {"won": won, "lost": lost}
                 for character in sorted(
-                        characterKeys,
-                        key=lambda e: -winRatio[e]["won"]
-                                      / (winRatio[e]["won"] + winRatio[e]["lost"]),
+                    characterKeys,
+                    key=lambda e: -winRatio[e]["won"]
+                    / (winRatio[e]["won"] + winRatio[e]["lost"]),
                 ):
                     won = winRatio[character]["won"]
                     lost = winRatio[character]["lost"]
@@ -704,10 +704,10 @@ try:
                 for character in characterKeys:
                     lengthDict[character] = getAverageLength(None, character, True)
                 for character in sorted(
-                        characterKeys,
-                        key=lambda e: -lengthDict[e]["sum"] / lengthDict[e]["count"]
-                        if lengthDict[e]["count"] != 0
-                        else 0,
+                    characterKeys,
+                    key=lambda e: -lengthDict[e]["sum"] / lengthDict[e]["count"]
+                    if lengthDict[e]["count"] != 0
+                    else 0,
                 ):
                     length = lengthDict[character]
                     if length["count"] <= CHARACTER_GAMES_THRESHOLD:
@@ -759,10 +759,10 @@ try:
                 for character in characterKeys:
                     lengthDict[character] = getAverageLength(None, character, False)
                 for character in sorted(
-                        characterKeys,
-                        key=lambda e: -lengthDict[e]["sum"] / lengthDict[e]["count"]
-                        if lengthDict[e]["count"] != 0
-                        else 0,
+                    characterKeys,
+                    key=lambda e: -lengthDict[e]["sum"] / lengthDict[e]["count"]
+                    if lengthDict[e]["count"] != 0
+                    else 0,
                 ):
                     length = lengthDict[character]
                     if length["count"] <= CHARACTER_GAMES_THRESHOLD:
@@ -815,10 +815,10 @@ try:
                 for character in characterKeys:
                     medianDict[character] = getMedianLength(None, character, True)
                 for character in sorted(
-                        characterKeys,
-                        key=lambda e: -medianDict[e]["median"]
-                        if medianDict[e]["count"] != 0
-                        else 0,
+                    characterKeys,
+                    key=lambda e: -medianDict[e]["median"]
+                    if medianDict[e]["count"] != 0
+                    else 0,
                 ):
                     median = medianDict[character]
                     if median["count"] <= CHARACTER_GAMES_THRESHOLD:
@@ -871,10 +871,10 @@ try:
                 for character in characterKeys:
                     medianDict[character] = getMedianLength(None, character, False)
                 for character in sorted(
-                        characterKeys,
-                        key=lambda e: -medianDict[e]["median"]
-                        if medianDict[e]["count"] != 0
-                        else 0,
+                    characterKeys,
+                    key=lambda e: -medianDict[e]["median"]
+                    if medianDict[e]["count"] != 0
+                    else 0,
                 ):
                     median = medianDict[character]
                     if median["count"] <= CHARACTER_GAMES_THRESHOLD:
