@@ -936,22 +936,20 @@ try:
             #     asc = str(ascInt)
             #     print("Card choices on ascension " + str(asc) + ":")
             #     printCardChoices(getCardChoices(asc, None))
-            if len(characterKeys) > 1:
-                for character in sorted(characterKeys):
+            # if len(characterKeys) > 1:
+            for character in sorted(characterKeys):
+                print("Card choices on character " + character + " on all ascensions:")
+                printCardChoices(getCardChoices(None, character))
+                for ascInt in onlyTheHighestAscension:
+                    asc = str(ascInt)
                     print(
-                        "Card choices on character " + character + " on all ascensions:"
+                        "Card choices on character "
+                        + character
+                        + " on ascension "
+                        + str(asc)
+                        + ":"
                     )
-                    printCardChoices(getCardChoices(None, character))
-                    for ascInt in onlyTheHighestAscension:
-                        asc = str(ascInt)
-                        print(
-                            "Card choices on character "
-                            + character
-                            + " on ascension "
-                            + str(asc)
-                            + ":"
-                        )
-                        printCardChoices(getCardChoices(asc, character))
+                    printCardChoices(getCardChoices(asc, character))
 
     with open("report/10_is_a_specific_card_in_deck_and_win_ratio.txt", "w") as f:
         with redirect_stdout(f):
@@ -962,28 +960,28 @@ try:
             #     asc = str(ascInt)
             #     print("Is a specific card in deck and win ratio and win ratio on ascension " + str(asc) + ":")
             #     printIsSpecificCardInDeckAndWinRatio(getIsSpecificCardInDeckAndWinRatio(asc, None))
-            if len(characterKeys) > 1:
-                for character in sorted(characterKeys):
+            # if len(characterKeys) > 1:
+            for character in sorted(characterKeys):
+                print(
+                    "Is a specific card in deck and win ratio and win ratio on character "
+                    + character
+                    + " on all ascensions:"
+                )
+                printIsSpecificCardInDeckAndWinRatio(
+                    getIsSpecificCardInDeckAndWinRatio(None, character)
+                )
+                for ascInt in onlyTheHighestAscension:
+                    asc = str(ascInt)
                     print(
                         "Is a specific card in deck and win ratio and win ratio on character "
                         + character
-                        + " on all ascensions:"
+                        + " on ascension "
+                        + str(asc)
+                        + ":"
                     )
                     printIsSpecificCardInDeckAndWinRatio(
-                        getIsSpecificCardInDeckAndWinRatio(None, character)
+                        getIsSpecificCardInDeckAndWinRatio(asc, character)
                     )
-                    for ascInt in onlyTheHighestAscension:
-                        asc = str(ascInt)
-                        print(
-                            "Is a specific card in deck and win ratio and win ratio on character "
-                            + character
-                            + " on ascension "
-                            + str(asc)
-                            + ":"
-                        )
-                        printIsSpecificCardInDeckAndWinRatio(
-                            getIsSpecificCardInDeckAndWinRatio(asc, character)
-                        )
 
     with open("report/11_number_of_specific_cards_and_win_ratio.txt", "w") as f:
         with redirect_stdout(f):
@@ -994,28 +992,28 @@ try:
             #     asc = str(ascInt)
             #     print("Number of specific cards and win ratio on ascension " + str(asc) + ":")
             #     printNumberOfSpecificCardsAndWinRatio(getNumberOfSpecificCardsAndWinRatio(asc, None))
-            if len(characterKeys) > 1:
-                for character in sorted(characterKeys):
+            # if len(characterKeys) > 1:
+            for character in sorted(characterKeys):
+                print(
+                    "Number of specific cards and win ratio on character "
+                    + character
+                    + " on all ascensions:"
+                )
+                printNumberOfSpecificCardsAndWinRatio(
+                    getNumberOfSpecificCardsAndWinRatio(None, character)
+                )
+                for ascInt in onlyTheHighestAscension:
+                    asc = str(ascInt)
                     print(
                         "Number of specific cards and win ratio on character "
                         + character
-                        + " on all ascensions:"
+                        + " on ascension "
+                        + str(asc)
+                        + ":"
                     )
                     printNumberOfSpecificCardsAndWinRatio(
-                        getNumberOfSpecificCardsAndWinRatio(None, character)
+                        getNumberOfSpecificCardsAndWinRatio(asc, character)
                     )
-                    for ascInt in onlyTheHighestAscension:
-                        asc = str(ascInt)
-                        print(
-                            "Number of specific cards and win ratio on character "
-                            + character
-                            + " on ascension "
-                            + str(asc)
-                            + ":"
-                        )
-                        printNumberOfSpecificCardsAndWinRatio(
-                            getNumberOfSpecificCardsAndWinRatio(asc, character)
-                        )
 
     with open("report/12_has_specific_relic_and_win_ratio.txt", "w") as f:
         with redirect_stdout(f):
