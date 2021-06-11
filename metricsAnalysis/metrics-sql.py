@@ -1015,7 +1015,7 @@ try:
                         getNumberOfSpecificCardsAndWinRatio(asc, character)
                     )
 
-    with open("report/12_has_specific_relic_and_win_ratio.txt", "w") as f:
+    with open("report/12_has_a_specific_relic_and_win_ratio.txt", "w") as f:
         with redirect_stdout(f):
             print("Has a specific relic and win ratio on all ascensions:")
             printHasSpecificRelicAndWinRatio(getHasSpecificRelicAndWinRatio(None, None))
