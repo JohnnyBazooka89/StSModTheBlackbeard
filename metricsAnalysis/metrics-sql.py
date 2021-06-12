@@ -525,11 +525,15 @@ try:
                 playTime = runJson["event"]["playtime"]
 
                 cur.execute(
-                    "UPDATE run SET character = %s, ascension = %s, host = %s, language = %s, victory = %s, play_time = %s where file_path = %s",
-                    (character, asc, host, language, victory, playTime, absPath),
+                    "UPDATE run SET character = %s, ascension = %s, host = %s, language = %s, victory = %s, play_time = %s, error_message = %s where file_path = %s",
+                    (character, asc, host, language, victory, playTime, '', absPath),
                 )
                 conn.commit()
 
+                cur.execute(
+                    "DELETE FROM damage_taken where run_file_path = %s",
+                    (absPath,),
+                )
                 for damageTakenEntry in runJson["event"]["damage_taken"]:
                     if damageTakenEntry["damage"] >= 99999:
                         continue
@@ -543,6 +547,10 @@ try:
                     )
                 conn.commit()
 
+                cur.execute(
+                    "DELETE FROM killed_by where run_file_path = %s",
+                    (absPath,),
+                )
                 if "killed_by" in runJson["event"]:
                     enemyKilling = runJson["event"]["killed_by"]
                     cur.execute(
@@ -551,6 +559,10 @@ try:
                     )
                     conn.commit()
 
+                cur.execute(
+                    "DELETE FROM card_choice where run_file_path = %s",
+                    (absPath,),
+                )
                 for cardChoice in runJson["event"]["card_choices"]:
                     cardPicked = cardChoice["picked"]
                     cur.execute(
@@ -564,6 +576,10 @@ try:
                         )
                 conn.commit()
 
+                cur.execute(
+                    "DELETE FROM master_deck where run_file_path = %s",
+                    (absPath,),
+                )
                 masterDeck = runJson["event"]["master_deck"]
                 masterDeckGrouped = {}
                 for card in masterDeck:
@@ -573,6 +589,10 @@ try:
                     )
                 conn.commit()
 
+                cur.execute(
+                    "DELETE FROM relic where run_file_path = %s",
+                    (absPath,),
+                )
                 relics = runJson["event"]["relics"]
                 for relicId in relics:
                     cur.execute(
