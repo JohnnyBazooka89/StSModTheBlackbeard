@@ -526,7 +526,7 @@ try:
 
                 cur.execute(
                     "UPDATE run SET character = %s, ascension = %s, host = %s, language = %s, victory = %s, play_time = %s, error_message = %s where file_path = %s",
-                    (character, asc, host, language, victory, playTime, '', absPath),
+                    (character, asc, host, language, victory, playTime, "", absPath),
                 )
                 conn.commit()
 
