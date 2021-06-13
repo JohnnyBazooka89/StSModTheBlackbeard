@@ -9,6 +9,7 @@ CREATE TABLE run(
 	host varchar,
 	language varchar,
 	victory bool,
+	neow_bonus varchar,
 	play_time int
 );
 

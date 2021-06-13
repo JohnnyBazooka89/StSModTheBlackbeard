@@ -39,9 +39,13 @@ def timeString(timeInSeconds):
 def winRatioString(won, lost):
     return str(
         "??.??%"
-        if (won + lost) == 0
+        if (won + lost == 0)
         else ("%.2f%%" % round(100 * won / (won + lost), 2))
     )
+
+
+def winRatioStringDifference(difference):
+    return str("%.2f%%" % round(100 * difference, 2))
 
 
 def printWinRatio(wonRuns, lostRuns):
@@ -204,6 +208,35 @@ def printHasSpecificRelicAndWinRatio(hasSpecificRelicAndWinRatio):
             + winRatioString(won, lost)
         )
     print()
+
+
+def printSwappedStarterRelic(swappedStarterRelic):
+    total = swappedStarterRelic["total"]
+    swapped = swappedStarterRelic["swapped"]
+    swappedAndWon = swappedStarterRelic["swappedAndWon"]
+    swappedAndLost = swappedStarterRelic["swappedAndLost"]
+    won = swappedStarterRelic["won"]
+    lost = swappedStarterRelic["lost"]
+    difference = swappedStarterRelic["difference"]
+    print(
+        "Swapped Ratio="
+        + winRatioString(swapped, total - swapped)
+        + ", "
+        + "Swapped="
+        + str(swapped)
+        + ", Total="
+        + str(total)
+        + ", Won="
+        + str(swappedAndWon)
+        + ", Lost="
+        + str(swappedAndLost)
+        + ", Win Ratio="
+        + winRatioString(swappedAndWon, swappedAndLost)
+        + ", General Win Ratio="
+        + winRatioString(won, lost)
+        + ", Difference="
+        + winRatioStringDifference(difference)
+    )
 
 
 def printHosts(hosts):
@@ -444,6 +477,35 @@ def getKilledBy(asc, character):
     return results
 
 
+def getSwappedStarterRelic(asc, character):
+    cur.execute(
+        """SELECT count(*), count(*) filter (where neow_bonus = 'BOSS_RELIC'), count(*) filter (where neow_bonus = 'BOSS_RELIC' and victory = true), count(*) filter (where neow_bonus = 'BOSS_RELIC' and victory = false), count(*) filter (where victory = true), count(*) filter (where victory = false)
+        FROM run r
+        WHERE status = 'PROCESSED' and (ascension = %(asc)s or %(asc)s = '') and (character = %(character)s or %(character)s = '')""",
+        {"asc": emptyStringIfNone(asc), "character": emptyStringIfNone(character)},
+    )
+    rows = cur.fetchall()
+    total = rows[0][0]
+    swapped = rows[0][1]
+    swappedAndWon = rows[0][2]
+    swappedAndLost = rows[0][3]
+    won = rows[0][4]
+    lost = rows[0][5]
+    return {
+        "total": total,
+        "swapped": swapped,
+        "swappedAndWon": swappedAndWon,
+        "swappedAndLost": swappedAndLost,
+        "won": won,
+        "lost": lost,
+        "difference": 0
+        if (swappedAndWon + swappedAndLost == 0) or (won + lost == 0)
+        else (
+            (swappedAndWon / (swappedAndWon + swappedAndLost)) - (won / (won + lost))
+        ),
+    }
+
+
 def getHosts(asc, character):
     cur.execute(
         """SELECT host, count(*)
@@ -523,10 +585,21 @@ try:
                 )
                 victory = runJson["event"]["victory"]
                 playTime = runJson["event"]["playtime"]
+                neowBonus = runJson["event"]["neow_bonus"]
 
                 cur.execute(
-                    "UPDATE run SET character = %s, ascension = %s, host = %s, language = %s, victory = %s, play_time = %s, error_message = %s where file_path = %s",
-                    (character, asc, host, language, victory, playTime, "", absPath),
+                    "UPDATE run SET character = %s, ascension = %s, host = %s, language = %s, victory = %s, play_time = %s, neow_bonus = %s, error_message = %s where file_path = %s",
+                    (
+                        character,
+                        asc,
+                        host,
+                        language,
+                        victory,
+                        playTime,
+                        neowBonus,
+                        "",
+                        absPath,
+                    ),
                 )
                 conn.commit()
 
@@ -658,7 +731,7 @@ try:
             print(str(exceptionRuns) + " runs threw an exception")
 
     def printWinRatioSortedBy(fileName, keyLambda):
-        global f, ascInt, asc, winRatio, character
+        global winRatio
         with open(fileName, "w") as f:
             with redirect_stdout(f):
                 print("Win ratio on all ascensions:", end=" ")
@@ -737,7 +810,6 @@ try:
                 )
                 printAverageLength(length)
             print()
-
             if len(characterKeys) > 1:
                 lengthDict = {}
                 for character in characterKeys:
@@ -792,7 +864,6 @@ try:
                 )
                 printAverageLength(length)
             print()
-
             if len(characterKeys) > 1:
                 lengthDict = {}
                 for character in characterKeys:
@@ -848,7 +919,6 @@ try:
                 )
                 printMedianLength(median)
             print()
-
             if len(characterKeys) > 1:
                 medianDict = {}
                 for character in characterKeys:
@@ -904,7 +974,6 @@ try:
                 )
                 printMedianLength(median)
             print()
-
             if len(characterKeys) > 1:
                 medianDict = {}
                 for character in characterKeys:
@@ -1147,7 +1216,67 @@ try:
                         )
                         printKilledBy(getKilledBy(asc, character))
 
-    with open("report/16_hosts.txt", "w") as f:
+    def printSwappedStarterRelicSortedBy(filename, keyLambda):
+        global swappedDict
+        with open(filename, "w") as f:
+            with redirect_stdout(f):
+                print("Swapped starter relic on all ascensions:", end=" ")
+                printSwappedStarterRelic(getSwappedStarterRelic(None, None))
+                print()
+                for ascInt in sorted(ascKeysInts):
+                    asc = str(ascInt)
+                    swapped = getSwappedStarterRelic(asc, None)
+                    if swapped["total"] <= CHARACTER_GAMES_THRESHOLD:
+                        continue
+                    print(
+                        "Swapped starter relic on ascension " + str(asc) + ":",
+                        end=" ",
+                    )
+                    printSwappedStarterRelic(swapped)
+                print()
+                if len(characterKeys) > 1:
+                    swappedDict = {}
+                    for character in characterKeys:
+                        swappedDict[character] = getSwappedStarterRelic(None, character)
+                    for character in sorted(characterKeys, key=keyLambda):
+                        swapped = swappedDict[character]
+                        if swapped["total"] <= CHARACTER_GAMES_THRESHOLD:
+                            continue
+                        print(
+                            "Swapped starter relic on character "
+                            + character
+                            + " on all ascensions:",
+                            end=" ",
+                        )
+                        printSwappedStarterRelic(swapped)
+                        print()
+                        for ascInt in sorted(ascKeysInts):
+                            asc = str(ascInt)
+                            swapped = getSwappedStarterRelic(asc, character)
+                            if swapped["total"] == 0:
+                                continue
+                            print(
+                                "Swapped starter relic on character "
+                                + character
+                                + " on ascension "
+                                + str(asc)
+                                + ":",
+                                end=" ",
+                            )
+                            printSwappedStarterRelic(swapped)
+                        print()
+                f.close()
+
+    printSwappedStarterRelicSortedBy(
+        "report/16_swapped_starter_relic_sorted_by_popularity.txt",
+        lambda e: -swappedDict[e]["swapped"] / swappedDict[e]["total"],
+    )
+    printSwappedStarterRelicSortedBy(
+        "report/17_swapped_starter_relic_sorted_by_difference.txt",
+        lambda e: -swappedDict[e]["difference"],
+    )
+
+    with open("report/18_hosts.txt", "w") as f:
         with redirect_stdout(f):
             print("Hosts on all ascensions:")
             printHosts(getHosts(None, None))
@@ -1170,7 +1299,7 @@ try:
                         )
                         printHosts(getHosts(asc, character))
 
-    with open("report/17_language.txt", "w") as f:
+    with open("report/19_language.txt", "w") as f:
         with redirect_stdout(f):
             print("Language on all ascensions:")
             printLanguage(getLanguage(None, None))
@@ -1196,6 +1325,7 @@ try:
 except Exception as e:
     print(traceback.format_exc())
     sys.exit(1)
+
 finally:
     if conn:
         conn.close()
