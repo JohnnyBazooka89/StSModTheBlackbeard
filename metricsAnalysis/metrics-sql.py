@@ -274,7 +274,7 @@ def getWinRatio(asc, character, victory):
 
 def getAverageLength(asc, character, victory):
     cur.execute(
-        """SELECT sum(play_time::int) FROM run 
+        """SELECT sum(play_time::int), count(*) FROM run 
         WHERE status = 'PROCESSED' and (ascension = %(asc)s or %(asc)s = '') and (character = %(character)s or %(character)s = '') AND victory = %(victory)s""",
         {
             "asc": emptyStringIfNone(asc),
@@ -282,17 +282,9 @@ def getAverageLength(asc, character, victory):
             "victory": victory,
         },
     )
-    sum = cur.fetchone()[0]
-    cur.execute(
-        """SELECT count(*) FROM run 
-        WHERE status = 'PROCESSED' and (ascension = %(asc)s or %(asc)s = '') and (character = %(character)s or %(character)s = '') AND victory = %(victory)s""",
-        {
-            "asc": emptyStringIfNone(asc),
-            "character": emptyStringIfNone(character),
-            "victory": victory,
-        },
-    )
-    count = cur.fetchone()[0]
+    row = cur.fetchone()
+    sum = row[0]
+    count = row[1]
     if not sum:
         sum = 0
     return {"sum": sum, "count": count}
@@ -300,7 +292,7 @@ def getAverageLength(asc, character, victory):
 
 def getMedianLength(asc, character, victory):
     cur.execute(
-        """SELECT percentile_cont(0.5) WITHIN GROUP (ORDER BY play_time) FROM run 
+        """SELECT percentile_cont(0.5) WITHIN GROUP (ORDER BY play_time), count(*) FROM run 
         WHERE status = 'PROCESSED' and (ascension = %(asc)s or %(asc)s = '') and (character = %(character)s or %(character)s = '') AND victory = %(victory)s""",
         {
             "asc": emptyStringIfNone(asc),
@@ -308,20 +300,30 @@ def getMedianLength(asc, character, victory):
             "victory": victory,
         },
     )
-    median = cur.fetchone()[0]
-    cur.execute(
-        """SELECT count(*) FROM run 
-        WHERE status = 'PROCESSED' and (ascension = %(asc)s or %(asc)s = '') and (character = %(character)s or %(character)s = '') AND victory = %(victory)s""",
-        {
-            "asc": emptyStringIfNone(asc),
-            "character": emptyStringIfNone(character),
-            "victory": victory,
-        },
-    )
-    count = cur.fetchone()[0]
+    row = cur.fetchone()
+    median = row[0]
+    count = row[1]
     if not median:
         median = 0
     return {"median": median, "count": count}
+
+
+def getAverageGoldGained(asc, character, victory):
+    cur.execute(
+        """SELECT sum(play_time::int), count(*) FROM run 
+        WHERE status = 'PROCESSED' and (ascension = %(asc)s or %(asc)s = '') and (character = %(character)s or %(character)s = '') AND victory = %(victory)s""",
+        {
+            "asc": emptyStringIfNone(asc),
+            "character": emptyStringIfNone(character),
+            "victory": victory,
+        },
+    )
+    row = cur.fetchone()
+    sum = row[0]
+    count = row[1]
+    if not sum:
+        sum = 0
+    return {"sum": sum, "count": count}
 
 
 def getCardChoices(asc, character):
@@ -376,14 +378,14 @@ def getNumberOfSpecificCardsAndWinRatio(asc, character):
     cur.execute(
         """SELECT card_id, number, victory, count(*)
         FROM 
-		(
+        (
             SELECT card_id, victory, count(*) as number
-		    FROM master_deck md 
+            FROM master_deck md 
             LEFT JOIN run r
             ON (md.run_file_path = r.file_path)
             WHERE status = 'PROCESSED' and (ascension = %(asc)s or %(asc)s = '') and (character = %(character)s or %(character)s = '')
-		    GROUP BY card_id, file_path, victory
-		) AS amd
+            GROUP BY card_id, file_path, victory
+        ) AS amd
         GROUP BY card_id, number, victory""",
         {"asc": emptyStringIfNone(asc), "character": emptyStringIfNone(character)},
     )
@@ -588,9 +590,34 @@ try:
                 victory = runJson["event"]["victory"]
                 playTime = runJson["event"]["playtime"]
                 neowBonus = runJson["event"]["neow_bonus"]
+                time = runJson["time"]
+                floor_reached = runJson["event"]["floor_reached"]
+                score = runJson["event"]["score"]
+                play_id = runJson["event"]["play_id"]
+                local_time = runJson["event"]["local_time"]
+                is_ascension_mode = runJson["event"]["is_ascension_mode"]
+                circlet_count = runJson["event"]["circlet_count"]
+                seed_played = runJson["event"]["seed_played"]
+                is_trial = runJson["event"]["is_trial"]
+                campfire_rested = runJson["event"]["campfire_rested"]
+                gold = runJson["event"]["gold"]
+                is_daily = runJson["event"]["is_daily"]
+                chose_seed = runJson["event"]["chose_seed"]
+                campfire_upgraded = runJson["event"]["campfire_upgraded"]
+                win_rate = runJson["event"]["win_rate"]
+                timestamp = runJson["event"]["timestamp"]
+                build_version = runJson["event"]["build_version"]
+                purchased_purges = runJson["event"]["purchased_purges"]
+                player_experience = runJson["event"]["player_experience"]
+                is_beta = runJson["event"]["is_beta"]
 
                 cur.execute(
-                    "UPDATE run SET character = %s, ascension = %s, host = %s, language = %s, victory = %s, play_time = %s, neow_bonus = %s, error_message = %s where file_path = %s",
+                    """UPDATE run SET character = %s, ascension = %s, host = %s, language = %s, victory = %s, 
+                    play_time = %s, neow_bonus = %s, time = %s, floor_reached = %s, score = %s, play_id = %s, 
+                    local_time = %s, is_ascension_mode = %s, circlet_count = %s, seed_played = %s, is_trial = %s,
+                    campfire_rested = %s, gold = %s, is_daily = %s, chose_seed = %s, campfire_upgraded = %s, 
+                    win_rate = %s, timestamp = %s, build_version = %s, purchased_purges = %s, player_experience = %s, 
+                    is_beta = %s, error_message = %s where file_path = %s""",
                     (
                         character,
                         asc,
@@ -599,6 +626,26 @@ try:
                         victory,
                         playTime,
                         neowBonus,
+                        time,
+                        floor_reached,
+                        score,
+                        play_id,
+                        local_time,
+                        is_ascension_mode,
+                        circlet_count,
+                        seed_played,
+                        is_trial,
+                        campfire_rested,
+                        gold,
+                        is_daily,
+                        chose_seed,
+                        campfire_upgraded,
+                        win_rate,
+                        timestamp,
+                        build_version,
+                        purchased_purges,
+                        player_experience,
+                        is_beta,
                         "",
                         absPath,
                     ),
@@ -621,7 +668,6 @@ try:
                         (absPath, enemies, damage),
                     )
                 conn.commit()
-
                 cur.execute(
                     "DELETE FROM killed_by where run_file_path = %s",
                     (absPath,),
@@ -633,7 +679,6 @@ try:
                         (absPath, enemyKilling),
                     )
                     conn.commit()
-
                 cur.execute(
                     "DELETE FROM card_choice where run_file_path = %s",
                     (absPath,),
@@ -650,7 +695,6 @@ try:
                             (absPath, notPicked, False),
                         )
                 conn.commit()
-
                 cur.execute(
                     "DELETE FROM master_deck where run_file_path = %s",
                     (absPath,),
@@ -663,7 +707,6 @@ try:
                         (absPath, card),
                     )
                 conn.commit()
-
                 cur.execute(
                     "DELETE FROM relic where run_file_path = %s",
                     (absPath,),
@@ -795,220 +838,150 @@ try:
         "report/04_win_ratio_sorted_by_value.txt",
         lambda e: -winRatio[e]["won"] / (winRatio[e]["won"] + winRatio[e]["lost"]),
     )
-    with open("report/05_average_length_won.txt", "w") as f:
-        with redirect_stdout(f):
-            print("Average length of won runs on all ascensions:", end=" ")
-            printAverageLength(getAverageLength(None, None, True))
-            print()
-            for ascInt in sorted(ascKeysInts):
-                asc = str(ascInt)
-                length = getAverageLength(asc, None, True)
-                if length["count"] <= CHARACTER_GAMES_THRESHOLD:
-                    continue
+
+    def printAverageLengthForRuns(fileName, isVictory, runsString):
+        with open(fileName, "w") as f:
+            with redirect_stdout(f):
                 print(
-                    "Average length of won runs on ascension " + str(asc) + ":",
+                    "Average length of " + runsString + " runs on all ascensions:",
                     end=" ",
                 )
-                printAverageLength(length)
-            print()
-            if len(characterKeys) > 1:
-                lengthDict = {}
-                for character in characterKeys:
-                    lengthDict[character] = getAverageLength(None, character, True)
-                for character in sorted(
-                    characterKeys,
-                    key=lambda e: -lengthDict[e]["sum"] / lengthDict[e]["count"]
-                    if lengthDict[e]["count"] != 0
-                    else 0,
-                ):
-                    length = lengthDict[character]
+                printAverageLength(getAverageLength(None, None, isVictory))
+                print()
+                for ascInt in sorted(ascKeysInts):
+                    asc = str(ascInt)
+                    length = getAverageLength(asc, None, isVictory)
                     if length["count"] <= CHARACTER_GAMES_THRESHOLD:
                         continue
                     print(
-                        "Average length of won runs on character "
-                        + character
-                        + " on all ascensions:",
+                        "Average length of "
+                        + runsString
+                        + " runs on ascension "
+                        + str(asc)
+                        + ":",
                         end=" ",
                     )
                     printAverageLength(length)
-                    print()
-                    for ascInt in sorted(ascKeysInts):
-                        asc = str(ascInt)
-                        length = getAverageLength(asc, character, True)
-                        if length["count"] == 0:
+                print()
+                if len(characterKeys) > 1:
+                    lengthDict = {}
+                    for character in characterKeys:
+                        lengthDict[character] = getAverageLength(
+                            None, character, isVictory
+                        )
+                    for character in sorted(
+                        characterKeys,
+                        key=lambda e: -lengthDict[e]["sum"] / lengthDict[e]["count"]
+                        if lengthDict[e]["count"] != 0
+                        else 0,
+                    ):
+                        length = lengthDict[character]
+                        if length["count"] <= CHARACTER_GAMES_THRESHOLD:
                             continue
                         print(
-                            "Average length of won runs on character "
+                            "Average length of "
+                            + runsString
+                            + " runs on character "
                             + character
-                            + " on ascension "
-                            + str(asc)
-                            + ":",
+                            + " on all ascensions:",
                             end=" ",
                         )
                         printAverageLength(length)
-                    print()
-            f.close()
-    with open("report/06_average_length_lost.txt", "w") as f:
-        with redirect_stdout(f):
-            print("Average length of lost runs on all ascensions:", end=" ")
-            printAverageLength(getAverageLength(None, None, False))
-            print()
-            for ascInt in sorted(ascKeysInts):
-                asc = str(ascInt)
-                length = getAverageLength(asc, None, False)
-                if length["count"] <= CHARACTER_GAMES_THRESHOLD:
-                    continue
+                        print()
+                        for ascInt in sorted(ascKeysInts):
+                            asc = str(ascInt)
+                            length = getAverageLength(asc, character, isVictory)
+                            if length["count"] == 0:
+                                continue
+                            print(
+                                "Average length of "
+                                + runsString
+                                + " runs on character "
+                                + character
+                                + " on ascension "
+                                + str(asc)
+                                + ":",
+                                end=" ",
+                            )
+                            printAverageLength(length)
+                        print()
+                f.close()
+
+    printAverageLengthForRuns("report/05_average_length_won.txt", True, "won")
+    printAverageLengthForRuns("report/06_average_length_lost.txt", False, "lost")
+
+    def printMedianLengthForRuns(fileName, isVictory, runsString):
+        with open(fileName, "w") as f:
+            with redirect_stdout(f):
                 print(
-                    "Average length of lost runs on ascension " + str(asc) + ":",
+                    "Median length of " + runsString + " runs on all ascensions:",
                     end=" ",
                 )
-                printAverageLength(length)
-            print()
-            if len(characterKeys) > 1:
-                lengthDict = {}
-                for character in characterKeys:
-                    lengthDict[character] = getAverageLength(None, character, False)
-                for character in sorted(
-                    characterKeys,
-                    key=lambda e: -lengthDict[e]["sum"] / lengthDict[e]["count"]
-                    if lengthDict[e]["count"] != 0
-                    else 0,
-                ):
-                    length = lengthDict[character]
-                    if length["count"] <= CHARACTER_GAMES_THRESHOLD:
-                        continue
-                    print(
-                        "Average length of lost runs on character "
-                        + character
-                        + " on all ascensions:",
-                        end=" ",
-                    )
-                    printAverageLength(length)
-                    print()
-                    for ascInt in sorted(ascKeysInts):
-                        asc = str(ascInt)
-                        length = getAverageLength(asc, character, False)
-                        if length["count"] == 0:
-                            continue
-                        print(
-                            "Average length of lost runs on character "
-                            + character
-                            + " on ascension "
-                            + str(asc)
-                            + ":",
-                            end=" ",
-                        )
-                        printAverageLength(length)
-                    print()
-            f.close()
-    with open("report/07_median_length_won.txt", "w") as f:
-        with redirect_stdout(f):
-            print("Median length of won runs on all ascensions:", end=" ")
-            median = getMedianLength(None, None, True)
-            printMedianLength(median)
-            print()
-            for ascInt in sorted(ascKeysInts):
-                asc = str(ascInt)
-                median = getMedianLength(asc, None, True)
-                if median["count"] <= CHARACTER_GAMES_THRESHOLD:
-                    continue
-                print(
-                    "Median length of won runs on ascension " + str(asc) + ":",
-                    end=" ",
-                )
+                median = getMedianLength(None, None, isVictory)
                 printMedianLength(median)
-            print()
-            if len(characterKeys) > 1:
-                medianDict = {}
-                for character in characterKeys:
-                    medianDict[character] = getMedianLength(None, character, True)
-                for character in sorted(
-                    characterKeys,
-                    key=lambda e: -medianDict[e]["median"]
-                    if medianDict[e]["count"] != 0
-                    else 0,
-                ):
-                    median = medianDict[character]
+                print()
+                for ascInt in sorted(ascKeysInts):
+                    asc = str(ascInt)
+                    median = getMedianLength(asc, None, isVictory)
                     if median["count"] <= CHARACTER_GAMES_THRESHOLD:
                         continue
                     print(
-                        "Median length of won runs on character "
-                        + character
-                        + " on all ascensions:",
+                        "Median length of "
+                        + runsString
+                        + " runs on ascension "
+                        + str(asc)
+                        + ":",
                         end=" ",
                     )
                     printMedianLength(median)
-                    print()
-                    for ascInt in sorted(ascKeysInts):
-                        asc = str(ascInt)
-                        median = getMedianLength(asc, character, True)
-                        if median["count"] == 0:
+                print()
+                if len(characterKeys) > 1:
+                    medianDict = {}
+                    for character in characterKeys:
+                        medianDict[character] = getMedianLength(
+                            None, character, isVictory
+                        )
+                    for character in sorted(
+                        characterKeys,
+                        key=lambda e: -medianDict[e]["median"]
+                        if medianDict[e]["count"] != 0
+                        else 0,
+                    ):
+                        median = medianDict[character]
+                        if median["count"] <= CHARACTER_GAMES_THRESHOLD:
                             continue
                         print(
-                            "Median length of won runs on character "
+                            "Median length of "
+                            + runsString
+                            + " runs on character "
                             + character
-                            + " on ascension "
-                            + str(asc)
-                            + ":",
+                            + " on all ascensions:",
                             end=" ",
                         )
                         printMedianLength(median)
-                    print()
-            f.close()
-    with open("report/08_median_length_lost.txt", "w") as f:
-        with redirect_stdout(f):
-            print("Median length of lost runs on all ascensions:", end=" ")
-            median = getMedianLength(None, None, False)
-            printMedianLength(median)
-            print()
-            for ascInt in sorted(ascKeysInts):
-                asc = str(ascInt)
-                median = getMedianLength(asc, None, False)
-                if median["count"] <= CHARACTER_GAMES_THRESHOLD:
-                    continue
-                print(
-                    "Median length of lost runs on ascension " + str(asc) + ":",
-                    end=" ",
-                )
-                printMedianLength(median)
-            print()
-            if len(characterKeys) > 1:
-                medianDict = {}
-                for character in characterKeys:
-                    medianDict[character] = getMedianLength(None, character, False)
-                for character in sorted(
-                    characterKeys,
-                    key=lambda e: -medianDict[e]["median"]
-                    if medianDict[e]["count"] != 0
-                    else 0,
-                ):
-                    median = medianDict[character]
-                    if median["count"] <= CHARACTER_GAMES_THRESHOLD:
-                        continue
-                    print(
-                        "Median length of lost runs on character "
-                        + character
-                        + " on all ascensions:",
-                        end=" ",
-                    )
-                    printMedianLength(median)
-                    print()
-                    for ascInt in sorted(ascKeysInts):
-                        asc = str(ascInt)
-                        median = getMedianLength(asc, character, False)
-                        if median["count"] == 0:
-                            continue
-                        print(
-                            "Median length of lost runs on character "
-                            + character
-                            + " on ascension "
-                            + str(asc)
-                            + ":",
-                            end=" ",
-                        )
-                        printMedianLength(median)
-                    print()
-            f.close()
+                        print()
+                        for ascInt in sorted(ascKeysInts):
+                            asc = str(ascInt)
+                            median = getMedianLength(asc, character, isVictory)
+                            if median["count"] == 0:
+                                continue
+                            print(
+                                "Median length of "
+                                + runsString
+                                + " runs on character "
+                                + character
+                                + " on ascension "
+                                + str(asc)
+                                + ":",
+                                end=" ",
+                            )
+                            printMedianLength(median)
+                        print()
+                f.close()
+
+    printMedianLengthForRuns("report/07_median_length_won.txt", True, "won")
+    printMedianLengthForRuns("report/08_median_length_lost.txt", False, "lost")
+
     with open("report/09_card_choices.txt", "w") as f:
         with redirect_stdout(f):
             print("P = Picked")
@@ -1036,6 +1009,7 @@ try:
                         + ":"
                     )
                     printCardChoices(getCardChoices(asc, character))
+
     with open("report/10_is_a_specific_card_in_deck_and_win_ratio.txt", "w") as f:
         with redirect_stdout(f):
             # It doesn't really make sense to show it without specifying a character
@@ -1067,6 +1041,7 @@ try:
                     printIsSpecificCardInDeckAndWinRatio(
                         getIsSpecificCardInDeckAndWinRatio(asc, character)
                     )
+
     with open("report/11_number_of_specific_cards_and_win_ratio.txt", "w") as f:
         with redirect_stdout(f):
             # It doesn't really make sense to show it without specifying a character
@@ -1098,6 +1073,7 @@ try:
                     printNumberOfSpecificCardsAndWinRatio(
                         getNumberOfSpecificCardsAndWinRatio(asc, character)
                     )
+
     with open("report/12_has_a_specific_relic_and_win_ratio.txt", "w") as f:
         with redirect_stdout(f):
             print("Has a specific relic and win ratio on all ascensions:")
@@ -1132,6 +1108,7 @@ try:
                         printHasSpecificRelicAndWinRatio(
                             getHasSpecificRelicAndWinRatio(asc, character)
                         )
+
     with open("report/13_average_damage_taken.txt", "w") as f:
         with redirect_stdout(f):
             print("Average damage taken on all ascensions:")
@@ -1158,6 +1135,7 @@ try:
                             + ":"
                         )
                         printAverageDamageTaken(getAverageDamageTaken(asc, character))
+
     with open("report/14_average_combat_length.txt", "w") as f:
         with redirect_stdout(f):
             print("Average combat length on all ascensions:")
@@ -1184,6 +1162,7 @@ try:
                             + ":"
                         )
                         printAverageCombatLength(getAverageCombatLength(asc, character))
+
     with open("report/15_killed_by.txt", "w") as f:
         with redirect_stdout(f):
             print("Killed by on all ascensions:")

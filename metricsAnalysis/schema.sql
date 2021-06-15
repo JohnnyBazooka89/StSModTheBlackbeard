@@ -10,7 +10,27 @@ CREATE TABLE run(
 	language varchar,
 	victory bool,
 	neow_bonus varchar,
-	play_time int
+	play_time int,
+	time int,
+	floor_reached int,
+	score int,
+	play_id varchar,
+	local_time varchar,
+	is_ascension_mode bool,
+	circlet_count int,
+	seed_played varchar,
+	is_trial bool,
+	campfire_rested int,
+    gold int,
+    is_daily bool,
+    chose_seed bool,
+    campfire_upgraded int,
+    win_rate double precision,
+    timestamp int,
+    build_version varchar,
+    purchased_purges int,
+    player_experience int,
+    is_beta bool
 );
 
 CREATE TABLE damage_taken(
