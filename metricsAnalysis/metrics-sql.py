@@ -23,6 +23,208 @@ WIN_RATIO_CARDS_THRESHOLD = 5
 WIN_RATIO_RELICS_THRESHOLD = 5
 HOSTS_THRESHOLD = 5
 
+BASE_GAME_STARTER_RELICS = [
+    "Burning Blood",
+    "Cracked Core",
+    "PureWater",
+    "Ring of the Snake",
+]
+BASE_GAME_COMMON_RELICS = [
+    "Akabeko",
+    "Anchor",
+    "Ancient Tea Set",
+    "Art of War",
+    "Bag of Marbles",
+    "Bag of Preparation",
+    "Blood Vial",
+    "Boot",
+    "Bronze Scales",
+    "Centennial Puzzle",
+    "CeramicFish",
+    "Damaru",
+    "DataDisk",
+    "Dream Catcher",
+    "Happy Flower",
+    "Juzu Bracelet",
+    "Lantern",
+    "MawBank",
+    "MealTicket",
+    "Nunchaku",
+    "Oddly Smooth Stone",
+    "Omamori",
+    "Orichalcum",
+    "Pen Nib",
+    "Potion Belt",
+    "PreservedInsect",
+    "Red Skull",
+    "Regal Pillow",
+    "Smiling Mask",
+    "Snake Skull",
+    "Strawberry",
+    "Tiny Chest",
+    "Toy Ornithopter",
+    "Vajra",
+    "War Paint",
+    "Whetstone",
+]
+BASE_GAME_UNCOMMON_RELICS = [
+    "Blue Candle",
+    "Bottled Flame",
+    "Bottled Lightning",
+    "Bottled Tornado",
+    "Cables",
+    "Darkstone Periapt",
+    "Eternal Feather",
+    "Frozen Egg 2",
+    "Gremlin Horn",
+    "HornCleat",
+    "InkBottle",
+    "Kunai",
+    "Letter Opener",
+    "Matryoshka",
+    "Meat on the Bone",
+    "Mercury Hourglass",
+    "Molten Egg 2",
+    "Mummified Hand",
+    "Ninja Scroll",
+    "Ornamental Fan",
+    "Pantograph",
+    "Paper Crane",
+    "Paper Frog",
+    "Pear",
+    "Question Card",
+    "Self Forming Clay",
+    "Shuriken",
+    "Singing Bowl",
+    "StrikeDummy",
+    "Sundial",
+    "Symbiotic Virus",
+    "TeardropLocket",
+    "The Courier",
+    "Toxic Egg 2",
+    "White Beast Statue",
+    "Yang",
+]
+BASE_GAME_RARE_RELICS = [
+    "Bird Faced Urn",
+    "Calipers",
+    "CaptainsWheel",
+    "Champion Belt",
+    "Charon's Ashes",
+    "CloakClasp",
+    "Dead Branch",
+    "Du-Vu Doll",
+    "Emotion Chip",
+    "FossilizedHelix",
+    "Gambling Chip",
+    "Ginger",
+    "Girya",
+    "GoldenEye",
+    "Ice Cream",
+    "Incense Burner",
+    "Lizard Tail",
+    "Magic Flower",
+    "Mango",
+    "Old Coin",
+    "Peace Pipe",
+    "Pocketwatch",
+    "Prayer Wheel",
+    "Shovel",
+    "StoneCalendar",
+    "The Specimen",
+    "Thread and Needle",
+    "Tingsha",
+    "Torii",
+    "Tough Bandages",
+    "TungstenRod",
+    "Turnip",
+    "Unceasing Top",
+    "WingedGreaves",
+]
+BASE_GAME_BOSS_RELICS = [
+    "Astrolabe",
+    "Black Blood",
+    "Black Star",
+    "Busted Crown",
+    "Calling Bell",
+    "Coffee Dripper",
+    "Cursed Key",
+    "Ectoplasm",
+    "Empty Cage",
+    "FrozenCore",
+    "Fusion Hammer",
+    "HolyWater",
+    "HoveringKite",
+    "Inserter",
+    "Mark of Pain",
+    "Nuclear Battery",
+    "Pandora's Box",
+    "Philosopher's Stone",
+    "Ring of the Serpent",
+    "Runic Cube",
+    "Runic Dome",
+    "Runic Pyramid",
+    "SacredBark",
+    "SlaversCollar",
+    "Snecko Eye",
+    "Sozu",
+    "Tiny House",
+    "Velvet Choker",
+    "VioletLotus",
+    "WristBlade",
+]
+BASE_GAME_SHOP_RELICS = [
+    "Brimstone",
+    "Cauldron",
+    "Chemical X",
+    "ClockworkSouvenir",
+    "DollysMirror",
+    "Frozen Eye",
+    "HandDrill",
+    "Lee's Waffle",
+    "Medical Kit",
+    "Melange",
+    "Membership Card",
+    "OrangePellets",
+    "Orrery",
+    "PrismaticShard",
+    "Runic Capacitor",
+    "Sling",
+    "Strange Spoon",
+    "TheAbacus",
+    "Toolbox",
+    "TwistedFunnel",
+]
+BASE_GAME_SPECIAL_RELICS = [
+    "Bloody Idol",
+    "CultistMask",
+    "Enchiridion",
+    "FaceOfCleric",
+    "Golden Idol",
+    "GremlinMask",
+    "Mark of the Bloom",
+    "MutagenicStrength",
+    "Necronomicon",
+    "NeowsBlessing",
+    "Nilry's Codex",
+    "Nloth's Gift",
+    "NlothsMask",
+    "Odd Mushroom",
+    "Red Mask",
+    "Spirit Poop",
+    "SsserpentHead",
+    "WarpedTongs",
+]
+BASE_GAME_RELICS = (
+    BASE_GAME_STARTER_RELICS
+    + BASE_GAME_COMMON_RELICS
+    + BASE_GAME_UNCOMMON_RELICS
+    + BASE_GAME_RARE_RELICS
+    + BASE_GAME_BOSS_RELICS
+    + BASE_GAME_SHOP_RELICS
+    + BASE_GAME_SPECIAL_RELICS
+)
+
 
 def getNewEmptyWonAndLostDict():
     return {"won": 0, "lost": 0}
@@ -189,26 +391,64 @@ def printNumberOfSpecificCardsAndWinRatio(numberOfSpecificCardsAndWinRatio):
     print()
 
 
-def printHasSpecificRelicAndWinRatio(hasSpecificRelicAndWinRatio):
-    for relicKey, relicValue in sorted(
-        hasSpecificRelicAndWinRatio.items(),
-        key=lambda e: -e[1]["won"] / (e[1]["won"] + e[1]["lost"]),
-    ):
-        if not relicKey.startswith(RELIC_PREFIX):
-            continue
-        won = relicValue["won"]
-        lost = relicValue["lost"]
-        if won + lost < WIN_RATIO_RELICS_THRESHOLD:
-            continue
-        print(
-            relicKey
-            + ", W="
-            + str(won)
-            + ", L="
-            + str(lost)
-            + ", R="
-            + winRatioString(won, lost)
-        )
+def printHasSpecificRelicAndWinRatio(
+    hasSpecificRelicAndWinRatio, onlyBaseGameRelics, sortByPrefix
+):
+    def relicPrefix(relicId):
+        array = relicId.split(":")
+        if len(array) == 1:
+            return "unknown"
+        else:
+            return array[0]
+
+    prefixes = set()
+    if sortByPrefix and not onlyBaseGameRelics:
+        for relicKey, relicValue in hasSpecificRelicAndWinRatio.items():
+            prefixes.add(relicPrefix(relicKey))
+    else:
+        prefixes = ("unknown",)
+
+    if onlyBaseGameRelics:
+        rarities = {
+            "Starter": BASE_GAME_STARTER_RELICS,
+            "Common": BASE_GAME_COMMON_RELICS,
+            "Uncommon": BASE_GAME_UNCOMMON_RELICS,
+            "Rare": BASE_GAME_RARE_RELICS,
+            "Boss": BASE_GAME_BOSS_RELICS,
+            "Shop": BASE_GAME_SHOP_RELICS,
+            "Special": BASE_GAME_SPECIAL_RELICS,
+        }
+    else:
+        rarities = {"unknown": []}
+
+    for prefix in sorted(prefixes):
+        for rarityKey, rarityList in rarities.items():
+            if rarityKey != "unknown":
+                print()
+                print(rarityKey)
+            for relicKey, relicValue in sorted(
+                hasSpecificRelicAndWinRatio.items(),
+                key=lambda e: -e[1]["won"] / (e[1]["won"] + e[1]["lost"]),
+            ):
+                if not relicKey.startswith(RELIC_PREFIX):
+                    continue
+                if sortByPrefix and relicPrefix(relicKey) != prefix:
+                    continue
+                if onlyBaseGameRelics and relicKey not in rarityList:
+                    continue
+                won = relicValue["won"]
+                lost = relicValue["lost"]
+                if won + lost < WIN_RATIO_RELICS_THRESHOLD:
+                    continue
+                print(
+                    relicKey
+                    + ", W="
+                    + str(won)
+                    + ", L="
+                    + str(lost)
+                    + ", R="
+                    + winRatioString(won, lost)
+                )
     print()
 
 
@@ -1074,42 +1314,74 @@ try:
                         getNumberOfSpecificCardsAndWinRatio(asc, character)
                     )
 
-    with open("report/12_has_a_specific_relic_and_win_ratio.txt", "w") as f:
-        with redirect_stdout(f):
-            print("Has a specific relic and win ratio on all ascensions:")
-            printHasSpecificRelicAndWinRatio(getHasSpecificRelicAndWinRatio(None, None))
-            for ascInt in onlyTheHighestAscension:
-                asc = str(ascInt)
+    def printHasSpecificRelicAndWinRatioForRuns(fileName, sortByPrefix):
+        with open(fileName, "w") as f:
+            with redirect_stdout(f):
                 print(
-                    "Has a specific relic and win ratio on ascension " + str(asc) + ":"
+                    "Has a specific relic and win ratio on all ascensions (only base game relics):"
                 )
                 printHasSpecificRelicAndWinRatio(
-                    getHasSpecificRelicAndWinRatio(asc, None)
+                    getHasSpecificRelicAndWinRatio(None, None), True, sortByPrefix
                 )
-            if len(characterKeys) > 1:
-                for character in sorted(characterKeys):
+                for ascInt in onlyTheHighestAscension:
+                    asc = str(ascInt)
                     print(
-                        "Has a specific relic and win ratio and win ratio on character "
-                        + character
-                        + " on all ascensions:"
+                        "Has a specific relic and win ratio on ascension "
+                        + str(asc)
+                        + " (only base game relics):"
                     )
                     printHasSpecificRelicAndWinRatio(
-                        getHasSpecificRelicAndWinRatio(None, character)
+                        getHasSpecificRelicAndWinRatio(asc, None), True, sortByPrefix
                     )
-                    for ascInt in onlyTheHighestAscension:
-                        asc = str(ascInt)
+                print("Has a specific relic and win ratio on all ascensions:")
+                printHasSpecificRelicAndWinRatio(
+                    getHasSpecificRelicAndWinRatio(None, None), False, sortByPrefix
+                )
+                for ascInt in onlyTheHighestAscension:
+                    asc = str(ascInt)
+                    print(
+                        "Has a specific relic and win ratio on ascension "
+                        + str(asc)
+                        + ":"
+                    )
+                    printHasSpecificRelicAndWinRatio(
+                        getHasSpecificRelicAndWinRatio(asc, None), False, sortByPrefix
+                    )
+                if len(characterKeys) > 1:
+                    for character in sorted(characterKeys):
                         print(
                             "Has a specific relic and win ratio and win ratio on character "
                             + character
-                            + " on ascension "
-                            + str(asc)
-                            + ":"
+                            + " on all ascensions:"
                         )
                         printHasSpecificRelicAndWinRatio(
-                            getHasSpecificRelicAndWinRatio(asc, character)
+                            getHasSpecificRelicAndWinRatio(None, character),
+                            False,
+                            sortByPrefix,
                         )
+                        for ascInt in onlyTheHighestAscension:
+                            asc = str(ascInt)
+                            print(
+                                "Has a specific relic and win ratio and win ratio on character "
+                                + character
+                                + " on ascension "
+                                + str(asc)
+                                + ":"
+                            )
+                            printHasSpecificRelicAndWinRatio(
+                                getHasSpecificRelicAndWinRatio(asc, character),
+                                False,
+                                sortByPrefix,
+                            )
 
-    with open("report/13_average_damage_taken.txt", "w") as f:
+    printHasSpecificRelicAndWinRatioForRuns(
+        "report/12_has_a_specific_relic_and_win_ratio.txt", False
+    )
+    printHasSpecificRelicAndWinRatioForRuns(
+        "report/13_has_a_specific_relic_and_win_ratio_sorted_by_prefix.txt", True
+    )
+
+    with open("report/14_average_damage_taken.txt", "w") as f:
         with redirect_stdout(f):
             print("Average damage taken on all ascensions:")
             printAverageDamageTaken(getAverageDamageTaken(None, None))
@@ -1136,7 +1408,7 @@ try:
                         )
                         printAverageDamageTaken(getAverageDamageTaken(asc, character))
 
-    with open("report/14_average_combat_length.txt", "w") as f:
+    with open("report/15_average_combat_length.txt", "w") as f:
         with redirect_stdout(f):
             print("Average combat length on all ascensions:")
             printAverageCombatLength(getAverageCombatLength(None, None))
@@ -1163,7 +1435,7 @@ try:
                         )
                         printAverageCombatLength(getAverageCombatLength(asc, character))
 
-    with open("report/15_killed_by.txt", "w") as f:
+    with open("report/16_killed_by.txt", "w") as f:
         with redirect_stdout(f):
             print("Killed by on all ascensions:")
             printKilledBy(getKilledBy(None, None))
@@ -1238,17 +1510,17 @@ try:
                 f.close()
 
     printSwappedStarterRelicSortedBy(
-        "report/16_swapped_starter_relic_sorted_by_popularity.txt",
+        "report/17_swapped_starter_relic_sorted_by_popularity.txt",
         lambda e: -swappedDict[e]["swapped"] / swappedDict[e]["total"],
     )
     printSwappedStarterRelicSortedBy(
-        "report/17_swapped_starter_relic_sorted_by_difference.txt",
+        "report/18_swapped_starter_relic_sorted_by_difference.txt",
         lambda e: -swappedDict[e]["difference"]
         if swappedDict[e]["difference"] is not None
         else 0,
     )
 
-    with open("report/18_hosts.txt", "w") as f:
+    with open("report/19_hosts.txt", "w") as f:
         with redirect_stdout(f):
             print("Hosts on all ascensions:")
             printHosts(getHosts(None, None))
@@ -1271,7 +1543,7 @@ try:
                         )
                         printHosts(getHosts(asc, character))
 
-    with open("report/19_language.txt", "w") as f:
+    with open("report/20_language.txt", "w") as f:
         with redirect_stdout(f):
             print("Language on all ascensions:")
             printLanguage(getLanguage(None, None))
