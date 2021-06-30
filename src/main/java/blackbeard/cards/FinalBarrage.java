@@ -4,6 +4,7 @@ import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.ShootAnythingAction;
 import blackbeard.enums.CardColorEnum;
 import blackbeard.enums.CardTagsEnum;
+import blackbeard.utils.CombatUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -13,7 +14,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
 import java.util.ArrayList;
 
@@ -34,7 +34,7 @@ public class FinalBarrage extends AbstractBlackbeardCard {
         this.baseMagicNumber = this.magicNumber = ATTACK_PER_CANNONBALL;
         this.baseDamage = this.damage = 0;
 
-        if (CardCrawlGame.isInARun() && (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT)) {
+        if (CombatUtils.isIndeedWithoutADoubtInCombat()) {
             setBaseDamageAndUpdateDescription();
         }
     }

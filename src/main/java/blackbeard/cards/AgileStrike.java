@@ -3,6 +3,7 @@ package blackbeard.cards;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.enums.CardColorEnum;
 import blackbeard.orbs.AbstractWeaponOrb;
+import blackbeard.utils.CombatUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -12,7 +13,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
-import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
 import java.util.Iterator;
 
@@ -33,7 +33,7 @@ public class AgileStrike extends AbstractBlackbeardCard {
 
         this.tags.add(CardTags.STRIKE);
 
-        if (CardCrawlGame.isInARun() && (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT)) {
+        if (CombatUtils.isIndeedWithoutADoubtInCombat()) {
             reduceCostToZeroForATurnIfNeeded();
         }
     }
