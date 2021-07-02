@@ -53,7 +53,7 @@ The mod is available in:
 1. Thanks to the [developers](https://www.megacrit.com/) of **SlayTheSpire** for making such a good game.
 2. Thanks to the creators of ModTheSpire and BaseMod for creating great tools for modding.
 3. Thanks to the community of [Pixabay](https://pixabay.com) for many great, free images that I used for this mod. 
-4. Thanks to [Jorbs](https://www.twitch.tv/joibs) for great and educational Slay the Spire streams.
+4. Thanks to [Jorbs](https://www.twitch.tv/jorbs) for great and educational Slay the Spire streams.
 
 ## Other Mods ##
 - Other mods can be found on [Slay the Spire official workshop](https://steamcommunity.com/app/646570/workshop/).
