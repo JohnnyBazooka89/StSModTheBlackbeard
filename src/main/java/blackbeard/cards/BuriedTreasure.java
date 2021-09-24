@@ -13,7 +13,7 @@ public class BuriedTreasure extends AbstractBlackbeardCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    private static final int COST = 0;
+    private static final int COST = 1;
     private static final int GOLD_TO_GAIN = 15;
     private static final int UPGRADE_PLUS_GOLD_TO_GAIN = 5;
 
