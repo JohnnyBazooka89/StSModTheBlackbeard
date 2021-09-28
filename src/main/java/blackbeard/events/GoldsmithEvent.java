@@ -1,5 +1,6 @@
 package blackbeard.events;
 
+import basemod.eventUtil.util.Condition;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.cards.BlackbeardDefend;
 import blackbeard.cards.BlackbeardStrike;
@@ -29,31 +30,23 @@ public class GoldsmithEvent extends AbstractImageEvent {
     private static int GOLD_COST = 50;
     private boolean hasStrike;
     private boolean hasDefend;
-    private boolean hasEnoughGold;
-    private boolean canGildStrike;
-    private boolean canGildDefend;
     private AbstractCard goldenStrike;
     private AbstractCard goldenDefense;
 
-    private enum CurScreen {CHOICE, RESULT;}
+    private enum CurScreen {CHOICE, RESULT}
 
     public GoldsmithEvent() {
         super(NAME, DESCRIPTIONS[0], TheBlackbeardMod.getEventImagePath(EVENT_ID));
         setCards();
-        if (!this.hasEnoughGold) {
-            this.imageEventText.setDialogOption(OPTIONS[4], true);
-            this.imageEventText.setDialogOption(OPTIONS[4], true);
+        if (this.hasStrike) {
+            this.imageEventText.setDialogOption(getStrikeOptionText(), goldenStrike);
         } else {
-            if (this.hasStrike) {
-                this.imageEventText.setDialogOption(getStrikeOptionText(), goldenStrike);
-            } else {
-                this.imageEventText.setDialogOption(OPTIONS[5], true);
-            }
-            if (this.hasDefend) {
-                this.imageEventText.setDialogOption(getDefendOptionText(), goldenDefense);
-            } else {
-                this.imageEventText.setDialogOption(OPTIONS[6], true);
-            }
+            this.imageEventText.setDialogOption(OPTIONS[5], true);
+        }
+        if (this.hasDefend) {
+            this.imageEventText.setDialogOption(getDefendOptionText(), goldenDefense);
+        } else {
+            this.imageEventText.setDialogOption(OPTIONS[6], true);
         }
         this.imageEventText.setDialogOption(OPTIONS[7]);
     }
@@ -67,7 +60,6 @@ public class GoldsmithEvent extends AbstractImageEvent {
     }
 
     private void setCards() {
-        this.hasEnoughGold = AbstractDungeon.player.gold >= GOLD_COST;
         this.hasStrike = CardHelper.hasCardWithID(BlackbeardStrike.ID);
         this.hasDefend = CardHelper.hasCardWithID(BlackbeardDefend.ID);
         this.goldenStrike = new GoldenStrike();
@@ -119,6 +111,10 @@ public class GoldsmithEvent extends AbstractImageEvent {
             AbstractDungeon.topLevelEffectsQueue.add(new ShowCardAndObtainEffect(
                     newCard, Settings.WIDTH * 0.5F, Settings.HEIGHT / 2.0F, false));
         }
+    }
+
+    public static Condition getCanBeEncounteredCondition() {
+        return () -> (CardHelper.hasCardWithID(BlackbeardStrike.ID) || CardHelper.hasCardWithID(BlackbeardDefend.ID)) && (AbstractDungeon.player.gold >= GOLD_COST);
     }
 
 }

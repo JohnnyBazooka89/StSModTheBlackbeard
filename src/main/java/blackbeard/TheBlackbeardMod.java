@@ -229,7 +229,12 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         //Events
         BaseMod.addEvent(BlackbeardSsssserpentEvent.ID, BlackbeardSsssserpentEvent.class, Exordium.ID);
         BaseMod.addEvent(BlackbeardVampiresEvent.ID, BlackbeardVampiresEvent.class, TheCity.ID);
-        BaseMod.addEvent(GoldsmithEvent.EVENT_ID, GoldsmithEvent.class, Exordium.ID);
+        BaseMod.addEvent(new AddEventParams
+                .Builder(GoldsmithEvent.EVENT_ID, GoldsmithEvent.class)
+                .dungeonID(Exordium.ID)
+                .bonusCondition(GoldsmithEvent.getCanBeEncounteredCondition())
+                .create()
+        );
         BaseMod.addEvent(new AddEventParams
                 .Builder(ShipwreckEvent.EVENT_ID, ShipwreckEvent.class)
                 .dungeonID(TheCity.ID)
