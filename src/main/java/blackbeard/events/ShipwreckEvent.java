@@ -1,5 +1,6 @@
 package blackbeard.events;
 
+import basemod.eventUtil.util.Condition;
 import blackbeard.TheBlackbeardMod;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -28,7 +29,7 @@ public class ShipwreckEvent extends AbstractImageEvent {
     private AbstractRelic hornCleat;
     private AbstractRelic captainsWheel;
 
-    private enum CurScreen {CHOICE, RESULT;}
+    private enum CurScreen {CHOICE, RESULT}
 
     public ShipwreckEvent() {
         super(NAME, DESCRIPTIONS[0], TheBlackbeardMod.getEventImagePath(EVENT_ID));
@@ -87,6 +88,10 @@ public class ShipwreckEvent extends AbstractImageEvent {
 
     private void takeDamage() {
         AbstractDungeon.player.damage(new DamageInfo(AbstractDungeon.player, this.hpCost, DamageInfo.DamageType.HP_LOSS));
+    }
+
+    public static Condition getCanBeEncounteredCondition() {
+        return () -> !AbstractDungeon.player.hasRelic(Anchor.ID) || !AbstractDungeon.player.hasRelic(HornCleat.ID) || !AbstractDungeon.player.hasRelic(CaptainsWheel.ID);
     }
 
 }

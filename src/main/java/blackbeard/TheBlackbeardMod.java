@@ -4,6 +4,7 @@ import basemod.BaseMod;
 import basemod.ModLabeledToggleButton;
 import basemod.ModPanel;
 import basemod.ReflectionHacks;
+import basemod.eventUtil.AddEventParams;
 import basemod.interfaces.*;
 import blackbeard.cards.*;
 import blackbeard.characters.TheBlackbeard;
@@ -229,7 +230,12 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addEvent(BlackbeardSsssserpentEvent.ID, BlackbeardSsssserpentEvent.class, Exordium.ID);
         BaseMod.addEvent(BlackbeardVampiresEvent.ID, BlackbeardVampiresEvent.class, TheCity.ID);
         BaseMod.addEvent(GoldsmithEvent.EVENT_ID, GoldsmithEvent.class, Exordium.ID);
-        BaseMod.addEvent(ShipwreckEvent.EVENT_ID, ShipwreckEvent.class, TheCity.ID);
+        BaseMod.addEvent(new AddEventParams
+                .Builder(ShipwreckEvent.EVENT_ID, ShipwreckEvent.class)
+                .dungeonID(TheCity.ID)
+                .bonusCondition(ShipwreckEvent.getCanBeEncounteredCondition())
+                .create()
+        );
 
         //Potions
         Color rumLiquidColor = new Color(211 / 255.0F, 102 / 255.0F, 0, 1);
