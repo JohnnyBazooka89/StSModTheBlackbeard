@@ -88,7 +88,7 @@ public class LoadTheGoldenCannons extends CustomRelic {
         if (CardCrawlGame.isInARun()) {
             Keyword goldenCannonballKeyword = TheBlackbeardMod.keywords.get(TheBlackbeardMod.GOLDEN_CANNONBALL_KEYWORD);
             for (PowerTip tip : this.tips) {
-                if (tip.header.equalsIgnoreCase(goldenCannonballKeyword.PROPER_NAME)) {
+                if (tip != null && goldenCannonballKeyword.PROPER_NAME.equalsIgnoreCase(tip.header)) {
                     tip.body = tip.body + TheBlackbeard.goldGainedThisRunStrings.TEXT[0] + GoldenCardsUtils.getBlackbeardGoldGained() / 50 + TheBlackbeard.goldGainedThisRunStrings.TEXT[1] + TheBlackbeard.goldGainedThisRunStrings.TEXT[2] + GoldenCardsUtils.getBlackbeardGoldGained() + TheBlackbeard.goldGainedThisRunStrings.TEXT[3];
                 }
             }
