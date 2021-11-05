@@ -21,7 +21,7 @@ for language in languages:
 
         for key in englishJson.keys():
             if key not in otherLanguageJson:
-                print ('Found key {0} without value'.format(key))
+                print ('Found key {0} without translation'.format(key))
 
         for key in otherLanguageJson.keys():
             if key not in englishJson:

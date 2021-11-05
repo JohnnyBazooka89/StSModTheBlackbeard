@@ -109,7 +109,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     private static final String SIMPLIFIED_CHINESE_LANGUAGE_FOLDER = "zhs";
 
     //Keywords
-    public static Map<String, Keyword> keywords = new HashMap<>();
+    public static Map<String, Keyword> blackbeardKeywords = new HashMap<>();
     public static final String WEAPON_KEYWORD = "blackbeard:WeaponKeyword";
     public static final String RESISTANCE_KEYWORD = "blackbeard:ResistanceKeyword";
     public static final String GOLDEN_CANNONBALL_KEYWORD = "blackbeard:GoldenCannonball";
@@ -463,7 +463,8 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         Type typeToken = new TypeToken<Map<String, Keyword>>() {
         }.getType();
 
-        keywords = gson.fromJson(keywordStrings, typeToken);
+        Map<String, Keyword> keywords = gson.fromJson(keywordStrings, typeToken);
+        blackbeardKeywords.putAll(keywords);
 
         keywords.forEach((k, v) -> {
             if (v.PROPER_NAME != null) {

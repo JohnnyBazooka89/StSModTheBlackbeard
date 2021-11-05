@@ -33,7 +33,7 @@ public class RumPotion extends CustomPotion {
         this.description = DESCRIPTIONS[0] + this.potency + DESCRIPTIONS[1];
         this.tips.clear();
         this.tips.add(new PowerTip(this.name, this.description));
-        Keyword resistanceKeyword = TheBlackbeardMod.keywords.get(TheBlackbeardMod.RESISTANCE_KEYWORD);
+        Keyword resistanceKeyword = TheBlackbeardMod.blackbeardKeywords.get(TheBlackbeardMod.RESISTANCE_KEYWORD);
         this.tips.add(new PowerTip(TipHelper.capitalize(resistanceKeyword.NAMES[0]), resistanceKeyword.DESCRIPTION));
     }
 
