@@ -7,30 +7,12 @@
     ],
     "DESCRIPTION": "Kiedykolwiek zagrasz kartę Ataku, #b1 pkt. Wytrzymałości Broni jest używany, aby zwiększyć obrażenia tej karty o siłę Ataku Broni. Możesz wyposażyć się maksymalnie w #b10 Broni."
   },
-  "blackbeard:CannonballKeyword": {
-    "NAMES": [
-      "kula",
-      "kulę",
-      "kuli",
-      "kule",
-      "kul"
-    ],
-    "DESCRIPTION": "Karta Ataku, która kosztuje #b0 energii, zadaje #b6 #b(8) pkt. obrażeń #bi jest #ywykluczana po zagraniu."
-  },
   "blackbeard:ResistanceKeyword": {
     "NAMES": [
       "odporność",
       "odporności"
     ],
     "DESCRIPTION": "Otrzymujesz mniej pkt. obrażeń od ataków przeciwników. (Zamiary przeciwników pokazują rzeczywiste nadchodzące obrażenia, z Odpornością wziętą pod uwagę.) Odporność może być ujemna."
-  },
-  "blackbeard:GraveKeyword": {
-    "PROPER_NAME": "Zakopanie",
-    "NAMES": [
-      "zakopanie",
-      "zakopana"
-    ],
-    "DESCRIPTION": "Na początku walki, ta karta trafia do stosu kart odrzuconych."
   },
   "blackbeard:BleedKeyword": {
     "PROPER_NAME": "Krwawienie",
@@ -55,13 +37,5 @@
       "zardzewiałych cierni"
     ],
     "DESCRIPTION": "Kiedy jesteś atakowany, zadaj obrażenia atakującemu przeciwnikowi i zmniejsz ilość Zardzewiałych cierni o #b1."
-  },
-  "blackbeard:GoldenCannonball": {
-    "PROPER_NAME": "Złota kula",
-    "NAMES": [
-      "złota kula",
-      "złotą kulę"
-    ],
-    "DESCRIPTION": "Karta Ataku, która kosztuje #b0 energii, zadaje obrażenia równe NL 2% szt. #yZłota zdobytych w tej wyprawie i jest #ywykluczana po zagraniu."
   }
 }

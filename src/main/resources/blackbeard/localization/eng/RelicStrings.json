@@ -108,7 +108,7 @@
     "NAME": "Load the Golden Cannons",
     "FLAVOR": "Is it even worth to shoot all these golden cannonballs?!?",
     "DESCRIPTIONS": [
-      "Replaces #yLoad #ythe #yCannons. At the start of each combat, and then every #b4 turns, add a #yblackbeard:Golden Cannonball into your hand."
+      "Replaces #yLoad #ythe #yCannons. At the start of each combat, and then every #b4 turns, add a #yGolden #yCannonball into your hand."
     ]
   }
 }

@@ -1,17 +1,19 @@
 package blackbeard.patches;
 
 import blackbeard.interfaces.IGoldenCard;
+import blackbeard.interfaces.IGoldenRelic;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.screens.CardRewardScreen;
 
-public class GoldenCardsFixPatches {
+public class GoldenCardsAndRelicsFixPatches {
 
     @SpirePatch(clz = AbstractPlayer.class, method = "gainGold")
-    public static class GoldenCardsFixAbstractPlayerPatch {
+    public static class GoldenCardsAndRelicsFixAbstractPlayerPatch {
 
         public static void Postfix(AbstractPlayer abstractPlayer, int amount) {
             refreshGoldenCardsInCardGroup(abstractPlayer.masterDeck);
@@ -32,6 +34,8 @@ public class GoldenCardsFixPatches {
             refreshGoldenCardsInCardGroup(AbstractDungeon.curseCardPool);
             refreshGoldenCardsInCardGroup(AbstractDungeon.rareCardPool);
             refreshGoldenCardsInCardGroup(AbstractDungeon.uncommonCardPool);
+
+            refreshGoldenRelics();
         }
 
         private static void refreshGoldenCardsInCardGroup(CardGroup cardGroup) {
@@ -43,6 +47,14 @@ public class GoldenCardsFixPatches {
             }
         }
 
+        private static void refreshGoldenRelics() {
+            for (AbstractRelic relic : AbstractDungeon.player.relics) {
+                if (relic instanceof IGoldenRelic) {
+                    IGoldenRelic goldenRelic = (IGoldenRelic) relic;
+                    goldenRelic.updateGoldenValues();
+                }
+            }
+        }
     }
 
     @SpirePatch(clz = CardRewardScreen.class, method = "update")

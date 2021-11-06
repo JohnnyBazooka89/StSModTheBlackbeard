@@ -14,6 +14,14 @@
       "Yo, ho, ho! NL Wesołych Świąt!"
     ]
   },
+  "blackbeard:CaptainAbeEncounter": {
+    "TEXT": [
+      "Arr, to moje terytorium!",
+      "Yarr harr! Zasmakuj mojego kordelasa!",
+      "Skarb Iglicy będzie mój, kolego!",
+      "W tej Iglicy może być tylko jeden kapitan."
+    ]
+  },
   "blackbeard:MaximumWeaponsReached": {
     "TEXT": [
       "Nie mogę trzymać więcej niż #r10 Broni!"

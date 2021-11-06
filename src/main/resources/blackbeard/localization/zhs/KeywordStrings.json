@@ -6,13 +6,6 @@
     ],
     "DESCRIPTION": "每当你打出一张攻击牌，消耗你的最右边的武器1耐久度，这张牌额外造成等于该武器的攻击力的伤害。你最多可以同时装备 #b10 把武器。"
   },
-  "blackbeard:CannonballKeyword": {
-    "NAMES": [
-      "炮弹",
-      "炮弹"
-    ],
-    "DESCRIPTION": "炮弹是会消耗的 #b0 耗能攻击牌，它们造成 #b6 #b(8) 点伤害。"
-  },
   "blackbeard:ResistanceKeyword": {
     "NAMES": [
       "抵抗"
@@ -39,12 +32,5 @@
       "生锈的荆棘"
     ],
     "DESCRIPTION": "受到攻击时，对攻击者造成反伤，然后生锈的荆棘减少 #b1 层。"
-  },
-  "blackbeard:GoldenCannonball": {
-    "PROPER_NAME": "黄金炮弹",
-    "NAMES": [
-      "黄金炮弹"
-    ],
-    "DESCRIPTION": "炮弹是会消耗的 #b0 耗能攻击牌，它们造成等于本局游戏中所获得 #y金币 的2%的伤害。"
   }
 }

@@ -6,13 +6,6 @@
     ],
     "DESCRIPTION": "Whenever you play an attack card, one Durability of your rightmost Weapon is used and card's damage is increased by Weapon's Attack. You can equip a maximum of #b10 Weapons."
   },
-  "blackbeard:CannonballKeyword": {
-    "NAMES": [
-      "cannonball",
-      "cannonballs"
-    ],
-    "DESCRIPTION": "Cannonballs are #b0 cost attacks that deal #b6 #b(8) damage and exhaust."
-  },
   "blackbeard:ResistanceKeyword": {
     "NAMES": [
       "resistance"
@@ -39,12 +32,5 @@
       "rusty thorns"
     ],
     "DESCRIPTION": "When attacked, deals damage back and reduces Rusty Thorns by #b1."
-  },
-  "blackbeard:GoldenCannonball": {
-    "PROPER_NAME": "Golden Cannonball",
-    "NAMES": [
-      "golden cannonball"
-    ],
-    "DESCRIPTION": "Golden Cannonballs are #b0 cost attacks that deal damage equal to 2% of #yGold gained this run and exhaust."
   }
 }

@@ -108,7 +108,7 @@
     "NAME": "Załadowanie złotych dział",
     "FLAVOR": "Czy naprawdę warto strzelać tymi złotymi kulami?!?",
     "DESCRIPTIONS": [
-      "Zastępuje #yZaładowanie #ydział. Na początku każdej walki, a następnie co #b4 tury, dodaj #yblackbeard:Złotą kulę do ręki."
+      "Zastępuje #yZaładowanie #ydział. Na początku każdej walki, a następnie co #b4 tury, dodaj #yZłotą #ykulę do ręki."
     ]
   }
 }

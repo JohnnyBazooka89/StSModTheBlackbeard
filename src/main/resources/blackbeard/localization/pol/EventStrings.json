@@ -26,5 +26,46 @@
     "DESCRIPTIONS": [
       "#y<Dawno, #ydawno #ytemu #yw #ymałej #ytawernie, #ygdzieś #ypośrodku #yniczego> NL - @Barman!@ Daj mi swój najmocniejszy rum!!! NL - Najmocniejszy rum w tej tawernie? Jesteś pewny? Znałem tylko jednego człowieka, który potrafił to wypić... był niesamowitym piratem... największym piratem wszechczasów... NL - Hahaha. Ten człowiek to mit, a ty mówisz, że go znałeś? ~Jesteś~ ~śmieszny.~ NL - On naprawdę istniał i mam na to dowód. Spójrz na tę złotą monetę, którą mi zapłacił... on miał 10000 takich monet. Kochał złoto, nawet bardziej niż rum z tej tawerny... NL - 10000 złotych monet? To gdzie on teraz jest? I gdzie są te jego skarby? NL - Wciąż chciał więcej... Nigdy nie powinien był zawrzeć umowy z tym mówiącym wielorybem... NL - Czekaj, co? ~Mówiący...~ ~wieloryb?...~"
     ]
+  },
+  "blackbeard:GoldsmithEvent": {
+    "NAME": "Złotnik",
+    "DESCRIPTIONS": [
+      "Podczas przemierzania Exordium, zauważyłeś dziwnie wyglądającego mężczyznę ze złotym młotkiem. NL NL - ~Cześć!~ Jestem złotnikiem! Czy wiesz, że złoto z tej iglicy może być użyte do ozłocenia twoich kart? Może spróbujesz ze swoim Uderzeniem lub Obroną? NL NL Nie jesteś pewny, co do tego pomysłu, ale przecież nie zaszkodzi spróbować.",
+      "- ~Wszystko~ ~gotowe!~ - powiedział złotnik. NL NL Zauważyłeś, że jedno z twoich Uderzeń jest teraz Złotym Uderzenim. Podziękowawszy złotnikowi, wyruszasz w dalszą drogę.",
+      "- ~Wszystko~ ~gotowe!~ - powiedział złotnil. NL NL Zauważyłeś, że jedna z twoich Obron jest teraz Złotą Obroną. Podziękowawszy złotnikowi, wyruszasz w dalszą drogę.",
+      "Nie przyjąłeś oferty. Wyruszasz w dalszą drogę."
+    ],
+    "OPTIONS": [
+      "[Ozłoć Uderzenie] #rUtrać #r",
+      " #rZłota. #gZamień #gjedno #gze #gswoich #gUderzeń #gw #gZłote #gUderzenie.",
+      "[Ozłoć Obronę] #rUtrać #r",
+      " #rZłota. #gZamień #gjedną #gze #gswoich #gObron #gw #gZłotą #gObronę.",
+      "[Zablokowane] Wymagania: Co najmniej 50 Złota.",
+      "[Zablokowane] Wymagania: Co najmniej jedno Uderzenie.",
+      "[Zablokowane] Wymagania: Co najmniej jedna Obrona.",
+      "[Odmów]",
+      "[Wyrusz w dalszą drogę]"
+    ]
+  },
+  "blackbeard:ShipwreckEvent": {
+    "NAME": "Wrak statku",
+    "DESCRIPTIONS": [
+      "Podróżując przez Miasto, zauważyłeś #ydoki, których nigdy wcześniej nie widziałeś. Podszedłszy bliżej, odkryłeś dziwnie wyglądający #ywrak #ystatku, w którym mogą być użyteczne przedmioty. Możesz zdecydować się przeszukać którąś z części statku, ale z drugiej strony boisz się, że takie przeszukiwanie może być #rwyczerpujące.",
+      "Znalazłeś Kotwicę, która może ci się przydać w dalszej wędrówce. Jesteś zmęczony, ale szczęśliwy.",
+      "Znalazłeś Knagę rożkową, która może ci się przydać w dalszej wędrówce. Jesteś zmęczony, ale szczęśliwy.",
+      "Znalazłeś Kapitański ster, który może ci się przydać w dalszej wędrówce. Jesteś zmęczony, ale szczęśliwy.",
+      "Zdecydowałeś, że to nie jest warte zachodu."
+    ],
+    "OPTIONS": [
+      "[Przeszukaj rufę] #gZyskaj #gKotwicę. #rUtrać #r",
+      "[Przeszukaj bakburtę] #gZyskaj #gKnagę #grożkową. #rUtrać #r",
+      "[Przeszukaj sterburtę] #gZyskaj #gKapitański #gster. #rUtrać #r",
+      " #rPŻ.",
+      "[Zablokowane] Posiadasz już Kotwicę.",
+      "[Zablokowane] Posiadasz już Knagę rożkową.",
+      "[Zablokowane] Posiadasz już Kapitański ster.",
+      "[Zignoruj wrak]",
+      "[Kontynuuj]"
+    ]
   }
 }
