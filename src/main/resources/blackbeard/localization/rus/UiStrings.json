@@ -1,2 +1,12 @@
 {
+  "blackbeard:PowerCardFromDrawPileToHandAction": {
+    "TEXT": [
+      "Выберите Талант, который хотите добавить в руку."
+    ]
+  },
+  "blackbeard:Settings": {
+    "TEXT": [
+      "Отключить Рождество. (Последние 2 недели декабря.)"
+    ]
+  }
 }

@@ -8,12 +8,6 @@
       "Прочность: #b"
     ]
   },
-  "blackbeard:DefaultWeaponOrb": {
-    "NAME": "Меч",
-    "DESCRIPTION": [
-      ""
-    ]
-  },
   "blackbeard:CutlassOrb": {
     "NAME": "Сабля",
     "DESCRIPTION": [
