@@ -1,5 +1,6 @@
 package blackbeard.patches;
 
+import basemod.ReflectionHacks;
 import blackbeard.enums.PlayerClassEnum;
 import com.badlogic.gdx.Net;
 import com.evacipated.cardcrawl.modthespire.lib.*;
@@ -22,12 +23,17 @@ public class MetricsPatches {
 
     private static final Logger logger = LogManager.getLogger(MetricsPatches.class);
 
-    @SpirePatch(clz = Metrics.class, method = "sendPost", paramtypez = {String.class, String.class})
+    @SpirePatch(clz = Metrics.class, method = "sendPost", paramtypez = {String.class})
     public static class SendPostPatch {
 
-        public static void Prefix(Metrics metrics, @ByRef String[] url, String fileName) {
+        public static void Postfix(Metrics metrics, String fileName) {
             if (AbstractDungeon.player.chosenClass == PlayerClassEnum.BLACKBEARD_CLASS) {
-                url[0] = "http://www.theblackbeardmod.com/metrics/";
+                try {
+                    Method sendPostMethod = ReflectionHacks.getCachedMethod(Metrics.class, "sendPost", String.class, String.class);
+                    sendPostMethod.invoke(metrics, "http://www.theblackbeardmod.com/metrics/", fileName);
+                } catch (IllegalAccessException | InvocationTargetException e) {
+                    logger.error("Could not send metrics for The Blackbeard", e);
+                }
             }
         }
 
