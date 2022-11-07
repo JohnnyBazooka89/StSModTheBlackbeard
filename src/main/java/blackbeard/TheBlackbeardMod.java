@@ -1,12 +1,10 @@
 package blackbeard;
 
-import basemod.BaseMod;
-import basemod.ModLabeledToggleButton;
-import basemod.ModPanel;
-import basemod.ReflectionHacks;
+import basemod.*;
+import basemod.abstracts.CustomRelic;
 import basemod.eventUtil.AddEventParams;
 import basemod.interfaces.*;
-import blackbeard.cards.*;
+import blackbeard.cards.AbstractBlackbeardCard;
 import blackbeard.characters.TheBlackbeard;
 import blackbeard.enums.CardColorEnum;
 import blackbeard.enums.PlayerClassEnum;
@@ -17,7 +15,6 @@ import blackbeard.events.ShipwreckEvent;
 import blackbeard.potions.OrangeJuicePotion;
 import blackbeard.potions.RumPotion;
 import blackbeard.potions.UpgradePotion;
-import blackbeard.relics.*;
 import blackbeard.utils.TextureLoader;
 import blackbeard.variables.MagicNumberPlusOneVariable;
 import blackbeard.variables.SecondMagicNumberVariable;
@@ -44,6 +41,7 @@ import com.megacrit.cardcrawl.dungeons.Exordium;
 import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.*;
 import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -107,6 +105,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     private static final String POLISH_LANGUAGE_FOLDER = "pol";
     private static final String RUSSIAN_LANGUAGE_FOLDER = "rus";
     private static final String SIMPLIFIED_CHINESE_LANGUAGE_FOLDER = "zhs";
+    public static final String MOD_THE_SPIRE_MOD_ID = "sts-mod-the-blackbeard";
 
     //Keywords
     public static Map<String, Keyword> blackbeardKeywords = new HashMap<>();
@@ -271,29 +270,12 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     public void receiveEditRelics() {
         logger.info("Begin editing relics");
 
-        //Add relics
-        //Starter
-        BaseMod.addRelicToCustomPool(new LoadTheCannons(), CardColorEnum.BLACKBEARD_BLACK);
-        //Common
-        BaseMod.addRelicToCustomPool(new CannonballsOfSteel(), CardColorEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new HipFlask(), CardColorEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new Spearhead(), CardColorEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new TreasureChest(), CardColorEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new WhitePearl(), CardColorEnum.BLACKBEARD_BLACK);
-        //Uncommon
-        BaseMod.addRelicToCustomPool(new GoldenRing(), CardColorEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new Penknife(), CardColorEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new PowderCan(), CardColorEnum.BLACKBEARD_BLACK);
-        //Rare
-        BaseMod.addRelicToCustomPool(new MagicalCauldron(), CardColorEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new PoorMathSkills(), CardColorEnum.BLACKBEARD_BLACK);
-        //Boss
-        BaseMod.addRelicToCustomPool(new Karategi(), CardColorEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new LoadTheGoldenCannons(), CardColorEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new SoberMinded(), CardColorEnum.BLACKBEARD_BLACK);
-        //Shop
-        BaseMod.addRelicToCustomPool(new BloodOrange(), CardColorEnum.BLACKBEARD_BLACK);
-        BaseMod.addRelicToCustomPool(new CrossedSwords(), CardColorEnum.BLACKBEARD_BLACK);
+        new AutoAdd(MOD_THE_SPIRE_MOD_ID)
+                .packageFilter("blackbeard.relics")
+                .any(CustomRelic.class, (info, relic) -> {
+                    BaseMod.addRelicToCustomPool(relic, CardColorEnum.BLACKBEARD_BLACK);
+                    UnlockTracker.markRelicAsSeen(relic.relicId);
+                });
 
         logger.info("Done editing relics");
     }
@@ -306,93 +288,10 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addDynamicVariable(new MagicNumberPlusOneVariable());
         BaseMod.addDynamicVariable(new SecondMagicNumberVariable());
 
-        BaseMod.addCard(new BlackbeardStrike());
-        BaseMod.addCard(new BlackbeardDefend());
-        BaseMod.addCard(new Cutlass());
-        BaseMod.addCard(new Upgrade());
-        BaseMod.addCard(new Sharpening());
-        BaseMod.addCard(new RearmingStrike());
-        BaseMod.addCard(new Fencing());
-        BaseMod.addCard(new Parrot());
-        BaseMod.addCard(new TheDrunkenSailor());
-        BaseMod.addCard(new Halberd());
-        BaseMod.addCard(new SwordDance());
-        BaseMod.addCard(new CannonBarrage());
-        BaseMod.addCard(new Rum());
-        BaseMod.addCard(new GhostInTheRum());
-        BaseMod.addCard(new GoldenStrike());
-        BaseMod.addCard(new PowderKeg());
-        BaseMod.addCard(new Scrap());
-        BaseMod.addCard(new RemoveScurvy());
-        BaseMod.addCard(new InfiniteBarrage());
-        BaseMod.addCard(new PirateStrength());
-        BaseMod.addCard(new HumongousCannonball());
-        BaseMod.addCard(new GoldenCannonball());
-        BaseMod.addCard(new FinalBarrage());
-        BaseMod.addCard(new BrownPants());
-        BaseMod.addCard(new JollyRoger());
-        BaseMod.addCard(new CaptainsCabin());
-        BaseMod.addCard(new GoldenDefense());
-        BaseMod.addCard(new Shrapnel());
-        BaseMod.addCard(new Toast());
-        BaseMod.addCard(new CatONineTails());
-        BaseMod.addCard(new PirateEarring());
-        BaseMod.addCard(new Murder());
-        BaseMod.addCard(new Bandana());
-        BaseMod.addCard(new TacticalRetreat());
-        BaseMod.addCard(new Dagger());
-        BaseMod.addCard(new PiratesWill());
-        BaseMod.addCard(new WoodenLeg());
-        BaseMod.addCard(new Eyepatch());
-        BaseMod.addCard(new CaptainsHat());
-        BaseMod.addCard(new BlindAttacks());
-        BaseMod.addCard(new Boarding());
-        BaseMod.addCard(new AgileStrike());
-        BaseMod.addCard(new DangerousBlow());
-        BaseMod.addCard(new VengefulSpirit());
-        BaseMod.addCard(new Revenge());
-        BaseMod.addCard(new GoldenRain());
-        BaseMod.addCard(new Sword());
-        BaseMod.addCard(new BeatUp());
-        BaseMod.addCard(new IntimidatingStrike());
-        BaseMod.addCard(new WiseDefense());
-        BaseMod.addCard(new ChaoticDefense());
-        BaseMod.addCard(new SmithingHammer());
-        BaseMod.addCard(new Spear());
-        BaseMod.addCard(new WeaponMastery());
-        BaseMod.addCard(new Salvager());
-        BaseMod.addCard(new Anchor());
-        BaseMod.addCard(new BoostMorale());
-        BaseMod.addCard(new MegaUpgrade());
-        BaseMod.addCard(new Recklessness());
-        BaseMod.addCard(new DelayedPain());
-        BaseMod.addCard(new ArmorUp());
-        BaseMod.addCard(new Intoxication());
-        BaseMod.addCard(new CannonballSupply());
-        BaseMod.addCard(new BountyHunter());
-        BaseMod.addCard(new GoldenGuillotine());
-        BaseMod.addCard(new DoubleBottom());
-        BaseMod.addCard(new Lifeboat());
-        BaseMod.addCard(new TerrorOfTheSeas());
-        BaseMod.addCard(new Provisioning());
-        BaseMod.addCard(new FishingNets());
-        BaseMod.addCard(new BuriedTreasure());
-        BaseMod.addCard(new DoubleCannonball());
-        BaseMod.addCard(new CloakAndCannonball());
-        BaseMod.addCard(new UndeadForm());
-        BaseMod.addCard(new WeaponProficiency());
-        BaseMod.addCard(new FieryDefense());
-        BaseMod.addCard(new ReapersScythe());
-        BaseMod.addCard(new PirateHook());
-        BaseMod.addCard(new DeadlyArsenal());
-        BaseMod.addCard(new PowerHungry());
-
-        //Special cards are registered, but they are not shown in the library, because of DoNotShowSpecialCardsInLibraryPatch.
-        BaseMod.addCard(new Cannonball());
-        BaseMod.addCard(new SwordOfChaos());
-        BaseMod.addCard(new SwordOfWisdom());
-        BaseMod.addCard(new SwordOfFire());
-        BaseMod.addCard(new VampiricScepter());
+        new AutoAdd(MOD_THE_SPIRE_MOD_ID)
+                .packageFilter(AbstractBlackbeardCard.class)
+                .setDefaultSeen(true)
+                .cards();
 
         logger.info("Done editing cards");
     }
