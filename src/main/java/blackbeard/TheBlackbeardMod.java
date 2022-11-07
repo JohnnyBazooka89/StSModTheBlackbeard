@@ -65,6 +65,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     private static final String MOD_NAME = "The Blackbeard";
     private static final String AUTHOR = "JohnnyBazooka89";
     private static final String DESCRIPTION = "Adds The Blackbeard as a new playable character.";
+    public static final String MOD_THE_SPIRE_MOD_ID = "sts-mod-the-blackbeard";
 
     //General color
     private static final Color BLACK = CardHelper.getColor(0, 0, 0);
@@ -105,7 +106,6 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     private static final String POLISH_LANGUAGE_FOLDER = "pol";
     private static final String RUSSIAN_LANGUAGE_FOLDER = "rus";
     private static final String SIMPLIFIED_CHINESE_LANGUAGE_FOLDER = "zhs";
-    public static final String MOD_THE_SPIRE_MOD_ID = "sts-mod-the-blackbeard";
 
     //Keywords
     public static Map<String, Keyword> blackbeardKeywords = new HashMap<>();
