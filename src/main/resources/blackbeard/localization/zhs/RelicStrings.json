@@ -10,7 +10,7 @@
     "NAME": "扁酒瓶",
     "FLAVOR": "非常趁手。",
     "DESCRIPTIONS": [
-      "每场战斗开始时，获得 #b1 点 #y抵抗 。"
+      "每场战斗开始时，获得 #b1 点 #yblackbeard:抵抗 。"
     ]
   },
   "blackbeard:BloodOrange": {
@@ -31,7 +31,7 @@
     "NAME": "白珍珠",
     "FLAVOR": "美丽又有力。",
     "DESCRIPTIONS": [
-      "每当你装备一把 #y武器 ，使其获得 #b+1 攻击力。"
+      "每当你装备一把 #yblackbeard:武器 ，使其获得 #b+1 攻击力。"
     ]
   },
   "blackbeard:CannonballsOfSteel": {
@@ -59,7 +59,7 @@
     "NAME": "折叠刀",
     "FLAVOR": "如果你口袋里有一把，可别忘了用。",
     "DESCRIPTIONS": [
-      "你每打出的第 #b8 张使用了 #y武器 （至少一把）的攻击牌造成双倍伤害。"
+      "你每打出的第 #b8 张使用了 #yblackbeard:武器 （至少一把）的攻击牌造成双倍伤害。"
     ]
   },
   "blackbeard:PoorMathSkills": {
@@ -73,35 +73,35 @@
     "NAME": "火药罐",
     "FLAVOR": "跟火药桶很像，但是要小一些。",
     "DESCRIPTIONS": [
-      "每场战斗开始时，装备一把 #b0 / #b1 的 #y武器 。当它被摧毁时，对所有敌人造成 #b8 点伤害。"
+      "每场战斗开始时，装备一把 #b0 / #b1 的 #yblackbeard:武器 。当它被摧毁时，对所有敌人造成 #b8 点伤害。"
     ]
   },
   "blackbeard:SoberMinded": {
     "NAME": "清醒头脑",
     "FLAVOR": "对黑胡子船长来说，保持清醒可不是一种自然的状态。",
     "DESCRIPTIONS": [
-      "在每回合开始时获得 [E] 。在每场战斗开始，以及随后的每6个回合时，失去 #b1 点 #y抵抗 。"
+      "在每回合开始时获得 [E] 。在每场战斗开始，以及随后的每6个回合时，失去 #b1 点 #yblackbeard:抵抗 。"
     ]
   },
   "blackbeard:Spearhead": {
     "NAME": "矛头",
     "FLAVOR": "你武器的生涯结束了.....你敌人的生命也结束了。",
     "DESCRIPTIONS": [
-      "当一把 #y武器 具有 #b1 点耐久度时，它额外造成 #b3 点伤害。"
+      "当一把 #yblackbeard:武器 具有 #b1 点耐久度时，它额外造成 #b3 点伤害。"
     ]
   },
   "blackbeard:CrossedSwords": {
     "NAME": "交叉剑刃",
     "FLAVOR": "可完美双持。",
     "DESCRIPTIONS": [
-      "你的攻击额外使用一把 #y武器 。"
+      "你的攻击额外使用一把 #yblackbeard:武器 。"
     ]
   },
   "blackbeard:Karategi": {
     "NAME": "空手技",
     "FLAVOR": "一穿上它，你就会立刻学会新的战斗方式。",
     "DESCRIPTIONS": [
-      "你的 #y武器 拥有无限耐久度。在你使用一把 #y武器 攻击后，它移动到最左边的位置。"
+      "你的 #yblackbeard:武器 拥有无限耐久度。在你使用一把 #yblackbeard:武器 攻击后，它移动到最左边的位置。"
     ]
   },
   "blackbeard:LoadTheGoldenCannons": {

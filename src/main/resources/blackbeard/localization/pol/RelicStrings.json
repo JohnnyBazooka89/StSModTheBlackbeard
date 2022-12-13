@@ -10,7 +10,7 @@
     "NAME": "Piersiówka",
     "FLAVOR": "Bardzo podręczna.",
     "DESCRIPTIONS": [
-      "Na początku każdej walki, zyskaj #b1 pkt. #yOdporności."
+      "Na początku każdej walki, zyskaj #b1 pkt. #yblackbeard:Odporności."
     ]
   },
   "blackbeard:BloodOrange": {
@@ -31,7 +31,7 @@
     "NAME": "Biała perła",
     "FLAVOR": "Jednocześnie piękna i potężna.",
     "DESCRIPTIONS": [
-      "Kiedykolwiek wyposażysz się w #yBroń, daj jej #b+1 do Ataku."
+      "Kiedykolwiek wyposażysz się w #yblackbeard:Broń, daj jej #b+1 do Ataku."
     ]
   },
   "blackbeard:CannonballsOfSteel": {
@@ -59,7 +59,7 @@
     "NAME": "Scyzoryk",
     "FLAVOR": "Jeśli masz go w kieszeni, nie zapominaj go używać.",
     "DESCRIPTIONS": [
-      "Co #b8 zagrany Atak, który używa co najmniej jednej Broni, zadaje podwójne obrażenia."
+      "Co #b8 zagrany Atak, który używa co najmniej jednej blackbeard:broni, zadaje podwójne obrażenia."
     ]
   },
   "blackbeard:PoorMathSkills": {
@@ -73,35 +73,35 @@
     "NAME": "Puszka prochu",
     "FLAVOR": "Zupełnie jak beczka prochu, tylko mniejsza.",
     "DESCRIPTIONS": [
-      "Na początku każdej walki, wyposaż się w #yBroń #b0 / #b1. Gdy zostanie zniszczona, zadaj #b8 pkt. obrażeń WSZYSTKIM przeciwnikom."
+      "Na początku każdej walki, wyposaż się w #yblackbeard:Broń #b0 / #b1. Gdy zostanie zniszczona, zadaj #b8 pkt. obrażeń WSZYSTKIM przeciwnikom."
     ]
   },
   "blackbeard:SoberMinded": {
     "NAME": "Trzeźwo myślący",
     "FLAVOR": "Bycie trzeźwym nie jest naturalnym stanem dla Czarnobrodego.",
     "DESCRIPTIONS": [
-      "Zyskaj [E] na początku każdej tury. Na początku każdej walki, a następnie co #b6 tur, utrać #b1 pkt. #yOdporności."
+      "Zyskaj [E] na początku każdej tury. Na początku każdej walki, a następnie co #b6 tur, utrać #b1 pkt. #yblackbeard:Odporności."
     ]
   },
   "blackbeard:Spearhead": {
     "NAME": "Grot",
     "FLAVOR": "Wytrzymałość twojej Broni kończy się... tak jak życie twojego przeciwnika.",
     "DESCRIPTIONS": [
-      "Gdy #yBroń ma #b1 pkt. Wytrzymałości, to zadaje o #b3 pkt. obrażeń więcej."
+      "Gdy #yblackbeard:Broń ma #b1 pkt. Wytrzymałości, to zadaje o #b3 pkt. obrażeń więcej."
     ]
   },
   "blackbeard:CrossedSwords": {
     "NAME": "Skrzyżowane miecze",
     "FLAVOR": "Idealne do walki dwiema broniami naraz.",
     "DESCRIPTIONS": [
-      "Twoje ataki używają dodatkową #yBroń."
+      "Twoje ataki używają dodatkową #yblackbeard:Broń."
     ]
   },
   "blackbeard:Karategi": {
     "NAME": "Kimono do karate",
     "FLAVOR": "Gdy tylko je założysz, natychmiast poznajesz nowe style walki.",
     "DESCRIPTIONS": [
-      "Twoje #yBronie mają nieskończoną wytrzymałość. Kiedykolwiek zaatakujesz #yBronią, ta #yBroń idzie na ostatnią pozycję."
+      "Twoje #yblackbeard:Bronie mają nieskończoną wytrzymałość. Kiedykolwiek zaatakujesz #yblackbeard:Bronią, ta #yblackbeard:Broń idzie na ostatnią pozycję."
     ]
   },
   "blackbeard:LoadTheGoldenCannons": {

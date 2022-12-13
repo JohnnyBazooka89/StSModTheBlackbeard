@@ -3,7 +3,7 @@
     "NAME": "Ром",
     "DESCRIPTIONS": [
       "Даёт #b",
-      " #yСопротивляемости."
+      " #yblackbeard:Сопротивляемости."
     ]
   },
   "blackbeard:OrangeJuicePotion": {
@@ -18,7 +18,7 @@
     "DESCRIPTIONS": [
       "Даёт #b+",
       " / #b+",
-      " всем снаряжённым #yОружиям."
+      " всем снаряжённым #yblackbeard:Оружиям."
     ]
   }
 }

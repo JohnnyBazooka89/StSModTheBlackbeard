@@ -9,23 +9,23 @@
   },
   "blackbeard:Cutlass": {
     "NAME": "Cutlass",
-    "DESCRIPTION": "Equip a {A} / {D} Weapon."
+    "DESCRIPTION": "Equip a {A} / {D} blackbeard:Weapon."
   },
   "blackbeard:Upgrade": {
     "NAME": "Upgrade",
-    "DESCRIPTION": "Give all your equipped Weapons + !M! / + !M!."
+    "DESCRIPTION": "Give all your equipped blackbeard:Weapons + !M! / + !M!."
   },
   "blackbeard:Sharpening": {
     "NAME": "Sharpening",
-    "DESCRIPTION": "Give all your equipped Weapons + !M! Attack."
+    "DESCRIPTION": "Give all your equipped blackbeard:Weapons + !M! Attack."
   },
   "blackbeard:RearmingStrike": {
     "NAME": "Rearming Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Equip a {A} / {D} Weapon."
+    "DESCRIPTION": "Deal !D! damage. NL Equip a {A} / {D} blackbeard:Weapon."
   },
   "blackbeard:Fencing": {
     "NAME": "Fencing",
-    "DESCRIPTION": "Give your rightmost Weapon + !blackbeard:M+1! / + !M!."
+    "DESCRIPTION": "Give your rightmost blackbeard:Weapon + !blackbeard:M+1! / + !M!."
   },
   "blackbeard:Parrot": {
     "NAME": "Parrot",
@@ -34,7 +34,7 @@
   },
   "blackbeard:Halberd": {
     "NAME": "Halberd",
-    "DESCRIPTION": "Equip a !M! / {D} Weapon. NL Whenever you attack with this Weapon, apply 2 blackbeard:Bleed to a target per hit."
+    "DESCRIPTION": "Equip a !M! / {D} blackbeard:Weapon. NL Whenever you attack with this blackbeard:Weapon, apply 2 blackbeard:Bleed to a target per hit."
   },
   "blackbeard:TheDrunkenSailor": {
     "NAME": "The Drunken Sailor",
@@ -42,8 +42,8 @@
   },
   "blackbeard:SwordDance": {
     "NAME": "Sword Dance",
-    "DESCRIPTION": "This turn, your next !M! Attacks use all equipped Weapons.",
-    "UPGRADE_DESCRIPTION": "This turn, your next !M! Attacks use all equipped Weapons."
+    "DESCRIPTION": "This turn, your next !M! Attacks use all equipped blackbeard:Weapons.",
+    "UPGRADE_DESCRIPTION": "This turn, your next !M! Attacks use all equipped blackbeard:Weapons."
   },
   "blackbeard:Cannonball": {
     "NAME": "Cannonball",
@@ -56,11 +56,11 @@
   },
   "blackbeard:Rum": {
     "NAME": "Rum",
-    "DESCRIPTION": "Gain !M! Resistance."
+    "DESCRIPTION": "Gain !M! blackbeard:Resistance."
   },
   "blackbeard:GhostInTheRum": {
     "NAME": "Ghost in the Rum",
-    "DESCRIPTION": "Gain 1 Intangible. NL Lose !M! Resistance. NL Exhaust."
+    "DESCRIPTION": "Gain 1 Intangible. NL Lose !M! blackbeard:Resistance. NL Exhaust."
   },
   "blackbeard:GoldenStrike": {
     "NAME": "Golden Strike",
@@ -74,12 +74,12 @@
   },
   "blackbeard:PowderKeg": {
     "NAME": "Powder Keg",
-    "DESCRIPTION": "Equip a {A} / {D} Weapon. NL When it is destroyed, deal !M! damage to ALL enemies."
+    "DESCRIPTION": "Equip a {A} / {D} blackbeard:Weapon. NL When it is destroyed, deal !M! damage to ALL enemies."
   },
   "blackbeard:Scrap": {
     "NAME": "Scrap",
-    "DESCRIPTION": "Destroy your rightmost Weapon to gain [E] [E].",
-    "UPGRADE_DESCRIPTION": "Destroy your rightmost Weapon to gain NL [E] [E] [E].",
+    "DESCRIPTION": "Destroy your rightmost blackbeard:Weapon to gain [E] [E].",
+    "UPGRADE_DESCRIPTION": "Destroy your rightmost blackbeard:Weapon to gain NL [E] [E] [E].",
     "EXTENDED_DESCRIPTION": [
       "I don't have a Weapon!"
     ]
@@ -94,11 +94,11 @@
   },
   "blackbeard:SwordOfWisdom": {
     "NAME": "Sword of Wisdom",
-    "DESCRIPTION": "Equip a {A} / !M! Weapon. NL Whenever you attack with this Weapon, draw a card."
+    "DESCRIPTION": "Equip a {A} / !M! blackbeard:Weapon. NL Whenever you attack with this blackbeard:Weapon, draw a card."
   },
   "blackbeard:SwordOfChaos": {
     "NAME": "Sword of Chaos",
-    "DESCRIPTION": "Equip a {A} / !M! Weapon. NL Whenever you attack with this Weapon, add a random card into your hand."
+    "DESCRIPTION": "Equip a {A} / !M! blackbeard:Weapon. NL Whenever you attack with this blackbeard:Weapon, add a random card into your hand."
   },
   "blackbeard:PirateStrength": {
     "NAME": "Pirate Strength",
@@ -154,11 +154,11 @@
   },
   "blackbeard:Toast": {
     "NAME": "Toast",
-    "DESCRIPTION": "Gain !M! Resistance. NL At the start of your next turn, lose !M! Resistance. NL Exhaust."
+    "DESCRIPTION": "Gain !M! blackbeard:Resistance. NL At the start of your next turn, lose !M! blackbeard:Resistance. NL Exhaust."
   },
   "blackbeard:CatONineTails": {
     "NAME": "Cat O' Nine Tails",
-    "DESCRIPTION": "Equip a !M! / {D} Weapon. NL After you attack with this Weapon, give it + 2 Attack."
+    "DESCRIPTION": "Equip a !M! / {D} blackbeard:Weapon. NL After you attack with this blackbeard:Weapon, give it + 2 Attack."
   },
   "blackbeard:PirateEarring": {
     "NAME": "Pirate Earring",
@@ -182,7 +182,7 @@
   },
   "blackbeard:Dagger": {
     "NAME": "Dagger",
-    "DESCRIPTION": "Equip a {A} / !M! Weapon. NL At the start of your turn, NL 1 Durability from Dagger is used to deal damage equal to its Attack to a random enemy."
+    "DESCRIPTION": "Equip a {A} / !M! blackbeard:Weapon. NL At the start of your turn, NL 1 Durability from Dagger is used to deal damage equal to its Attack to a random enemy."
   },
   "blackbeard:PiratesWill": {
     "NAME": "Pirate's Will",
@@ -198,7 +198,7 @@
   },
   "blackbeard:CaptainsHat": {
     "NAME": "Captain's Hat",
-    "DESCRIPTION": "Gain !M! Strength. NL Gain !M! Resistance."
+    "DESCRIPTION": "Gain !M! Strength. NL Gain !M! blackbeard:Resistance."
   },
   "blackbeard:BlindAttacks": {
     "NAME": "Blind Attacks",
@@ -210,7 +210,7 @@
   },
   "blackbeard:AgileStrike": {
     "NAME": "Agile Strike",
-    "DESCRIPTION": "Deal !D! damage. NL If you have equipped a Weapon this turn, reduce cost of this NL card to 0."
+    "DESCRIPTION": "Deal !D! damage. NL If you have equipped a blackbeard:Weapon this turn, reduce cost of this NL card to 0."
   },
   "blackbeard:DangerousBlow": {
     "NAME": "Dangerous Blow",
@@ -240,7 +240,7 @@
   },
   "blackbeard:Sword": {
     "NAME": "Sword",
-    "DESCRIPTION": "Choose 1 of 3 Swords. NL Equip a {A} / !M! Weapon with an additional effect.",
+    "DESCRIPTION": "Choose 1 of 3 Swords. NL Equip a {A} / !M! blackbeard:Weapon with an additional effect.",
     "EXTENDED_DESCRIPTION": [
       "Additional Effects",
       "#rFire: Whenever you attack with this Weapon, deal #b3 damage to ALL enemies. NL #yWisdom: Whenever you attack with this Weapon, draw a card. NL #pChaos: Whenever you attack with this Weapon, add a random card into your hand."
@@ -266,21 +266,21 @@
   },
   "blackbeard:SmithingHammer": {
     "NAME": "Smithing Hammer",
-    "DESCRIPTION": "Equip a {A} / !M! Weapon. NL After you attack with this Weapon and passively at the start of your turn using 1 Durability, Upgrade a random card in your hand for the rest of combat."
+    "DESCRIPTION": "Equip a {A} / !M! blackbeard:Weapon. NL After you attack with this blackbeard:Weapon and passively at the start of your turn using 1 Durability, Upgrade a random card in your hand for the rest of combat."
   },
   "blackbeard:Spear": {
     "NAME": "Spear",
-    "DESCRIPTION": "Equip a !M! / {D} Weapon."
+    "DESCRIPTION": "Equip a !M! / {D} blackbeard:Weapon."
   },
   "blackbeard:WeaponMastery": {
-    "NAME": "Weapon Mastery",
-    "DESCRIPTION": "Whenever you equip a Weapon, draw !M! card.",
-    "UPGRADE_DESCRIPTION": "Whenever you equip a Weapon, draw !M! cards."
+    "NAME": "blackbeard:Weapon Mastery",
+    "DESCRIPTION": "Whenever you equip a blackbeard:Weapon, draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Whenever you equip a blackbeard:Weapon, draw !M! cards."
   },
   "blackbeard:Salvager": {
     "NAME": "Salvager",
-    "DESCRIPTION": "Whenever a Weapon is destroyed, gain [E].",
-    "UPGRADE_DESCRIPTION": "Whenever a Weapon is destroyed, gain [E] [E]."
+    "DESCRIPTION": "Whenever a blackbeard:Weapon is destroyed, gain [E].",
+    "UPGRADE_DESCRIPTION": "Whenever a blackbeard:Weapon is destroyed, gain [E] [E]."
   },
   "blackbeard:Anchor": {
     "NAME": "Anchor",
@@ -294,7 +294,7 @@
   },
   "blackbeard:MegaUpgrade": {
     "NAME": "Mega Upgrade",
-    "DESCRIPTION": "Give all your equipped Weapons + !M! / + !M!."
+    "DESCRIPTION": "Give all your equipped blackbeard:Weapons + !M! / + !M!."
   },
   "blackbeard:Recklessness": {
     "NAME": "Recklessness",
@@ -307,11 +307,11 @@
   },
   "blackbeard:ArmorUp": {
     "NAME": "Armor Up",
-    "DESCRIPTION": "This turn, whenever you attack with a Weapon, gain !M! Block."
+    "DESCRIPTION": "This turn, whenever you attack with a blackbeard:Weapon, gain !M! Block."
   },
   "blackbeard:Intoxication": {
     "NAME": "Intoxication",
-    "DESCRIPTION": "Gain !M! Resistance. NL At the start of your turn, lose 1 Resistance."
+    "DESCRIPTION": "Gain !M! blackbeard:Resistance. NL At the start of your turn, lose 1 blackbeard:Resistance."
   },
   "blackbeard:CannonballSupply": {
     "NAME": "Cannonball Supply",
@@ -363,7 +363,7 @@
   },
   "blackbeard:SwordOfFire": {
     "NAME": "Sword of Fire",
-    "DESCRIPTION": "Equip a {A} / !M! Weapon. NL Whenever you attack with this Weapon, deal 3 damage to ALL enemies."
+    "DESCRIPTION": "Equip a {A} / !M! blackbeard:Weapon. NL Whenever you attack with this blackbeard:Weapon, deal 3 damage to ALL enemies."
   },
   "blackbeard:CloakAndCannonball": {
     "NAME": "Cloak and Cannonball",
@@ -376,7 +376,7 @@
   },
   "blackbeard:WeaponProficiency": {
     "NAME": "Weapon Proficiency",
-    "DESCRIPTION": "Your attacks use an additional Weapon."
+    "DESCRIPTION": "Your attacks use an additional blackbeard:Weapon."
   },
   "blackbeard:FieryDefense": {
     "NAME": "Fiery Defense",
@@ -385,11 +385,11 @@
   },
   "blackbeard:VampiricScepter": {
     "NAME": "Vampiric Scepter",
-    "DESCRIPTION": "Equip a !M! / {D} Weapon. NL Whenever you attack with this Weapon, heal !blackbeard:M2! HP."
+    "DESCRIPTION": "Equip a !M! / {D} blackbeard:Weapon. NL Whenever you attack with this blackbeard:Weapon, heal !blackbeard:M2! HP."
   },
   "blackbeard:ReapersScythe": {
     "NAME": "Reaper's Scythe",
-    "DESCRIPTION": "Equip a !M! / {D} Weapon. NL Whenever you attack with this Weapon, apply 1 blackbeard:Reaper's Mark to a target per hit."
+    "DESCRIPTION": "Equip a !M! / {D} blackbeard:Weapon. NL Whenever you attack with this blackbeard:Weapon, apply 1 blackbeard:Reaper's Mark to a target per hit."
   },
   "blackbeard:PirateHook": {
     "NAME": "Pirate Hook",
@@ -397,7 +397,7 @@
   },
   "blackbeard:DeadlyArsenal": {
     "NAME": "Deadly Arsenal",
-    "DESCRIPTION": "Gain !B! Block. NL Draw 1 card for each unique Weapon you have currently equipped."
+    "DESCRIPTION": "Gain !B! Block. NL Draw 1 card for each unique blackbeard:Weapon you have currently equipped."
   },
   "blackbeard:PowerHungry": {
     "NAME": "Power-hungry",

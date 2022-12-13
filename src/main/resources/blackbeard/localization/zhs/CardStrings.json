@@ -9,23 +9,23 @@
   },
   "blackbeard:Cutlass": {
     "NAME": "弯刀",
-    "DESCRIPTION": "装备一把 {A} / {D} 的武器。"
+    "DESCRIPTION": "装备一把 {A} / {D} 的 blackbeard:武器 。"
   },
   "blackbeard:Upgrade": {
     "NAME": "升级",
-    "DESCRIPTION": "使你装备着的所有的武器获得 + !M! / + !M! 。"
+    "DESCRIPTION": "使你装备着的所有的 blackbeard:武器 获得 + !M! / + !M! 。"
   },
   "blackbeard:Sharpening": {
     "NAME": "磨砺",
-    "DESCRIPTION": "使你装备着的所有的武器获得 + !M! 攻击力。"
+    "DESCRIPTION": "使你装备着的所有的 blackbeard:武器 获得 + !M! 攻击力。"
   },
   "blackbeard:RearmingStrike": {
     "NAME": "重整打击",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 装备一把 {A} / {D} 的武器。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 装备一把 {A} / {D} 的 blackbeard:武器 。"
   },
   "blackbeard:Fencing": {
     "NAME": "击剑",
-    "DESCRIPTION": "使你最右边的武器获得 + !blackbeard:M+1! / + !M! 。"
+    "DESCRIPTION": "使你最右边的 blackbeard:武器 获得 + !blackbeard:M+1! / + !M! 。"
   },
   "blackbeard:Parrot": {
     "NAME": "鹦鹉",
@@ -34,7 +34,7 @@
   },
   "blackbeard:Halberd": {
     "NAME": "戟",
-    "DESCRIPTION": "装备一把 !M! / {D} 的武器。 NL 每当你使用这把武器攻击，每次攻击给予2点 blackbeard:流血 。"
+    "DESCRIPTION": "装备一把 !M! / {D} 的 blackbeard:武器 。 NL 每当你使用这把 blackbeard:武器 攻击，每次攻击给予2点 blackbeard:流血 。"
   },
   "blackbeard:TheDrunkenSailor": {
     "NAME": "醉酒水手",
@@ -42,8 +42,8 @@
   },
   "blackbeard:SwordDance": {
     "NAME": "剑舞",
-    "DESCRIPTION": "在这个回合，你的下 !M! 张攻击牌使用所有装备着的武器。",
-    "UPGRADE_DESCRIPTION": "在这个回合，你的下 !M! 张攻击牌使用所有装备着的武器。"
+    "DESCRIPTION": "在这个回合，你的下 !M! 张攻击牌使用所有装备着的 blackbeard:武器 。",
+    "UPGRADE_DESCRIPTION": "在这个回合，你的下 !M! 张攻击牌使用所有装备着的 blackbeard:武器 。"
   },
   "blackbeard:Cannonball": {
     "NAME": "炮弹",
@@ -56,11 +56,11 @@
   },
   "blackbeard:Rum": {
     "NAME": "朗姆酒",
-    "DESCRIPTION": "获得 !M! 点抵抗。"
+    "DESCRIPTION": "获得 !M! 点 blackbeard:抵抗。"
   },
   "blackbeard:GhostInTheRum": {
     "NAME": "朗姆酒里的鬼魂",
-    "DESCRIPTION": "获得1层 无实体 。 NL 失去 !M! 点抵抗。 NL 消耗 。"
+    "DESCRIPTION": "获得1层 无实体 。 NL 失去 !M! 点 blackbeard:抵抗。 NL 消耗 。"
   },
   "blackbeard:GoldenStrike": {
     "NAME": "黄金打击",
@@ -74,12 +74,12 @@
   },
   "blackbeard:PowderKeg": {
     "NAME": "火药桶",
-    "DESCRIPTION": "装备一把 {A} / {D} 的武器。 NL 当它被摧毁时，对所有敌人造成 !M! 点伤害。"
+    "DESCRIPTION": "装备一把 {A} / {D} 的 blackbeard:武器 。 NL 当它被摧毁时，对所有敌人造成 !M! 点伤害。"
   },
   "blackbeard:Scrap": {
     "NAME": "拆解",
-    "DESCRIPTION": "摧毁你最右边的武器以获得 [E] [E] 。",
-    "UPGRADE_DESCRIPTION": "摧毁你最右边的武器以获得 [E] [E] [E]。",
+    "DESCRIPTION": "摧毁你最右边的 blackbeard:武器 以获得 [E] [E] 。",
+    "UPGRADE_DESCRIPTION": "摧毁你最右边的 blackbeard:武器 以获得 [E] [E] [E]。",
     "EXTENDED_DESCRIPTION": [
       "我没有武器！"
     ]
@@ -94,11 +94,11 @@
   },
   "blackbeard:SwordOfWisdom": {
     "NAME": "智慧之剑",
-    "DESCRIPTION": "装备一把 {A} / !M! 武器。 NL 每当你使用这把武器攻击，抽一张牌。"
+    "DESCRIPTION": "装备一把 {A} / !M! blackbeard:武器 。 NL 每当你使用这把 blackbeard:武器 攻击，抽一张牌。"
   },
   "blackbeard:SwordOfChaos": {
     "NAME": "混乱之剑",
-    "DESCRIPTION": "装备一把 {A} / !M! 武器。 NL  每当你使用这把武器攻击，将一张随机牌加入你的手牌。"
+    "DESCRIPTION": "装备一把 {A} / !M! blackbeard:武器 。 NL  每当你使用这把 blackbeard:武器 攻击，将一张随机牌加入你的手牌。"
   },
   "blackbeard:PirateStrength": {
     "NAME": "海盗之力",
@@ -154,11 +154,11 @@
   },
   "blackbeard:Toast": {
     "NAME": "干杯",
-    "DESCRIPTION": "获得 !M! 点抵抗。 NL 在你的下回合开始时，失去 !M! 点抵抗。 NL 消耗 。"
+    "DESCRIPTION": "获得 !M! 点 blackbeard:抵抗。 NL 在你的下回合开始时，失去 !M! 点 blackbeard:抵抗。 NL 消耗 。"
   },
   "blackbeard:CatONineTails": {
     "NAME": "九尾猫",
-    "DESCRIPTION": "装备一把 !M! / {D} 的武器。 NL 在你使用这把武器攻击后，使其获得+2攻击力。"
+    "DESCRIPTION": "装备一把 !M! / {D} 的 blackbeard:武器 。 NL 在你使用这把 blackbeard:武器 攻击后，使其获得+2攻击力。"
   },
   "blackbeard:PirateEarring": {
     "NAME": "海盗耳环",
@@ -182,7 +182,7 @@
   },
   "blackbeard:Dagger": {
     "NAME": "匕首",
-    "DESCRIPTION": "装备一把 {A} / !M! 的武器。 NL 在你的回合开始时，匕首失去1点耐久度，对一个随机敌人造成等同于匕首攻击力的伤害。"
+    "DESCRIPTION": "装备一把 {A} / !M! 的 blackbeard:武器 。 NL 在你的回合开始时，匕首失去1点耐久度，对一个随机敌人造成等同于匕首攻击力的伤害。"
   },
   "blackbeard:PiratesWill": {
     "NAME": "海盗意志",
@@ -198,7 +198,7 @@
   },
   "blackbeard:CaptainsHat": {
     "NAME": "船长的帽子",
-    "DESCRIPTION": "获得 !M! 点 力量 。 NL 获得 !M! 点抵抗。"
+    "DESCRIPTION": "获得 !M! 点 力量 。 NL 获得 !M! 点 blackbeard:抵抗。"
   },
   "blackbeard:BlindAttacks": {
     "NAME": "盲目攻击",
@@ -210,7 +210,7 @@
   },
   "blackbeard:AgileStrike": {
     "NAME": "灵巧打击",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果你这回合装备过武器，这张牌的耗能减少为0。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果你这回合装备过 blackbeard:武器 ，这张牌的耗能减少为0。"
   },
   "blackbeard:DangerousBlow": {
     "NAME": "危险重击",
@@ -240,7 +240,7 @@
   },
   "blackbeard:Sword": {
     "NAME": "剑",
-    "DESCRIPTION": "从3把剑中选择1把。 NL 装备一把 {A} / !M! 的武器，这把武器会具有额外效果。",
+    "DESCRIPTION": "从3把剑中选择1把。 NL 装备一把 {A} / !M! 的 blackbeard:武器 ，这把 blackbeard:武器 会具有额外效果。",
     "EXTENDED_DESCRIPTION": [
       "额外效果",
       "#r火焰 ：每当你使用这把武器攻击，对所有敌人造成 #b3 点伤害。 NL #y智慧 ：每当你使用这把武器攻击，抽一张牌。 NL #p混乱 ：每当你使用这把武器攻击，将一张随机牌加入你的手牌。"
@@ -266,21 +266,21 @@
   },
   "blackbeard:SmithingHammer": {
     "NAME": "锻锤",
-    "DESCRIPTION": "装备一把 {A} / !M! 的武器。 NL 在你使用这把武器攻击后，以及在你的回合开始时，锻锤失去1点耐久度，在本场战斗中升级你手牌中的一张随机牌。"
+    "DESCRIPTION": "装备一把 {A} / !M! 的 blackbeard:武器 。 NL 在你使用这把 blackbeard:武器 攻击后，以及在你的回合开始时，锻锤失去1点耐久度，在本场战斗中升级你手牌中的一张随机牌。"
   },
   "blackbeard:Spear": {
     "NAME": "矛",
-    "DESCRIPTION": "装备一把 !M! / {D} 的武器。"
+    "DESCRIPTION": "装备一把 !M! / {D} 的 blackbeard:武器 。"
   },
   "blackbeard:WeaponMastery": {
     "NAME": "武器专精",
-    "DESCRIPTION": "每当你装备一把武器，抽 !M! 张牌。",
-    "UPGRADE_DESCRIPTION": "每当你装备一把武器，抽 !M! 张牌。"
+    "DESCRIPTION": "每当你装备一把 blackbeard:武器 ，抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": "每当你装备一把 blackbeard:武器 ，抽 !M! 张牌。"
   },
   "blackbeard:Salvager": {
     "NAME": "营救者",
-    "DESCRIPTION": "每当一把武器被摧毁，获得 [E] 。",
-    "UPGRADE_DESCRIPTION": "每当一把武器被摧毁，获得 [E] [E] 。"
+    "DESCRIPTION": "每当一把 blackbeard:武器 被摧毁，获得 [E] 。",
+    "UPGRADE_DESCRIPTION": "每当一把 blackbeard:武器 被摧毁，获得 [E] [E] 。"
   },
   "blackbeard:Anchor": {
     "NAME": "锚",
@@ -294,7 +294,7 @@
   },
   "blackbeard:MegaUpgrade": {
     "NAME": "超升级",
-    "DESCRIPTION": "使你装备着的所有的武器获得 + !M! / + !M! 。"
+    "DESCRIPTION": "使你装备着的所有的 blackbeard:武器 获得 + !M! / + !M! 。"
   },
   "blackbeard:Recklessness": {
     "NAME": "鲁莽",
@@ -307,11 +307,11 @@
   },
   "blackbeard:ArmorUp": {
     "NAME": "穿上盔甲",
-    "DESCRIPTION": "在这个回合，每当你使用武器攻击，获得 !M! 点 格挡 。"
+    "DESCRIPTION": "在这个回合，每当你使用 blackbeard:武器 攻击，获得 !M! 点 格挡 。"
   },
   "blackbeard:Intoxication": {
     "NAME": "沉醉",
-    "DESCRIPTION": "获得 !M! 点抵抗。 NL 在你的回合开始时，失去1点抵抗。"
+    "DESCRIPTION": "获得 !M! 点 blackbeard:抵抗。 NL 在你的回合开始时，失去1点 blackbeard:抵抗。"
   },
   "blackbeard:CannonballSupply": {
     "NAME": "炮弹补给",
@@ -363,7 +363,7 @@
   },
   "blackbeard:SwordOfFire": {
     "NAME": "火焰之剑",
-    "DESCRIPTION": "装备一把 {A} / !M! 的武器。 NL 每当你使用这把武器攻击，对所有敌人造成3点伤害。"
+    "DESCRIPTION": "装备一把 {A} / !M! 的 blackbeard:武器 。 NL 每当你使用这把 blackbeard:武器 攻击，对所有敌人造成3点伤害。"
   },
   "blackbeard:CloakAndCannonball": {
     "NAME": "斗篷与炮弹",
@@ -376,7 +376,7 @@
   },
   "blackbeard:WeaponProficiency": {
     "NAME": "武器娴熟",
-    "DESCRIPTION": "你的攻击额外使用一把武器。"
+    "DESCRIPTION": "你的攻击额外使用一把 blackbeard:武器 。"
   },
   "blackbeard:FieryDefense": {
     "NAME": "火焰防御",
@@ -385,11 +385,11 @@
   },
   "blackbeard:VampiricScepter": {
     "NAME": "吸血鬼权杖",
-    "DESCRIPTION": "装备一把 !M! / {D} 的武器。 NL 每当你使用这把武器攻击，回复 !blackbeard:M2! 点生命值。"
+    "DESCRIPTION": "装备一把 !M! / {D} 的 blackbeard:武器 。 NL 每当你使用这把 blackbeard:武器 攻击，回复 !blackbeard:M2! 点生命值。"
   },
   "blackbeard:ReapersScythe": {
     "NAME": "收割之镰",
-    "DESCRIPTION": "装备一把 !M! / {D} 的武器。 NL 每当你使用这把武器攻击，每次攻击给予目标敌人1层 blackbeard:收割者印记 。"
+    "DESCRIPTION": "装备一把 !M! / {D} 的 blackbeard:武器 。 NL 每当你使用这把 blackbeard:武器 攻击，每次攻击给予目标敌人1层 blackbeard:收割者印记 。"
   },
   "blackbeard:PirateHook": {
     "NAME": "海盗之钩",
@@ -397,7 +397,7 @@
   },
   "blackbeard:DeadlyArsenal": {
     "NAME": "致命军火",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 你每装备着1把不同的武器，抽1张牌。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 你每装备着1把不同的 blackbeard:武器 ，抽1张牌。"
   },
   "blackbeard:PowerHungry": {
     "NAME": "渴求力量",

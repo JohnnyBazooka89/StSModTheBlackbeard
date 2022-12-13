@@ -9,23 +9,23 @@
   },
   "blackbeard:Cutlass": {
     "NAME": "Сабля",
-    "DESCRIPTION": "Снаряжает вас Оружием {A} / {D}."
+    "DESCRIPTION": "Снаряжает вас blackbeard:Оружием {A} / {D}."
   },
   "blackbeard:Upgrade": {
     "NAME": "Улучшить",
-    "DESCRIPTION": "Даёт + !M! / + !M! всем снаряжённым Оружиям."
+    "DESCRIPTION": "Даёт + !M! / + !M! всем снаряжённым blackbeard:Оружиям."
   },
   "blackbeard:Sharpening": {
     "NAME": "Заострить",
-    "DESCRIPTION": "Даёт + !M! урона всем снаряжённым Оружиям."
+    "DESCRIPTION": "Даёт + !M! урона всем снаряжённым blackbeard:Оружиям."
   },
   "blackbeard:RearmingStrike": {
     "NAME": "Вооружающий удар",
-    "DESCRIPTION": "Наносит !D! урона. Снаряжает вас Оружием {A} / {D}."
+    "DESCRIPTION": "Наносит !D! урона. Снаряжает вас blackbeard:Оружием {A} / {D}."
   },
   "blackbeard:Fencing": {
     "NAME": "Фехтование",
-    "DESCRIPTION": "Даёт + !blackbeard:M+1! / + !M! правому в очереди Оружию."
+    "DESCRIPTION": "Даёт + !blackbeard:M+1! / + !M! правому в очереди blackbeard:Оружию."
   },
   "blackbeard:Parrot": {
     "NAME": "Попугай",
@@ -34,7 +34,7 @@
   },
   "blackbeard:Halberd": {
     "NAME": "Алебарда",
-    "DESCRIPTION": "Снаряжает вас Оружием !M! / {D}. Накладывает на врага 2 blackbeard:Кровотечения, когда Атака наносит ему урон и вы используете данное Оружие."
+    "DESCRIPTION": "Снаряжает вас blackbeard:Оружием !M! / {D}. Накладывает на врага 2 blackbeard:Кровотечения, когда Атака наносит ему урон и вы используете данное blackbeard:Оружие."
   },
   "blackbeard:TheDrunkenSailor": {
     "NAME": "Пьяный моряк",
@@ -42,8 +42,8 @@
   },
   "blackbeard:SwordDance": {
     "NAME": "Танец мечей",
-    "DESCRIPTION": "В этом ходу !M! следующие Атаки используют все снаряжённые Оружия.",
-    "UPGRADE_DESCRIPTION": "В этом ходу !M! следующие Атаки используют все снаряжённые Оружия."
+    "DESCRIPTION": "В этом ходу !M! следующие Атаки используют все снаряжённые blackbeard:Оружия.",
+    "UPGRADE_DESCRIPTION": "В этом ходу !M! следующие Атаки используют все снаряжённые blackbeard:Оружия."
   },
   "blackbeard:Cannonball": {
     "NAME": "Ядро",
@@ -56,11 +56,11 @@
   },
   "blackbeard:Rum": {
     "NAME": "Ром",
-    "DESCRIPTION": "Даёт !M! Сопротивляемости."
+    "DESCRIPTION": "Даёт !M! blackbeard:Сопротивляемости."
   },
   "blackbeard:GhostInTheRum": {
     "NAME": "Призрак в роме",
-    "DESCRIPTION": "Даёт 1 Неосязаемости. NL Вы теряете !M! Сопротивляемости. NL Сжигается."
+    "DESCRIPTION": "Даёт 1 Неосязаемости. NL Вы теряете !M! blackbeard:Сопротивляемости. NL Сжигается."
   },
   "blackbeard:GoldenStrike": {
     "NAME": "Золотой удар",
@@ -74,12 +74,12 @@
   },
   "blackbeard:PowderKeg": {
     "NAME": "Пороховая бочка",
-    "DESCRIPTION": "Снаряжает вас Оружием {A} / {D}. Наносит !M! урона ВСЕМ врагам, когда у него кончается прочность."
+    "DESCRIPTION": "Снаряжает вас blackbeard:Оружием {A} / {D}. Наносит !M! урона ВСЕМ врагам, когда у него кончается прочность."
   },
   "blackbeard:Scrap": {
     "NAME": "Разломать",
-    "DESCRIPTION": "Удаляет правое в очереди Оружие. NL Даёт [E] [E].",
-    "UPGRADE_DESCRIPTION": "Удаляет правое в очереди Оружие. NL Даёт [E] [E] [E].",
+    "DESCRIPTION": "Удаляет правое в очереди blackbeard:Оружие. NL Даёт [E] [E].",
+    "UPGRADE_DESCRIPTION": "Удаляет правое в очереди blackbeard:Оружие. NL Даёт [E] [E] [E].",
     "EXTENDED_DESCRIPTION": [
       "У меня нет Оружия!"
     ]
@@ -94,11 +94,11 @@
   },
   "blackbeard:SwordOfWisdom": {
     "NAME": "Меч мудрости",
-    "DESCRIPTION": "Снаряжает вас Оружием {A} / !M!. Вы берёте одну карту, когда используете данное Оружие."
+    "DESCRIPTION": "Снаряжает вас blackbeard:Оружием {A} / !M!. Вы берёте одну карту, когда используете данное blackbeard:Оружие."
   },
   "blackbeard:SwordOfChaos": {
     "NAME": "Меч хаоса",
-    "DESCRIPTION": "Снаряжает вас Оружием {A} / !M!. Добавляет в руку случайную карту, когда вы используете данное Оружие."
+    "DESCRIPTION": "Снаряжает вас blackbeard:Оружием {A} / !M!. Добавляет в руку случайную карту, когда вы используете данное blackbeard:Оружие."
   },
   "blackbeard:PirateStrength": {
     "NAME": "Сила пирата",
@@ -154,11 +154,11 @@
   },
   "blackbeard:Toast": {
     "NAME": "Тост",
-    "DESCRIPTION": "Даёт !M! Сопротивляемости. NL Отнимает !M! Сопротивляемости в начале следующего хода. NL Сжигается."
+    "DESCRIPTION": "Даёт !M! blackbeard:Сопротивляемости. NL Отнимает !M! blackbeard:Сопротивляемости в начале следующего хода. NL Сжигается."
   },
   "blackbeard:CatONineTails": {
     "NAME": "Плеть",
-    "DESCRIPTION": "Снаряжает вас Оружием !M! / {D}. Данное Оружие получает + 2 урона при каждом его использовании."
+    "DESCRIPTION": "Снаряжает вас blackbeard:Оружием !M! / {D}. Данное blackbeard:Оружие получает + 2 урона при каждом его использовании."
   },
   "blackbeard:PirateEarring": {
     "NAME": "Серьга пирата",
@@ -174,7 +174,7 @@
   },
   "blackbeard:Dagger": {
     "NAME": "Кинжал",
-    "DESCRIPTION": "Снаряжает вас Оружием {A} / !M!. NL В начале вашего хода данное Оружие теряет 1 Прочности и наносит урон, равный своему урону, случайному врагу."
+    "DESCRIPTION": "Снаряжает вас blackbeard:Оружием {A} / !M!. NL В начале вашего хода данное blackbeard:Оружие теряет 1 Прочности и наносит урон, равный своему урону, случайному врагу."
   },
   "blackbeard:PiratesWill": {
     "NAME": "Воля пирата",
@@ -190,7 +190,7 @@
   },
   "blackbeard:CaptainsHat": {
     "NAME": "Шляпа капитана",
-    "DESCRIPTION": "Даёт !M! Силы. NL Даёт !M! Сопротивляемости."
+    "DESCRIPTION": "Даёт !M! Силы. NL Даёт !M! blackbeard:Сопротивляемости."
   },
   "blackbeard:BlindAttacks": {
     "NAME": "Слепые атаки",
@@ -202,7 +202,7 @@
   },
   "blackbeard:AgileStrike": {
     "NAME": "Ловкий удар",
-    "DESCRIPTION": "Наносит !D! урона. NL Снижает стоимость данной карты до 0 до конца хода, если вас снарядили Оружием в данном ходу."
+    "DESCRIPTION": "Наносит !D! урона. NL Снижает стоимость данной карты до 0 до конца хода, если вас снарядили blackbeard:Оружием в данном ходу."
   },
   "blackbeard:DangerousBlow": {
     "NAME": "Опасная атака",
@@ -232,7 +232,7 @@
   },
   "blackbeard:Sword": {
     "NAME": "Меч",
-    "DESCRIPTION": "Выберите 1 из 3 Мечей. NL Снаряжает вас Оружием {A} / !M! с доп. эффектом.",
+    "DESCRIPTION": "Выберите 1 из 3 Мечей. NL Снаряжает вас blackbeard:Оружием {A} / !M! с доп. эффектом.",
     "EXTENDED_DESCRIPTION": [
       "Доп. эффекты",
       "#rОгонь: Наносит #b3 урона ВСЕМ врагам, когда вы используете данное #yОружие. NL #yМудрость: Вы берёте одну карту, когда используете данное #yОружие. NL #pХаос: Добавляет в руку случайную карту, когда вы используете данное #yОружие."
@@ -258,21 +258,21 @@
   },
   "blackbeard:SmithingHammer": {
     "NAME": "Кузнечный молот",
-    "DESCRIPTION": "Снаряжает вас Оружием {A} / !M!. NL Оно теряет 1 Прочности в начале вашего хода. Улучшает случайную карту в руке до конца боя каждый раз, когда данное Оружие теряет Прочность."
+    "DESCRIPTION": "Снаряжает вас blackbeard:Оружием {A} / !M!. NL Оно теряет 1 Прочности в начале вашего хода. Улучшает случайную карту в руке до конца боя каждый раз, когда данное blackbeard:Оружие теряет Прочность."
   },
   "blackbeard:Spear": {
     "NAME": "Копьё",
-    "DESCRIPTION": "Снаряжает вас Оружием !M! / {D}."
+    "DESCRIPTION": "Снаряжает вас blackbeard:Оружием !M! / {D}."
   },
   "blackbeard:WeaponMastery": {
     "NAME": "Оружейное мастерство",
-    "DESCRIPTION": "Вы берёте !M! карту, когда вас снаряжает Оружием.",
-    "UPGRADE_DESCRIPTION": "Вы берёте !M! карты, когда вас снаряжает Оружием."
+    "DESCRIPTION": "Вы берёте !M! карту, когда вас снаряжает blackbeard:Оружием.",
+    "UPGRADE_DESCRIPTION": "Вы берёте !M! карты, когда вас снаряжает blackbeard:Оружием."
   },
   "blackbeard:Salvager": {
     "NAME": "Мародёр",
-    "DESCRIPTION": "Даёт [E] , когда у Оружия кончается Прочность.",
-    "UPGRADE_DESCRIPTION": "Даёт [E] [E] , когда у Оружия кончается Прочность."
+    "DESCRIPTION": "Даёт [E] , когда у blackbeard:Оружия кончается Прочность.",
+    "UPGRADE_DESCRIPTION": "Даёт [E] [E] , когда у blackbeard:Оружия кончается Прочность."
   },
   "blackbeard:Anchor": {
     "NAME": "Якорь",
@@ -286,7 +286,7 @@
   },
   "blackbeard:MegaUpgrade": {
     "NAME": "Максимально улучшить",
-    "DESCRIPTION": "Даёт + !M! / + !M! всем снаряжённым Оружиям."
+    "DESCRIPTION": "Даёт + !M! / + !M! всем снаряжённым blackbeard:Оружиям."
   },
   "blackbeard:Recklessness": {
     "NAME": "Безрассудство",
@@ -299,11 +299,11 @@
   },
   "blackbeard:ArmorUp": {
     "NAME": "Заблокировать",
-    "DESCRIPTION": "Даёт !M! Защиты, когда вы разыгрываете Атаки со снаряжённым Оружием в этом ходу."
+    "DESCRIPTION": "Даёт !M! Защиты, когда вы разыгрываете Атаки со снаряжённым blackbeard:Оружием в этом ходу."
   },
   "blackbeard:Intoxication": {
     "NAME": "Опьянение",
-    "DESCRIPTION": "Даёт !M! Сопротивляемости. NL Отнимает 1 Сопротивляемости в начале вашего хода."
+    "DESCRIPTION": "Даёт !M! blackbeard:Сопротивляемости. NL Отнимает 1 blackbeard:Сопротивляемости в начале вашего хода."
   },
   "blackbeard:CannonballSupply": {
     "NAME": "Запас ядер",
@@ -355,7 +355,7 @@
   },
   "blackbeard:SwordOfFire": {
     "NAME": "Меч огня",
-    "DESCRIPTION": "Снаряжает вас Оружием {A} / !M!. Наносит 3 урона ВСЕМ врагам, когда вы используете данное Оружие."
+    "DESCRIPTION": "Снаряжает вас blackbeard:Оружием {A} / !M!. Наносит 3 урона ВСЕМ врагам, когда вы используете данное blackbeard:Оружие."
   },
   "blackbeard:CloakAndCannonball": {
     "NAME": "Плащ и ядро",
@@ -368,7 +368,7 @@
   },
   "blackbeard:WeaponProficiency": {
     "NAME": "Оружейный опыт",
-    "DESCRIPTION": "Ваши Атаки используют дополнительное Оружие."
+    "DESCRIPTION": "Ваши Атаки используют дополнительное blackbeard:Оружие."
   },
   "blackbeard:FieryDefense": {
     "NAME": "Пылкая оборона",
@@ -377,11 +377,11 @@
   },
   "blackbeard:VampiricScepter": {
     "NAME": "Вампирский скипетр",
-    "DESCRIPTION": "Снаряжает вас Оружием !M! / {D}. Восполняет !blackbeard:M2! ОЗ, когда вы используете данное Оружие."
+    "DESCRIPTION": "Снаряжает вас blackbeard:Оружием !M! / {D}. Восполняет !blackbeard:M2! ОЗ, когда вы используете данное blackbeard:Оружие."
   },
   "blackbeard:ReapersScythe": {
     "NAME": "Коса Жнеца",
-    "DESCRIPTION": "Снаряжает вас Оружием !M! / {D}. Накладывает на врага 1 blackbeard:Метку Жнеца когда Атака наносит ему урон и вы используете данное Оружие."
+    "DESCRIPTION": "Снаряжает вас blackbeard:Оружием !M! / {D}. Накладывает на врага 1 blackbeard:Метку Жнеца когда Атака наносит ему урон и вы используете данное blackbeard:Оружие."
   },
   "blackbeard:Murder": {
     "NAME": "Убить",
@@ -397,7 +397,7 @@
   },
   "blackbeard:DeadlyArsenal": {
     "NAME": "Убойный арсенал",
-    "DESCRIPTION": "Даёт !B! Защиты. NL Вы берёте по 1 карте за каждый вид снаряженных Оружий."
+    "DESCRIPTION": "Даёт !B! Защиты. NL Вы берёте по 1 карте за каждый вид снаряженных blackbeard:Оружий."
   },
   "blackbeard:PowerHungry": {
     "NAME": "Жажда силы",

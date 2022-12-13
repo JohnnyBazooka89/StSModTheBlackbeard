@@ -10,7 +10,7 @@
     "NAME": "Hip Flask",
     "FLAVOR": "Very handy.",
     "DESCRIPTIONS": [
-      "At the start of each combat, gain #b1 #yResistance."
+      "At the start of each combat, gain #b1 #yblackbeard:Resistance."
     ]
   },
   "blackbeard:BloodOrange": {
@@ -31,7 +31,7 @@
     "NAME": "White Pearl",
     "FLAVOR": "Both beautiful and powerful.",
     "DESCRIPTIONS": [
-      "Whenever you equip a #yWeapon, give it #b+1 Attack."
+      "Whenever you equip a #yblackbeard:Weapon, give it #b+1 Attack."
     ]
   },
   "blackbeard:CannonballsOfSteel": {
@@ -59,7 +59,7 @@
     "NAME": "Penknife",
     "FLAVOR": "If you have it in your pocket, don't forget to use it.",
     "DESCRIPTIONS": [
-      "Every #b8th Attack that uses at least one #yWeapon deals double damage."
+      "Every #b8th Attack that uses at least one #yblackbeard:Weapon deals double damage."
     ]
   },
   "blackbeard:PoorMathSkills": {
@@ -73,35 +73,35 @@
     "NAME": "Powder Can",
     "FLAVOR": "Just like a Powder Keg, but smaller.",
     "DESCRIPTIONS": [
-      "At the start of each combat, equip a #b0 / #b1 #yWeapon. When it is destroyed, deal #b8 damage to ALL enemies."
+      "At the start of each combat, equip a #b0 / #b1 #yblackbeard:Weapon. When it is destroyed, deal #b8 damage to ALL enemies."
     ]
   },
   "blackbeard:SoberMinded": {
     "NAME": "Sober-minded",
     "FLAVOR": "Being sober is not a natural state for The Blackbeard.",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of your turn. At the start of each combat, and then every #b6 turns, lose #b1 #yResistance."
+      "Gain [E] at the start of your turn. At the start of each combat, and then every #b6 turns, lose #b1 #yblackbeard:Resistance."
     ]
   },
   "blackbeard:Spearhead": {
     "NAME": "Spearhead",
     "FLAVOR": "The durability of your Weapon ends... and so does the life of your enemy.",
     "DESCRIPTIONS": [
-      "When a #yWeapon has #b1 Durability, it deals #b3 more damage."
+      "When a #yblackbeard:Weapon has #b1 Durability, it deals #b3 more damage."
     ]
   },
   "blackbeard:CrossedSwords": {
     "NAME": "Crossed Swords",
     "FLAVOR": "Perfect for dual wielding.",
     "DESCRIPTIONS": [
-      "Your attacks use an additional #yWeapon."
+      "Your attacks use an additional #yblackbeard:Weapon."
     ]
   },
   "blackbeard:Karategi": {
     "NAME": "Karategi",
     "FLAVOR": "When you wear it, you instantly learn new styles of combat.",
     "DESCRIPTIONS": [
-      "Your #yWeapons have infinite Durability. After you attack with a #yWeapon, it goes to the last position."
+      "Your #yblackbeard:Weapons have infinite Durability. After you attack with a #yblackbeard:Weapon, it goes to the last position."
     ]
   },
   "blackbeard:LoadTheGoldenCannons": {

@@ -1,5 +1,6 @@
 {
   "blackbeard:WeaponKeyword": {
+    "PROPER_NAME": "Weapon",
     "NAMES": [
       "weapon",
       "weapons"
@@ -7,6 +8,7 @@
     "DESCRIPTION": "Whenever you play an attack card, one Durability of your rightmost Weapon is used and card's damage is increased by Weapon's Attack. You can equip a maximum of #b10 Weapons."
   },
   "blackbeard:ResistanceKeyword": {
+    "PROPER_NAME": "Resistance",
     "NAMES": [
       "resistance"
     ],
