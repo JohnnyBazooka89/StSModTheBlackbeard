@@ -49,7 +49,6 @@ public class Sword extends AbstractBlackbeardCard {
     @Override
     public void initializeDescription() {
         super.initializeDescription();
-        this.keywords.clear();
     }
 
     @Override
