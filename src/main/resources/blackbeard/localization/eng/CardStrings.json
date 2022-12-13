@@ -273,7 +273,7 @@
     "DESCRIPTION": "Equip a !M! / {D} blackbeard:Weapon."
   },
   "blackbeard:WeaponMastery": {
-    "NAME": "blackbeard:Weapon Mastery",
+    "NAME": "Weapon Mastery",
     "DESCRIPTION": "Whenever you equip a blackbeard:Weapon, draw !M! card.",
     "UPGRADE_DESCRIPTION": "Whenever you equip a blackbeard:Weapon, draw !M! cards."
   },

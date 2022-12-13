@@ -56,11 +56,11 @@
   },
   "blackbeard:Rum": {
     "NAME": "朗姆酒",
-    "DESCRIPTION": "获得 !M! 点 blackbeard:抵抗。"
+    "DESCRIPTION": "获得 !M! 点 blackbeard:抵抗 。"
   },
   "blackbeard:GhostInTheRum": {
     "NAME": "朗姆酒里的鬼魂",
-    "DESCRIPTION": "获得1层 无实体 。 NL 失去 !M! 点 blackbeard:抵抗。 NL 消耗 。"
+    "DESCRIPTION": "获得1层 无实体 。 NL 失去 !M! 点 blackbeard:抵抗 。 NL 消耗 。"
   },
   "blackbeard:GoldenStrike": {
     "NAME": "黄金打击",
@@ -154,7 +154,7 @@
   },
   "blackbeard:Toast": {
     "NAME": "干杯",
-    "DESCRIPTION": "获得 !M! 点 blackbeard:抵抗。 NL 在你的下回合开始时，失去 !M! 点 blackbeard:抵抗。 NL 消耗 。"
+    "DESCRIPTION": "获得 !M! 点 blackbeard:抵抗 。 NL 在你的下回合开始时，失去 !M! 点 blackbeard:抵抗 。 NL 消耗 。"
   },
   "blackbeard:CatONineTails": {
     "NAME": "九尾猫",
@@ -198,7 +198,7 @@
   },
   "blackbeard:CaptainsHat": {
     "NAME": "船长的帽子",
-    "DESCRIPTION": "获得 !M! 点 力量 。 NL 获得 !M! 点 blackbeard:抵抗。"
+    "DESCRIPTION": "获得 !M! 点 力量 。 NL 获得 !M! 点 blackbeard:抵抗 。"
   },
   "blackbeard:BlindAttacks": {
     "NAME": "盲目攻击",
@@ -311,7 +311,7 @@
   },
   "blackbeard:Intoxication": {
     "NAME": "沉醉",
-    "DESCRIPTION": "获得 !M! 点 blackbeard:抵抗。 NL 在你的回合开始时，失去1点 blackbeard:抵抗。"
+    "DESCRIPTION": "获得 !M! 点 blackbeard:抵抗 。 NL 在你的回合开始时，失去1点 blackbeard:抵抗 。"
   },
   "blackbeard:CannonballSupply": {
     "NAME": "炮弹补给",
