@@ -87,6 +87,13 @@
       " [E] ."
     ]
   },
+  "blackbeard:GainWeakNextTurnPower": {
+    "NAME": "Zyskaj Słabość w następnej turze",
+    "DESCRIPTIONS": [
+      "Na początku następnej tury, zyskaj #b",
+      " pkt. #ySłabości."
+    ]
+  },
   "blackbeard:ArmorUpPower": {
     "NAME": "Opancerzenie",
     "DESCRIPTIONS": [

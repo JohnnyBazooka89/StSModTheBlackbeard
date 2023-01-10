@@ -17,14 +17,12 @@ public class PowerHungry extends AbstractBlackbeardCard {
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 0;
     private static final int CARDS_TO_PUT = 1;
-    private static final int UPGRADE_PLUS_CARDS_TO_PUT = 1;
 
     public PowerHungry() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
                 CardColorEnum.BLACKBEARD_BLACK, CardRarity.RARE, CardTarget.SELF);
 
         this.baseMagicNumber = this.magicNumber = CARDS_TO_PUT;
-        this.isInnate = true;
         this.exhaust = true;
     }
 
@@ -37,7 +35,7 @@ public class PowerHungry extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADE_PLUS_CARDS_TO_PUT);
+            this.isInnate = true;
             this.rawDescription = UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

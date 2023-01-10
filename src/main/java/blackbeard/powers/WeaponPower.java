@@ -4,6 +4,8 @@ import blackbeard.orbs.AbstractWeaponOrb;
 import blackbeard.relics.Karategi;
 import blackbeard.relics.Penknife;
 import blackbeard.relics.Spearhead;
+import com.evacipated.cardcrawl.mod.stslib.patches.NeutralPowertypePatch;
+import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.InvisiblePower;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -20,7 +22,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WeaponPower extends AbstractPower {
+public class WeaponPower extends AbstractPower implements InvisiblePower {
 
     public static final String POWER_ID = "blackbeard:WeaponPower";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
@@ -32,6 +34,7 @@ public class WeaponPower extends AbstractPower {
         this.name = NAME;
         this.owner = owner;
         this.amount = -1;
+        this.type = NeutralPowertypePatch.NEUTRAL;
         this.loadRegion("painfulStabs");
         this.updateDescription();
     }

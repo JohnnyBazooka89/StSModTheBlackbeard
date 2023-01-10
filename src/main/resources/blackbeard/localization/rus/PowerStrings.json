@@ -87,6 +87,13 @@
       " [E] в начале след. хода."
     ]
   },
+  "blackbeard:GainWeakNextTurnPower": {
+    "NAME": "Вы получаете Слабости в след. ходу",
+    "DESCRIPTIONS": [
+      "Вы получаете #b",
+      " #yСлабости."
+    ]
+  },
   "blackbeard:ArmorUpPower": {
     "NAME": "Заблокировать",
     "DESCRIPTIONS": [

@@ -3,10 +3,10 @@ package blackbeard.variables;
 import basemod.abstracts.DynamicVariable;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 
-public class MagicNumberPlusOneVariable extends DynamicVariable {
+public class MagicNumberPlusTwoVariable extends DynamicVariable {
     @Override
     public String key() {
-        return "blackbeard:M+1";
+        return "blackbeard:M+2";
     }
 
     @Override
@@ -16,12 +16,12 @@ public class MagicNumberPlusOneVariable extends DynamicVariable {
 
     @Override
     public int value(AbstractCard card) {
-        return card.magicNumber + 1;
+        return card.magicNumber + 2;
     }
 
     @Override
     public int baseValue(AbstractCard card) {
-        return card.baseMagicNumber + 1;
+        return card.baseMagicNumber + 2;
     }
 
     @Override

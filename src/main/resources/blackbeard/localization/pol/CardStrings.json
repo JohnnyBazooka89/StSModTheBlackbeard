@@ -17,7 +17,7 @@
   },
   "blackbeard:Sharpening": {
     "NAME": "Naostrzenie",
-    "DESCRIPTION": "Daj wszystkim swoim blackbeard:Broniom + !M! Ataku."
+    "DESCRIPTION": "Daj wszystkim swoim blackbeard:Broniom + !M! Ataku. NL Daj swojej najbardziej wysuniętej na prawo blackbeard:Broni + 1 / + 1."
   },
   "blackbeard:RearmingStrike": {
     "NAME": "Uzbrajające uderzenie",
@@ -25,7 +25,7 @@
   },
   "blackbeard:Fencing": {
     "NAME": "Szermierka",
-    "DESCRIPTION": "Daj swojej najbardziej wysuniętej na prawo blackbeard:Broni + !blackbeard:M+1! / + !M!."
+    "DESCRIPTION": "Daj swojej najbardziej wysuniętej na prawo blackbeard:Broni + !blackbeard:M+2! / + !M!."
   },
   "blackbeard:Parrot": {
     "NAME": "Papuga",
@@ -194,7 +194,8 @@
   },
   "blackbeard:Eyepatch": {
     "NAME": "Przepaska na oko",
-    "DESCRIPTION": "Otrzymaj !M! pkt. Słabości. NL Na początku każdej tury, dobierz 1 dodatkową kartę."
+    "DESCRIPTION": "W następnej turze, otrzymaj !M! pkt. Słabości. NL Na początku każdej tury, dobierz 1 dodatkową kartę.",
+    "UPGRADE_DESCRIPTION": "Startowa. NL W następnej turze, otrzymaj !M! pkt. Słabości. NL Na początku każdej tury, dobierz 1 dodatkową kartę."
   },
   "blackbeard:CaptainsHat": {
     "NAME": "Kapitański kapelusz",
@@ -401,7 +402,7 @@
   },
   "blackbeard:PowerHungry": {
     "NAME": "Żądny mocy",
-    "DESCRIPTION": "Startowa. NL Wybierz !M! kartę Mocy ze stosu rozgrywającego i umieść ją w ręce. NL Wykluczenie.",
-    "UPGRADE_DESCRIPTION": "Startowa. NL Wybierz !M! karty Mocy ze stosu rozgrywającego i umieść je w ręce. NL Wykluczenie."
+    "DESCRIPTION": "Wybierz !M! kartę Mocy ze stosu rozgrywającego i umieść ją w ręce. NL Wykluczenie.",
+    "UPGRADE_DESCRIPTION": "Startowa. NL Wybierz !M! kartę Mocy ze stosu rozgrywającego i umieść je w ręce. NL Wykluczenie."
   }
 }

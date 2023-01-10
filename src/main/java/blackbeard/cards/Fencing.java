@@ -30,7 +30,7 @@ public class Fencing extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new UpgradeWeaponsAction(this.magicNumber + 1, this.magicNumber, WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON));
+        AbstractDungeon.actionManager.addToBottom(new UpgradeWeaponsAction(this.magicNumber + 2, this.magicNumber, WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON));
     }
 
     @Override

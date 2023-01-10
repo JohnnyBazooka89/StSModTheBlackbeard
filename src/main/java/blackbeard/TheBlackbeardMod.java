@@ -16,7 +16,7 @@ import blackbeard.potions.OrangeJuicePotion;
 import blackbeard.potions.RumPotion;
 import blackbeard.potions.UpgradePotion;
 import blackbeard.utils.TextureLoader;
-import blackbeard.variables.MagicNumberPlusOneVariable;
+import blackbeard.variables.MagicNumberPlusTwoVariable;
 import blackbeard.variables.SecondMagicNumberVariable;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
@@ -285,7 +285,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         logger.info("Begin editing cards");
         logger.info("Add cards for " + PlayerClassEnum.BLACKBEARD_CLASS.toString());
 
-        BaseMod.addDynamicVariable(new MagicNumberPlusOneVariable());
+        BaseMod.addDynamicVariable(new MagicNumberPlusTwoVariable());
         BaseMod.addDynamicVariable(new SecondMagicNumberVariable());
 
         new AutoAdd(MOD_THE_SPIRE_MOD_ID)

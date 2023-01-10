@@ -87,6 +87,13 @@
       " [E] 。"
     ]
   },
+  "blackbeard:GainWeakNextTurnPower": {
+    "NAME": "下回合获得虚弱",
+    "DESCRIPTIONS": [
+      "在你的下个回合开始时，获得 #b",
+      " 层 #y虚弱 。"
+    ]
+  },
   "blackbeard:ArmorUpPower": {
     "NAME": "穿上盔甲",
     "DESCRIPTIONS": [

@@ -13,7 +13,7 @@
   },
   "blackbeard:Upgrade": {
     "NAME": "Upgrade",
-    "DESCRIPTION": "Give all your equipped blackbeard:Weapons + !M! / + !M!."
+    "DESCRIPTION": "Give all your equipped blackbeard:Weapons + !M! / + !M!. NL Give your rightmost blackbeard:Weapon + 1 / + 1."
   },
   "blackbeard:Sharpening": {
     "NAME": "Sharpening",
@@ -25,7 +25,7 @@
   },
   "blackbeard:Fencing": {
     "NAME": "Fencing",
-    "DESCRIPTION": "Give your rightmost blackbeard:Weapon + !blackbeard:M+1! / + !M!."
+    "DESCRIPTION": "Give your rightmost blackbeard:Weapon + !blackbeard:M+2! / + !M!."
   },
   "blackbeard:Parrot": {
     "NAME": "Parrot",
@@ -158,7 +158,7 @@
   },
   "blackbeard:CatONineTails": {
     "NAME": "Cat O' Nine Tails",
-    "DESCRIPTION": "Equip a !M! / {D} blackbeard:Weapon. NL After you attack with this blackbeard:Weapon, give it + 2 Attack."
+    "DESCRIPTION": "Equip a !M! / {D} blackbeard:Weapon. NL After you attack with this blackbeard:Weapon, give it +2 Attack."
   },
   "blackbeard:PirateEarring": {
     "NAME": "Pirate Earring",
@@ -194,7 +194,8 @@
   },
   "blackbeard:Eyepatch": {
     "NAME": "Eyepatch",
-    "DESCRIPTION": "Gain !M! Weak. NL At the start of your turn, draw 1 additional card."
+    "DESCRIPTION": "Next turn, gain !M! Weak. NL At the start of your turn, draw 1 additional card.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Next turn, gain !M! Weak. NL At the start of your turn, draw 1 additional card."
   },
   "blackbeard:CaptainsHat": {
     "NAME": "Captain's Hat",
@@ -298,8 +299,8 @@
   },
   "blackbeard:Recklessness": {
     "NAME": "Recklessness",
-    "DESCRIPTION": "Gain [E] [E]. NL At the start of your next turn, lose [E] [E].",
-    "UPGRADE_DESCRIPTION": "Gain [E] [E] [E]. NL At the start of your next turn, lose [E] [E]."
+    "DESCRIPTION": "Gain [E] [E]. NL Next turn, lose [E] [E].",
+    "UPGRADE_DESCRIPTION": "Gain [E] [E] [E]. NL Next turn, lose [E] [E]."
   },
   "blackbeard:DelayedPain": {
     "NAME": "Delayed Pain",
@@ -401,7 +402,7 @@
   },
   "blackbeard:PowerHungry": {
     "NAME": "Power-hungry",
-    "DESCRIPTION": "Innate. NL Put !M! Power card from your draw pile into your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Put !M! Power cards from your draw pile into your hand. NL Exhaust."
+    "DESCRIPTION": "Put !M! Power card from your draw pile into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Put !M! Power card from your draw pile into your hand. NL Exhaust."
   }
 }

@@ -13,7 +13,7 @@
   },
   "blackbeard:Upgrade": {
     "NAME": "升级",
-    "DESCRIPTION": "使你装备着的所有的 blackbeard:武器 获得 + !M! / + !M! 。"
+    "DESCRIPTION": "使你装备着的所有的 blackbeard:武器 获得 + !M! / + !M! 。 NL 使你最右边的 blackbeard:武器 获得 + 1 / + 1 。"
   },
   "blackbeard:Sharpening": {
     "NAME": "磨砺",
@@ -25,7 +25,7 @@
   },
   "blackbeard:Fencing": {
     "NAME": "击剑",
-    "DESCRIPTION": "使你最右边的 blackbeard:武器 获得 + !blackbeard:M+1! / + !M! 。"
+    "DESCRIPTION": "使你最右边的 blackbeard:武器 获得 + !blackbeard:M+2! / + !M! 。"
   },
   "blackbeard:Parrot": {
     "NAME": "鹦鹉",
@@ -194,7 +194,8 @@
   },
   "blackbeard:Eyepatch": {
     "NAME": "眼罩",
-    "DESCRIPTION": "获得 !M! 层 虚弱 。 NL 在你的回合开始时，额外抽1张牌。"
+    "DESCRIPTION": "在下一回合，获得 !M! 层 虚弱 。 NL 在你的回合开始时，额外抽1张牌。",
+    "UPGRADE_DESCRIPTION": "固有 。 NL 在下一回合，获得 !M! 层 虚弱 。 NL 在你的回合开始时，额外抽1张牌。"
   },
   "blackbeard:CaptainsHat": {
     "NAME": "船长的帽子",
@@ -401,7 +402,7 @@
   },
   "blackbeard:PowerHungry": {
     "NAME": "渴求力量",
-    "DESCRIPTION": "固有 。 NL 将 !M! 张能力牌从你的抽牌堆放入你的手牌。 NL 消耗 。",
+    "DESCRIPTION": "将 !M! 张能力牌从你的抽牌堆放入你的手牌。 NL 消耗 。",
     "UPGRADE_DESCRIPTION": "固有 。 NL 将 !M! 张能力牌从你的抽牌堆放入你的手牌。 NL 消耗 。"
   }
 }

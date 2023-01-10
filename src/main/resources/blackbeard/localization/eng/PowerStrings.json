@@ -87,6 +87,13 @@
       " [E] ."
     ]
   },
+  "blackbeard:GainWeakNextTurnPower": {
+    "NAME": "Gain Weak Next Turn",
+    "DESCRIPTIONS": [
+      "At the start of your next turn, gain #b",
+      " #yWeak."
+    ]
+  },
   "blackbeard:ArmorUpPower": {
     "NAME": "Armor Up",
     "DESCRIPTIONS": [

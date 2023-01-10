@@ -17,7 +17,7 @@
   },
   "blackbeard:Sharpening": {
     "NAME": "Заострить",
-    "DESCRIPTION": "Даёт + !M! урона всем снаряжённым blackbeard:Оружиям."
+    "DESCRIPTION": "Даёт + !M! урона всем снаряжённым blackbeard:Оружиям. NL Даёт + 1 / + 1 правому в очереди blackbeard:Оружию."
   },
   "blackbeard:RearmingStrike": {
     "NAME": "Вооружающий удар",
@@ -25,7 +25,7 @@
   },
   "blackbeard:Fencing": {
     "NAME": "Фехтование",
-    "DESCRIPTION": "Даёт + !blackbeard:M+1! / + !M! правому в очереди blackbeard:Оружию."
+    "DESCRIPTION": "Даёт + !blackbeard:M+2! / + !M! правому в очереди blackbeard:Оружию."
   },
   "blackbeard:Parrot": {
     "NAME": "Попугай",
@@ -186,7 +186,8 @@
   },
   "blackbeard:Eyepatch": {
     "NAME": "Повязка на глаз",
-    "DESCRIPTION": "Вы получаете !M! Слабости. NL В начале вашего хода вы берёте 1 доп. карту."
+    "DESCRIPTION": "Вы получаете !M! Слабости в начале след. NL В начале вашего хода вы берёте 1 доп. карту.",
+    "UPGRADE_DESCRIPTION": "Начальная. NL Вы получаете !M! Слабости в начале след. NL В начале вашего хода вы берёте 1 доп. карту."
   },
   "blackbeard:CaptainsHat": {
     "NAME": "Шляпа капитана",
@@ -401,7 +402,7 @@
   },
   "blackbeard:PowerHungry": {
     "NAME": "Жажда силы",
-    "DESCRIPTION": "Начальная. NL Вы кладёте !M! выбранный Талант из стопки добора в руку. NL Сжигается.",
-    "UPGRADE_DESCRIPTION": "Начальная. NL Вы кладёте !M! выбранные Таланта из стопки добора в руку. NL Сжигается."
+    "DESCRIPTION": "Вы кладёте !M! выбранный Талант из стопки добора в руку. NL Сжигается.",
+    "UPGRADE_DESCRIPTION": "Начальная. NL Вы кладёте !M! выбранный Талант из стопки добора в руку. NL Сжигается."
   }
 }
