@@ -13,11 +13,11 @@
   },
   "blackbeard:Upgrade": {
     "NAME": "Ulepszenie",
-    "DESCRIPTION": "Daj wszystkim swoim blackbeard:Broniom + !M! / + !M!."
+    "DESCRIPTION": "Daj wszystkim swoim blackbeard:Broniom + !M! / + !M!. NL Daj swojej najbardziej wysuniętej na prawo blackbeard:Broni + 1 / + 1."
   },
   "blackbeard:Sharpening": {
     "NAME": "Naostrzenie",
-    "DESCRIPTION": "Daj wszystkim swoim blackbeard:Broniom + !M! Ataku. NL Daj swojej najbardziej wysuniętej na prawo blackbeard:Broni + 1 / + 1."
+    "DESCRIPTION": "Daj wszystkim swoim blackbeard:Broniom + !M! Ataku."
   },
   "blackbeard:RearmingStrike": {
     "NAME": "Uzbrajające uderzenie",
