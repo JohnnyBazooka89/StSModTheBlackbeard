@@ -117,7 +117,7 @@
   "blackbeard:DamageWhenIntangibleEndsPower": {
     "NAME": "End Of Intangible Damage",
     "DESCRIPTIONS": [
-      "At the start of the turn on which you are no longer #yIntangible, you take #b",
+      "The next time your #yIntangible wears off, you take #b",
       " damage."
     ]
   },

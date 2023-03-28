@@ -219,7 +219,7 @@
   },
   "blackbeard:VengefulSpirit": {
     "NAME": "Vengeful Spirit",
-    "DESCRIPTION": "Gain 1 Intangible. NL At the start of the turn on which you are no longer Intangible, you take !M! damage. NL Exhaust."
+    "DESCRIPTION": "Gain 1 Intangible. NL The next time your Intangible wears off, you take !M! damage. NL Exhaust."
   },
   "blackbeard:Revenge": {
     "NAME": "Revenge",
@@ -373,7 +373,7 @@
   },
   "blackbeard:UndeadForm": {
     "NAME": "Undead Form",
-    "DESCRIPTION": "Gain 3 Intangible. NL At the start of the turn on which you are no longer Intangible, you take !M! damage."
+    "DESCRIPTION": "Gain 3 Intangible. NL The next time your Intangible wears off, you take !M! damage."
   },
   "blackbeard:WeaponProficiency": {
     "NAME": "Weapon Proficiency",

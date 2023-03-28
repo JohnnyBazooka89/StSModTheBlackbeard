@@ -117,7 +117,7 @@
   "blackbeard:DamageWhenIntangibleEndsPower": {
     "NAME": "Obraż. po nieuchwytności",
     "DESCRIPTIONS": [
-      "Na starcie tury, w której nie masz ani jednego pkt. #yNieuchwytności, otrzymaj #b",
+      "Następnym razem, kiedy efekt #yNieuchwytności zaniknie, otrzymaj #b",
       " pkt. obrażeń."
     ]
   },

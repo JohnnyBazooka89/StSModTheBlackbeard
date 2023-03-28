@@ -219,7 +219,7 @@
   },
   "blackbeard:VengefulSpirit": {
     "NAME": "Mściwy duch",
-    "DESCRIPTION": "Zyskaj 1 pkt. Nieuchwytności. NL Na starcie tury, w której nie masz pkt. Nieuchwytności, otrzymaj !M! pkt. obrażeń. NL Wykluczenie."
+    "DESCRIPTION": "Zyskaj 1 pkt. Nieuchwytności. NL Następnym razem, kiedy efekt Nieuchwytności zaniknie, otrzymaj !M! pkt. obrażeń. NL Wykluczenie."
   },
   "blackbeard:Revenge": {
     "NAME": "Zemsta",
@@ -373,7 +373,7 @@
   },
   "blackbeard:UndeadForm": {
     "NAME": "Nieumarła forma",
-    "DESCRIPTION": "Zyskaj 3 pkt. Nieuchwytności. NL Na starcie tury, w której nie masz ani jednego pkt. Nieuchwytności, otrzymaj !M! pkt. obrażeń."
+    "DESCRIPTION": "Zyskaj 3 pkt. Nieuchwytności. NL Następnym razem, kiedy efekt Nieuchwytności zaniknie, otrzymaj !M! pkt. obrażeń."
   },
   "blackbeard:WeaponProficiency": {
     "NAME": "Biegłość w broni",

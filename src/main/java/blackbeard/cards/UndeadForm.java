@@ -19,7 +19,7 @@ public class UndeadForm extends AbstractBlackbeardCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 3;
     private static final int INTANGIBLE_VALUE = 3;
-    private static final int DAMAGE_TO_TAKE = 30;
+    private static final int DAMAGE_TO_TAKE = 25;
     private static final int UPGRADE_MINUS_DAMAGE_TO_TAKE = 5;
 
     public UndeadForm() {
