@@ -5,7 +5,7 @@
 
     <groupId>StSMod</groupId>
     <artifactId>StSModTheBlackbeard</artifactId>
-    <version>2.0.0</version>
+    <version>2.0.1</version>
     <packaging>jar</packaging>
     <name>StSModTheBlackbeard</name>
     <description>Adds a new character to Slay the Spire, The Blackbeard.</description>
@@ -15,6 +15,9 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <!-- Path where your Slay the Spire is installed -->
         <slayTheSpirePath>D:\SteamLibrary\steamapps\common\SlayTheSpire</slayTheSpirePath>
+        <cardArtSourcePath>${project.build.sourceDirectory}/../resources/blackbeard/img/cards/</cardArtSourcePath>
+        <cardArtDestinationPath>${project.build.outputDirectory}/../copiedCardArt/blackbeard/img/cards/
+        </cardArtDestinationPath>
     </properties>
 
     <dependencies>
@@ -82,7 +85,8 @@
                         <phase>package</phase>
                         <configuration>
                             <target>
-                                <copy file="target/TheBlackbeardMod.jar" tofile="${slayTheSpirePath}\mods\TheBlackbeardMod.jar"/>
+                                <copy file="target/TheBlackbeardMod.jar"
+                                      tofile="${slayTheSpirePath}\mods\TheBlackbeardMod.jar"/>
                                 <copy file="target/TheBlackbeardMod.jar"
                                       tofile="${slayTheSpirePath}\TheBlackbeardMod\content\TheBlackbeardMod.jar"/>
                             </target>
@@ -90,6 +94,133 @@
                         <goals>
                             <goal>run</goal>
                         </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>com.coderplus.maven.plugins</groupId>
+                <artifactId>copy-rename-maven-plugin</artifactId>
+                <version>1.0.1</version>
+                <executions>
+                    <execution>
+                        <id>copy-HumongousCannonball-POL</id>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <sourceFile>${cardArtSourcePath}HumongousCannonballENG.png</sourceFile>
+                            <destinationFile>${cardArtDestinationPath}HumongousCannonballPOL.png</destinationFile>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-HumongousCannonball_p-POL</id>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <sourceFile>${cardArtSourcePath}HumongousCannonballENG_p.png</sourceFile>
+                            <destinationFile>${cardArtDestinationPath}HumongousCannonballPOL_p.png</destinationFile>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-HumongousCannonball-RUS</id>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <sourceFile>${cardArtSourcePath}HumongousCannonballENG.png</sourceFile>
+                            <destinationFile>${cardArtDestinationPath}HumongousCannonballRUS.png</destinationFile>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-HumongousCannonball_p-RUS</id>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <sourceFile>${cardArtSourcePath}HumongousCannonballENG_p.png</sourceFile>
+                            <destinationFile>${cardArtDestinationPath}HumongousCannonballRUS_p.png</destinationFile>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-HumongousCannonball-ZHS</id>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <sourceFile>${cardArtSourcePath}HumongousCannonballENG.png</sourceFile>
+                            <destinationFile>${cardArtDestinationPath}HumongousCannonballZHS.png</destinationFile>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-HumongousCannonball_p-ZHS</id>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <sourceFile>${cardArtSourcePath}HumongousCannonballENG_p.png</sourceFile>
+                            <destinationFile>${cardArtDestinationPath}HumongousCannonballZHS_p.png</destinationFile>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-SwordOfChaos</id>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <sourceFile>${cardArtSourcePath}Sword.png</sourceFile>
+                            <destinationFile>${cardArtDestinationPath}SwordOfChaos.png</destinationFile>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-SwordOfChaos_p</id>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <sourceFile>${cardArtSourcePath}Sword_p.png</sourceFile>
+                            <destinationFile>${cardArtDestinationPath}SwordOfChaos_p.png</destinationFile>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-SwordOfFire</id>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <sourceFile>${cardArtSourcePath}Sword.png</sourceFile>
+                            <destinationFile>${cardArtDestinationPath}SwordOfFire.png</destinationFile>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-SwordOfFire_p</id>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <sourceFile>${cardArtSourcePath}Sword_p.png</sourceFile>
+                            <destinationFile>${cardArtDestinationPath}SwordOfFire_p.png</destinationFile>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-SwordOfWisdom</id>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <sourceFile>${cardArtSourcePath}Sword.png</sourceFile>
+                            <destinationFile>${cardArtDestinationPath}SwordOfWisdom.png</destinationFile>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>copy-SwordOfWisdom_p</id>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <sourceFile>${cardArtSourcePath}Sword_p.png</sourceFile>
+                            <destinationFile>${cardArtDestinationPath}SwordOfWisdom_p.png</destinationFile>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
@@ -104,6 +235,9 @@
                     <include>ModTheSpire.json</include>
                 </includes>
                 <filtering>true</filtering>
+            </resource>
+            <resource>
+                <directory>target/copiedCardArt</directory>
             </resource>
         </resources>
     </build>
