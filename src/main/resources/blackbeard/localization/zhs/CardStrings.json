@@ -188,7 +188,7 @@
     "NAME": "海盗意志",
     "DESCRIPTION": "移除你身上的所有负面效果。 NL 抽一张牌。 NL 消耗 。"
   },
-  "blackbeard:WoodenLeg": {
+  "blackbeard:Pegleg": {
     "NAME": "木腿",
     "DESCRIPTION": "失去2点 敏捷 。 NL 获得 !M! 点 力量 。"
   },
@@ -323,8 +323,8 @@
     "NAME": "赏金猎人",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 斩杀 时,获得 !M! 金币。 NL 消耗 。"
   },
-  "blackbeard:GoldenGuillotine": {
-    "NAME": "黄金断头台",
+  "blackbeard:GoldenNoose": {
+    "NAME": "金绞索",
     "DESCRIPTION": "造成伤害，数值等于本局游戏中已获得金币的4%。",
     "UPGRADE_DESCRIPTION": "造成伤害，数值等于本局游戏中已获得金币的5%。",
     "EXTENDED_DESCRIPTION": [

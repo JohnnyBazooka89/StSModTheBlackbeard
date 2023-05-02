@@ -188,7 +188,7 @@
     "NAME": "Piracka wola",
     "DESCRIPTION": "Pozbądź się wszystkich negatywnych efektów. NL Dobierz 1 kartę. NL Wykluczenie."
   },
-  "blackbeard:WoodenLeg": {
+  "blackbeard:Pegleg": {
     "NAME": "Drewniana noga",
     "DESCRIPTION": "Utrać 2 pkt. Zręczności. NL Zyskaj !M! pkt. Siły."
   },
@@ -323,8 +323,8 @@
     "NAME": "Łowca nagród",
     "DESCRIPTION": "Zadaj !D! pkt. obrażeń. Jeśli ten atak zabije przeciwnika (oprócz sług), otrzymaj !M! szt. Złota. NL Wykluczenie."
   },
-  "blackbeard:GoldenGuillotine": {
-    "NAME": "Złota gilotyna",
+  "blackbeard:GoldenNoose": {
+    "NAME": "Złoty stryczek",
     "DESCRIPTION": "Zadaj obrażenia równe NL 4% szt. Złota zdobytych w tej wyprawie.",
     "UPGRADE_DESCRIPTION": "Zadaj obrażenia równe NL 5% szt. Złota zdobytych w tej wyprawie.",
     "EXTENDED_DESCRIPTION": [

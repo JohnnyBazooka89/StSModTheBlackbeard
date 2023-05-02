@@ -188,8 +188,8 @@
     "NAME": "Pirate's Will",
     "DESCRIPTION": "Remove all of your debuffs. NL Draw a card. NL Exhaust."
   },
-  "blackbeard:WoodenLeg": {
-    "NAME": "Wooden Leg",
+  "blackbeard:Pegleg": {
+    "NAME": "Pegleg",
     "DESCRIPTION": "Lose 2 Dexterity. NL Gain !M! Strength."
   },
   "blackbeard:Eyepatch": {
@@ -323,8 +323,8 @@
     "NAME": "Bounty Hunter",
     "DESCRIPTION": "Deal !D! damage. NL If Fatal, gain !M! Gold. NL Exhaust."
   },
-  "blackbeard:GoldenGuillotine": {
-    "NAME": "Golden Guillotine",
+  "blackbeard:GoldenNoose": {
+    "NAME": "Golden Noose",
     "DESCRIPTION": "Deal damage equal to NL 4% of Gold gained this run.",
     "UPGRADE_DESCRIPTION": "Deal damage equal to NL 5% of Gold gained this run.",
     "EXTENDED_DESCRIPTION": [
