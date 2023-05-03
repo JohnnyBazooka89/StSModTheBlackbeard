@@ -21,7 +21,7 @@ public class Recklessness extends AbstractBlackbeardCard {
     private static final int COST = 0;
     private static final int ENERGY_TO_GET = 2;
     private static final int UPGRADE_PLUS_ENERGY_TO_GET = 1;
-    private static final int ENERGY_TO_LOSE_NEXT_TURN = 2;
+    private static final int ENERGY_TO_LOSE_NEXT_TURN = 1;
 
     public Recklessness() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,

@@ -299,8 +299,8 @@
   },
   "blackbeard:Recklessness": {
     "NAME": "鲁莽",
-    "DESCRIPTION": "获得 [E] [E] 。 NL 在你的下个回合开始时，失去 [E] [E] 。",
-    "UPGRADE_DESCRIPTION": "获得 [E] [E] [E] 。 NL 在你的下个回合开始时，失去 [E] [E] 。"
+    "DESCRIPTION": "获得 [E] [E] 。 NL 在你的下个回合开始时，失去 [E] 。",
+    "UPGRADE_DESCRIPTION": "获得 [E] [E] [E] 。 NL 在你的下个回合开始时，失去 [E] 。"
   },
   "blackbeard:DelayedPain": {
     "NAME": "延缓苦痛",

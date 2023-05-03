@@ -299,8 +299,8 @@
   },
   "blackbeard:Recklessness": {
     "NAME": "Lekkomyślność",
-    "DESCRIPTION": "Zyskaj [E] [E]. NL Na początku następnej tury, utrać [E] [E].",
-    "UPGRADE_DESCRIPTION": "Zyskaj [E] [E] [E]. NL Na początku następnej tury, utrać [E] [E]."
+    "DESCRIPTION": "Zyskaj [E] [E]. NL Na początku następnej tury, utrać [E].",
+    "UPGRADE_DESCRIPTION": "Zyskaj [E] [E] [E]. NL Na początku następnej tury, utrać [E]."
   },
   "blackbeard:DelayedPain": {
     "NAME": "Opóźniony ból",

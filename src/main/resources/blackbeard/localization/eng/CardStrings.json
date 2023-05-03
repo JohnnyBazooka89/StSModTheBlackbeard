@@ -299,8 +299,8 @@
   },
   "blackbeard:Recklessness": {
     "NAME": "Recklessness",
-    "DESCRIPTION": "Gain [E] [E]. NL Next turn, lose [E] [E].",
-    "UPGRADE_DESCRIPTION": "Gain [E] [E] [E]. NL Next turn, lose [E] [E]."
+    "DESCRIPTION": "Gain [E] [E]. NL Next turn, lose [E].",
+    "UPGRADE_DESCRIPTION": "Gain [E] [E] [E]. NL Next turn, lose [E]."
   },
   "blackbeard:DelayedPain": {
     "NAME": "Delayed Pain",

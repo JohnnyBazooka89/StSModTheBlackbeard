@@ -291,8 +291,8 @@
   },
   "blackbeard:Recklessness": {
     "NAME": "Безрассудство",
-    "DESCRIPTION": "Даёт [E] [E] NL Вы теряете [E] [E] в начале след. хода.",
-    "UPGRADE_DESCRIPTION": "Даёт [E] [E] [E]. NL Вы теряете [E] [E] в начале след. хода."
+    "DESCRIPTION": "Даёт [E] [E] NL Вы теряете [E] в начале след. хода.",
+    "UPGRADE_DESCRIPTION": "Даёт [E] [E] [E]. NL Вы теряете [E] в начале след. хода."
   },
   "blackbeard:DelayedPain": {
     "NAME": "Отсроченная боль",
