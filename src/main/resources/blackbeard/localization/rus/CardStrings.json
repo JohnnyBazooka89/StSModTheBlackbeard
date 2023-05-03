@@ -13,7 +13,7 @@
   },
   "blackbeard:Upgrade": {
     "NAME": "Улучшить",
-    "DESCRIPTION": "Даёт + !M! / + !M! всем снаряжённым blackbeard:Оружиям. NL Даёт + 1 / + 1 правому в очереди blackbeard:Оружию."
+    "DESCRIPTION": "Даёт + !M! / + !M! всем снаряжённым blackbeard:Оружиям."
   },
   "blackbeard:Sharpening": {
     "NAME": "Заострить",

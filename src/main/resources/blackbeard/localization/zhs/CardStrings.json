@@ -13,7 +13,7 @@
   },
   "blackbeard:Upgrade": {
     "NAME": "升级",
-    "DESCRIPTION": "使你装备着的所有的 blackbeard:武器 获得 + !M! / + !M! 。 NL 使你最右边的 blackbeard:武器 获得 + 1 / + 1 。"
+    "DESCRIPTION": "使你装备着的所有的 blackbeard:武器 获得 + !M! / + !M! 。"
   },
   "blackbeard:Sharpening": {
     "NAME": "磨砺",

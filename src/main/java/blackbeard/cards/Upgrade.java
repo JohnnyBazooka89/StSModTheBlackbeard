@@ -30,7 +30,6 @@ public class Upgrade extends AbstractBlackbeardCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new UpgradeWeaponsAction(this.magicNumber, this.magicNumber, WeaponsToUseEnum.ALL_WEAPONS));
-        AbstractDungeon.actionManager.addToBottom(new UpgradeWeaponsAction(1, 1, WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON));
     }
 
     @Override

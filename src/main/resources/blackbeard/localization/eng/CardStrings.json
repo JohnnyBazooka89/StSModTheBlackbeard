@@ -13,7 +13,7 @@
   },
   "blackbeard:Upgrade": {
     "NAME": "Upgrade",
-    "DESCRIPTION": "Give all your equipped blackbeard:Weapons + !M! / + !M!. NL Give your rightmost blackbeard:Weapon + 1 / + 1."
+    "DESCRIPTION": "Give all your equipped blackbeard:Weapons + !M! / + !M!."
   },
   "blackbeard:Sharpening": {
     "NAME": "Sharpening",
