@@ -17,7 +17,7 @@ public class VengefulSpirit extends AbstractBlackbeardCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
-    private static final int DAMAGE_TO_TAKE = 8;
+    private static final int DAMAGE_TO_TAKE = 10;
     private static final int UPGRADE_MINUS_DAMAGE_TO_TAKE = 2;
 
     public VengefulSpirit() {
