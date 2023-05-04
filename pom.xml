@@ -5,7 +5,7 @@
 
     <groupId>StSMod</groupId>
     <artifactId>StSModTheBlackbeard</artifactId>
-    <version>2.0.3</version>
+    <version>2.0.4</version>
     <packaging>jar</packaging>
     <name>StSModTheBlackbeard</name>
     <description>Adds a new character to Slay the Spire, The Blackbeard.</description>
@@ -160,66 +160,6 @@
                         <configuration>
                             <sourceFile>${cardArtSourcePath}HumongousCannonballENG_p.png</sourceFile>
                             <destinationFile>${cardArtDestinationPath}HumongousCannonballZHS_p.png</destinationFile>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>copy-SwordOfChaos</id>
-                        <goals>
-                            <goal>copy</goal>
-                        </goals>
-                        <configuration>
-                            <sourceFile>${cardArtSourcePath}Sword.png</sourceFile>
-                            <destinationFile>${cardArtDestinationPath}SwordOfChaos.png</destinationFile>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>copy-SwordOfChaos_p</id>
-                        <goals>
-                            <goal>copy</goal>
-                        </goals>
-                        <configuration>
-                            <sourceFile>${cardArtSourcePath}Sword_p.png</sourceFile>
-                            <destinationFile>${cardArtDestinationPath}SwordOfChaos_p.png</destinationFile>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>copy-SwordOfFire</id>
-                        <goals>
-                            <goal>copy</goal>
-                        </goals>
-                        <configuration>
-                            <sourceFile>${cardArtSourcePath}Sword.png</sourceFile>
-                            <destinationFile>${cardArtDestinationPath}SwordOfFire.png</destinationFile>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>copy-SwordOfFire_p</id>
-                        <goals>
-                            <goal>copy</goal>
-                        </goals>
-                        <configuration>
-                            <sourceFile>${cardArtSourcePath}Sword_p.png</sourceFile>
-                            <destinationFile>${cardArtDestinationPath}SwordOfFire_p.png</destinationFile>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>copy-SwordOfWisdom</id>
-                        <goals>
-                            <goal>copy</goal>
-                        </goals>
-                        <configuration>
-                            <sourceFile>${cardArtSourcePath}Sword.png</sourceFile>
-                            <destinationFile>${cardArtDestinationPath}SwordOfWisdom.png</destinationFile>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>copy-SwordOfWisdom_p</id>
-                        <goals>
-                            <goal>copy</goal>
-                        </goals>
-                        <configuration>
-                            <sourceFile>${cardArtSourcePath}Sword_p.png</sourceFile>
-                            <destinationFile>${cardArtDestinationPath}SwordOfWisdom_p.png</destinationFile>
                         </configuration>
                     </execution>
                 </executions>
