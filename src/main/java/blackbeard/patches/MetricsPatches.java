@@ -3,6 +3,7 @@ package blackbeard.patches;
 import basemod.ReflectionHacks;
 import blackbeard.enums.PlayerClassEnum;
 import com.badlogic.gdx.Net;
+import com.evacipated.cardcrawl.modthespire.Loader;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -15,6 +16,9 @@ import org.apache.logging.log4j.Logger;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.util.Arrays;
+
+import static blackbeard.TheBlackbeardMod.MOD_THE_SPIRE_MOD_ID;
 
 /* Copied from The Mystic Mod:
    https://github.com/JohnnyDevo/The-Mystic-Project/blob/master/src/main/java/mysticmod/patches/MysticMetricsPatch.java
@@ -81,6 +85,7 @@ public class MetricsPatches {
                     Method addDataMethod = Metrics.class.getDeclaredMethod("addData", Object.class, Object.class);
                     addDataMethod.setAccessible(true);
                     addDataMethod.invoke(metrics, "language", Settings.language);
+                    addDataMethod.invoke(metrics, "blackbeardVersion", findTheBlackbeardVersion());
 
                     Method gatherAllDataAndSendMethod = Metrics.class.getDeclaredMethod("gatherAllDataAndSend", boolean.class, boolean.class, MonsterGroup.class);
                     gatherAllDataAndSendMethod.setAccessible(true);
@@ -89,6 +94,13 @@ public class MetricsPatches {
                     logger.error("Exception while sending metrics", e);
                 }
             }
+        }
+
+        private static String findTheBlackbeardVersion() {
+            return Arrays.stream(Loader.MODINFOS).filter(modInfo -> MOD_THE_SPIRE_MOD_ID.equals(modInfo.getIDName()))
+                    .findFirst()
+                    .map(modInfo -> modInfo.ModVersion.toString())
+                    .orElse("Unknown");
         }
 
     }
