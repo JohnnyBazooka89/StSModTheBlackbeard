@@ -49,12 +49,10 @@ public class TheBlackbeard extends CustomPlayer {
     private static final String CAPTAIN_ABE_ENCOUNTER_STRINGS_ID = "blackbeard:CaptainAbeEncounter";
     private static final String CHRISTMAS_THEME_GREETING_STRINGS_ID = "blackbeard:ChristmasThemeGreeting";
     private static final String MAXIMUM_WEAPONS_REACHED_STRINGS_ID = "blackbeard:MaximumWeaponsReached";
-    private static final String GOLD_GAINED_THIS_RUN_STRINGS_ID = "blackbeard:GoldGainedThisRun";
     private static final CharacterStrings captainAbeEncounterStrings = CardCrawlGame.languagePack.getCharacterString(CAPTAIN_ABE_ENCOUNTER_STRINGS_ID);
     private static final CharacterStrings christmasThemeGreetingStrings = CardCrawlGame.languagePack.getCharacterString(CHRISTMAS_THEME_GREETING_STRINGS_ID);
     @SuppressWarnings("unused") //Used in MaximumWeaponsReachedPatch
     public static final CharacterStrings maximumWeaponsReachedStrings = CardCrawlGame.languagePack.getCharacterString(MAXIMUM_WEAPONS_REACHED_STRINGS_ID);
-    public static final CharacterStrings goldGainedThisRunStrings = CardCrawlGame.languagePack.getCharacterString(GOLD_GAINED_THIS_RUN_STRINGS_ID);
 
     public TheBlackbeard(String name) {
         super(name, PlayerClassEnum.BLACKBEARD_CLASS, null, null, (String) null, null);
@@ -104,7 +102,7 @@ public class TheBlackbeard extends CustomPlayer {
 
     @Override
     public String getTitle(PlayerClass playerClass) {
-        return characterStrings.NAMES[0];
+        return characterStrings.NAMES[1];
     }
 
     @Override

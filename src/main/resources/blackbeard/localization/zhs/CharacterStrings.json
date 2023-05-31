@@ -1,6 +1,7 @@
 {
   "blackbeard:BlackbeardCharacter": {
     "NAMES": [
+      "黑胡子船长",
       "黑胡子船长"
     ],
     "TEXT": [
@@ -25,14 +26,6 @@
   "blackbeard:MaximumWeaponsReached": {
     "TEXT": [
       "我不能同时持有超过 #r10 把武器。"
-    ]
-  },
-  "blackbeard:GoldGainedThisRun": {
-    "TEXT": [
-      " （他们造成 #b",
-      " 点伤害。）",
-      " 你在本局游戏中已经获得了 #b",
-      " #y金币 。"
     ]
   }
 }

@@ -1,6 +1,7 @@
 {
   "blackbeard:BlackbeardCharacter": {
     "NAMES": [
+      "Чёрная Борода",
       "Чёрная Борода"
     ],
     "TEXT": [
@@ -25,14 +26,6 @@
   "blackbeard:MaximumWeaponsReached": {
     "TEXT": [
       "Я могу держать не более #r10 Оружий."
-    ]
-  },
-  "blackbeard:GoldGainedThisRun": {
-    "TEXT": [
-      " (Наносят #b",
-      " урона.)",
-      " Вы набрали #b",
-      " #yзолота в течение забега."
     ]
   }
 }

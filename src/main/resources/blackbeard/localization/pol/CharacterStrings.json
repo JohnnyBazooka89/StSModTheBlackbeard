@@ -1,6 +1,7 @@
 {
   "blackbeard:BlackbeardCharacter": {
     "NAMES": [
+      "Czarnobrody",
       "Czarnobrody"
     ],
     "TEXT": [
@@ -25,14 +26,6 @@
   "blackbeard:MaximumWeaponsReached": {
     "TEXT": [
       "Nie mogę trzymać więcej niż #r10 Broni!"
-    ]
-  },
-  "blackbeard:GoldGainedThisRun": {
-    "TEXT": [
-      " (Zadają #b",
-      " pkt. obrażeń.)",
-      " Zdobyłeś #b",
-      " szt. #yZłota w tej wyprawie."
     ]
   }
 }

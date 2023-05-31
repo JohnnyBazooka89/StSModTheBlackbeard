@@ -1,7 +1,8 @@
 {
   "blackbeard:BlackbeardCharacter": {
     "NAMES": [
-      "The Blackbeard"
+      "The Blackbeard",
+      "the Blackbeard"
     ],
     "TEXT": [
       "After following his dusty map, he found himself trying to Slay the Spire. NL Skilled in using Weapons, he wants all the treasures for himself.",
@@ -25,14 +26,6 @@
   "blackbeard:MaximumWeaponsReached": {
     "TEXT": [
       "I can't hold more than #r10 Weapons."
-    ]
-  },
-  "blackbeard:GoldGainedThisRun": {
-    "TEXT": [
-      " (They deal #b",
-      " damage.)",
-      " You have gained #b",
-      " #yGold this run."
     ]
   }
 }
