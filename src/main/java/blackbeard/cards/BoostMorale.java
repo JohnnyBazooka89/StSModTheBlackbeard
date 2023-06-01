@@ -8,11 +8,14 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
+import com.megacrit.cardcrawl.actions.common.GainGoldAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.vfx.RainingGoldEffect;
+import com.megacrit.cardcrawl.vfx.SpotlightPlayerEffect;
 
 public class BoostMorale extends AbstractBlackbeardCard {
 
@@ -22,7 +25,8 @@ public class BoostMorale extends AbstractBlackbeardCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 0;
-    private static final int CARDS_TO_DRAW = 2;
+    private static final int GOLD_TO_GAIN = 5;
+    private static final int CARDS_TO_DRAW = 1;
     private static final int UPGRADE_PLUS_CARDS_TO_DRAW = 1;
     private static final int ENERGY_TO_GET = 1;
     private static final int UPGRADE_PLUS_ENERGY_TO_GET = 1;
@@ -35,6 +39,8 @@ public class BoostMorale extends AbstractBlackbeardCard {
 
         this.baseMagicNumber = this.magicNumber = CARDS_TO_DRAW;
         this.exhaust = true;
+
+        this.tags.add(CardTags.HEALING); //It doesn't heal, but I don't want gaining Gold to be abused.
     }
 
     @Override
@@ -45,6 +51,9 @@ public class BoostMorale extends AbstractBlackbeardCard {
                 AbstractDungeon.effectList.add(new DamageCurvyEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, new Color(MathUtils.random(), MathUtils.random(), MathUtils.random(), 1)));
             }
         }
+        AbstractDungeon.effectList.add(new RainingGoldEffect(GOLD_TO_GAIN, true));
+        AbstractDungeon.effectsQueue.add(new SpotlightPlayerEffect());
+        this.addToBot(new GainGoldAction(GOLD_TO_GAIN));
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.magicNumber));
         AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(ENERGY_TO_GET + (this.upgraded ? UPGRADE_PLUS_ENERGY_TO_GET : 0)));
     }

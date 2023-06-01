@@ -2,11 +2,14 @@ package blackbeard.cards;
 
 import blackbeard.TheBlackbeardMod;
 import blackbeard.enums.CardColorEnum;
+import com.megacrit.cardcrawl.actions.common.GainGoldAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.vfx.RainingGoldEffect;
+import com.megacrit.cardcrawl.vfx.SpotlightPlayerEffect;
 
 public class BuriedTreasure extends AbstractBlackbeardCard {
     public static final String ID = "blackbeard:BuriedTreasure";
@@ -14,7 +17,7 @@ public class BuriedTreasure extends AbstractBlackbeardCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
-    private static final int GOLD_TO_GAIN = 15;
+    private static final int GOLD_TO_GAIN = 20;
     private static final int UPGRADE_PLUS_GOLD_TO_GAIN = 5;
 
     public BuriedTreasure() {
@@ -31,7 +34,9 @@ public class BuriedTreasure extends AbstractBlackbeardCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         CardCrawlGame.sound.play("GOLD_GAIN");
-        AbstractDungeon.player.gainGold(this.magicNumber);
+        AbstractDungeon.effectList.add(new RainingGoldEffect(this.magicNumber, true));
+        AbstractDungeon.effectsQueue.add(new SpotlightPlayerEffect());
+        this.addToBot(new GainGoldAction(this.magicNumber));
     }
 
     @Override
