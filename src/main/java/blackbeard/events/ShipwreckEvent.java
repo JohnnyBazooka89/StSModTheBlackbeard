@@ -60,18 +60,21 @@ public class ShipwreckEvent extends AbstractImageEvent {
                     case 0:
                         this.imageEventText.updateBodyText(DESCRIPTIONS[1]);
                         AbstractDungeon.getCurrRoom().spawnRelicAndObtain(this.drawX, this.drawY, anchor);
+                        AbstractDungeon.commonRelicPool.remove(anchor.relicId);
                         takeDamage();
                         logMetricObtainRelic(EVENT_ID, Anchor.ID, anchor);
                         break;
                     case 1:
                         this.imageEventText.updateBodyText(DESCRIPTIONS[2]);
                         AbstractDungeon.getCurrRoom().spawnRelicAndObtain(this.drawX, this.drawY, hornCleat);
+                        AbstractDungeon.uncommonRelicPool.remove(hornCleat.relicId);
                         takeDamage();
                         logMetricObtainRelic(EVENT_ID, HornCleat.ID, hornCleat);
                         break;
                     case 2:
                         this.imageEventText.updateBodyText(DESCRIPTIONS[3]);
                         AbstractDungeon.getCurrRoom().spawnRelicAndObtain(this.drawX, this.drawY, captainsWheel);
+                        AbstractDungeon.rareRelicPool.remove(captainsWheel.relicId);
                         takeDamage();
                         logMetricObtainRelic(EVENT_ID, CaptainsWheel.ID, captainsWheel);
                         break;
