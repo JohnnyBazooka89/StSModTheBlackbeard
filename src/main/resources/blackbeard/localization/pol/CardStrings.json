@@ -186,7 +186,7 @@
   },
   "blackbeard:PiratesWill": {
     "NAME": "Piracka wola",
-    "DESCRIPTION": "Pozbądź się wszystkich negatywnych efektów. NL Dobierz 1 kartę. NL Wykluczenie."
+    "DESCRIPTION": "Pozbądź się wszystkich negatywnych efektów. NL Dobierz !M! kartę. NL Wykluczenie."
   },
   "blackbeard:Pegleg": {
     "NAME": "Drewniana noga",
