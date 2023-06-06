@@ -244,7 +244,7 @@
     "DESCRIPTION": "Choose 1 of 3 Swords. NL Equip a {A} / !M! blackbeard:Weapon with an additional effect.",
     "EXTENDED_DESCRIPTION": [
       "Additional Effects",
-      "#rFire: Whenever you attack with this Weapon, deal #b3 damage to ALL enemies. NL #yWisdom: Whenever you attack with this Weapon, draw 1 card. NL #pChaos: Whenever you attack with this Weapon, add a random card into your hand."
+      "#rFire: Whenever you attack with this Weapon, deal #b3 damage to ALL enemies. NL #yWisdom: Whenever you attack with this Weapon, draw #b1 card. NL #pChaos: Whenever you attack with this Weapon, add a random card into your hand."
     ]
   },
   "blackbeard:BeatUp": {

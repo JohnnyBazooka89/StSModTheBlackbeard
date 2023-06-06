@@ -244,7 +244,7 @@
     "DESCRIPTION": "Wybierz 1 z 3 Mieczy. NL Wyposaż się w blackbeard:Broń {A} / !M! z dodatkowym efektem.",
     "EXTENDED_DESCRIPTION": [
       "Dodatkowe efekty",
-      "#rOgień: Kiedykolwiek zaatakujesz tą bronią, zadaj #b3 pkt. obrażeń WSZYSTKIM przeciwnikom. NL #yMądrość: Kiedykolwiek zaatakujesz tą bronią, dobierz 1 kartę. NL #pChaos: Kiedykolwiek zaatakujesz tą bronią, dodaj losową kartę do ręki."
+      "#rOgień: Kiedykolwiek zaatakujesz tą bronią, zadaj #b3 pkt. obrażeń WSZYSTKIM przeciwnikom. NL #yMądrość: Kiedykolwiek zaatakujesz tą bronią, dobierz #b1 kartę. NL #pChaos: Kiedykolwiek zaatakujesz tą bronią, dodaj losową kartę do ręki."
     ]
   },
   "blackbeard:BeatUp": {

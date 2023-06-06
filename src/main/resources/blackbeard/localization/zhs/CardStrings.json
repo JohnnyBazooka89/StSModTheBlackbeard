@@ -94,7 +94,7 @@
   },
   "blackbeard:SwordOfWisdom": {
     "NAME": "智慧之剑",
-    "DESCRIPTION": "装备一把 {A} / !M! blackbeard:武器 。 NL 每当你使用这把 blackbeard:武器 攻击，抽 !M! 张牌。"
+    "DESCRIPTION": "装备一把 {A} / !M! blackbeard:武器 。 NL 每当你使用这把 blackbeard:武器 攻击，抽 1 张牌。"
   },
   "blackbeard:SwordOfChaos": {
     "NAME": "混乱之剑",
