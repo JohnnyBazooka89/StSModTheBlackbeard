@@ -19,6 +19,7 @@ public class Anchor extends AbstractBlackbeardCard {
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 0;
     private static final int BLOCK_AMOUNT = 10;
+    private static final int CARDS_TO_DRAW = 0;
     private static final int UPGRADE_PLUS_CARDS_TO_DRAW = 1;
 
     public Anchor() {
@@ -26,6 +27,7 @@ public class Anchor extends AbstractBlackbeardCard {
                 CardColorEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
 
         this.baseBlock = this.block = BLOCK_AMOUNT;
+        this.baseMagicNumber = this.magicNumber = CARDS_TO_DRAW;
         this.isInnate = true;
         this.exhaust = true;
     }
@@ -42,6 +44,7 @@ public class Anchor extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.upgradeMagicNumber(UPGRADE_PLUS_CARDS_TO_DRAW);
             this.rawDescription = UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

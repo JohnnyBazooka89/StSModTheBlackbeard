@@ -94,7 +94,7 @@
   },
   "blackbeard:SwordOfWisdom": {
     "NAME": "Sword of Wisdom",
-    "DESCRIPTION": "Equip a {A} / !M! blackbeard:Weapon. NL Whenever you attack with this blackbeard:Weapon, draw a card."
+    "DESCRIPTION": "Equip a {A} / !M! blackbeard:Weapon. NL Whenever you attack with this blackbeard:Weapon, draw 1 card."
   },
   "blackbeard:SwordOfChaos": {
     "NAME": "Sword of Chaos",
@@ -186,7 +186,7 @@
   },
   "blackbeard:PiratesWill": {
     "NAME": "Pirate's Will",
-    "DESCRIPTION": "Remove all of your debuffs. NL Draw a card. NL Exhaust."
+    "DESCRIPTION": "Remove all of your debuffs. NL Draw !M! card. NL Exhaust."
   },
   "blackbeard:Pegleg": {
     "NAME": "Pegleg",
@@ -244,7 +244,7 @@
     "DESCRIPTION": "Choose 1 of 3 Swords. NL Equip a {A} / !M! blackbeard:Weapon with an additional effect.",
     "EXTENDED_DESCRIPTION": [
       "Additional Effects",
-      "#rFire: Whenever you attack with this Weapon, deal #b3 damage to ALL enemies. NL #yWisdom: Whenever you attack with this Weapon, draw a card. NL #pChaos: Whenever you attack with this Weapon, add a random card into your hand."
+      "#rFire: Whenever you attack with this Weapon, deal #b3 damage to ALL enemies. NL #yWisdom: Whenever you attack with this Weapon, draw 1 card. NL #pChaos: Whenever you attack with this Weapon, add a random card into your hand."
     ]
   },
   "blackbeard:BeatUp": {
@@ -286,12 +286,12 @@
   "blackbeard:Anchor": {
     "NAME": "Anchor",
     "DESCRIPTION": "Innate. NL Gain !B! Block. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Gain !B! Block. NL Draw a card. NL Exhaust."
+    "UPGRADE_DESCRIPTION": "Innate. NL Gain !B! Block. NL Draw !M! card. NL Exhaust."
   },
   "blackbeard:BoostMorale": {
     "NAME": "Boost Morale",
     "DESCRIPTION": "Gain 5 Gold. NL Draw !M! card. NL Gain [E]. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain 5 Gold. NL Draw !M! cards. NL Gain [E] [E]. NL Exhaust."
+    "UPGRADE_DESCRIPTION": "Gain 5 Gold. NL Draw !M! card. NL Gain [E] [E]. NL Exhaust."
   },
   "blackbeard:MegaUpgrade": {
     "NAME": "Mega Upgrade",

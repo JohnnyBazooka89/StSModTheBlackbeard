@@ -291,7 +291,7 @@
   "blackbeard:BoostMorale": {
     "NAME": "Podniesienie morale",
     "DESCRIPTION": "Zyskaj 5 szt. Złota. NL Dobierz !M! kartę. NL Zyskaj [E]. NL Wykluczenie.",
-    "UPGRADE_DESCRIPTION": "Zyskaj 5 szt. Złota. NL Dobierz !M! karty. NL Zyskaj [E] [E]. NL Wykluczenie."
+    "UPGRADE_DESCRIPTION": "Zyskaj 5 szt. Złota. NL Dobierz !M! kartę. NL Zyskaj [E] [E]. NL Wykluczenie."
   },
   "blackbeard:MegaUpgrade": {
     "NAME": "Mega ulepszenie",

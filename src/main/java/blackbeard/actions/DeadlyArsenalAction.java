@@ -28,9 +28,9 @@ public class DeadlyArsenalAction extends AbstractGameAction {
             }
         }
 
-        int amountOfCardsToDraw = uniqueWeaponsList.size();
-        if (amountOfCardsToDraw > 0) {
-            AbstractDungeon.actionManager.addToTop(new DrawCardAction(this.source, amountOfCardsToDraw));
+        int numberOfCardsToDraw = uniqueWeaponsList.size();
+        if (numberOfCardsToDraw > 0) {
+            AbstractDungeon.actionManager.addToTop(new DrawCardAction(this.source, numberOfCardsToDraw));
         }
 
         this.isDone = true;

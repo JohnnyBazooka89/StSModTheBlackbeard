@@ -94,7 +94,7 @@
   },
   "blackbeard:SwordOfWisdom": {
     "NAME": "智慧之剑",
-    "DESCRIPTION": "装备一把 {A} / !M! blackbeard:武器 。 NL 每当你使用这把 blackbeard:武器 攻击，抽一张牌。"
+    "DESCRIPTION": "装备一把 {A} / !M! blackbeard:武器 。 NL 每当你使用这把 blackbeard:武器 攻击，抽 !M! 张牌。"
   },
   "blackbeard:SwordOfChaos": {
     "NAME": "混乱之剑",
@@ -186,7 +186,7 @@
   },
   "blackbeard:PiratesWill": {
     "NAME": "海盗意志",
-    "DESCRIPTION": "移除你身上的所有负面效果。 NL 抽一张牌。 NL 消耗 。"
+    "DESCRIPTION": "移除你身上的所有负面效果。 NL 抽 !M! 张牌。 NL 消耗 。"
   },
   "blackbeard:Pegleg": {
     "NAME": "木腿",
@@ -244,7 +244,7 @@
     "DESCRIPTION": "从3把剑中选择1把。 NL 装备一把 {A} / !M! 的 blackbeard:武器 ，这把 blackbeard:武器 会具有额外效果。",
     "EXTENDED_DESCRIPTION": [
       "额外效果",
-      "#r火焰 ：每当你使用这把武器攻击，对所有敌人造成 #b3 点伤害。 NL #y智慧 ：每当你使用这把武器攻击，抽一张牌。 NL #p混乱 ：每当你使用这把武器攻击，将一张随机牌加入你的手牌。"
+      "#r火焰 ：每当你使用这把武器攻击，对所有敌人造成 #b3 点伤害。 NL #y智慧 ：每当你使用这把武器攻击，抽 #b1 张牌。 NL #p混乱 ：每当你使用这把武器攻击，将一张随机牌加入你的手牌。"
     ]
   },
   "blackbeard:BeatUp": {
@@ -286,7 +286,7 @@
   "blackbeard:Anchor": {
     "NAME": "锚",
     "DESCRIPTION": "固有 。 NL 获得 !B! 点 格挡 。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "固有 。 NL 获得 !B! 点 格挡 。 NL 抽一张牌。 NL 消耗 。"
+    "UPGRADE_DESCRIPTION": "固有 。 NL 获得 !B! 点 格挡 。 NL 抽 !M! 张牌。 NL 消耗 。"
   },
   "blackbeard:BoostMorale": {
     "NAME": "鼓舞士气",
