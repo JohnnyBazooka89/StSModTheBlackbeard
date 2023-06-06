@@ -286,7 +286,7 @@
   "blackbeard:Anchor": {
     "NAME": "Kotwica",
     "DESCRIPTION": "Startowa. NL Zyskaj !B! pkt. Bloku. NL Wykluczenie.",
-    "UPGRADE_DESCRIPTION": "Startowa. NL Zyskaj !B! pkt. Bloku. NL Dobierz 1 kartę. NL Wykluczenie."
+    "UPGRADE_DESCRIPTION": "Startowa. NL Zyskaj !B! pkt. Bloku. NL Dobierz !M! kartę. NL Wykluczenie."
   },
   "blackbeard:BoostMorale": {
     "NAME": "Podniesienie morale",
