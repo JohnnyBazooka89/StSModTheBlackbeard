@@ -68,7 +68,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     public static final String MOD_THE_SPIRE_MOD_ID = "sts-mod-the-blackbeard";
 
     //General color
-    private static final Color BLACK = CardHelper.getColor(0, 0, 0);
+    public static final Color BLACK = CardHelper.getColor(0, 0, 0);
 
     //Card backgrounds and energy orbs
     private static final String ATTACK_BLACK = "blackbeard/img/512/bg_attack_black.png";
@@ -135,7 +135,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         logger.info("Creating the color " + CardColorEnum.BLACKBEARD_BLACK.toString());
 
         BaseMod.addColor(CardColorEnum.BLACKBEARD_BLACK,
-                BLACK,
+                BLACK.cpy(),
                 ATTACK_BLACK, SKILL_BLACK, POWER_BLACK,
                 ENERGY_ORB_BLACK,
                 ATTACK_BLACK_PORTRAIT, SKILL_BLACK_PORTRAIT, POWER_BLACK_PORTRAIT,

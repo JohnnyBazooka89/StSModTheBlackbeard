@@ -35,6 +35,7 @@ public class RumPotion extends CustomPotion {
         this.tips.add(new PowerTip(this.name, this.description));
         Keyword resistanceKeyword = TheBlackbeardMod.blackbeardKeywords.get(TheBlackbeardMod.RESISTANCE_KEYWORD);
         this.tips.add(new PowerTip(TipHelper.capitalize(resistanceKeyword.NAMES[0]), resistanceKeyword.DESCRIPTION));
+        this.labOutlineColor = TheBlackbeardMod.BLACK.cpy();
     }
 
     @Override

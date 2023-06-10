@@ -3,7 +3,7 @@
     "NAME": "朗姆酒",
     "DESCRIPTIONS": [
       "获得 #b",
-      " 点 #yblackbeard:抵抗 。"
+      " 点 #y抵抗 。"
     ]
   },
   "blackbeard:OrangeJuicePotion": {
@@ -16,7 +16,7 @@
   "blackbeard:UpgradePotion": {
     "NAME": "升级药水",
     "DESCRIPTIONS": [
-      "使你装备着的所有 #yblackbeard:武器 获得 #b+",
+      "使你装备着的所有 #y武器 获得 #b+",
       " / #b+",
       "。"
     ]

@@ -3,7 +3,7 @@
     "NAME": "Rum",
     "DESCRIPTIONS": [
       "Zyskaj #b",
-      " pkt. #yblackbeard:Odporności."
+      " pkt. #yOdporności."
     ]
   },
   "blackbeard:OrangeJuicePotion": {
@@ -16,7 +16,7 @@
   "blackbeard:UpgradePotion": {
     "NAME": "Mikstura ulepszenia",
     "DESCRIPTIONS": [
-      "Daj wszystkim swoim #yblackbeard:Broniom #b+",
+      "Daj wszystkim swoim #yBroniom #b+",
       " / #b+",
       "."
     ]

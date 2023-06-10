@@ -3,7 +3,7 @@
     "NAME": "Rum",
     "DESCRIPTIONS": [
       "Gain #b",
-      " #yblackbeard:Resistance."
+      " #yResistance."
     ]
   },
   "blackbeard:OrangeJuicePotion": {
@@ -16,7 +16,7 @@
   "blackbeard:UpgradePotion": {
     "NAME": "Upgrade Potion",
     "DESCRIPTIONS": [
-      "Give all your equipped #yblackbeard:Weapons #b+",
+      "Give all your equipped #yWeapons #b+",
       " / #b+",
       "."
     ]

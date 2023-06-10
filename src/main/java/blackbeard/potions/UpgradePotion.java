@@ -35,6 +35,7 @@ public class UpgradePotion extends CustomPotion {
         this.tips.add(new PowerTip(this.name, this.description));
         Keyword weaponKeyword = TheBlackbeardMod.blackbeardKeywords.get(TheBlackbeardMod.WEAPON_KEYWORD);
         this.tips.add(new PowerTip(TipHelper.capitalize(weaponKeyword.NAMES[0]), weaponKeyword.DESCRIPTION));
+        this.labOutlineColor = TheBlackbeardMod.BLACK.cpy();
     }
 
     @Override

@@ -1,6 +1,7 @@
 package blackbeard.potions;
 
 import basemod.abstracts.CustomPotion;
+import blackbeard.TheBlackbeardMod;
 import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.actions.unique.RemoveDebuffsAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -30,6 +31,7 @@ public class OrangeJuicePotion extends CustomPotion {
         this.description = DESCRIPTIONS[0] + this.potency + DESCRIPTIONS[1];
         this.tips.clear();
         this.tips.add(new PowerTip(this.name, this.description));
+        this.labOutlineColor = TheBlackbeardMod.BLACK.cpy();
     }
 
     @Override
