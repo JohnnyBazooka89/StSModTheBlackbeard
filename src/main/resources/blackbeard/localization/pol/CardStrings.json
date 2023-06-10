@@ -308,7 +308,7 @@
   },
   "blackbeard:ArmorUp": {
     "NAME": "Opancerzenie",
-    "DESCRIPTION": "W tej turze, kiedykolwiek atakujesz blackbeard:bronią, zyskaj !M! pkt. Bloku."
+    "DESCRIPTION": "Kiedykolwiek atakujesz blackbeard:bronią, zyskaj !M! pkt. Bloku."
   },
   "blackbeard:Intoxication": {
     "NAME": "Upojenie",

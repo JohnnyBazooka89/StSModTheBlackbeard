@@ -16,12 +16,12 @@ public class ArmorUp extends AbstractBlackbeardCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
-    private static final int COST = 0;
-    private static final int BLOCK_FOR_WEAPON_ATTACK = 4;
-    private static final int UPGRADE_PLUS_BLOCK_FOR_WEAPON_ATTACK = 2;
+    private static final int COST = 1;
+    private static final int BLOCK_FOR_WEAPON_ATTACK = 2;
+    private static final int UPGRADE_PLUS_BLOCK_FOR_WEAPON_ATTACK = 1;
 
     public ArmorUp() {
-        super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
+        super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.POWER,
                 CardColorEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
 
         this.baseMagicNumber = this.magicNumber = BLOCK_FOR_WEAPON_ATTACK;

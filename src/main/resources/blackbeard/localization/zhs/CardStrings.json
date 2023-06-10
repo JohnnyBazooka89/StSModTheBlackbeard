@@ -308,7 +308,7 @@
   },
   "blackbeard:ArmorUp": {
     "NAME": "穿上盔甲",
-    "DESCRIPTION": "在这个回合，每当你使用 blackbeard:武器 攻击，获得 !M! 点 格挡 。"
+    "DESCRIPTION": "每当你使用 blackbeard:武器 攻击，获得 !M! 点 格挡 。"
   },
   "blackbeard:Intoxication": {
     "NAME": "沉醉",

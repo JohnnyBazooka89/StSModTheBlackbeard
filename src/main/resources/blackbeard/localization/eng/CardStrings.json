@@ -308,7 +308,7 @@
   },
   "blackbeard:ArmorUp": {
     "NAME": "Armor Up",
-    "DESCRIPTION": "This turn, whenever you attack with a blackbeard:Weapon, gain !M! Block."
+    "DESCRIPTION": "Whenever you attack with a blackbeard:Weapon, gain !M! Block."
   },
   "blackbeard:Intoxication": {
     "NAME": "Intoxication",

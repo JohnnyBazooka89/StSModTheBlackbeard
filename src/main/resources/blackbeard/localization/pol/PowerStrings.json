@@ -97,7 +97,7 @@
   "blackbeard:ArmorUpPower": {
     "NAME": "Opancerzenie",
     "DESCRIPTIONS": [
-      "W tej turze, kiedykolwiek atakujesz bronią, zyskaj #b",
+      "Kiedykolwiek atakujesz bronią, zyskaj #b",
       " pkt. #yBloku."
     ]
   },

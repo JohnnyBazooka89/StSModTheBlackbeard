@@ -97,7 +97,7 @@
   "blackbeard:ArmorUpPower": {
     "NAME": "穿上盔甲",
     "DESCRIPTIONS": [
-      "在这个回合，每当你使用 #y武器 攻击，获得 #b",
+      "每当你使用 #y武器 攻击，获得 #b",
       " 点 #y格挡 。"
     ]
   },

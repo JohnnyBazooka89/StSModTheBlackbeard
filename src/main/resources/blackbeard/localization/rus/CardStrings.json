@@ -300,7 +300,7 @@
   },
   "blackbeard:ArmorUp": {
     "NAME": "Заблокировать",
-    "DESCRIPTION": "Даёт !M! Защиты, когда вы разыгрываете Атаки со снаряжённым blackbeard:Оружием в этом ходу."
+    "DESCRIPTION": "Даёт !M! Защиты, когда вы разыгрываете Атаки со снаряжённым blackbeard:Оружием."
   },
   "blackbeard:Intoxication": {
     "NAME": "Опьянение",
