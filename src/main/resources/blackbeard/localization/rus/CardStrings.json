@@ -34,7 +34,7 @@
   },
   "blackbeard:Halberd": {
     "NAME": "Алебарда",
-    "DESCRIPTION": "Снаряжает вас blackbeard:Оружием !M! / {D}. Накладывает на врага 2 blackbeard:Кровотечения, когда Атака наносит ему урон и вы используете данное blackbeard:Оружие."
+    "DESCRIPTION": "Снаряжает вас blackbeard:Оружием !M! / {D}. Накладывает на врага 3 blackbeard:Кровотечения, когда Атака наносит ему урон и вы используете данное blackbeard:Оружие."
   },
   "blackbeard:TheDrunkenSailor": {
     "NAME": "Пьяный моряк",

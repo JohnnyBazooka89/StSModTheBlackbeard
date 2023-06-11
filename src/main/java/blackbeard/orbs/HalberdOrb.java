@@ -24,6 +24,6 @@ public class HalberdOrb extends AbstractWeaponOrb {
 
     @Override
     public void effectOnAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(target, AbstractDungeon.player, new BleedPower(target, 2), 2));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(target, AbstractDungeon.player, new BleedPower(target, 3), 3));
     }
 }
