@@ -103,7 +103,7 @@
                 <version>1.0.1</version>
                 <executions>
                     <execution>
-                        <id>copy-HumongousCannonball-POL</id>
+                        <id>copy-HumongousCannonballPOL</id>
                         <goals>
                             <goal>copy</goal>
                         </goals>
@@ -113,7 +113,7 @@
                         </configuration>
                     </execution>
                     <execution>
-                        <id>copy-HumongousCannonball_p-POL</id>
+                        <id>copy-HumongousCannonballPOL_p</id>
                         <goals>
                             <goal>copy</goal>
                         </goals>
@@ -123,7 +123,7 @@
                         </configuration>
                     </execution>
                     <execution>
-                        <id>copy-HumongousCannonball-RUS</id>
+                        <id>copy-HumongousCannonballRUS</id>
                         <goals>
                             <goal>copy</goal>
                         </goals>
@@ -133,7 +133,7 @@
                         </configuration>
                     </execution>
                     <execution>
-                        <id>copy-HumongousCannonball_p-RUS</id>
+                        <id>copy-HumongousCannonballRUS_p</id>
                         <goals>
                             <goal>copy</goal>
                         </goals>
@@ -143,7 +143,7 @@
                         </configuration>
                     </execution>
                     <execution>
-                        <id>copy-HumongousCannonball-ZHS</id>
+                        <id>copy-HumongousCannonballZHS</id>
                         <goals>
                             <goal>copy</goal>
                         </goals>
@@ -153,7 +153,7 @@
                         </configuration>
                     </execution>
                     <execution>
-                        <id>copy-HumongousCannonball_p-ZHS</id>
+                        <id>copy-HumongousCannonballZHS_p</id>
                         <goals>
                             <goal>copy</goal>
                         </goals>
