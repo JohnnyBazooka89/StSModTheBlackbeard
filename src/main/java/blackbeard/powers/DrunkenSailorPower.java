@@ -9,15 +9,15 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-public class TheDrunkenSailorPower extends AbstractPower {
-    public static final String POWER_ID = "blackbeard:TheDrunkenSailorPower";
+public class DrunkenSailorPower extends AbstractPower {
+    public static final String POWER_ID = "blackbeard:DrunkenSailorPower";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
     private static final Texture power128Image = TextureLoader.getTexture(TheBlackbeardMod.getPower128ImagePath(POWER_ID));
     private static final Texture power48Image = TextureLoader.getTexture(TheBlackbeardMod.getPower48ImagePath(POWER_ID));
 
-    public TheDrunkenSailorPower(AbstractCreature owner, int amount) {
+    public DrunkenSailorPower(AbstractCreature owner, int amount) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
@@ -34,5 +34,5 @@ public class TheDrunkenSailorPower extends AbstractPower {
         this.description = DESCRIPTIONS[0] + (this.amount + 1) + DESCRIPTIONS[1];
     }
 
-    //Logic is in TheDrunkenSailorPatch.
+    //Logic is in DrunkenSailorPatch.
 }

@@ -36,8 +36,8 @@
     "NAME": "Halberd",
     "DESCRIPTION": "Equip a !M! / {D} blackbeard:Weapon. NL Whenever you attack with this blackbeard:Weapon, apply 3 blackbeard:Bleed to a target per hit."
   },
-  "blackbeard:TheDrunkenSailor": {
-    "NAME": "The Drunken Sailor",
+  "blackbeard:DrunkenSailor": {
+    "NAME": "Drunken Sailor",
     "DESCRIPTION": "Whenever you use a potion, its effect is applied an additional time."
   },
   "blackbeard:SwordDance": {

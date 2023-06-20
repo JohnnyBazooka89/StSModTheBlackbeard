@@ -1,7 +1,7 @@
 package blackbeard.patches;
 
 import basemod.ReflectionHacks;
-import blackbeard.powers.TheDrunkenSailorPower;
+import blackbeard.powers.DrunkenSailorPower;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -12,16 +12,16 @@ import javassist.CtBehavior;
 
 @SpirePatch(clz = PotionPopUp.class, method = "updateInput")
 @SpirePatch(clz = PotionPopUp.class, method = "updateTargetMode")
-public class TheDrunkenSailorPatch {
+public class DrunkenSailorPatch {
 
     @SpireInsertPatch(locator = Locator.class, localvars = {"potion"})
     public static void Insert(PotionPopUp potionPopUp, AbstractPotion potion) {
         int amountOfAdditionalUsesOfPotion = 0;
 
         for (AbstractPower power : AbstractDungeon.player.powers) {
-            if (power instanceof TheDrunkenSailorPower) {
-                TheDrunkenSailorPower theDrunkenSailorPower = (TheDrunkenSailorPower) power;
-                amountOfAdditionalUsesOfPotion += theDrunkenSailorPower.amount;
+            if (power instanceof DrunkenSailorPower) {
+                DrunkenSailorPower drunkenSailorPower = (DrunkenSailorPower) power;
+                amountOfAdditionalUsesOfPotion += drunkenSailorPower.amount;
             }
         }
         for (int i = 0; i < amountOfAdditionalUsesOfPotion; i++) {

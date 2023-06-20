@@ -11,8 +11,8 @@
       "The last card played each turn is played an additional time."
     ]
   },
-  "blackbeard:TheDrunkenSailorPower": {
-    "NAME": "The Drunken Sailor",
+  "blackbeard:DrunkenSailorPower": {
+    "NAME": "Drunken Sailor",
     "DESCRIPTIONS": [
       "Whenever you use a potion, its effect is applied #b",
       " times."

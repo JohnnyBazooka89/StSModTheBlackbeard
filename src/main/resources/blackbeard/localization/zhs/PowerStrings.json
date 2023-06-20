@@ -11,7 +11,7 @@
       "你每回合打出的最后一张牌额外打出一次。"
     ]
   },
-  "blackbeard:TheDrunkenSailorPower": {
+  "blackbeard:DrunkenSailorPower": {
     "NAME": "醉酒水手",
     "DESCRIPTIONS": [
       "每当你使用一瓶药水，触发 #b",

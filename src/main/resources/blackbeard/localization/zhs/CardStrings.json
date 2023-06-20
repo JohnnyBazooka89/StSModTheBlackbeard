@@ -36,7 +36,7 @@
     "NAME": "戟",
     "DESCRIPTION": "装备一把 !M! / {D} 的 blackbeard:武器 。 NL 每当你使用这把 blackbeard:武器 攻击，每次攻击给予3点 blackbeard:流血 。"
   },
-  "blackbeard:TheDrunkenSailor": {
+  "blackbeard:DrunkenSailor": {
     "NAME": "醉酒水手",
     "DESCRIPTION": "每当你使用一瓶药水，额外触发一次效果。"
   },
