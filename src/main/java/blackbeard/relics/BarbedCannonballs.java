@@ -1,8 +1,8 @@
 package blackbeard.relics;
 
 import basemod.abstracts.CustomRelic;
-import blackbeard.CannonballDamageInfo;
 import blackbeard.TheBlackbeardMod;
+import blackbeard.damageinfo.CannonballDamageInfo;
 import blackbeard.powers.BleedPower;
 import blackbeard.utils.TextureLoader;
 import com.badlogic.gdx.graphics.Texture;

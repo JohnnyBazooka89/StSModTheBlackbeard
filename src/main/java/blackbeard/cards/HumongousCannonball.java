@@ -1,8 +1,8 @@
 package blackbeard.cards;
 
-import blackbeard.CannonballDamageInfo;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.ShootAnythingAction;
+import blackbeard.damageinfo.CannonballDamageInfo;
 import blackbeard.enums.CardColorEnum;
 import blackbeard.enums.CardTagsEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
