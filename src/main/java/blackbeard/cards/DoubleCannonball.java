@@ -1,5 +1,6 @@
 package blackbeard.cards;
 
+import blackbeard.CannonballDamageInfo;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.ShootAnythingAction;
 import blackbeard.enums.CardColorEnum;
@@ -8,7 +9,6 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -39,7 +39,7 @@ public class DoubleCannonball extends AbstractBlackbeardCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new ShootAnythingAction(m, getCannonballTexture(), false));
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn),
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new CannonballDamageInfo(p, this.damage, this.damageTypeForTurn),
                 AbstractGameAction.AttackEffect.BLUNT_LIGHT));
         AbstractCard cannonball = new Cannonball();
         if (this.upgraded) {

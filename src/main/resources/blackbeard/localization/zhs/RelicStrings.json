@@ -110,5 +110,13 @@
     "DESCRIPTIONS": [
       "替换 #y装载炮弹 。在每场战斗开始，以及随后的每4个回合时，将一张 #y黄金炮弹 加入你的手牌。"
     ]
+  },
+  "blackbeard:BarbedCannonballs": {
+    "NAME": "带刺炮弹",
+    "FLAVOR": "它们引起了很多嘘声。",
+    "DESCRIPTIONS": [
+      "每有一 #y炮弹 造成未被格挡的伤害，就给予 #b",
+      " 层 #yblackbeard:流血 。"
+    ]
   }
 }

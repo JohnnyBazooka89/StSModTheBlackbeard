@@ -110,5 +110,13 @@
     "DESCRIPTIONS": [
       "Zastępuje #yZaładowanie #ydział. Na początku każdej walki, a następnie co #b4 tury, dodaj #yZłotą #ykulę do ręki."
     ]
+  },
+  "blackbeard:BarbedCannonballs": {
+    "NAME": "Kolczaste kule",
+    "FLAVOR": "Robią wiele kuku.",
+    "DESCRIPTIONS": [
+      "Za każdym razem, gdy #yKula zada niezablokowane obrażenia nałóż #b",
+      " pkt. #yblackbeard:Krwawienia."
+    ]
   }
 }

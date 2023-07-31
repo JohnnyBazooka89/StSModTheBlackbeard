@@ -110,5 +110,13 @@
     "DESCRIPTIONS": [
       "Replaces #yLoad #ythe #yCannons. At the start of each combat, and then every #b4 turns, add a #yGolden #yCannonball into your hand."
     ]
+  },
+  "blackbeard:BarbedCannonballs": {
+    "NAME": "Barbed Cannonballs",
+    "FLAVOR": "They cause a lot of boo-boos.",
+    "DESCRIPTIONS": [
+      "Whenever a #yCannonball deals unblocked damage, apply #b",
+      " #yblackbeard:Bleed."
+    ]
   }
 }
