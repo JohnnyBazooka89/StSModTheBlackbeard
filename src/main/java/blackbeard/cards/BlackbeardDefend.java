@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class BlackbeardDefend extends AbstractBlackbeardCard {
-    public static final String ID = "blackbeard:BlackbeardDefend";
+    public static final String ID = "blackbeard:Defend";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
