@@ -5,7 +5,6 @@ import blackbeard.actions.CannonBarrageAction;
 import blackbeard.enums.CardColorEnum;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
@@ -31,7 +30,7 @@ public class CannonBarrage extends AbstractBlackbeardCard {
             this.energyOnUse = EnergyPanel.totalCount;
         }
 
-        AbstractDungeon.actionManager.addToBottom(new CannonBarrageAction(p, this.upgraded, this.freeToPlayOnce, this.energyOnUse));
+        addToBot(new CannonBarrageAction(p, this.upgraded, this.freeToPlayOnce, this.energyOnUse));
     }
 
     @Override

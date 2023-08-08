@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -32,12 +31,12 @@ public class CloakAndCannonball extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
+        addToBot(new GainBlockAction(p, p, this.block));
         AbstractCard cannonball = new Cannonball();
         if (this.upgraded) {
             cannonball.upgrade();
         }
-        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(cannonball, 1));
+        addToBot(new MakeTempCardInHandAction(cannonball, 1));
     }
 
     @Override

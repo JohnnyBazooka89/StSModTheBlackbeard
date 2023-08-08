@@ -42,7 +42,7 @@ public class Revenge extends AbstractBlackbeardCard {
                 addToBot(new VFXAction(new GiantTextEffect(m.hb.cX, m.hb.cY, EXTENDED_DESCRIPTION[1])));
             }
         }
-        AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.BLUNT_HEAVY));
     }
 
     @Override

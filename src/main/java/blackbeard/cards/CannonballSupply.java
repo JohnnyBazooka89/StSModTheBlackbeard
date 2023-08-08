@@ -5,7 +5,6 @@ import blackbeard.enums.CardColorEnum;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -28,7 +27,7 @@ public class CannonballSupply extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Cannonball(), CANNONBALLS_TO_ADD));
+        addToBot(new MakeTempCardInHandAction(new Cannonball(), CANNONBALLS_TO_ADD));
     }
 
     @Override

@@ -52,9 +52,9 @@ public class BoostMorale extends AbstractBlackbeardCard {
         }
         AbstractDungeon.effectList.add(new RainingGoldEffect(GOLD_TO_GAIN, true));
         AbstractDungeon.effectsQueue.add(new SpotlightPlayerEffect());
-        this.addToBot(new GainGoldAction(GOLD_TO_GAIN));
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.magicNumber));
-        AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(ENERGY_TO_GET + (this.upgraded ? UPGRADE_PLUS_ENERGY_TO_GET : 0)));
+        addToBot(new GainGoldAction(GOLD_TO_GAIN));
+        addToBot(new DrawCardAction(p, this.magicNumber));
+        addToBot(new GainEnergyAction(ENERGY_TO_GET + (this.upgraded ? UPGRADE_PLUS_ENERGY_TO_GET : 0)));
     }
 
     @Override

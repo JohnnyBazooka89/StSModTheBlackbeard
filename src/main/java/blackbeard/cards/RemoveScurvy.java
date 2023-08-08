@@ -44,8 +44,8 @@ public class RemoveScurvy extends AbstractBlackbeardCard {
                 AbstractDungeon.effectList.add(new DamageCurvyEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, new Color(1F, 0.576F, 0.160F, 1)));
             }
         }
-        AbstractDungeon.actionManager.addToBottom(new HealAction(p, p, this.magicNumber));
-        AbstractDungeon.actionManager.addToBottom(new RemoveDebuffsAction(p));
+        addToBot(new HealAction(p, p, this.magicNumber));
+        addToBot(new RemoveDebuffsAction(p));
     }
 
     @Override

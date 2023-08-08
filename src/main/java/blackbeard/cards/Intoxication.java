@@ -7,7 +7,6 @@ import blackbeard.powers.ResistancePower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -30,8 +29,8 @@ public class Intoxication extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ResistancePower(p, this.magicNumber), this.magicNumber));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new IntoxicationPower(p, RESISTANCE_TO_LOSE_EACH_TURN), RESISTANCE_TO_LOSE_EACH_TURN));
+        addToBot(new ApplyPowerAction(p, p, new ResistancePower(p, this.magicNumber), this.magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new IntoxicationPower(p, RESISTANCE_TO_LOSE_EACH_TURN), RESISTANCE_TO_LOSE_EACH_TURN));
     }
 
     @Override

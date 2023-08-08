@@ -11,7 +11,6 @@ import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -38,14 +37,14 @@ public class DoubleCannonball extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ShootAnythingAction(m, getCannonballTexture(), false));
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new CannonballDamageInfo(p, this.damage, this.damageTypeForTurn),
+        addToBot(new ShootAnythingAction(m, getCannonballTexture(), false));
+        addToBot(new DamageAction(m, new CannonballDamageInfo(p, this.damage, this.damageTypeForTurn),
                 AbstractGameAction.AttackEffect.BLUNT_LIGHT));
         AbstractCard cannonball = new Cannonball();
         if (this.upgraded) {
             cannonball.upgrade();
         }
-        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(cannonball, 1));
+        addToBot(new MakeTempCardInHandAction(cannonball, 1));
     }
 
     @Override

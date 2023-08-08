@@ -7,7 +7,6 @@ import blackbeard.orbs.PowderKegOrb;
 import blackbeard.utils.WeaponCardsUtils;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -32,7 +31,7 @@ public class PowderKeg extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new EquipAction(new PowderKegOrb(WEAPON_ATTACK, WEAPON_DURABILITY, this.magicNumber, false)));
+        addToBot(new EquipAction(new PowderKegOrb(WEAPON_ATTACK, WEAPON_DURABILITY, this.magicNumber, false)));
     }
 
     @Override

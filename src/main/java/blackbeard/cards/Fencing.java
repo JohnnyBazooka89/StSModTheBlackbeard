@@ -6,7 +6,6 @@ import blackbeard.enums.CardColorEnum;
 import blackbeard.enums.WeaponsToUseEnum;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -30,7 +29,7 @@ public class Fencing extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new UpgradeWeaponsAction(this.magicNumber + 2, this.magicNumber, WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON));
+        addToBot(new UpgradeWeaponsAction(this.magicNumber + 2, this.magicNumber, WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON));
     }
 
     @Override

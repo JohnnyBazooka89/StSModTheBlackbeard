@@ -7,7 +7,6 @@ import blackbeard.orbs.SpearOrb;
 import blackbeard.utils.WeaponCardsUtils;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -31,7 +30,7 @@ public class Spear extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new EquipAction(new SpearOrb(this.magicNumber, WEAPON_DURABILITY, false)));
+        addToBot(new EquipAction(new SpearOrb(this.magicNumber, WEAPON_DURABILITY, false)));
     }
 
     @Override

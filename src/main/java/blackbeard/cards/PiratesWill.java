@@ -30,8 +30,8 @@ public class PiratesWill extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new RemoveDebuffsAction(p));
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, this.magicNumber));
+        addToBot(new RemoveDebuffsAction(p));
+        addToBot(new DrawCardAction(AbstractDungeon.player, this.magicNumber));
     }
 
     @Override

@@ -7,7 +7,6 @@ import blackbeard.powers.DamageWhenIntangibleEndsPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
@@ -32,8 +31,8 @@ public class UndeadForm extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new IntangiblePlayerPower(p, INTANGIBLE_VALUE), INTANGIBLE_VALUE));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DamageWhenIntangibleEndsPower(p, this.magicNumber), this.magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new IntangiblePlayerPower(p, INTANGIBLE_VALUE), INTANGIBLE_VALUE));
+        addToBot(new ApplyPowerAction(p, p, new DamageWhenIntangibleEndsPower(p, this.magicNumber), this.magicNumber));
     }
 
     @Override

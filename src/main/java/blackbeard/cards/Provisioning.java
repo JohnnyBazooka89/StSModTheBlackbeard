@@ -31,8 +31,8 @@ public class Provisioning extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ObtainPotionAction(AbstractDungeon.returnRandomPotion(true)));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ProvisioningPower(p, 1), 1));
+        addToBot(new ObtainPotionAction(AbstractDungeon.returnRandomPotion(true)));
+        addToBot(new ApplyPowerAction(p, p, new ProvisioningPower(p, 1), 1));
     }
 
     @Override

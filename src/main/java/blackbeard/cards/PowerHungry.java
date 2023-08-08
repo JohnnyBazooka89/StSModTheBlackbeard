@@ -28,7 +28,7 @@ public class PowerHungry extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new PowerCardFromDrawPileToHandAction(this.magicNumber));
+        addToBot(new PowerCardFromDrawPileToHandAction(this.magicNumber));
     }
 
     @Override

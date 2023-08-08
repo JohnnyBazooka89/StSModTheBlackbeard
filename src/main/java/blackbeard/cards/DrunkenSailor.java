@@ -6,7 +6,6 @@ import blackbeard.powers.DrunkenSailorPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -25,7 +24,7 @@ public class DrunkenSailor extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DrunkenSailorPower(p, 1), 1));
+        addToBot(new ApplyPowerAction(p, p, new DrunkenSailorPower(p, 1), 1));
     }
 
     @Override

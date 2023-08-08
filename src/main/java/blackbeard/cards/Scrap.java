@@ -33,8 +33,8 @@ public class Scrap extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new DestroyWeaponsAction(WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON));
-        AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(this.magicNumber));
+        addToBot(new DestroyWeaponsAction(WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON));
+        addToBot(new GainEnergyAction(this.magicNumber));
     }
 
     @Override

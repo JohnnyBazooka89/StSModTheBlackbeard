@@ -10,7 +10,6 @@ import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -35,8 +34,8 @@ public class HumongousCannonball extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ShootAnythingAction(m, getHumongousCannonballTexture(), false));
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new CannonballDamageInfo(p, this.damage, this.damageTypeForTurn),
+        addToBot(new ShootAnythingAction(m, getHumongousCannonballTexture(), false));
+        addToBot(new DamageAction(m, new CannonballDamageInfo(p, this.damage, this.damageTypeForTurn),
                 AbstractGameAction.AttackEffect.BLUNT_HEAVY));
     }
 

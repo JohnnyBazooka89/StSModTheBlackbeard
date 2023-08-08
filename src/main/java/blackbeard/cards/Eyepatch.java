@@ -6,7 +6,6 @@ import blackbeard.powers.GainWeakNextTurnPower;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DrawPower;
@@ -30,8 +29,8 @@ public class Eyepatch extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new GainWeakNextTurnPower(p, this.magicNumber), this.magicNumber));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DrawPower(p, ADDITIONAL_CARDS_TO_DRAW_EACH_TURN), ADDITIONAL_CARDS_TO_DRAW_EACH_TURN));
+        addToBot(new ApplyPowerAction(p, p, new GainWeakNextTurnPower(p, this.magicNumber), this.magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new DrawPower(p, ADDITIONAL_CARDS_TO_DRAW_EACH_TURN), ADDITIONAL_CARDS_TO_DRAW_EACH_TURN));
     }
 
     @Override

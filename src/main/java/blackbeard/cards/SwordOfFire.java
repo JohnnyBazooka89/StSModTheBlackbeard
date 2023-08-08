@@ -7,7 +7,6 @@ import blackbeard.orbs.SwordOfFireOrb;
 import blackbeard.utils.WeaponCardsUtils;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -31,7 +30,7 @@ public class SwordOfFire extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new EquipAction(new SwordOfFireOrb(WEAPON_ATTACK, this.magicNumber, false)));
+        addToBot(new EquipAction(new SwordOfFireOrb(WEAPON_ATTACK, this.magicNumber, false)));
     }
 
     @Override

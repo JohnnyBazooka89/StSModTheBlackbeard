@@ -36,7 +36,7 @@ public class BuriedTreasure extends AbstractBlackbeardCard {
         CardCrawlGame.sound.play("GOLD_GAIN");
         AbstractDungeon.effectList.add(new RainingGoldEffect(this.magicNumber, true));
         AbstractDungeon.effectsQueue.add(new SpotlightPlayerEffect());
-        this.addToBot(new GainGoldAction(this.magicNumber));
+        addToBot(new GainGoldAction(this.magicNumber));
     }
 
     @Override

@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -32,8 +31,8 @@ public class Recklessness extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new GainEnergyAction(this.magicNumber));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new LoseEnergyNextTurnPower(p, ENERGY_TO_LOSE_NEXT_TURN), ENERGY_TO_LOSE_NEXT_TURN));
+        addToBot(new GainEnergyAction(this.magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new LoseEnergyNextTurnPower(p, ENERGY_TO_LOSE_NEXT_TURN), ENERGY_TO_LOSE_NEXT_TURN));
     }
 
     @Override

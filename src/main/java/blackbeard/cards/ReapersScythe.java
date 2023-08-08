@@ -7,7 +7,6 @@ import blackbeard.orbs.ReapersScytheOrb;
 import blackbeard.utils.WeaponCardsUtils;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -31,7 +30,7 @@ public class ReapersScythe extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new EquipAction(new ReapersScytheOrb(this.magicNumber, WEAPON_DURABILITY, false)));
+        addToBot(new EquipAction(new ReapersScytheOrb(this.magicNumber, WEAPON_DURABILITY, false)));
     }
 
     @Override

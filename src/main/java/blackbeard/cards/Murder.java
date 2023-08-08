@@ -36,7 +36,7 @@ public class Murder extends AbstractBlackbeardCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new VFXAction(new GiantTextEffect(m.hb.cX, m.hb.cY, EXTENDED_DESCRIPTION[1])));
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn),
+        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn),
                 AbstractGameAction.AttackEffect.BLUNT_HEAVY));
     }
 
