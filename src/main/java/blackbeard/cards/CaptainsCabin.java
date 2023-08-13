@@ -18,7 +18,7 @@ public class CaptainsCabin extends AbstractBlackbeardCard {
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 2;
     private static final int AMOUNT_OF_CANNONBALLS = 1;
-    private static final int BLOCK_AMOUNT = 12;
+    private static final int BLOCK_AMOUNT = 14;
     private static final int UPGRADE_PLUS_AMOUNT_OF_CANNONBALLS = 1;
 
     public CaptainsCabin() {
