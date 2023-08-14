@@ -28,7 +28,7 @@ public class BoostMorale extends AbstractBlackbeardCard {
     private static final int GOLD_TO_GAIN = 5;
     private static final int CARDS_TO_DRAW = 1;
     private static final int ENERGY_TO_GET = 1;
-    private static final int UPGRADE_PLUS_ENERGY_TO_GET = 1;
+    private static final int UPGRADE_PLUS_CARDS_TO_DRAW = 1;
 
     protected float offset = MathUtils.random(-180.0F, 180.0F);
 
@@ -54,13 +54,14 @@ public class BoostMorale extends AbstractBlackbeardCard {
         AbstractDungeon.effectsQueue.add(new SpotlightPlayerEffect());
         addToBot(new GainGoldAction(GOLD_TO_GAIN));
         addToBot(new DrawCardAction(p, this.magicNumber));
-        addToBot(new GainEnergyAction(ENERGY_TO_GET + (this.upgraded ? UPGRADE_PLUS_ENERGY_TO_GET : 0)));
+        addToBot(new GainEnergyAction(ENERGY_TO_GET));
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.upgradeMagicNumber(UPGRADE_PLUS_CARDS_TO_DRAW);
             this.rawDescription = UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

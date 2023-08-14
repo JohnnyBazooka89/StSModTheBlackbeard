@@ -283,7 +283,7 @@
   "blackbeard:BoostMorale": {
     "NAME": "Поднять мораль",
     "DESCRIPTION": "Даёт 5 Золота. NL Вы берёте !M! карту. NL Даёт [E] NL Сжигается.",
-    "UPGRADE_DESCRIPTION": "Даёт 5 Золота. NL Вы берёте !M! карту. NL Даёт [E] [E] NL Сжигается."
+    "UPGRADE_DESCRIPTION": "Даёт 5 Золота. NL Вы берёте !M! карты. NL Даёт [E] NL Сжигается."
   },
   "blackbeard:MegaUpgrade": {
     "NAME": "Максимально улучшить",

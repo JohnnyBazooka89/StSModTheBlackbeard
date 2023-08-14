@@ -291,7 +291,7 @@
   "blackbeard:BoostMorale": {
     "NAME": "Boost Morale",
     "DESCRIPTION": "Gain 5 Gold. NL Draw !M! card. NL Gain [E]. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain 5 Gold. NL Draw !M! card. NL Gain [E] [E]. NL Exhaust."
+    "UPGRADE_DESCRIPTION": "Gain 5 Gold. NL Draw !M! cards. NL Gain [E]. NL Exhaust."
   },
   "blackbeard:MegaUpgrade": {
     "NAME": "Mega Upgrade",
