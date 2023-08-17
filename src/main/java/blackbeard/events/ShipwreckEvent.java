@@ -94,7 +94,8 @@ public class ShipwreckEvent extends AbstractImageEvent {
     }
 
     public static Condition getCanBeEncounteredCondition() {
-        return () -> !AbstractDungeon.player.hasRelic(Anchor.ID) || !AbstractDungeon.player.hasRelic(HornCleat.ID) || !AbstractDungeon.player.hasRelic(CaptainsWheel.ID);
+        return () -> (!AbstractDungeon.player.hasRelic(Anchor.ID) || !AbstractDungeon.player.hasRelic(HornCleat.ID) || !AbstractDungeon.player.hasRelic(CaptainsWheel.ID)) &&
+                (AbstractDungeon.player.currentHealth >= (AbstractDungeon.player.maxHealth / 10) * 3);
     }
 
 }
