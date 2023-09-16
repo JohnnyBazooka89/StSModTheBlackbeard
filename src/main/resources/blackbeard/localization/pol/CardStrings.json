@@ -79,7 +79,7 @@
   "blackbeard:Scrap": {
     "NAME": "Zezłomowanie",
     "DESCRIPTION": "Zniszcz najbardziej wysuniętą na prawo blackbeard:Broń, aby zyskać [E] [E].",
-    "UPGRADE_DESCRIPTION": "Zniszcz najbardziej wysuniętą na prawo blackbeard:Broń, aby zyskać [E] [E] [E].",
+    "UPGRADE_DESCRIPTION": "Zniszcz najbardziej wysuniętą na prawo blackbeard:Broń, aby zyskać NL [E] [E] [E].",
     "EXTENDED_DESCRIPTION": [
       "Nie mam Broni!"
     ]
