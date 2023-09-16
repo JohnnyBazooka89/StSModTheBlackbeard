@@ -79,7 +79,7 @@
   "blackbeard:Scrap": {
     "NAME": "Scrap",
     "DESCRIPTION": "Destroy your rightmost blackbeard:Weapon to gain [E] [E].",
-    "UPGRADE_DESCRIPTION": "Destroy your rightmost blackbeard:Weapon to gain NL [E] [E] [E].",
+    "UPGRADE_DESCRIPTION": "Destroy your rightmost blackbeard:Weapon to gain [E] [E] [E].",
     "EXTENDED_DESCRIPTION": [
       "I don't have a Weapon!"
     ]
