@@ -45,7 +45,6 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.lang.reflect.Type;
 import java.nio.charset.StandardCharsets;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -359,18 +358,13 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         Gson gson = new Gson();
 
         String keywordStrings = Gdx.files.internal(String.format(KEYWORD_STRINGS_PATH, languageFolder)).readString(String.valueOf(StandardCharsets.UTF_8));
-        Type typeToken = new TypeToken<Map<String, Keyword>>() {
-        }.getType();
 
-        Map<String, Keyword> keywords = gson.fromJson(keywordStrings, typeToken);
-        blackbeardKeywords.putAll(keywords);
+        Map<String, Keyword> keywords = gson.fromJson(keywordStrings, new TypeToken<Map<String, Keyword>>() {
+        }.getType());
 
         keywords.forEach((k, v) -> {
-            if (v.PROPER_NAME != null) {
-                BaseMod.addKeyword("blackbeard:", v.PROPER_NAME, v.NAMES, v.DESCRIPTION);
-            } else {
-                BaseMod.addKeyword(v.NAMES, v.DESCRIPTION);
-            }
+            blackbeardKeywords.put(k, v);
+            BaseMod.addKeyword("blackbeard:", v.PROPER_NAME, v.NAMES, v.DESCRIPTION);
         });
     }
 
