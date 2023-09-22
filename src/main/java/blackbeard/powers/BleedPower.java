@@ -19,7 +19,7 @@ public class BleedPower extends AbstractPower implements HealthBarRenderPower {
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    private static final Color bloodColor = new Color(102F / 256.0F, 0f, 0f, 1f);
+    private static final Color bloodColor = new Color(102F / 255.0F, 0f, 0f, 1f);
     private static final Texture power128Image = TextureLoader.getTexture(TheBlackbeardMod.getPower128ImagePath(POWER_ID));
     private static final Texture power48Image = TextureLoader.getTexture(TheBlackbeardMod.getPower48ImagePath(POWER_ID));
 
