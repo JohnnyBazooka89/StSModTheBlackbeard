@@ -116,7 +116,7 @@
     "FLAVOR": "They cause a lot of boo-boos.",
     "DESCRIPTIONS": [
       "Whenever a #yCannonball deals unblocked damage, apply #b",
-      " #yblackbeard:Bleed."
+      " #yblackbeard:Bleed. (Works with every type of #yCannonball [REMOVE_SPACE].)"
     ]
   }
 }

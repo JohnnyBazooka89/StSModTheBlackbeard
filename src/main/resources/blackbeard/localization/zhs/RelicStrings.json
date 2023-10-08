@@ -116,7 +116,7 @@
     "FLAVOR": "它们引起了很多嘘声。",
     "DESCRIPTIONS": [
       "每有一 #y炮弹 造成未被格挡的伤害，就给予 #b",
-      " 层 #yblackbeard:流血 。"
+      " 层 #yblackbeard:流血 。（对每种 #y炮弹 [REMOVE_SPACE] 都有效。）"
     ]
   }
 }
