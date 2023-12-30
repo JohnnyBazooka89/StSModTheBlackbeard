@@ -316,8 +316,8 @@
   },
   "blackbeard:CannonballSupply": {
     "NAME": "炮弹补给",
-    "DESCRIPTION": "将3张 *炮弹 加入你的手牌。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "将3张 *炮弹 加入你的手牌。"
+    "DESCRIPTION": "保留 。 NL 将3张 *炮弹 加入你的手牌。",
+    "UPGRADE_DESCRIPTION": "保留 。 NL 将3张 *炮弹+ 加入你的手牌。"
   },
   "blackbeard:BountyHunter": {
     "NAME": "赏金猎人",

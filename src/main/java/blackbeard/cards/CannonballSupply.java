@@ -20,21 +20,24 @@ public class CannonballSupply extends AbstractBlackbeardCard {
     public CannonballSupply() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
                 CardColorEnum.BLACKBEARD_BLACK, CardRarity.UNCOMMON, CardTarget.SELF);
-
-        this.exhaust = true;
+        this.selfRetain = true;
         this.cardsToPreview = new Cannonball();
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new MakeTempCardInHandAction(new Cannonball(), CANNONBALLS_TO_ADD));
+        Cannonball c = new Cannonball();
+        if (this.upgraded) {
+            c.upgrade();
+        }
+        addToBot(new MakeTempCardInHandAction(c, CANNONBALLS_TO_ADD));
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.exhaust = false;
+            this.cardsToPreview.upgrade();
             this.rawDescription = UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

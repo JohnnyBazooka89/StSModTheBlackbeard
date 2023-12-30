@@ -316,8 +316,8 @@
   },
   "blackbeard:CannonballSupply": {
     "NAME": "Cannonball Supply",
-    "DESCRIPTION": "Add 3 *Cannonballs into your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Add 3 *Cannonballs into your hand."
+    "DESCRIPTION": "Retain. NL Add 3 *Cannonballs into your hand.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Add 3 *Cannonballs+ into your hand."
   },
   "blackbeard:BountyHunter": {
     "NAME": "Bounty Hunter",

@@ -308,8 +308,8 @@
   },
   "blackbeard:CannonballSupply": {
     "NAME": "Запас ядер",
-    "DESCRIPTION": "Добавляет в руку 3 *Ядра. NL Сжигается.",
-    "UPGRADE_DESCRIPTION": "Добавляет в руку 3 *Ядра."
+    "DESCRIPTION": "Оставляется. NL Добавляет в руку 3 *Ядра.",
+    "UPGRADE_DESCRIPTION": "Оставляется. NL Добавляет в руку 3 *Ядра+."
   },
   "blackbeard:BountyHunter": {
     "NAME": "Охотник за головами",

@@ -316,8 +316,8 @@
   },
   "blackbeard:CannonballSupply": {
     "NAME": "Dostawa kul",
-    "DESCRIPTION": "Dodaj 3 *Kule do ręki. NL Wykluczenie.",
-    "UPGRADE_DESCRIPTION": "Dodaj 3 *Kule do ręki."
+    "DESCRIPTION": "Zachowanie. NL Dodaj 3 *Kule do ręki.",
+    "UPGRADE_DESCRIPTION": "Zachowanie. NL Dodaj 3 *Kule+ do ręki."
   },
   "blackbeard:BountyHunter": {
     "NAME": "Łowca nagród",
