@@ -51,8 +51,8 @@
   },
   "blackbeard:CannonBarrage": {
     "NAME": "Cannon Barrage",
-    "DESCRIPTION": "Add X *Cannonballs into your hand.",
-    "UPGRADE_DESCRIPTION": "Add X+1 *Cannonballs into your hand."
+    "DESCRIPTION": "Add X+1 *Cannonballs into your hand.",
+    "UPGRADE_DESCRIPTION": "Add X+1 *Cannonballs+ into your hand."
   },
   "blackbeard:Rum": {
     "NAME": "Rum",

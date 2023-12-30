@@ -51,8 +51,8 @@
   },
   "blackbeard:CannonBarrage": {
     "NAME": "火炮弹幕",
-    "DESCRIPTION": "将X张 *炮弹 加入你的手牌。",
-    "UPGRADE_DESCRIPTION": "将X+1张 *炮弹 加入你的手牌。"
+    "DESCRIPTION": "将X+1张 *炮弹 加入你的手牌。",
+    "UPGRADE_DESCRIPTION": "将X+1张 *炮弹+ 加入你的手牌。"
   },
   "blackbeard:Rum": {
     "NAME": "朗姆酒",

@@ -37,6 +37,7 @@ public class CannonBarrage extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.cardsToPreview.upgrade();
             this.rawDescription = UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }

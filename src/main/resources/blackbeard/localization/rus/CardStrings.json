@@ -51,8 +51,8 @@
   },
   "blackbeard:CannonBarrage": {
     "NAME": "Пушечный обстрел",
-    "DESCRIPTION": "Добавляет в руку X *Ядер.",
-    "UPGRADE_DESCRIPTION": "Добавляет в руку X+1 *Ядер."
+    "DESCRIPTION": "Добавляет в руку X+1 *Ядер.",
+    "UPGRADE_DESCRIPTION": "Добавляет в руку X+1 *Ядер+."
   },
   "blackbeard:Rum": {
     "NAME": "Ром",

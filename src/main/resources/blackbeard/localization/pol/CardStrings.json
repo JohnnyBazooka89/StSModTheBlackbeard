@@ -51,8 +51,8 @@
   },
   "blackbeard:CannonBarrage": {
     "NAME": "Kanonada",
-    "DESCRIPTION": "Dodaj X *Kul do ręki.",
-    "UPGRADE_DESCRIPTION": "Dodaj X+1 *Kul do ręki."
+    "DESCRIPTION": "Dodaj X+1 *Kul do ręki.",
+    "UPGRADE_DESCRIPTION": "Dodaj X+1 *Kul+ do ręki."
   },
   "blackbeard:Rum": {
     "NAME": "Rum",

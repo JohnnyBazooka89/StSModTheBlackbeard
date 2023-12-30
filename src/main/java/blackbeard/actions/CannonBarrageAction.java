@@ -29,18 +29,20 @@ public class CannonBarrageAction extends AbstractGameAction {
             effect = this.energyOnUse;
         }
 
+        effect += 1;
+
         if (this.p.hasRelic("Chemical X")) {
             effect += 2;
             this.p.getRelic("Chemical X").flash();
         }
 
-        if (this.upgraded) {
-            effect += 1;
-        }
-
         if (effect > 0) {
             for (int i = 0; i < effect; ++i) {
-                AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Cannonball(), 1));
+                Cannonball c = new Cannonball();
+                if (this.upgraded) {
+                    c.upgrade();
+                }
+                AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(c, 1));
             }
 
             if (!this.freeToPlayOnce) {
