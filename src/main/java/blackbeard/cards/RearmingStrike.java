@@ -18,8 +18,8 @@ public class RearmingStrike extends AbstractBlackbeardCard {
     public static final String ID = "blackbeard:RearmingStrike";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final int COST = 1;
-    private static final int DAMAGE = 7;
-    private static final int UPGRADE_PLUS_DAMAGE = 3;
+    private static final int DAMAGE = 8;
+    private static final int UPGRADE_PLUS_DAMAGE = 4;
     private static final int WEAPON_ATTACK = 4;
     private static final int WEAPON_DURABILITY = 2;
     public static final String NAME = cardStrings.NAME;
