@@ -43,6 +43,12 @@ public class GoldenStrike extends AbstractBlackbeardCard implements IGoldenCard 
     }
 
     @Override
+    public void calculateCardDamage(AbstractMonster mo) {
+        setGoldenValuesAndUpdateDescription();
+        super.calculateCardDamage(mo);
+    }
+
+    @Override
     public void applyPowers() {
         setGoldenValuesAndUpdateDescription();
         super.applyPowers();
