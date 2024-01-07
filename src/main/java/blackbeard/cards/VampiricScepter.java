@@ -28,12 +28,12 @@ public class VampiricScepter extends AbstractBlackbeardCard {
                 CardColorEnum.BLACKBEARD_BLACK, CardRarity.SPECIAL, CardTarget.SELF);
 
         this.baseMagicNumber = this.magicNumber = WEAPON_ATTACK;
-        this.secondMagicNumberBaseValue = this.secondMagicNumberValue = HEAL_VALUE;
+        this.baseSecondMagicNumber = this.secondMagicNumber = HEAL_VALUE;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new EquipAction(new VampiricScepterOrb(this.magicNumber, WEAPON_DURABILITY, this.secondMagicNumberValue, false)));
+        addToBot(new EquipAction(new VampiricScepterOrb(this.magicNumber, WEAPON_DURABILITY, this.secondMagicNumber, false)));
     }
 
     @Override

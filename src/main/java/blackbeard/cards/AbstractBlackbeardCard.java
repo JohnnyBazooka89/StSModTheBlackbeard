@@ -19,10 +19,10 @@ public abstract class AbstractBlackbeardCard extends CustomCard implements ISeco
     private static List<String> smallerFontInSimplifiedChineseCardIds = Collections.emptyList();
     private static List<String> smallerFontInEnglishCardIds = Arrays.asList(CloakAndCannonball.ID, HumongousCannonball.ID, IntimidatingStrike.ID, WeaponProficiency.ID);
 
-    protected int secondMagicNumberBaseValue = -1;
-    protected int secondMagicNumberValue = -1;
+    protected int baseSecondMagicNumber = -1;
+    protected int secondMagicNumber = -1;
     protected boolean upgradedSecondMagicNumber = false;
-    private boolean secondMagicNumberModified = false;
+    private boolean isSecondMagicNumberModified = false;
 
     private static final float smallerFontSize = 17.0f;
     private static final float defaultFontSize = -1.0f;
@@ -98,42 +98,42 @@ public abstract class AbstractBlackbeardCard extends CustomCard implements ISeco
 
     @Override
     public boolean isSecondMagicNumberModified() {
-        return this.secondMagicNumberModified;
+        return this.isSecondMagicNumberModified;
     }
 
     @Override
-    public int secondMagicNumberValue() {
-        return this.secondMagicNumberValue;
+    public int secondMagicNumber() {
+        return this.secondMagicNumber;
     }
 
     @Override
-    public int secondMagicNumberBaseValue() {
-        return this.secondMagicNumberBaseValue;
+    public int baseSecondMagicNumber() {
+        return this.baseSecondMagicNumber;
     }
 
     @Override
-    public boolean secondMagicNumberUpgraded() {
-        return upgraded;
+    public boolean upgradedSecondMagicNumber() {
+        return upgradedSecondMagicNumber;
     }
 
     @Override
     public void resetAttributes() {
         super.resetAttributes();
-        this.secondMagicNumberModified = false;
+        this.isSecondMagicNumberModified = false;
     }
 
     @Override
     public void displayUpgrades() {
         super.displayUpgrades();
         if (this.upgradedSecondMagicNumber) {
-            this.secondMagicNumberValue = this.secondMagicNumberBaseValue;
-            this.secondMagicNumberModified = true;
+            this.secondMagicNumber = this.baseSecondMagicNumber;
+            this.isSecondMagicNumberModified = true;
         }
     }
 
     protected void upgradeSecondMagic(int amount) {
-        this.secondMagicNumberBaseValue += amount;
-        this.secondMagicNumberValue = secondMagicNumberBaseValue;
+        this.baseSecondMagicNumber += amount;
+        this.secondMagicNumber = baseSecondMagicNumber;
         this.upgradedSecondMagicNumber = true;
     }
 

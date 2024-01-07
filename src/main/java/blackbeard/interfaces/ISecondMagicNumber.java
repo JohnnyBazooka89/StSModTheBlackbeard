@@ -4,10 +4,10 @@ public interface ISecondMagicNumber {
 
     boolean isSecondMagicNumberModified();
 
-    int secondMagicNumberValue();
+    int secondMagicNumber();
 
-    int secondMagicNumberBaseValue();
+    int baseSecondMagicNumber();
 
-    boolean secondMagicNumberUpgraded();
+    boolean upgradedSecondMagicNumber();
 
 }
