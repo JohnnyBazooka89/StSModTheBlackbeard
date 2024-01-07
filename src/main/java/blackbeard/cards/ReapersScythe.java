@@ -17,7 +17,7 @@ public class ReapersScythe extends AbstractBlackbeardCard {
     private static final int COST = 2;
     private static final int WEAPON_ATTACK = 8;
     private static final int WEAPON_DURABILITY = 3;
-    private static final int UPGRADE_PLUS_WEAPON_ATTACK = 3;
+    private static final int UPGRADE_PLUS_WEAPON_ATTACK = 2;
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = WeaponCardsUtils.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);
 
