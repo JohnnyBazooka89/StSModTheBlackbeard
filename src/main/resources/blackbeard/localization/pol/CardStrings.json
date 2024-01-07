@@ -56,7 +56,8 @@
   },
   "blackbeard:Rum": {
     "NAME": "Rum",
-    "DESCRIPTION": "Zyskaj !M! pkt. blackbeard:Odporności."
+    "DESCRIPTION": "Zyskaj !M! pkt. blackbeard:Odporności.",
+    "UPGRADE_DESCRIPTION": "Startowa. NL Zyskaj !M! pkt. blackbeard:Odporności."
   },
   "blackbeard:GhostInTheRum": {
     "NAME": "Duch w rumie",

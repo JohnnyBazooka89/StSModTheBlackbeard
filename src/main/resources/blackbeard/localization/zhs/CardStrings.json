@@ -56,7 +56,8 @@
   },
   "blackbeard:Rum": {
     "NAME": "朗姆酒",
-    "DESCRIPTION": "获得 !M! 点 blackbeard:抵抗 。"
+    "DESCRIPTION": "获得 !M! 点 blackbeard:抵抗 。",
+    "UPGRADE_DESCRIPTION": "固有 。 NL 获得 !M! 点 blackbeard:抵抗 。"
   },
   "blackbeard:GhostInTheRum": {
     "NAME": "朗姆酒里的鬼魂",

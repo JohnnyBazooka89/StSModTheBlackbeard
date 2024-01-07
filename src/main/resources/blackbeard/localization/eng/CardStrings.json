@@ -56,7 +56,8 @@
   },
   "blackbeard:Rum": {
     "NAME": "Rum",
-    "DESCRIPTION": "Gain !M! blackbeard:Resistance."
+    "DESCRIPTION": "Gain !M! blackbeard:Resistance.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Gain !M! blackbeard:Resistance."
   },
   "blackbeard:GhostInTheRum": {
     "NAME": "Ghost in the Rum",
