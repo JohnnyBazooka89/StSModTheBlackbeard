@@ -117,8 +117,8 @@
   "blackbeard:DamageWhenIntangibleEndsPower": {
     "NAME": "无实体结束受伤害",
     "DESCRIPTIONS": [
-      "下次你的 无实体 产消失时，你就拿走 #b",
-      " 损害。"
+      "下次你的 无实体 产消失时，你受到 #b",
+      " 点伤害。"
     ]
   },
   "blackbeard:RustyThorns": {
