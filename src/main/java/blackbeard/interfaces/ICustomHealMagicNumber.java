@@ -2,12 +2,12 @@ package blackbeard.interfaces;
 
 public interface ICustomHealMagicNumber {
 
-    boolean isModified();
+    boolean isCustomHealMagicNumberModified();
 
-    int value();
+    int customHealMagicNumberValue();
 
-    int baseValue();
+    int customHealMagicNumberBaseValue();
 
-    boolean upgraded();
+    boolean customHealMagicNumberUpgraded();
 
 }

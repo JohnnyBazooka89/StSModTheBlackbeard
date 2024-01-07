@@ -24,21 +24,21 @@ public class VampiricScepter extends AbstractBlackbeardCard implements ICustomHe
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = WeaponCardsUtils.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);
 
-    private int customHeal;
-    private boolean customHealDisplayUpgradesModified;
+    private int customHealMagicNumber;
+    private boolean customHealMagicNumberModified;
 
     public VampiricScepter() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(VampiricScepter.ID), COST, DESCRIPTION, CardType.SKILL,
                 CardColorEnum.BLACKBEARD_BLACK, CardRarity.SPECIAL, CardTarget.SELF);
 
         this.baseMagicNumber = this.magicNumber = WEAPON_ATTACK;
-        this.customHeal = HEAL_VALUE;
-        this.customHealDisplayUpgradesModified = false;
+        this.customHealMagicNumber = HEAL_VALUE;
+        this.customHealMagicNumberModified = false;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new EquipAction(new VampiricScepterOrb(this.magicNumber, WEAPON_DURABILITY, this.customHeal, false)));
+        addToBot(new EquipAction(new VampiricScepterOrb(this.magicNumber, WEAPON_DURABILITY, this.customHealMagicNumber, false)));
     }
 
     @Override
@@ -46,35 +46,41 @@ public class VampiricScepter extends AbstractBlackbeardCard implements ICustomHe
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeMagicNumber(UPGRADE_PLUS_WEAPON_ATTACK);
-            this.customHeal += UPGRADE_PLUS_HEAL_VALUE;
+            this.customHealMagicNumber += UPGRADE_PLUS_HEAL_VALUE;
         }
     }
 
     @Override
-    public boolean isModified() {
-        return this.customHealDisplayUpgradesModified;
+    public boolean isCustomHealMagicNumberModified() {
+        return this.customHealMagicNumberModified;
     }
 
     @Override
-    public int value() {
-        return this.customHeal;
+    public int customHealMagicNumberValue() {
+        return this.customHealMagicNumber;
     }
 
     @Override
-    public int baseValue() {
-        return this.customHeal;
+    public int customHealMagicNumberBaseValue() {
+        return this.customHealMagicNumber;
     }
 
     @Override
-    public boolean upgraded() {
+    public boolean customHealMagicNumberUpgraded() {
         return upgraded;
+    }
+
+    @Override
+    public void resetAttributes() {
+        super.resetAttributes();
+        this.customHealMagicNumberModified = false;
     }
 
     @Override
     public void displayUpgrades() {
         super.displayUpgrades();
         if (this.upgraded) {
-            customHealDisplayUpgradesModified = true;
+            this.customHealMagicNumberModified = true;
         }
     }
 }

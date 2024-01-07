@@ -14,7 +14,7 @@ public class CustomHealMagicNumberVariable extends DynamicVariable {
     @Override
     public boolean isModified(AbstractCard card) {
         if (card instanceof ICustomHealMagicNumber) {
-            return ((ICustomHealMagicNumber) card).isModified();
+            return ((ICustomHealMagicNumber) card).isCustomHealMagicNumberModified();
         }
         return false;
     }
@@ -22,7 +22,7 @@ public class CustomHealMagicNumberVariable extends DynamicVariable {
     @Override
     public int value(AbstractCard card) {
         if (card instanceof ICustomHealMagicNumber) {
-            return ((ICustomHealMagicNumber) card).value();
+            return ((ICustomHealMagicNumber) card).customHealMagicNumberValue();
         }
         return 0;
     }
@@ -30,7 +30,7 @@ public class CustomHealMagicNumberVariable extends DynamicVariable {
     @Override
     public int baseValue(AbstractCard card) {
         if (card instanceof ICustomHealMagicNumber) {
-            return ((ICustomHealMagicNumber) card).baseValue();
+            return ((ICustomHealMagicNumber) card).customHealMagicNumberBaseValue();
         }
         return 0;
     }
@@ -38,7 +38,7 @@ public class CustomHealMagicNumberVariable extends DynamicVariable {
     @Override
     public boolean upgraded(AbstractCard card) {
         if (card instanceof ICustomHealMagicNumber) {
-            return ((ICustomHealMagicNumber) card).upgraded();
+            return ((ICustomHealMagicNumber) card).customHealMagicNumberUpgraded();
         }
         return false;
     }
