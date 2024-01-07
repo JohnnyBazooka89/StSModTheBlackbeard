@@ -119,6 +119,7 @@ public abstract class AbstractBlackbeardCard extends CustomCard implements ISeco
     @Override
     public void resetAttributes() {
         super.resetAttributes();
+        this.secondMagicNumber = this.baseSecondMagicNumber;
         this.isSecondMagicNumberModified = false;
     }
 
