@@ -24,7 +24,7 @@ public class CustomHealMagicNumberVariable extends DynamicVariable {
         if (card instanceof ISecondMagicNumber) {
             return ((ISecondMagicNumber) card).secondMagicNumber();
         }
-        return 0;
+        return -1;
     }
 
     @Override
@@ -32,7 +32,7 @@ public class CustomHealMagicNumberVariable extends DynamicVariable {
         if (card instanceof ISecondMagicNumber) {
             return ((ISecondMagicNumber) card).baseSecondMagicNumber();
         }
-        return 0;
+        return -1;
     }
 
     @Override
