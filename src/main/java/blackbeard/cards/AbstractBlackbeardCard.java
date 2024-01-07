@@ -134,7 +134,7 @@ public abstract class AbstractBlackbeardCard extends CustomCard implements ISeco
     protected void upgradeSecondMagic(int amount) {
         this.secondMagicNumberBaseValue += amount;
         this.secondMagicNumberValue = secondMagicNumberBaseValue;
-        upgradedSecondMagicNumber = true;
+        this.upgradedSecondMagicNumber = true;
     }
 
 }
