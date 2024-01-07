@@ -14,10 +14,10 @@ import java.util.List;
 
 public abstract class AbstractBlackbeardCard extends CustomCard implements ISecondMagicNumber {
 
-    private static List<String> smallerFontInPolishCardIds = Arrays.asList(IntimidatingStrike.ID, RearmingStrike.ID);
-    private static List<String> smallerFontInRussianCardIds = Arrays.asList(BountyHunter.ID, FinalBarrage.ID, IntimidatingStrike.ID, Lifeboat.ID, MegaUpgrade.ID, RearmingStrike.ID, TacticalRetreat.ID, WeaponMastery.ID);
-    private static List<String> smallerFontInSimplifiedChineseCardIds = Collections.emptyList();
-    private static List<String> smallerFontInEnglishCardIds = Arrays.asList(CloakAndCannonball.ID, HumongousCannonball.ID, IntimidatingStrike.ID, WeaponProficiency.ID);
+    private static final List<String> smallerFontInPolishCardIds = Arrays.asList(IntimidatingStrike.ID, RearmingStrike.ID);
+    private static final List<String> smallerFontInRussianCardIds = Arrays.asList(BountyHunter.ID, FinalBarrage.ID, IntimidatingStrike.ID, Lifeboat.ID, MegaUpgrade.ID, RearmingStrike.ID, TacticalRetreat.ID, WeaponMastery.ID);
+    private static final List<String> smallerFontInSimplifiedChineseCardIds = Collections.emptyList();
+    private static final List<String> smallerFontInEnglishCardIds = Arrays.asList(CloakAndCannonball.ID, HumongousCannonball.ID, IntimidatingStrike.ID, WeaponProficiency.ID);
 
     protected int baseSecondMagicNumber = -1;
     protected int secondMagicNumber = -1;
