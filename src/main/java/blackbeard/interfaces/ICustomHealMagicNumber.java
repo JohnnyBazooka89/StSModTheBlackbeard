@@ -1,6 +1,6 @@
 package blackbeard.interfaces;
 
-public interface ISecondMagicNumber {
+public interface ICustomHealMagicNumber {
 
     boolean isModified();
 

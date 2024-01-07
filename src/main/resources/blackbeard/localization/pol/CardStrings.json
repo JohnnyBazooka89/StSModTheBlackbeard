@@ -387,7 +387,7 @@
   },
   "blackbeard:VampiricScepter": {
     "NAME": "Berło wampirów",
-    "DESCRIPTION": "Wyposaż się w blackbeard:Broń NL !M! / {D}. Kiedykolwiek zaatakujesz tą blackbeard:bronią, przywróć !blackbeard:M2! PŻ."
+    "DESCRIPTION": "Wyposaż się w blackbeard:Broń NL !M! / {D}. Kiedykolwiek zaatakujesz tą blackbeard:bronią, przywróć !blackbeard:CustomHeal! PŻ."
   },
   "blackbeard:ReapersScythe": {
     "NAME": "Kosa żniwiarza",

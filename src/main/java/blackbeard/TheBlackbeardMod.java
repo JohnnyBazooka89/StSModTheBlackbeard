@@ -17,7 +17,7 @@ import blackbeard.potions.RumPotion;
 import blackbeard.potions.UpgradePotion;
 import blackbeard.utils.TextureLoader;
 import blackbeard.variables.MagicNumberPlusTwoVariable;
-import blackbeard.variables.SecondMagicNumberVariable;
+import blackbeard.variables.CustomHealMagicNumberVariable;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
@@ -284,7 +284,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         logger.info("Add cards for " + PlayerClassEnum.BLACKBEARD_CLASS.toString());
 
         BaseMod.addDynamicVariable(new MagicNumberPlusTwoVariable());
-        BaseMod.addDynamicVariable(new SecondMagicNumberVariable());
+        BaseMod.addDynamicVariable(new CustomHealMagicNumberVariable());
 
         new AutoAdd(MOD_THE_SPIRE_MOD_ID)
                 .packageFilter(AbstractBlackbeardCard.class)

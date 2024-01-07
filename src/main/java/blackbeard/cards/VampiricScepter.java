@@ -3,7 +3,7 @@ package blackbeard.cards;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.EquipAction;
 import blackbeard.enums.CardColorEnum;
-import blackbeard.interfaces.ISecondMagicNumber;
+import blackbeard.interfaces.ICustomHealMagicNumber;
 import blackbeard.orbs.VampiricScepterOrb;
 import blackbeard.utils.WeaponCardsUtils;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class VampiricScepter extends AbstractBlackbeardCard implements ISecondMagicNumber {
+public class VampiricScepter extends AbstractBlackbeardCard implements ICustomHealMagicNumber {
 
     public static final String ID = "blackbeard:VampiricScepter";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);

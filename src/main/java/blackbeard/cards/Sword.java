@@ -46,11 +46,6 @@ public class Sword extends AbstractBlackbeardCard {
     }
 
     @Override
-    public void initializeDescription() {
-        super.initializeDescription();
-    }
-
-    @Override
     public List<TooltipInfo> getCustomTooltips() {
         List<TooltipInfo> tooltips = new ArrayList<>();
         tooltips.add(new TooltipInfo(EXTENDED_DESCRIPTION[0], EXTENDED_DESCRIPTION[1]));
