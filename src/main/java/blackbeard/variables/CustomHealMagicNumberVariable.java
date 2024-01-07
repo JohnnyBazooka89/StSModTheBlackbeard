@@ -1,44 +1,44 @@
 package blackbeard.variables;
 
 import basemod.abstracts.DynamicVariable;
-import blackbeard.interfaces.ICustomHealMagicNumber;
+import blackbeard.interfaces.ISecondMagicNumber;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 
 public class CustomHealMagicNumberVariable extends DynamicVariable {
 
     @Override
     public String key() {
-        return "blackbeard:CustomHeal";
+        return "blackbeard:M2";
     }
 
     @Override
     public boolean isModified(AbstractCard card) {
-        if (card instanceof ICustomHealMagicNumber) {
-            return ((ICustomHealMagicNumber) card).isCustomHealMagicNumberModified();
+        if (card instanceof ISecondMagicNumber) {
+            return ((ISecondMagicNumber) card).isSecondMagicNumberModified();
         }
         return false;
     }
 
     @Override
     public int value(AbstractCard card) {
-        if (card instanceof ICustomHealMagicNumber) {
-            return ((ICustomHealMagicNumber) card).customHealMagicNumberValue();
+        if (card instanceof ISecondMagicNumber) {
+            return ((ISecondMagicNumber) card).secondMagicNumberValue();
         }
         return 0;
     }
 
     @Override
     public int baseValue(AbstractCard card) {
-        if (card instanceof ICustomHealMagicNumber) {
-            return ((ICustomHealMagicNumber) card).customHealMagicNumberBaseValue();
+        if (card instanceof ISecondMagicNumber) {
+            return ((ISecondMagicNumber) card).secondMagicNumberBaseValue();
         }
         return 0;
     }
 
     @Override
     public boolean upgraded(AbstractCard card) {
-        if (card instanceof ICustomHealMagicNumber) {
-            return ((ICustomHealMagicNumber) card).customHealMagicNumberUpgraded();
+        if (card instanceof ISecondMagicNumber) {
+            return ((ISecondMagicNumber) card).secondMagicNumberUpgraded();
         }
         return false;
     }

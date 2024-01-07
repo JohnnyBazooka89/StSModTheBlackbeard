@@ -3,7 +3,6 @@ package blackbeard.cards;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.EquipAction;
 import blackbeard.enums.CardColorEnum;
-import blackbeard.interfaces.ICustomHealMagicNumber;
 import blackbeard.orbs.VampiricScepterOrb;
 import blackbeard.utils.WeaponCardsUtils;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -11,7 +10,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class VampiricScepter extends AbstractBlackbeardCard implements ICustomHealMagicNumber {
+public class VampiricScepter extends AbstractBlackbeardCard {
 
     public static final String ID = "blackbeard:VampiricScepter";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -24,21 +23,17 @@ public class VampiricScepter extends AbstractBlackbeardCard implements ICustomHe
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = WeaponCardsUtils.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);
 
-    private int customHealMagicNumber;
-    private boolean customHealMagicNumberModified;
-
     public VampiricScepter() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(VampiricScepter.ID), COST, DESCRIPTION, CardType.SKILL,
                 CardColorEnum.BLACKBEARD_BLACK, CardRarity.SPECIAL, CardTarget.SELF);
 
         this.baseMagicNumber = this.magicNumber = WEAPON_ATTACK;
-        this.customHealMagicNumber = HEAL_VALUE;
-        this.customHealMagicNumberModified = false;
+        this.secondMagicNumberBaseValue = this.secondMagicNumberValue = HEAL_VALUE;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new EquipAction(new VampiricScepterOrb(this.magicNumber, WEAPON_DURABILITY, this.customHealMagicNumber, false)));
+        addToBot(new EquipAction(new VampiricScepterOrb(this.magicNumber, WEAPON_DURABILITY, this.secondMagicNumberValue, false)));
     }
 
     @Override
@@ -46,41 +41,8 @@ public class VampiricScepter extends AbstractBlackbeardCard implements ICustomHe
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeMagicNumber(UPGRADE_PLUS_WEAPON_ATTACK);
-            this.customHealMagicNumber += UPGRADE_PLUS_HEAL_VALUE;
+            this.upgradeSecondMagic(UPGRADE_PLUS_HEAL_VALUE);
         }
     }
 
-    @Override
-    public boolean isCustomHealMagicNumberModified() {
-        return this.customHealMagicNumberModified;
-    }
-
-    @Override
-    public int customHealMagicNumberValue() {
-        return this.customHealMagicNumber;
-    }
-
-    @Override
-    public int customHealMagicNumberBaseValue() {
-        return this.customHealMagicNumber;
-    }
-
-    @Override
-    public boolean customHealMagicNumberUpgraded() {
-        return upgraded;
-    }
-
-    @Override
-    public void resetAttributes() {
-        super.resetAttributes();
-        this.customHealMagicNumberModified = false;
-    }
-
-    @Override
-    public void displayUpgrades() {
-        super.displayUpgrades();
-        if (this.upgraded) {
-            this.customHealMagicNumberModified = true;
-        }
-    }
 }

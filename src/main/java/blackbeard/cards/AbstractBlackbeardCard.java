@@ -2,6 +2,7 @@ package blackbeard.cards;
 
 import basemod.abstracts.CustomCard;
 import blackbeard.TheBlackbeardMod;
+import blackbeard.interfaces.ISecondMagicNumber;
 import blackbeard.utils.TextureLoader;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.math.MathUtils;
@@ -11,19 +12,24 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public abstract class AbstractBlackbeardCard extends CustomCard {
+public abstract class AbstractBlackbeardCard extends CustomCard implements ISecondMagicNumber {
 
     private static List<String> smallerFontInPolishCardIds = Arrays.asList(IntimidatingStrike.ID, RearmingStrike.ID);
     private static List<String> smallerFontInRussianCardIds = Arrays.asList(BountyHunter.ID, FinalBarrage.ID, IntimidatingStrike.ID, Lifeboat.ID, MegaUpgrade.ID, RearmingStrike.ID, TacticalRetreat.ID, WeaponMastery.ID);
     private static List<String> smallerFontInSimplifiedChineseCardIds = Collections.emptyList();
     private static List<String> smallerFontInEnglishCardIds = Arrays.asList(CloakAndCannonball.ID, HumongousCannonball.ID, IntimidatingStrike.ID, WeaponProficiency.ID);
 
-    private float smallerFontSize = 17.0f;
-    private float defaultFontSize = -1.0f;
+    protected int secondMagicNumberBaseValue = -1;
+    protected int secondMagicNumberValue = -1;
+    protected boolean upgradedSecondMagicNumber = false;
+    private boolean secondMagicNumberModified = false;
 
-    private static Texture cannonballTexture = TextureLoader.getTexture(TheBlackbeardMod.getVfxImagePath("Cannonball"));
-    private static Texture goldenCannonballTexture = TextureLoader.getTexture(TheBlackbeardMod.getVfxImagePath("GoldenCannonball"));
-    private static Texture humongousCannonballTexture = TextureLoader.getTexture(TheBlackbeardMod.getVfxImagePath("HumongousCannonball"));
+    private static final float smallerFontSize = 17.0f;
+    private static final float defaultFontSize = -1.0f;
+
+    private static final Texture cannonballTexture = TextureLoader.getTexture(TheBlackbeardMod.getVfxImagePath("Cannonball"));
+    private static final Texture goldenCannonballTexture = TextureLoader.getTexture(TheBlackbeardMod.getVfxImagePath("GoldenCannonball"));
+    private static final Texture humongousCannonballTexture = TextureLoader.getTexture(TheBlackbeardMod.getVfxImagePath("HumongousCannonball"));
 
     public static Texture[] christmasCannonballTextures = {
             TextureLoader.getTexture(TheBlackbeardMod.getVfxImagePath("christmas/80/Blue")),
@@ -37,7 +43,7 @@ public abstract class AbstractBlackbeardCard extends CustomCard {
             TextureLoader.getTexture(TheBlackbeardMod.getVfxImagePath("christmas/80/Turtoise"))
     };
 
-    private static Texture christmasGoldenCannonballTexture = TextureLoader.getTexture(TheBlackbeardMod.getVfxImagePath("christmas/80/Golden"));
+    private static final Texture christmasGoldenCannonballTexture = TextureLoader.getTexture(TheBlackbeardMod.getVfxImagePath("christmas/80/Golden"));
 
     public static Texture[] christmasHumongousCannonballTextures = {
             TextureLoader.getTexture(TheBlackbeardMod.getVfxImagePath("christmas/278/Blue")),
@@ -88,6 +94,47 @@ public abstract class AbstractBlackbeardCard extends CustomCard {
             return christmasHumongousCannonballTextures[MathUtils.random(christmasHumongousCannonballTextures.length - 1)];
         }
         return humongousCannonballTexture;
+    }
+
+    @Override
+    public boolean isSecondMagicNumberModified() {
+        return this.secondMagicNumberModified;
+    }
+
+    @Override
+    public int secondMagicNumberValue() {
+        return this.secondMagicNumberValue;
+    }
+
+    @Override
+    public int secondMagicNumberBaseValue() {
+        return this.secondMagicNumberBaseValue;
+    }
+
+    @Override
+    public boolean secondMagicNumberUpgraded() {
+        return upgraded;
+    }
+
+    @Override
+    public void resetAttributes() {
+        super.resetAttributes();
+        this.secondMagicNumberModified = false;
+    }
+
+    @Override
+    public void displayUpgrades() {
+        super.displayUpgrades();
+        if (this.upgradedSecondMagicNumber) {
+            this.secondMagicNumberValue = this.secondMagicNumberBaseValue;
+            this.secondMagicNumberModified = true;
+        }
+    }
+
+    protected void upgradeSecondMagic(int amount) {
+        this.secondMagicNumberBaseValue += amount;
+        this.secondMagicNumberValue = secondMagicNumberBaseValue;
+        upgradedSecondMagicNumber = true;
     }
 
 }

@@ -387,7 +387,7 @@
   },
   "blackbeard:VampiricScepter": {
     "NAME": "吸血鬼权杖",
-    "DESCRIPTION": "装备一把 !M! / {D} 的 blackbeard:武器 。 NL 每当你使用这把 blackbeard:武器 攻击，回复 !blackbeard:CustomHeal! 点生命值。"
+    "DESCRIPTION": "装备一把 !M! / {D} 的 blackbeard:武器 。 NL 每当你使用这把 blackbeard:武器 攻击，回复 !blackbeard:M2! 点生命值。"
   },
   "blackbeard:ReapersScythe": {
     "NAME": "收割之镰",

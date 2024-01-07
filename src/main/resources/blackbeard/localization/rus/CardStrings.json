@@ -379,7 +379,7 @@
   },
   "blackbeard:VampiricScepter": {
     "NAME": "Вампирский скипетр",
-    "DESCRIPTION": "Снаряжает вас blackbeard:Оружием !M! / {D}. Восполняет !blackbeard:CustomHeal! ОЗ, когда вы используете данное blackbeard:Оружие."
+    "DESCRIPTION": "Снаряжает вас blackbeard:Оружием !M! / {D}. Восполняет !blackbeard:M2! ОЗ, когда вы используете данное blackbeard:Оружие."
   },
   "blackbeard:ReapersScythe": {
     "NAME": "Коса Жнеца",
