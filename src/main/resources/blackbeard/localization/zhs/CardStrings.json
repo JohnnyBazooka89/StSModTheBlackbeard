@@ -220,7 +220,7 @@
   },
   "blackbeard:VengefulSpirit": {
     "NAME": "复仇之魂",
-    "DESCRIPTION": "获得1层 无实体 。 NL 下次你的无形资产消失时，你就拿走 !M! 损害。 NL 消耗 。"
+    "DESCRIPTION": "获得1层 无实体 。 NL 下次你的 无实体 产消失时，你就拿走 !M! 损害。 NL 消耗 。"
   },
   "blackbeard:Revenge": {
     "NAME": "复仇",
@@ -374,7 +374,7 @@
   },
   "blackbeard:UndeadForm": {
     "NAME": "不死形态",
-    "DESCRIPTION": "获得3层 无实体 。 NL 下次你的无形资产消失时，你就拿走 !M! 损害。"
+    "DESCRIPTION": "获得3层 无实体 。 NL 下次你的 无实体 产消失时，你就拿走 !M! 损害。"
   },
   "blackbeard:WeaponProficiency": {
     "NAME": "武器娴熟",
