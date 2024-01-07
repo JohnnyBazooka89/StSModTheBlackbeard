@@ -4,7 +4,7 @@ import basemod.abstracts.DynamicVariable;
 import blackbeard.interfaces.ISecondMagicNumber;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 
-public class CustomHealMagicNumberVariable extends DynamicVariable {
+public class SecondMagicNumberVariable extends DynamicVariable {
 
     @Override
     public String key() {
