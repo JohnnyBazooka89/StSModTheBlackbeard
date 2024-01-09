@@ -2,7 +2,6 @@ package blackbeard.orbs;
 
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.SmithingHammerAction;
-import com.megacrit.cardcrawl.actions.common.UpgradeRandomCardAction;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.OrbStrings;
@@ -22,12 +21,12 @@ public class SmithingHammerOrb extends AbstractWeaponOrb {
 
     @Override
     public void effectOnUse() {
-        AbstractDungeon.actionManager.addToBottom(new UpgradeRandomCardAction());
+        AbstractDungeon.actionManager.addToBottom(new SmithingHammerAction(this, false));
     }
 
     @Override
     public void effectAtStartOfTurnPostDraw() {
-        AbstractDungeon.actionManager.addToBottom(new SmithingHammerAction(this));
+        AbstractDungeon.actionManager.addToBottom(new SmithingHammerAction(this, true));
     }
 
 }

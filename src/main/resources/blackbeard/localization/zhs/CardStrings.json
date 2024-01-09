@@ -268,7 +268,7 @@
   },
   "blackbeard:SmithingHammer": {
     "NAME": "锻锤",
-    "DESCRIPTION": "装备一把 {A} / !M! 的 blackbeard:武器 。 NL 在你使用这把 blackbeard:武器 攻击后，以及在你的回合开始时，锻锤失去1点耐久度，在本场战斗中升级你手牌中的一张随机牌。"
+    "DESCRIPTION": "装备一把 {A} / !M! 的 blackbeard:武器 。 NL 在你使用这把 blackbeard:武器 攻击后，以及在你的回合开始时，锻锤失去1点耐久度，在本场战斗中升级你手牌中的一张随机牌和抽牌堆中的一张随机牌。"
   },
   "blackbeard:Spear": {
     "NAME": "矛",

@@ -268,7 +268,7 @@
   },
   "blackbeard:SmithingHammer": {
     "NAME": "Młot kuźniczy",
-    "DESCRIPTION": "Wyposaż się w blackbeard:Broń {A} / !M!. NL Po ataku tą blackbeard:bronią i pasywnie na starcie każdej tury używając 1 pkt. Wytrzymałości, ulepsz losową kartę z ręki do końca walki."
+    "DESCRIPTION": "Wyposaż się w blackbeard:Broń {A} / !M!. NL Po ataku tą blackbeard:bronią i pasywnie na starcie każdej tury używając 1 pkt. Wytrzymałości, ulepsz losową kartę z ręki oraz losową kartę ze stosu rozgrywającego do końca walki."
   },
   "blackbeard:Spear": {
     "NAME": "Włócznia",
