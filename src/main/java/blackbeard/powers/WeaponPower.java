@@ -172,7 +172,7 @@ public class WeaponPower extends AbstractPower implements InvisiblePower {
             for (AbstractWeaponOrb weaponOrb : getWeaponsToUse()) {
                 weaponAttack += weaponOrb.getDamageToDeal();
             }
-            return super.atDamageGive(damage, type) + weaponAttack;
+            return super.atDamageGive(damage + weaponAttack, type);
         } else {
             return super.atDamageGive(damage, type);
         }
