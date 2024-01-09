@@ -15,8 +15,8 @@ public class SmithingHammer extends AbstractBlackbeardCard {
     public static final String ID = "blackbeard:SmithingHammer";
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final int COST = 1;
-    private static final int WEAPON_ATTACK = 3;
-    private static final int WEAPON_DURABILITY = 4;
+    private static final int WEAPON_ATTACK = 4;
+    private static final int WEAPON_DURABILITY = 3;
     private static final int UPGRADE_PLUS_WEAPON_DURABILITY = 1;
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = WeaponCardsUtils.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);

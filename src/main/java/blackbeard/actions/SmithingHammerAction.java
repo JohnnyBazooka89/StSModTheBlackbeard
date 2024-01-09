@@ -46,10 +46,11 @@ public class SmithingHammerAction extends AbstractGameAction {
 
                 if (playedAutomatically && (cardInHandUpgraded || cardInDrawPileUpgraded)) {
                     smithingHammerOrb.use(false);
-                    if (AbstractDungeon.player.hasPower(WeaponPower.POWER_ID)) {
-                        WeaponPower weaponPower = (WeaponPower) AbstractDungeon.player.getPower(WeaponPower.POWER_ID);
-                        weaponPower.refreshWeapons();
-                    }
+                }
+
+                if (AbstractDungeon.player.hasPower(WeaponPower.POWER_ID)) {
+                    WeaponPower weaponPower = (WeaponPower) AbstractDungeon.player.getPower(WeaponPower.POWER_ID);
+                    weaponPower.refreshWeapons();
                 }
 
                 this.isDone = true;
