@@ -135,16 +135,16 @@ public abstract class AbstractWeaponOrb extends AbstractOrb {
         return justAddedUsingAttackCard;
     }
 
-    public void use(boolean triggerEffectOnUse) {
+    public void use(boolean isAfterAttack) {
         if (!AbstractDungeon.player.hasRelic(Karategi.ID)) {
             durability--;
         }
-        if (AbstractDungeon.player.hasPower(ArmorUpPower.POWER_ID)) {
-            ArmorUpPower armorUpPower = (ArmorUpPower) AbstractDungeon.player.getPower(ArmorUpPower.POWER_ID);
-            AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, armorUpPower.amount));
-            armorUpPower.flash();
-        }
-        if (triggerEffectOnUse) {
+        if (isAfterAttack) {
+            if (AbstractDungeon.player.hasPower(ArmorUpPower.POWER_ID)) {
+                ArmorUpPower armorUpPower = (ArmorUpPower) AbstractDungeon.player.getPower(ArmorUpPower.POWER_ID);
+                AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, armorUpPower.amount));
+                armorUpPower.flash();
+            }
             effectOnUse();
         }
         updateDescription();

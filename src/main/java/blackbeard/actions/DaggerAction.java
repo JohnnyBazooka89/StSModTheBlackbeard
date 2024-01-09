@@ -26,7 +26,7 @@ public class DaggerAction extends AbstractGameAction {
 
             AbstractDungeon.actionManager.addToBottom(new SwordBoomerangAction(AbstractDungeon.getMonsters().getRandomMonster(true), new DamageInfo(p, daggerOrb.getDamageToDeal(), DamageInfo.DamageType.THORNS), 1));
 
-            daggerOrb.use(true);
+            daggerOrb.use(false);
 
             if (AbstractDungeon.player.hasPower(WeaponPower.POWER_ID)) {
                 WeaponPower weaponPower = (WeaponPower) AbstractDungeon.player.getPower(WeaponPower.POWER_ID);
