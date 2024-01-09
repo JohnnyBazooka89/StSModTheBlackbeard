@@ -65,6 +65,7 @@ public class WeaponPower extends AbstractPower implements InvisiblePower {
     public void refreshWeapons() {
         destroyWeaponsWithNoDurability();
         setRelicPulsing();
+        AbstractDungeon.player.hand.applyPowers();
     }
 
     private void destroyWeaponsWithNoDurability() {
@@ -172,9 +173,9 @@ public class WeaponPower extends AbstractPower implements InvisiblePower {
             for (AbstractWeaponOrb weaponOrb : getWeaponsToUse()) {
                 weaponAttack += weaponOrb.getDamageToDeal();
             }
-            return super.atDamageGive(damage + weaponAttack, type);
+            return damage + weaponAttack;
         } else {
-            return super.atDamageGive(damage, type);
+            return damage;
         }
     }
 
