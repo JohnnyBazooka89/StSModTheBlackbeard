@@ -29,8 +29,8 @@
   },
   "blackbeard:Parrot": {
     "NAME": "Parrot",
-    "DESCRIPTION": "Ethereal. NL The last card played each turn is played an additional time. NL This power does not stack.",
-    "UPGRADE_DESCRIPTION": "The last card played each turn is played an additional time. NL This power does not stack."
+    "DESCRIPTION": "Ethereal. NL At the end of your turn, the last card played that turn is played again. NL (Does not stack.)",
+    "UPGRADE_DESCRIPTION": "At the end of your turn, the last card played that turn is played again. NL (Does not stack.)"
   },
   "blackbeard:Halberd": {
     "NAME": "Halberd",

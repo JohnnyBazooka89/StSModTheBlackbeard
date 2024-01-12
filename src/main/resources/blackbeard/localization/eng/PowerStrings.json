@@ -8,7 +8,7 @@
   "blackbeard:ParrotPower": {
     "NAME": "Parrot",
     "DESCRIPTIONS": [
-      "The last card played each turn is played an additional time."
+      "At the end of your turn, the last card played that turn is played again."
     ]
   },
   "blackbeard:DrunkenSailorPower": {

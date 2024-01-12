@@ -8,7 +8,7 @@
   "blackbeard:ParrotPower": {
     "NAME": "鹦鹉",
     "DESCRIPTIONS": [
-      "你每回合打出的最后一张牌额外打出一次。"
+      "在你的回合结束时，你打出的那一回合中最后一张牌额外打出一次。"
     ]
   },
   "blackbeard:DrunkenSailorPower": {

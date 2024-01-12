@@ -8,7 +8,7 @@
   "blackbeard:ParrotPower": {
     "NAME": "Papuga",
     "DESCRIPTIONS": [
-      "Ostatnia karta zagrana w każdej turze jest zagrywana jeszcze raz."
+      "Na koniec tury, ostatnia karta zagrana w tej turze jest zagrana jeszcze raz."
     ]
   },
   "blackbeard:DrunkenSailorPower": {

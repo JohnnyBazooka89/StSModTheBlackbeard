@@ -29,8 +29,8 @@
   },
   "blackbeard:Parrot": {
     "NAME": "Papuga",
-    "DESCRIPTION": "Eteryczna. NL Ostatnia karta zagrana w każdej turze jest zagrywana jeszcze raz. Ta moc nie kumuluje się.",
-    "UPGRADE_DESCRIPTION": "Ostatnia karta zagrana w każdej turze jest zagrywana jeszcze raz. Ta moc nie kumuluje się."
+    "DESCRIPTION": "Eteryczna. NL Na koniec tury, ostatnia karta zagrana w tej turze jest zagrana jeszcze raz. NL (Nie kumuluje się.)",
+    "UPGRADE_DESCRIPTION": "Na koniec tury, ostatnia karta zagrana w tej turze jest zagrana jeszcze raz. NL (Nie kumuluje się.)"
   },
   "blackbeard:Halberd": {
     "NAME": "Halabarda",
