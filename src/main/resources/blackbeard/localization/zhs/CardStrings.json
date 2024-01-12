@@ -29,8 +29,8 @@
   },
   "blackbeard:Parrot": {
     "NAME": "鹦鹉",
-    "DESCRIPTION": "虚无 。 NL 在你的回合结束时，你打出的那一回合中最后一张牌额外打出一次。 NL 本能力不会叠加。",
-    "UPGRADE_DESCRIPTION": "在你的回合结束时，你打出的那一回合中最后一张牌额外打出一次。 NL 本能力不会叠加。"
+    "DESCRIPTION": "虚无 。 NL 在你的回合结束时，你打出的那一回合中最后一张牌额外打出一次。 NL （本能力不会叠加。）",
+    "UPGRADE_DESCRIPTION": "在你的回合结束时，你打出的那一回合中最后一张牌额外打出一次。 NL （本能力不会叠加。）"
   },
   "blackbeard:Halberd": {
     "NAME": "戟",
