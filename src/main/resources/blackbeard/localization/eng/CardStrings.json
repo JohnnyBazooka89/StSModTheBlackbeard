@@ -121,7 +121,7 @@
   },
   "blackbeard:FinalBarrage": {
     "NAME": "Final Barrage",
-    "DESCRIPTION": "Deal damage equal to !M! times the amount of Cannonballs played this combat. NL (Every type of Cannonball counts.)",
+    "DESCRIPTION": "Deal damage equal to !M! times the number of Cannonballs played this combat. NL (Every type of Cannonball counts.)",
     "EXTENDED_DESCRIPTION": [
       " NL (Deals !D! damage.)"
     ]
