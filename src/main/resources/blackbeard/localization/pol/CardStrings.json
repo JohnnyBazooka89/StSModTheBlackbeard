@@ -121,7 +121,7 @@
   },
   "blackbeard:FinalBarrage": {
     "NAME": "Ostateczny ostrzał",
-    "DESCRIPTION": "Zadaj obrażenia równe !M! razy ilość Kul zagranych w tej walce. NL (Każdy rodzaj Kuli się liczy.)",
+    "DESCRIPTION": "Zadaj obrażenia równe !M! razy liczba Kul zagranych w tej walce. NL (Każdy rodzaj Kuli się liczy.)",
     "EXTENDED_DESCRIPTION": [
       " NL (Zadaje !D! pkt. obrażeń.)"
     ]
