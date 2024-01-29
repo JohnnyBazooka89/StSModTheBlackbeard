@@ -30,6 +30,11 @@ public class SwordOfFire extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        onChoseThisOption();
+    }
+
+    @Override
+    public void onChoseThisOption(){
         addToBot(new EquipAction(new SwordOfFireOrb(WEAPON_ATTACK, this.magicNumber, false)));
     }
 

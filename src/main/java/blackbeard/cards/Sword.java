@@ -2,9 +2,10 @@ package blackbeard.cards;
 
 import basemod.helpers.TooltipInfo;
 import blackbeard.TheBlackbeardMod;
-import blackbeard.actions.SwordDiscoveryAction;
 import blackbeard.enums.CardColorEnum;
 import blackbeard.utils.WeaponCardsUtils;
+import com.megacrit.cardcrawl.actions.watcher.ChooseOneAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -34,7 +35,21 @@ public class Sword extends AbstractBlackbeardCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new SwordDiscoveryAction(this.upgraded));
+        ArrayList<AbstractCard> choices = new ArrayList<>();
+        choices.add(new SwordOfFire());
+        choices.add(new SwordOfWisdom());
+        choices.add(new SwordOfChaos());
+        if (this.upgraded) {
+            for (AbstractCard c : choices) {
+                c.upgrade();
+            }
+        }
+        for (AbstractCard c : choices) {
+            c.baseMagicNumber = this.baseMagicNumber;
+            c.magicNumber = this.magicNumber;
+            c.isMagicNumberModified = this.isMagicNumberModified;
+        }
+        addToBot(new ChooseOneAction(choices));
     }
 
     @Override

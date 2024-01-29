@@ -52,6 +52,10 @@ public class AgileStrike extends AbstractBlackbeardCard {
     }
 
     private void reduceCostToZeroForATurnIfNeeded() {
+        if (costForTurn == 0) {
+            return;
+        }
+
         boolean shouldCostBeReduced = false;
         Iterator<AbstractOrb> orbsChanneledThisTurn = AbstractDungeon.actionManager.orbsChanneledThisTurn.iterator();
 
