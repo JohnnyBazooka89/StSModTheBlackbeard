@@ -27,7 +27,6 @@ public class WeaponPower extends AbstractPower implements InvisiblePower {
     public static final String POWER_ID = "blackbeard:WeaponPower";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
-    public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
     public WeaponPower(AbstractCreature owner) {
         this.ID = POWER_ID;
@@ -37,11 +36,6 @@ public class WeaponPower extends AbstractPower implements InvisiblePower {
         this.type = NeutralPowertypePatch.NEUTRAL;
         this.loadRegion("painfulStabs");
         this.updateDescription();
-    }
-
-    @Override
-    public void updateDescription() {
-        this.description = DESCRIPTIONS[0];
     }
 
     @Override
