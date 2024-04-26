@@ -2,7 +2,7 @@ package blackbeard.relics;
 
 import basemod.abstracts.CustomRelic;
 import blackbeard.TheBlackbeardMod;
-import blackbeard.damageinfo.CannonballDamageInfo;
+import blackbeard.patches.CannonballDamageInfoPatch;
 import blackbeard.powers.BleedPower;
 import blackbeard.utils.TextureLoader;
 import com.badlogic.gdx.graphics.Texture;
@@ -24,7 +24,7 @@ public class BarbedCannonballs extends CustomRelic {
     }
 
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
-        if (info instanceof CannonballDamageInfo && damageAmount > 0 && target != AbstractDungeon.player) {
+        if (CannonballDamageInfoPatch.cannonballDamageInfo.get(info) && damageAmount > 0 && target != AbstractDungeon.player) {
             flash();
             addToTop(new ApplyPowerAction(target, AbstractDungeon.player, new BleedPower(target, BLEED_TO_APPLY), BLEED_TO_APPLY, true));
         }

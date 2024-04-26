@@ -2,11 +2,12 @@ package blackbeard.cards;
 
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.ShootAnythingAction;
-import blackbeard.damageinfo.CannonballDamageInfo;
 import blackbeard.enums.CardColorEnum;
 import blackbeard.enums.CardTagsEnum;
+import blackbeard.patches.CannonballDamageInfoPatch;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -34,8 +35,9 @@ public class Cannonball extends AbstractBlackbeardCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ShootAnythingAction(m, getCannonballTexture(), false));
-        addToBot(new DamageAction(m, new CannonballDamageInfo(p, this.damage, this.damageTypeForTurn),
-                AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+        DamageInfo damageInfo = new DamageInfo(p, this.damage, this.damageTypeForTurn);
+        CannonballDamageInfoPatch.cannonballDamageInfo.set(damageInfo, true);
+        addToBot(new DamageAction(m, damageInfo, AbstractGameAction.AttackEffect.BLUNT_LIGHT));
     }
 
     @Override

@@ -2,13 +2,14 @@ package blackbeard.cards;
 
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.ShootAnythingAction;
-import blackbeard.damageinfo.CannonballDamageInfo;
 import blackbeard.enums.CardColorEnum;
 import blackbeard.enums.CardTagsEnum;
 import blackbeard.interfaces.IGoldenCard;
+import blackbeard.patches.CannonballDamageInfoPatch;
 import blackbeard.utils.GoldenCardsUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -40,7 +41,9 @@ public class GoldenCannonball extends AbstractBlackbeardCard implements IGoldenC
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ShootAnythingAction(m, getGoldenCannonballTexture(), false));
-        addToBot(new DamageAction(m, new CannonballDamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+        DamageInfo damageInfo = new DamageInfo(p, this.damage, this.damageTypeForTurn);
+        CannonballDamageInfoPatch.cannonballDamageInfo.set(damageInfo, true);
+        addToBot(new DamageAction(m, damageInfo, AbstractGameAction.AttackEffect.BLUNT_LIGHT));
     }
 
     @Override
