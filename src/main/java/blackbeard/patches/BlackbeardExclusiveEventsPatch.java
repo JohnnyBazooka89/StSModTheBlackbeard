@@ -1,9 +1,11 @@
 package blackbeard.patches;
 
+import blackbeard.TheBlackbeardMod;
 import blackbeard.enums.PlayerClassEnum;
 import blackbeard.events.BlackbeardSsssserpentEvent;
 import blackbeard.events.BlackbeardVampiresEvent;
 import blackbeard.events.GoldsmithEvent;
+import blackbeard.events.ShipwreckEvent;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.city.Vampires;
@@ -25,6 +27,9 @@ public class BlackbeardExclusiveEventsPatch {
             tmp.removeIf(d -> d.equals(BlackbeardSsssserpentEvent.ID));
             tmp.removeIf(d -> d.equals(BlackbeardVampiresEvent.ID));
             tmp.removeIf(d -> d.equals(GoldsmithEvent.EVENT_ID));
+            if (TheBlackbeardMod.modPrefs.getBoolean(TheBlackbeardMod.DISABLE_EVENTS_FOR_OTHER_CHARACTERS_KEY, false)) {
+                tmp.removeIf(d -> d.equals(ShipwreckEvent.EVENT_ID));
+            }
         }
     }
 

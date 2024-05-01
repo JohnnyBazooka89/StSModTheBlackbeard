@@ -24,6 +24,6 @@ public class BlackbeardBetaArtPatch {
     }
 
     public static boolean shouldUseBetaArtForTheBlackbeardCard(AbstractCard card) {
-        return card.color == CardColorEnum.BLACKBEARD_BLACK && TheBlackbeardMod.modPrefs.getBoolean(TheBlackbeardMod.USE_BETA_ART_FOR_THE_BLACKBEARD_CARDS, false);
+        return card.color == CardColorEnum.BLACKBEARD_BLACK && TheBlackbeardMod.modPrefs.getBoolean(TheBlackbeardMod.USE_BETA_ART_FOR_THE_BLACKBEARD_CARDS_KEY, false);
     }
 }

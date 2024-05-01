@@ -7,7 +7,8 @@
   "blackbeard:Settings": {
     "TEXT": [
       "Wyłącz zmiany bożonarodzeniowe. (Dostępne wyłącznie podczas ostatnich 2 tygodni grudnia.)",
-      "Użyj Beta Artów dla WSZYSTKICH kart Czarnobrodego."
+      "Użyj Beta Artów dla WSZYSTKICH kart Czarnobrodego.",
+      "Wyłącz wydarzenie \"Wrak statku\" dla innych postaci."
     ]
   }
 }

@@ -7,7 +7,8 @@
   "blackbeard:Settings": {
     "TEXT": [
       "Disable Christmas Theme. (It's available only in the last 2 weeks of December.)",
-      "Use beta art for ALL the Blackbeard cards."
+      "Use beta art for ALL the Blackbeard cards.",
+      "Disable \"Shipwreck\" event for other characters."
     ]
   }
 }

@@ -118,7 +118,8 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     //Christmas Theme
     public static final String BLACKBEARD_CHRISTMAS_HAT = "blackbeard/img/char/blackbeard/christmasHat.png";
     public static final String DISABLE_CHRISTMAS_THEME_KEY = "disableChristmasTheme";
-    public static final String USE_BETA_ART_FOR_THE_BLACKBEARD_CARDS = "useBetaArtForTheBlackbeardCards";
+    public static final String USE_BETA_ART_FOR_THE_BLACKBEARD_CARDS_KEY = "useBetaArtForTheBlackbeardCards";
+    public static final String DISABLE_EVENTS_FOR_OTHER_CHARACTERS_KEY = "disableEventsForOtherCharacters";
 
     //Mod prefs
     public static final String BLACKBEARD_MOD_PREFS_ID = "BlackbeardModPrefs";
@@ -215,8 +216,12 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
             modPrefs.putBoolean(DISABLE_CHRISTMAS_THEME_KEY, false);
             modPrefs.flush();
         }
-        if (!modPrefs.data.containsKey(USE_BETA_ART_FOR_THE_BLACKBEARD_CARDS)) {
-            modPrefs.putBoolean(USE_BETA_ART_FOR_THE_BLACKBEARD_CARDS, false);
+        if (!modPrefs.data.containsKey(USE_BETA_ART_FOR_THE_BLACKBEARD_CARDS_KEY)) {
+            modPrefs.putBoolean(USE_BETA_ART_FOR_THE_BLACKBEARD_CARDS_KEY, false);
+            modPrefs.flush();
+        }
+        if (!modPrefs.data.containsKey(DISABLE_EVENTS_FOR_OTHER_CHARACTERS_KEY)) {
+            modPrefs.putBoolean(DISABLE_EVENTS_FOR_OTHER_CHARACTERS_KEY, false);
             modPrefs.flush();
         }
 
@@ -226,9 +231,15 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
             modPrefs.flush();
         }));
 
-        settingsPanel.addUIElement(new ModLabeledToggleButton(uiSettingsStrings.TEXT[1], 360, 690, Settings.CREAM_COLOR, FontHelper.charDescFont, modPrefs.getBoolean(USE_BETA_ART_FOR_THE_BLACKBEARD_CARDS), settingsPanel, l -> {
+        settingsPanel.addUIElement(new ModLabeledToggleButton(uiSettingsStrings.TEXT[1], 360, 690, Settings.CREAM_COLOR, FontHelper.charDescFont, modPrefs.getBoolean(USE_BETA_ART_FOR_THE_BLACKBEARD_CARDS_KEY), settingsPanel, l -> {
         }, button -> {
-            modPrefs.putBoolean(USE_BETA_ART_FOR_THE_BLACKBEARD_CARDS, button.enabled);
+            modPrefs.putBoolean(USE_BETA_ART_FOR_THE_BLACKBEARD_CARDS_KEY, button.enabled);
+            modPrefs.flush();
+        }));
+
+        settingsPanel.addUIElement(new ModLabeledToggleButton(uiSettingsStrings.TEXT[2], 360, 640, Settings.CREAM_COLOR, FontHelper.charDescFont, modPrefs.getBoolean(DISABLE_EVENTS_FOR_OTHER_CHARACTERS_KEY), settingsPanel, l -> {
+        }, button -> {
+            modPrefs.putBoolean(DISABLE_EVENTS_FOR_OTHER_CHARACTERS_KEY, button.enabled);
             modPrefs.flush();
         }));
 
