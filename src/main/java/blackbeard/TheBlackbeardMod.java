@@ -118,6 +118,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     //Christmas Theme
     public static final String BLACKBEARD_CHRISTMAS_HAT = "blackbeard/img/char/blackbeard/christmasHat.png";
     public static final String DISABLE_CHRISTMAS_THEME_KEY = "disableChristmasTheme";
+    public static final String USE_BETA_ART_FOR_THE_BLACKBEARD_CARDS = "useBetaArtForTheBlackbeardCards";
 
     //Mod prefs
     public static final String BLACKBEARD_MOD_PREFS_ID = "BlackbeardModPrefs";
@@ -214,10 +215,20 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
             modPrefs.putBoolean(DISABLE_CHRISTMAS_THEME_KEY, false);
             modPrefs.flush();
         }
+        if (!modPrefs.data.containsKey(USE_BETA_ART_FOR_THE_BLACKBEARD_CARDS)) {
+            modPrefs.putBoolean(USE_BETA_ART_FOR_THE_BLACKBEARD_CARDS, false);
+            modPrefs.flush();
+        }
 
-        settingsPanel.addUIElement(new ModLabeledToggleButton(uiSettingsStrings.TEXT[0], 360, 700, Settings.CREAM_COLOR, FontHelper.charDescFont, modPrefs.getBoolean(DISABLE_CHRISTMAS_THEME_KEY), settingsPanel, l -> {
+        settingsPanel.addUIElement(new ModLabeledToggleButton(uiSettingsStrings.TEXT[0], 360, 740, Settings.CREAM_COLOR, FontHelper.charDescFont, modPrefs.getBoolean(DISABLE_CHRISTMAS_THEME_KEY), settingsPanel, l -> {
         }, button -> {
             modPrefs.putBoolean(DISABLE_CHRISTMAS_THEME_KEY, button.enabled);
+            modPrefs.flush();
+        }));
+
+        settingsPanel.addUIElement(new ModLabeledToggleButton(uiSettingsStrings.TEXT[1], 360, 690, Settings.CREAM_COLOR, FontHelper.charDescFont, modPrefs.getBoolean(USE_BETA_ART_FOR_THE_BLACKBEARD_CARDS), settingsPanel, l -> {
+        }, button -> {
+            modPrefs.putBoolean(USE_BETA_ART_FOR_THE_BLACKBEARD_CARDS, button.enabled);
             modPrefs.flush();
         }));
 
