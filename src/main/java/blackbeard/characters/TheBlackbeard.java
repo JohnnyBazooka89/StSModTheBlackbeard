@@ -70,6 +70,7 @@ public class TheBlackbeard extends CustomPlayer {
         CardCrawlGame.goldGained = STARTING_GOLD;
     }
 
+    @Override
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> startingDeck = new ArrayList<>();
         startingDeck.add(BlackbeardStrike.ID);
@@ -86,6 +87,7 @@ public class TheBlackbeard extends CustomPlayer {
         return startingDeck;
     }
 
+    @Override
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> startingRelics = new ArrayList<>();
         startingRelics.add(LoadTheCannons.ID);
@@ -93,6 +95,7 @@ public class TheBlackbeard extends CustomPlayer {
         return startingRelics;
     }
 
+    @Override
     public CharSelectInfo getLoadout() {
         return new CharSelectInfo(characterStrings.NAMES[0],
                 characterStrings.TEXT[0],
