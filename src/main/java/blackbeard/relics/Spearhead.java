@@ -5,7 +5,7 @@ import blackbeard.TheBlackbeardMod;
 import blackbeard.utils.TextureLoader;
 import com.badlogic.gdx.graphics.Texture;
 
-public class Spearhead extends CustomRelic {
+public class Spearhead extends AbstractBlackbeardRelic {
 
     public static final String ID = "blackbeard:Spearhead";
     private static final Texture IMG = TextureLoader.getTexture(TheBlackbeardMod.getRelicImagePath(ID));

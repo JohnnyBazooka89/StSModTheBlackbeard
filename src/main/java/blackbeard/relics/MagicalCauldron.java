@@ -7,7 +7,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.ObtainPotionAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
-public class MagicalCauldron extends CustomRelic {
+public class MagicalCauldron extends AbstractBlackbeardRelic {
 
     public static final String ID = "blackbeard:MagicalCauldron";
     private static final Texture IMG = TextureLoader.getTexture(TheBlackbeardMod.getRelicImagePath(ID));

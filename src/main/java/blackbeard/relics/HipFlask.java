@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
-public class HipFlask extends CustomRelic {
+public class HipFlask extends AbstractBlackbeardRelic {
 
     public static final String ID = "blackbeard:HipFlask";
     private static final Texture IMG = TextureLoader.getTexture(TheBlackbeardMod.getRelicImagePath(ID));

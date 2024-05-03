@@ -5,7 +5,7 @@ import blackbeard.TheBlackbeardMod;
 import blackbeard.utils.TextureLoader;
 import com.badlogic.gdx.graphics.Texture;
 
-public class WhitePearl extends CustomRelic {
+public class WhitePearl extends AbstractBlackbeardRelic {
 
     public static final String ID = "blackbeard:WhitePearl";
     private static final Texture IMG = TextureLoader.getTexture(TheBlackbeardMod.getRelicImagePath(ID));

@@ -15,6 +15,7 @@ import blackbeard.events.ShipwreckEvent;
 import blackbeard.potions.OrangeJuicePotion;
 import blackbeard.potions.RumPotion;
 import blackbeard.potions.UpgradePotion;
+import blackbeard.relics.AbstractBlackbeardRelic;
 import blackbeard.utils.TextureLoader;
 import blackbeard.variables.MagicNumberPlusTwoVariable;
 import blackbeard.variables.SecondMagicNumberVariable;
@@ -291,7 +292,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         logger.info("Begin editing relics");
 
         new AutoAdd(MOD_THE_SPIRE_MOD_ID)
-                .packageFilter("blackbeard.relics")
+                .packageFilter(AbstractBlackbeardRelic.class)
                 .any(CustomRelic.class, (info, relic) -> {
                     BaseMod.addRelicToCustomPool(relic, CardColorEnum.BLACKBEARD_BLACK);
                     UnlockTracker.markRelicAsSeen(relic.relicId);

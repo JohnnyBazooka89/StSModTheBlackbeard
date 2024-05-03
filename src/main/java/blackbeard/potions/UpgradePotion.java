@@ -1,6 +1,5 @@
 package blackbeard.potions;
 
-import basemod.abstracts.CustomPotion;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.UpgradeWeaponsAction;
 import blackbeard.enums.WeaponsToUseEnum;
@@ -11,10 +10,9 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.helpers.TipHelper;
 import com.megacrit.cardcrawl.localization.PotionStrings;
-import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
-public class UpgradePotion extends CustomPotion {
+public class UpgradePotion extends AbstractBlackbeardPotion {
 
     private static final String ID = "blackbeard:UpgradePotion";
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(ID);
@@ -43,10 +41,6 @@ public class UpgradePotion extends CustomPotion {
         if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) {
             AbstractDungeon.actionManager.addToBottom(new UpgradeWeaponsAction(this.potency, this.potency, WeaponsToUseEnum.ALL_WEAPONS));
         }
-    }
-
-    public AbstractPotion makeCopy() {
-        return new UpgradePotion();
     }
 
     @Override

@@ -1,6 +1,5 @@
 package blackbeard.potions;
 
-import basemod.abstracts.CustomPotion;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.powers.ResistancePower;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
@@ -11,10 +10,9 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.helpers.TipHelper;
 import com.megacrit.cardcrawl.localization.PotionStrings;
-import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
-public class RumPotion extends CustomPotion {
+public class RumPotion extends AbstractBlackbeardPotion {
 
     private static final String ID = "blackbeard:RumPotion";
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(ID);
@@ -43,10 +41,6 @@ public class RumPotion extends CustomPotion {
         if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) {
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ResistancePower(AbstractDungeon.player, this.potency), this.potency));
         }
-    }
-
-    public AbstractPotion makeCopy() {
-        return new RumPotion();
     }
 
     @Override

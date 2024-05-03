@@ -1,6 +1,5 @@
 package blackbeard.relics;
 
-import basemod.abstracts.CustomRelic;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.powers.WeaponProficiencyPower;
 import blackbeard.utils.TextureLoader;
@@ -9,7 +8,7 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
-public class CrossedSwords extends CustomRelic {
+public class CrossedSwords extends AbstractBlackbeardRelic {
 
     public static final String ID = "blackbeard:CrossedSwords";
     private static final Texture IMG = TextureLoader.getTexture(TheBlackbeardMod.getRelicImagePath(ID));

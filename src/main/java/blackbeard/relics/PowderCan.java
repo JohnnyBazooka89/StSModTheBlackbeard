@@ -9,7 +9,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
-public class PowderCan extends CustomRelic {
+public class PowderCan extends AbstractBlackbeardRelic {
 
     public static final String ID = "blackbeard:PowderCan";
     private static final Texture IMG = TextureLoader.getTexture(TheBlackbeardMod.getRelicImagePath(ID));

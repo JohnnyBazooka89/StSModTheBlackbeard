@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
-public class OrangeJuicePotion extends CustomPotion {
+public class OrangeJuicePotion extends AbstractBlackbeardPotion {
 
     private static final String ID = "blackbeard:OrangeJuicePotion";
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(ID);
@@ -40,10 +40,6 @@ public class OrangeJuicePotion extends CustomPotion {
             AbstractDungeon.actionManager.addToBottom(new HealAction(AbstractDungeon.player, AbstractDungeon.player, this.potency));
             AbstractDungeon.actionManager.addToBottom(new RemoveDebuffsAction(AbstractDungeon.player));
         }
-    }
-
-    public AbstractPotion makeCopy() {
-        return new OrangeJuicePotion();
     }
 
     @Override

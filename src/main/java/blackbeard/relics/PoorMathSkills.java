@@ -5,7 +5,7 @@ import blackbeard.TheBlackbeardMod;
 import blackbeard.utils.TextureLoader;
 import com.badlogic.gdx.graphics.Texture;
 
-public class PoorMathSkills extends CustomRelic {
+public class PoorMathSkills extends AbstractBlackbeardRelic {
 
     public static final String ID = "blackbeard:PoorMathSkills";
     private static final Texture IMG = TextureLoader.getTexture(TheBlackbeardMod.getRelicImagePath(ID));

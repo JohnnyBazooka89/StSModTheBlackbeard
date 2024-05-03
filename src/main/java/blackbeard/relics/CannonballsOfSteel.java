@@ -7,7 +7,7 @@ import blackbeard.utils.TextureLoader;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 
-public class CannonballsOfSteel extends CustomRelic {
+public class CannonballsOfSteel extends AbstractBlackbeardRelic {
 
     public static final String ID = "blackbeard:CannonballsOfSteel";
     private static final Texture IMG = TextureLoader.getTexture(TheBlackbeardMod.getRelicImagePath(ID));

@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
-public class SoberMinded extends CustomRelic {
+public class SoberMinded extends AbstractBlackbeardRelic {
 
     public static final String ID = "blackbeard:SoberMinded";
     private static final Texture IMG = TextureLoader.getTexture(TheBlackbeardMod.getRelicImagePath(ID));

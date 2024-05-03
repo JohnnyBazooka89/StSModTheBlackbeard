@@ -1,11 +1,10 @@
 package blackbeard.relics;
 
-import basemod.abstracts.CustomRelic;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.utils.TextureLoader;
 import com.badlogic.gdx.graphics.Texture;
 
-public class Karategi extends CustomRelic {
+public class Karategi extends AbstractBlackbeardRelic {
 
     public static final String ID = "blackbeard:Karategi";
     private static final Texture IMG = TextureLoader.getTexture(TheBlackbeardMod.getRelicImagePath(ID));

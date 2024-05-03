@@ -12,7 +12,7 @@ import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
-public class Penknife extends CustomRelic {
+public class Penknife extends AbstractBlackbeardRelic {
 
     public static final String ID = "blackbeard:Penknife";
     public static final int COUNT = 8;

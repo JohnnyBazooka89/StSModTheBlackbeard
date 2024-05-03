@@ -1,6 +1,5 @@
 package blackbeard.relics;
 
-import basemod.abstracts.CustomRelic;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.patches.CannonballDamageInfoPatch;
 import blackbeard.powers.BleedPower;
@@ -11,7 +10,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
-public class BarbedCannonballs extends CustomRelic {
+public class BarbedCannonballs extends AbstractBlackbeardRelic {
 
     public static final String ID = "blackbeard:BarbedCannonballs";
     private static final Texture IMG = TextureLoader.getTexture(TheBlackbeardMod.getRelicImagePath(ID));
