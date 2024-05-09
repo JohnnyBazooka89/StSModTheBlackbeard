@@ -4,7 +4,7 @@ import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.EquipAction;
 import blackbeard.enums.CardColorEnum;
 import blackbeard.orbs.VampiricScepterOrb;
-import blackbeard.utils.WeaponCardsUtils;
+import blackbeard.utils.WeaponsUtils;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -21,7 +21,7 @@ public class VampiricScepter extends AbstractBlackbeardCard {
     private static final int UPGRADE_PLUS_WEAPON_ATTACK = 1;
     private static final int UPGRADE_PLUS_HEAL_VALUE = 1;
     public static final String NAME = cardStrings.NAME;
-    public static final String DESCRIPTION = WeaponCardsUtils.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);
+    public static final String DESCRIPTION = WeaponsUtils.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);
 
     public VampiricScepter() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(VampiricScepter.ID), COST, DESCRIPTION, CardType.SKILL,

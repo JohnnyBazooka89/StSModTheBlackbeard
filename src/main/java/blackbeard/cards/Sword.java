@@ -3,7 +3,7 @@ package blackbeard.cards;
 import basemod.helpers.TooltipInfo;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.enums.CardColorEnum;
-import blackbeard.utils.WeaponCardsUtils;
+import blackbeard.utils.WeaponsUtils;
 import com.megacrit.cardcrawl.actions.watcher.ChooseOneAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -23,7 +23,7 @@ public class Sword extends AbstractBlackbeardCard {
     private static final int WEAPON_DURABILITY = 3;
     private static final int UPGRADE_PLUS_WEAPON_DURABILITY = 1;
     public static final String NAME = cardStrings.NAME;
-    public static final String DESCRIPTION = WeaponCardsUtils.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);
+    public static final String DESCRIPTION = WeaponsUtils.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);
     public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
 
     public Sword() {

@@ -4,7 +4,7 @@ import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.EquipAction;
 import blackbeard.enums.CardColorEnum;
 import blackbeard.orbs.HalberdOrb;
-import blackbeard.utils.WeaponCardsUtils;
+import blackbeard.utils.WeaponsUtils;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -19,7 +19,7 @@ public class Halberd extends AbstractBlackbeardCard {
     private static final int UPGRADE_PLUS_WEAPON_ATTACK = 2;
     private static final int WEAPON_DURABILITY = 4;
     public static final String NAME = cardStrings.NAME;
-    public static final String DESCRIPTION = WeaponCardsUtils.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);
+    public static final String DESCRIPTION = WeaponsUtils.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);
 
     public Halberd() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,

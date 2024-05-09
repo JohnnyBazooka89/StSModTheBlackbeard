@@ -4,6 +4,7 @@ import blackbeard.orbs.AbstractWeaponOrb;
 import blackbeard.relics.Karategi;
 import blackbeard.relics.Penknife;
 import blackbeard.relics.Spearhead;
+import blackbeard.utils.WeaponsUtils;
 import com.evacipated.cardcrawl.mod.stslib.patches.NeutralPowertypePatch;
 import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.InvisiblePower;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
@@ -128,7 +129,7 @@ public class WeaponPower extends AbstractPower implements InvisiblePower {
         }
         if (AbstractDungeon.player.hasRelic(Penknife.ID)) {
             Penknife penknife = (Penknife) AbstractDungeon.player.getRelic(Penknife.ID);
-            boolean shouldPulse = getNumberOfWeapons() > 0 && (penknife.counter == Penknife.COUNT - 1);
+            boolean shouldPulse = WeaponsUtils.getNumberOfWeapons() > 0 && (penknife.counter == Penknife.COUNT - 1);
             if (shouldPulse) {
                 penknife.beginLongPulse();
             } else {
@@ -137,17 +138,7 @@ public class WeaponPower extends AbstractPower implements InvisiblePower {
         }
     }
 
-    public int getNumberOfWeapons() {
-        int result = 0;
-        List<AbstractOrb> orbsList = AbstractDungeon.player.orbs;
-        for (int i = 0; i < orbsList.size(); i++) {
-            AbstractOrb orb = orbsList.get(i);
-            if (orb instanceof AbstractWeaponOrb) {
-                result++;
-            }
-        }
-        return result;
-    }
+
 
     @Override
     public void atStartOfTurnPostDraw() {

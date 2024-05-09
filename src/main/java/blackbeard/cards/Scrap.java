@@ -5,6 +5,7 @@ import blackbeard.actions.DestroyWeaponsAction;
 import blackbeard.enums.CardColorEnum;
 import blackbeard.enums.WeaponsToUseEnum;
 import blackbeard.powers.WeaponPower;
+import blackbeard.utils.WeaponsUtils;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -41,8 +42,7 @@ public class Scrap extends AbstractBlackbeardCard {
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
         boolean canUse = false;
         if (AbstractDungeon.player.hasPower(WeaponPower.POWER_ID)) {
-            WeaponPower weaponPower = (WeaponPower) AbstractDungeon.player.getPower(WeaponPower.POWER_ID);
-            if (weaponPower.getNumberOfWeapons() >= 1) {
+            if (WeaponsUtils.getNumberOfWeapons() >= 1) {
                 canUse = true;
             }
         }

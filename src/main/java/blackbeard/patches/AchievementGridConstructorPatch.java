@@ -18,12 +18,12 @@ public class AchievementGridConstructorPatch {
     @SpirePostfixPatch
     public static void Postfix(AchievementGrid instance) {
         BlackbeardAchievementItem.atlas = new TextureAtlas(Gdx.files.internal("blackbeard/img/achievements/BlackbeardAchievements.atlas"));
-        loadAchievement(instance, "loadthecannons", TheBlackbeardMod.achievementmakeID("LOAD_THE_CANNONS"), false);
-        loadAchievement(instance, "armedtotheteeth", TheBlackbeardMod.achievementmakeID("ARMED_TO_THE_TEETH"), false);
-        loadAchievement(instance, "ultimateweapon", TheBlackbeardMod.achievementmakeID("ULTIMATE_WEAPON"), false);
-        loadAchievement(instance, "resistant", TheBlackbeardMod.achievementmakeID("RESISTANT"), false);
-        loadAchievement(instance, "riches", TheBlackbeardMod.achievementmakeID("RICHES"), false);
-        loadAchievement(instance, "blackbeardmastery", TheBlackbeardMod.achievementmakeID("BLACKBEARD_MASTERY"), false);
+        loadAchievement(instance, "loadthecannons", TheBlackbeardMod.makeAchievementKey("LOAD_THE_CANNONS"), false);
+        loadAchievement(instance, "armedtotheteeth", TheBlackbeardMod.makeAchievementKey("ARMED_TO_THE_TEETH"), false);
+        loadAchievement(instance, "ultimateweapon", TheBlackbeardMod.makeAchievementKey("ULTIMATE_WEAPON"), false);
+        loadAchievement(instance, "resistant", TheBlackbeardMod.makeAchievementKey("RESISTANT"), false);
+        loadAchievement(instance, "riches", TheBlackbeardMod.makeAchievementKey("RICHES"), false);
+        loadAchievement(instance, "blackbeardmastery", TheBlackbeardMod.makeAchievementKey("BLACKBEARD_MASTERY"), false);
     }
 
     private static void loadAchievement(AchievementGrid instance, String imgName, String id, boolean isHidden) {

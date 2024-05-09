@@ -4,7 +4,7 @@ import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.EquipAction;
 import blackbeard.enums.CardColorEnum;
 import blackbeard.orbs.CutlassOrb;
-import blackbeard.utils.WeaponCardsUtils;
+import blackbeard.utils.WeaponsUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -23,7 +23,7 @@ public class RearmingStrike extends AbstractBlackbeardCard {
     private static final int WEAPON_ATTACK = 4;
     private static final int WEAPON_DURABILITY = 2;
     public static final String NAME = cardStrings.NAME;
-    public static final String DESCRIPTION = WeaponCardsUtils.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);
+    public static final String DESCRIPTION = WeaponsUtils.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);
 
     public RearmingStrike() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.ATTACK,

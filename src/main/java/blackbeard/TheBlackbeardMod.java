@@ -17,8 +17,8 @@ import blackbeard.potions.OrangeJuicePotion;
 import blackbeard.potions.RumPotion;
 import blackbeard.potions.UpgradePotion;
 import blackbeard.relics.AbstractBlackbeardRelic;
-import blackbeard.relics.PoorMathSkills;
 import blackbeard.utils.BlackbeardAchievementUnlocker;
+import blackbeard.utils.GoldenCardsUtils;
 import blackbeard.utils.TextureLoader;
 import blackbeard.variables.MagicNumberPlusTwoVariable;
 import blackbeard.variables.SecondMagicNumberVariable;
@@ -57,7 +57,6 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -68,10 +67,6 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         PostDeathSubscriber, OnStartBattleSubscriber, OnCardUseSubscriber {
 
     private static final Logger logger = LogManager.getLogger(TheBlackbeardMod.class);
-
-    public static String achievementmakeID(String key) {
-        return "blackbeard:" + key;
-    }
 
     //Mod metadata
     private static final String MOD_NAME = "The Blackbeard";
@@ -209,6 +204,10 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         return "blackbeard/img/char/blackbeard/heart/blackbeard" + i + ".png";
     }
 
+    public static String makeAchievementKey(String key) {
+        return "blackbeard:" + key;
+    }
+
     public static void initialize() {
         logger.info("========================= THE BLACKBEARD INIT =========================");
 
@@ -335,14 +334,8 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     public void receivePostDeath() {
         AbstractPlayer p = AbstractDungeon.player;
         if ((AbstractDungeon.actNum == 3 && p.currentHealth > 0 && p instanceof TheBlackbeard) || (AbstractDungeon.actNum == 4 && p instanceof TheBlackbeard)) {
-            int goldThreshold = 2500;
-
-            if (p.hasRelic(PoorMathSkills.ID)) {
-                goldThreshold -= 500;
-            }
-
-            if (CardCrawlGame.goldGained >= goldThreshold) {
-                BlackbeardAchievementUnlocker.unlockAchievement(TheBlackbeardMod.achievementmakeID("RICHES"));
+            if (GoldenCardsUtils.getBlackbeardGoldGained() >= 2500) {
+                BlackbeardAchievementUnlocker.unlockAchievement(TheBlackbeardMod.makeAchievementKey("RICHES"));
             }
         }
     }
@@ -359,7 +352,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
             if (cannonballCounter >= 10) {
                 AbstractPlayer p = AbstractDungeon.player;
                 if (p != null && p instanceof TheBlackbeard) {
-                    BlackbeardAchievementUnlocker.unlockAchievement(TheBlackbeardMod.achievementmakeID("LOAD_THE_CANNONS"));
+                    BlackbeardAchievementUnlocker.unlockAchievement(TheBlackbeardMod.makeAchievementKey("LOAD_THE_CANNONS"));
                 }
             }
         }

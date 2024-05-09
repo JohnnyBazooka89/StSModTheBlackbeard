@@ -60,7 +60,7 @@ public class ResistancePower extends AbstractPower {
         if (this.amount >= 10) {
             AbstractPlayer p = AbstractDungeon.player;
             if (p != null && p instanceof TheBlackbeard) {
-                BlackbeardAchievementUnlocker.unlockAchievement(TheBlackbeardMod.achievementmakeID("RESISTANT"));
+                BlackbeardAchievementUnlocker.unlockAchievement(TheBlackbeardMod.makeAchievementKey("RESISTANT"));
             }
         }
     }

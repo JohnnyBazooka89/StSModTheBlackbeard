@@ -4,7 +4,7 @@ import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.EquipAction;
 import blackbeard.enums.CardColorEnum;
 import blackbeard.orbs.SmithingHammerOrb;
-import blackbeard.utils.WeaponCardsUtils;
+import blackbeard.utils.WeaponsUtils;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -19,7 +19,7 @@ public class SmithingHammer extends AbstractBlackbeardCard {
     private static final int WEAPON_DURABILITY = 3;
     private static final int UPGRADE_PLUS_WEAPON_DURABILITY = 1;
     public static final String NAME = cardStrings.NAME;
-    public static final String DESCRIPTION = WeaponCardsUtils.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);
+    public static final String DESCRIPTION = WeaponsUtils.getWeaponRawDescription(cardStrings.DESCRIPTION, WEAPON_ATTACK, WEAPON_DURABILITY);
 
     public SmithingHammer() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.SKILL,
