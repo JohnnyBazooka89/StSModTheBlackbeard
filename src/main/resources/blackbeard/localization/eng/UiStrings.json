@@ -10,5 +10,41 @@
       "Use beta art for ALL the Blackbeard cards.",
       "Disable \"Shipwreck\" event for other characters."
     ]
+  },
+  "blackbeard:BLACKBEARD_MASTERY": {
+    "TEXT": [
+      "Blackbeard Mastery",
+      "As the Blackbeard, complete the Ending on Ascension Level 20."
+    ]
+  },
+  "blackbeard:RESISTANT": {
+    "TEXT": [
+      "Resistant",
+      "As the Blackbeard, have 10 or more Resistance."
+    ]
+  },
+  "blackbeard:ULTIMATE_WEAPON": {
+    "TEXT": [
+      "Ultimate Weapon",
+      "As the Blackbeard, have a 15/10 Weapon equipped."
+    ]
+  },
+  "blackbeard:RICHES": {
+    "TEXT": [
+      "Riches!",
+      "As the Blackbeard, win a run after accumulating at least 2,500 gold."
+    ]
+  },
+  "blackbeard:LOAD_THE_CANNONS": {
+    "TEXT": [
+      "Load the Cannons",
+      "As the Blackbeard, play 10 or more Cannonball cards in a single combat."
+    ]
+  },
+  "blackbeard:ARMED_TO_THE_TEETH": {
+    "TEXT": [
+      "Armed to the Teeth",
+      "As the Blackbeard, have 10 Weapons equipped at once."
+    ]
   }
 }

@@ -1,15 +1,20 @@
 package blackbeard.actions;
 
+import blackbeard.TheBlackbeardMod;
 import blackbeard.cards.AgileStrike;
+import blackbeard.characters.TheBlackbeard;
 import blackbeard.orbs.AbstractWeaponOrb;
 import blackbeard.powers.WeaponPower;
 import blackbeard.relics.WhitePearl;
+import blackbeard.utils.BlackbeardAchievementUnlocker;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.orbs.AbstractOrb;
 
 
 public class EquipAction extends AbstractGameAction {
@@ -40,6 +45,20 @@ public class EquipAction extends AbstractGameAction {
             weaponPower.refreshWeapons();
 
             reduceAgileStrikesCostForTurn();
+
+            int weaponCount = 0;
+            for (AbstractOrb orb : AbstractDungeon.player.orbs) {
+                if (orb instanceof AbstractWeaponOrb) {
+                    weaponCount++;
+                }
+            }
+
+            if (weaponCount >= 10) {
+                AbstractPlayer p = AbstractDungeon.player;
+                if (p != null && p instanceof TheBlackbeard) {
+                    BlackbeardAchievementUnlocker.unlockAchievement(TheBlackbeardMod.achievementmakeID("ARMED_TO_THE_TEETH"));
+                }
+            }
 
             if (Settings.FAST_MODE) {
                 this.isDone = true;
