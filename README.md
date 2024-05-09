@@ -23,6 +23,8 @@ Character Select Screen and Starting Relic:
 Starting Deck: 
 ![Starting Deck](screenshots/StartingDeck.jpg)
 
+Additionally, this mod includes 5 the Blackbeard-specific achievements. 
+
 List of all cards, relics and potions can be found [here](http://www.theblackbeardmod.com). (Exported using [Slay the Spire exporter](https://github.com/twanvl/sts-exporter).)
 
 ## Installation ##

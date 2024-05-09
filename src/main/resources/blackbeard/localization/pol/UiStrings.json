@@ -10,5 +10,41 @@
       "Użyj Beta Artów dla WSZYSTKICH kart Czarnobrodego.",
       "Wyłącz wydarzenie \"Wrak statku\" dla innych postaci."
     ]
+  },
+  "blackbeard:BLACKBEARD_MASTERY": {
+    "TEXT": [
+      "Mistrzostwo Czarnobrodego",
+      "Jako Czarnobrody, ukończ Ending na trybie wyniesienia 20."
+    ]
+  },
+  "blackbeard:RESISTANT": {
+    "TEXT": [
+      "Odporny",
+      "Jako Czarnobrody, miej 10 lub więcej Odporności."
+    ]
+  },
+  "blackbeard:ULTIMATE_WEAPON": {
+    "TEXT": [
+      "Ostateczna broń",
+      "Jako Czarnobrody, miej wyposażoną broń 15/10."
+    ]
+  },
+  "blackbeard:RICHES": {
+    "TEXT": [
+      "Bogactwa!",
+      "Jako Czarnobrody, wygraj wyprawę, zgromadzając przynajmniej 2500 złota."
+    ]
+  },
+  "blackbeard:LOAD_THE_CANNONS": {
+    "TEXT": [
+      "Załaduj działa",
+      "Jako Czarnobrody, zagraj 10 lub więcej kart Kul w jednym walce."
+    ]
+  },
+  "blackbeard:ARMED_TO_THE_TEETH": {
+    "TEXT": [
+      "Uzbrojony po zęby",
+      "Jako Czarnobrody, miej na raz 10 wyposażonych Broni."
+    ]
   }
 }
