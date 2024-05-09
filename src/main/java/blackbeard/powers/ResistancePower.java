@@ -1,11 +1,14 @@
 package blackbeard.powers;
 
 import blackbeard.TheBlackbeardMod;
+import blackbeard.characters.TheBlackbeard;
+import blackbeard.utils.BlackbeardAchievementUnlocker;
 import blackbeard.utils.TextureLoader;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -52,7 +55,16 @@ public class ResistancePower extends AbstractPower {
         if (this.amount == 0) {
             AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
         }
+
+        // Check if Resistance is 10 or more and unlock the achievement
+        if (this.amount >= 10) {
+            AbstractPlayer p = AbstractDungeon.player;
+            if (p != null && p instanceof TheBlackbeard) {
+                BlackbeardAchievementUnlocker.unlockAchievement(TheBlackbeardMod.achievementmakeID("RESISTANT"));
+            }
+        }
     }
+
 
     @Override
     public float atDamageReceive(float damage, DamageInfo.DamageType type) {

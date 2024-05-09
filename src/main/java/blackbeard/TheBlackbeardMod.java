@@ -7,6 +7,7 @@ import basemod.interfaces.*;
 import blackbeard.cards.AbstractBlackbeardCard;
 import blackbeard.characters.TheBlackbeard;
 import blackbeard.enums.CardColorEnum;
+import blackbeard.enums.CardTagsEnum;
 import blackbeard.enums.PlayerClassEnum;
 import blackbeard.events.BlackbeardSsssserpentEvent;
 import blackbeard.events.BlackbeardVampiresEvent;
@@ -16,6 +17,8 @@ import blackbeard.potions.OrangeJuicePotion;
 import blackbeard.potions.RumPotion;
 import blackbeard.potions.UpgradePotion;
 import blackbeard.relics.AbstractBlackbeardRelic;
+import blackbeard.relics.PoorMathSkills;
+import blackbeard.utils.BlackbeardAchievementUnlocker;
 import blackbeard.utils.TextureLoader;
 import blackbeard.variables.MagicNumberPlusTwoVariable;
 import blackbeard.variables.SecondMagicNumberVariable;
@@ -34,6 +37,8 @@ import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
@@ -42,6 +47,7 @@ import com.megacrit.cardcrawl.dungeons.Exordium;
 import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.*;
 import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -51,15 +57,21 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
 @SpireInitializer
 public class TheBlackbeardMod implements PostInitializeSubscriber,
         EditCardsSubscriber, EditRelicsSubscriber, EditCharactersSubscriber,
-        EditStringsSubscriber, EditKeywordsSubscriber, AddAudioSubscriber, StartGameSubscriber {
+        EditStringsSubscriber, EditKeywordsSubscriber, AddAudioSubscriber, StartGameSubscriber,
+        PostDeathSubscriber, OnStartBattleSubscriber, OnCardUseSubscriber {
 
     private static final Logger logger = LogManager.getLogger(TheBlackbeardMod.class);
+
+    public static String achievementmakeID(String key) {
+        return "blackbeard:" + key;
+    }
 
     //Mod metadata
     private static final String MOD_NAME = "The Blackbeard";
@@ -129,6 +141,9 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
 
     //Custom Fonts
     public static BitmapFont fontForInfinitySymbol; //initialized in FontForInfinitySymbolPatch
+
+    //Achievement Variables
+    private static int cannonballCounter = 0;
 
     public TheBlackbeardMod() {
         BaseMod.subscribe(this);
@@ -315,6 +330,39 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
                 .cards();
 
         logger.info("Done editing cards");
+    }
+
+    public void receivePostDeath() {
+        AbstractPlayer p = AbstractDungeon.player;
+        if ((AbstractDungeon.actNum == 3 && p.currentHealth > 0 && p instanceof TheBlackbeard) || (AbstractDungeon.actNum == 4 && p instanceof TheBlackbeard)) {
+            int goldThreshold = 2500;
+
+            if (p.hasRelic(PoorMathSkills.ID)) {
+                goldThreshold -= 500;
+            }
+
+            if (CardCrawlGame.goldGained >= goldThreshold) {
+                BlackbeardAchievementUnlocker.unlockAchievement(TheBlackbeardMod.achievementmakeID("RICHES"));
+            }
+        }
+    }
+
+    public void receiveOnBattleStart(AbstractRoom room) {
+        cannonballCounter = 0;
+    }
+
+    public void receiveCardUsed(AbstractCard card) {
+        if (card.hasTag(CardTagsEnum.CANNONBALL)) {
+            cannonballCounter++;
+
+            // Check if at least 10 Cannonball cards have been played
+            if (cannonballCounter >= 10) {
+                AbstractPlayer p = AbstractDungeon.player;
+                if (p != null && p instanceof TheBlackbeard) {
+                    BlackbeardAchievementUnlocker.unlockAchievement(TheBlackbeardMod.achievementmakeID("LOAD_THE_CANNONS"));
+                }
+            }
+        }
     }
 
     @Override
