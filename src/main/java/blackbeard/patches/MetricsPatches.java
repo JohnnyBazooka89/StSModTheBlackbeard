@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.metrics.Metrics;
 import com.megacrit.cardcrawl.monsters.MonsterGroup;
 import com.megacrit.cardcrawl.screens.GameOverScreen;
+import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import javassist.CtBehavior;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -17,6 +18,9 @@ import org.apache.logging.log4j.Logger;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 import static blackbeard.TheBlackbeardMod.MOD_THE_SPIRE_MOD_ID;
 
@@ -86,7 +90,9 @@ public class MetricsPatches {
                     addDataMethod.setAccessible(true);
                     addDataMethod.invoke(metrics, "language", Settings.language);
                     addDataMethod.invoke(metrics, "blackbeardVersion", findTheBlackbeardVersion());
-
+                    List<String> blackbeardAchievements = findTheBlackbeardAchievements();
+                    addDataMethod.invoke(metrics, "blackbeardAchievementsCount", blackbeardAchievements.size());
+                    addDataMethod.invoke(metrics, "blackbeardAchievementsList", String.join(",", blackbeardAchievements));
                     Method gatherAllDataAndSendMethod = Metrics.class.getDeclaredMethod("gatherAllDataAndSend", boolean.class, boolean.class, MonsterGroup.class);
                     gatherAllDataAndSendMethod.setAccessible(true);
                     gatherAllDataAndSendMethod.invoke(metrics, metrics.death, metrics.trueVictory, metrics.monsters);
@@ -101,6 +107,13 @@ public class MetricsPatches {
                     .findFirst()
                     .map(modInfo -> modInfo.ModVersion.toString())
                     .orElse("Unknown");
+        }
+
+        private static List<String> findTheBlackbeardAchievements() {
+            return UnlockTracker.achievementPref.data.entrySet().stream()
+                    .filter(e -> e.getKey().startsWith("blackbeard:") && e.getValue().equals("true"))
+                    .map(Map.Entry::getKey)
+                    .collect(Collectors.toList());
         }
 
     }
