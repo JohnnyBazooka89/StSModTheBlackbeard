@@ -113,6 +113,7 @@ public class MetricsPatches {
             return UnlockTracker.achievementPref.data.entrySet().stream()
                     .filter(e -> e.getKey().startsWith("blackbeard:") && e.getValue().equals("true"))
                     .map(Map.Entry::getKey)
+                    .sorted()
                     .collect(Collectors.toList());
         }
 
