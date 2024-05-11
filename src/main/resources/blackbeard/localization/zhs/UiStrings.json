@@ -11,6 +11,11 @@
       "为其他角色禁用“船骸”事件。"
     ]
   },
+  "blackbeard:Achievements": {
+    "TEXT": [
+      "成就解锁！"
+    ]
+  },
   "blackbeard:BLACKBEARD_MASTERY": {
     "TEXT": [
       "黑胡子精通",

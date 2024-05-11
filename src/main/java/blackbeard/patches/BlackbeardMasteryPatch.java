@@ -18,7 +18,7 @@ public class BlackbeardMasteryPatch {
     @SpirePostfixPatch
     public static void Postfix(VictoryScreen __instance, MonsterGroup m) {
         AbstractPlayer p = AbstractDungeon.player;
-        if (p != null && p instanceof TheBlackbeard && AbstractDungeon.ascensionLevel == 20 && AbstractDungeon.actNum == 4) {
+        if (p instanceof TheBlackbeard && AbstractDungeon.ascensionLevel == 20 && AbstractDungeon.actNum == 4) {
             BlackbeardAchievementUnlocker.unlockAchievement(TheBlackbeardMod.makeAchievementKey("BLACKBEARD_MASTERY"));
         }
     }

@@ -4,8 +4,10 @@ import basemod.*;
 import basemod.abstracts.CustomRelic;
 import basemod.eventUtil.AddEventParams;
 import basemod.interfaces.*;
+import blackbeard.achievements.BlackbeardAchievementItem;
 import blackbeard.cards.AbstractBlackbeardCard;
 import blackbeard.characters.TheBlackbeard;
+import blackbeard.effects.CustomAchievementPopupRenderer;
 import blackbeard.enums.CardColorEnum;
 import blackbeard.enums.CardTagsEnum;
 import blackbeard.enums.PlayerClassEnum;
@@ -26,6 +28,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.utils.Array;
 import com.esotericsoftware.spine.Skeleton;
@@ -139,6 +142,10 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
 
     //Achievement Variables
     private static int cannonballCounter = 0;
+
+    //Achievements
+    public static CustomAchievementPopupRenderer customAchievementPopupRenderer;
+    public static Map<String, BlackbeardAchievementItem> blackbeardAchievementItems = new HashMap<>();
 
     public TheBlackbeardMod() {
         BaseMod.subscribe(this);
@@ -284,6 +291,27 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addPotion(RumPotion.class, rumLiquidColor.cpy(), rumHybridColor.cpy(), null, "blackbeard:RumPotion", PlayerClassEnum.BLACKBEARD_CLASS);
         BaseMod.addPotion(OrangeJuicePotion.class, orangeJuiceLiquidColor.cpy(), null, orangeJuiceSpotsColor.cpy(), "blackbeard:OrangeJuicePotion", PlayerClassEnum.BLACKBEARD_CLASS);
         BaseMod.addPotion(UpgradePotion.class, Color.DARK_GRAY.cpy(), Color.CORAL.cpy(), null, "blackbeard:UpgradePotion", PlayerClassEnum.BLACKBEARD_CLASS);
+
+        //Achievements
+        customAchievementPopupRenderer = new CustomAchievementPopupRenderer();
+        BlackbeardAchievementItem.atlas = new TextureAtlas(Gdx.files.internal("blackbeard/img/achievements/BlackbeardAchievements.atlas"));
+        addAchievement("loadthecannons", TheBlackbeardMod.makeAchievementKey("LOAD_THE_CANNONS"), false);
+        addAchievement("armedtotheteeth", TheBlackbeardMod.makeAchievementKey("ARMED_TO_THE_TEETH"), false);
+        addAchievement("ultimateweapon", TheBlackbeardMod.makeAchievementKey("ULTIMATE_WEAPON"), false);
+        addAchievement("resistant", TheBlackbeardMod.makeAchievementKey("RESISTANT"), false);
+        addAchievement("riches", TheBlackbeardMod.makeAchievementKey("RICHES"), false);
+        addAchievement("blackbeardmastery", TheBlackbeardMod.makeAchievementKey("BLACKBEARD_MASTERY"), false);
+    }
+
+    private static void addAchievement(String imgName, String id, boolean isHidden) {
+        UIStrings uiStrings = CardCrawlGame.languagePack.getUIString(id);
+        String name = uiStrings.TEXT[0];
+        String description = uiStrings.TEXT[1];
+
+        TextureAtlas.AtlasRegion AchievementImageUnlocked = BlackbeardAchievementItem.atlas.findRegion("unlocked/" + imgName);
+        TextureAtlas.AtlasRegion AchievementImageLocked = BlackbeardAchievementItem.atlas.findRegion("locked/" + imgName);
+
+        blackbeardAchievementItems.put(id, new BlackbeardAchievementItem(name, description, id, isHidden, AchievementImageUnlocked, AchievementImageLocked));
     }
 
     @Override
@@ -351,7 +379,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
             // Check if at least 10 Cannonball cards have been played
             if (cannonballCounter >= 10) {
                 AbstractPlayer p = AbstractDungeon.player;
-                if (p != null && p instanceof TheBlackbeard) {
+                if (p instanceof TheBlackbeard) {
                     BlackbeardAchievementUnlocker.unlockAchievement(TheBlackbeardMod.makeAchievementKey("LOAD_THE_CANNONS"));
                 }
             }

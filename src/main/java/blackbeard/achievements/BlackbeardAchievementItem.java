@@ -6,8 +6,8 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.screens.stats.AchievementItem;
 
 public class BlackbeardAchievementItem extends AchievementItem {
-    private TextureAtlas.AtlasRegion unlockedImg;
-    private TextureAtlas.AtlasRegion lockedImg;
+    public TextureAtlas.AtlasRegion unlockedImg;
+    public TextureAtlas.AtlasRegion lockedImg;
     public TextureAtlas.AtlasRegion currentImg;
     private static final Color LOCKED_COLOR = new Color(1.0F, 1.0F, 1.0F, 0.8F);
     public static TextureAtlas atlas;

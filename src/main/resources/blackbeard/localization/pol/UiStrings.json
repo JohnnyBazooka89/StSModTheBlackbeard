@@ -11,6 +11,11 @@
       "Wyłącz wydarzenie \"Wrak statku\" dla innych postaci."
     ]
   },
+  "blackbeard:Achievements": {
+    "TEXT": [
+      "Osiągnięcie odblokowane!"
+    ]
+  },
   "blackbeard:BLACKBEARD_MASTERY": {
     "TEXT": [
       "Mistrzostwo Czarnobrodego",

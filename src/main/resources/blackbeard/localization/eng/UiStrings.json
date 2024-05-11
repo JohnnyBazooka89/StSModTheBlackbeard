@@ -11,6 +11,11 @@
       "Disable \"Shipwreck\" event for other characters."
     ]
   },
+  "blackbeard:Achievements": {
+    "TEXT": [
+      "Achievement Unlocked!"
+    ]
+  },
   "blackbeard:BLACKBEARD_MASTERY": {
     "TEXT": [
       "Blackbeard Mastery",
