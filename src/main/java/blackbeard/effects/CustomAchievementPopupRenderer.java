@@ -28,6 +28,9 @@ import java.util.List;
 //Code based on work of TijmenvanderKemp (Teafling)
 //taken from: https://github.com/TijmenvanderKemp/BaseMod/tree/achievements
 public class CustomAchievementPopupRenderer implements PostRenderSubscriber {
+
+    private static final UIStrings achievementsStrings = CardCrawlGame.languagePack.getUIString("blackbeard:Achievements");
+
     private static final float MOVE_DURATION = .7f;
     private static final float SHOW_DURATION = 6f;
     private static final float POPUP_WIDTH = 239f;
@@ -42,9 +45,7 @@ public class CustomAchievementPopupRenderer implements PostRenderSubscriber {
     private static final int TEXT_HEIGHT = 40;
     private static final Logger LOGGER = LogManager.getLogger(CustomAchievementPopupRenderer.class);
 
-    private static final List<GameEffectAndDisposable> achievementsToRenderWithAssociatedDisposable = new ArrayList<>();
-
-    private static final UIStrings achievementsStrings = CardCrawlGame.languagePack.getUIString("blackbeard:Achievements");
+    private final List<GameEffectAndDisposable> achievementsToRenderWithAssociatedDisposable = new ArrayList<>();
 
     private static class GameEffectAndDisposable {
         private final AbstractGameEffect gameEffect;
