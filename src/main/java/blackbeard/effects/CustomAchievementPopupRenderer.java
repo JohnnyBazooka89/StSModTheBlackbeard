@@ -42,7 +42,7 @@ public class CustomAchievementPopupRenderer implements PostRenderSubscriber {
     private static final float TEXT_TOP_OFFSET = 27;
     private static final float TEXT_LEFT_OFFSET = 88;
     private static final float TEXT_WIDTH = POPUP_WIDTH - TEXT_LEFT_OFFSET;
-    private static final int TEXT_HEIGHT = 40;
+    private static final int TEXT_HEIGHT = 60;
     private static final Logger LOGGER = LogManager.getLogger(CustomAchievementPopupRenderer.class);
 
     private final List<GameEffectAndDisposable> achievementsToRenderWithAssociatedDisposable = new ArrayList<>();
