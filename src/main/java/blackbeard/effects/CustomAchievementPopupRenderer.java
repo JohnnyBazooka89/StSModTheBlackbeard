@@ -42,7 +42,7 @@ public class CustomAchievementPopupRenderer implements PostRenderSubscriber {
     private static final float TEXT_TOP_OFFSET = 14;
     private static final float TEXT_LEFT_OFFSET = 88;
     private static final float TEXT_WIDTH = POPUP_WIDTH - TEXT_LEFT_OFFSET;
-    private static final int TEXT_HEIGHT = 81;
+    private static final float TEXT_HEIGHT = POPUP_HEIGHT - TEXT_TOP_OFFSET;
     private static final Logger LOGGER = LogManager.getLogger(CustomAchievementPopupRenderer.class);
 
     private final List<GameEffectAndDisposable> achievementsToRenderWithAssociatedDisposable = new ArrayList<>();
@@ -93,7 +93,14 @@ public class CustomAchievementPopupRenderer implements PostRenderSubscriber {
         // Loading a custom font does not work because of FreeType error code 2 (this probably means wrong file type)
         // So I'm using the font that's included with the base game that looks the most like the Steam achievement font
         // which is Helvetica Regular I believe.
-        FileHandle fileHandle = Gdx.files.internal("font/gre/Roboto-Regular.ttf");
+        FileHandle fileHandle = null;
+        switch (Settings.language) {
+            case ZHS:
+                fileHandle = Gdx.files.internal("font/zhs/NotoSansMonoCJKsc-Regular.otf");
+                break;
+            default:
+                fileHandle = Gdx.files.internal("font/gre/Roboto-Regular.ttf");
+        }
         ReflectionHacks.setPrivateStatic(FontHelper.class, "fontFile", fileHandle);
         float originalScale = Settings.scale;
         Settings.scale = 1.0f;
@@ -128,10 +135,12 @@ public class CustomAchievementPopupRenderer implements PostRenderSubscriber {
         UIStrings uiStrings = CardCrawlGame.languagePack.getUIString(achievement.key);
         String text = achievementsStrings.TEXT[0] + " NL NL " + uiStrings.TEXT[0];
 
-        FrameBuffer fb = createFrameBuffer((int) TEXT_WIDTH, TEXT_HEIGHT);
-        beginSpriteBatch(mySpriteBatch, (int) TEXT_WIDTH, TEXT_HEIGHT);
+        FrameBuffer fb = createFrameBuffer((int) TEXT_WIDTH, (int) TEXT_HEIGHT);
+        beginSpriteBatch(mySpriteBatch, (int) TEXT_WIDTH, (int) TEXT_HEIGHT);
 
-        FontHelper.renderSmartText(mySpriteBatch, font, text, -TEXT_WIDTH / 2, TEXT_HEIGHT / 2f, TEXT_WIDTH, font.getLineHeight(), new Color(0xCCCCCCFF));
+        int verticalOffset = (int) (-(POPUP_HEIGHT - 2 * TEXT_TOP_OFFSET - font.getLineHeight() + FontHelper.getSmartHeight(font, text, TEXT_WIDTH, font.getLineHeight())) / 2f);
+
+        FontHelper.renderSmartText(mySpriteBatch, font, text, -TEXT_WIDTH / 2, TEXT_HEIGHT / 2f + verticalOffset, TEXT_WIDTH, font.getLineHeight(), new Color(0xCCCCCCFF));
         mySpriteBatch.end();
         fb.end();
 
