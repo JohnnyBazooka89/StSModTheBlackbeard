@@ -1,6 +1,5 @@
 package blackbeard.relics;
 
-import basemod.abstracts.CustomRelic;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.EquipAction;
 import blackbeard.orbs.PowderKegOrb;

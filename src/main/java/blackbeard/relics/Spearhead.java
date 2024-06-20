@@ -1,6 +1,5 @@
 package blackbeard.relics;
 
-import basemod.abstracts.CustomRelic;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.utils.TextureLoader;
 import com.badlogic.gdx.graphics.Texture;

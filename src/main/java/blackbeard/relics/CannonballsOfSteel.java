@@ -1,6 +1,5 @@
 package blackbeard.relics;
 
-import basemod.abstracts.CustomRelic;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.enums.CardTagsEnum;
 import blackbeard.utils.TextureLoader;

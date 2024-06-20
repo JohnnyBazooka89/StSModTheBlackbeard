@@ -1,6 +1,5 @@
 package blackbeard.relics;
 
-import basemod.abstracts.CustomRelic;
 import basemod.helpers.CardPowerTip;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.cards.GoldenCannonball;

@@ -1,6 +1,5 @@
 package blackbeard.potions;
 
-import basemod.abstracts.CustomPotion;
 import blackbeard.TheBlackbeardMod;
 import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.actions.unique.RemoveDebuffsAction;
@@ -9,7 +8,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.PotionStrings;
-import com.megacrit.cardcrawl.potions.AbstractPotion;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
 public class OrangeJuicePotion extends AbstractBlackbeardPotion {
