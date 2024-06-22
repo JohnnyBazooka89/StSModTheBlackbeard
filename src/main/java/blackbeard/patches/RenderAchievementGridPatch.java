@@ -13,12 +13,8 @@ import java.util.Iterator;
 
 @SpirePatch(clz = StatsScreen.class, method = "renderStatScreen")
 public class RenderAchievementGridPatch {
-    private static final UIStrings uiStrings;
+    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("blackbeard:AchievementGrid");
 
-    static {
-        // Load the UIStrings when the class is loaded
-        uiStrings = CardCrawlGame.languagePack.getUIString("blackbeard:AchievementGrid");
-    }
     @SpireInsertPatch(locator = Locator.class, localvars = {"renderY"})
     public static void Insert(StatsScreen __instance, SpriteBatch sb, @ByRef float[] renderY) {
         renderY[0] += 50.0F * Settings.scale;
