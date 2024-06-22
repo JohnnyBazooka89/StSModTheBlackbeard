@@ -4,6 +4,7 @@ import basemod.*;
 import basemod.abstracts.CustomRelic;
 import basemod.eventUtil.AddEventParams;
 import basemod.interfaces.*;
+import blackbeard.achievements.BlackbeardAchievementGrid;
 import blackbeard.achievements.BlackbeardAchievementItem;
 import blackbeard.cards.AbstractBlackbeardCard;
 import blackbeard.characters.TheBlackbeard;
@@ -292,7 +293,14 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addPotion(UpgradePotion.class, Color.DARK_GRAY.cpy(), Color.CORAL.cpy(), null, "blackbeard:UpgradePotion", PlayerClassEnum.BLACKBEARD_CLASS);
 
         //Achievements
+        initializeAchievements();
         customAchievementPopupRenderer = new CustomAchievementPopupRenderer();
+    }
+
+    private void initializeAchievements() {
+        BlackbeardAchievementGrid grid = new BlackbeardAchievementGrid();
+        // If you need to keep a reference to this grid, store it in a field
+        BaseMod.logger.info("Achievements initialized");
     }
 
     @Override
