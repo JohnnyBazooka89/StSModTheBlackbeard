@@ -1,6 +1,5 @@
 package blackbeard.patches;
 
-import blackbeard.TheBlackbeardMod;
 import blackbeard.characters.TheBlackbeard;
 import blackbeard.utils.BlackbeardAchievementUnlocker;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;

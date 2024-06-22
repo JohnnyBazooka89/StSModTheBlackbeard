@@ -9,26 +9,25 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
-import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
-import static blackbeard.TheBlackbeardMod.blackbeardAchievementItems;
-
-public class BlackbeardAchievementGrid {
-    public ArrayList<BlackbeardAchievementItem> items = new ArrayList<>();
+public class BlackbeardAchievementsGrid {
+    public Map<String, BlackbeardAchievementItem> items = new HashMap<>();
     private static final float SPACING = 200.0F * Settings.scale;
     private static final int ITEMS_PER_ROW = 5;
 
-    public BlackbeardAchievementGrid() {
+    public BlackbeardAchievementsGrid() {
         BlackbeardAchievementItem.atlas = new TextureAtlas(Gdx.files.internal("blackbeard/img/achievements/BlackbeardAchievements.atlas"));
-        loadAchievement("LOAD_THE_CANNONS", false);
-        loadAchievement("ARMED_TO_THE_TEETH", false);
-        loadAchievement("ULTIMATE_WEAPON", false);
-        loadAchievement("RESISTANT", false);
-        loadAchievement("RICHES", false);
-        loadAchievement("BLACKBEARD_MASTERY", false);
+        loadAchievement("LOAD_THE_CANNONS");
+        loadAchievement("ARMED_TO_THE_TEETH");
+        loadAchievement("ULTIMATE_WEAPON");
+        loadAchievement("RESISTANT");
+        loadAchievement("RICHES");
+        loadAchievement("BLACKBEARD_MASTERY");
     }
 
-    private void loadAchievement(String id, boolean isHidden) {
+    private void loadAchievement(String id) {
         String fullId = TheBlackbeardMod.makeAchievementKey(id);
         UIStrings uiStrings = CardCrawlGame.languagePack.getUIString(fullId);
         String name = uiStrings.TEXT[0];
@@ -36,12 +35,11 @@ public class BlackbeardAchievementGrid {
         TextureAtlas.AtlasRegion AchievementImageUnlocked = BlackbeardAchievementItem.atlas.findRegion("unlocked/" + id);
         TextureAtlas.AtlasRegion AchievementImageLocked = BlackbeardAchievementItem.atlas.findRegion("locked/" + id);
 
-        items.add(new BlackbeardAchievementItem(name, description, fullId, isHidden, AchievementImageUnlocked, AchievementImageLocked));
-        blackbeardAchievementItems.put(fullId, new BlackbeardAchievementItem(name, description, fullId, isHidden, AchievementImageUnlocked, AchievementImageLocked));
+        items.put(fullId, new BlackbeardAchievementItem(name, description, fullId, AchievementImageUnlocked, AchievementImageLocked));
     }
 
     public void updateAchievementStatus() {
-        for (BlackbeardAchievementItem item : items) {
+        for (BlackbeardAchievementItem item : items.values()) {
             String achievementKey = item.getKey();
             boolean isUnlocked = UnlockTracker.isAchievementUnlocked(achievementKey);
             item.isUnlocked = isUnlocked;
@@ -50,8 +48,10 @@ public class BlackbeardAchievementGrid {
     }
 
     public void render(SpriteBatch sb, float renderY) {
-        for (int i = 0; i < items.size(); ++i) {
-            items.get(i).render(sb, 560.0F * Settings.scale + (i % ITEMS_PER_ROW) * SPACING, renderY - (i / ITEMS_PER_ROW) * SPACING + 680.0F * Settings.yScale);
+        int i = 0;
+        for (BlackbeardAchievementItem item : items.values()) {
+            item.render(sb, 560.0F * Settings.scale + (i % ITEMS_PER_ROW) * SPACING, renderY - (i / ITEMS_PER_ROW) * SPACING + 680.0F * Settings.yScale);
+            i++;
         }
     }
 
@@ -62,7 +62,7 @@ public class BlackbeardAchievementGrid {
 
     public void update() {
         updateAchievementStatus();
-        for (BlackbeardAchievementItem item : items) {
+        for (BlackbeardAchievementItem item : items.values()) {
             item.update();
         }
     }

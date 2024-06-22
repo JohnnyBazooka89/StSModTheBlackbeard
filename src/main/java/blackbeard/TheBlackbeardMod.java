@@ -4,8 +4,7 @@ import basemod.*;
 import basemod.abstracts.CustomRelic;
 import basemod.eventUtil.AddEventParams;
 import basemod.interfaces.*;
-import blackbeard.achievements.BlackbeardAchievementGrid;
-import blackbeard.achievements.BlackbeardAchievementItem;
+import blackbeard.achievements.BlackbeardAchievementsGrid;
 import blackbeard.cards.AbstractBlackbeardCard;
 import blackbeard.characters.TheBlackbeard;
 import blackbeard.effects.CustomAchievementPopupRenderer;
@@ -145,7 +144,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
 
     //Achievements
     public static CustomAchievementPopupRenderer customAchievementPopupRenderer;
-    public static Map<String, BlackbeardAchievementItem> blackbeardAchievementItems = new HashMap<>();
+    public static BlackbeardAchievementsGrid blackbeardAchievementsGrid;
 
     public TheBlackbeardMod() {
         BaseMod.subscribe(this);
@@ -293,12 +292,8 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         BaseMod.addPotion(UpgradePotion.class, Color.DARK_GRAY.cpy(), Color.CORAL.cpy(), null, "blackbeard:UpgradePotion", PlayerClassEnum.BLACKBEARD_CLASS);
 
         //Achievements
-        initializeAchievements();
+        blackbeardAchievementsGrid = new BlackbeardAchievementsGrid();
         customAchievementPopupRenderer = new CustomAchievementPopupRenderer();
-    }
-
-    private void initializeAchievements() {
-        BlackbeardAchievementGrid grid = new BlackbeardAchievementGrid();
     }
 
     @Override

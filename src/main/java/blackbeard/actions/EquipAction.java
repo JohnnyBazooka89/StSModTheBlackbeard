@@ -1,6 +1,5 @@
 package blackbeard.actions;
 
-import blackbeard.TheBlackbeardMod;
 import blackbeard.cards.AgileStrike;
 import blackbeard.characters.TheBlackbeard;
 import blackbeard.orbs.AbstractWeaponOrb;

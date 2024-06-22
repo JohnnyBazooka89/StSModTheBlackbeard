@@ -20,7 +20,7 @@ public class BlackbeardAchievementItem {
     public boolean isUnlocked;
     public Hitbox hb;
 
-    public BlackbeardAchievementItem(String title, String desc, String key, boolean hidden, TextureAtlas.AtlasRegion unlockedImage, TextureAtlas.AtlasRegion lockedImage) {
+    public BlackbeardAchievementItem(String title, String desc, String key, TextureAtlas.AtlasRegion unlockedImage, TextureAtlas.AtlasRegion lockedImage) {
         this.hb = new Hitbox(160.0F * Settings.scale, 160.0F * Settings.scale);
         this.isUnlocked = UnlockTracker.achievementPref.getBoolean(key, false);
         this.key = key;

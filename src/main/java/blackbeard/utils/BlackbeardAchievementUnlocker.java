@@ -15,7 +15,7 @@ public class BlackbeardAchievementUnlocker {
                 achievementPref.putBoolean(fullKey, true);
                 achievementPref.flush();
 
-                BlackbeardAchievementItem achievement = TheBlackbeardMod.blackbeardAchievementItems.get(fullKey);
+                BlackbeardAchievementItem achievement = TheBlackbeardMod.blackbeardAchievementsGrid.items.get(fullKey);
                 if (achievement == null) {
                     return;
                 }

@@ -1,5 +1,6 @@
 package blackbeard.patches;
 
+import blackbeard.TheBlackbeardMod;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -12,7 +13,7 @@ import java.util.Iterator;
 
 @SpirePatch(clz = StatsScreen.class, method = "renderStatScreen")
 public class RenderAchievementGridPatch {
-    private static UIStrings uiStrings;
+    private static final UIStrings uiStrings;
 
     static {
         // Load the UIStrings when the class is loaded
@@ -23,8 +24,8 @@ public class RenderAchievementGridPatch {
         renderY[0] += 50.0F * Settings.scale;
 
         StatsScreen.renderHeader(sb, uiStrings.TEXT[0], 300.0F * Settings.scale, renderY[0]);
-        StatsScreenPatch.getBlackbeardAchievements().render(sb, renderY[0]);
-        renderY[0] -= StatsScreenPatch.getBlackbeardAchievements().calculateHeight();
+        TheBlackbeardMod.blackbeardAchievementsGrid.render(sb, renderY[0]);
+        renderY[0] -= TheBlackbeardMod.blackbeardAchievementsGrid.calculateHeight();
         renderY[0] -= 100.0F * Settings.scale;
     }
 
