@@ -77,6 +77,10 @@ public class CustomAchievementPopupRenderer implements PostRenderSubscriber {
     }
 
     public void addAchievementToRenderQueue(BlackbeardAchievementItem achievement) {
+        if (achievement == null) {
+            return;
+        }
+
         if (font == null) {
             initializeFont();
         }
@@ -116,6 +120,9 @@ public class CustomAchievementPopupRenderer implements PostRenderSubscriber {
     }
 
     private void queueBadgeForRendering(BlackbeardAchievementItem achievement) {
+        if (achievement == null || achievement.unlockedImg == null) {
+            return;
+        }
         TextureAtlas.AtlasRegion achievementBadge = achievement.unlockedImg;
         if (achievementBadge != null) {
 
@@ -126,8 +133,6 @@ public class CustomAchievementPopupRenderer implements PostRenderSubscriber {
             fb.end();
 
             achievementsToRenderWithAssociatedDisposable.add(new GameEffectAndDisposable(getAchievementPopupElement(getAtlasRegionFromFrameBuffer(fb), BADGE_LEFT_OFFSET, BADGE_TOP_OFFSET), fb));
-        } else {
-            LOGGER.error("Achievement icon not found of achievement {}", achievement.key);
         }
     }
 

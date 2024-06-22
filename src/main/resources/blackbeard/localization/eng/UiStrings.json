@@ -16,6 +16,11 @@
       "Achievement Unlocked!"
     ]
   },
+  "blackbeard:AchievementGrid": {
+    "TEXT": [
+      "#yBlackbeard #yAchievements"
+    ]
+  },
   "blackbeard:BLACKBEARD_MASTERY": {
     "TEXT": [
       "Blackbeard Mastery",

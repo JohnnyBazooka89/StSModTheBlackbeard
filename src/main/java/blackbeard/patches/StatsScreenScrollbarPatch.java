@@ -10,15 +10,11 @@ import com.megacrit.cardcrawl.screens.stats.StatsScreen;
         clz = StatsScreen.class,
         method = "calculateScrollBounds"
 )
-public class StatScreenScrollbarPatch {
-    public static Integer NEW_ACHIEVEMENTS = 6;
-
-    public StatScreenScrollbarPatch() {
-    }
-
+public class StatsScreenScrollbarPatch {
     @SpirePostfixPatch
     public static void Postfix(StatsScreen __instance) {
         float currentUpperBound = (Float) ReflectionHacks.getPrivate(__instance, StatsScreen.class, "scrollUpperBound");
-        ReflectionHacks.setPrivate(__instance, StatsScreen.class, "scrollUpperBound", currentUpperBound + (float)(36 * NEW_ACHIEVEMENTS) * Settings.scale);
+        float blackbeardAchievementsHeight = StatsScreenPatch.getBlackbeardAchievements().calculateHeight();
+        ReflectionHacks.setPrivate(__instance, StatsScreen.class, "scrollUpperBound", currentUpperBound + (blackbeardAchievementsHeight + (50F * Settings.scale)));
     }
 }

@@ -3,20 +3,36 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.core.Settings;
-import com.megacrit.cardcrawl.screens.stats.AchievementItem;
+import com.megacrit.cardcrawl.helpers.Hitbox;
+import com.megacrit.cardcrawl.helpers.TipHelper;
+import com.megacrit.cardcrawl.helpers.input.InputHelper;
+import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
-public class BlackbeardAchievementItem extends AchievementItem {
+public class BlackbeardAchievementItem {
     public TextureAtlas.AtlasRegion unlockedImg;
-    public TextureAtlas.AtlasRegion lockedImg;
+    private TextureAtlas.AtlasRegion lockedImg;
     public TextureAtlas.AtlasRegion currentImg;
     private static final Color LOCKED_COLOR = new Color(1.0F, 1.0F, 1.0F, 0.8F);
     public static TextureAtlas atlas;
+    private String title;
+    private String desc;
+    public String key;
+    public boolean isUnlocked;
+    public Hitbox hb;
 
     public BlackbeardAchievementItem(String title, String desc, String key, boolean hidden, TextureAtlas.AtlasRegion unlockedImage, TextureAtlas.AtlasRegion lockedImage) {
-        super(title, desc, "", key, hidden);
+        this.hb = new Hitbox(160.0F * Settings.scale, 160.0F * Settings.scale);
+        this.isUnlocked = UnlockTracker.achievementPref.getBoolean(key, false);
+        this.key = key;
+        this.title = title;
+        this.desc = desc;
         this.unlockedImg = unlockedImage;
         this.lockedImg = lockedImage;
         this.currentImg = lockedImage;
+    }
+
+    public String getKey() {
+        return key;
     }
 
     public void reloadImg() {
@@ -25,7 +41,6 @@ public class BlackbeardAchievementItem extends AchievementItem {
         } else {
             this.lockedImg = atlas.findRegion(this.lockedImg.name);
         }
-
     }
 
     public void render(SpriteBatch sb, float x, float y) {
@@ -38,8 +53,16 @@ public class BlackbeardAchievementItem extends AchievementItem {
         } else {
             sb.draw(currentImg, x - (float)currentImg.packedWidth / 2.0F, y - (float)currentImg.packedHeight / 2.0F, (float)currentImg.packedWidth / 2.0F, (float)currentImg.packedHeight / 2.0F, (float)currentImg.packedWidth, (float)currentImg.packedHeight, Settings.scale, Settings.scale, 0.0F);
         }
-
         this.hb.move(x, y);
         this.hb.render(sb);
+    }
+
+    public void update() {
+        if (this.hb != null) {
+            this.hb.update();
+            if (this.hb.hovered) {
+                TipHelper.renderGenericTip((float) InputHelper.mX + 100.0F * Settings.scale, (float)InputHelper.mY, this.title, this.desc);
+            }
+        }
     }
 }

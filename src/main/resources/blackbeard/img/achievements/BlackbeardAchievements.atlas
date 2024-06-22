@@ -3,84 +3,84 @@ size: 640,640
 format: RGB888
 filter: Linear,Linear
 repeat: none
-locked/blackbeardmastery
+locked/BLACKBEARD_MASTERY
   rotate: false
   xy: 0, 0
   size: 160, 160
   orig: 160, 160
   offset: 0, 0
   index: -1
-unlocked/blackbeardmastery
+unlocked/BLACKBEARD_MASTERY
   rotate: false
   xy: 160, 0
   size: 160, 160
   orig: 160, 160
   offset: 0, 0
   index: -1
-locked/resistant
+locked/RESISTANT
   rotate: false
   xy: 320, 0
   size: 160, 160
   orig: 160, 160
   offset: 0, 0
   index: -1
-unlocked/resistant
+unlocked/RESISTANT
   rotate: false
   xy: 480, 0
   size: 160, 160
   orig: 160, 160
   offset: 0, 0
   index: -1
-locked/ultimateweapon
+locked/ULTIMATE_WEAPON
   rotate: false
   xy: 0, 160
   size: 160, 160
   orig: 160, 160
   offset: 0, 0
   index: -1
-unlocked/ultimateweapon
+unlocked/ULTIMATE_WEAPON
   rotate: false
   xy: 160, 160
   size: 160, 160
   orig: 160, 160
   offset: 0, 0
   index: -1
-locked/riches
+locked/RICHES
   rotate: false
   xy: 320, 160
   size: 160, 160
   orig: 160, 160
   offset: 0, 0
   index: -1
-unlocked/riches
+unlocked/RICHES
   rotate: false
   xy: 480, 160
   size: 160, 160
   orig: 160, 160
   offset: 0, 0
   index: -1
-locked/loadthecannons
+locked/LOAD_THE_CANNONS
   rotate: false
   xy: 0, 320
   size: 160, 160
   orig: 160, 160
   offset: 0, 0
   index: -1
-unlocked/loadthecannons
+unlocked/LOAD_THE_CANNONS
   rotate: false
   xy: 160, 320
   size: 160, 160
   orig: 160, 160
   offset: 0, 0
   index: -1
-locked/armedtotheteeth
+locked/ARMED_TO_THE_TEETH
   rotate: false
   xy: 320, 320
   size: 160, 160
   orig: 160, 160
   offset: 0, 0
   index: -1
-unlocked/armedtotheteeth
+unlocked/ARMED_TO_THE_TEETH
   rotate: false
   xy: 480, 320
   size: 160, 160
