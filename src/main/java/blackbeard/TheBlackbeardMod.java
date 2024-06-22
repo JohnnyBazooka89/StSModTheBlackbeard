@@ -299,8 +299,6 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
 
     private void initializeAchievements() {
         BlackbeardAchievementGrid grid = new BlackbeardAchievementGrid();
-        // If you need to keep a reference to this grid, store it in a field
-        BaseMod.logger.info("Achievements initialized");
     }
 
     @Override

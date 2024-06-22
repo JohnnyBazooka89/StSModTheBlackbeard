@@ -1,6 +1,5 @@
 package blackbeard.achievements;
 
-import basemod.BaseMod;
 import blackbeard.TheBlackbeardMod;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -36,10 +35,6 @@ public class BlackbeardAchievementGrid {
         String description = uiStrings.TEXT[1];
         TextureAtlas.AtlasRegion AchievementImageUnlocked = BlackbeardAchievementItem.atlas.findRegion("unlocked/" + id);
         TextureAtlas.AtlasRegion AchievementImageLocked = BlackbeardAchievementItem.atlas.findRegion("locked/" + id);
-
-        BaseMod.logger.info("Loading achievement: {} - Unlocked Image Null: {}",
-                fullId,
-                AchievementImageUnlocked == null);
 
         items.add(new BlackbeardAchievementItem(name, description, fullId, isHidden, AchievementImageUnlocked, AchievementImageLocked));
         blackbeardAchievementItems.put(fullId, new BlackbeardAchievementItem(name, description, fullId, isHidden, AchievementImageUnlocked, AchievementImageLocked));

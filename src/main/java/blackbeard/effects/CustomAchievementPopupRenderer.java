@@ -78,11 +78,8 @@ public class CustomAchievementPopupRenderer implements PostRenderSubscriber {
 
     public void addAchievementToRenderQueue(BlackbeardAchievementItem achievement) {
         if (achievement == null) {
-            BaseMod.logger.error("Attempted to add null achievement to render queue");
             return;
         }
-
-        BaseMod.logger.info("Adding achievement to render queue: {}", achievement.key);
 
         if (font == null) {
             initializeFont();
@@ -124,7 +121,6 @@ public class CustomAchievementPopupRenderer implements PostRenderSubscriber {
 
     private void queueBadgeForRendering(BlackbeardAchievementItem achievement) {
         if (achievement == null || achievement.unlockedImg == null) {
-            BaseMod.logger.info("Achievement or unlockedImg is null for achievement {}", achievement != null ? achievement.key : "unknown");
             return;
         }
         TextureAtlas.AtlasRegion achievementBadge = achievement.unlockedImg;
@@ -137,8 +133,6 @@ public class CustomAchievementPopupRenderer implements PostRenderSubscriber {
             fb.end();
 
             achievementsToRenderWithAssociatedDisposable.add(new GameEffectAndDisposable(getAchievementPopupElement(getAtlasRegionFromFrameBuffer(fb), BADGE_LEFT_OFFSET, BADGE_TOP_OFFSET), fb));
-        } else {
-            LOGGER.error("Achievement icon not found of achievement {}", achievement.key);
         }
     }
 

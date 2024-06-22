@@ -22,7 +22,6 @@ public class RenderAchievementGridPatch {
     public static void Insert(StatsScreen __instance, SpriteBatch sb, @ByRef float[] renderY) {
         renderY[0] += 50.0F * Settings.scale;
 
-        // Render the More Achievements section
         StatsScreen.renderHeader(sb, uiStrings.TEXT[0], 300.0F * Settings.scale, renderY[0]);
         StatsScreenPatch.getBlackbeardAchievements().render(sb, renderY[0]);
         renderY[0] -= StatsScreenPatch.getBlackbeardAchievements().calculateHeight();
