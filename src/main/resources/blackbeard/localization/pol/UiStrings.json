@@ -16,6 +16,11 @@
       "Osiągnięcie odblokowane!"
     ]
   },
+  "blackbeard:AchievementGrid": {
+    "TEXT": [
+      "#yCzarnobrody #yOsiągnięcia"
+    ]
+  },
   "blackbeard:BLACKBEARD_MASTERY": {
     "TEXT": [
       "Mistrzostwo Czarnobrodego",

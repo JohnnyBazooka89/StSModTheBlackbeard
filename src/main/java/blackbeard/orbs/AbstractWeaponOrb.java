@@ -161,7 +161,7 @@ public abstract class AbstractWeaponOrb extends AbstractOrb {
         if (attack >= 15 && durability >= 10) {
             AbstractPlayer p = AbstractDungeon.player;
             if (p instanceof TheBlackbeard) {
-                BlackbeardAchievementUnlocker.unlockAchievement(TheBlackbeardMod.makeAchievementKey("ULTIMATE_WEAPON"));
+                BlackbeardAchievementUnlocker.unlockAchievement("ULTIMATE_WEAPON");
             }
         }
 

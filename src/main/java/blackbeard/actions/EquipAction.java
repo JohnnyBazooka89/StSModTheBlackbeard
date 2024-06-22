@@ -49,7 +49,7 @@ public class EquipAction extends AbstractGameAction {
             if (WeaponsUtils.getNumberOfWeapons() >= 10) {
                 AbstractPlayer p = AbstractDungeon.player;
                 if (p instanceof TheBlackbeard) {
-                    BlackbeardAchievementUnlocker.unlockAchievement(TheBlackbeardMod.makeAchievementKey("ARMED_TO_THE_TEETH"));
+                    BlackbeardAchievementUnlocker.unlockAchievement("ARMED_TO_THE_TEETH");
                 }
             }
 

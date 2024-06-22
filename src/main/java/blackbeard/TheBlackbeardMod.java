@@ -28,7 +28,6 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.utils.Array;
 import com.esotericsoftware.spine.Skeleton;
@@ -294,24 +293,6 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
 
         //Achievements
         customAchievementPopupRenderer = new CustomAchievementPopupRenderer();
-        BlackbeardAchievementItem.atlas = new TextureAtlas(Gdx.files.internal("blackbeard/img/achievements/BlackbeardAchievements.atlas"));
-        addAchievement("loadthecannons", TheBlackbeardMod.makeAchievementKey("LOAD_THE_CANNONS"), false);
-        addAchievement("armedtotheteeth", TheBlackbeardMod.makeAchievementKey("ARMED_TO_THE_TEETH"), false);
-        addAchievement("ultimateweapon", TheBlackbeardMod.makeAchievementKey("ULTIMATE_WEAPON"), false);
-        addAchievement("resistant", TheBlackbeardMod.makeAchievementKey("RESISTANT"), false);
-        addAchievement("riches", TheBlackbeardMod.makeAchievementKey("RICHES"), false);
-        addAchievement("blackbeardmastery", TheBlackbeardMod.makeAchievementKey("BLACKBEARD_MASTERY"), false);
-    }
-
-    private static void addAchievement(String imgName, String id, boolean isHidden) {
-        UIStrings uiStrings = CardCrawlGame.languagePack.getUIString(id);
-        String name = uiStrings.TEXT[0];
-        String description = uiStrings.TEXT[1];
-
-        TextureAtlas.AtlasRegion AchievementImageUnlocked = BlackbeardAchievementItem.atlas.findRegion("unlocked/" + imgName);
-        TextureAtlas.AtlasRegion AchievementImageLocked = BlackbeardAchievementItem.atlas.findRegion("locked/" + imgName);
-
-        blackbeardAchievementItems.put(id, new BlackbeardAchievementItem(name, description, id, isHidden, AchievementImageUnlocked, AchievementImageLocked));
     }
 
     @Override
@@ -363,7 +344,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         AbstractPlayer p = AbstractDungeon.player;
         if ((AbstractDungeon.actNum == 3 && p.currentHealth > 0 && p instanceof TheBlackbeard) || (AbstractDungeon.actNum == 4 && p instanceof TheBlackbeard)) {
             if (GoldenCardsUtils.getBlackbeardGoldGained() >= 2500) {
-                BlackbeardAchievementUnlocker.unlockAchievement(TheBlackbeardMod.makeAchievementKey("RICHES"));
+                BlackbeardAchievementUnlocker.unlockAchievement("RICHES");
             }
         }
     }
@@ -380,7 +361,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
             if (cannonballCounter >= 10) {
                 AbstractPlayer p = AbstractDungeon.player;
                 if (p instanceof TheBlackbeard) {
-                    BlackbeardAchievementUnlocker.unlockAchievement(TheBlackbeardMod.makeAchievementKey("LOAD_THE_CANNONS"));
+                    BlackbeardAchievementUnlocker.unlockAchievement("LOAD_THE_CANNONS");
                 }
             }
         }

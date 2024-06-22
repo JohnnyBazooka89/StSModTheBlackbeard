@@ -19,7 +19,7 @@ public class BlackbeardMasteryPatch {
     public static void Postfix(VictoryScreen __instance, MonsterGroup m) {
         AbstractPlayer p = AbstractDungeon.player;
         if (p instanceof TheBlackbeard && AbstractDungeon.ascensionLevel == 20 && AbstractDungeon.actNum == 4) {
-            BlackbeardAchievementUnlocker.unlockAchievement(TheBlackbeardMod.makeAchievementKey("BLACKBEARD_MASTERY"));
+            BlackbeardAchievementUnlocker.unlockAchievement("BLACKBEARD_MASTERY");
         }
     }
 }

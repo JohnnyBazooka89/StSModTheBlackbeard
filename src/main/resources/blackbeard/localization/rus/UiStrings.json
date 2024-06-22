@@ -16,6 +16,11 @@
       "Достижение разблокировано!"
     ]
   },
+  "blackbeard:AchievementGrid": {
+    "TEXT": [
+      "#yДостижения #yЧерной #yБороды"
+    ]
+  },
   "blackbeard:BLACKBEARD_MASTERY": {
     "TEXT": [
       "Мистрзоство Черной Бороды",

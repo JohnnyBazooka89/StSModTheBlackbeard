@@ -16,6 +16,11 @@
       "成就解锁！"
     ]
   },
+  "blackbeard:AchievementGrid": {
+    "TEXT": [
+      "#y黑胡子成就"
+    ]
+  },
   "blackbeard:BLACKBEARD_MASTERY": {
     "TEXT": [
       "黑胡子精通",
