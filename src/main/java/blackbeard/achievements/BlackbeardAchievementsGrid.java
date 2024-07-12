@@ -19,9 +19,9 @@ public class BlackbeardAchievementsGrid {
 
     public BlackbeardAchievementsGrid() {
         BlackbeardAchievementItem.atlas = new TextureAtlas(Gdx.files.internal("blackbeard/img/achievements/BlackbeardAchievements.atlas"));
-        loadAchievement("LOAD_THE_CANNONS");
         loadAchievement("ARMED_TO_THE_TEETH");
         loadAchievement("ULTIMATE_WEAPON");
+        loadAchievement("LOAD_THE_CANNONS");
         loadAchievement("RESISTANT");
         loadAchievement("RICHES");
         loadAchievement("BLACKBEARD_MASTERY");
