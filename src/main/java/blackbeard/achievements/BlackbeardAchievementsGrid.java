@@ -9,11 +9,11 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class BlackbeardAchievementsGrid {
-    public Map<String, BlackbeardAchievementItem> items = new HashMap<>();
+    public Map<String, BlackbeardAchievementItem> items = new LinkedHashMap<>();
     private static final float SPACING = 200.0F * Settings.scale;
     private static final int ITEMS_PER_ROW = 5;
 
