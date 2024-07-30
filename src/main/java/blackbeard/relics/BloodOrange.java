@@ -31,10 +31,10 @@ public class BloodOrange extends AbstractBlackbeardRelic {
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (this.counter < 6) {
+        if (this.counter < 7) {
             ++this.counter;
         }
-        if (this.counter >= 6) {
+        if (this.counter >= 7) {
             this.flash();
             AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             AbstractDungeon.actionManager.addToBottom(new RemoveDebuffsAction(AbstractDungeon.player));

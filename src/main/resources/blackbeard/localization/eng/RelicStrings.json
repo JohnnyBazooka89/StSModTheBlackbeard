@@ -17,7 +17,7 @@
     "NAME": "Blood Orange",
     "FLAVOR": "This citrus seems to have an interesting power.",
     "DESCRIPTIONS": [
-      "Whenever you play #b6 cards in the same turn, remove all of your debuffs."
+      "Whenever you play #b7 cards in the same turn, remove all of your debuffs."
     ]
   },
   "blackbeard:TreasureChest": {
