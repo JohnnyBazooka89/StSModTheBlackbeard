@@ -167,7 +167,7 @@
   },
   "blackbeard:Murder": {
     "NAME": "Morderstwo",
-    "DESCRIPTION": "Zadaj !D! pkt. obrażeń     NL przeciwnikowi, który nie jest Bossem. NL Usuń tę kartę z talii.",
+    "DESCRIPTION": "Zadaj !D! pkt. obrażeń\u00a0\u00a0\u00a0\u00a0 NL przeciwnikowi, który nie jest Bossem. NL Usuń tę kartę z talii.",
     "EXTENDED_DESCRIPTION": [
       "Muszę wybrać przeciwnika, który nie jest Bossem!",
       "MORDERSTWO"
@@ -352,7 +352,7 @@
   },
   "blackbeard:FishingNets": {
     "NAME": "Sieci rybackie",
-    "DESCRIPTION": "Zyskaj !M! pkt. blackbeard:Zardzewiałych cierni."
+    "DESCRIPTION": "Zyskaj !M! pkt. blackbeard:Zardzewiałych\u00a0cierni."
   },
   "blackbeard:BuriedTreasure": {
     "NAME": "Zakopany skarb",
@@ -391,7 +391,7 @@
   },
   "blackbeard:ReapersScythe": {
     "NAME": "Kosa żniwiarza",
-    "DESCRIPTION": "Wyposaż się w blackbeard:Broń NL !M! / {D}. Kiedykolwiek zaatakujesz tą blackbeard:bronią, nałóż 3 pkt. blackbeard:Znaku żniwiarza na przeciwnika za każde [#FFF6E2]uderzenie[]."
+    "DESCRIPTION": "Wyposaż się w blackbeard:Broń NL !M! / {D}. Kiedykolwiek zaatakujesz tą blackbeard:bronią, nałóż 3 pkt. blackbeard:Znaku\u00a0żniwiarza na przeciwnika za każde [#FFF6E2]uderzenie[]."
   },
   "blackbeard:PirateHook": {
     "NAME": "Hak pirata",

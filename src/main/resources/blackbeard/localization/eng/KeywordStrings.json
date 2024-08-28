@@ -22,16 +22,16 @@
     "DESCRIPTION": "Bleeding creatures lose HP at the start of their turn."
   },
   "blackbeard:ReapersMarkKeyword": {
-    "PROPER_NAME": "Reaper's Mark",
+    "PROPER_NAME": "Reaper's\u00a0Mark",
     "NAMES": [
-      "reaper's mark"
+      "reaper's\u00a0mark"
     ],
     "DESCRIPTION": "Whenever #b3 stacks are applied, they are removed and the creature loses HP equal to #b40% of its missing HP."
   },
   "blackbeard:RustyThorns": {
-    "PROPER_NAME": "Rusty Thorns",
+    "PROPER_NAME": "Rusty\u00a0Thorns",
     "NAMES": [
-      "rusty thorns"
+      "rusty\u00a0thorns"
     ],
     "DESCRIPTION": "When attacked, deals damage back and reduces Rusty Thorns by #b1."
   }

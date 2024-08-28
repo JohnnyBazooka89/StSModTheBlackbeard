@@ -167,7 +167,7 @@
   },
   "blackbeard:Murder": {
     "NAME": "Murder",
-    "DESCRIPTION": "Deal !D! damage     NL to a non-Boss enemy. NL Fleeting.",
+    "DESCRIPTION": "Deal !D! damage\u00a0\u00a0\u00a0\u00a0 NL to a non-Boss enemy. NL Fleeting.",
     "EXTENDED_DESCRIPTION": [
       "I have to target a #rnon-Boss enemy!",
       "MURDER"
@@ -352,7 +352,7 @@
   },
   "blackbeard:FishingNets": {
     "NAME": "Fishing Nets",
-    "DESCRIPTION": "Gain !M! blackbeard:Rusty Thorns."
+    "DESCRIPTION": "Gain !M! blackbeard:Rusty\u00a0Thorns."
   },
   "blackbeard:BuriedTreasure": {
     "NAME": "Buried Treasure",
@@ -391,7 +391,7 @@
   },
   "blackbeard:ReapersScythe": {
     "NAME": "Reaper's Scythe",
-    "DESCRIPTION": "Equip a !M! / {D} blackbeard:Weapon. NL Whenever you attack with this blackbeard:Weapon, apply 1 blackbeard:Reaper's Mark to a target per hit."
+    "DESCRIPTION": "Equip a !M! / {D} blackbeard:Weapon. NL Whenever you attack with this blackbeard:Weapon, apply 1 blackbeard:Reaper's\u00a0Mark to a target per hit."
   },
   "blackbeard:PirateHook": {
     "NAME": "Pirate Hook",

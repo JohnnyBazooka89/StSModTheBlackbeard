@@ -25,18 +25,18 @@
     "DESCRIPTION": "Krwawiące istoty tracą PŻ na początku swojej tury."
   },
   "blackbeard:ReapersMarkKeyword": {
-    "PROPER_NAME": "Znak żniwiarza",
+    "PROPER_NAME": "Znak\u00a0żniwiarza",
     "NAMES": [
-      "znak żniwiarza",
-      "znaku żniwiarza"
+      "znak\u00a0żniwiarza",
+      "znaku\u00a0żniwiarza"
     ],
     "DESCRIPTION": "Każde #b3 pkt. Znaku żniwiarza powodują, że są one usunięte, a przeciwnik traci PŻ równe #b40% jego brakujących PŻ."
   },
   "blackbeard:RustyThorns": {
-    "PROPER_NAME": "Zardzewiałe ciernie",
+    "PROPER_NAME": "Zardzewiałe\u00a0ciernie",
     "NAMES": [
-      "zardzewiałe ciernie",
-      "zardzewiałych cierni"
+      "zardzewiałe\u00a0ciernie",
+      "zardzewiałych\u00a0cierni"
     ],
     "DESCRIPTION": "Kiedy jesteś atakowany, zadaj obrażenia atakującemu przeciwnikowi i zmniejsz ilość Zardzewiałych cierni o #b1."
   }

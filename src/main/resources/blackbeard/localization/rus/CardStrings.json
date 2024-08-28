@@ -344,7 +344,7 @@
   },
   "blackbeard:FishingNets": {
     "NAME": "Рыболовные сети",
-    "DESCRIPTION": "Даёт !M! blackbeard:Ржавых Шипов."
+    "DESCRIPTION": "Даёт !M! blackbeard:Ржавых\u00a0Шипов."
   },
   "blackbeard:BuriedTreasure": {
     "NAME": "Зарытое сокровище",
@@ -383,7 +383,7 @@
   },
   "blackbeard:ReapersScythe": {
     "NAME": "Коса Жнеца",
-    "DESCRIPTION": "Снаряжает вас blackbeard:Оружием !M! / {D}. Накладывает на врага 1 blackbeard:Метку Жнеца когда Атака наносит ему урон и вы используете данное blackbeard:Оружие."
+    "DESCRIPTION": "Снаряжает вас blackbeard:Оружием !M! / {D}. Накладывает на врага 1 blackbeard:Метку\u00a0Жнеца когда Атака наносит ему урон и вы используете данное blackbeard:Оружие."
   },
   "blackbeard:Murder": {
     "NAME": "Убить",
