@@ -173,6 +173,7 @@
             <resource>
                 <directory>src/main/resources</directory>
                 <includes>
+                    <include>blackbeard/localization/**</include>
                     <include>ModTheSpire.json</include>
                 </includes>
                 <filtering>true</filtering>
