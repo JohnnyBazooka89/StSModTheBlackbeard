@@ -22,6 +22,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import static blackbeard.TheBlackbeardMod.MOD_ID_PREFIX;
 import static blackbeard.TheBlackbeardMod.MOD_THE_SPIRE_MOD_ID;
 
 /* Copied from The Mystic Mod:
@@ -111,7 +112,7 @@ public class MetricsPatches {
 
         private static List<String> findTheBlackbeardAchievements() {
             return UnlockTracker.achievementPref.data.entrySet().stream()
-                    .filter(e -> e.getKey().startsWith("") && e.getValue().equals("true"))
+                    .filter(e -> e.getKey().startsWith(MOD_ID_PREFIX) && e.getValue().equals("true"))
                     .map(Map.Entry::getKey)
                     .sorted()
                     .collect(Collectors.toList());

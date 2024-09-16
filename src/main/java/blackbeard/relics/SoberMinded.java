@@ -12,7 +12,7 @@ import static blackbeard.TheBlackbeardMod.makeID;
 
 public class SoberMinded extends AbstractBlackbeardRelic {
 
-    public static final String ID = "SoberMinded";
+    public static final String ID = makeID("SoberMinded");
     private static final Texture IMG = TextureLoader.getTexture(TheBlackbeardMod.getRelicImagePath(ID));
     private static final Texture OUTLINE = TextureLoader.getTexture(TheBlackbeardMod.getRelicOutlineImagePath(ID));
 

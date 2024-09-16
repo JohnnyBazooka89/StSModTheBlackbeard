@@ -10,8 +10,10 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.UIStrings;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class PowerCardFromDrawPileToHandAction extends AbstractGameAction {
-    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("PowerCardFromDrawPileToHandAction");
+    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString(makeID("PowerCardFromDrawPileToHandAction"));
     private AbstractPlayer p;
 
     public PowerCardFromDrawPileToHandAction(int amount) {

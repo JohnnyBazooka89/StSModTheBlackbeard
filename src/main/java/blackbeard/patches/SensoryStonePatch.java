@@ -11,9 +11,11 @@ import javassist.CtBehavior;
 import java.util.ArrayList;
 import java.util.Collections;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 @SpirePatch(clz = SensoryStone.class, method = "getRandomMemory")
 public class SensoryStonePatch {
-    public static final String EVENT_ID = "SensoryStone";
+    public static final String EVENT_ID = makeID("SensoryStone");
     public static EventStrings eventStrings = CardCrawlGame.languagePack.getEventString(EVENT_ID);
     public static String[] DESCRIPTIONS = eventStrings.DESCRIPTIONS;
 
