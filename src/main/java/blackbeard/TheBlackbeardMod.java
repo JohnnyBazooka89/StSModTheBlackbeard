@@ -71,6 +71,8 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     private static final Logger logger = LogManager.getLogger(TheBlackbeardMod.class);
 
     //Mod metadata
+    public static final String MOD_ID = "blackbeard";
+    public static final String MOD_ID_PREFIX = MOD_ID + ":";
     private static final String MOD_NAME = "The Blackbeard";
     private static final String AUTHOR = "JohnnyBazooka89";
     private static final String DESCRIPTION = "Adds The Blackbeard as a new playable character.";
@@ -80,35 +82,35 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     public static final Color BLACK = CardHelper.getColor(0, 0, 0);
 
     //Card backgrounds and energy orbs
-    private static final String ATTACK_BLACK = "blackbeard/img/512/bg_attack_black.png";
-    private static final String SKILL_BLACK = "blackbeard/img/512/bg_skill_black.png";
-    private static final String POWER_BLACK = "blackbeard/img/512/bg_power_black.png";
-    private static final String ENERGY_ORB_BLACK = "blackbeard/img/512/card_black_orb.png";
+    private static final String ATTACK_BLACK = MOD_ID + "/img/512/bg_attack_black.png";
+    private static final String SKILL_BLACK = MOD_ID + "/img/512/bg_skill_black.png";
+    private static final String POWER_BLACK = MOD_ID + "/img/512/bg_power_black.png";
+    private static final String ENERGY_ORB_BLACK = MOD_ID + "/img/512/card_black_orb.png";
 
-    private static final String ATTACK_BLACK_PORTRAIT = "blackbeard/img/1024/bg_attack_black.png";
-    private static final String SKILL_BLACK_PORTRAIT = "blackbeard/img/1024/bg_skill_black.png";
-    private static final String POWER_BLACK_PORTRAIT = "blackbeard/img/1024/bg_power_black.png";
-    private static final String ENERGY_ORB_BLACK_PORTRAIT = "blackbeard/img/1024/card_black_orb.png";
+    private static final String ATTACK_BLACK_PORTRAIT = MOD_ID + "/img/1024/bg_attack_black.png";
+    private static final String SKILL_BLACK_PORTRAIT = MOD_ID + "/img/1024/bg_skill_black.png";
+    private static final String POWER_BLACK_PORTRAIT = MOD_ID + "/img/1024/bg_power_black.png";
+    private static final String ENERGY_ORB_BLACK_PORTRAIT = MOD_ID + "/img/1024/card_black_orb.png";
 
-    private static final String ENERGY_ORB_IN_DESCRIPTION = "blackbeard/img/energy/energyOrbInDescription.png";
+    private static final String ENERGY_ORB_IN_DESCRIPTION = MOD_ID + "/img/energy/energyOrbInDescription.png";
 
     //Assets
-    private static final String BUTTON = "blackbeard/img/charSelect/blackbeardButton.png";
-    private static final String PORTRAIT = "blackbeard/img/charSelect/blackbeardPortrait.jpg";
+    private static final String BUTTON = MOD_ID + "/img/charSelect/blackbeardButton.png";
+    private static final String PORTRAIT = MOD_ID + "/img/charSelect/blackbeardPortrait.jpg";
 
     //Badge
-    private static final String BADGE_IMG = "blackbeard/img/ModBadge.png";
+    private static final String BADGE_IMG = MOD_ID + "/img/ModBadge.png";
 
     //Localization strings
-    private static final String CHARACTER_STRINGS_PATH = "blackbeard/localization/%s/CharacterStrings.json";
-    private static final String RELIC_STRINGS_PATH = "blackbeard/localization/%s/RelicStrings.json";
-    private static final String CARD_STRINGS_PATH = "blackbeard/localization/%s/CardStrings.json";
-    private static final String POWER_STRINGS_PATH = "blackbeard/localization/%s/PowerStrings.json";
-    private static final String ORB_STRINGS_PATH = "blackbeard/localization/%s/OrbStrings.json";
-    private static final String KEYWORD_STRINGS_PATH = "blackbeard/localization/%s/KeywordStrings.json";
-    private static final String POTION_STRINGS_PATH = "blackbeard/localization/%s/PotionStrings.json";
-    private static final String EVENT_STRINGS_PATH = "blackbeard/localization/%s/EventStrings.json";
-    private static final String UI_STRINGS_PATH = "blackbeard/localization/%s/UiStrings.json";
+    private static final String CHARACTER_STRINGS_PATH = MOD_ID + "/localization/%s/CharacterStrings.json";
+    private static final String RELIC_STRINGS_PATH = MOD_ID + "/localization/%s/RelicStrings.json";
+    private static final String CARD_STRINGS_PATH = MOD_ID + "/localization/%s/CardStrings.json";
+    private static final String POWER_STRINGS_PATH = MOD_ID + "/localization/%s/PowerStrings.json";
+    private static final String ORB_STRINGS_PATH = MOD_ID + "/localization/%s/OrbStrings.json";
+    private static final String KEYWORD_STRINGS_PATH = MOD_ID + "/localization/%s/KeywordStrings.json";
+    private static final String POTION_STRINGS_PATH = MOD_ID + "/localization/%s/PotionStrings.json";
+    private static final String EVENT_STRINGS_PATH = MOD_ID + "/localization/%s/EventStrings.json";
+    private static final String UI_STRINGS_PATH = MOD_ID + "/localization/%s/UiStrings.json";
 
     //Languages
     private static final String DEFAULT_LANGUAGE_FOLDER = "eng";
@@ -118,22 +120,22 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
 
     //Keywords
     public static Map<String, Keyword> blackbeardKeywords = new HashMap<>();
-    public static final String WEAPON_KEYWORD = "blackbeard:WeaponKeyword";
-    public static final String RESISTANCE_KEYWORD = "blackbeard:ResistanceKeyword";
+    public static final String WEAPON_KEYWORD = makeID("WeaponKeyword");
+    public static final String RESISTANCE_KEYWORD = makeID("ResistanceKeyword");
 
     //Sounds
     public static final String SOUND_YARR_KEY = "BLACKBEARD_YARR";
     public static final String SOUND_YARR_FILEPATH = getSoundFilePath("yarr");
 
     //Christmas Theme
-    public static final String BLACKBEARD_CHRISTMAS_HAT = "blackbeard/img/char/blackbeard/christmasHat.png";
+    public static final String BLACKBEARD_CHRISTMAS_HAT = MOD_ID + "/img/char/blackbeard/christmasHat.png";
     public static final String DISABLE_CHRISTMAS_THEME_KEY = "disableChristmasTheme";
     public static final String USE_BETA_ART_FOR_THE_BLACKBEARD_CARDS_KEY = "useBetaArtForTheBlackbeardCards";
     public static final String DISABLE_EVENTS_FOR_OTHER_CHARACTERS_KEY = "disableEventsForOtherCharacters";
 
     //Mod prefs
     public static final String BLACKBEARD_MOD_PREFS_ID = "BlackbeardModPrefs";
-    public static final String BLACKBEARD_UI_SETTINGS_ID = "blackbeard:Settings";
+    public static final String BLACKBEARD_UI_SETTINGS_ID = makeID("Settings");
     public static Prefs modPrefs; //initialized in receivePostInitialize
 
     //Custom Fonts
@@ -160,36 +162,40 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
 
     }
 
+    public static String makeID(String id) {
+        return MOD_ID_PREFIX + id;
+    }
+
     public static String getCardImagePath(String cardId) {
-        return "blackbeard/img/cards/" + cardId.replaceFirst("blackbeard:", "") + ".png";
+        return MOD_ID + "/img/cards/" + cardId.replaceFirst(MOD_ID_PREFIX, "") + ".png";
     }
 
     public static String getRelicImagePath(String relicId) {
-        return "blackbeard/img/relics/" + relicId.replaceFirst("blackbeard:", "") + ".png";
+        return MOD_ID + "/img/relics/" + relicId.replaceFirst(MOD_ID_PREFIX, "") + ".png";
     }
 
     public static String getRelicOutlineImagePath(String relicId) {
-        return "blackbeard/img/relics/outlines/" + relicId.replaceFirst("blackbeard:", "") + ".png";
+        return MOD_ID + "/img/relics/outlines/" + relicId.replaceFirst(MOD_ID_PREFIX, "") + ".png";
     }
 
     public static String getOrbImagePath(String orbId) {
-        return "blackbeard/img/orbs/" + orbId.replaceFirst("blackbeard:", "") + ".png";
+        return MOD_ID + "/img/orbs/" + orbId.replaceFirst(MOD_ID_PREFIX, "") + ".png";
     }
 
     public static String getPower128ImagePath(String powerId) {
-        return "blackbeard/img/powers/128/" + powerId.replaceFirst("blackbeard:", "").replaceFirst("Power", "") + ".png";
+        return MOD_ID + "/img/powers/128/" + powerId.replaceFirst(MOD_ID_PREFIX, "").replaceFirst("Power", "") + ".png";
     }
 
     public static String getPower48ImagePath(String powerId) {
-        return "blackbeard/img/powers/48/" + powerId.replaceFirst("blackbeard:", "").replaceFirst("Power", "") + ".png";
+        return MOD_ID + "/img/powers/48/" + powerId.replaceFirst(MOD_ID_PREFIX, "").replaceFirst("Power", "") + ".png";
     }
 
     public static String getVfxImagePath(String vfxName) {
-        return "blackbeard/img/vfx/" + vfxName + ".png";
+        return MOD_ID + "/img/vfx/" + vfxName + ".png";
     }
 
     public static String getEventImagePath(String eventId) {
-        return getJpgOrPngForPath("blackbeard/img/events/" + eventId.replaceFirst("blackbeard:", "").replaceFirst("Event", ""));
+        return getJpgOrPngForPath(MOD_ID + "/img/events/" + eventId.replaceFirst(MOD_ID_PREFIX, "").replaceFirst("Event", ""));
     }
 
     private static String getJpgOrPngForPath(String path) {
@@ -203,15 +209,11 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     }
 
     public static String getSoundFilePath(String soundName) {
-        return "blackbeard/sounds/" + soundName + ".wav";
+        return MOD_ID + "/sounds/" + soundName + ".wav";
     }
 
     public static String getHeartPanelImagePath(int i) {
-        return "blackbeard/img/char/blackbeard/heart/blackbeard" + i + ".png";
-    }
-
-    public static String makeAchievementKey(String key) {
-        return "blackbeard:" + key;
+        return MOD_ID + "/img/char/blackbeard/heart/blackbeard" + i + ".png";
     }
 
     public static void initialize() {
@@ -287,9 +289,9 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
         Color rumHybridColor = new Color(160 / 255.0F, 77 / 255.0F, 0, 1);
         Color orangeJuiceLiquidColor = new Color(255 / 255.0F, 179 / 255.0F, 63 / 255.0F, 1);
         Color orangeJuiceSpotsColor = new Color(255 / 255.0F, 154 / 255.0F, 0 / 255.0F, 1);
-        BaseMod.addPotion(RumPotion.class, rumLiquidColor.cpy(), rumHybridColor.cpy(), null, "blackbeard:RumPotion", PlayerClassEnum.BLACKBEARD_CLASS);
-        BaseMod.addPotion(OrangeJuicePotion.class, orangeJuiceLiquidColor.cpy(), null, orangeJuiceSpotsColor.cpy(), "blackbeard:OrangeJuicePotion", PlayerClassEnum.BLACKBEARD_CLASS);
-        BaseMod.addPotion(UpgradePotion.class, Color.DARK_GRAY.cpy(), Color.CORAL.cpy(), null, "blackbeard:UpgradePotion", PlayerClassEnum.BLACKBEARD_CLASS);
+        BaseMod.addPotion(RumPotion.class, rumLiquidColor.cpy(), rumHybridColor.cpy(), null, makeID("RumPotion"), PlayerClassEnum.BLACKBEARD_CLASS);
+        BaseMod.addPotion(OrangeJuicePotion.class, orangeJuiceLiquidColor.cpy(), null, orangeJuiceSpotsColor.cpy(), makeID("OrangeJuicePotion"), PlayerClassEnum.BLACKBEARD_CLASS);
+        BaseMod.addPotion(UpgradePotion.class, Color.DARK_GRAY.cpy(), Color.CORAL.cpy(), null, makeID("UpgradePotion"), PlayerClassEnum.BLACKBEARD_CLASS);
 
         //Achievements
         blackbeardAchievementsGrid = new BlackbeardAchievementsGrid();
@@ -437,7 +439,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
 
         keywords.forEach((k, v) -> {
             blackbeardKeywords.put(k, v);
-            BaseMod.addKeyword("blackbeard:", v.PROPER_NAME, v.NAMES, v.DESCRIPTION);
+            BaseMod.addKeyword(MOD_ID_PREFIX, v.PROPER_NAME, v.NAMES, v.DESCRIPTION);
         });
     }
 

@@ -11,9 +11,11 @@ import javassist.CtBehavior;
 
 import java.util.Iterator;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 @SpirePatch(clz = StatsScreen.class, method = "renderStatScreen")
 public class RenderAchievementGridPatch {
-    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("blackbeard:AchievementGrid");
+    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString(makeID("AchievementGrid"));
 
     @SpireInsertPatch(locator = Locator.class, localvars = {"renderY"})
     public static void Insert(StatsScreen __instance, SpriteBatch sb, @ByRef float[] renderY) {

@@ -14,8 +14,10 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class PenknifePower extends AbstractPower {
-    public static final String POWER_ID = "blackbeard:PenknifePower";
+    public static final String POWER_ID = makeID("PenknifePower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

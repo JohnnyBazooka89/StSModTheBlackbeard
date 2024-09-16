@@ -1,19 +1,19 @@
 {
-  "blackbeard:RumPotion": {
+  "${modID}:RumPotion": {
     "NAME": "Rum",
     "DESCRIPTIONS": [
       "Gain #b",
       " #yResistance."
     ]
   },
-  "blackbeard:OrangeJuicePotion": {
+  "${modID}:OrangeJuicePotion": {
     "NAME": "Orange Juice",
     "DESCRIPTIONS": [
       "Heal #b",
       " HP. Remove all of your debuffs."
     ]
   },
-  "blackbeard:UpgradePotion": {
+  "${modID}:UpgradePotion": {
     "NAME": "Upgrade Potion",
     "DESCRIPTIONS": [
       "Give all your equipped #yWeapons #b+",

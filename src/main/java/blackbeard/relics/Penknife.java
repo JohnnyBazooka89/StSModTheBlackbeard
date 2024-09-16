@@ -11,9 +11,11 @@ import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class Penknife extends AbstractBlackbeardRelic {
 
-    public static final String ID = "blackbeard:Penknife";
+    public static final String ID = makeID("Penknife");
     public static final int COUNT = 8;
     private static final Texture IMG = TextureLoader.getTexture(TheBlackbeardMod.getRelicImagePath(ID));
     private static final Texture OUTLINE = TextureLoader.getTexture(TheBlackbeardMod.getRelicOutlineImagePath(ID));

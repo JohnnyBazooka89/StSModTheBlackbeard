@@ -14,6 +14,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <!-- Path where your Slay the Spire is installed -->
+        <modID>blackbeard</modID>
         <slayTheSpirePath>D:\SteamLibrary\steamapps\common\SlayTheSpire</slayTheSpirePath>
         <cardArtSourcePath>${project.build.sourceDirectory}/../resources/blackbeard/img/cards/</cardArtSourcePath>
         <cardArtDestinationPath>${project.build.outputDirectory}/../copiedCardArt/blackbeard/img/cards/

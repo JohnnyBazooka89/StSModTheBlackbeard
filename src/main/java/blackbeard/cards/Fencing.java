@@ -9,9 +9,11 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class Fencing extends AbstractBlackbeardCard {
 
-    public static final String ID = "blackbeard:Fencing";
+    public static final String ID = makeID("Fencing");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final int COST = 1;
     private static final int UPGRADE_VALUE = 2;
@@ -25,8 +27,6 @@ public class Fencing extends AbstractBlackbeardCard {
 
         this.baseMagicNumber = this.magicNumber = UPGRADE_VALUE;
     }
-
-
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new UpgradeWeaponsAction(this.magicNumber + 2, this.magicNumber, WeaponsToUseEnum.ONLY_RIGHTMOST_WEAPON));

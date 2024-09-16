@@ -1,5 +1,5 @@
 {
-  "blackbeard:BlackbeardCharacter": {
+  "${modID}:BlackbeardCharacter": {
     "NAMES": [
       "The Blackbeard",
       "the Blackbeard"
@@ -10,12 +10,12 @@
       "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us,~ ~oh~ ~Great~ ~Captain,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~"
     ]
   },
-  "blackbeard:ChristmasThemeGreeting": {
+  "${modID}:ChristmasThemeGreeting": {
     "TEXT": [
       "Yo, ho, ho! NL Merry Christmas!"
     ]
   },
-  "blackbeard:CaptainAbeEncounter": {
+  "${modID}:CaptainAbeEncounter": {
     "TEXT": [
       "Arr, this is my territory!",
       "Yarr harr! Taste my cutlass!",
@@ -23,7 +23,7 @@
       "There can be only one Captain in the Spire."
     ]
   },
-  "blackbeard:MaximumWeaponsReached": {
+  "${modID}:MaximumWeaponsReached": {
     "TEXT": [
       "I can't hold more than #r10 Weapons."
     ]

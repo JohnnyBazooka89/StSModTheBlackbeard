@@ -6,9 +6,11 @@ import blackbeard.utils.TextureLoader;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class CannonballsOfSteel extends AbstractBlackbeardRelic {
 
-    public static final String ID = "blackbeard:CannonballsOfSteel";
+    public static final String ID = makeID("CannonballsOfSteel");
     private static final Texture IMG = TextureLoader.getTexture(TheBlackbeardMod.getRelicImagePath(ID));
     private static final Texture OUTLINE = TextureLoader.getTexture(TheBlackbeardMod.getRelicOutlineImagePath(ID));
 

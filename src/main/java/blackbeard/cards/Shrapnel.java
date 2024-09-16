@@ -12,8 +12,10 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.DaggerSprayEffect;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class Shrapnel extends AbstractBlackbeardCard {
-    public static final String ID = "blackbeard:Shrapnel";
+    public static final String ID = makeID("Shrapnel");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

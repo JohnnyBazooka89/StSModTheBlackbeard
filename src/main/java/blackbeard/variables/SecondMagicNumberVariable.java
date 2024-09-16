@@ -4,11 +4,13 @@ import basemod.abstracts.DynamicVariable;
 import blackbeard.interfaces.ISecondMagicNumber;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class SecondMagicNumberVariable extends DynamicVariable {
 
     @Override
     public String key() {
-        return "blackbeard:M2";
+        return makeID("M2");
     }
 
     @Override

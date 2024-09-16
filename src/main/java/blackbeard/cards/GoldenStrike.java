@@ -14,8 +14,10 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.GoldenSlashEffect;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class GoldenStrike extends AbstractBlackbeardCard implements IGoldenCard {
-    public static final String ID = "blackbeard:GoldenStrike";
+    public static final String ID = makeID("GoldenStrike");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

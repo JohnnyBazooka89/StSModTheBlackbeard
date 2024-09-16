@@ -1,57 +1,57 @@
 {
-  "blackbeard:PowerCardFromDrawPileToHandAction": {
+  "${modID}:PowerCardFromDrawPileToHandAction": {
     "TEXT": [
       "选择一张能力牌加入你的手牌。"
     ]
   },
-  "blackbeard:Settings": {
+  "${modID}:Settings": {
     "TEXT": [
       "禁用圣诞主题（仅在12月的最后两周可用）。",
       "对所有黑胡子卡使用测试版艺术。",
       "为其他角色禁用“船骸”事件。"
     ]
   },
-  "blackbeard:Achievements": {
+  "${modID}:Achievements": {
     "TEXT": [
       "成就解锁！"
     ]
   },
-  "blackbeard:AchievementGrid": {
+  "${modID}:AchievementGrid": {
     "TEXT": [
       "#y黑胡子成就"
     ]
   },
-  "blackbeard:BLACKBEARD_MASTERY": {
+  "${modID}:BLACKBEARD_MASTERY": {
     "TEXT": [
       "黑胡子精通",
       "作为黑胡子，在扬升等级20完成结局。"
     ]
   },
-  "blackbeard:RESISTANT": {
+  "${modID}:RESISTANT": {
     "TEXT": [
       "抗性",
       "作为黑胡子，拥有10个或更多的抗性。"
     ]
   },
-  "blackbeard:ULTIMATE_WEAPON": {
+  "${modID}:ULTIMATE_WEAPON": {
     "TEXT": [
       "终极武器",
       "作为黑胡子，装备一个15/10的武器。"
     ]
   },
-  "blackbeard:RICHES": {
+  "${modID}:RICHES": {
     "TEXT": [
       "财富!",
       "作为黑胡子，在积累至少2500金币后赢得一次运行。"
     ]
   },
-  "blackbeard:LOAD_THE_CANNONS": {
+  "${modID}:LOAD_THE_CANNONS": {
     "TEXT": [
       "装填炮弹",
       "作为黑胡子，在一次战斗中使用10张或以上的炮弹卡。"
     ]
   },
-  "blackbeard:ARMED_TO_THE_TEETH": {
+  "${modID}:ARMED_TO_THE_TEETH": {
     "TEXT": [
       "武装到牙齿",
       "作为黑胡子，一次装备10件武器。"

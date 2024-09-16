@@ -1,5 +1,5 @@
 {
-  "blackbeard:AbstractWeaponOrb": {
+  "${modID}:AbstractWeaponOrb": {
     "NAME": "Broń",
     "DESCRIPTION": [
       " NL ",
@@ -8,81 +8,81 @@
       "Wytrzymałość: #b"
     ]
   },
-  "blackbeard:CutlassOrb": {
+  "${modID}:CutlassOrb": {
     "NAME": "Kordelas",
     "DESCRIPTION": [
       ""
     ]
   },
-  "blackbeard:HalberdOrb": {
+  "${modID}:HalberdOrb": {
     "NAME": "Halabarda",
     "DESCRIPTION": [
       "Kiedykolwiek zaatakujesz tą bronią, nałóż #b2 pkt. #yKrwawienia na przeciwnika za każde uderzenie."
     ]
   },
-  "blackbeard:PowderKegOrb": {
+  "${modID}:PowderKegOrb": {
     "NAME": "Beczka prochu",
     "DESCRIPTION": [
       "Gdy zostanie zniszczona, zadaj #b",
       " pkt. obrażeń WSZYSTKIM przeciwnikom."
     ]
   },
-  "blackbeard:SwordOfWisdomOrb": {
+  "${modID}:SwordOfWisdomOrb": {
     "NAME": "Miecz mądrości",
     "DESCRIPTION": [
       "Kiedykolwiek zaatakujesz tą bronią, dobierz #b1 kartę."
     ]
   },
-  "blackbeard:SwordOfChaosOrb": {
+  "${modID}:SwordOfChaosOrb": {
     "NAME": "Miecz chaosu",
     "DESCRIPTION": [
       "Kiedykolwiek zaatakujesz tą bronią, dodaj losową kartę do ręki."
     ]
   },
-  "blackbeard:CatONineTailsOrb": {
+  "${modID}:CatONineTailsOrb": {
     "NAME": "Kańczug",
     "DESCRIPTION": [
       "Po każdym ataku tą bronią, daj jej #b+2 Ataku."
     ]
   },
-  "blackbeard:DaggerOrb": {
+  "${modID}:DaggerOrb": {
     "NAME": "Sztylet",
     "DESCRIPTION": [
       "Na początku każdej tury, #b1 pkt. Wytrzymałości Sztyletu jest użyty, aby zadać obrażenia równe jego pkt. Ataku losowemu przeciwnikowi."
     ]
   },
-  "blackbeard:SwordOrb": {
+  "${modID}:SwordOrb": {
     "NAME": "Miecz",
     "DESCRIPTION": [
       ""
     ]
   },
-  "blackbeard:SmithingHammerOrb": {
+  "${modID}:SmithingHammerOrb": {
     "NAME": "Młot kuźniczy",
     "DESCRIPTION": [
       "Po ataku tą bronią i pasywnie na starcie każdej tury używając #b1 pkt. Wytrzymałości, ulepsz losową kartę z ręki do końca walki."
     ]
   },
-  "blackbeard:SpearOrb": {
+  "${modID}:SpearOrb": {
     "NAME": "Włócznia",
     "DESCRIPTION": [
       ""
     ]
   },
-  "blackbeard:SwordOfFireOrb": {
+  "${modID}:SwordOfFireOrb": {
     "NAME": "Miecz ognia",
     "DESCRIPTION": [
       "Kiedykolwiek zaatakujesz tą bronią, zadaj #b3 pkt. obrażeń WSZYSTKIM przeciwnikom."
     ]
   },
-  "blackbeard:VampiricScepterOrb": {
+  "${modID}:VampiricScepterOrb": {
     "NAME": "Vampiric Scepter",
     "DESCRIPTION": [
       "Kiedykolwiek zaatakujesz tą bronią, przywróć #b",
       " PŻ."
     ]
   },
-  "blackbeard:ReapersScytheOrb": {
+  "${modID}:ReapersScytheOrb": {
     "NAME": "Reaper's Scythe",
     "DESCRIPTION": [
       "Kiedykolwiek zaatakujesz tą bronią, nałóż #b3 pkt. #yZnaku #yżniwiarza na przeciwnika za każde uderzenie."

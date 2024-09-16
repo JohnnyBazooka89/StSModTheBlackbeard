@@ -24,6 +24,8 @@ import com.megacrit.cardcrawl.localization.OrbStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import org.apache.commons.lang3.StringUtils;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public abstract class AbstractWeaponOrb extends AbstractOrb {
 
     protected int attack;
@@ -34,7 +36,7 @@ public abstract class AbstractWeaponOrb extends AbstractOrb {
 
     protected float offset = MathUtils.random(-180.0F, 180.0F);
 
-    public static final String ABSTRACT_WEAPON_ORB_ID = "blackbeard:AbstractWeaponOrb";
+    public static final String ABSTRACT_WEAPON_ORB_ID = makeID("AbstractWeaponOrb");
     private static final OrbStrings orbStrings = CardCrawlGame.languagePack.getOrbString(ABSTRACT_WEAPON_ORB_ID);
 
     public AbstractWeaponOrb(String id, String name, String rawDescription, String imagePath, int attack, int durability, boolean justAddedUsingAttackCard) {

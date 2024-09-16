@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.UIStrings;
 
 public class PowerCardFromDrawPileToHandAction extends AbstractGameAction {
-    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("blackbeard:PowerCardFromDrawPileToHandAction");
+    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("PowerCardFromDrawPileToHandAction");
     private AbstractPlayer p;
 
     public PowerCardFromDrawPileToHandAction(int amount) {

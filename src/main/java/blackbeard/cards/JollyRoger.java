@@ -11,9 +11,11 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.WeakPower;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class JollyRoger extends AbstractBlackbeardCard {
 
-    public static final String ID = "blackbeard:JollyRoger";
+    public static final String ID = makeID("JollyRoger");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

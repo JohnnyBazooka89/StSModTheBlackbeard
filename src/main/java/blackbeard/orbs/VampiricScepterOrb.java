@@ -6,9 +6,11 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.OrbStrings;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class VampiricScepterOrb extends AbstractWeaponOrb {
 
-    public static final String ID = "blackbeard:VampiricScepterOrb";
+    public static final String ID = makeID("VampiricScepterOrb");
     private static final OrbStrings orbStrings = CardCrawlGame.languagePack.getOrbString(ID);
     public static final String NAME = orbStrings.NAME;
     public static final String[] DESCRIPTION = orbStrings.DESCRIPTION;

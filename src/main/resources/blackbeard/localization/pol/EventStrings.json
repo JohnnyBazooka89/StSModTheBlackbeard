@@ -1,5 +1,5 @@
 {
-  "blackbeard:Ssssserpent": {
+  "${modID}:Ssssserpent": {
     "NAME": "Gadzina",
     "DESCRIPTIONS": [
       "\"Ho, ho, hooo! NL NL Doceniam twój entuzjazm. NL NL Złoto i ssskarby. Złoto i ssskarby. NL ~ZŁOTO~ ~I~ ~SSSKABRY.~ NL NL ~WEŹ~ ~TO!~ @*WEŹ*@ @*TOOOOO*!\"@"
@@ -10,7 +10,7 @@
       "[Przyjmij Artefakt]"
     ]
   },
-  "blackbeard:Vampires": {
+  "${modID}:Vampires": {
     "NAME": "Wampiry(?)",
     "DESCRIPTIONS": [
       "\"Aha, czyli jesteś zainteresowany broniami wzmocnionymi naszą ~MOCĄ?~ NL NL Jak sobie życzysz, za złoto które oferujesz, mogę ci dać to #y~Berło~ #y~wampirów.~ NL NL Być może następnym razem dołączysz do nas, aby żywić się #rkrwią swoimi własnymi zębami.\""
@@ -22,12 +22,12 @@
       " szt. złota."
     ]
   },
-  "blackbeard:SensoryStone": {
+  "${modID}:SensoryStone": {
     "DESCRIPTIONS": [
       "#y<Dawno, #ydawno #ytemu #yw #ymałej #ytawernie, #ygdzieś #ypośrodku #yniczego> NL - @Barman!@ Daj mi swój najmocniejszy rum!!! NL - Najmocniejszy rum w tej tawernie? Jesteś pewny? Znałem tylko jednego człowieka, który potrafił to wypić... był niesamowitym piratem... największym piratem wszechczasów... NL - Hahaha. Ten człowiek to mit, a ty mówisz, że go znałeś? ~Jesteś~ ~śmieszny.~ NL - On naprawdę istniał i mam na to dowód. Spójrz na tę złotą monetę, którą mi zapłacił... on miał 10000 takich monet. Kochał złoto, nawet bardziej niż rum z tej tawerny... NL - 10000 złotych monet? To gdzie on teraz jest? I gdzie są te jego skarby? NL - Wciąż chciał więcej... Nigdy nie powinien był zawrzeć umowy z tym mówiącym wielorybem... NL - Czekaj, co? ~Mówiący...~ ~wieloryb?...~"
     ]
   },
-  "blackbeard:GoldsmithEvent": {
+  "${modID}:GoldsmithEvent": {
     "NAME": "Złotnik",
     "DESCRIPTIONS": [
       "Podczas przemierzania Exordium, zauważyłeś dziwnie wyglądającego mężczyznę pracującego w warsztacie. NL NL - ~Cześć!~ Jestem złotnikiem! Czy wiesz, że złoto z tej iglicy może być użyte do ozłocenia twoich kart? Może spróbujesz ze swoim Uderzeniem lub Obroną? NL NL Nie jesteś pewny, co do tego pomysłu, ale przecież nie zaszkodzi spróbować.",
@@ -47,7 +47,7 @@
       "[Wyrusz w dalszą drogę]"
     ]
   },
-  "blackbeard:ShipwreckEvent": {
+  "${modID}:ShipwreckEvent": {
     "NAME": "Wrak statku",
     "DESCRIPTIONS": [
       "Podróżując przez Miasto, zauważyłeś #ydoki, których nigdy wcześniej nie widziałeś. Podszedłszy bliżej, odkryłeś dziwnie wyglądający #ywrak #ystatku, w którym mogą być użyteczne przedmioty. Możesz zdecydować się przeszukać którąś z części statku, ale z drugiej strony boisz się, że takie przeszukiwanie może być #rwyczerpujące.",

@@ -7,9 +7,11 @@ import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class TreasureChest extends AbstractBlackbeardRelic {
 
-    public static final String ID = "blackbeard:TreasureChest";
+    public static final String ID = makeID("TreasureChest");
     private static final Texture IMG = TextureLoader.getTexture(TheBlackbeardMod.getRelicImagePath(ID));
     private static final Texture OUTLINE = TextureLoader.getTexture(TheBlackbeardMod.getRelicOutlineImagePath(ID));
 

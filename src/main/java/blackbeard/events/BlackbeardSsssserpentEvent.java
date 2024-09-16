@@ -10,8 +10,10 @@ import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.vfx.RainingGoldEffect;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class BlackbeardSsssserpentEvent extends AbstractImageEvent {
-    public static final String ID = "blackbeard:Ssssserpent";
+    public static final String ID = makeID("Ssssserpent");
     private static final EventStrings eventStrings;
     private static final EventStrings customEventStrings;
     public static final String NAME;

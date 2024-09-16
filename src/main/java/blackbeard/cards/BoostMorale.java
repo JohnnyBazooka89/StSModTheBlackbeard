@@ -17,9 +17,11 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.RainingGoldEffect;
 import com.megacrit.cardcrawl.vfx.SpotlightPlayerEffect;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class BoostMorale extends AbstractBlackbeardCard {
 
-    public static final String ID = "blackbeard:BoostMorale";
+    public static final String ID = makeID("BoostMorale");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

@@ -4,11 +4,12 @@ import blackbeard.TheBlackbeardMod;
 import blackbeard.achievements.BlackbeardAchievementItem;
 import com.megacrit.cardcrawl.core.Settings;
 
+import static blackbeard.TheBlackbeardMod.makeID;
 import static com.megacrit.cardcrawl.unlock.UnlockTracker.achievementPref;
 
 public class BlackbeardAchievementUnlocker {
     public static void unlockAchievement(String key) {
-        String fullKey = TheBlackbeardMod.makeAchievementKey(key);
+        String fullKey = makeID(key);
 
         if (!Settings.isShowBuild && Settings.isStandardRun()) {
             if (!achievementPref.getBoolean(fullKey, false)) {

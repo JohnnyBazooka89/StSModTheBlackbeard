@@ -1,69 +1,69 @@
 {
-  "blackbeard:Strike": {
+  "${modID}:Strike": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage."
   },
-  "blackbeard:Defend": {
+  "${modID}:Defend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
-  "blackbeard:Cutlass": {
+  "${modID}:Cutlass": {
     "NAME": "Cutlass",
-    "DESCRIPTION": "Equip a {A} / {D} blackbeard:Weapon."
+    "DESCRIPTION": "Equip a {A} / {D} ${modID}:Weapon."
   },
-  "blackbeard:Upgrade": {
+  "${modID}:Upgrade": {
     "NAME": "Upgrade",
-    "DESCRIPTION": "Give all your equipped blackbeard:Weapons + !M! / + !M!."
+    "DESCRIPTION": "Give all your equipped ${modID}:Weapons + !M! / + !M!."
   },
-  "blackbeard:Sharpening": {
+  "${modID}:Sharpening": {
     "NAME": "Sharpening",
-    "DESCRIPTION": "Give all your equipped blackbeard:Weapons + !M! Attack."
+    "DESCRIPTION": "Give all your equipped ${modID}:Weapons + !M! Attack."
   },
-  "blackbeard:RearmingStrike": {
+  "${modID}:RearmingStrike": {
     "NAME": "Rearming Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Equip a {A} / {D} blackbeard:Weapon."
+    "DESCRIPTION": "Deal !D! damage. NL Equip a {A} / {D} ${modID}:Weapon."
   },
-  "blackbeard:Fencing": {
+  "${modID}:Fencing": {
     "NAME": "Fencing",
-    "DESCRIPTION": "Give your rightmost blackbeard:Weapon + !blackbeard:M+2! / + !M!."
+    "DESCRIPTION": "Give your rightmost ${modID}:Weapon + !${modID}:M+2! / + !M!."
   },
-  "blackbeard:Parrot": {
+  "${modID}:Parrot": {
     "NAME": "Parrot",
     "DESCRIPTION": "Ethereal. NL At the end of your turn, the last card played that turn is played again. NL (Does not stack.)",
     "UPGRADE_DESCRIPTION": "At the end of your turn, the last card played that turn is played again. NL (Does not stack.)"
   },
-  "blackbeard:Halberd": {
+  "${modID}:Halberd": {
     "NAME": "Halberd",
-    "DESCRIPTION": "Equip a !M! / {D} blackbeard:Weapon. NL Whenever you attack with this blackbeard:Weapon, apply 3 blackbeard:Bleed to a target per hit."
+    "DESCRIPTION": "Equip a !M! / {D} ${modID}:Weapon. NL Whenever you attack with this ${modID}:Weapon, apply 3 ${modID}:Bleed to a target per hit."
   },
-  "blackbeard:DrunkenSailor": {
+  "${modID}:DrunkenSailor": {
     "NAME": "Drunken Sailor",
     "DESCRIPTION": "Whenever you use a potion, its effect is applied an additional time."
   },
-  "blackbeard:SwordDance": {
+  "${modID}:SwordDance": {
     "NAME": "Sword Dance",
-    "DESCRIPTION": "This turn, your next !M! Attacks use all equipped blackbeard:Weapons.",
-    "UPGRADE_DESCRIPTION": "This turn, your next !M! Attacks use all equipped blackbeard:Weapons."
+    "DESCRIPTION": "This turn, your next !M! Attacks use all equipped ${modID}:Weapons.",
+    "UPGRADE_DESCRIPTION": "This turn, your next !M! Attacks use all equipped ${modID}:Weapons."
   },
-  "blackbeard:Cannonball": {
+  "${modID}:Cannonball": {
     "NAME": "Cannonball",
     "DESCRIPTION": "Deal !D! damage. NL Exhaust."
   },
-  "blackbeard:CannonBarrage": {
+  "${modID}:CannonBarrage": {
     "NAME": "Cannon Barrage",
     "DESCRIPTION": "Add X+1 *Cannonballs into your hand.",
     "UPGRADE_DESCRIPTION": "Add X+1 *Cannonballs+ into your hand."
   },
-  "blackbeard:Rum": {
+  "${modID}:Rum": {
     "NAME": "Rum",
-    "DESCRIPTION": "Gain !M! blackbeard:Resistance.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Gain !M! blackbeard:Resistance."
+    "DESCRIPTION": "Gain !M! ${modID}:Resistance.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Gain !M! ${modID}:Resistance."
   },
-  "blackbeard:GhostInTheRum": {
+  "${modID}:GhostInTheRum": {
     "NAME": "Ghost in the Rum",
-    "DESCRIPTION": "Gain 1 Intangible. NL Lose !M! blackbeard:Resistance. NL Exhaust."
+    "DESCRIPTION": "Gain 1 Intangible. NL Lose !M! ${modID}:Resistance. NL Exhaust."
   },
-  "blackbeard:GoldenStrike": {
+  "${modID}:GoldenStrike": {
     "NAME": "Golden Strike",
     "DESCRIPTION": "Deal damage equal to NL 1.5% of Gold gained NL this run.",
     "UPGRADE_DESCRIPTION": "Deal damage equal to NL !M! + 1.5% of Gold gained NL this run.",
@@ -73,43 +73,43 @@
       " Gold this run."
     ]
   },
-  "blackbeard:PowderKeg": {
+  "${modID}:PowderKeg": {
     "NAME": "Powder Keg",
-    "DESCRIPTION": "Equip a {A} / {D} blackbeard:Weapon. NL When it is destroyed, deal !M! damage to ALL enemies."
+    "DESCRIPTION": "Equip a {A} / {D} ${modID}:Weapon. NL When it is destroyed, deal !M! damage to ALL enemies."
   },
-  "blackbeard:Scrap": {
+  "${modID}:Scrap": {
     "NAME": "Scrap",
-    "DESCRIPTION": "Destroy your rightmost blackbeard:Weapon to gain [E] [E].",
-    "UPGRADE_DESCRIPTION": "Destroy your rightmost blackbeard:Weapon to gain [E] [E] [E].",
+    "DESCRIPTION": "Destroy your rightmost ${modID}:Weapon to gain [E] [E].",
+    "UPGRADE_DESCRIPTION": "Destroy your rightmost ${modID}:Weapon to gain [E] [E] [E].",
     "EXTENDED_DESCRIPTION": [
       "I don't have a Weapon!"
     ]
   },
-  "blackbeard:RemoveScurvy": {
+  "${modID}:RemoveScurvy": {
     "NAME": "Remove Scurvy",
     "DESCRIPTION": "Heal !M! HP. NL Remove all of your debuffs. NL Exhaust."
   },
-  "blackbeard:InfiniteBarrage": {
+  "${modID}:InfiniteBarrage": {
     "NAME": "Infinite Barrage",
     "DESCRIPTION": "At the start of your turn, add a *Cannonball into your hand."
   },
-  "blackbeard:SwordOfWisdom": {
+  "${modID}:SwordOfWisdom": {
     "NAME": "Sword of Wisdom",
-    "DESCRIPTION": "Equip a {A} / !M! blackbeard:Weapon. NL Whenever you attack with this blackbeard:Weapon, draw 1 card."
+    "DESCRIPTION": "Equip a {A} / !M! ${modID}:Weapon. NL Whenever you attack with this ${modID}:Weapon, draw 1 card."
   },
-  "blackbeard:SwordOfChaos": {
+  "${modID}:SwordOfChaos": {
     "NAME": "Sword of Chaos",
-    "DESCRIPTION": "Equip a {A} / !M! blackbeard:Weapon. NL Whenever you attack with this blackbeard:Weapon, add a random card into your hand."
+    "DESCRIPTION": "Equip a {A} / !M! ${modID}:Weapon. NL Whenever you attack with this ${modID}:Weapon, add a random card into your hand."
   },
-  "blackbeard:PirateStrength": {
+  "${modID}:PirateStrength": {
     "NAME": "Pirate Strength",
     "DESCRIPTION": "Gain !M! Strength."
   },
-  "blackbeard:HumongousCannonball": {
+  "${modID}:HumongousCannonball": {
     "NAME": "Humongous Cannonball",
     "DESCRIPTION": "Deal !D! damage. NL Exhaust."
   },
-  "blackbeard:GoldenCannonball": {
+  "${modID}:GoldenCannonball": {
     "NAME": "Golden Cannonball",
     "DESCRIPTION": "Deal damage equal to NL 2% of Gold gained this run. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Deal damage equal to NL !M! + 2% of Gold gained this run. NL Exhaust.",
@@ -119,27 +119,27 @@
       " Gold this run."
     ]
   },
-  "blackbeard:FinalBarrage": {
+  "${modID}:FinalBarrage": {
     "NAME": "Final Barrage",
     "DESCRIPTION": "Deal damage equal to !M! times the number of Cannonballs played this combat. NL (Every type of Cannonball counts.)",
     "EXTENDED_DESCRIPTION": [
       " NL (Deals !D! damage.)"
     ]
   },
-  "blackbeard:BrownPants": {
+  "${modID}:BrownPants": {
     "NAME": "Brown Pants",
     "DESCRIPTION": "Gain !M! Plated Armor."
   },
-  "blackbeard:JollyRoger": {
+  "${modID}:JollyRoger": {
     "NAME": "Jolly Roger",
     "DESCRIPTION": "Apply !M! Weak to ALL enemies. NL Exhaust."
   },
-  "blackbeard:CaptainsCabin": {
+  "${modID}:CaptainsCabin": {
     "NAME": "Captain's Cabin",
     "DESCRIPTION": "Gain !B! Block. NL Add !M! *Cannonball into your hand.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add !M! *Cannonballs into your hand."
   },
-  "blackbeard:GoldenDefense": {
+  "${modID}:GoldenDefense": {
     "NAME": "Golden Defense",
     "DESCRIPTION": "Gain Block equal to NL 1.5% of Gold gained NL this run.",
     "UPGRADE_DESCRIPTION": "Gain Block equal to NL !M! + 1.5% of Gold gained NL this run.",
@@ -149,23 +149,23 @@
       " Gold this run."
     ]
   },
-  "blackbeard:Shrapnel": {
+  "${modID}:Shrapnel": {
     "NAME": "Shrapnel",
     "DESCRIPTION": "Deal !D! damage to ALL enemies."
   },
-  "blackbeard:Toast": {
+  "${modID}:Toast": {
     "NAME": "Toast",
-    "DESCRIPTION": "Gain !M! blackbeard:Resistance. NL At the start of your next turn, lose !M! blackbeard:Resistance. NL Exhaust."
+    "DESCRIPTION": "Gain !M! ${modID}:Resistance. NL At the start of your next turn, lose !M! ${modID}:Resistance. NL Exhaust."
   },
-  "blackbeard:CatONineTails": {
+  "${modID}:CatONineTails": {
     "NAME": "Cat O' Nine Tails",
-    "DESCRIPTION": "Equip a !M! / {D} blackbeard:Weapon. NL After you attack with this blackbeard:Weapon, give it +2 Attack."
+    "DESCRIPTION": "Equip a !M! / {D} ${modID}:Weapon. NL After you attack with this ${modID}:Weapon, give it +2 Attack."
   },
-  "blackbeard:PirateEarring": {
+  "${modID}:PirateEarring": {
     "NAME": "Pirate Earring",
     "DESCRIPTION": "Gain !M! Artifact."
   },
-  "blackbeard:Murder": {
+  "${modID}:Murder": {
     "NAME": "Murder",
     "DESCRIPTION": "Deal !D! damage\u00a0\u00a0\u00a0\u00a0 NL to a non-Boss enemy. NL Fleeting.",
     "EXTENDED_DESCRIPTION": [
@@ -173,56 +173,56 @@
       "MURDER"
     ]
   },
-  "blackbeard:Bandana": {
+  "${modID}:Bandana": {
     "NAME": "Bandana",
     "DESCRIPTION": "Whenever you hit an enemy, gain 5 Gold, NL up to a maximum of !M! Gold."
   },
-  "blackbeard:TacticalRetreat": {
+  "${modID}:TacticalRetreat": {
     "NAME": "Tactical Retreat",
     "DESCRIPTION": "Gain !B! Block. NL Draw 1 more card next turn."
   },
-  "blackbeard:Dagger": {
+  "${modID}:Dagger": {
     "NAME": "Dagger",
-    "DESCRIPTION": "Equip a {A} / !M! blackbeard:Weapon. NL At the start of your turn, NL 1 Durability from Dagger is used to deal damage equal to its Attack to a random enemy."
+    "DESCRIPTION": "Equip a {A} / !M! ${modID}:Weapon. NL At the start of your turn, NL 1 Durability from Dagger is used to deal damage equal to its Attack to a random enemy."
   },
-  "blackbeard:PiratesWill": {
+  "${modID}:PiratesWill": {
     "NAME": "Pirate's Will",
     "DESCRIPTION": "Remove all of your debuffs. NL Draw !M! card. NL Exhaust."
   },
-  "blackbeard:Pegleg": {
+  "${modID}:Pegleg": {
     "NAME": "Pegleg",
     "DESCRIPTION": "Lose 2 Dexterity. NL Gain !M! Strength."
   },
-  "blackbeard:Eyepatch": {
+  "${modID}:Eyepatch": {
     "NAME": "Eyepatch",
     "DESCRIPTION": "Next turn, gain !M! Weak. NL At the start of your turn, draw 1 additional card.",
     "UPGRADE_DESCRIPTION": "Innate. NL Next turn, gain !M! Weak. NL At the start of your turn, draw 1 additional card."
   },
-  "blackbeard:CaptainsHat": {
+  "${modID}:CaptainsHat": {
     "NAME": "Captain's Hat",
-    "DESCRIPTION": "Gain !M! Strength. NL Gain !M! blackbeard:Resistance."
+    "DESCRIPTION": "Gain !M! Strength. NL Gain !M! ${modID}:Resistance."
   },
-  "blackbeard:BlindAttacks": {
+  "${modID}:BlindAttacks": {
     "NAME": "Blind Attacks",
     "DESCRIPTION": "Deal !D! damage to a random enemy 3 times."
   },
-  "blackbeard:Boarding": {
+  "${modID}:Boarding": {
     "NAME": "Boarding",
     "DESCRIPTION": "Deal !D! damage to ALL enemies twice. NL Draw !M! cards."
   },
-  "blackbeard:AgileStrike": {
+  "${modID}:AgileStrike": {
     "NAME": "Agile Strike",
-    "DESCRIPTION": "Deal !D! damage. NL If you have equipped a blackbeard:Weapon this turn, reduce cost of this NL card to 0."
+    "DESCRIPTION": "Deal !D! damage. NL If you have equipped a ${modID}:Weapon this turn, reduce cost of this NL card to 0."
   },
-  "blackbeard:DangerousBlow": {
+  "${modID}:DangerousBlow": {
     "NAME": "Dangerous Blow",
     "DESCRIPTION": "Deal !D! damage. NL At the end of your next turn, you take !M! damage."
   },
-  "blackbeard:VengefulSpirit": {
+  "${modID}:VengefulSpirit": {
     "NAME": "Vengeful Spirit",
     "DESCRIPTION": "Gain 1 Intangible. NL The next time your Intangible wears off, you take !M! damage. NL Exhaust."
   },
-  "blackbeard:Revenge": {
+  "${modID}:Revenge": {
     "NAME": "Revenge",
     "DESCRIPTION": "Deal 0 - !M! damage to ALL enemies, based on how many % of HP you are missing.",
     "EXTENDED_DESCRIPTION": [
@@ -230,7 +230,7 @@
       "REVENGE"
     ]
   },
-  "blackbeard:GoldenRain": {
+  "${modID}:GoldenRain": {
     "NAME": "Golden Rain",
     "DESCRIPTION": "Deal damage equal to NL 2.5% of Gold gained NL this run to ALL enemies.",
     "UPGRADE_DESCRIPTION": "Deal damage equal to NL 3% of Gold gained NL this run to ALL enemies.",
@@ -240,91 +240,91 @@
       " Gold this run."
     ]
   },
-  "blackbeard:Sword": {
+  "${modID}:Sword": {
     "NAME": "Sword",
-    "DESCRIPTION": "Choose 1 of 3 Swords. NL Equip a {A} / !M! blackbeard:Weapon with an additional effect.",
+    "DESCRIPTION": "Choose 1 of 3 Swords. NL Equip a {A} / !M! ${modID}:Weapon with an additional effect.",
     "EXTENDED_DESCRIPTION": [
       "Additional Effects",
       "#rFire: Whenever you attack with this Weapon, deal #b3 damage to ALL enemies. NL #yWisdom: Whenever you attack with this Weapon, draw #b1 card. NL #pChaos: Whenever you attack with this Weapon, add a random card into your hand."
     ]
   },
-  "blackbeard:BeatUp": {
+  "${modID}:BeatUp": {
     "NAME": "Beat Up",
     "DESCRIPTION": "Deal !D! damage twice. NL Apply !M! Vulnerable."
   },
-  "blackbeard:IntimidatingStrike": {
+  "${modID}:IntimidatingStrike": {
     "NAME": "Intimidating Strike",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak."
   },
-  "blackbeard:WiseDefense": {
+  "${modID}:WiseDefense": {
     "NAME": "Wise Defense",
     "DESCRIPTION": "Gain !B! Block. NL Draw !M! card.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Draw !M! cards."
   },
-  "blackbeard:ChaoticDefense": {
+  "${modID}:ChaoticDefense": {
     "NAME": "Chaotic Defense",
     "DESCRIPTION": "Gain !B! Block. NL Add !M! random card into your hand.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add !M! random cards into your hand."
   },
-  "blackbeard:SmithingHammer": {
+  "${modID}:SmithingHammer": {
     "NAME": "Smithing Hammer",
-    "DESCRIPTION": "Equip a {A} / !M! blackbeard:Weapon. NL After you attack with this blackbeard:Weapon and passively at the start of your turn using 1 Durability, Upgrade a random card in your hand and a random card in your draw pile for the rest of combat."
+    "DESCRIPTION": "Equip a {A} / !M! ${modID}:Weapon. NL After you attack with this ${modID}:Weapon and passively at the start of your turn using 1 Durability, Upgrade a random card in your hand and a random card in your draw pile for the rest of combat."
   },
-  "blackbeard:Spear": {
+  "${modID}:Spear": {
     "NAME": "Spear",
-    "DESCRIPTION": "Equip a !M! / {D} blackbeard:Weapon."
+    "DESCRIPTION": "Equip a !M! / {D} ${modID}:Weapon."
   },
-  "blackbeard:WeaponMastery": {
+  "${modID}:WeaponMastery": {
     "NAME": "Weapon Mastery",
-    "DESCRIPTION": "Whenever you equip a blackbeard:Weapon, draw !M! card.",
-    "UPGRADE_DESCRIPTION": "Whenever you equip a blackbeard:Weapon, draw !M! cards."
+    "DESCRIPTION": "Whenever you equip a ${modID}:Weapon, draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Whenever you equip a ${modID}:Weapon, draw !M! cards."
   },
-  "blackbeard:Salvager": {
+  "${modID}:Salvager": {
     "NAME": "Salvager",
-    "DESCRIPTION": "Whenever a blackbeard:Weapon is destroyed, gain [E].",
-    "UPGRADE_DESCRIPTION": "Whenever a blackbeard:Weapon is destroyed, gain [E] [E]."
+    "DESCRIPTION": "Whenever a ${modID}:Weapon is destroyed, gain [E].",
+    "UPGRADE_DESCRIPTION": "Whenever a ${modID}:Weapon is destroyed, gain [E] [E]."
   },
-  "blackbeard:Anchor": {
+  "${modID}:Anchor": {
     "NAME": "Anchor",
     "DESCRIPTION": "Innate. NL Gain !B! Block. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Innate. NL Gain !B! Block. NL Draw !M! card. NL Exhaust."
   },
-  "blackbeard:BoostMorale": {
+  "${modID}:BoostMorale": {
     "NAME": "Boost Morale",
     "DESCRIPTION": "Gain 5 Gold. NL Draw !M! card. NL Gain [E]. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Gain 5 Gold. NL Draw !M! cards. NL Gain [E]. NL Exhaust."
   },
-  "blackbeard:MegaUpgrade": {
+  "${modID}:MegaUpgrade": {
     "NAME": "Mega Upgrade",
-    "DESCRIPTION": "Give all your equipped blackbeard:Weapons + !M! / + !M!."
+    "DESCRIPTION": "Give all your equipped ${modID}:Weapons + !M! / + !M!."
   },
-  "blackbeard:Recklessness": {
+  "${modID}:Recklessness": {
     "NAME": "Recklessness",
     "DESCRIPTION": "Gain [E] [E]. NL Next turn, lose [E].",
     "UPGRADE_DESCRIPTION": "Gain [E] [E] [E]. NL Next turn, lose [E]."
   },
-  "blackbeard:DelayedPain": {
+  "${modID}:DelayedPain": {
     "NAME": "Delayed Pain",
     "DESCRIPTION": "Gain !B! Block. NL At the end of your next turn, you take !M! damage."
   },
-  "blackbeard:ArmorUp": {
+  "${modID}:ArmorUp": {
     "NAME": "Armor Up",
-    "DESCRIPTION": "Whenever you attack with a blackbeard:Weapon, gain !M! Block."
+    "DESCRIPTION": "Whenever you attack with a ${modID}:Weapon, gain !M! Block."
   },
-  "blackbeard:Intoxication": {
+  "${modID}:Intoxication": {
     "NAME": "Intoxication",
-    "DESCRIPTION": "Gain !M! blackbeard:Resistance. NL At the start of your turn, lose 1 blackbeard:Resistance."
+    "DESCRIPTION": "Gain !M! ${modID}:Resistance. NL At the start of your turn, lose 1 ${modID}:Resistance."
   },
-  "blackbeard:CannonballSupply": {
+  "${modID}:CannonballSupply": {
     "NAME": "Cannonball Supply",
     "DESCRIPTION": "Retain. NL Add 3 *Cannonballs into your hand.",
     "UPGRADE_DESCRIPTION": "Retain. NL Add 3 *Cannonballs+ into your hand."
   },
-  "blackbeard:BountyHunter": {
+  "${modID}:BountyHunter": {
     "NAME": "Bounty Hunter",
     "DESCRIPTION": "Deal !D! damage. NL If Fatal, gain !M! Gold. NL Exhaust."
   },
-  "blackbeard:GoldenNoose": {
+  "${modID}:GoldenNoose": {
     "NAME": "Golden Noose",
     "DESCRIPTION": "Deal damage equal to NL 4% of Gold gained this run.",
     "UPGRADE_DESCRIPTION": "Deal damage equal to NL 5% of Gold gained this run.",
@@ -334,74 +334,74 @@
       " Gold this run."
     ]
   },
-  "blackbeard:DoubleBottom": {
+  "${modID}:DoubleBottom": {
     "NAME": "Double Bottom",
     "DESCRIPTION": "Gain !B! Block. NL Next turn, gain !B! Block."
   },
-  "blackbeard:Lifeboat": {
+  "${modID}:Lifeboat": {
     "NAME": "Lifeboat",
     "DESCRIPTION": "Gain !B! Block."
   },
-  "blackbeard:Provisioning": {
+  "${modID}:Provisioning": {
     "NAME": "Provisioning",
     "DESCRIPTION": "Obtain a random potion. NL Next turn, obtain a random potion. NL Exhaust."
   },
-  "blackbeard:TerrorOfTheSeas": {
+  "${modID}:TerrorOfTheSeas": {
     "NAME": "Terror of the Seas",
     "DESCRIPTION": "Apply !M! Vulnerable to ALL enemies. NL Exhaust."
   },
-  "blackbeard:FishingNets": {
+  "${modID}:FishingNets": {
     "NAME": "Fishing Nets",
-    "DESCRIPTION": "Gain !M! blackbeard:Rusty\u00a0Thorns."
+    "DESCRIPTION": "Gain !M! ${modID}:Rusty\u00a0Thorns."
   },
-  "blackbeard:BuriedTreasure": {
+  "${modID}:BuriedTreasure": {
     "NAME": "Buried Treasure",
     "DESCRIPTION": "Gain !M! Gold. NL Exhaust."
   },
-  "blackbeard:DoubleCannonball": {
+  "${modID}:DoubleCannonball": {
     "NAME": "Double Cannonball",
     "DESCRIPTION": "Deal !D! damage. NL Add a *Cannonball into your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add a *Cannonball+ into your hand. NL Exhaust."
   },
-  "blackbeard:SwordOfFire": {
+  "${modID}:SwordOfFire": {
     "NAME": "Sword of Fire",
-    "DESCRIPTION": "Equip a {A} / !M! blackbeard:Weapon. NL Whenever you attack with this blackbeard:Weapon, deal 3 damage to ALL enemies."
+    "DESCRIPTION": "Equip a {A} / !M! ${modID}:Weapon. NL Whenever you attack with this ${modID}:Weapon, deal 3 damage to ALL enemies."
   },
-  "blackbeard:CloakAndCannonball": {
+  "${modID}:CloakAndCannonball": {
     "NAME": "Cloak and Cannonball",
     "DESCRIPTION": "Gain !B! Block. NL Add a *Cannonball into your hand.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Add a *Cannonball+ into your hand."
   },
-  "blackbeard:UndeadForm": {
+  "${modID}:UndeadForm": {
     "NAME": "Undead Form",
     "DESCRIPTION": "Gain 3 Intangible. NL The next time your Intangible wears off, you take !M! damage."
   },
-  "blackbeard:WeaponProficiency": {
+  "${modID}:WeaponProficiency": {
     "NAME": "Weapon Proficiency",
-    "DESCRIPTION": "Your attacks use an additional blackbeard:Weapon."
+    "DESCRIPTION": "Your attacks use an additional ${modID}:Weapon."
   },
-  "blackbeard:FieryDefense": {
+  "${modID}:FieryDefense": {
     "NAME": "Fiery Defense",
     "DESCRIPTION": "Gain !B! Block. NL Deal 3 damage to ALL enemies.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Deal 3 damage to ALL enemies twice."
   },
-  "blackbeard:VampiricScepter": {
+  "${modID}:VampiricScepter": {
     "NAME": "Vampiric Scepter",
-    "DESCRIPTION": "Equip a !M! / {D} blackbeard:Weapon. NL Whenever you attack with this blackbeard:Weapon, heal !blackbeard:M2! HP."
+    "DESCRIPTION": "Equip a !M! / {D} ${modID}:Weapon. NL Whenever you attack with this ${modID}:Weapon, heal !${modID}:M2! HP."
   },
-  "blackbeard:ReapersScythe": {
+  "${modID}:ReapersScythe": {
     "NAME": "Reaper's Scythe",
-    "DESCRIPTION": "Equip a !M! / {D} blackbeard:Weapon. NL Whenever you attack with this blackbeard:Weapon, apply 1 blackbeard:Reaper's\u00a0Mark to a target per hit."
+    "DESCRIPTION": "Equip a !M! / {D} ${modID}:Weapon. NL Whenever you attack with this ${modID}:Weapon, apply 1 ${modID}:Reaper's\u00a0Mark to a target per hit."
   },
-  "blackbeard:PirateHook": {
+  "${modID}:PirateHook": {
     "NAME": "Pirate Hook",
     "DESCRIPTION": "Deal !D! damage. NL If this deals at least 10 damage, deal !D! damage again."
   },
-  "blackbeard:DeadlyArsenal": {
+  "${modID}:DeadlyArsenal": {
     "NAME": "Deadly Arsenal",
-    "DESCRIPTION": "Gain !B! Block. NL Draw 1 card for each unique blackbeard:Weapon you have currently equipped."
+    "DESCRIPTION": "Gain !B! Block. NL Draw 1 card for each unique ${modID}:Weapon you have currently equipped."
   },
-  "blackbeard:PowerHungry": {
+  "${modID}:PowerHungry": {
     "NAME": "Power-hungry",
     "DESCRIPTION": "Put !M! Power card from your draw pile into your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Innate. NL Put !M! Power card from your draw pile into your hand. NL Exhaust."

@@ -1,5 +1,5 @@
 {
-  "blackbeard:AbstractWeaponOrb": {
+  "${modID}:AbstractWeaponOrb": {
     "NAME": "Оружие",
     "DESCRIPTION": [
       " NL ",
@@ -8,81 +8,81 @@
       "Прочность: #b"
     ]
   },
-  "blackbeard:CutlassOrb": {
+  "${modID}:CutlassOrb": {
     "NAME": "Сабля",
     "DESCRIPTION": [
       ""
     ]
   },
-  "blackbeard:HalberdOrb": {
+  "${modID}:HalberdOrb": {
     "NAME": "Алебарда",
     "DESCRIPTION": [
       "Накладывает на врага #b2 #yКровотечения, когда #yАтака наносит ему урон и вы используете данное #yОружие."
     ]
   },
-  "blackbeard:PowderKegOrb": {
+  "${modID}:PowderKegOrb": {
     "NAME": "Пороховая бочка",
     "DESCRIPTION": [
       "Наносит #b",
       " урона ВСЕМ врагам, когда у неё кончается прочность."
     ]
   },
-  "blackbeard:SwordOfWisdomOrb": {
+  "${modID}:SwordOfWisdomOrb": {
     "NAME": "Меч мудрости",
     "DESCRIPTION": [
       "Вы берёте одну карту, когда используете данное #yОружие."
     ]
   },
-  "blackbeard:SwordOfChaosOrb": {
+  "${modID}:SwordOfChaosOrb": {
     "NAME": "Меч хаоса",
     "DESCRIPTION": [
       "Добавляет в руку случайную карту, когда вы используете данное #yОружие."
     ]
   },
-  "blackbeard:CatONineTailsOrb": {
+  "${modID}:CatONineTailsOrb": {
     "NAME": "Плеть",
     "DESCRIPTION": [
       "Данное #yОружие получает #b2 урона при каждом его использовании"
     ]
   },
-  "blackbeard:DaggerOrb": {
+  "${modID}:DaggerOrb": {
     "NAME": "Кинжал",
     "DESCRIPTION": [
       "В начале вашего хода данное Оружие теряет #b1 Прочности и наносит урон, равный своему урону, случайному врагу."
     ]
   },
-  "blackbeard:SwordOrb": {
+  "${modID}:SwordOrb": {
     "NAME": "Меч",
     "DESCRIPTION": [
       ""
     ]
   },
-  "blackbeard:SmithingHammerOrb": {
+  "${modID}:SmithingHammerOrb": {
     "NAME": "Кузнечный молот",
     "DESCRIPTION": [
       "Теряет 1 Прочности в начале вашего хода. Каждый раз, когда данное Оружие теряет Прочность, улучшает в руке случайную карту до конца боя."
     ]
   },
-  "blackbeard:SpearOrb": {
+  "${modID}:SpearOrb": {
     "NAME": "Копьё",
     "DESCRIPTION": [
       ""
     ]
   },
-  "blackbeard:SwordOfFireOrb": {
+  "${modID}:SwordOfFireOrb": {
     "NAME": "Меч огня",
     "DESCRIPTION": [
       "Наносит #b3 урона ВСЕМ врагам, когда вы используете данное #yОружие."
     ]
   },
-  "blackbeard:VampiricScepterOrb": {
+  "${modID}:VampiricScepterOrb": {
     "NAME": "Вампирский скипетр",
     "DESCRIPTION": [
       "Восполняет #b",
       " ОЗ, когда вы используете данное #yОружие."
     ]
   },
-  "blackbeard:ReapersScytheOrb": {
+  "${modID}:ReapersScytheOrb": {
     "NAME": "Коса Жнеца",
     "DESCRIPTION": [
       "Накладывает на врага #b1 #yМетку #yЖнеца когда #yАтака наносит ему урон и вы используете данное #yОружие."

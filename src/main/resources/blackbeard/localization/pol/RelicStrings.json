@@ -1,122 +1,122 @@
 {
-  "blackbeard:LoadTheCannons": {
+  "${modID}:LoadTheCannons": {
     "NAME": "Załadowanie dział",
     "FLAVOR": "Gotów... Cel... Pal!!!",
     "DESCRIPTIONS": [
       "Na początku każdej walki, a następnie co #b4 tury, dodaj #yKulę do ręki."
     ]
   },
-  "blackbeard:HipFlask": {
+  "${modID}:HipFlask": {
     "NAME": "Piersiówka",
     "FLAVOR": "Bardzo podręczna.",
     "DESCRIPTIONS": [
-      "Na początku każdej walki, zyskaj #b1 pkt. #yblackbeard:Odporności."
+      "Na początku każdej walki, zyskaj #b1 pkt. #y${modID}:Odporności."
     ]
   },
-  "blackbeard:BloodOrange": {
+  "${modID}:BloodOrange": {
     "NAME": "Czerwona pomarańcza",
     "FLAVOR": "Wygląda na to, że ten cytrus ma interesującą moc.",
     "DESCRIPTIONS": [
       "Kiedykolwiek zagrasz #b7 kart w jednej turze, pozbądź się wszystkich negatywnych efektów."
     ]
   },
-  "blackbeard:TreasureChest": {
+  "${modID}:TreasureChest": {
     "NAME": "Skrzynia skarbów",
     "FLAVOR": "Ta skrzynia skarbów zawiera niewyobrażalne bogactwa.",
     "DESCRIPTIONS": [
       "Zyskaj #b15 szt. #yZłota po każdej walce."
     ]
   },
-  "blackbeard:WhitePearl": {
+  "${modID}:WhitePearl": {
     "NAME": "Biała perła",
     "FLAVOR": "Jednocześnie piękna i potężna.",
     "DESCRIPTIONS": [
-      "Kiedykolwiek wyposażysz się w #yblackbeard:Broń, daj jej #b+1 do Ataku."
+      "Kiedykolwiek wyposażysz się w #y${modID}:Broń, daj jej #b+1 do Ataku."
     ]
   },
-  "blackbeard:CannonballsOfSteel": {
+  "${modID}:CannonballsOfSteel": {
     "NAME": "Kule ze stali",
     "FLAVOR": "O wiele mocniejsze niż zwykłe kule.",
     "DESCRIPTIONS": [
       "Twoje #yKule zadają #b2 pkt. obrażeń więcej. (Działa z każdym typem #yKuli [REMOVE_SPACE].)"
     ]
   },
-  "blackbeard:GoldenRing": {
+  "${modID}:GoldenRing": {
     "NAME": "Złoty pierścień",
     "FLAVOR": "Odpowiedni dla każdego pirata.",
     "DESCRIPTIONS": [
       "Na początku każdej walki, zyskaj #b1 pkt. #yHartu."
     ]
   },
-  "blackbeard:MagicalCauldron": {
+  "${modID}:MagicalCauldron": {
     "NAME": "Magiczny kocioł",
     "FLAVOR": "W pełni automatyczny.",
     "DESCRIPTIONS": [
       "Na końcu każdej walki, otrzymaj losową miksturę."
     ]
   },
-  "blackbeard:Penknife": {
+  "${modID}:Penknife": {
     "NAME": "Scyzoryk",
     "FLAVOR": "Jeśli masz go w kieszeni, nie zapominaj go używać.",
     "DESCRIPTIONS": [
-      "Co #b8 zagrany Atak, który używa co najmniej jednej blackbeard:broni, zadaje podwójne obrażenia."
+      "Co #b8 zagrany Atak, który używa co najmniej jednej ${modID}:broni, zadaje podwójne obrażenia."
     ]
   },
-  "blackbeard:PoorMathSkills": {
+  "${modID}:PoorMathSkills": {
     "NAME": "Jedynka z matmy",
     "FLAVOR": "Czasami kiblowanie z matmy wychodzi na dobre.",
     "DESCRIPTIONS": [
       "Wydaje ci się, że zdobyłeś o #b500 szt. #yZłota więcej w tej wyprawie, niż zdobyłeś w rzeczywistości. (To ma znaczenie w przypadku kart, które skalują się z ilością szt. #yZłota zdobytych w tej wyprawie.)"
     ]
   },
-  "blackbeard:PowderCan": {
+  "${modID}:PowderCan": {
     "NAME": "Puszka prochu",
     "FLAVOR": "Zupełnie jak beczka prochu, tylko mniejsza.",
     "DESCRIPTIONS": [
-      "Na początku każdej walki, wyposaż się w #yblackbeard:Broń #b0 / #b1. Gdy zostanie zniszczona, zadaj #b8 pkt. obrażeń WSZYSTKIM przeciwnikom."
+      "Na początku każdej walki, wyposaż się w #y${modID}:Broń #b0 / #b1. Gdy zostanie zniszczona, zadaj #b8 pkt. obrażeń WSZYSTKIM przeciwnikom."
     ]
   },
-  "blackbeard:SoberMinded": {
+  "${modID}:SoberMinded": {
     "NAME": "Trzeźwo myślący",
     "FLAVOR": "Bycie trzeźwym nie jest naturalnym stanem dla Czarnobrodego.",
     "DESCRIPTIONS": [
-      "Zyskaj [E] na początku każdej tury. Na początku każdej walki, a następnie co #b6 tur, utrać #b1 pkt. #yblackbeard:Odporności."
+      "Zyskaj [E] na początku każdej tury. Na początku każdej walki, a następnie co #b6 tur, utrać #b1 pkt. #y${modID}:Odporności."
     ]
   },
-  "blackbeard:Spearhead": {
+  "${modID}:Spearhead": {
     "NAME": "Grot",
     "FLAVOR": "Wytrzymałość twojej Broni kończy się... tak jak życie twojego przeciwnika.",
     "DESCRIPTIONS": [
-      "Gdy #yblackbeard:Broń ma #b1 pkt. Wytrzymałości, to zadaje o #b3 pkt. obrażeń więcej."
+      "Gdy #y${modID}:Broń ma #b1 pkt. Wytrzymałości, to zadaje o #b3 pkt. obrażeń więcej."
     ]
   },
-  "blackbeard:CrossedSwords": {
+  "${modID}:CrossedSwords": {
     "NAME": "Skrzyżowane miecze",
     "FLAVOR": "Idealne do walki dwiema broniami naraz.",
     "DESCRIPTIONS": [
-      "Twoje ataki używają dodatkową #yblackbeard:Broń."
+      "Twoje ataki używają dodatkową #y${modID}:Broń."
     ]
   },
-  "blackbeard:Karategi": {
+  "${modID}:Karategi": {
     "NAME": "Kimono do karate",
     "FLAVOR": "Gdy tylko je założysz, natychmiast poznajesz nowe style walki.",
     "DESCRIPTIONS": [
-      "Twoje #yblackbeard:Bronie mają nieskończoną wytrzymałość. Kiedykolwiek zaatakujesz #yblackbeard:Bronią, ta #yblackbeard:Broń idzie na ostatnią pozycję."
+      "Twoje #y${modID}:Bronie mają nieskończoną wytrzymałość. Kiedykolwiek zaatakujesz #y${modID}:Bronią, ta #y${modID}:Broń idzie na ostatnią pozycję."
     ]
   },
-  "blackbeard:LoadTheGoldenCannons": {
+  "${modID}:LoadTheGoldenCannons": {
     "NAME": "Załadowanie złotych dział",
     "FLAVOR": "Czy naprawdę warto strzelać tymi złotymi kulami?!?",
     "DESCRIPTIONS": [
       "Zastępuje #yZaładowanie #ydział. Na początku każdej walki, a następnie co #b4 tury, dodaj #yZłotą #ykulę do ręki."
     ]
   },
-  "blackbeard:BarbedCannonballs": {
+  "${modID}:BarbedCannonballs": {
     "NAME": "Kolczaste kule",
     "FLAVOR": "Robią wiele kuku.",
     "DESCRIPTIONS": [
       "Za każdym razem, gdy #yKula zada niezablokowane obrażenia nałóż #b",
-      " pkt. #yblackbeard:Krwawienia. (Działa z każdym typem #yKuli [REMOVE_SPACE].)"
+      " pkt. #y${modID}:Krwawienia. (Działa z każdym typem #yKuli [REMOVE_SPACE].)"
     ]
   }
 }

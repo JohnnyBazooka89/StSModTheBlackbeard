@@ -1,5 +1,5 @@
 {
-  "blackbeard:AbstractWeaponOrb": {
+  "${modID}:AbstractWeaponOrb": {
     "NAME": "Weapon",
     "DESCRIPTION": [
       " NL ",
@@ -8,81 +8,81 @@
       "Durability: #b"
     ]
   },
-  "blackbeard:CutlassOrb": {
+  "${modID}:CutlassOrb": {
     "NAME": "Cutlass",
     "DESCRIPTION": [
       ""
     ]
   },
-  "blackbeard:HalberdOrb": {
+  "${modID}:HalberdOrb": {
     "NAME": "Halberd",
     "DESCRIPTION": [
       "Whenever you attack with this Weapon, apply 2 #yBleed to a target per hit."
     ]
   },
-  "blackbeard:PowderKegOrb": {
+  "${modID}:PowderKegOrb": {
     "NAME": "Powder Keg",
     "DESCRIPTION": [
       "When destroyed, deal #b",
       " damage to all enemies."
     ]
   },
-  "blackbeard:SwordOfWisdomOrb": {
+  "${modID}:SwordOfWisdomOrb": {
     "NAME": "Sword of Wisdom",
     "DESCRIPTION": [
       "Whenever you attack with this Weapon, draw a card."
     ]
   },
-  "blackbeard:SwordOfChaosOrb": {
+  "${modID}:SwordOfChaosOrb": {
     "NAME": "Sword of Chaos",
     "DESCRIPTION": [
       "Whenever you attack with this Weapon, add a random card into your hand."
     ]
   },
-  "blackbeard:CatONineTailsOrb": {
+  "${modID}:CatONineTailsOrb": {
     "NAME": "Cat O' Nine Tails",
     "DESCRIPTION": [
       "After you attack with this Weapon, give it #b+2 Attack."
     ]
   },
-  "blackbeard:DaggerOrb": {
+  "${modID}:DaggerOrb": {
     "NAME": "Dagger",
     "DESCRIPTION": [
       "At the start of your turn, #b1 Durability from Dagger is used to deal damage equal to its Attack to a random enemy."
     ]
   },
-  "blackbeard:SwordOrb": {
+  "${modID}:SwordOrb": {
     "NAME": "Sword",
     "DESCRIPTION": [
       ""
     ]
   },
-  "blackbeard:SmithingHammerOrb": {
+  "${modID}:SmithingHammerOrb": {
     "NAME": "Smithing Hammer",
     "DESCRIPTION": [
       "After you attack with this Weapon and passively at the start of your turn using #b1 Durability, Upgrade a random card in your hand for the rest of combat."
     ]
   },
-  "blackbeard:SpearOrb": {
+  "${modID}:SpearOrb": {
     "NAME": "Spear",
     "DESCRIPTION": [
       ""
     ]
   },
-  "blackbeard:SwordOfFireOrb": {
+  "${modID}:SwordOfFireOrb": {
     "NAME": "Sword of Fire",
     "DESCRIPTION": [
       "Whenever you attack with this Weapon, deal #b3 damage to all enemies."
     ]
   },
-  "blackbeard:VampiricScepterOrb": {
+  "${modID}:VampiricScepterOrb": {
     "NAME": "Vampiric Scepter",
     "DESCRIPTION": [
       "Whenever you attack with this Weapon, heal #b",
       " HP."
     ]
   },
-  "blackbeard:ReapersScytheOrb": {
+  "${modID}:ReapersScytheOrb": {
     "NAME": "Reaper's Scythe",
     "DESCRIPTION": [
       "Whenever you attack with this Weapon, apply #b1 #yReaper's #yMark to a target per hit."

@@ -8,9 +8,11 @@ import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class PowderCan extends AbstractBlackbeardRelic {
 
-    public static final String ID = "blackbeard:PowderCan";
+    public static final String ID = makeID("PowderCan");
     private static final Texture IMG = TextureLoader.getTexture(TheBlackbeardMod.getRelicImagePath(ID));
     private static final Texture OUTLINE = TextureLoader.getTexture(TheBlackbeardMod.getRelicOutlineImagePath(ID));
     private static final int WEAPON_ATTACK = 0;

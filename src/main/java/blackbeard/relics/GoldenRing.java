@@ -7,9 +7,11 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.ArtifactPower;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class GoldenRing extends AbstractBlackbeardRelic {
 
-    public static final String ID = "blackbeard:GoldenRing";
+    public static final String ID = makeID("GoldenRing");
     private static final Texture IMG = TextureLoader.getTexture(TheBlackbeardMod.getRelicImagePath(ID));
     private static final Texture OUTLINE = TextureLoader.getTexture(TheBlackbeardMod.getRelicOutlineImagePath(ID));
 

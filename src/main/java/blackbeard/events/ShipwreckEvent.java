@@ -12,9 +12,11 @@ import com.megacrit.cardcrawl.relics.Anchor;
 import com.megacrit.cardcrawl.relics.CaptainsWheel;
 import com.megacrit.cardcrawl.relics.HornCleat;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class ShipwreckEvent extends AbstractImageEvent {
 
-    public static final String EVENT_ID = "blackbeard:ShipwreckEvent";
+    public static final String EVENT_ID = makeID("ShipwreckEvent");
     private static final EventStrings eventStrings = CardCrawlGame.languagePack.getEventString(EVENT_ID);
     public static final String NAME = eventStrings.NAME;
     public static final String[] DESCRIPTIONS = eventStrings.DESCRIPTIONS;

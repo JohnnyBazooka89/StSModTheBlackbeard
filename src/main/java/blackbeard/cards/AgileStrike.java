@@ -16,8 +16,10 @@ import com.megacrit.cardcrawl.orbs.AbstractOrb;
 
 import java.util.Iterator;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class AgileStrike extends AbstractBlackbeardCard {
-    public static final String ID = "blackbeard:AgileStrike";
+    public static final String ID = makeID("AgileStrike");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
@@ -70,7 +72,6 @@ public class AgileStrike extends AbstractBlackbeardCard {
             setCostForTurn(0);
         }
     }
-
 
     @Override
     public void upgrade() {

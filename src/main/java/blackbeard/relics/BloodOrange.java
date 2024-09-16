@@ -9,9 +9,11 @@ import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class BloodOrange extends AbstractBlackbeardRelic {
 
-    public static final String ID = "blackbeard:BloodOrange";
+    public static final String ID = makeID("BloodOrange");
     private static final Texture IMG = TextureLoader.getTexture(TheBlackbeardMod.getRelicImagePath(ID));
     private static final Texture OUTLINE = TextureLoader.getTexture(TheBlackbeardMod.getRelicOutlineImagePath(ID));
 

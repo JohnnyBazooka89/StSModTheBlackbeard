@@ -14,8 +14,10 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.vfx.GainPennyEffect;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class GoldToLootPower extends AbstractPower {
-    public static final String POWER_ID = "blackbeard:GoldToLootPower";
+    public static final String POWER_ID = makeID("GoldToLootPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

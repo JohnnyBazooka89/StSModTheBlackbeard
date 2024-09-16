@@ -23,9 +23,11 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import java.util.ArrayList;
 import java.util.List;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class WeaponPower extends AbstractPower implements InvisiblePower {
 
-    public static final String POWER_ID = "blackbeard:WeaponPower";
+    public static final String POWER_ID = makeID("WeaponPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
 

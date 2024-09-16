@@ -111,7 +111,7 @@ public class MetricsPatches {
 
         private static List<String> findTheBlackbeardAchievements() {
             return UnlockTracker.achievementPref.data.entrySet().stream()
-                    .filter(e -> e.getKey().startsWith("blackbeard:") && e.getValue().equals("true"))
+                    .filter(e -> e.getKey().startsWith("") && e.getValue().equals("true"))
                     .map(Map.Entry::getKey)
                     .sorted()
                     .collect(Collectors.toList());

@@ -18,9 +18,11 @@ import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 import java.util.ArrayList;
 import java.util.List;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class GoldsmithEvent extends AbstractImageEvent {
 
-    public static final String EVENT_ID = "blackbeard:GoldsmithEvent";
+    public static final String EVENT_ID = makeID("GoldsmithEvent");
     private static final EventStrings eventStrings = CardCrawlGame.languagePack.getEventString(EVENT_ID);
     public static final String NAME = eventStrings.NAME;
     public static final String[] DESCRIPTIONS = eventStrings.DESCRIPTIONS;

@@ -1,5 +1,5 @@
 {
-  "blackbeard:WeaponKeyword": {
+  "${modID}:WeaponKeyword": {
     "PROPER_NAME": "Broń",
     "NAMES": [
       "broń",
@@ -8,7 +8,7 @@
     ],
     "DESCRIPTION": "Kiedykolwiek zagrasz kartę Ataku, #b1 pkt. Wytrzymałości Broni jest używany, aby zwiększyć obrażenia tej karty o siłę Ataku Broni. Możesz wyposażyć się maksymalnie w #b10 Broni."
   },
-  "blackbeard:ResistanceKeyword": {
+  "${modID}:ResistanceKeyword": {
     "PROPER_NAME": "Odporność",
     "NAMES": [
       "odporność",
@@ -16,7 +16,7 @@
     ],
     "DESCRIPTION": "Otrzymujesz mniej pkt. obrażeń od ataków przeciwników. (Zamiary przeciwników pokazują rzeczywiste nadchodzące obrażenia, z Odpornością wziętą pod uwagę.) Odporność może być ujemna."
   },
-  "blackbeard:BleedKeyword": {
+  "${modID}:BleedKeyword": {
     "PROPER_NAME": "Krwawienie",
     "NAMES": [
       "krwawienie",
@@ -24,7 +24,7 @@
     ],
     "DESCRIPTION": "Krwawiące istoty tracą PŻ na początku swojej tury."
   },
-  "blackbeard:ReapersMarkKeyword": {
+  "${modID}:ReapersMarkKeyword": {
     "PROPER_NAME": "Znak\u00a0żniwiarza",
     "NAMES": [
       "znak\u00a0żniwiarza",
@@ -32,7 +32,7 @@
     ],
     "DESCRIPTION": "Każde #b3 pkt. Znaku żniwiarza powodują, że są one usunięte, a przeciwnik traci PŻ równe #b40% jego brakujących PŻ."
   },
-  "blackbeard:RustyThorns": {
+  "${modID}:RustyThorns": {
     "PROPER_NAME": "Zardzewiałe\u00a0ciernie",
     "NAMES": [
       "zardzewiałe\u00a0ciernie",

@@ -14,9 +14,11 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import java.util.ArrayList;
 import java.util.List;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class Sword extends AbstractBlackbeardCard {
 
-    public static final String ID = "blackbeard:Sword";
+    public static final String ID = makeID("Sword");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final int COST = 1;
     private static final int WEAPON_ATTACK = 3;

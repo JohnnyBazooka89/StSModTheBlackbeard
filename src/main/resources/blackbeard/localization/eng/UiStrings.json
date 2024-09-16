@@ -1,57 +1,57 @@
 {
-  "blackbeard:PowerCardFromDrawPileToHandAction": {
+  "${modID}:PowerCardFromDrawPileToHandAction": {
     "TEXT": [
       "Choose a Power Card to Put into Your Hand."
     ]
   },
-  "blackbeard:Settings": {
+  "${modID}:Settings": {
     "TEXT": [
       "Disable Christmas Theme. (It's available only in the last 2 weeks of December.)",
       "Use beta art for ALL the Blackbeard cards.",
       "Disable \"Shipwreck\" event for other characters."
     ]
   },
-  "blackbeard:Achievements": {
+  "${modID}:Achievements": {
     "TEXT": [
       "Achievement Unlocked!"
     ]
   },
-  "blackbeard:AchievementGrid": {
+  "${modID}:AchievementGrid": {
     "TEXT": [
       "#yBlackbeard #yAchievements"
     ]
   },
-  "blackbeard:BLACKBEARD_MASTERY": {
+  "${modID}:BLACKBEARD_MASTERY": {
     "TEXT": [
       "Blackbeard Mastery",
       "As the Blackbeard, complete the Ending on Ascension Level 20."
     ]
   },
-  "blackbeard:RESISTANT": {
+  "${modID}:RESISTANT": {
     "TEXT": [
       "Resistant",
       "As the Blackbeard, have 10 or more Resistance."
     ]
   },
-  "blackbeard:ULTIMATE_WEAPON": {
+  "${modID}:ULTIMATE_WEAPON": {
     "TEXT": [
       "Ultimate Weapon",
       "As the Blackbeard, have a 15/10 Weapon equipped."
     ]
   },
-  "blackbeard:RICHES": {
+  "${modID}:RICHES": {
     "TEXT": [
       "Riches!",
       "As the Blackbeard, win a run after accumulating at least 2,500 gold."
     ]
   },
-  "blackbeard:LOAD_THE_CANNONS": {
+  "${modID}:LOAD_THE_CANNONS": {
     "TEXT": [
       "Load the Cannons",
       "As the Blackbeard, play 10 or more Cannonball cards in a single combat."
     ]
   },
-  "blackbeard:ARMED_TO_THE_TEETH": {
+  "${modID}:ARMED_TO_THE_TEETH": {
     "TEXT": [
       "Armed to the Teeth",
       "As the Blackbeard, have 10 Weapons equipped at once."

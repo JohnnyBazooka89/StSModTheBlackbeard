@@ -1,122 +1,122 @@
 {
-  "blackbeard:LoadTheCannons": {
+  "${modID}:LoadTheCannons": {
     "NAME": "Load the Cannons",
     "FLAVOR": "Ready... Aim... Fire!!!",
     "DESCRIPTIONS": [
       "At the start of each combat, and then every #b4 turns, add a #yCannonball into your hand."
     ]
   },
-  "blackbeard:HipFlask": {
+  "${modID}:HipFlask": {
     "NAME": "Hip Flask",
     "FLAVOR": "Very handy.",
     "DESCRIPTIONS": [
-      "At the start of each combat, gain #b1 #yblackbeard:Resistance."
+      "At the start of each combat, gain #b1 #y${modID}:Resistance."
     ]
   },
-  "blackbeard:BloodOrange": {
+  "${modID}:BloodOrange": {
     "NAME": "Blood Orange",
     "FLAVOR": "This citrus seems to have an interesting power.",
     "DESCRIPTIONS": [
       "Whenever you play #b7 cards in the same turn, remove all of your debuffs."
     ]
   },
-  "blackbeard:TreasureChest": {
+  "${modID}:TreasureChest": {
     "NAME": "Treasure Chest",
     "FLAVOR": "This treasure chest contains untold riches.",
     "DESCRIPTIONS": [
       "Gain #b15 #yGold after every battle."
     ]
   },
-  "blackbeard:WhitePearl": {
+  "${modID}:WhitePearl": {
     "NAME": "White Pearl",
     "FLAVOR": "Both beautiful and powerful.",
     "DESCRIPTIONS": [
-      "Whenever you equip a #yblackbeard:Weapon, give it #b+1 Attack."
+      "Whenever you equip a #y${modID}:Weapon, give it #b+1 Attack."
     ]
   },
-  "blackbeard:CannonballsOfSteel": {
+  "${modID}:CannonballsOfSteel": {
     "NAME": "Cannonballs of Steel",
     "FLAVOR": "Much stronger than regular cannonballs.",
     "DESCRIPTIONS": [
       "Your #yCannonballs deal #b2 more damage. (Works with every type of #yCannonball [REMOVE_SPACE].)"
     ]
   },
-  "blackbeard:GoldenRing": {
+  "${modID}:GoldenRing": {
     "NAME": "Golden Ring",
     "FLAVOR": "Suitable for every pirate.",
     "DESCRIPTIONS": [
       "Start each combat with #b1 #yArtifact."
     ]
   },
-  "blackbeard:MagicalCauldron": {
+  "${modID}:MagicalCauldron": {
     "NAME": "Magical Cauldron",
     "FLAVOR": "Fully automatic.",
     "DESCRIPTIONS": [
       "At the end of each combat, obtain a random potion."
     ]
   },
-  "blackbeard:Penknife": {
+  "${modID}:Penknife": {
     "NAME": "Penknife",
     "FLAVOR": "If you have it in your pocket, don't forget to use it.",
     "DESCRIPTIONS": [
-      "Every #b8th Attack that uses at least one #yblackbeard:Weapon deals double damage."
+      "Every #b8th Attack that uses at least one #y${modID}:Weapon deals double damage."
     ]
   },
-  "blackbeard:PoorMathSkills": {
+  "${modID}:PoorMathSkills": {
     "NAME": "Poor Math Skills",
     "FLAVOR": "Sometimes failing a math class is a good thing.",
     "DESCRIPTIONS": [
       "You think that you have gained #b500 more #yGold this run than you actually did. (It matters for cards that scale with #yGold gained this run.)"
     ]
   },
-  "blackbeard:PowderCan": {
+  "${modID}:PowderCan": {
     "NAME": "Powder Can",
     "FLAVOR": "Just like a Powder Keg, but smaller.",
     "DESCRIPTIONS": [
-      "At the start of each combat, equip a #b0 / #b1 #yblackbeard:Weapon. When it is destroyed, deal #b8 damage to ALL enemies."
+      "At the start of each combat, equip a #b0 / #b1 #y${modID}:Weapon. When it is destroyed, deal #b8 damage to ALL enemies."
     ]
   },
-  "blackbeard:SoberMinded": {
+  "${modID}:SoberMinded": {
     "NAME": "Sober-minded",
     "FLAVOR": "Being sober is not a natural state for The Blackbeard.",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of your turn. At the start of each combat, and then every #b6 turns, lose #b1 #yblackbeard:Resistance."
+      "Gain [E] at the start of your turn. At the start of each combat, and then every #b6 turns, lose #b1 #y${modID}:Resistance."
     ]
   },
-  "blackbeard:Spearhead": {
+  "${modID}:Spearhead": {
     "NAME": "Spearhead",
     "FLAVOR": "The durability of your Weapon ends... and so does the life of your enemy.",
     "DESCRIPTIONS": [
-      "When a #yblackbeard:Weapon has #b1 Durability, it deals #b3 more damage."
+      "When a #y${modID}:Weapon has #b1 Durability, it deals #b3 more damage."
     ]
   },
-  "blackbeard:CrossedSwords": {
+  "${modID}:CrossedSwords": {
     "NAME": "Crossed Swords",
     "FLAVOR": "Perfect for dual wielding.",
     "DESCRIPTIONS": [
-      "Your attacks use an additional #yblackbeard:Weapon."
+      "Your attacks use an additional #y${modID}:Weapon."
     ]
   },
-  "blackbeard:Karategi": {
+  "${modID}:Karategi": {
     "NAME": "Karategi",
     "FLAVOR": "When you wear it, you instantly learn new styles of combat.",
     "DESCRIPTIONS": [
-      "Your #yblackbeard:Weapons have infinite Durability. After you attack with a #yblackbeard:Weapon, it goes to the last position."
+      "Your #y${modID}:Weapons have infinite Durability. After you attack with a #y${modID}:Weapon, it goes to the last position."
     ]
   },
-  "blackbeard:LoadTheGoldenCannons": {
+  "${modID}:LoadTheGoldenCannons": {
     "NAME": "Load the Golden Cannons",
     "FLAVOR": "Is it even worth to shoot all these golden cannonballs?!?",
     "DESCRIPTIONS": [
       "Replaces #yLoad #ythe #yCannons. At the start of each combat, and then every #b4 turns, add a #yGolden #yCannonball into your hand."
     ]
   },
-  "blackbeard:BarbedCannonballs": {
+  "${modID}:BarbedCannonballs": {
     "NAME": "Barbed Cannonballs",
     "FLAVOR": "They cause a lot of boo-boos.",
     "DESCRIPTIONS": [
       "Whenever a #yCannonball deals unblocked damage, apply #b",
-      " #yblackbeard:Bleed. (Works with every type of #yCannonball [REMOVE_SPACE].)"
+      " #y${modID}:Bleed. (Works with every type of #yCannonball [REMOVE_SPACE].)"
     ]
   }
 }

@@ -9,8 +9,10 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class WeaponMastery extends AbstractBlackbeardCard {
-    public static final String ID = "blackbeard:WeaponMastery";
+    public static final String ID = makeID("WeaponMastery");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final int COST = 1;
     public static final String NAME = cardStrings.NAME;

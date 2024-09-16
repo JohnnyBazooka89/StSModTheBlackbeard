@@ -1,22 +1,22 @@
 {
-  "blackbeard:WeaponPower": {
+  "${modID}:WeaponPower": {
     "NAME": "Оружия",
     "DESCRIPTIONS": []
   },
-  "blackbeard:ParrotPower": {
+  "${modID}:ParrotPower": {
     "NAME": "Попугай",
     "DESCRIPTIONS": [
       "В конце вашего хода вы разыгрываете последнюю карту, разыгранную в данном ходу."
     ]
   },
-  "blackbeard:DrunkenSailorPower": {
+  "${modID}:DrunkenSailorPower": {
     "NAME": "Пьяный моряк",
     "DESCRIPTIONS": [
       "Зелья используются #b",
       " раза."
     ]
   },
-  "blackbeard:SwordDancePower": {
+  "${modID}:SwordDancePower": {
     "NAME": "Танец мечей",
     "DESCRIPTIONS": [
       "В этом ходу следующая #yАтака использует все снаряжённые #yОружия.",
@@ -24,7 +24,7 @@
       " #yАтаки используют все снаряжённые #yОружия."
     ]
   },
-  "blackbeard:ResistancePower": {
+  "${modID}:ResistancePower": {
     "NAME": "Сопротивляемость",
     "DESCRIPTIONS": [
       "Вы получаете на #b",
@@ -33,7 +33,7 @@
       " урона от атак. (Намерения врагов отображают урон с уже рассчитанной #yСопротивляемостью [REMOVE_SPACE].)"
     ]
   },
-  "blackbeard:InfiniteBarragePower": {
+  "${modID}:InfiniteBarragePower": {
     "NAME": "Уйма ядер",
     "DESCRIPTIONS": [
       "Добавляет в руку #b",
@@ -42,28 +42,28 @@
       " в начале вашего хода."
     ]
   },
-  "blackbeard:ToastPower": {
+  "${modID}:ToastPower": {
     "NAME": "Тост",
     "DESCRIPTIONS": [
       "Отнимает #b",
       " #yСопротивляемости в начале след. хода."
     ]
   },
-  "blackbeard:DamageAtTheEndOfNextTurnPower": {
+  "${modID}:DamageAtTheEndOfNextTurnPower": {
     "NAME": "Урон в конце след. ходу",
     "DESCRIPTIONS": [
       "Вы получаете #b",
       " урона в конце след. хода."
     ]
   },
-  "blackbeard:DamageAtTheEndOfThisTurnPower": {
+  "${modID}:DamageAtTheEndOfThisTurnPower": {
     "NAME": "Урон в конце хода",
     "DESCRIPTIONS": [
       "Вы получаете #b",
       " урона в конце этого хода."
     ]
   },
-  "blackbeard:WeaponMasteryPower": {
+  "${modID}:WeaponMasteryPower": {
     "NAME": "Оружейное мастерство",
     "DESCRIPTIONS": [
       "Вы берёте #b",
@@ -71,62 +71,62 @@
       " карты, когда вы снаряжаетесь #yОружием."
     ]
   },
-  "blackbeard:SalvagerPower": {
+  "${modID}:SalvagerPower": {
     "NAME": "Мародёр",
     "DESCRIPTIONS": [
       "Даёт #b",
       " [E] , когда у #yОружия кончается #yПрочность."
     ]
   },
-  "blackbeard:LoseEnergyNextTurnPower": {
+  "${modID}:LoseEnergyNextTurnPower": {
     "NAME": "Потеря энергии в след. ходу",
     "DESCRIPTIONS": [
       "Вы теряете #b",
       " [E] в начале след. хода."
     ]
   },
-  "blackbeard:GainWeakNextTurnPower": {
+  "${modID}:GainWeakNextTurnPower": {
     "NAME": "Вы получаете Слабости в след. ходу",
     "DESCRIPTIONS": [
       "Вы получаете #b",
       " #yСлабости."
     ]
   },
-  "blackbeard:ArmorUpPower": {
+  "${modID}:ArmorUpPower": {
     "NAME": "Заблокировать",
     "DESCRIPTIONS": [
       "Даёт #b",
       " #yЗащиты, когда вы разыгрываете #yАтаки со снаряжённым #yОружием."
     ]
   },
-  "blackbeard:IntoxicationPower": {
+  "${modID}:IntoxicationPower": {
     "NAME": "Опьянение",
     "DESCRIPTIONS": [
       "Отнимает #b",
       " #yСопротивляемости в начале вашего хода."
     ]
   },
-  "blackbeard:PenknifePower": {
+  "${modID}:PenknifePower": {
     "NAME": "Перочинный нож",
     "DESCRIPTIONS": [
       "Следующая #yАтака, которая использует хотя бы одно #yОружие, нанесёт двойной урон."
     ]
   },
-  "blackbeard:DamageWhenIntangibleEndsPower": {
+  "${modID}:DamageWhenIntangibleEndsPower": {
     "NAME": "Урон от отсутствия Неосязаемости",
     "DESCRIPTIONS": [
       "В следующий раз, когда на вас нет Неосязаемости, вы получаете #b",
       " урона."
     ]
   },
-  "blackbeard:RustyThorns": {
+  "${modID}:RustyThorns": {
     "NAME": "Ржавые Шипы",
     "DESCRIPTIONS": [
       "В ответ на каждую атаку наносит #b ",
       " урона и понижается на #b1."
     ]
   },
-  "blackbeard:WeaponProficiencyPower": {
+  "${modID}:WeaponProficiencyPower": {
     "NAME": "Оружейный опыт",
     "DESCRIPTIONS": [
       "Ваши #yАтаки используют #b",
@@ -134,7 +134,7 @@
       " доп. #yОружия."
     ]
   },
-  "blackbeard:GoldToLootPower": {
+  "${modID}:GoldToLootPower": {
     "NAME": "Добыча золота",
     "DESCRIPTIONS": [
       "Даёт #b",
@@ -142,20 +142,20 @@
       " #yзолота."
     ]
   },
-  "blackbeard:BleedPower": {
+  "${modID}:BleedPower": {
     "NAME": "Кровотечение",
     "DESCRIPTIONS": [
       "Теряет #b",
       " ОЗ в начале своего хода."
     ]
   },
-  "blackbeard:ReapersMarkPower": {
+  "${modID}:ReapersMarkPower": {
     "NAME": "Метка Жнеца",
     "DESCRIPTIONS": [
       "Теряет #b40% от недостающих ОЗ при накоплении #b3 меток."
     ]
   },
-  "blackbeard:ProvisioningPower": {
+  "${modID}:ProvisioningPower": {
     "NAME": "Продовольствие",
     "DESCRIPTIONS": [
       "Даёт #b",

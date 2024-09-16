@@ -10,9 +10,11 @@ import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class LoadTheCannons extends AbstractBlackbeardRelic {
 
-    public static final String ID = "blackbeard:LoadTheCannons";
+    public static final String ID = makeID("LoadTheCannons");
     private static final Texture IMG = TextureLoader.getTexture(TheBlackbeardMod.getRelicImagePath(ID));
     private static final Texture OUTLINE = TextureLoader.getTexture(TheBlackbeardMod.getRelicOutlineImagePath(ID));
 

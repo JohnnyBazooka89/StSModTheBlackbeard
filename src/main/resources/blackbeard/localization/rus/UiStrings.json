@@ -1,57 +1,57 @@
 {
-  "blackbeard:PowerCardFromDrawPileToHandAction": {
+  "${modID}:PowerCardFromDrawPileToHandAction": {
     "TEXT": [
       "Выберите Талант, который хотите добавить в руку."
     ]
   },
-  "blackbeard:Settings": {
+  "${modID}:Settings": {
     "TEXT": [
       "Отключить Рождество. (Последние 2 недели декабря.)",
       "Используйте бета-арт для ВСЕХ карт Черной Бороды.",
       "Отключить событие \"Кораблекрушение\" для других персонажей."
     ]
   },
-  "blackbeard:Achievements": {
+  "${modID}:Achievements": {
     "TEXT": [
       "Достижение разблокировано!"
     ]
   },
-  "blackbeard:AchievementGrid": {
+  "${modID}:AchievementGrid": {
     "TEXT": [
       "#yДостижения #yЧерной #yБороды"
     ]
   },
-  "blackbeard:BLACKBEARD_MASTERY": {
+  "${modID}:BLACKBEARD_MASTERY": {
     "TEXT": [
       "Мистрзоство Черной Бороды",
       "Как Чёрная Борода, завершите Эндшпиль на 20 уровне возвышении."
     ]
   },
-  "blackbeard:RESISTANT": {
+  "${modID}:RESISTANT": {
     "TEXT": [
       "Стойкий",
       "Как Чёрная Борода, имейте 10 или более Сопротивления."
     ]
   },
-  "blackbeard:ULTIMATE_WEAPON": {
+  "${modID}:ULTIMATE_WEAPON": {
     "TEXT": [
       "Верховное Оружие",
       "Как Чёрная Борода, имейте экипированное оружие 15/10."
     ]
   },
-  "blackbeard:RICHES": {
+  "${modID}:RICHES": {
     "TEXT": [
       "Богатства!",
       "Как Чёрная Борода, выиграйте раунд, накопив как минимум 2500 золота."
     ]
   },
-  "blackbeard:LOAD_THE_CANNONS": {
+  "${modID}:LOAD_THE_CANNONS": {
     "TEXT": [
       "Зарядите Пушки",
       "Как Чёрная Борода, сыграйте 10 или более карт Ядер в одном бою."
     ]
   },
-  "blackbeard:ARMED_TO_THE_TEETH": {
+  "${modID}:ARMED_TO_THE_TEETH": {
     "TEXT": [
       "Вооружён до Зубов",
       "Как Чёрная Борода, одновременно имейте экипированными 10 оружий."

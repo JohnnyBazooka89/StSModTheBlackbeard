@@ -1,69 +1,69 @@
 {
-  "blackbeard:Strike": {
+  "${modID}:Strike": {
     "NAME": "打击",
     "DESCRIPTION": "造成 !D! 点伤害。"
   },
-  "blackbeard:Defend": {
+  "${modID}:Defend": {
     "NAME": "防御",
     "DESCRIPTION": "获得 !B! 点 格挡 。"
   },
-  "blackbeard:Cutlass": {
+  "${modID}:Cutlass": {
     "NAME": "弯刀",
-    "DESCRIPTION": "装备一把 {A} / {D} 的 blackbeard:武器 。"
+    "DESCRIPTION": "装备一把 {A} / {D} 的 ${modID}:武器 。"
   },
-  "blackbeard:Upgrade": {
+  "${modID}:Upgrade": {
     "NAME": "升级",
-    "DESCRIPTION": "使你装备着的所有的 blackbeard:武器 获得 + !M! / + !M! 。"
+    "DESCRIPTION": "使你装备着的所有的 ${modID}:武器 获得 + !M! / + !M! 。"
   },
-  "blackbeard:Sharpening": {
+  "${modID}:Sharpening": {
     "NAME": "磨砺",
-    "DESCRIPTION": "使你装备着的所有的 blackbeard:武器 获得 + !M! 攻击力。"
+    "DESCRIPTION": "使你装备着的所有的 ${modID}:武器 获得 + !M! 攻击力。"
   },
-  "blackbeard:RearmingStrike": {
+  "${modID}:RearmingStrike": {
     "NAME": "重整打击",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 装备一把 {A} / {D} 的 blackbeard:武器 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 装备一把 {A} / {D} 的 ${modID}:武器 。"
   },
-  "blackbeard:Fencing": {
+  "${modID}:Fencing": {
     "NAME": "击剑",
-    "DESCRIPTION": "使你最右边的 blackbeard:武器 获得 + !blackbeard:M+2! / + !M! 。"
+    "DESCRIPTION": "使你最右边的 ${modID}:武器 获得 + !${modID}:M+2! / + !M! 。"
   },
-  "blackbeard:Parrot": {
+  "${modID}:Parrot": {
     "NAME": "鹦鹉",
     "DESCRIPTION": "虚无 。 NL 在你的回合结束时，你打出的那一回合中最后一张牌额外打出一次。 NL （本能力不会叠加。）",
     "UPGRADE_DESCRIPTION": "在你的回合结束时，你打出的那一回合中最后一张牌额外打出一次。 NL （本能力不会叠加。）"
   },
-  "blackbeard:Halberd": {
+  "${modID}:Halberd": {
     "NAME": "戟",
-    "DESCRIPTION": "装备一把 !M! / {D} 的 blackbeard:武器 。 NL 每当你使用这把 blackbeard:武器 攻击，每次攻击给予3点 blackbeard:流血 。"
+    "DESCRIPTION": "装备一把 !M! / {D} 的 ${modID}:武器 。 NL 每当你使用这把 ${modID}:武器 攻击，每次攻击给予3点 ${modID}:流血 。"
   },
-  "blackbeard:DrunkenSailor": {
+  "${modID}:DrunkenSailor": {
     "NAME": "醉酒水手",
     "DESCRIPTION": "每当你使用一瓶药水，额外触发一次效果。"
   },
-  "blackbeard:SwordDance": {
+  "${modID}:SwordDance": {
     "NAME": "剑舞",
-    "DESCRIPTION": "在这个回合，你的下 !M! 张攻击牌使用所有装备着的 blackbeard:武器 。",
-    "UPGRADE_DESCRIPTION": "在这个回合，你的下 !M! 张攻击牌使用所有装备着的 blackbeard:武器 。"
+    "DESCRIPTION": "在这个回合，你的下 !M! 张攻击牌使用所有装备着的 ${modID}:武器 。",
+    "UPGRADE_DESCRIPTION": "在这个回合，你的下 !M! 张攻击牌使用所有装备着的 ${modID}:武器 。"
   },
-  "blackbeard:Cannonball": {
+  "${modID}:Cannonball": {
     "NAME": "炮弹",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 消耗 。"
   },
-  "blackbeard:CannonBarrage": {
+  "${modID}:CannonBarrage": {
     "NAME": "火炮弹幕",
     "DESCRIPTION": "将X+1张 *炮弹 加入你的手牌。",
     "UPGRADE_DESCRIPTION": "将X+1张 *炮弹+ 加入你的手牌。"
   },
-  "blackbeard:Rum": {
+  "${modID}:Rum": {
     "NAME": "朗姆酒",
-    "DESCRIPTION": "获得 !M! 点 blackbeard:抵抗 。",
-    "UPGRADE_DESCRIPTION": "固有 。 NL 获得 !M! 点 blackbeard:抵抗 。"
+    "DESCRIPTION": "获得 !M! 点 ${modID}:抵抗 。",
+    "UPGRADE_DESCRIPTION": "固有 。 NL 获得 !M! 点 ${modID}:抵抗 。"
   },
-  "blackbeard:GhostInTheRum": {
+  "${modID}:GhostInTheRum": {
     "NAME": "朗姆酒里的鬼魂",
-    "DESCRIPTION": "获得1层 无实体 。 NL 失去 !M! 点 blackbeard:抵抗 。 NL 消耗 。"
+    "DESCRIPTION": "获得1层 无实体 。 NL 失去 !M! 点 ${modID}:抵抗 。 NL 消耗 。"
   },
-  "blackbeard:GoldenStrike": {
+  "${modID}:GoldenStrike": {
     "NAME": "黄金打击",
     "DESCRIPTION": "造成伤害，数值等于本局游戏中已获得金币的1.5%。",
     "UPGRADE_DESCRIPTION": "造成伤害，数值等于 !M! + 本局游戏中已获得金币的1.5%。",
@@ -73,43 +73,43 @@
       " 金币。"
     ]
   },
-  "blackbeard:PowderKeg": {
+  "${modID}:PowderKeg": {
     "NAME": "火药桶",
-    "DESCRIPTION": "装备一把 {A} / {D} 的 blackbeard:武器 。 NL 当它被摧毁时，对所有敌人造成 !M! 点伤害。"
+    "DESCRIPTION": "装备一把 {A} / {D} 的 ${modID}:武器 。 NL 当它被摧毁时，对所有敌人造成 !M! 点伤害。"
   },
-  "blackbeard:Scrap": {
+  "${modID}:Scrap": {
     "NAME": "拆解",
-    "DESCRIPTION": "摧毁你最右边的 blackbeard:武器 以获得 [E] [E] 。",
-    "UPGRADE_DESCRIPTION": "摧毁你最右边的 blackbeard:武器 以获得 [E] [E] [E]。",
+    "DESCRIPTION": "摧毁你最右边的 ${modID}:武器 以获得 [E] [E] 。",
+    "UPGRADE_DESCRIPTION": "摧毁你最右边的 ${modID}:武器 以获得 [E] [E] [E]。",
     "EXTENDED_DESCRIPTION": [
       "我没有武器！"
     ]
   },
-  "blackbeard:RemoveScurvy": {
+  "${modID}:RemoveScurvy": {
     "NAME": "摆脱坏血症",
     "DESCRIPTION": "回复 !M! 点生命。 NL 移除你身上的所有负面效果。 NL 消耗 。"
   },
-  "blackbeard:InfiniteBarrage": {
+  "${modID}:InfiniteBarrage": {
     "NAME": "无尽弹幕",
     "DESCRIPTION": "你的回合开始时, 将一张 *炮弹 加入你的手牌。"
   },
-  "blackbeard:SwordOfWisdom": {
+  "${modID}:SwordOfWisdom": {
     "NAME": "智慧之剑",
-    "DESCRIPTION": "装备一把 {A} / !M! blackbeard:武器 。 NL 每当你使用这把 blackbeard:武器 攻击，抽 1 张牌。"
+    "DESCRIPTION": "装备一把 {A} / !M! ${modID}:武器 。 NL 每当你使用这把 ${modID}:武器 攻击，抽 1 张牌。"
   },
-  "blackbeard:SwordOfChaos": {
+  "${modID}:SwordOfChaos": {
     "NAME": "混乱之剑",
-    "DESCRIPTION": "装备一把 {A} / !M! blackbeard:武器 。 NL  每当你使用这把 blackbeard:武器 攻击，将一张随机牌加入你的手牌。"
+    "DESCRIPTION": "装备一把 {A} / !M! ${modID}:武器 。 NL  每当你使用这把 ${modID}:武器 攻击，将一张随机牌加入你的手牌。"
   },
-  "blackbeard:PirateStrength": {
+  "${modID}:PirateStrength": {
     "NAME": "海盗之力",
     "DESCRIPTION": "获得 !M! 点 力量 。"
   },
-  "blackbeard:HumongousCannonball": {
+  "${modID}:HumongousCannonball": {
     "NAME": "巨大炮弹",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 消耗 。"
   },
-  "blackbeard:GoldenCannonball": {
+  "${modID}:GoldenCannonball": {
     "NAME": "黄金炮弹",
     "DESCRIPTION": "造成伤害，数值等于本局游戏中已获得金币的2%。 NL 消耗 。",
     "UPGRADE_DESCRIPTION": "造成伤害，数值等于 !M! + 本局游戏中已获得金币的2%。 NL 消耗 。",
@@ -119,27 +119,27 @@
       " 金币。"
     ]
   },
-  "blackbeard:FinalBarrage": {
+  "${modID}:FinalBarrage": {
     "NAME": "终极弹幕",
     "DESCRIPTION": "造成 !M! 点伤害，次数等于本场战斗中已打出的炮弹的数量。 NL （每种炮弹都计算在内。）",
     "EXTENDED_DESCRIPTION": [
       " NL （造成 !D! 点伤害。）"
     ]
   },
-  "blackbeard:BrownPants": {
+  "${modID}:BrownPants": {
     "NAME": "棕裤子",
     "DESCRIPTION": "获得 !M! 点 多重护甲 。"
   },
-  "blackbeard:JollyRoger": {
+  "${modID}:JollyRoger": {
     "NAME": "骷髅旗",
     "DESCRIPTION": "给予所有敌人 !M! 层 虚弱 。 NL 消耗 。"
   },
-  "blackbeard:CaptainsCabin": {
+  "${modID}:CaptainsCabin": {
     "NAME": "船长的座舱",
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 将 !M! 张 *炮弹 加入你的手牌。",
     "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 将 !M! 张 *炮弹 加入你的手牌。"
   },
-  "blackbeard:GoldenDefense": {
+  "${modID}:GoldenDefense": {
     "NAME": "黄金防御",
     "DESCRIPTION": "获得格挡，数值等于本局游戏中已获得金币的1.5%。",
     "UPGRADE_DESCRIPTION": "获得格挡，数值等于 !M! + 本局游戏中已获得金币的1.5%。",
@@ -149,23 +149,23 @@
       " 金币。"
     ]
   },
-  "blackbeard:Shrapnel": {
+  "${modID}:Shrapnel": {
     "NAME": "霰弹",
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害。"
   },
-  "blackbeard:Toast": {
+  "${modID}:Toast": {
     "NAME": "干杯",
-    "DESCRIPTION": "获得 !M! 点 blackbeard:抵抗 。 NL 在你的下回合开始时，失去 !M! 点 blackbeard:抵抗 。 NL 消耗 。"
+    "DESCRIPTION": "获得 !M! 点 ${modID}:抵抗 。 NL 在你的下回合开始时，失去 !M! 点 ${modID}:抵抗 。 NL 消耗 。"
   },
-  "blackbeard:CatONineTails": {
+  "${modID}:CatONineTails": {
     "NAME": "九尾猫",
-    "DESCRIPTION": "装备一把 !M! / {D} 的 blackbeard:武器 。 NL 在你使用这把 blackbeard:武器 攻击后，使其获得+2攻击力。"
+    "DESCRIPTION": "装备一把 !M! / {D} 的 ${modID}:武器 。 NL 在你使用这把 ${modID}:武器 攻击后，使其获得+2攻击力。"
   },
-  "blackbeard:PirateEarring": {
+  "${modID}:PirateEarring": {
     "NAME": "海盗耳环",
     "DESCRIPTION": "获得 !M! 层 人工制品 。"
   },
-  "blackbeard:Murder": {
+  "${modID}:Murder": {
     "NAME": "谋杀",
     "DESCRIPTION": "对一名非首领敌人造成 !D! 点伤害。 NL 即逝 。",
     "EXTENDED_DESCRIPTION": [
@@ -173,56 +173,56 @@
       "谋杀"
     ]
   },
-  "blackbeard:Bandana": {
+  "${modID}:Bandana": {
     "NAME": "印花头巾",
     "DESCRIPTION": "每当你攻击一名敌人，获得5金币。 NL 一场对战中最多获得 !M! 金币。"
   },
-  "blackbeard:TacticalRetreat": {
+  "${modID}:TacticalRetreat": {
     "NAME": "战术撤退",
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 下回合多抽1张牌。"
   },
-  "blackbeard:Dagger": {
+  "${modID}:Dagger": {
     "NAME": "匕首",
-    "DESCRIPTION": "装备一把 {A} / !M! 的 blackbeard:武器 。 NL 在你的回合开始时，匕首失去1点耐久度，对一个随机敌人造成等同于匕首攻击力的伤害。"
+    "DESCRIPTION": "装备一把 {A} / !M! 的 ${modID}:武器 。 NL 在你的回合开始时，匕首失去1点耐久度，对一个随机敌人造成等同于匕首攻击力的伤害。"
   },
-  "blackbeard:PiratesWill": {
+  "${modID}:PiratesWill": {
     "NAME": "海盗意志",
     "DESCRIPTION": "移除你身上的所有负面效果。 NL 抽 !M! 张牌。 NL 消耗 。"
   },
-  "blackbeard:Pegleg": {
+  "${modID}:Pegleg": {
     "NAME": "木腿",
     "DESCRIPTION": "失去2点 敏捷 。 NL 获得 !M! 点 力量 。"
   },
-  "blackbeard:Eyepatch": {
+  "${modID}:Eyepatch": {
     "NAME": "眼罩",
     "DESCRIPTION": "在下一回合，获得 !M! 层 虚弱 。 NL 在你的回合开始时，额外抽1张牌。",
     "UPGRADE_DESCRIPTION": "固有 。 NL 在下一回合，获得 !M! 层 虚弱 。 NL 在你的回合开始时，额外抽1张牌。"
   },
-  "blackbeard:CaptainsHat": {
+  "${modID}:CaptainsHat": {
     "NAME": "船长的帽子",
-    "DESCRIPTION": "获得 !M! 点 力量 。 NL 获得 !M! 点 blackbeard:抵抗 。"
+    "DESCRIPTION": "获得 !M! 点 力量 。 NL 获得 !M! 点 ${modID}:抵抗 。"
   },
-  "blackbeard:BlindAttacks": {
+  "${modID}:BlindAttacks": {
     "NAME": "盲目攻击",
     "DESCRIPTION": "随机对敌人造成 !D! 点伤害3次。"
   },
-  "blackbeard:Boarding": {
+  "${modID}:Boarding": {
     "NAME": "上船",
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害两次。 NL 抽 !M! 张牌。"
   },
-  "blackbeard:AgileStrike": {
+  "${modID}:AgileStrike": {
     "NAME": "灵巧打击",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果你这回合装备过 blackbeard:武器 ，这张牌的耗能减少为0。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果你这回合装备过 ${modID}:武器 ，这张牌的耗能减少为0。"
   },
-  "blackbeard:DangerousBlow": {
+  "${modID}:DangerousBlow": {
     "NAME": "危险重击",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 在你的下回合结束时，你受到 !M! 点伤害。"
   },
-  "blackbeard:VengefulSpirit": {
+  "${modID}:VengefulSpirit": {
     "NAME": "复仇之魂",
     "DESCRIPTION": "获得1层 无实体 。 NL 下次你的 无实体 产消失时，你受到 !M! 点伤害。 NL 消耗 。"
   },
-  "blackbeard:Revenge": {
+  "${modID}:Revenge": {
     "NAME": "复仇",
     "DESCRIPTION": "对所有敌人造成0- !M! 点伤害，数值取决于你已损失的生命值的百分比。",
     "EXTENDED_DESCRIPTION": [
@@ -230,7 +230,7 @@
       "复仇"
     ]
   },
-  "blackbeard:GoldenRain": {
+  "${modID}:GoldenRain": {
     "NAME": "黄金雨",
     "DESCRIPTION": "对所有敌人造成伤害，数值等于本局游戏中已获得金币的2.5%。",
     "UPGRADE_DESCRIPTION": "对所有敌人造成伤害，数值等于本局游戏中已获得金币的3%。",
@@ -240,91 +240,91 @@
       " 金币。"
     ]
   },
-  "blackbeard:Sword": {
+  "${modID}:Sword": {
     "NAME": "剑",
-    "DESCRIPTION": "从3把剑中选择1把。 NL 装备一把 {A} / !M! 的 blackbeard:武器 ，这把 blackbeard:武器 会具有额外效果。",
+    "DESCRIPTION": "从3把剑中选择1把。 NL 装备一把 {A} / !M! 的 ${modID}:武器 ，这把 ${modID}:武器 会具有额外效果。",
     "EXTENDED_DESCRIPTION": [
       "额外效果",
       "#r火焰 ：每当你使用这把武器攻击，对所有敌人造成 #b3 点伤害。 NL #y智慧 ：每当你使用这把武器攻击，抽 #b1 张牌。 NL #p混乱 ：每当你使用这把武器攻击，将一张随机牌加入你的手牌。"
     ]
   },
-  "blackbeard:BeatUp": {
+  "${modID}:BeatUp": {
     "NAME": "殴打",
     "DESCRIPTION": "造成 !D! 点伤害两次。 NL 给予 !M! 层 易伤 。"
   },
-  "blackbeard:IntimidatingStrike": {
+  "${modID}:IntimidatingStrike": {
     "NAME": "动摇打击",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 给予 !M! 虚弱 。"
   },
-  "blackbeard:WiseDefense": {
+  "${modID}:WiseDefense": {
     "NAME": "智慧防御",
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 抽 !M! 张牌。",
     "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 抽 !M! 张牌。"
   },
-  "blackbeard:ChaoticDefense": {
+  "${modID}:ChaoticDefense": {
     "NAME": "混乱防御",
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 将 !M! 张随机牌加入你的手牌。",
     "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 将 !M! 张随机牌加入你的手牌。"
   },
-  "blackbeard:SmithingHammer": {
+  "${modID}:SmithingHammer": {
     "NAME": "锻锤",
-    "DESCRIPTION": "装备一把 {A} / !M! 的 blackbeard:武器 。 NL 在你使用这把 blackbeard:武器 攻击后，以及在你的回合开始时，锻锤失去1点耐久度，在本场战斗中升级你手牌中的一张随机牌和抽牌堆中的一张随机牌。"
+    "DESCRIPTION": "装备一把 {A} / !M! 的 ${modID}:武器 。 NL 在你使用这把 ${modID}:武器 攻击后，以及在你的回合开始时，锻锤失去1点耐久度，在本场战斗中升级你手牌中的一张随机牌和抽牌堆中的一张随机牌。"
   },
-  "blackbeard:Spear": {
+  "${modID}:Spear": {
     "NAME": "矛",
-    "DESCRIPTION": "装备一把 !M! / {D} 的 blackbeard:武器 。"
+    "DESCRIPTION": "装备一把 !M! / {D} 的 ${modID}:武器 。"
   },
-  "blackbeard:WeaponMastery": {
+  "${modID}:WeaponMastery": {
     "NAME": "武器专精",
-    "DESCRIPTION": "每当你装备一把 blackbeard:武器 ，抽 !M! 张牌。",
-    "UPGRADE_DESCRIPTION": "每当你装备一把 blackbeard:武器 ，抽 !M! 张牌。"
+    "DESCRIPTION": "每当你装备一把 ${modID}:武器 ，抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": "每当你装备一把 ${modID}:武器 ，抽 !M! 张牌。"
   },
-  "blackbeard:Salvager": {
+  "${modID}:Salvager": {
     "NAME": "营救者",
-    "DESCRIPTION": "每当一把 blackbeard:武器 被摧毁，获得 [E] 。",
-    "UPGRADE_DESCRIPTION": "每当一把 blackbeard:武器 被摧毁，获得 [E] [E] 。"
+    "DESCRIPTION": "每当一把 ${modID}:武器 被摧毁，获得 [E] 。",
+    "UPGRADE_DESCRIPTION": "每当一把 ${modID}:武器 被摧毁，获得 [E] [E] 。"
   },
-  "blackbeard:Anchor": {
+  "${modID}:Anchor": {
     "NAME": "锚",
     "DESCRIPTION": "固有 。 NL 获得 !B! 点 格挡 。 NL 消耗 。",
     "UPGRADE_DESCRIPTION": "固有 。 NL 获得 !B! 点 格挡 。 NL 抽 !M! 张牌。 NL 消耗 。"
   },
-  "blackbeard:BoostMorale": {
+  "${modID}:BoostMorale": {
     "NAME": "鼓舞士气",
     "DESCRIPTION": "获得 5 金币。 NL 抽 !M! 张牌。 NL 获得 [E] 。 NL 消耗 。",
     "UPGRADE_DESCRIPTION": "获得 5 金币。 NL 抽 !M! 张牌。 NL 获得 [E] 。 NL 消耗 。"
   },
-  "blackbeard:MegaUpgrade": {
+  "${modID}:MegaUpgrade": {
     "NAME": "超升级",
-    "DESCRIPTION": "使你装备着的所有的 blackbeard:武器 获得 + !M! / + !M! 。"
+    "DESCRIPTION": "使你装备着的所有的 ${modID}:武器 获得 + !M! / + !M! 。"
   },
-  "blackbeard:Recklessness": {
+  "${modID}:Recklessness": {
     "NAME": "鲁莽",
     "DESCRIPTION": "获得 [E] [E] 。 NL 在你的下个回合开始时，失去 [E] 。",
     "UPGRADE_DESCRIPTION": "获得 [E] [E] [E] 。 NL 在你的下个回合开始时，失去 [E] 。"
   },
-  "blackbeard:DelayedPain": {
+  "${modID}:DelayedPain": {
     "NAME": "延缓苦痛",
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 在你的下个回合开始时，你受到 !M! 点伤害。"
   },
-  "blackbeard:ArmorUp": {
+  "${modID}:ArmorUp": {
     "NAME": "穿上盔甲",
-    "DESCRIPTION": "每当你使用 blackbeard:武器 攻击，获得 !M! 点 格挡 。"
+    "DESCRIPTION": "每当你使用 ${modID}:武器 攻击，获得 !M! 点 格挡 。"
   },
-  "blackbeard:Intoxication": {
+  "${modID}:Intoxication": {
     "NAME": "沉醉",
-    "DESCRIPTION": "获得 !M! 点 blackbeard:抵抗 。 NL 在你的回合开始时，失去1点 blackbeard:抵抗 。"
+    "DESCRIPTION": "获得 !M! 点 ${modID}:抵抗 。 NL 在你的回合开始时，失去1点 ${modID}:抵抗 。"
   },
-  "blackbeard:CannonballSupply": {
+  "${modID}:CannonballSupply": {
     "NAME": "炮弹补给",
     "DESCRIPTION": "保留 。 NL 将3张 *炮弹 加入你的手牌。",
     "UPGRADE_DESCRIPTION": "保留 。 NL 将3张 *炮弹+ 加入你的手牌。"
   },
-  "blackbeard:BountyHunter": {
+  "${modID}:BountyHunter": {
     "NAME": "赏金猎人",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 斩杀 时,获得 !M! 金币。 NL 消耗 。"
   },
-  "blackbeard:GoldenNoose": {
+  "${modID}:GoldenNoose": {
     "NAME": "金绞索",
     "DESCRIPTION": "造成伤害，数值等于本局游戏中已获得金币的4%。",
     "UPGRADE_DESCRIPTION": "造成伤害，数值等于本局游戏中已获得金币的5%。",
@@ -334,74 +334,74 @@
       " 金币。"
     ]
   },
-  "blackbeard:DoubleBottom": {
+  "${modID}:DoubleBottom": {
     "NAME": "双层船底",
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 在下一回合获得 !B! 点 格挡 。"
   },
-  "blackbeard:Lifeboat": {
+  "${modID}:Lifeboat": {
     "NAME": "生命之舟",
     "DESCRIPTION": "获得 !B! 点 格挡 。"
   },
-  "blackbeard:Provisioning": {
+  "${modID}:Provisioning": {
     "NAME": "航程补给",
     "DESCRIPTION": "获得一瓶随机药水。 NL 在下一回合，获得一瓶随机药水。 NL 消耗 。"
   },
-  "blackbeard:TerrorOfTheSeas": {
+  "${modID}:TerrorOfTheSeas": {
     "NAME": "恐怖之海",
     "DESCRIPTION": "给予所有敌人 !M! 层 易伤 。 NL 消耗 。"
   },
-  "blackbeard:FishingNets": {
+  "${modID}:FishingNets": {
     "NAME": "捕鱼网",
-    "DESCRIPTION": "获得 !M! 层 blackbeard:生锈的荆棘 。"
+    "DESCRIPTION": "获得 !M! 层 ${modID}:生锈的荆棘 。"
   },
-  "blackbeard:BuriedTreasure": {
+  "${modID}:BuriedTreasure": {
     "NAME": "埋没的宝藏",
     "DESCRIPTION": "获得 !M! 金币。 NL 消耗 。"
   },
-  "blackbeard:DoubleCannonball": {
+  "${modID}:DoubleCannonball": {
     "NAME": "双重打击",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 将1张 *炮弹 加入你的手牌。 NL 消耗 。",
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 将1张 *炮弹+ 加入你的手牌。 NL 消耗 。"
   },
-  "blackbeard:SwordOfFire": {
+  "${modID}:SwordOfFire": {
     "NAME": "火焰之剑",
-    "DESCRIPTION": "装备一把 {A} / !M! 的 blackbeard:武器 。 NL 每当你使用这把 blackbeard:武器 攻击，对所有敌人造成3点伤害。"
+    "DESCRIPTION": "装备一把 {A} / !M! 的 ${modID}:武器 。 NL 每当你使用这把 ${modID}:武器 攻击，对所有敌人造成3点伤害。"
   },
-  "blackbeard:CloakAndCannonball": {
+  "${modID}:CloakAndCannonball": {
     "NAME": "斗篷与炮弹",
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 将1张 *炮弹 加入你的手牌。",
     "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 将1张 *炮弹+ 加入你的手牌。"
   },
-  "blackbeard:UndeadForm": {
+  "${modID}:UndeadForm": {
     "NAME": "不死形态",
     "DESCRIPTION": "获得3层 无实体 。 NL 下次你的 无实体 产消失时，你受到 !M! 点伤害。"
   },
-  "blackbeard:WeaponProficiency": {
+  "${modID}:WeaponProficiency": {
     "NAME": "武器娴熟",
-    "DESCRIPTION": "你的攻击额外使用一把 blackbeard:武器 。"
+    "DESCRIPTION": "你的攻击额外使用一把 ${modID}:武器 。"
   },
-  "blackbeard:FieryDefense": {
+  "${modID}:FieryDefense": {
     "NAME": "火焰防御",
     "DESCRIPTION": "获得 !B! 点 格挡 。 NL 对所有敌人造成3点伤害。",
     "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 对所有敌人造成3点伤害两次。"
   },
-  "blackbeard:VampiricScepter": {
+  "${modID}:VampiricScepter": {
     "NAME": "吸血鬼权杖",
-    "DESCRIPTION": "装备一把 !M! / {D} 的 blackbeard:武器 。 NL 每当你使用这把 blackbeard:武器 攻击，回复 !blackbeard:M2! 点生命值。"
+    "DESCRIPTION": "装备一把 !M! / {D} 的 ${modID}:武器 。 NL 每当你使用这把 ${modID}:武器 攻击，回复 !${modID}:M2! 点生命值。"
   },
-  "blackbeard:ReapersScythe": {
+  "${modID}:ReapersScythe": {
     "NAME": "收割之镰",
-    "DESCRIPTION": "装备一把 !M! / {D} 的 blackbeard:武器 。 NL 每当你使用这把 blackbeard:武器 攻击，每次攻击给予目标敌人1层 blackbeard:收割者印记 。"
+    "DESCRIPTION": "装备一把 !M! / {D} 的 ${modID}:武器 。 NL 每当你使用这把 ${modID}:武器 攻击，每次攻击给予目标敌人1层 ${modID}:收割者印记 。"
   },
-  "blackbeard:PirateHook": {
+  "${modID}:PirateHook": {
     "NAME": "海盗之钩",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 如果这张牌造成了至少10点伤害, 再次 造成 !D! 点伤害。"
   },
-  "blackbeard:DeadlyArsenal": {
+  "${modID}:DeadlyArsenal": {
     "NAME": "致命军火",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 你每装备着1把不同的 blackbeard:武器 ，抽1张牌。"
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 你每装备着1把不同的 ${modID}:武器 ，抽1张牌。"
   },
-  "blackbeard:PowerHungry": {
+  "${modID}:PowerHungry": {
     "NAME": "渴求力量",
     "DESCRIPTION": "将 !M! 张能力牌从你的抽牌堆放入你的手牌。 NL 消耗 。",
     "UPGRADE_DESCRIPTION": "固有 。 NL 将 !M! 张能力牌从你的抽牌堆放入你的手牌。 NL 消耗 。"

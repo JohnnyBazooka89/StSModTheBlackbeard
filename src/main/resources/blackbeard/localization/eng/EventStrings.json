@@ -1,5 +1,5 @@
 {
-  "blackbeard:Ssssserpent": {
+  "${modID}:Ssssserpent": {
     "NAME": "The Ssssserpent",
     "DESCRIPTIONS": [
       "\"Ho, ho, hooo! NL NL I appreciate your enthusiasm. NL NL Gold and treasuresssss. Gold and treasuresssss. NL ~GOLD~ ~AND~ ~TREASURESSSSS.~ NL NL ~Take~ ~thissssss!~ @*TAKE*@ @*THISSSSSS*!\"@"
@@ -10,7 +10,7 @@
       "[Accept the Relic]"
     ]
   },
-  "blackbeard:Vampires": {
+  "${modID}:Vampires": {
     "NAME": "Vampires(?)",
     "DESCRIPTIONS": [
       "\"Oh, so you are interested in the weaponry enchanted with our ~POWER?~ NL NL Very well, for the gold you are offering I can give you this #y~Vampiric~ #y~Scepter.~ NL NL Perhaps next time you will join us, to #rfeed with your own teeth.\""
@@ -22,12 +22,12 @@
       " Gold."
     ]
   },
-  "blackbeard:SensoryStone": {
+  "${modID}:SensoryStone": {
     "DESCRIPTIONS": [
       "#y<Once #yupon #ya #ytime #yin #ya #ysmall #ytavern, #yin #ythe #ymiddle #yof #ynowhere> NL - @Barkeeper!@ Give me your strongest rum!!! NL - The strongest rum in this tavern? Are you sure? I knew only one man who could drink it... he was a great pirate... the greatest pirate... NL - Knew him? Ha, that man is only a myth. And you say you knew him? Hahahaha. ~That's~ ~ridiculous.~ NL - Oh, he existed and I have a proof. Look at this golden coin he paid me with... he had 10000 of such coins. He loved gold, even more than rum from this tavern... NL - 10000 golden coins? So where is he now? And where are his treasures? NL - He still wanted more... He should have never made a deal with this talking whale... NL - Wait, what? ~A...~ ~talking...~ ~whale?...~"
     ]
   },
-  "blackbeard:GoldsmithEvent": {
+  "${modID}:GoldsmithEvent": {
     "NAME": "The Goldsmith",
     "DESCRIPTIONS": [
       "While walking through Exordium, you noticed a strange looking man working in a workshop. NL NL - ~Hi!~ I'm a goldsmith! Did you know that you can use gold from the spire to gild your cards? Why won't you try with one of your Strikes or Defends? NL NL You are unsure about this idea, but it wouldn't hurt to try.",
@@ -47,7 +47,7 @@
       "[Continue on your adventure]"
     ]
   },
-  "blackbeard:ShipwreckEvent": {
+  "${modID}:ShipwreckEvent": {
     "NAME": "Shipwreck",
     "DESCRIPTIONS": [
       "Traveling through the City, you noticed the #ydocks you have never seen before. Looking closely, you discovered a strange looking #yshipwreck which may contain useful items. You can decide to search a part of the shipwreck, but on the other hand, you worry that getting close to the shipwreck and searching it would be #rphysically #rexhausting.",

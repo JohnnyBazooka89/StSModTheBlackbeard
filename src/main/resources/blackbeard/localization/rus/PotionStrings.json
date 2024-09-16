@@ -1,19 +1,19 @@
 {
-  "blackbeard:RumPotion": {
+  "${modID}:RumPotion": {
     "NAME": "Ром",
     "DESCRIPTIONS": [
       "Даёт #b",
       " #yСопротивляемости."
     ]
   },
-  "blackbeard:OrangeJuicePotion": {
+  "${modID}:OrangeJuicePotion": {
     "NAME": "Апельсиновый сок",
     "DESCRIPTIONS": [
       "Восполняет #b",
       " ОЗ. Снимает все отриц. эффекты."
     ]
   },
-  "blackbeard:UpgradePotion": {
+  "${modID}:UpgradePotion": {
     "NAME": "Зелье улучшения",
     "DESCRIPTIONS": [
       "Даёт #b+",

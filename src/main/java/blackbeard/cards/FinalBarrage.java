@@ -17,8 +17,11 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import java.util.ArrayList;
 
+import static blackbeard.TheBlackbeardMod.MOD_ID_PREFIX;
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class FinalBarrage extends AbstractBlackbeardCard {
-    public static final String ID = "blackbeard:FinalBarrage";
+    public static final String ID = makeID("FinalBarrage");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
@@ -50,10 +53,10 @@ public class FinalBarrage extends AbstractBlackbeardCard {
         int count = 0;
         for (int index : indexes) {
             switch (AbstractDungeon.actionManager.cardsPlayedThisCombat.get(index).cardID) {
-                case HumongousCannonball.ID:
+                case MOD_ID_PREFIX + "HumongousCannonball":
                     addToBot(new ShootAnythingAction(m, getHumongousCannonballTexture(), true, count));
                     break;
-                case GoldenCannonball.ID:
+                case MOD_ID_PREFIX + "GoldenCannonball":
                     addToBot(new ShootAnythingAction(m, getGoldenCannonballTexture(), true, count));
                     break;
                 default:

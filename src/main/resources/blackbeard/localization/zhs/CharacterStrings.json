@@ -1,5 +1,5 @@
 {
-  "blackbeard:BlackbeardCharacter": {
+  "${modID}:BlackbeardCharacter": {
     "NAMES": [
       "黑胡子船长",
       "黑胡子船长"
@@ -10,12 +10,12 @@
       "在一条昏暗的街上，你遇见几个戴着兜帽的人在进行某种黑暗的仪式。当你靠近时，他们全都同时转身面对你，让你觉得十分诡异。 其中个子最高的一个微微一笑，露出了长长的尖牙，向你伸出了一只苍白而瘦长的手。 NL ~\"加入~ ~我们，~ ~噢~ ~了不起的~ ~船长~，~ ~一起来~ ~感受~ ~高塔~ ~的~ ~温~ ~暖~ ~吧。\"~"
     ]
   },
-  "blackbeard:ChristmasThemeGreeting": {
+  "${modID}:ChristmasThemeGreeting": {
     "TEXT": [
       "哟，嚯，嚯！ NL 圣诞快乐！"
     ]
   },
-  "blackbeard:CaptainAbeEncounter": {
+  "${modID}:CaptainAbeEncounter": {
     "TEXT": [
       "啊，这是我的领地！",
       "呀哈！尝尝我的弯刀！",
@@ -23,7 +23,7 @@
       "尖塔只能有一个船长。"
     ]
   },
-  "blackbeard:MaximumWeaponsReached": {
+  "${modID}:MaximumWeaponsReached": {
     "TEXT": [
       "我不能同时持有超过 #r10 把武器。"
     ]

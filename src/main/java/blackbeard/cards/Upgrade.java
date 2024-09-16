@@ -9,9 +9,11 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class Upgrade extends AbstractBlackbeardCard {
 
-    public static final String ID = "blackbeard:Upgrade";
+    public static final String ID = makeID("Upgrade");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final int COST = 1;
     private static final int UPGRADE_VALUE = 1;

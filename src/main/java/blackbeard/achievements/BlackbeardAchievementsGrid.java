@@ -1,6 +1,5 @@
 package blackbeard.achievements;
 
-import blackbeard.TheBlackbeardMod;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
@@ -12,13 +11,16 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+import static blackbeard.TheBlackbeardMod.MOD_ID;
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class BlackbeardAchievementsGrid {
     public Map<String, BlackbeardAchievementItem> items = new LinkedHashMap<>();
     private static final float SPACING = 200.0F * Settings.scale;
     private static final int ITEMS_PER_ROW = 5;
 
     public BlackbeardAchievementsGrid() {
-        BlackbeardAchievementItem.atlas = new TextureAtlas(Gdx.files.internal("blackbeard/img/achievements/BlackbeardAchievements.atlas"));
+        BlackbeardAchievementItem.atlas = new TextureAtlas(Gdx.files.internal(MOD_ID + "/img/achievements/BlackbeardAchievements.atlas"));
         loadAchievement("ARMED_TO_THE_TEETH");
         loadAchievement("ULTIMATE_WEAPON");
         loadAchievement("LOAD_THE_CANNONS");
@@ -28,7 +30,7 @@ public class BlackbeardAchievementsGrid {
     }
 
     private void loadAchievement(String id) {
-        String fullId = TheBlackbeardMod.makeAchievementKey(id);
+        String fullId = makeID(id);
         UIStrings uiStrings = CardCrawlGame.languagePack.getUIString(fullId);
         String name = uiStrings.TEXT[0];
         String description = uiStrings.TEXT[1];

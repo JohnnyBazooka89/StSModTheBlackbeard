@@ -1,5 +1,5 @@
 {
-  "blackbeard:WeaponKeyword": {
+  "${modID}:WeaponKeyword": {
     "PROPER_NAME": "Оружие",
     "NAMES": [
       "оружие",
@@ -10,7 +10,7 @@
     ],
     "DESCRIPTION": "Когда вы разыгрываете карты #yАтак, тратит #b1 #yПрочности у правого #yОружия и добавляет урон, равный урону данного #yОружия. Одновременно может быть снаряжено до #b10 #yОружий."
   },
-  "blackbeard:ResistanceKeyword": {
+  "${modID}:ResistanceKeyword": {
     "PROPER_NAME": "Сопротивляемость",
     "NAMES": [
       "сопротивляемость",
@@ -18,21 +18,21 @@
     ],
     "DESCRIPTION": "Вы получаете меньше урона от атак. (Намерения врагов отображают урон с уже рассчитанной #yСопротивляемостью [REMOVE_SPACE].) #yСопротивляемость может быть #rотрицательной."
   },
-  "blackbeard:BleedKeyword": {
+  "${modID}:BleedKeyword": {
     "PROPER_NAME": "Кровотечение",
     "NAMES": [
       "кровотечения"
     ],
     "DESCRIPTION": "Истекающие кровью существа теряют ОЗ в начале своего хода."
   },
-  "blackbeard:ReapersMarkKeyword": {
+  "${modID}:ReapersMarkKeyword": {
     "PROPER_NAME": "Метка\u00a0Жнеца",
     "NAMES": [
       "метку\u00a0жнеца"
     ],
     "DESCRIPTION": "Существо теряет #b40% от недостающих ОЗ при накоплении #b3 меток."
   },
-  "blackbeard:RustyThorns": {
+  "${modID}:RustyThorns": {
     "PROPER_NAME": "Ржавые\u00a0Шипы",
     "NAMES": [
       "ржавые\u00a0шипы",

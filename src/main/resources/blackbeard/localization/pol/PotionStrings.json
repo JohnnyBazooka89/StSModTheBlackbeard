@@ -1,19 +1,19 @@
 {
-  "blackbeard:RumPotion": {
+  "${modID}:RumPotion": {
     "NAME": "Rum",
     "DESCRIPTIONS": [
       "Zyskaj #b",
       " pkt. #yOdporności."
     ]
   },
-  "blackbeard:OrangeJuicePotion": {
+  "${modID}:OrangeJuicePotion": {
     "NAME": "Sok pomarańczowy",
     "DESCRIPTIONS": [
       "Przywróć #b",
       " PŻ. Pozbądź się wszystkich negatywnych efektów."
     ]
   },
-  "blackbeard:UpgradePotion": {
+  "${modID}:UpgradePotion": {
     "NAME": "Mikstura ulepszenia",
     "DESCRIPTIONS": [
       "Daj wszystkim swoim #yBroniom #b+",

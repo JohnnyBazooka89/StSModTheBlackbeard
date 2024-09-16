@@ -3,10 +3,12 @@ package blackbeard.variables;
 import basemod.abstracts.DynamicVariable;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class MagicNumberPlusTwoVariable extends DynamicVariable {
     @Override
     public String key() {
-        return "blackbeard:M+2";
+        return makeID("M+2");
     }
 
     @Override

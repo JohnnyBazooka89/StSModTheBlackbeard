@@ -1,19 +1,19 @@
 {
-  "blackbeard:RumPotion": {
+  "${modID}:RumPotion": {
     "NAME": "朗姆酒",
     "DESCRIPTIONS": [
       "获得 #b",
       " 点 #y抵抗 。"
     ]
   },
-  "blackbeard:OrangeJuicePotion": {
+  "${modID}:OrangeJuicePotion": {
     "NAME": "橙汁",
     "DESCRIPTIONS": [
       "回复 #b",
       " 点生命值。移除你身上的所有负面效果。"
     ]
   },
-  "blackbeard:UpgradePotion": {
+  "${modID}:UpgradePotion": {
     "NAME": "升级药水",
     "DESCRIPTIONS": [
       "使你装备着的所有 #y武器 获得 #b+",

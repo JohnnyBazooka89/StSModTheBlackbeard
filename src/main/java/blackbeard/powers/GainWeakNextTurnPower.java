@@ -13,8 +13,10 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class GainWeakNextTurnPower extends AbstractPower {
-    public static final String POWER_ID = "blackbeard:GainWeakNextTurnPower";
+    public static final String POWER_ID = makeID("GainWeakNextTurnPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

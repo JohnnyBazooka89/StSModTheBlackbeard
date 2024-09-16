@@ -16,8 +16,10 @@ import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 import java.util.ArrayList;
 import java.util.List;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class BlackbeardVampiresEvent extends AbstractImageEvent {
-    public static final String ID = "blackbeard:Vampires";
+    public static final String ID = makeID("Vampires");
     private static final EventStrings eventStrings;
     private static final EventStrings customEventStrings;
     public static final String NAME;

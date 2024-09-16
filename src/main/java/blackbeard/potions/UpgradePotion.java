@@ -12,9 +12,11 @@ import com.megacrit.cardcrawl.helpers.TipHelper;
 import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class UpgradePotion extends AbstractBlackbeardPotion {
 
-    private static final String ID = "blackbeard:UpgradePotion";
+    private static final String ID = makeID("UpgradePotion");
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(ID);
     public static final String NAME = potionStrings.NAME;
     public static final String[] DESCRIPTIONS = potionStrings.DESCRIPTIONS;

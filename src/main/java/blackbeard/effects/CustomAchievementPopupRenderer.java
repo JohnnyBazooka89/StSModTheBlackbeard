@@ -25,11 +25,14 @@ import org.apache.logging.log4j.Logger;
 import java.util.ArrayList;
 import java.util.List;
 
+import static blackbeard.TheBlackbeardMod.MOD_ID;
+import static blackbeard.TheBlackbeardMod.makeID;
+
 //Code based on work of TijmenvanderKemp (Teafling)
 //taken from: https://github.com/TijmenvanderKemp/BaseMod/tree/achievements
 public class CustomAchievementPopupRenderer implements PostRenderSubscriber {
 
-    private static final UIStrings achievementsStrings = CardCrawlGame.languagePack.getUIString("blackbeard:Achievements");
+    private static final UIStrings achievementsStrings = CardCrawlGame.languagePack.getUIString(makeID("Achievements"));
 
     private static final float MOVE_DURATION = .7f;
     private static final float SHOW_DURATION = 6f;
@@ -113,7 +116,7 @@ public class CustomAchievementPopupRenderer implements PostRenderSubscriber {
     }
 
     private void queuePopupForRendering() {
-        Texture achievementPopup = ImageMaster.loadImage("blackbeard/img/achievements/AchievementPopup.png");
+        Texture achievementPopup = ImageMaster.loadImage(MOD_ID + "/img/achievements/AchievementPopup.png");
         TextureAtlas.AtlasRegion atlasRegion = new TextureAtlas.AtlasRegion(achievementPopup, 0, 0, achievementPopup.getWidth(), achievementPopup.getHeight());
 
         achievementsToRenderWithAssociatedDisposable.add(new GameEffectAndDisposable(getAchievementPopupElement(atlasRegion, 0, 0), achievementPopup));

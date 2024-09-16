@@ -24,15 +24,18 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
+import static blackbeard.TheBlackbeardMod.MOD_ID;
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class ParrotPower extends AbstractPower {
-    public static final String POWER_ID = "blackbeard:ParrotPower";
+    public static final String POWER_ID = makeID("ParrotPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
     private static final Texture power128Image = TextureLoader.getTexture(TheBlackbeardMod.getPower128ImagePath(POWER_ID));
     private static final Texture power48Image = TextureLoader.getTexture(TheBlackbeardMod.getPower48ImagePath(POWER_ID));
 
-    private static final String BLACKBEARD_PARROT_PATH = "blackbeard/img/char/blackbeard/Parrot.png";
+    private static final String BLACKBEARD_PARROT_PATH = MOD_ID + "/img/char/blackbeard/Parrot.png";
 
     private static Texture tex = TextureLoader.getTexture(BLACKBEARD_PARROT_PATH);
 

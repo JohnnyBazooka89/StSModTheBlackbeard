@@ -1,22 +1,22 @@
 {
-  "blackbeard:WeaponPower": {
+  "${modID}:WeaponPower": {
     "NAME": "武器",
     "DESCRIPTIONS": []
   },
-  "blackbeard:ParrotPower": {
+  "${modID}:ParrotPower": {
     "NAME": "鹦鹉",
     "DESCRIPTIONS": [
       "在你的回合结束时，你打出的那一回合中最后一张牌额外打出一次。"
     ]
   },
-  "blackbeard:DrunkenSailorPower": {
+  "${modID}:DrunkenSailorPower": {
     "NAME": "醉酒水手",
     "DESCRIPTIONS": [
       "每当你使用一瓶药水，触发 #b",
       " 次效果。"
     ]
   },
-  "blackbeard:SwordDancePower": {
+  "${modID}:SwordDancePower": {
     "NAME": "剑舞",
     "DESCRIPTIONS": [
       "在这个回合，你的下1张攻击牌使用所有装备着的武器。",
@@ -24,7 +24,7 @@
       " 张攻击牌使用所有装备着的武器。"
     ]
   },
-  "blackbeard:ResistancePower": {
+  "${modID}:ResistancePower": {
     "NAME": "抵抗",
     "DESCRIPTIONS": [
       "你受到来自敌人的 #b",
@@ -33,7 +33,7 @@
       " 的攻击伤害。（敌人的意图总是显示实际将对你造成的伤害，抵抗考虑在内。）"
     ]
   },
-  "blackbeard:InfiniteBarragePower": {
+  "${modID}:InfiniteBarragePower": {
     "NAME": "无尽弹幕",
     "DESCRIPTIONS": [
       "在你的回合开始时，将 #b",
@@ -42,28 +42,28 @@
       " 加入你的手牌。"
     ]
   },
-  "blackbeard:ToastPower": {
+  "${modID}:ToastPower": {
     "NAME": "干杯",
     "DESCRIPTIONS": [
       "在你的回合开始时，失去 #b",
       " 点 #y抵抗 。"
     ]
   },
-  "blackbeard:DamageAtTheEndOfNextTurnPower": {
+  "${modID}:DamageAtTheEndOfNextTurnPower": {
     "NAME": "下回合结束受伤害",
     "DESCRIPTIONS": [
       "在你的下回合结束时, 你受到 #b",
       " 点伤害。"
     ]
   },
-  "blackbeard:DamageAtTheEndOfThisTurnPower": {
+  "${modID}:DamageAtTheEndOfThisTurnPower": {
     "NAME": "本回合结束受伤害",
     "DESCRIPTIONS": [
       "在你的本回合结束时, 你受到 #b",
       " 点伤害。"
     ]
   },
-  "blackbeard:WeaponMasteryPower": {
+  "${modID}:WeaponMasteryPower": {
     "NAME": "武器专精",
     "DESCRIPTIONS": [
       "每当你装备一把 #y武器 ,抽 #b",
@@ -71,62 +71,62 @@
       " 张卡。"
     ]
   },
-  "blackbeard:SalvagerPower": {
+  "${modID}:SalvagerPower": {
     "NAME": "营救者",
     "DESCRIPTIONS": [
       "每当一把 #y武器 被摧毁，获得 #b",
       " [E] 。"
     ]
   },
-  "blackbeard:LoseEnergyNextTurnPower": {
+  "${modID}:LoseEnergyNextTurnPower": {
     "NAME": "下回合失去能量",
     "DESCRIPTIONS": [
       "在你的下个回合开始时，失去 #b",
       " [E] 。"
     ]
   },
-  "blackbeard:GainWeakNextTurnPower": {
+  "${modID}:GainWeakNextTurnPower": {
     "NAME": "下回合获得虚弱",
     "DESCRIPTIONS": [
       "在你的下个回合开始时，获得 #b",
       " 层 #y虚弱 。"
     ]
   },
-  "blackbeard:ArmorUpPower": {
+  "${modID}:ArmorUpPower": {
     "NAME": "穿上盔甲",
     "DESCRIPTIONS": [
       "每当你使用 #y武器 攻击，获得 #b",
       " 点 #y格挡 。"
     ]
   },
-  "blackbeard:IntoxicationPower": {
+  "${modID}:IntoxicationPower": {
     "NAME": "沉醉",
     "DESCRIPTIONS": [
       "在你的回合开始时，失去 #b",
       " 点 #y抵抗 。"
     ]
   },
-  "blackbeard:PenknifePower": {
+  "${modID}:PenknifePower": {
     "NAME": "折叠刀",
     "DESCRIPTIONS": [
       "你打出的下一张使用了 #y武器 （至少一把）的 #y攻击牌 造成双倍伤害。"
     ]
   },
-  "blackbeard:DamageWhenIntangibleEndsPower": {
+  "${modID}:DamageWhenIntangibleEndsPower": {
     "NAME": "无实体结束受伤害",
     "DESCRIPTIONS": [
       "下次你的 无实体 产消失时，你受到 #b",
       " 点伤害。"
     ]
   },
-  "blackbeard:RustyThorns": {
+  "${modID}:RustyThorns": {
     "NAME": "生锈的荆棘",
     "DESCRIPTIONS": [
       "受到攻击时，对攻击者造成 #b ",
       " 点反伤，然后生锈的荆棘减少 #b1 层。"
     ]
   },
-  "blackbeard:WeaponProficiencyPower": {
+  "${modID}:WeaponProficiencyPower": {
     "NAME": "武器娴熟",
     "DESCRIPTIONS": [
       "你的攻击额外使用 #b",
@@ -134,7 +134,7 @@
       " 把 #y武器 。"
     ]
   },
-  "blackbeard:GoldToLootPower": {
+  "${modID}:GoldToLootPower": {
     "NAME": "打劫金币",
     "DESCRIPTIONS": [
       "每当你攻击一名敌人，获得 #b",
@@ -142,20 +142,20 @@
       " #y金币 。"
     ]
   },
-  "blackbeard:BleedPower": {
+  "${modID}:BleedPower": {
     "NAME": "流血",
     "DESCRIPTIONS": [
       "在它的回合开始时, 失去 #b",
       " 点生命值。"
     ]
   },
-  "blackbeard:ReapersMarkPower": {
+  "${modID}:ReapersMarkPower": {
     "NAME": "收割之镰",
     "DESCRIPTIONS": [
       "每当获得 #b3 层时，移除这些层，该生物失去等于已损失生命值 #b40% 的生命值。"
     ]
   },
-  "blackbeard:ProvisioningPower": {
+  "${modID}:ProvisioningPower": {
     "NAME": "航程补给",
     "DESCRIPTIONS": [
       "在下一回合，获得 #b",

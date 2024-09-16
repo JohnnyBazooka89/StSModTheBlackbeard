@@ -1,22 +1,22 @@
 {
-  "blackbeard:WeaponPower": {
+  "${modID}:WeaponPower": {
     "NAME": "Weapons",
     "DESCRIPTIONS": []
   },
-  "blackbeard:ParrotPower": {
+  "${modID}:ParrotPower": {
     "NAME": "Parrot",
     "DESCRIPTIONS": [
       "At the end of your turn, the last card played that turn is played again."
     ]
   },
-  "blackbeard:DrunkenSailorPower": {
+  "${modID}:DrunkenSailorPower": {
     "NAME": "Drunken Sailor",
     "DESCRIPTIONS": [
       "Whenever you use a potion, its effect is applied #b",
       " times."
     ]
   },
-  "blackbeard:SwordDancePower": {
+  "${modID}:SwordDancePower": {
     "NAME": "Sword Dance",
     "DESCRIPTIONS": [
       "This turn, your next Attack uses all equipped Weapons.",
@@ -24,7 +24,7 @@
       " Attacks use all equipped Weapons."
     ]
   },
-  "blackbeard:ResistancePower": {
+  "${modID}:ResistancePower": {
     "NAME": "Resistance",
     "DESCRIPTIONS": [
       "You take #b",
@@ -33,7 +33,7 @@
       " damage from enemy attacks. (Enemy intents always show actual incoming damage, with Resistance taken into account.)"
     ]
   },
-  "blackbeard:InfiniteBarragePower": {
+  "${modID}:InfiniteBarragePower": {
     "NAME": "Infinite Barrage",
     "DESCRIPTIONS": [
       "At the start of your turn, add #b",
@@ -42,28 +42,28 @@
       " into your hand."
     ]
   },
-  "blackbeard:ToastPower": {
+  "${modID}:ToastPower": {
     "NAME": "Toast",
     "DESCRIPTIONS": [
       "At the start of your next turn, lose #b",
       " #yResistance."
     ]
   },
-  "blackbeard:DamageAtTheEndOfNextTurnPower": {
+  "${modID}:DamageAtTheEndOfNextTurnPower": {
     "NAME": "End Of Next Turn Damage",
     "DESCRIPTIONS": [
       "At the end of next turn, you take #b",
       " damage."
     ]
   },
-  "blackbeard:DamageAtTheEndOfThisTurnPower": {
+  "${modID}:DamageAtTheEndOfThisTurnPower": {
     "NAME": "End Turn Damage",
     "DESCRIPTIONS": [
       "At the end of this turn, you take #b",
       " damage."
     ]
   },
-  "blackbeard:WeaponMasteryPower": {
+  "${modID}:WeaponMasteryPower": {
     "NAME": "Weapon Mastery",
     "DESCRIPTIONS": [
       "Whenever you equip a #yWeapon, draw #b",
@@ -71,62 +71,62 @@
       " cards."
     ]
   },
-  "blackbeard:SalvagerPower": {
+  "${modID}:SalvagerPower": {
     "NAME": "Salvager",
     "DESCRIPTIONS": [
       "Whenever a #yWeapon is destroyed, gain #b",
       " [E] ."
     ]
   },
-  "blackbeard:LoseEnergyNextTurnPower": {
+  "${modID}:LoseEnergyNextTurnPower": {
     "NAME": "Lose Energy Next Turn",
     "DESCRIPTIONS": [
       "At the start of your next turn, lose #b",
       " [E] ."
     ]
   },
-  "blackbeard:GainWeakNextTurnPower": {
+  "${modID}:GainWeakNextTurnPower": {
     "NAME": "Gain Weak Next Turn",
     "DESCRIPTIONS": [
       "At the start of your next turn, gain #b",
       " #yWeak."
     ]
   },
-  "blackbeard:ArmorUpPower": {
+  "${modID}:ArmorUpPower": {
     "NAME": "Armor Up",
     "DESCRIPTIONS": [
       "Whenever you attack with a #yWeapon, gain #b",
       " #yBlock."
     ]
   },
-  "blackbeard:IntoxicationPower": {
+  "${modID}:IntoxicationPower": {
     "NAME": "Intoxication",
     "DESCRIPTIONS": [
       "At the start of your turn, lose #b",
       " #yResistance."
     ]
   },
-  "blackbeard:PenknifePower": {
+  "${modID}:PenknifePower": {
     "NAME": "Penknife",
     "DESCRIPTIONS": [
       "Your next #yAttack that uses at least one #yWeapon deals double damage."
     ]
   },
-  "blackbeard:DamageWhenIntangibleEndsPower": {
+  "${modID}:DamageWhenIntangibleEndsPower": {
     "NAME": "End Of Intangible Damage",
     "DESCRIPTIONS": [
       "The next time your #yIntangible wears off, you take #b",
       " damage."
     ]
   },
-  "blackbeard:RustyThorns": {
+  "${modID}:RustyThorns": {
     "NAME": "Rusty Thorns",
     "DESCRIPTIONS": [
       "When attacked, deals #b ",
       " damage back and reduces Rusty Thorns by #b1."
     ]
   },
-  "blackbeard:WeaponProficiencyPower": {
+  "${modID}:WeaponProficiencyPower": {
     "NAME": "Weapon Proficiency",
     "DESCRIPTIONS": [
       "Your attacks use #b",
@@ -134,7 +134,7 @@
       " additional #yWeapons."
     ]
   },
-  "blackbeard:GoldToLootPower": {
+  "${modID}:GoldToLootPower": {
     "NAME": "Gold to Loot",
     "DESCRIPTIONS": [
       "Whenever you hit an enemy, gain #b",
@@ -142,20 +142,20 @@
       " #yGold more."
     ]
   },
-  "blackbeard:BleedPower": {
+  "${modID}:BleedPower": {
     "NAME": "Bleed",
     "DESCRIPTIONS": [
       "At the start of its turn, loses #b",
       " HP."
     ]
   },
-  "blackbeard:ReapersMarkPower": {
+  "${modID}:ReapersMarkPower": {
     "NAME": "Reaper's Mark",
     "DESCRIPTIONS": [
       "Whenever #b3 stacks are applied, they are removed and the creature loses HP equal to #b40% of its missing HP."
     ]
   },
-  "blackbeard:ProvisioningPower": {
+  "${modID}:ProvisioningPower": {
     "NAME": "Provisioning",
     "DESCRIPTIONS": [
       "Next turn, obtain #b",

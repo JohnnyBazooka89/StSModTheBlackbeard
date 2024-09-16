@@ -1,122 +1,122 @@
 {
-  "blackbeard:LoadTheCannons": {
+  "${modID}:LoadTheCannons": {
     "NAME": "装填炮弹",
     "FLAVOR": "准备......瞄准目标......开火！！！",
     "DESCRIPTIONS": [
       "在每场战斗开始，以及随后的每4个回合时，将一张 #y炮弹 加入你的手牌。"
     ]
   },
-  "blackbeard:HipFlask": {
+  "${modID}:HipFlask": {
     "NAME": "扁酒瓶",
     "FLAVOR": "非常趁手。",
     "DESCRIPTIONS": [
-      "每场战斗开始时，获得 #b1 点 #yblackbeard:抵抗 。"
+      "每场战斗开始时，获得 #b1 点 #y${modID}:抵抗 。"
     ]
   },
-  "blackbeard:BloodOrange": {
+  "${modID}:BloodOrange": {
     "NAME": "血橙",
     "FLAVOR": "这种柑橘似乎有一种有趣的能力。",
     "DESCRIPTIONS": [
       "每当你在同一回合内打出 #b7 张牌，移除你身上的所有负面效果。"
     ]
   },
-  "blackbeard:TreasureChest": {
+  "${modID}:TreasureChest": {
     "NAME": "财宝箱",
     "FLAVOR": "这份财宝所蕴含的财富尽在不言中。",
     "DESCRIPTIONS": [
       "每场战斗结束后，获得 #b15 金币。"
     ]
   },
-  "blackbeard:WhitePearl": {
+  "${modID}:WhitePearl": {
     "NAME": "白珍珠",
     "FLAVOR": "美丽又有力。",
     "DESCRIPTIONS": [
-      "每当你装备一把 #yblackbeard:武器 ，使其获得 #b+1 攻击力。"
+      "每当你装备一把 #y${modID}:武器 ，使其获得 #b+1 攻击力。"
     ]
   },
-  "blackbeard:CannonballsOfSteel": {
+  "${modID}:CannonballsOfSteel": {
     "NAME": "钢铁炮弹",
     "FLAVOR": "比通常的炮弹厉害得多。",
     "DESCRIPTIONS": [
       "你的 #y炮弹 额外造成 #b2 点伤害。（对每种 #y炮弹 [REMOVE_SPACE] 都有效。）"
     ]
   },
-  "blackbeard:GoldenRing": {
+  "${modID}:GoldenRing": {
     "NAME": "金戒指",
     "FLAVOR": "没有海盗会拒绝金戒指。",
     "DESCRIPTIONS": [
       "每场战斗开始时，获得 #b1 层 #y人工制品 。"
     ]
   },
-  "blackbeard:MagicalCauldron": {
+  "${modID}:MagicalCauldron": {
     "NAME": "魔力大锅",
     "FLAVOR": "全自动。",
     "DESCRIPTIONS": [
       "每场战斗结束时，获得一瓶随机药水。"
     ]
   },
-  "blackbeard:Penknife": {
+  "${modID}:Penknife": {
     "NAME": "折叠刀",
     "FLAVOR": "如果你口袋里有一把，可别忘了用。",
     "DESCRIPTIONS": [
-      "你每打出的第 #b8 张使用了 #yblackbeard:武器 （至少一把）的攻击牌造成双倍伤害。"
+      "你每打出的第 #b8 张使用了 #y${modID}:武器 （至少一把）的攻击牌造成双倍伤害。"
     ]
   },
-  "blackbeard:PoorMathSkills": {
+  "${modID}:PoorMathSkills": {
     "NAME": "数学不好",
     "FLAVOR": "有时候挂掉一门数学课也是一件好事。",
     "DESCRIPTIONS": [
       "你认为你在本局游戏中多获得了 #b500 #y金币 ，跟实际获得的相比。（这关系到那些数值与本局游戏中所获得 #y金币 数量成一定比例关系的卡。）"
     ]
   },
-  "blackbeard:PowderCan": {
+  "${modID}:PowderCan": {
     "NAME": "火药罐",
     "FLAVOR": "跟火药桶很像，但是要小一些。",
     "DESCRIPTIONS": [
-      "每场战斗开始时，装备一把 #b0 / #b1 的 #yblackbeard:武器 。当它被摧毁时，对所有敌人造成 #b8 点伤害。"
+      "每场战斗开始时，装备一把 #b0 / #b1 的 #y${modID}:武器 。当它被摧毁时，对所有敌人造成 #b8 点伤害。"
     ]
   },
-  "blackbeard:SoberMinded": {
+  "${modID}:SoberMinded": {
     "NAME": "清醒头脑",
     "FLAVOR": "对黑胡子船长来说，保持清醒可不是一种自然的状态。",
     "DESCRIPTIONS": [
-      "在每回合开始时获得 [E] 。在每场战斗开始，以及随后的每6个回合时，失去 #b1 点 #yblackbeard:抵抗 。"
+      "在每回合开始时获得 [E] 。在每场战斗开始，以及随后的每6个回合时，失去 #b1 点 #y${modID}:抵抗 。"
     ]
   },
-  "blackbeard:Spearhead": {
+  "${modID}:Spearhead": {
     "NAME": "矛头",
     "FLAVOR": "你武器的生涯结束了.....你敌人的生命也结束了。",
     "DESCRIPTIONS": [
-      "当一把 #yblackbeard:武器 具有 #b1 点耐久度时，它额外造成 #b3 点伤害。"
+      "当一把 #y${modID}:武器 具有 #b1 点耐久度时，它额外造成 #b3 点伤害。"
     ]
   },
-  "blackbeard:CrossedSwords": {
+  "${modID}:CrossedSwords": {
     "NAME": "交叉剑刃",
     "FLAVOR": "可完美双持。",
     "DESCRIPTIONS": [
-      "你的攻击额外使用一把 #yblackbeard:武器 。"
+      "你的攻击额外使用一把 #y${modID}:武器 。"
     ]
   },
-  "blackbeard:Karategi": {
+  "${modID}:Karategi": {
     "NAME": "空手技",
     "FLAVOR": "一穿上它，你就会立刻学会新的战斗方式。",
     "DESCRIPTIONS": [
-      "你的 #yblackbeard:武器 拥有无限耐久度。在你使用一把 #yblackbeard:武器 攻击后，它移动到最左边的位置。"
+      "你的 #y${modID}:武器 拥有无限耐久度。在你使用一把 #y${modID}:武器 攻击后，它移动到最左边的位置。"
     ]
   },
-  "blackbeard:LoadTheGoldenCannons": {
+  "${modID}:LoadTheGoldenCannons": {
     "NAME": "装载黄金炮弹",
     "FLAVOR": "这些可是金子做的炮弹欸，射出去值当吗？！？",
     "DESCRIPTIONS": [
       "替换 #y装载炮弹 。在每场战斗开始，以及随后的每4个回合时，将一张 #y黄金炮弹 加入你的手牌。"
     ]
   },
-  "blackbeard:BarbedCannonballs": {
+  "${modID}:BarbedCannonballs": {
     "NAME": "带刺炮弹",
     "FLAVOR": "它们引起了很多嘘声。",
     "DESCRIPTIONS": [
       "每有一 #y炮弹 造成未被格挡的伤害，就给予 #b",
-      " 层 #yblackbeard:流血 。（对每种 #y炮弹 [REMOVE_SPACE] 都有效。）"
+      " 层 #y${modID}:流血 。（对每种 #y炮弹 [REMOVE_SPACE] 都有效。）"
     ]
   }
 }

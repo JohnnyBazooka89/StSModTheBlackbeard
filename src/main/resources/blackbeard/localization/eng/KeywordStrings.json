@@ -1,5 +1,5 @@
 {
-  "blackbeard:WeaponKeyword": {
+  "${modID}:WeaponKeyword": {
     "PROPER_NAME": "Weapon",
     "NAMES": [
       "weapon",
@@ -7,28 +7,28 @@
     ],
     "DESCRIPTION": "Whenever you play an attack card, one Durability of your rightmost Weapon is used and card's damage is increased by Weapon's Attack. You can equip a maximum of #b10 Weapons."
   },
-  "blackbeard:ResistanceKeyword": {
+  "${modID}:ResistanceKeyword": {
     "PROPER_NAME": "Resistance",
     "NAMES": [
       "resistance"
     ],
     "DESCRIPTION": "You take less damage from enemy attacks. (Enemy intents always show actual incoming damage, with Resistance taken into account.) Resistance can be negative."
   },
-  "blackbeard:BleedKeyword": {
+  "${modID}:BleedKeyword": {
     "PROPER_NAME": "Bleed",
     "NAMES": [
       "bleed"
     ],
     "DESCRIPTION": "Bleeding creatures lose HP at the start of their turn."
   },
-  "blackbeard:ReapersMarkKeyword": {
+  "${modID}:ReapersMarkKeyword": {
     "PROPER_NAME": "Reaper's\u00a0Mark",
     "NAMES": [
       "reaper's\u00a0mark"
     ],
     "DESCRIPTION": "Whenever #b3 stacks are applied, they are removed and the creature loses HP equal to #b40% of its missing HP."
   },
-  "blackbeard:RustyThorns": {
+  "${modID}:RustyThorns": {
     "PROPER_NAME": "Rusty\u00a0Thorns",
     "NAMES": [
       "rusty\u00a0thorns"

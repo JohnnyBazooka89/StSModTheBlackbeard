@@ -1,22 +1,22 @@
 {
-  "blackbeard:WeaponPower": {
+  "${modID}:WeaponPower": {
     "NAME": "Bronie",
     "DESCRIPTIONS": []
   },
-  "blackbeard:ParrotPower": {
+  "${modID}:ParrotPower": {
     "NAME": "Papuga",
     "DESCRIPTIONS": [
       "Na koniec tury, ostatnia karta zagrana w tej turze jest zagrana jeszcze raz."
     ]
   },
-  "blackbeard:DrunkenSailorPower": {
+  "${modID}:DrunkenSailorPower": {
     "NAME": "Morskie opowieści",
     "DESCRIPTIONS": [
       "Kiedykolwiek użyjesz mikstury, jej efekt jest nakładany #b",
       " razy."
     ]
   },
-  "blackbeard:SwordDancePower": {
+  "${modID}:SwordDancePower": {
     "NAME": "Taniec mieczy",
     "DESCRIPTIONS": [
       "W tej turze, następny Atak używa wszystkich twoich wyposażonych Broni.",
@@ -24,7 +24,7 @@
       " Ataki/Ataków używają/używa wszystkich twoich wyposażonych Broni."
     ]
   },
-  "blackbeard:ResistancePower": {
+  "${modID}:ResistancePower": {
     "NAME": "Odporność",
     "DESCRIPTIONS": [
       "Otrzymujesz #b",
@@ -33,7 +33,7 @@
       " pkt. obrażeń od ataków przeciwników. (Zamiary przeciwników pokazują rzeczywiste nadchodzące obrażenia, z Odpornością wziętą pod uwagę.)"
     ]
   },
-  "blackbeard:InfiniteBarragePower": {
+  "${modID}:InfiniteBarragePower": {
     "NAME": "Nieustanny ostrzał",
     "DESCRIPTIONS": [
       "Na początku każdej tury dodaj #b",
@@ -42,28 +42,28 @@
       " do ręki."
     ]
   },
-  "blackbeard:ToastPower": {
+  "${modID}:ToastPower": {
     "NAME": "Toast",
     "DESCRIPTIONS": [
       "Na początku następnej tury, utrać #b",
       " pkt. #yOdporności."
     ]
   },
-  "blackbeard:DamageAtTheEndOfNextTurnPower": {
+  "${modID}:DamageAtTheEndOfNextTurnPower": {
     "NAME": "Obraż. na końcu nast. tury",
     "DESCRIPTIONS": [
       "Na końcu następnej tury, otrzymaj #b",
       " pkt. obrażeń."
     ]
   },
-  "blackbeard:DamageAtTheEndOfThisTurnPower": {
+  "${modID}:DamageAtTheEndOfThisTurnPower": {
     "NAME": "Obrażenia na końcu tury",
     "DESCRIPTIONS": [
       "Na końcu tury, otrzymaj #b",
       " pkt. obrażeń."
     ]
   },
-  "blackbeard:WeaponMasteryPower": {
+  "${modID}:WeaponMasteryPower": {
     "NAME": "Mistrzostwo w broni",
     "DESCRIPTIONS": [
       "Kiedykolwiek wyposażysz się w Broń, dobierz #b",
@@ -71,62 +71,62 @@
       " karty/kart."
     ]
   },
-  "blackbeard:SalvagerPower": {
+  "${modID}:SalvagerPower": {
     "NAME": "Złomiarz",
     "DESCRIPTIONS": [
       "Kiedykolwiek Broń jest zniszczona, zyskaj #b",
       " [E] ."
     ]
   },
-  "blackbeard:LoseEnergyNextTurnPower": {
+  "${modID}:LoseEnergyNextTurnPower": {
     "NAME": "Strać energię w następnej turze",
     "DESCRIPTIONS": [
       "Na początku następnej tury, utrać #b",
       " [E] ."
     ]
   },
-  "blackbeard:GainWeakNextTurnPower": {
+  "${modID}:GainWeakNextTurnPower": {
     "NAME": "Zyskaj Słabość w następnej turze",
     "DESCRIPTIONS": [
       "Na początku następnej tury, zyskaj #b",
       " pkt. #ySłabości."
     ]
   },
-  "blackbeard:ArmorUpPower": {
+  "${modID}:ArmorUpPower": {
     "NAME": "Opancerzenie",
     "DESCRIPTIONS": [
       "Kiedykolwiek atakujesz bronią, zyskaj #b",
       " pkt. #yBloku."
     ]
   },
-  "blackbeard:IntoxicationPower": {
+  "${modID}:IntoxicationPower": {
     "NAME": "Upojenie",
     "DESCRIPTIONS": [
       "Na początku każdej tury, utrać  #b",
       " pkt. #yOdporności."
     ]
   },
-  "blackbeard:PenknifePower": {
+  "${modID}:PenknifePower": {
     "NAME": "Scyzoryk",
     "DESCRIPTIONS": [
       "Twój następny #yAtak, który używa co najmniej jednej #yBroni, zada podwójne obrażenia."
     ]
   },
-  "blackbeard:DamageWhenIntangibleEndsPower": {
+  "${modID}:DamageWhenIntangibleEndsPower": {
     "NAME": "Obraż. po nieuchwytności",
     "DESCRIPTIONS": [
       "Następnym razem, kiedy efekt #yNieuchwytności zaniknie, otrzymaj #b",
       " pkt. obrażeń."
     ]
   },
-  "blackbeard:RustyThorns": {
+  "${modID}:RustyThorns": {
     "NAME": "Zardzewiałe ciernie",
     "DESCRIPTIONS": [
       "Kiedy jesteś atakowany, zadaj #b",
       " pkt. obrażeń atakującemu przeciwnikowi i zmniejsz ilość Zardzewiałych Cierni o #b1."
     ]
   },
-  "blackbeard:WeaponProficiencyPower": {
+  "${modID}:WeaponProficiencyPower": {
     "NAME": "Biegłość w broni",
     "DESCRIPTIONS": [
       "Twoje Ataki używają #b",
@@ -134,7 +134,7 @@
       " dodatkowe/dodatkowych #yBronie/Broni."
     ]
   },
-  "blackbeard:GoldToLootPower": {
+  "${modID}:GoldToLootPower": {
     "NAME": "Złoto do złupienia",
     "DESCRIPTIONS": [
       "Kiedykolwiek zaatakujesz przeciwnika, zyskaj #b",
@@ -142,20 +142,20 @@
       " szt. #yZłota."
     ]
   },
-  "blackbeard:BleedPower": {
+  "${modID}:BleedPower": {
     "NAME": "Krwawienie",
     "DESCRIPTIONS": [
       "Na początku swojej tury, traci #b",
       " PŻ."
     ]
   },
-  "blackbeard:ReapersMarkPower": {
+  "${modID}:ReapersMarkPower": {
     "NAME": "Znak żniwiarza",
     "DESCRIPTIONS": [
       "Każde #b3 pkt. #yZnaku #yżniwiarza powodują, że są one usunięte, a przeciwnik traci PŻ równe #b40% jego brakujących PŻ."
     ]
   },
-  "blackbeard:ProvisioningPower": {
+  "${modID}:ProvisioningPower": {
     "NAME": "Zaopatrzenie",
     "DESCRIPTIONS": [
       "Otrzymaj #b",

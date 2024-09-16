@@ -12,9 +12,11 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import org.apache.commons.lang3.StringUtils;
 
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class LoadTheGoldenCannons extends AbstractBlackbeardRelic implements IGoldenRelic {
 
-    public static final String ID = "blackbeard:LoadTheGoldenCannons";
+    public static final String ID = makeID("LoadTheGoldenCannons");
     private static final Texture IMG = TextureLoader.getTexture(TheBlackbeardMod.getRelicImagePath(ID));
     private static final Texture OUTLINE = TextureLoader.getTexture(TheBlackbeardMod.getRelicOutlineImagePath(ID));
 

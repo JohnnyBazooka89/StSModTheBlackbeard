@@ -32,23 +32,25 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import java.util.ArrayList;
 import java.util.List;
 
+import static blackbeard.TheBlackbeardMod.MOD_ID;
+import static blackbeard.TheBlackbeardMod.makeID;
+
 public class TheBlackbeard extends CustomPlayer {
 
-    private static final String ID = "blackbeard:BlackbeardCharacter";
-    private static final CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString(ID);
+    private static final CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString(makeID("BlackbeardCharacter"));
 
     private static final int ENERGY_PER_TURN = 3;
     private static final int STARTING_GOLD = 99;
 
-    private static final String BLACKBEARD_SKELETON_ATLAS_PATH = "blackbeard/img/char/blackbeard/idle/skeleton.atlas";
-    private static final String BLACKBEARD_SKELETON_JSON_PATH = "blackbeard/img/char/blackbeard/idle/skeleton.json";
-    private static final String BLACKBEARD_SHOULDER_1 = "blackbeard/img/char/blackbeard/shoulder.png";
-    private static final String BLACKBEARD_SHOULDER_2 = "blackbeard/img/char/blackbeard/shoulder2.png";
-    private static final String BLACKBEARD_CORPSE = "blackbeard/img/char/blackbeard/corpse.png";
+    private static final String BLACKBEARD_SKELETON_ATLAS_PATH = MOD_ID + "/img/char/blackbeard/idle/skeleton.atlas";
+    private static final String BLACKBEARD_SKELETON_JSON_PATH = MOD_ID + "/img/char/blackbeard/idle/skeleton.json";
+    private static final String BLACKBEARD_SHOULDER_1 = MOD_ID + "/img/char/blackbeard/shoulder.png";
+    private static final String BLACKBEARD_SHOULDER_2 = MOD_ID + "/img/char/blackbeard/shoulder2.png";
+    private static final String BLACKBEARD_CORPSE = MOD_ID + "/img/char/blackbeard/corpse.png";
 
-    private static final String CAPTAIN_ABE_ENCOUNTER_STRINGS_ID = "blackbeard:CaptainAbeEncounter";
-    private static final String CHRISTMAS_THEME_GREETING_STRINGS_ID = "blackbeard:ChristmasThemeGreeting";
-    private static final String MAXIMUM_WEAPONS_REACHED_STRINGS_ID = "blackbeard:MaximumWeaponsReached";
+    private static final String CAPTAIN_ABE_ENCOUNTER_STRINGS_ID = makeID("CaptainAbeEncounter");
+    private static final String CHRISTMAS_THEME_GREETING_STRINGS_ID = makeID("ChristmasThemeGreeting");
+    private static final String MAXIMUM_WEAPONS_REACHED_STRINGS_ID = makeID("MaximumWeaponsReached");
     private static final CharacterStrings captainAbeEncounterStrings = CardCrawlGame.languagePack.getCharacterString(CAPTAIN_ABE_ENCOUNTER_STRINGS_ID);
     private static final CharacterStrings christmasThemeGreetingStrings = CardCrawlGame.languagePack.getCharacterString(CHRISTMAS_THEME_GREETING_STRINGS_ID);
     @SuppressWarnings("unused") //Used in MaximumWeaponsReachedPatch
