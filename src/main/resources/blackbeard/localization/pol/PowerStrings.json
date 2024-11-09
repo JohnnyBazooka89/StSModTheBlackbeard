@@ -134,11 +134,10 @@
       " dodatkowe/dodatkowych #yBronie/Broni."
     ]
   },
-  "${modID}:GoldToLootPower": {
-    "NAME": "Złoto do złupienia",
+  "${modID}:GreedPower": {
+    "NAME": "Chciwość",
     "DESCRIPTIONS": [
-      "Kiedykolwiek zaatakujesz przeciwnika, zyskaj #b",
-      " szt. #yZłota za kazde uderzenie. Możesz zyskać jeszcze #b",
+      "Kiedykolwiek zabijesz przeciwnika nie będącego sługą, zyskaj #b",
       " szt. #yZłota."
     ]
   },

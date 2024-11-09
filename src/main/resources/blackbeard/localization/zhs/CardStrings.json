@@ -175,7 +175,7 @@
   },
   "${modID}:Bandana": {
     "NAME": "印花头巾",
-    "DESCRIPTION": "每当你攻击一名敌人，获得5金币。 NL 一场对战中最多获得 !M! 金币。"
+    "DESCRIPTION": "每当你杀死一名不是“爪牙”的敌人时，获得 !M! 金币。"
   },
   "${modID}:TacticalRetreat": {
     "NAME": "战术撤退",

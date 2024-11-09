@@ -175,7 +175,7 @@
   },
   "${modID}:Bandana": {
     "NAME": "Bandana",
-    "DESCRIPTION": "Whenever you hit an enemy, gain 5 Gold, NL up to a maximum of !M! Gold."
+    "DESCRIPTION": "Whenever you kill a non-minion enemy, gain !M! Gold."
   },
   "${modID}:TacticalRetreat": {
     "NAME": "Tactical Retreat",

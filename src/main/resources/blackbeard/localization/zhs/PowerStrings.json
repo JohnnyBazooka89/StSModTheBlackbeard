@@ -134,11 +134,10 @@
       " 把 #y武器 。"
     ]
   },
-  "${modID}:GoldToLootPower": {
-    "NAME": "打劫金币",
+  "${modID}:GreedPower": {
+    "NAME": "贪婪",
     "DESCRIPTIONS": [
-      "每当你攻击一名敌人，获得 #b",
-      " #y金币 。本场对战你可以再获得 #b",
+      "每当你杀死一名不是“爪牙”的敌人时，获得 #b",
       " #y金币 。"
     ]
   },

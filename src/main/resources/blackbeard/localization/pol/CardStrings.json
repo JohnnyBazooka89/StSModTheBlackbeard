@@ -175,7 +175,7 @@
   },
   "${modID}:Bandana": {
     "NAME": "Bandana",
-    "DESCRIPTION": "Kiedykolwiek zaatakujesz przeciwnika, zyskaj 5 szt. Złota za każde [#FFF6E2]uderzenie[]. NL Maksymalnie !M! szt. Złota."
+    "DESCRIPTION": "Kiedykolwiek zabijesz przeciwnika nie będącego sługą, zyskaj !M! szt. Złota."
   },
   "${modID}:TacticalRetreat": {
     "NAME": "Taktyczny odwrót",
