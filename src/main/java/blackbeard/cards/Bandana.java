@@ -18,7 +18,7 @@ public class Bandana extends AbstractBlackbeardCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
     private static final int GOLD_PER_KILL = 10;
-    private static final int UPGRADE_GOLD_PER_KILL = 3;
+    private static final int UPGRADE_PLUS_GOLD_PER_KILL = 3;
 
     public Bandana() {
         super(ID, NAME, TheBlackbeardMod.getCardImagePath(ID), COST, DESCRIPTION, CardType.POWER,
@@ -38,7 +38,7 @@ public class Bandana extends AbstractBlackbeardCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(UPGRADE_GOLD_PER_KILL);
+            this.upgradeMagicNumber(UPGRADE_PLUS_GOLD_PER_KILL);
         }
     }
 }
