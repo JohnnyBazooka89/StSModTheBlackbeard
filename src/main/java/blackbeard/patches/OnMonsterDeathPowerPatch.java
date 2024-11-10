@@ -12,11 +12,12 @@ import javassist.CtBehavior;
 
 @SpirePatch2(clz = AbstractMonster.class, method = "die", paramtypez = {boolean.class})
 public class OnMonsterDeathPowerPatch {
+
     @SpireInsertPatch(locator = Locator.class)
-    public static void patch(AbstractMonster __instance, boolean triggerRelics) {
-        for (AbstractPower p : AbstractDungeon.player.powers) {
-            if (p instanceof OnMonsterDeathPower) {
-                if (triggerRelics) {
+    public static void Insert(AbstractMonster __instance, boolean triggerRelics) {
+        if (triggerRelics) {
+            for (AbstractPower p : AbstractDungeon.player.powers) {
+                if (p instanceof OnMonsterDeathPower) {
                     ((OnMonsterDeathPower) p).onMonsterDeath(__instance);
                 }
             }
@@ -29,4 +30,5 @@ public class OnMonsterDeathPowerPatch {
             return LineFinder.findInOrder(ctMethodToPatch, finalMatcher);
         }
     }
+
 }

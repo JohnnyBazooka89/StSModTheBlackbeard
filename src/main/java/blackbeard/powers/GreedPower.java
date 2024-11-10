@@ -33,7 +33,7 @@ public class GreedPower extends AbstractPower implements OnMonsterDeathPower {
         if (!m.hasPower(MinionPower.POWER_ID)) {
             AbstractDungeon.player.gainGold(this.amount);
 
-            for(int i = 0; i < this.amount; ++i) {
+            for (int i = 0; i < this.amount; i++) {
                 AbstractDungeon.effectList.add(new GainPennyEffect(owner, m.hb.cX, m.hb.cY, owner.hb.cX, owner.hb.cY, true));
             }
         }
