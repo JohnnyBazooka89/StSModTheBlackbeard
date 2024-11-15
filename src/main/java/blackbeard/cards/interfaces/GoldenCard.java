@@ -1,7 +1,7 @@
-package blackbeard.interfaces;
+package blackbeard.cards.interfaces;
 
 /* This interface is used in GoldenCardsFixCardRewardScreenPatch and GoldenCardsAndRelicsFixPatches to refresh cards that scale with Gold. */
-public interface IGoldenCard {
+public interface GoldenCard {
 
     void setGoldenValuesAndUpdateDescription();
 

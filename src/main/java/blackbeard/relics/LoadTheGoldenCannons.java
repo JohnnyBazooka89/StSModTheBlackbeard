@@ -3,7 +3,7 @@ package blackbeard.relics;
 import basemod.helpers.CardPowerTip;
 import blackbeard.TheBlackbeardMod;
 import blackbeard.cards.GoldenCannonball;
-import blackbeard.interfaces.IGoldenRelic;
+import blackbeard.relics.interfaces.GoldenRelic;
 import blackbeard.utils.TextureLoader;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
@@ -14,7 +14,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import static blackbeard.TheBlackbeardMod.makeID;
 
-public class LoadTheGoldenCannons extends AbstractBlackbeardRelic implements IGoldenRelic {
+public class LoadTheGoldenCannons extends AbstractBlackbeardRelic implements GoldenRelic {
 
     public static final String ID = makeID("LoadTheGoldenCannons");
     private static final Texture IMG = TextureLoader.getTexture(TheBlackbeardMod.getRelicImagePath(ID));

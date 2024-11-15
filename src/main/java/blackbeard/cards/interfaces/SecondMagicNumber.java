@@ -1,6 +1,6 @@
-package blackbeard.interfaces;
+package blackbeard.cards.interfaces;
 
-public interface ISecondMagicNumber {
+public interface SecondMagicNumber {
 
     boolean isSecondMagicNumberModified();
 

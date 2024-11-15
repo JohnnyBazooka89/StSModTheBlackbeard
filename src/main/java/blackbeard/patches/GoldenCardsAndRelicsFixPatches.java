@@ -1,7 +1,7 @@
 package blackbeard.patches;
 
-import blackbeard.interfaces.IGoldenCard;
-import blackbeard.interfaces.IGoldenRelic;
+import blackbeard.cards.interfaces.GoldenCard;
+import blackbeard.relics.interfaces.GoldenRelic;
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
@@ -40,8 +40,8 @@ public class GoldenCardsAndRelicsFixPatches {
 
         private static void refreshGoldenCardsInCardGroup(CardGroup cardGroup) {
             for (AbstractCard card : cardGroup.group) {
-                if (card instanceof IGoldenCard) {
-                    IGoldenCard goldenCard = (IGoldenCard) card;
+                if (card instanceof GoldenCard) {
+                    GoldenCard goldenCard = (GoldenCard) card;
                     goldenCard.setGoldenValuesAndUpdateDescription();
                 }
             }
@@ -49,8 +49,8 @@ public class GoldenCardsAndRelicsFixPatches {
 
         private static void refreshGoldenRelics() {
             for (AbstractRelic relic : AbstractDungeon.player.relics) {
-                if (relic instanceof IGoldenRelic) {
-                    IGoldenRelic goldenRelic = (IGoldenRelic) relic;
+                if (relic instanceof GoldenRelic) {
+                    GoldenRelic goldenRelic = (GoldenRelic) relic;
                     goldenRelic.updateGoldenValues();
                 }
             }
@@ -62,8 +62,8 @@ public class GoldenCardsAndRelicsFixPatches {
 
         public static void Postfix(CardRewardScreen cardRewardScreen) {
             for (AbstractCard card : cardRewardScreen.rewardGroup) {
-                if (card instanceof IGoldenCard) {
-                    IGoldenCard goldenCard = (IGoldenCard) card;
+                if (card instanceof GoldenCard) {
+                    GoldenCard goldenCard = (GoldenCard) card;
                     goldenCard.setGoldenValuesAndUpdateDescription();
                 }
             }

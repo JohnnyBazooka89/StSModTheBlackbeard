@@ -1,8 +1,8 @@
 package blackbeard.cards;
 
 import blackbeard.TheBlackbeardMod;
+import blackbeard.cards.interfaces.GoldenCard;
 import blackbeard.enums.CardColorEnum;
-import blackbeard.interfaces.IGoldenCard;
 import blackbeard.utils.GoldenCardsUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
@@ -16,7 +16,7 @@ import com.megacrit.cardcrawl.vfx.combat.GoldenSlashEffect;
 
 import static blackbeard.TheBlackbeardMod.makeID;
 
-public class GoldenNoose extends AbstractBlackbeardCard implements IGoldenCard {
+public class GoldenNoose extends AbstractBlackbeardCard implements GoldenCard {
     public static final String ID = makeID("GoldenNoose");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

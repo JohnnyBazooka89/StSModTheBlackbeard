@@ -2,9 +2,9 @@ package blackbeard.cards;
 
 import blackbeard.TheBlackbeardMod;
 import blackbeard.actions.ShootAnythingAction;
+import blackbeard.cards.interfaces.GoldenCard;
 import blackbeard.enums.CardColorEnum;
 import blackbeard.enums.CardTagsEnum;
-import blackbeard.interfaces.IGoldenCard;
 import blackbeard.patches.CannonballDamageInfoPatch;
 import blackbeard.utils.GoldenCardsUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -17,7 +17,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static blackbeard.TheBlackbeardMod.makeID;
 
-public class GoldenCannonball extends AbstractBlackbeardCard implements IGoldenCard {
+public class GoldenCannonball extends AbstractBlackbeardCard implements GoldenCard {
     public static final String ID = makeID("GoldenCannonball");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
