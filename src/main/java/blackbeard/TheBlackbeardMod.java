@@ -461,7 +461,15 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
 
     @Override
     public void receiveStartGame() {
-        if (AbstractDungeon.player.chosenClass == PlayerClassEnum.BLACKBEARD_CLASS && TheBlackbeardMod.shouldUseChristmasTheme()) {
+        if (AbstractDungeon.player.chosenClass != PlayerClassEnum.BLACKBEARD_CLASS) {
+            return;
+        }
+
+        if (!CardCrawlGame.loadingSave) {
+            CardCrawlGame.goldGained = TheBlackbeard.STARTING_GOLD;
+        }
+
+        if (TheBlackbeardMod.shouldUseChristmasTheme()) {
             Skeleton skeleton = ReflectionHacks.getPrivate(AbstractDungeon.player, AbstractCreature.class, "skeleton");
             String attachName = "images/christmasHat";
             String attachCloneName = "images/christmasHatClone";

@@ -39,8 +39,8 @@ public class TheBlackbeard extends CustomPlayer {
 
     private static final CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString(makeID("BlackbeardCharacter"));
 
+    public static final int STARTING_GOLD = 99;
     private static final int ENERGY_PER_TURN = 3;
-    private static final int STARTING_GOLD = 99;
 
     private static final String BLACKBEARD_SKELETON_ATLAS_PATH = MOD_ID + "/img/char/blackbeard/idle/skeleton.atlas";
     private static final String BLACKBEARD_SKELETON_JSON_PATH = MOD_ID + "/img/char/blackbeard/idle/skeleton.json";
@@ -68,8 +68,6 @@ public class TheBlackbeard extends CustomPlayer {
         this.loadAnimation(BLACKBEARD_SKELETON_ATLAS_PATH, BLACKBEARD_SKELETON_JSON_PATH, 1.0f);
         AnimationState.TrackEntry e = this.state.setAnimation(0, "animation", true);
         e.setTime(e.getEndTime() * MathUtils.random());
-
-        CardCrawlGame.goldGained = STARTING_GOLD;
     }
 
     @Override
