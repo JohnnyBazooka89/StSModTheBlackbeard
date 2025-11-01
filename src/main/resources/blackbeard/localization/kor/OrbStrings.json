@@ -1,0 +1,91 @@
+{
+  "blackbeard:AbstractWeaponOrb": {
+    "NAME": "무기",
+    "DESCRIPTION": [
+      " NL ",
+      "공격력: ",
+      " NL ",
+      "내구력: #b"
+    ]
+  },
+  "blackbeard:CutlassOrb": {
+    "NAME": "커틀러스",
+    "DESCRIPTION": [
+      ""
+    ]
+  },
+  "blackbeard:HalberdOrb": {
+    "NAME": "할버드",
+    "DESCRIPTION": [
+      "이 무기 로 공격할 때마다, 적중한 대상에게 #y출혈 을 3 부여합니다."
+    ]
+  },
+  "blackbeard:PowderKegOrb": {
+    "NAME": "화약통",
+    "DESCRIPTION": [
+      "이 무기가 파괴되면, 적 전체에게 피해를 #b",
+      " 줍니다."
+    ]
+  },
+  "blackbeard:SwordOfWisdomOrb": {
+    "NAME": "지혜의 검",
+    "DESCRIPTION": [
+      "이 무기로 공격할 때마다, 카드를 1 장 뽑습니다."
+    ]
+  },
+  "blackbeard:SwordOfChaosOrb": {
+    "NAME": "혼돈의 검",
+    "DESCRIPTION": [
+      "이 무기로 공격할 때마다, 무작위 카드 1 장을 손패에 추가합니다."
+    ]
+  },
+  "blackbeard:CatONineTailsOrb": {
+    "NAME": "아홉 꼬리 고양이",
+    "DESCRIPTION": [
+      "이 무기 로 공격한 후에는, 이 무기의 공격력을 #b+2 증가시킵니다."
+    ]
+  },
+  "blackbeard:DaggerOrb": {
+    "NAME": "단검",
+    "DESCRIPTION": [
+      "턴 시작시, 단검의 내구력을 #b1 소모하여 무작위 적에게 단검의 공격력만큼의 피해를 줍니다."
+    ]
+  },
+  "blackbeard:SwordOrb": {
+    "NAME": "검",
+    "DESCRIPTION": [
+      ""
+    ]
+  },
+  "blackbeard:SmithingHammerOrb": {
+    "NAME": "대장장이 망치",
+    "DESCRIPTION": [
+      "이 무기로 공격한 이후 또는 매 턴 시작시, 내구력을 #b1 소모하여 손패의 무작위 카드 1장과 뽑을 카드 더미의 무작위 카드 1장을 이번 전투 동안 강화 합니다."
+    ]
+  },
+  "blackbeard:SpearOrb": {
+    "NAME": "창",
+    "DESCRIPTION": [
+      ""
+    ]
+  },
+  "blackbeard:SwordOfFireOrb": {
+    "NAME": "화염의 검",
+    "DESCRIPTION": [
+      "이 무기로 공격할 때마다, 적 전체에게 피해를 #b3 줍니다."
+    ]
+  },
+  "blackbeard:VampiricScepterOrb": {
+    "NAME": "흡혈귀의 셉터",
+    "DESCRIPTION": [
+      "이 무기로 공격할 때마다, 체력을 #b",
+      " 회복합니다."
+    ]
+  },
+  "blackbeard:ReapersScytheOrb": {
+    "NAME": "사신의 낫",
+    "DESCRIPTION": [
+      "이 무기로 공격할 때마다, 적중한 대상에게 #y사신의 #y표식 을 #b1 부여합니다."
+    ]
+  }
+}

@@ -1,42 +1,56 @@
 # StSModTheBlackbeard
 
-**Update: Slay the Spire added the official Workshop for mods. Please check [Installation](#installation) section for more details.** 
+**Update: Slay the Spire added the official Workshop for mods. Please check [Installation](#installation) section for
+more details.**
 
-This mod adds a new character for Slay the Spire, named The Blackbeard, with 75+ new cards and 17 new relics (1 starter, 5 common, 4 uncommon, 2 rare, 3 boss and 2 shop). 
+This mod adds a new character for Slay the Spire, named The Blackbeard, with 75+ new cards and 17 new relics (1 starter,
+5 common, 4 uncommon, 2 rare, 3 boss and 2 shop).
 
-The Blackbeard is a new class based on pirate theme. His most important mechanic are Weapons. There are many cards that allow to equip a Weapon and each Weapon is characterized by its Attack and Durability. You can equip many Weapons, and they are queued using Defect's orb system. Every time you play an attack card, one Durability of your rightmost Weapon is used and card's damage is increased by Weapon's Attack. You can equip a maximum of 10 Weapons. Weapons with zero Durability are automatically destroyed. Orb slots are created and destroyed automatically.
+The Blackbeard is a new class based on pirate theme. His most important mechanic are Weapons. There are many cards that
+allow to equip a Weapon and each Weapon is characterized by its Attack and Durability. You can equip many Weapons, and
+they are queued using Defect's orb system. Every time you play an attack card, one Durability of your rightmost Weapon
+is used and card's damage is increased by Weapon's Attack. You can equip a maximum of 10 Weapons. Weapons with zero
+Durability are automatically destroyed. Orb slots are created and destroyed automatically.
 
-Other mechanics are: 
+Other mechanics are:
+
 - Cannonballs - 0 cost attacks that deal 6 (8) damage and exhaust.
 - Resistance - for each point of Resistance you take 1 damage less from enemies.
 - Gold scaling cards - some cards scale with how much Gold you gained this run.
 - Debuff cleansing - The Blackbeard is able to play powerful cards with negative effects, and later cleanse his debuffs.
 
-Gameplay: 
+Gameplay:
 ![Gameplay 1](screenshots/Gameplay1.jpg)
 ![Gameplay 2](screenshots/Gameplay2.jpg)
 
 Character Select Screen and Starting Relic:
-![Character Select Screen](screenshots/CharacterSelectScreen.jpg) 
+![Character Select Screen](screenshots/CharacterSelectScreen.jpg)
 ![Starting Relic](screenshots/StartingRelic.png)
 
-Starting Deck: 
+Starting Deck:
 ![Starting Deck](screenshots/StartingDeck.jpg)
 
-Additionally, this mod includes 6 the Blackbeard-specific achievements. 
+Additionally, this mod includes 6 the Blackbeard-specific achievements.
 
-List of all cards, relics and potions can be found [here](http://www.theblackbeardmod.com). (Exported using [Slay the Spire exporter](https://github.com/twanvl/sts-exporter).)
+List of all cards, relics and potions can be found [here](http://www.theblackbeardmod.com). (Exported
+using [Slay the Spire exporter](https://github.com/twanvl/sts-exporter).)
 
 ## Installation ##
+
 1. Subscribe to the mod on [mod's workshop page](https://steamcommunity.com/sharedfiles/filedetails/?id=1612105245).
-2. The instruction how to play with mods can be found [here](https://steamcommunity.com/games/646570/announcements/detail/1714081669582224415).
+2. The instruction how to play with mods can be
+   found [here](https://steamcommunity.com/games/646570/announcements/detail/1714081669582224415).
 
 ## Set Ascension Level to 20 (optional) ##
 
 If you want to play Ascension 20 straight away, you have to:
-1. Go to your Slay the Spire preferences folder for example: "C:\Program Files (x86)\Steam\steamapps\common\SlayTheSpire\preferences".
+
+1. Go to your Slay the Spire preferences folder for example: "C:\Program Files (x86)
+   \Steam\steamapps\common\SlayTheSpire\preferences".
 2. Open file named "BLACKBEARD_CLASS". If there is no such file, then simply create it (it has no extension).
-3. You have to add property "ASCENSION_LEVEL" with value "20", and ensure that value of property "WIN_COUNT" is bigger than 0. If you just created the file, you can copy and paste this:
+3. You have to add property "ASCENSION_LEVEL" with value "20", and ensure that value of property "WIN_COUNT" is bigger
+   than 0. If you just created the file, you can copy and paste this:
+
 ```
 {
   "ASCENSION_LEVEL": "20",
@@ -45,21 +59,29 @@ If you want to play Ascension 20 straight away, you have to:
 ```
 
 ## Localizations ##
+
 This mod is available in:
+
 - English
 - Polish
 - Russian, thanks to [Jedi](https://github.com/Jedi515)
 - Simplified Chinese, thanks to 旅渚
+- Korean, thanks to zerosiki__
 
 ## Special Thanks ##
+
 1. Thanks to the [developers](https://www.megacrit.com/) of **SlayTheSpire** for making such a good game.
 2. Thanks to the creators of ModTheSpire and BaseMod for creating great tools for modding.
-3. Thanks to the community of [Pixabay](https://pixabay.com) for many great, free images that I used for this mod. 
+3. Thanks to the community of [Pixabay](https://pixabay.com) for many great, free images that I used for this mod.
 4. Thanks to [Jorbs](https://www.twitch.tv/jorbs) for great and educational Slay the Spire streams.
 
 ## Other Mods ##
+
 - Other mods can be found on [Slay the Spire official workshop](https://steamcommunity.com/app/646570/workshop/).
 
 ## Contact ##
 
-- To report a bug in the code, please create an [issue](https://github.com/JohnnyBazooka89/StSModTheBlackbeard/issues). If you want to make general remarks, feel free to [comment](https://steamcommunity.com/sharedfiles/filedetails/comments/1612105245) or create a [discussion](https://steamcommunity.com/sharedfiles/filedetails/discussions/1612105245) on mod's workshop page.
+- To report a bug in the code, please create an [issue](https://github.com/JohnnyBazooka89/StSModTheBlackbeard/issues).
+  If you want to make general remarks, feel free
+  to [comment](https://steamcommunity.com/sharedfiles/filedetails/comments/1612105245) or create
+  a [discussion](https://steamcommunity.com/sharedfiles/filedetails/discussions/1612105245) on mod's workshop page.

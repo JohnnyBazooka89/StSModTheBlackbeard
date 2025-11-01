@@ -1,0 +1,60 @@
+{
+  "blackbeard:PowerCardFromDrawPileToHandAction": {
+    "TEXT": [
+      "손으로 가져올 파워 카드를 선택하세요."
+    ]
+  },
+  "blackbeard:Settings": {
+    "TEXT": [
+      "크리스마스 테마 비활성화. (12월의 마지막 2주 동안만 이용할 수 있습니다)",
+      "검은 수염 카드의 모든 베타 아트를 활성화 시킵니다.",
+      "\"난파선\" 이벤트가 다른 캐릭터들에게 등장하지 않습니다."
+    ]
+  },
+  "blackbeard:Achievements": {
+    "TEXT": [
+      "도전과제 달성!"
+    ]
+  },
+  "blackbeard:AchievementGrid": {
+    "TEXT": [
+      "#y검은 수염 #y도전과제"
+    ]
+  },
+  "blackbeard:BLACKBEARD_MASTERY": {
+    "TEXT": [
+      "검은 수염 숙련자",
+      "검은 수염 캐릭터로 20 승천으로 플레이하여 엔딩을 보십시오."
+    ]
+  },
+  "blackbeard:RESISTANT": {
+    "TEXT": [
+      "저항자",
+      "검은 수염 캐릭터로, 저항력 을 10 이상 보유하십시오."
+    ]
+  },
+  "blackbeard:ULTIMATE_WEAPON": {
+    "TEXT": [
+      "최강의 무기",
+      "검은 수염 캐릭터로, 장비한 무기 의 능력치를 15/10 이상으로 만드십시오."
+    ]
+  },
+  "blackbeard:RICHES": {
+    "TEXT": [
+      "부자다!",
+      "검은 수염 캐릭터로, 한 게임에서 골드를 2,500 이상 얻고 게임을 클리어하십시오."
+    ]
+  },
+  "blackbeard:LOAD_THE_CANNONS": {
+    "TEXT": [
+      "대포 장전",
+      "검은 수염 캐릭터로, 한 전투에서 대포알 카드 10 장 이상을 사용하십시오."
+    ]
+  },
+  "blackbeard:ARMED_TO_THE_TEETH": {
+    "TEXT": [
+      "완벽한 무장",
+      "검은 수염 캐릭터로, 무기를 10 개 장비하십시오."
+    ]
+  }
+}

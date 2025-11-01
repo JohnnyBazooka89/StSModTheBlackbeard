@@ -1,0 +1,409 @@
+{
+  "blackbeard:Strike": {
+    "NAME": "타격",
+    "DESCRIPTION": "피해를 !D! 줍니다."
+  },
+  "blackbeard:Defend": {
+    "NAME": "수비",
+    "DESCRIPTION": "방어도를 !B! 얻습니다."
+  },
+  "blackbeard:Cutlass": {
+    "NAME": "커틀러스",
+    "DESCRIPTION": "{A} / {D} 의 blackbeard:무기 를 장비합니다."
+  },
+  "blackbeard:Upgrade": {
+    "NAME": "재련",
+    "DESCRIPTION": "장비한 모든 blackbeard:무기 에 + !M! / + !M! 를 부여합니다."
+  },
+  "blackbeard:Sharpening": {
+    "NAME": "갈고 닦기",
+    "DESCRIPTION": "장비한 모든 blackbeard:무기 에 + !M! 공격력을 부여합니다."
+  },
+  "blackbeard:RearmingStrike": {
+    "NAME": "재무장 타격",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL {A} / {D} 의 blackbeard:무기 를 장비합니다."
+  },
+  "blackbeard:Fencing": {
+    "NAME": "펜싱",
+    "DESCRIPTION": "가장 오른쪽에 위치한 blackbeard:무기 에 + !blackbeard:M+2! / + !M! 를 부여합니다."
+  },
+  "blackbeard:Parrot": {
+    "NAME": "앵무새",
+    "DESCRIPTION": "휘발성. NL 턴 종료시, 이번 턴에서 가장 마지막으로 사용한 카드가 다시 사용됩니다. NL (중첩이 불가능합니다.)",
+    "UPGRADE_DESCRIPTION": "턴 종료시, 이번 턴에서 가장 마지막으로 사용한 카드가 다시 사용됩니다. NL (중첩이 불가능합니다.)"
+  },
+  "blackbeard:Halberd": {
+    "NAME": "할버드",
+    "DESCRIPTION": "!M! / {D} 의 blackbeard:무기 를 장비합니다. NL 이 blackbeard:무기 로 공격할 때마다, 적중한 대상에게 blackbeard:출혈 을 3 부여합니다."
+  },
+  "blackbeard:DrunkenSailor": {
+    "NAME": "술 취한 선원",
+    "DESCRIPTION": "포션 을 사용할 때마다, 그 포션의 효과가 1 번 더 발동합니다."
+  },
+  "blackbeard:SwordDance": {
+    "NAME": "칼춤",
+    "DESCRIPTION": "이번 턴 동안, 다음에 사용하는 공격 카드 !M! 장이 현재 장비한 모든 blackbeard:무기 를 사용합니다.",
+    "UPGRADE_DESCRIPTION": "이번 턴 동안, 다음에 사용하는 공격 카드 !M! 장이 현재 장비한 모든 blackbeard:무기 를 사용합니다."
+  },
+  "blackbeard:Cannonball": {
+    "NAME": "대포알",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 소멸."
+  },
+  "blackbeard:CannonBarrage": {
+    "NAME": "대포 폭격",
+    "DESCRIPTION": "X+1 장의 *대포알 을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "X+1 장의 *대포알+ 을 얻습니다."
+  },
+  "blackbeard:Rum": {
+    "NAME": "럼",
+    "DESCRIPTION": "blackbeard:저항력 을 !M! 얻습니다.",
+    "UPGRADE_DESCRIPTION": "선천성. NL blackbeard:저항력 을 !M! 얻습니다."
+  },
+  "blackbeard:GhostInTheRum": {
+    "NAME": "귀신들린 럼",
+    "DESCRIPTION": "불가침 을 1 얻습니다. NL blackbeard:저항력 이 !M! 감소합니다. NL 소멸."
+  },
+  "blackbeard:GoldenStrike": {
+    "NAME": "황금 타격",
+    "DESCRIPTION": "이번 게임에서 얻은 골드량의 NL 1.5% 만큼의 NL 피해를 줍니다.",
+    "UPGRADE_DESCRIPTION": "이번 게임에서 얻은 골드량의 NL !M! + 1.5% 만큼의 NL 피해를 줍니다.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (피해를 !D! 줍니다.)",
+      " NL 현재 이번 게임에서 골드를 ",
+      " 만큼 얻었습니다."
+    ]
+  },
+  "blackbeard:PowderKeg": {
+    "NAME": "화약통",
+    "DESCRIPTION": "{A} / {D} 의 blackbeard:무기 를 장비합니다. NL 이 무기가 파괴되면, 적 전체에게 피해를 !M! 줍니다."
+  },
+  "blackbeard:Scrap": {
+    "NAME": "폐기",
+    "DESCRIPTION": "가장 오른쪽에 위치한 blackbeard:무기 를 파괴하고 [E] [E] 를 얻습니다.",
+    "UPGRADE_DESCRIPTION": "가장 오른쪽에 위치한 blackbeard:무기 를 파괴하고 [E] [E] [E] 를 얻습니다.",
+    "EXTENDED_DESCRIPTION": [
+      "현재 장비한 무기가 하나도 없어!"
+    ]
+  },
+  "blackbeard:RemoveScurvy": {
+    "NAME": "괴혈병 제거",
+    "DESCRIPTION": "체력을 !M! 회복합니다. NL 나에게 부여된 해로운 효과를 전부 제거합니다. NL 소멸."
+  },
+  "blackbeard:InfiniteBarrage": {
+    "NAME": "끝없는 포격",
+    "DESCRIPTION": "매 턴 시작시, *대포알 1 장을 얻습니다."
+  },
+  "blackbeard:SwordOfWisdom": {
+    "NAME": "지혜의 검",
+    "DESCRIPTION": "{A} / !M! 의 blackbeard:무기 를 장비합니다. NL 이 blackbeard:무기 로 공격할 때마다, 카드를 1 장 뽑습니다."
+  },
+  "blackbeard:SwordOfChaos": {
+    "NAME": "혼돈의 검",
+    "DESCRIPTION": "{A} / !M! 의 blackbeard:무기 를 장비합니다. NL 이 blackbeard:무기 로 공격할 때마다, 무작위 카드 1 장을 손패에 추가합니다."
+  },
+  "blackbeard:PirateStrength": {
+    "NAME": "해적의 힘",
+    "DESCRIPTION": "힘 을 !M! 얻습니다."
+  },
+  "blackbeard:HumongousCannonball": {
+    "NAME": "터무니없이 큰 대포알",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 소멸."
+  },
+  "blackbeard:GoldenCannonball": {
+    "NAME": "황금 대포알",
+    "DESCRIPTION": "이번 게임에서 얻은 골드량의 NL 2% 만큼의 피해를 줍니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "이번 게임에서 얻은 골드량의 NL !M! + 2% 만큼의 피해를 줍니다. NL 소멸.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (피해를 !D! 줍니다.)",
+      " NL 현재 이번 게임에서 골드를 ",
+      " 만큼 얻었습니다."
+    ]
+  },
+  "blackbeard:FinalBarrage": {
+    "NAME": "최후의 포격",
+    "DESCRIPTION": "이번 전투에서 사용한 대포알 카드 수의 !M! 배에 해당하는 피해를 줍니다. NL (모든 대포알 카드가 전부 포함됩니다.)",
+    "EXTENDED_DESCRIPTION": [
+      " NL (피해를 !D! 줍니다.)"
+    ]
+  },
+  "blackbeard:BrownPants": {
+    "NAME": "갈색 바지",
+    "DESCRIPTION": "판금 갑옷 을 !M! 얻습니다."
+  },
+  "blackbeard:JollyRoger": {
+    "NAME": "졸리 로저",
+    "DESCRIPTION": "적 전체에게 약화 를 !M! 부여합니다. NL 소멸."
+  },
+  "blackbeard:CaptainsCabin": {
+    "NAME": "선장의 객실",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL *대포알 !M! 장을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL *대포알 !M! 장을 얻습니다."
+  },
+  "blackbeard:GoldenDefense": {
+    "NAME": "황금 수비",
+    "DESCRIPTION": "이번 게임에서 얻은 골드량의 NL 1.5% 만큼의 NL 방어도를 얻습니다.",
+    "UPGRADE_DESCRIPTION": "이번 게임에서 얻은 골드량의 NL !M! + 1.5% 만큼의 NL 방어도를 얻습니다.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (방어도를 !B! 얻습니다.)",
+      " NL 현재 이번 게임에서 골드를 ",
+      " 만큼 얻었습니다."
+    ]
+  },
+  "blackbeard:Shrapnel": {
+    "NAME": "유산탄",
+    "DESCRIPTION": "적 전체에게 피해를 !D! 줍니다."
+  },
+  "blackbeard:Toast": {
+    "NAME": "토스트",
+    "DESCRIPTION": "blackbeard:저항력 을 !M! 얻습니다. NL 다음 턴 시작시, blackbeard:저항력 이 !M! 감소합니다. NL 소멸."
+  },
+  "blackbeard:CatONineTails": {
+    "NAME": "아홉 고리 꼬양이",
+    "DESCRIPTION": "!M! / {D} 의 blackbeard:무기 를 장비합니다. NL 이 blackbeard:무기 로 공격한 이후에는, 이 무기의 공격력을 +2 증가시킵니다."
+  },
+  "blackbeard:PirateEarring": {
+    "NAME": "해적의 귀걸이",
+    "DESCRIPTION": "인공물 을 !M! 얻습니다."
+  },
+  "blackbeard:Murder": {
+    "NAME": "육살",
+    "DESCRIPTION": "보스를 제외한 적에게 피해를 !D! \u00a0\u00a0\u00a0\u00a0 NL 줍니다. NL 일회성 .",
+    "EXTENDED_DESCRIPTION": [
+      "이 카드는 #r보스를 #r제외한 적에게만 사용할 수 있어!",
+      "육살됨"
+    ]
+  },
+  "blackbeard:Bandana": {
+    "NAME": "반다나",
+    "DESCRIPTION": "하수인 이 아닌 적을 처치할 때마다, 골드를 !M! 얻습니다."
+  },
+  "blackbeard:TacticalRetreat": {
+    "NAME": "전략적 후퇴",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 다음 턴 시작시 카드를 추가로 1 장 뽑습니다."
+  },
+  "blackbeard:Dagger": {
+    "NAME": "단검",
+    "DESCRIPTION": "{A} / !M! 의 blackbeard:무기 를 장비합니다. NL 매 턴 시작시, NL 단검의 내구력을 1 소모하여 무작위 적에게 단검의 공격력만큼의 피해를 줍니다 ."
+  },
+  "blackbeard:PiratesWill": {
+    "NAME": "해적의 의지",
+    "DESCRIPTION": "나에게 부여된 해로운 효과를 전부 제거합니다. NL 카드를 !M! 장 뽑습니다. NL 소멸."
+  },
+  "blackbeard:Pegleg": {
+    "NAME": "나무 의족",
+    "DESCRIPTION": "민첩 을 2 잃습니다. NL 힘 을 !M! 얻습니다."
+  },
+  "blackbeard:Eyepatch": {
+    "NAME": "안대",
+    "DESCRIPTION": "다음 턴 시작시 약화 를 !M! 얻습니다. NL 매 턴 시작시, 카드를 추가로 1 장 뽑습니다.",
+    "UPGRADE_DESCRIPTION": "선천성. NL 다음 턴 시작시 약화 를 !M! 얻습니다. NL 매 턴 시작시, 카드를 추가로 1 장 뽑습니다."
+  },
+  "blackbeard:CaptainsHat": {
+    "NAME": "선장의 모자",
+    "DESCRIPTION": "힘 을 !M! 얻습니다. NL blackbeard:저항력 을 !M! 얻습니다."
+  },
+  "blackbeard:BlindAttacks": {
+    "NAME": "눈먼 공격",
+    "DESCRIPTION": "무작위 적들에게 피해를 !D! 만큼 3 번 줍니다."
+  },
+  "blackbeard:Boarding": {
+    "NAME": "널빤지",
+    "DESCRIPTION": "적 전체에게 !D! 피해를 2 번 줍니다. NL 카드를 !M! 장 뽑습니다."
+  },
+  "blackbeard:AgileStrike": {
+    "NAME": "날렵한 타격",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 이번 턴에 blackbeard:무기 를 장비했다면, 이 카드의 비용이 NL 0 이 됩니다."
+  },
+  "blackbeard:DangerousBlow": {
+    "NAME": "위험천만한 일격",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 다음 턴 종료시, 피해를 !M! 받습니다."
+  },
+  "blackbeard:VengefulSpirit": {
+    "NAME": "앙심의 원령",
+    "DESCRIPTION": "불가침 을 1 얻습니다. NL 불가침 효과가 제거되면, 피해를 !M! 받습니다. NL 소멸."
+  },
+  "blackbeard:Revenge": {
+    "NAME": "복수",
+    "DESCRIPTION": "적 전체에게 피해를 0 - !M! 줍니다. 이 카드의 피해량은 현재 플레이어의 잃은 체력(%)에 따라 결정됩니다.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (피해를 !D! 줍니다.)",
+      "복수!"
+    ]
+  },
+  "blackbeard:GoldenRain": {
+    "NAME": "황금 비",
+    "DESCRIPTION": "이번 게임에서 얻은 골드량의 NL 2.5% 만큼 NL 적 전체에게 피해를 줍니다.",
+    "UPGRADE_DESCRIPTION": "이번 게임에서 얻은 골드량의 NL 3% 만큼 NL 적 전체에게 피해를 줍니다.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (피해를 !D! 줍니다.)",
+      " NL 현재 이번 게임에서 골드를 ",
+      " 얻었습니다."
+    ]
+  },
+  "blackbeard:Sword": {
+    "NAME": "검",
+    "DESCRIPTION": "3가지의 검 중 하나를 선택합니다. NL 선택한 효과를 지닌 {A} / !M! 의 blackbeard:무기 를 장비합니다.",
+    "EXTENDED_DESCRIPTION": [
+      "3가지 효과",
+      "#r화염: 이 무기로 공격할 때마다, 적 전체에게 피해를 #b3 줍니다. NL #y지혜: 이 무기로 공격할 때마다, 카드를 #b1 장 뽑습니다. NL #p혼돈: 이 무기로 공격할 때마다, 무작위 카드 #b1 장을 손패에 추가합니다."
+    ]
+  },
+  "blackbeard:BeatUp": {
+    "NAME": "마구 때리기",
+    "DESCRIPTION": "!D! 피해를 2 번 줍니다. NL 취약 을 !M! 부여합니다."
+  },
+  "blackbeard:IntimidatingStrike": {
+    "NAME": "위협적인 타격",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 약화 를 !M! 부여합니다."
+  },
+  "blackbeard:WiseDefense": {
+    "NAME": "현병한 수비",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 카드를 !M! 장 뽑습니다.",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL 카드를 !M! 장 뽑습니다."
+  },
+  "blackbeard:ChaoticDefense": {
+    "NAME": "혼돈의 수비",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 무작위 카드 !M! 장을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL 무작위 카드 !M! 장을 얻습니다."
+  },
+  "blackbeard:SmithingHammer": {
+    "NAME": "대장장이 망치",
+    "DESCRIPTION": "{A} / !M! 의 blackbeard:무기 를 장착합니다. NL 이 blackbeard:무기 로 공격한 이후 또는 매 턴 시작시, 내구력을 1 소모하여 손패의 무작위 카드 1장과 뽑을 카드 더미의 무작위 카드 1장을 이번 전투 동안 강화 합니다."
+  },
+  "blackbeard:Spear": {
+    "NAME": "창",
+    "DESCRIPTION": "!M! / {D} 의 blackbeard:무기 를 장착합니다."
+  },
+  "blackbeard:WeaponMastery": {
+    "NAME": "무기의 달인",
+    "DESCRIPTION": "blackbeard:무기 를 장비할 때마다, 카드를 !M! 장 뽑습니다.",
+    "UPGRADE_DESCRIPTION": "blackbeard:무기 를 장비할 때마다, 카드를 !M! 장 뽑습니다."
+  },
+  "blackbeard:Salvager": {
+    "NAME": "부품 회수",
+    "DESCRIPTION": "blackbeard:무기 가 파괴될 때마다, [E] 를 얻습니다.",
+    "UPGRADE_DESCRIPTION": "blackbeard:무기 가 파괴될 때마다, [E] [E] 를 얻습니다."
+  },
+  "blackbeard:Anchor": {
+    "NAME": "닻",
+    "DESCRIPTION": "선천성. NL 방어도를 !B! 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "선천성. NL 방어도를 !B! 얻습니다. NL 카드를 !M! 장 뽑습니다. NL 소멸."
+  },
+  "blackbeard:BoostMorale": {
+    "NAME": "사기 증진",
+    "DESCRIPTION": "골드를 5 얻습니다. NL 카드를 !M! 장 뽑습니다. NL [E] 를 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "골드를 5 얻습니다. NL 카드를 !M! 장 뽑습니다. NL [E] 를 얻습니다. NL 소멸."
+  },
+  "blackbeard:MegaUpgrade": {
+    "NAME": "최고급 재련술",
+    "DESCRIPTION": "장비한 모든 blackbeard:무기 에 + !M! / + !M! 를 부여합니다."
+  },
+  "blackbeard:Recklessness": {
+    "NAME": "무모성",
+    "DESCRIPTION": "[E] [E] 를 얻습니다. NL 다음 턴 시작시, [E] 를 잃습니다.",
+    "UPGRADE_DESCRIPTION": "[E] [E] [E] 를 얻습니다. NL 다음 턴 시작시, [E] 를 잃습니다."
+  },
+  "blackbeard:DelayedPain": {
+    "NAME": "지연 통증",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 다음 턴 종료시, 피해를 !M! 받습니다."
+  },
+  "blackbeard:ArmorUp": {
+    "NAME": "갑주 보강",
+    "DESCRIPTION": "blackbeard:무기 로 공격할 때마다, 방어도를 !M! 얻습니다."
+  },
+  "blackbeard:Intoxication": {
+    "NAME": "도취",
+    "DESCRIPTION": "blackbeard:저항력 을 !M! 얻습니다. NL 매 턴 시작시, blackbeard:저항력 이 감소합니다."
+  },
+  "blackbeard:CannonballSupply": {
+    "NAME": "대포알 보급",
+    "DESCRIPTION": "보존. NL *대포알 3 장을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "보존. NL *대포알+ 3 장을 얻습니다."
+  },
+  "blackbeard:BountyHunter": {
+    "NAME": "현상금 사냥꾼",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 치명타 라면, 골드를 !M! 얻습니다. NL 소멸."
+  },
+  "blackbeard:GoldenNoose": {
+    "NAME": "황금 올가미",
+    "DESCRIPTION": "이번 게임에서 얻은 골드량의 NL 4% 만큼의 피해를 줍니다.",
+    "UPGRADE_DESCRIPTION": "이번 게임에서 얻은 골드량의 NL 5% 만큼의 피해를 줍니다.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (피해를 !D! 줍니다.)",
+      " NL 현재 이번 게임에서 골드를 ",
+      " 만큼 얻었습니다."
+    ]
+  },
+  "blackbeard:DoubleBottom": {
+    "NAME": "이중선체",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 다음 턴 시작시, 방어도를 !B! 얻습니다."
+  },
+  "blackbeard:Lifeboat": {
+    "NAME": "구명정",
+    "DESCRIPTION": "방어도를 !B! 얻습니다."
+  },
+  "blackbeard:Provisioning": {
+    "NAME": "사전 준비",
+    "DESCRIPTION": "무작위 포션 하나를 얻습니다. NL 다음 턴 시작시, 무작위 포션 하나를 얻습니다. NL 소멸."
+  },
+  "blackbeard:TerrorOfTheSeas": {
+    "NAME": "바다의 공포",
+    "DESCRIPTION": "적 전체에게 취약 을 !M! 부여합니다. NL 소멸."
+  },
+  "blackbeard:FishingNets": {
+    "NAME": "어망",
+    "DESCRIPTION": "blackbeard:녹슨\u00a0가시 를 !M! 얻습니다."
+  },
+  "blackbeard:BuriedTreasure": {
+    "NAME": "매장된 보물",
+    "DESCRIPTION": "골드를 !M! 얻습니다. NL 소멸."
+  },
+  "blackbeard:DoubleCannonball": {
+    "NAME": "이중 대포알",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL *대포알 1 장을 얻습니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "피해를 !D! 줍니다. NL *대포알+ 1 장을 얻습니다. NL 소멸."
+  },
+  "blackbeard:SwordOfFire": {
+    "NAME": "화염의 검",
+    "DESCRIPTION": "{A} / !M! 의 blackbeard:무기 를 장비합니다. NL 이 blackbeard:무기 로 공격할 때마다, 적 전체에게 피해를 3 줍니다."
+  },
+  "blackbeard:CloakAndCannonball": {
+    "NAME": "망토와 대포알",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL *대포알 1 장을 얻습니다.",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL *대포알+ 1 장을 얻습니다."
+  },
+  "blackbeard:UndeadForm": {
+    "NAME": "언데드의 형상",
+    "DESCRIPTION": "불가침 을 3 얻습니다. NL 다음에 불가침 효과가 제거되면, 피해를 !M! 받습니다."
+  },
+  "blackbeard:WeaponProficiency": {
+    "NAME": "무기 숙달",
+    "DESCRIPTION": "공격 카드로 blackbeard:무기 1 개를 추가로 사용할 수 있게 됩니다."
+  },
+  "blackbeard:FieryDefense": {
+    "NAME": "작열 수비",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 적 전체에게 피해를 3 줍니다.",
+    "UPGRADE_DESCRIPTION": "방어도를 !B! 얻습니다. NL 적 전체에게 3 피해를 2 번 줍니다."
+  },
+  "blackbeard:VampiricScepter": {
+    "NAME": "흡혈귀의 셉터",
+    "DESCRIPTION": "!M! / {D} 의 blackbeard:무기 를 장비합니다. NL 이 blackbeard:무기 로 공격할 때마다, 체력을 !blackbeard:M2! 회복합니다."
+  },
+  "blackbeard:ReapersScythe": {
+    "NAME": "사신의 낫",
+    "DESCRIPTION": "!M! / {D} 의 blackbeard:무기 를 장비합니다. NL 이 blackbeard:무기 로 공격할 때마다, 적중한 대상에게 blackbeard:사신의\u00a0표식 을 부여합니다."
+  },
+  "blackbeard:PirateHook": {
+    "NAME": "해적 갈고리",
+    "DESCRIPTION": "피해를 !D! 줍니다. NL 이 카드로 피해를 10 이상 주었다면, 다시 피해를 !D! 줍니다."
+  },
+  "blackbeard:DeadlyArsenal": {
+    "NAME": "치명적인 병기",
+    "DESCRIPTION": "방어도를 !B! 얻습니다. NL 현재 장비한 blackbeard:무기 하나당, 카드를 1 장 뽑습니다."
+  },
+  "blackbeard:PowerHungry": {
+    "NAME": "파워 식사",
+    "DESCRIPTION": "뽑을 카드 더미의 파워 카드 !M! 장을 선택해 손으로 가져옵니다. NL 소멸.",
+    "UPGRADE_DESCRIPTION": "선천성. NL 뽑을 카드 더미의 파워 카드 !M! 장을 선택해 손으로 가져옵니다. NL 소멸."
+  }
+}

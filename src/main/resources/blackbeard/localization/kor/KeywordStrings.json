@@ -1,0 +1,38 @@
+{
+  "blackbeard:WeaponKeyword": {
+    "PROPER_NAME": "무기",
+    "NAMES": [
+      "weapon",
+      "무기"
+    ],
+    "DESCRIPTION": "공격 카드를 사용할 때마다, 가장 오른쪽에 있는 무기의 내구력이 소모되며 무기의 공격력은 공격 카드의 피해량을 그만큼 증가시킵니다. 최대 #b10 개의 무기를 보유할 수 있습니다."
+  },
+  "blackbeard:ResistanceKeyword": {
+    "PROPER_NAME": "저항력",
+    "NAMES": [
+      "저항력"
+    ],
+    "DESCRIPTION": "저항력 수치만큼 적에게 받는 피해를 감소시킵니다. (적의 공격 의도는 항상 저항력을 포함한 실제 피해량을 표시합니다.) 저항력은 음수로 내려갈 수 있습니다."
+  },
+  "blackbeard:BleedKeyword": {
+    "PROPER_NAME": "출혈",
+    "NAMES": [
+      "출혈"
+    ],
+    "DESCRIPTION": "출혈이 부여된 생물은 자신의 턴 시작시 출혈 중첩만큼 체력을 잃습니다."
+  },
+  "blackbeard:ReapersMarkKeyword": {
+    "PROPER_NAME": "사신의\u00a0표식",
+    "NAMES": [
+      "사신의\u00a0표식"
+    ],
+    "DESCRIPTION": "이 중첩이 #b3 이상이라면, 이 효과가 전부 제거되고 해당 생물은 잃은 체력의 #b40% 에 해당하는 체력을 잃습니다."
+  },
+  "blackbeard:RustyThorns": {
+    "PROPER_NAME": "녹슨\u00a0가시",
+    "NAMES": [
+      "녹슨\u00a0가시"
+    ],
+    "DESCRIPTION": "공격 받을 때마다, 공격 피해를 반사하고 녹슨 가시 중첩을 #b1 잃습니다."
+  }
+}

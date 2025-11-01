@@ -1,0 +1,24 @@
+{
+  "blackbeard:RumPotion": {
+    "NAME": "럼",
+    "DESCRIPTIONS": [
+      "#y저항력 을 #b",
+      " 얻습니다."
+    ]
+  },
+  "blackbeard:OrangeJuicePotion": {
+    "NAME": "오렌지 주스",
+    "DESCRIPTIONS": [
+      "체력을 #b",
+      " 회복합니다. 나에게 부여된 해로운 효과를 전부 제거합니다."
+    ]
+  },
+  "blackbeard:UpgradePotion": {
+    "NAME": "강화 포션",
+    "DESCRIPTIONS": [
+      "현재 장착한 모든 #y무기 에 #b+",
+      " / #b+",
+      " 를 부여합니다."
+    ]
+  }
+}

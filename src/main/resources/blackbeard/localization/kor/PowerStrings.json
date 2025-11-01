@@ -1,0 +1,166 @@
+{
+  "blackbeard:WeaponPower": {
+    "NAME": "무기",
+    "DESCRIPTIONS": []
+  },
+  "blackbeard:ParrotPower": {
+    "NAME": "앵무새",
+    "DESCRIPTIONS": [
+      "턴 종료시, 이번 턴에서 가장 마지막으로 사용한 카드가 다시 사용됩니다. (중첩 불가)"
+    ]
+  },
+  "blackbeard:DrunkenSailorPower": {
+    "NAME": "술 취한 선원",
+    "DESCRIPTIONS": [
+      "포션 을 사용할 때마다, 그 포션의 효과가 #b",
+      " 번 더 발동합니다.."
+    ]
+  },
+  "blackbeard:SwordDancePower": {
+    "NAME": "칼춤",
+    "DESCRIPTIONS": [
+      "이번 턴 동안, 다음에 사용하는 공격 카드가 현재 장비한 모든 무기 를 사용합니다.",
+      "이번 턴 동안, 다음에 사용하는 공격 카드 #b",
+      " 장이 현재 장비한 모든 무기 를 사용합니다."
+    ]
+  },
+  "blackbeard:ResistancePower": {
+    "NAME": "저항력",
+    "DESCRIPTIONS": [
+      "적의 공격으로 받는 피해가 #b",
+      " 만큼 감소",
+      " 만큼 증가",
+      " 합니다. (적의 공격 의도는 항상 저항력을 포함한 실제 피해량을 표시합니다.)"
+    ]
+  },
+  "blackbeard:InfiniteBarragePower": {
+    "NAME": "끝없는 포격",
+    "DESCRIPTIONS": [
+      "매 턴 시작시, #b",
+      " 장의 #y대포알",
+      " 장의 #y대포알",
+      " 을 얻습니다."
+    ]
+  },
+  "blackbeard:ToastPower": {
+    "NAME": "토스트",
+    "DESCRIPTIONS": [
+      "다음 턴 시작시, #y저항력 이 #b",
+      " 감소합니다."
+    ]
+  },
+  "blackbeard:DamageAtTheEndOfNextTurnPower": {
+    "NAME": "다음 턴 종료시 피해 받음",
+    "DESCRIPTIONS": [
+      "다음 턴 종료시, 피해를 #b",
+      " 받게 됩니다."
+    ]
+  },
+  "blackbeard:DamageAtTheEndOfThisTurnPower": {
+    "NAME": "이번 턴 종료시 피해 받음",
+    "DESCRIPTIONS": [
+      "이번 턴 종료시, 피해를 #b",
+      " 받습니다."
+    ]
+  },
+  "blackbeard:WeaponMasteryPower": {
+    "NAME": "무기의 달인",
+    "DESCRIPTIONS": [
+      "#y무기 를 장비할 때마다, 카드를 #b",
+      " 장 뽑습니다.",
+      " 장 뽑습니다."
+    ]
+  },
+  "blackbeard:SalvagerPower": {
+    "NAME": "부품 회수",
+    "DESCRIPTIONS": [
+      "#y무기 가 파괴될 때마다, #b",
+      " [E] 를 얻습니다."
+    ]
+  },
+  "blackbeard:LoseEnergyNextTurnPower": {
+    "NAME": "다음 턴 에너지 감소",
+    "DESCRIPTIONS": [
+      "다음 턴 시작시, #b",
+      " [E] 를 잃습니다."
+    ]
+  },
+  "blackbeard:GainWeakNextTurnPower": {
+    "NAME": "다음 턴 약화",
+    "DESCRIPTIONS": [
+      "다음 턴 시작시, #y약화 를 #b",
+      " 얻습니다."
+    ]
+  },
+  "blackbeard:ArmorUpPower": {
+    "NAME": "갑주 보강",
+    "DESCRIPTIONS": [
+      "#y무기 로 공격할 때마다, #y방어도를 #b",
+      " 얻습니다."
+    ]
+  },
+  "blackbeard:IntoxicationPower": {
+    "NAME": "도취",
+    "DESCRIPTIONS": [
+      "매 턴 시작시, #y저항력 이 #b",
+      " 감소합니다."
+    ]
+  },
+  "blackbeard:PenknifePower": {
+    "NAME": "주머니칼",
+    "DESCRIPTIONS": [
+      "최소 1개 이상의 #y무기 를 사용하는 다음 #y공격 카드의 피해량이 2 배로 증가합니다."
+    ]
+  },
+  "blackbeard:DamageWhenIntangibleEndsPower": {
+    "NAME": "불가침 없을시 피해 받음",
+    "DESCRIPTIONS": [
+      "다음에 #y불가침 효과가 사라지면, 피해를 #b",
+      " 받습니다."
+    ]
+  },
+  "blackbeard:RustyThorns": {
+    "NAME": "녹슨 가시",
+    "DESCRIPTIONS": [
+      "공격 받을 때마다, #b ",
+      " 의 피해를 되돌려주고 녹슨 가시 중첩이 #b1 감소합니다."
+    ]
+  },
+  "blackbeard:WeaponProficiencyPower": {
+    "NAME": "무기 숙달",
+    "DESCRIPTIONS": [
+      "공격 카드로 #y무기 를 #b",
+      " 개만큼 더 사용합니다.",
+      " 개만큼 더 사용합니다."
+    ]
+  },
+  "blackbeard:GreedPower": {
+    "NAME": "탐욕",
+    "DESCRIPTIONS": [
+      "하수인 이 아닌 적을 처치할 때마다, #y골드를 #b",
+      " 얻습니다."
+    ]
+  },
+  "blackbeard:BleedPower": {
+    "NAME": "출혈",
+    "DESCRIPTIONS": [
+      "턴 시작시, 체력이 #b",
+      " 감소합니다."
+    ]
+  },
+  "blackbeard:ReapersMarkPower": {
+    "NAME": "사신의 표식",
+    "DESCRIPTIONS": [
+      "이 중첩이 #b3 이상일시, 이 효과가 전부 제거되고 이 생물이 잃은 체력의 #b40% 에 해당하는 체력을 잃습니다."
+    ]
+  },
+  "blackbeard:ProvisioningPower": {
+    "NAME": "사전 준비",
+    "DESCRIPTIONS": [
+      "다음 턴 시작시, 무작위 포션 #b",
+      " 개를 얻습니다",
+      " 개를 얻습니다",
+      "."
+    ]
+  }
+}

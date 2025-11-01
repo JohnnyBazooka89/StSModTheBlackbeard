@@ -117,6 +117,7 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
     private static final String POLISH_LANGUAGE_FOLDER = "pol";
     private static final String RUSSIAN_LANGUAGE_FOLDER = "rus";
     private static final String SIMPLIFIED_CHINESE_LANGUAGE_FOLDER = "zhs";
+    private static final String KOREAN_LANGUAGE_FOLDER = "kor";
 
     //Keywords
     public static Map<String, Keyword> blackbeardKeywords = new HashMap<>();
@@ -386,6 +387,9 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
             case ZHS:
                 loadCustomStringsForLanguage(SIMPLIFIED_CHINESE_LANGUAGE_FOLDER);
                 break;
+            case KOR:
+                loadCustomStringsForLanguage(KOREAN_LANGUAGE_FOLDER);
+                break;
             default:
                 //Nothing - default language was already loaded
                 break;
@@ -420,6 +424,9 @@ public class TheBlackbeardMod implements PostInitializeSubscriber,
                 break;
             case ZHS:
                 loadCustomKeywordsForLanguage(SIMPLIFIED_CHINESE_LANGUAGE_FOLDER);
+                break;
+            case KOR:
+                loadCustomKeywordsForLanguage(KOREAN_LANGUAGE_FOLDER);
                 break;
             default:
                 //Nothing - default language was already loaded
