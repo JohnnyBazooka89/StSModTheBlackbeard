@@ -4,7 +4,7 @@
   "author_list": [
     "JohnnyBazooka89"
   ],
-  "credits": "Jedi - Russian localization, 旅渚 - Simplified Chinese localization, zerosiki__ - korean translation, Vex'd - various visual effects, Venim - card backgrounds, Cany0udance - achievements",
+  "credits": "Jedi - Russian localization, 旅渚 - Simplified Chinese localization, zerosiki__ - Korean translation, Vex'd - various visual effects, Venim - card backgrounds, Cany0udance - achievements",
   "description": "Adds The Blackbeard as a new playable character.\n\nMore info: https://steamcommunity.com/sharedfiles/filedetails/?id=1612105245\n\nGitHub: https://github.com/JohnnyBazooka89/StSModTheBlackbeard",
   "version": "${project.version}",
   "dependencies": [
